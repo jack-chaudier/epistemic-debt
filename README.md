@@ -15,9 +15,16 @@ Successor / consolidation of the mirage program (`stark`, `dreams`, `mirage`, �
 | 5 | **Incoherence signature**: `DENIED` + "no failing parameter" from the same notes — 12/14 lost-witness vs 0/16 retained | PREREGISTERED, replicated (1 model) | same |
 | 6 | **Confabulation locus**: identification probes stay honest (1/14 fabricated); action probes fabricate specifics 14/14 | PREREGISTERED, replicated (1 model) | same |
 | 7 | **Abstention as debt detector**: 13/14 uptake on lost witnesses, 0/16 false abstains | PREREGISTERED, replicated (1 model) | same |
-| 8 | The surviving verdict is prior/gist, not knowledge (**bias shelf**) — lost-cell accuracy indistinguishable from a degenerate always-DENY prior | OBSERVED (needs calibrated-prior criterion, v5) | same |
+| 8 | The surviving verdict is prior/gist, not knowledge (**bias shelf**) — lost-cell accuracy indistinguishable from a degenerate always-DENY prior | OBSERVED (v4) → PREREGISTERED split (v5 P-E: pass grok, fail haiku — bias-shelf reading survives) | [multimodel v5](experiments/multimodel/2026-07-03/v5/v5_results.json) |
+| 9 | **Cross-vendor replication**: the within-item dissociation (P-A5/B/C/D) passes preregistered on Grok AND Claude Haiku 4.5 (WHICH-lost 0/22 and 0/19); gpt-4.1-mini spontaneously implements the bare answer quotient at 15 words (retention 0.10) and shows the full pattern at 30 words (exploratory) | PREREGISTERED (2/2 applicable models) | same |
+| 10 | **Debt is artifact-borne**: in all 9 compressor×answerer cells, no reader recovers a witness the compressor destroyed (WHICH-lost ≤ 0.107; retained ≥ 0.909). Compaction sets the debt of the whole pipeline | PREREGISTERED (P-T1 4/4, P-T3 2/2; P-T2 3/4, one near-miss) | [transfer](experiments/multimodel/2026-07-03/transfer/transfer_results.json) |
+| 11 | **Debt phenotype is a reader property**: identical artifacts → incoherence 0.73–0.86 (grok/gpt) vs 0.00–0.05 (haiku); incoherence detectors measure reader policy, abstention-delta measures debt | OBSERVED (exploratory cells of preregistered grid); P-F incoherence itself: pass grok, fail haiku | same |
+| 12 | **Loss manifests don't fix confabulation**: a contract-blind `OMITTED:` line raises abstention everywhere (→0.78/0.92/1.00) but action-channel fabrication drops only on haiku (P-M1 1/3 = FAIL); verdict unharmed (P-M2 2/3 pass) | PREREGISTERED (primary prediction failed — negative result) | [manifest](experiments/multimodel/2026-07-03/manifest/manifest_results.json) |
+| 13 | **Inference-time compute can't recover artifact-borne debt**: gpt-5-mini (reasoning) names lost reasons 4/22 vs retained 8/8, abstains 20/22 vs 0/8 — a smarter reader can't repair a cheap compactor | PREREGISTERED (P-R1/R2/R3 pass) | [reasoning-reader](experiments/multimodel/2026-07-03/reasoning-reader/reasoning_results.json) |
+| 14 | **Fourth vendor confirms** (gemini-3.1-flash-lite): lost-reason 3/12 vs retained 8/8, abstain 11/12 vs 0/8 — 4 vendor families, one dissociation | PREREGISTERED (P-G1/G2 pass; P-G3 unrun, free-tier) | [gemini-micro](experiments/multimodel/2026-07-03/gemini-micro/gemini_micro_results.json) |
+| 15 | **The quotient identity `M_k = Q_(k,1)` does not transfer to LLM behavior**: at p=1 the logically-forced reason is named only 2/13 on lost items — reason-naming is value-retrieval, not structural inference; the empirical gap is *stronger* than the theory predicts | PREREGISTERED clean prediction REFUTED (P-S1/S3 fail; P-S2 pass) | [coarseness](experiments/multimodel/2026-07-03/coarseness/coarseness_results.json) |
 
-Total LLM spend to date: ≈ $0.15 (1,134 calls, grok-4-1-fast-non-reasoning).
+Total LLM spend to date: ≈ $2.19 (6,000 calls: $0.15 grok pilots v1–v4 + $2.04 multi-model campaign across xAI/Anthropic/OpenAI/Google). All four provided keys produced results; a fully-billed Gemini arm (P-G3 + 360-call replications) is the only pending item (free tier = 20 req/day/model; see the campaign README).
 
 ## Quickstart
 
@@ -27,7 +34,7 @@ python3 proofs/honesty_tax.py         # exact check, stdlib only (~1 min)
 python3 -m pytest tests/ -q           # regression + artifact integrity + secret hygiene
 ```
 
-Experiments need an xAI key: `export XAI_API_KEY=...` (never committed; see CLAUDE.md / AGENTS.md for hygiene rules).
+Experiments need provider keys in the environment (`XAI_API_KEY`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `GEMINI_API_KEY`) — never committed; see CLAUDE.md / AGENTS.md for hygiene rules. Re-running a completed experiment is a no-op (idempotent response caches).
 
 ## Layout
 
@@ -43,10 +50,11 @@ Every experiment iteration keeps: `runner*.py` (seeded, idempotent response cach
 
 ## Roadmap
 
-1. **v5**: calibrated-prior criterion; conjunctive/disjunctive sweep (shelf ∝ answer-quotient coarseness — quantitative theory test).
-2. **Multi-model replication** of v4 (Claude, GPT, Gemini, open models). If the incoherence signature and action-channel confabulation generalize, write the paper.
-3. **Distillation experiment**: teacher vs distilled student on counterfactual variants (Law 1 at world scale).
-4. Formal core: prove the Shelf Width Law in the fibered case; the Honesty Theorem; reposition the transport/holonomy material on Vorob'ev / Abramsky–Brandenburger before any external claim.
+1. ~~v5 calibrated-prior criterion~~ done (split verdict — bias-shelf reading survives). ~~Multi-model replication~~ done for xAI + Anthropic (preregistered passes); add Gemini/open models when a billed key exists — runners resume idempotently.
+2. **Conjunctive/disjunctive coarseness sweep** (shelf ∝ answer-quotient coarseness — the remaining quantitative theory test).
+3. **Witness-aware compaction**: the transfer grid shows the compactor sets pipeline debt and the manifest experiment shows reader-side metadata can't fix it — design and test compressor-objective interventions (the productive successor to the failed loss-manifest fix).
+4. **Distillation experiment**: teacher vs distilled student on counterfactual variants (Law 1 at world scale).
+5. Formal core: prove the Shelf Width Law in the fibered case; the Honesty Theorem; reposition the transport/holonomy material on Vorob'ev / Abramsky–Brandenburger before any external claim.
 
 ## Provenance
 

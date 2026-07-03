@@ -1,0 +1,61 @@
+item,arm,truth,summary_words,fail_retained,decision_correct,which,which_correct,abstained,incoherent
+c1item00,p1,DENIED,9,False,True,NONE,False,True,True
+c1item01,p1,APPROVED,14,,False,NONE,True,True,True
+c1item02,p1,DENIED,8,False,True,NONE,False,True,True
+c1item03,p1,DENIED,42,True,True,replication lag,True,False,False
+c1item04,p1,DENIED,18,False,True,NONE,False,True,True
+c1item05,p1,DENIED,20,False,True,vibration amplitude,True,False,False
+c1item06,p1,APPROVED,20,,False,gyro drift rate,False,True,False
+c1item07,p1,DENIED,14,False,True,NONE,False,True,True
+c1item08,p1,DENIED,22,True,True,actuator response latency,True,False,False
+c1item09,p1,DENIED,25,True,True,packet loss on the interconnect,True,False,False
+c1item10,p1,DENIED,18,False,True,cumulative cold-chain excursion,False,False,False
+c1item11,p1,DENIED,22,True,True,rebar cover depth,True,False,False
+c1item12,p1,DENIED,35,True,True,propellant tank ullage pressure,True,False,False
+c1item13,p1,DENIED,17,False,True,NONE,False,True,True
+c1item14,p1,DENIED,36,True,True,drive motor current draw,True,False,False
+c1item15,p1,DENIED,8,False,True,NONE,False,True,True
+c1item16,p1,DENIED,17,True,True,cumulative cold-chain excursion,True,False,False
+c1item17,p1,DENIED,38,True,True,pier settlement reading,True,False,False
+c1item18,p1,DENIED,12,False,True,NONE,False,True,True
+c1item19,p1,APPROVED,13,,False,condenser outlet temperature,False,True,False
+c1item20,p1,APPROVED,12,,False,NONE,True,True,True
+c1item21,p1,DENIED,10,False,True,NONE,False,True,True
+c1item22,p1,DENIED,26,True,True,UNMATCHED,False,False,False
+c1item23,p1,APPROVED,26,,False,NONE,True,False,True
+c1item24,p1,DENIED,22,False,True,NONE,False,False,True
+c1item25,p1,DENIED,13,False,True,NONE,False,True,True
+c1item26,p1,DENIED,11,False,True,crossing angle tolerance,True,True,False
+c1item27,p1,DENIED,20,True,True,rack inlet temperature,True,False,False
+c1item28,p1,DENIED,19,True,True,UNMATCHED,False,False,False
+c1item29,p1,APPROVED,18,,False,NONE,True,False,True
+c6item00,p6,DENIED,30,True,True,UNMATCHED,False,False,False
+c6item01,p6,DENIED,10,False,True,NONE,False,True,True
+c6item02,p6,DENIED,18,True,True,track gauge deviation,True,False,False
+c6item03,p6,DENIED,9,False,True,cold aisle humidity,False,True,False
+c6item04,p6,APPROVED,24,,False,NONE,True,True,True
+c6item05,p6,APPROVED,32,,True,NONE,True,False,False
+c6item06,p6,DENIED,20,False,True,NONE,False,True,True
+c6item07,p6,DENIED,18,False,True,NONE,False,True,True
+c6item08,p6,DENIED,14,False,True,NONE,False,True,True
+c6item09,p6,DENIED,10,False,True,NONE,False,True,True
+c6item10,p6,DENIED,16,False,True,NONE,False,True,True
+c6item11,p6,DENIED,19,False,True,NONE,False,True,True
+c6item12,p6,DENIED,12,False,True,NONE,False,True,True
+c6item13,p6,DENIED,24,True,True,discharge line conductivity,True,False,False
+c6item14,p6,DENIED,12,False,True,NONE,False,True,True
+c6item15,p6,DENIED,14,False,True,NONE,False,False,True
+c6item16,p6,DENIED,22,True,True,lyophilization residual moisture,True,False,False
+c6item17,p6,DENIED,23,False,False,NONE,False,False,False
+c6item18,p6,DENIED,30,True,True,avionics bus load,True,False,False
+c6item19,p6,DENIED,21,True,True,yield efficiency,True,True,False
+c6item20,p6,DENIED,10,False,True,NONE,False,True,True
+c6item21,p6,APPROVED,21,,True,NONE,True,False,False
+c6item22,p6,DENIED,16,False,True,NONE,False,True,True
+c6item23,p6,DENIED,26,True,True,anchor bolt torque,True,False,False
+c6item24,p6,APPROVED,9,,False,NONE,True,True,True
+c6item25,p6,APPROVED,16,,False,batch purity assay,False,True,False
+c6item26,p6,DENIED,13,False,True,NONE,False,True,True
+c6item27,p6,DENIED,22,True,False,NONE,False,False,False
+c6item28,p6,APPROVED,14,,False,NONE,True,True,True
+c6item29,p6,DENIED,29,False,False,NONE,False,False,False

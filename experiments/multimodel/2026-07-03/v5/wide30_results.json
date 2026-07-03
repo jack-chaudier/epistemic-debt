@@ -1,0 +1,60 @@
+{
+  "note": "EXPLORATORY 30-word arm, not preregistered",
+  "stats": {
+    "grok": {
+      "n": 0,
+      "n_lost": 0,
+      "n_retained": 0,
+      "mean_words": 0.0,
+      "decision_lost": NaN,
+      "which_lost": NaN,
+      "which_retained": NaN,
+      "abstain_lost": NaN,
+      "abstain_retained": NaN,
+      "incoherent_lost": NaN,
+      "repair_specific_lost": NaN
+    },
+    "haiku": {
+      "n": 0,
+      "n_lost": 0,
+      "n_retained": 0,
+      "mean_words": 0.0,
+      "decision_lost": NaN,
+      "which_lost": NaN,
+      "which_retained": NaN,
+      "abstain_lost": NaN,
+      "abstain_retained": NaN,
+      "incoherent_lost": NaN,
+      "repair_specific_lost": NaN
+    },
+    "gpt": {
+      "n": 60,
+      "n_lost": 20,
+      "n_retained": 10,
+      "mean_words": 32.766666666666666,
+      "decision_lost": 0.75,
+      "which_lost": 0.15,
+      "which_retained": 1.0,
+      "abstain_lost": 0.6,
+      "abstain_retained": 0.0,
+      "incoherent_lost": 0.5,
+      "repair_specific_lost": 1.0
+    },
+    "gemlite": {
+      "n": 0,
+      "n_lost": 0,
+      "n_retained": 0,
+      "mean_words": 0.0,
+      "decision_lost": NaN,
+      "which_lost": NaN,
+      "which_retained": NaN,
+      "abstain_lost": NaN,
+      "abstain_retained": NaN,
+      "incoherent_lost": NaN,
+      "repair_specific_lost": NaN
+    }
+  },
+  "cost_usd": {
+    "gpt": 0.0604
+  }
+}

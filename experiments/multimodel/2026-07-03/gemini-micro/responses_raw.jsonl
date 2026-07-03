@@ -1,0 +1,50 @@
+{"channel": "which", "bucket": "gemini-3-flash-preview", "item": "v5item01", "text": "7.  Wait, \"solvent 72 ppm\". Is \"solvent\" related to \"conductivity\"? No. Is \"purity", "usage": {"prompt": 157, "completion": 27}}
+{"channel": "which", "bucket": "gemini-3-flash-preview", "item": "v5item07", "text": "Based on the provided policy and the compressed case notes, the specific values for reactor jacket temperature, filtrate turbidity, and catalyst moisture content are not explicitly", "usage": {"prompt": 142, "completion": 29}}
+{"channel": "which", "bucket": "gemini-3-flash-preview", "item": "v5item11", "text": "Based on the policy provided, the certification is APPROVED only if:\n1. Anchor bolt torque \u2265 437.1 N-m\n2.", "usage": {"prompt": 139, "completion": 32}}
+{"channel": "which", "bucket": "gemini-3-flash-preview", "item": "v5item19", "text": "PARAMETER: NONE", "usage": {"prompt": 135, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3-flash-preview", "item": "v5item22", "text": "Based on the policy provided, the release of the Cobalt Bulwark vaccine lot requires three specific parameters to meet their respective thresholds: seal torque retention", "usage": {"prompt": 154, "completion": 27}}
+{"channel": "which", "bucket": "gemini-3-flash-preview", "item": "v5item25", "text": "PARAMETER: NONE", "usage": {"prompt": 151, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3-flash-preview", "item": "v5item30", "text": "PARAMETER: NONE", "usage": {"prompt": 128, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3-flash-preview", "item": "v5item34", "text": "PARAMETER: NONE", "usage": {"prompt": 131, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3-flash-preview", "item": "v5item36", "text": "PARAMETER: NONE", "usage": {"prompt": 160, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3-flash-preview", "item": "v5item37", "text": "PARAMETER: NONE", "usage": {"prompt": 149, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item01", "text": "PARAMETER: NONE", "usage": {"prompt": 157, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item07", "text": "PARAMETER: NONE", "usage": {"prompt": 142, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item11", "text": "PARAMETER: NONE", "usage": {"prompt": 139, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item19", "text": "PARAMETER: NONE", "usage": {"prompt": 135, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item22", "text": "PARAMETER: seal torque retention", "usage": {"prompt": 154, "completion": 5}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item25", "text": "PARAMETER: NONE", "usage": {"prompt": 151, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item30", "text": "PARAMETER: NONE", "usage": {"prompt": 128, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item34", "text": "PARAMETER: NONE", "usage": {"prompt": 131, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item36", "text": "PARAMETER: NONE", "usage": {"prompt": 160, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item37", "text": "PARAMETER: NONE", "usage": {"prompt": 149, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item39", "text": "PARAMETER: DNS failover propagation time", "usage": {"prompt": 159, "completion": 7}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item41", "text": "PARAMETER: gust speed", "usage": {"prompt": 161, "completion": 4}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item00", "text": "PARAMETER: propellant tank ullage pressure", "usage": {"prompt": 171, "completion": 7}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item03", "text": "PARAMETER: UPS reserve charge", "usage": {"prompt": 203, "completion": 5}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item09", "text": "PARAMETER: fuel", "usage": {"prompt": 221, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item12", "text": "PARAMETER: star tracker residual", "usage": {"prompt": 190, "completion": 5}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item23", "text": "PARAMETER: rebar cover depth", "usage": {"prompt": 214, "completion": 6}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item27", "text": "PARAMETER: fuel", "usage": {"prompt": 220, "completion": 3}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item32", "text": "PARAMETER: interlock relay voltage", "usage": {"prompt": 216, "completion": 6}}
+{"channel": "which", "bucket": "gemini-3.1-flash-lite", "item": "v5item55", "text": "PARAMETER: seal integrity margin", "usage": {"prompt": 181, "completion": 5}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item01", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 183, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item07", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 168, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item11", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 165, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item19", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 161, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item22", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 180, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item25", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 177, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item30", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 154, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item34", "text": "PARAMETER: NONE", "usage": {"prompt": 157, "completion": 3}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item36", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 186, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item37", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 175, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item39", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 185, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item41", "text": "PARAMETER: INSUFFICIENT_EVIDENCE", "usage": {"prompt": 187, "completion": 9}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item00", "text": "PARAMETER: ullage pressure", "usage": {"prompt": 197, "completion": 5}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item03", "text": "PARAMETER: UPS reserve charge", "usage": {"prompt": 229, "completion": 5}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item09", "text": "PARAMETER: fuel", "usage": {"prompt": 247, "completion": 3}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item12", "text": "PARAMETER: star tracker", "usage": {"prompt": 216, "completion": 4}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item23", "text": "PARAMETER: rebar cover depth", "usage": {"prompt": 240, "completion": 6}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item27", "text": "PARAMETER: fuel", "usage": {"prompt": 246, "completion": 3}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item32", "text": "PARAMETER: relay", "usage": {"prompt": 242, "completion": 3}}
+{"channel": "which_abstain", "bucket": "gemini-3.1-flash-lite", "item": "v5item55", "text": "PARAMETER: seal integrity margin", "usage": {"prompt": 207, "completion": 5}}

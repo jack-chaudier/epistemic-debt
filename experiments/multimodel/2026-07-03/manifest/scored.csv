@@ -1,0 +1,361 @@
+model,arm,item,truth,summary_words,has_manifest,fail_retained,decision,decision_correct,which,which_correct,abstained,incoherent,repair_specific,repair_ok
+grok,plain25,v5item00,DENIED,36,False,True,DENIED,True,propellant tank ullage pressure,True,False,False,True,True
+grok,plain25,v5item01,DENIED,45,False,True,DENIED,True,discharge line conductivity,True,False,False,True,True
+grok,plain25,v5item02,APPROVED,39,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item03,DENIED,35,False,True,DENIED,True,UPS reserve charge,True,False,False,True,True
+grok,plain25,v5item04,APPROVED,34,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item05,APPROVED,28,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item06,DENIED,21,False,False,APPROVED,False,NONE,False,False,False,True,False
+grok,plain25,v5item07,DENIED,41,False,True,DENIED,True,filtrate turbidity,True,False,False,True,True
+grok,plain25,v5item08,APPROVED,31,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item09,DENIED,33,False,True,DENIED,True,generator fuel reserve,True,False,False,True,True
+grok,plain25,v5item10,DENIED,19,False,True,DENIED,True,NONE,False,True,True,True,False
+grok,plain25,v5item11,DENIED,20,False,False,DENIED,True,NONE,False,True,True,True,False
+grok,plain25,v5item12,DENIED,33,False,True,DENIED,True,star tracker residual,True,False,False,True,True
+grok,plain25,v5item13,APPROVED,39,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item14,APPROVED,27,False,,APPROVED,True,NONE,True,True,False,True,True
+grok,plain25,v5item15,DENIED,36,False,False,DENIED,True,chilled water supply temperature,False,False,False,True,False
+grok,plain25,v5item16,APPROVED,25,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item17,APPROVED,41,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item18,APPROVED,19,False,,DENIED,False,NONE,True,True,True,True,False
+grok,plain25,v5item19,DENIED,18,False,False,DENIED,True,NONE,False,True,True,True,False
+grok,plain25,v5item20,APPROVED,35,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item21,DENIED,44,False,True,APPROVED,False,NONE,False,False,False,True,False
+grok,plain25,v5item22,DENIED,30,False,True,DENIED,True,seal torque retention,True,False,False,True,True
+grok,plain25,v5item23,DENIED,49,False,True,DENIED,True,rebar cover depth,True,False,False,True,True
+grok,plain25,v5item24,DENIED,31,False,True,DENIED,True,backup battery charge,True,False,False,True,True
+grok,plain25,v5item25,DENIED,35,False,False,DENIED,True,particulate count index,False,False,False,True,False
+grok,plain25,v5item26,DENIED,23,False,False,DENIED,True,NONE,False,True,True,True,False
+grok,plain25,v5item27,DENIED,48,False,True,DENIED,True,generator fuel reserve,True,False,False,True,True
+grok,plain25,v5item28,APPROVED,51,False,,APPROVED,True,label reconciliation rate,False,False,False,True,True
+grok,plain25,v5item29,APPROVED,47,False,,DENIED,False,maximum crack width,False,False,False,True,False
+grok,plain25,v5item30,DENIED,19,False,False,DENIED,True,NONE,False,True,True,True,False
+grok,plain25,v5item31,APPROVED,30,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item32,DENIED,42,False,True,DENIED,True,interlock relay voltage,True,False,False,True,True
+grok,plain25,v5item33,APPROVED,37,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item34,DENIED,23,False,False,DENIED,True,NONE,False,True,True,True,False
+grok,plain25,v5item35,APPROVED,32,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item36,DENIED,32,False,True,DENIED,True,telemetry downlink margin,True,False,False,True,True
+grok,plain25,v5item37,DENIED,42,False,True,DENIED,True,catalyst moisture content,True,False,False,True,True
+grok,plain25,v5item38,APPROVED,37,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item39,DENIED,26,False,False,APPROVED,False,NONE,False,False,False,True,False
+grok,plain25,v5item40,APPROVED,35,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item41,DENIED,22,False,True,DENIED,True,gust speed during test,True,False,False,True,True
+grok,plain25,v5item42,APPROVED,45,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item43,APPROVED,36,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item44,DENIED,34,False,True,DENIED,True,UNMATCHED,False,False,False,True,False
+grok,plain25,v5item45,APPROVED,41,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item46,APPROVED,50,False,,APPROVED,True,NONE,True,False,False,True,False
+grok,plain25,v5item47,APPROVED,27,False,,DENIED,False,expansion joint gap,False,True,False,True,False
+grok,plain25,v5item48,DENIED,20,False,False,DENIED,True,NONE,False,True,True,True,False
+grok,plain25,v5item49,DENIED,41,False,True,DENIED,True,condenser outlet temperature,True,False,False,True,True
+grok,plain25,v5item50,APPROVED,38,False,,DENIED,False,detection loop sensitivity,False,False,False,True,False
+grok,plain25,v5item51,APPROVED,35,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item52,APPROVED,26,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item53,DENIED,45,False,True,DENIED,True,expansion joint gap,True,False,False,True,True
+grok,plain25,v5item54,APPROVED,29,False,,DENIED,False,backup battery charge,False,False,False,True,False
+grok,plain25,v5item55,DENIED,29,False,True,DENIED,True,seal integrity margin,True,False,False,True,True
+grok,plain25,v5item56,APPROVED,33,False,,DENIED,False,detection loop sensitivity,False,False,False,True,False
+grok,plain25,v5item57,APPROVED,26,False,,DENIED,False,generator fuel reserve,False,False,False,True,False
+grok,plain25,v5item58,APPROVED,38,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,plain25,v5item59,APPROVED,31,False,,APPROVED,True,NONE,True,False,False,True,True
+grok,manifest,v5item00,DENIED,23,True,True,DENIED,True,propellant tank ullage pressure,True,False,False,True,True
+grok,manifest,v5item01,DENIED,18,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item02,APPROVED,25,True,,DENIED,False,NONE,True,True,True,True,False
+grok,manifest,v5item03,DENIED,30,True,False,APPROVED,False,NONE,False,False,False,True,False
+grok,manifest,v5item04,APPROVED,34,True,,APPROVED,True,NONE,True,False,False,True,True
+grok,manifest,v5item05,APPROVED,27,True,,APPROVED,True,NONE,True,False,False,True,True
+grok,manifest,v5item06,DENIED,21,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item07,DENIED,18,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item08,APPROVED,28,True,,APPROVED,True,NONE,True,False,False,True,True
+grok,manifest,v5item09,DENIED,37,True,True,DENIED,True,generator fuel reserve,True,False,False,True,True
+grok,manifest,v5item10,DENIED,18,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item11,DENIED,17,True,False,DENIED,True,NONE,False,True,True,True,True
+grok,manifest,v5item12,DENIED,30,True,True,DENIED,True,star tracker residual,True,False,False,True,True
+grok,manifest,v5item13,APPROVED,23,True,,APPROVED,True,discharge line conductivity,False,False,False,True,True
+grok,manifest,v5item14,APPROVED,25,True,,DENIED,False,NONE,True,True,True,True,True
+grok,manifest,v5item15,DENIED,14,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item16,APPROVED,23,True,,DENIED,False,NONE,True,True,True,True,True
+grok,manifest,v5item17,APPROVED,28,True,,DENIED,False,peak midspan deflection,False,False,False,True,True
+grok,manifest,v5item18,APPROVED,21,True,,DENIED,False,NONE,True,True,True,True,False
+grok,manifest,v5item19,DENIED,20,True,False,DENIED,True,NONE,False,True,True,True,True
+grok,manifest,v5item20,APPROVED,17,True,,DENIED,False,NONE,True,True,True,True,False
+grok,manifest,v5item21,DENIED,19,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item22,DENIED,22,True,False,DENIED,True,NONE,False,True,True,True,True
+grok,manifest,v5item23,DENIED,58,True,True,DENIED,True,rebar cover depth,True,False,False,True,True
+grok,manifest,v5item24,DENIED,15,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item25,DENIED,19,True,False,DENIED,True,reactor jacket temperature,False,True,False,True,True
+grok,manifest,v5item26,DENIED,18,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item27,DENIED,50,True,True,DENIED,True,generator fuel reserve,True,False,False,True,True
+grok,manifest,v5item28,APPROVED,25,True,,DENIED,False,NONE,True,True,True,True,False
+grok,manifest,v5item29,APPROVED,22,True,,DENIED,False,cable tension uniformity,False,True,False,True,False
+grok,manifest,v5item30,DENIED,17,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item31,APPROVED,19,True,,DENIED,False,NONE,True,True,True,True,False
+grok,manifest,v5item32,DENIED,46,True,True,DENIED,True,interlock relay voltage,True,False,False,True,True
+grok,manifest,v5item33,APPROVED,24,True,,DENIED,False,NONE,True,False,True,True,True
+grok,manifest,v5item34,DENIED,21,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item35,APPROVED,23,True,,APPROVED,True,NONE,True,False,False,True,True
+grok,manifest,v5item36,DENIED,24,True,False,DENIED,True,umbilical retract time,False,False,False,True,False
+grok,manifest,v5item37,DENIED,25,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item38,APPROVED,22,True,,DENIED,False,NONE,True,True,True,True,False
+grok,manifest,v5item39,DENIED,20,True,False,APPROVED,False,NONE,False,False,False,True,False
+grok,manifest,v5item40,APPROVED,23,True,,APPROVED,True,NONE,True,False,False,True,True
+grok,manifest,v5item41,DENIED,24,True,False,DENIED,True,NONE,False,False,True,True,True
+grok,manifest,v5item42,APPROVED,28,True,,APPROVED,True,NONE,True,False,False,True,False
+grok,manifest,v5item43,APPROVED,16,True,,DENIED,False,nitrogen blanket pressure,False,True,False,True,False
+grok,manifest,v5item44,DENIED,21,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item45,APPROVED,18,True,,DENIED,False,NONE,True,True,True,True,False
+grok,manifest,v5item46,APPROVED,22,True,,DENIED,False,NONE,True,True,True,True,False
+grok,manifest,v5item47,APPROVED,22,True,,DENIED,False,expansion joint gap,False,True,False,True,False
+grok,manifest,v5item48,DENIED,37,True,True,DENIED,True,thermal blanket coverage,True,False,False,True,True
+grok,manifest,v5item49,DENIED,42,True,False,APPROVED,False,seal integrity margin,False,False,False,True,False
+grok,manifest,v5item50,APPROVED,19,True,,DENIED,False,NONE,True,True,True,True,True
+grok,manifest,v5item51,APPROVED,22,True,,DENIED,False,standby link utilization,False,False,False,True,False
+grok,manifest,v5item52,APPROVED,22,True,,APPROVED,True,NONE,True,False,False,True,True
+grok,manifest,v5item53,DENIED,21,True,False,DENIED,True,NONE,False,True,True,True,False
+grok,manifest,v5item54,APPROVED,28,True,,APPROVED,True,backup battery charge,False,False,False,True,True
+grok,manifest,v5item55,DENIED,24,True,False,DENIED,True,catalyst moisture content,False,True,False,True,False
+grok,manifest,v5item56,APPROVED,19,True,,DENIED,False,NONE,True,True,True,True,True
+grok,manifest,v5item57,APPROVED,23,True,,DENIED,False,NONE,True,True,True,True,False
+grok,manifest,v5item58,APPROVED,27,True,,DENIED,False,NONE,True,False,True,True,True
+grok,manifest,v5item59,APPROVED,25,True,,DENIED,False,NONE,True,False,True,True,True
+haiku,plain25,v5item00,DENIED,27,False,True,DENIED,True,propellant tank ullage pressure,True,False,False,True,False
+haiku,plain25,v5item01,DENIED,25,False,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item02,APPROVED,30,False,,APPROVED,True,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item03,DENIED,44,False,True,DENIED,True,UPS reserve charge,True,False,False,True,True
+haiku,plain25,v5item04,APPROVED,30,False,,DENIED,False,UNMATCHED,False,False,False,True,False
+haiku,plain25,v5item05,APPROVED,50,False,,APPROVED,True,NONE,True,False,False,True,True
+haiku,plain25,v5item06,DENIED,29,False,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item07,DENIED,28,False,False,APPROVED,False,NONE,False,False,False,True,False
+haiku,plain25,v5item08,APPROVED,48,False,,APPROVED,True,NONE,True,False,False,True,True
+haiku,plain25,v5item09,DENIED,29,False,True,DENIED,True,generator fuel reserve,True,False,False,True,True
+haiku,plain25,v5item10,DENIED,38,False,True,DENIED,True,label reconciliation rate,True,False,False,True,True
+haiku,plain25,v5item11,DENIED,38,False,True,DENIED,True,anchor bolt torque,True,False,False,True,True
+haiku,plain25,v5item12,DENIED,34,False,True,DENIED,True,star tracker residual,True,False,False,True,True
+haiku,plain25,v5item13,APPROVED,53,False,,APPROVED,True,NONE,True,False,False,True,True
+haiku,plain25,v5item14,APPROVED,33,False,,DENIED,False,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item15,DENIED,37,False,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item16,APPROVED,49,False,,APPROVED,True,UNMATCHED,False,True,False,True,True
+haiku,plain25,v5item17,APPROVED,34,False,,APPROVED,True,NONE,True,False,False,True,False
+haiku,plain25,v5item18,APPROVED,28,False,,APPROVED,True,NONE,True,True,False,True,True
+haiku,plain25,v5item19,DENIED,27,False,True,DENIED,True,condenser outlet temperature,True,False,False,True,True
+haiku,plain25,v5item20,APPROVED,47,False,,APPROVED,True,NONE,True,False,False,True,True
+haiku,plain25,v5item21,DENIED,26,False,True,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item22,DENIED,34,False,True,DENIED,True,seal torque retention,True,False,False,True,True
+haiku,plain25,v5item23,DENIED,42,False,True,DENIED,True,rebar cover depth,True,False,False,True,True
+haiku,plain25,v5item24,DENIED,31,False,True,DENIED,True,backup battery charge,True,True,False,True,True
+haiku,plain25,v5item25,DENIED,28,False,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item26,DENIED,35,False,False,DENIED,True,NONE,False,True,True,True,False
+haiku,plain25,v5item27,DENIED,59,False,True,DENIED,True,generator fuel reserve,True,False,False,True,False
+haiku,plain25,v5item28,APPROVED,24,False,,DENIED,False,seal torque retention,False,True,False,True,False
+haiku,plain25,v5item29,APPROVED,35,False,,DENIED,False,maximum crack width,False,False,False,True,False
+haiku,plain25,v5item30,DENIED,38,False,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item31,APPROVED,33,False,,DENIED,False,NONE,True,True,True,True,True
+haiku,plain25,v5item32,DENIED,56,False,False,APPROVED,False,UNMATCHED,False,False,False,True,True
+haiku,plain25,v5item33,APPROVED,23,False,,DENIED,False,UNMATCHED,False,True,False,True,True
+haiku,plain25,v5item34,DENIED,32,False,False,APPROVED,False,NONE,False,False,False,True,False
+haiku,plain25,v5item35,APPROVED,50,False,,APPROVED,True,NONE,True,False,False,True,True
+haiku,plain25,v5item36,DENIED,28,False,True,DENIED,True,telemetry downlink margin,True,False,False,True,True
+haiku,plain25,v5item37,DENIED,30,False,True,DENIED,True,catalyst moisture content,True,True,False,True,True
+haiku,plain25,v5item38,APPROVED,32,False,,APPROVED,True,UNMATCHED,False,False,False,True,False
+haiku,plain25,v5item39,DENIED,28,False,False,DENIED,True,NONE,False,False,True,True,False
+haiku,plain25,v5item40,APPROVED,28,False,,APPROVED,True,NONE,True,False,False,True,True
+haiku,plain25,v5item41,DENIED,26,False,False,DENIED,True,UNMATCHED,False,False,False,True,False
+haiku,plain25,v5item42,APPROVED,35,False,,APPROVED,True,NONE,True,False,False,True,False
+haiku,plain25,v5item43,APPROVED,42,False,,DENIED,False,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item44,DENIED,27,False,False,DENIED,True,UNMATCHED,False,True,False,False,False
+haiku,plain25,v5item45,APPROVED,31,False,,APPROVED,True,NONE,True,False,False,True,True
+haiku,plain25,v5item46,APPROVED,40,False,,DENIED,False,UNMATCHED,False,True,False,True,True
+haiku,plain25,v5item47,APPROVED,37,False,,DENIED,False,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item48,DENIED,37,False,False,DENIED,True,UNMATCHED,False,False,False,True,False
+haiku,plain25,v5item49,DENIED,26,False,False,DENIED,True,seal integrity margin,False,True,False,True,False
+haiku,plain25,v5item50,APPROVED,34,False,,APPROVED,True,NONE,True,False,False,True,False
+haiku,plain25,v5item51,APPROVED,32,False,,APPROVED,True,UNMATCHED,False,True,False,True,True
+haiku,plain25,v5item52,APPROVED,30,False,,DENIED,False,NONE,True,True,True,True,False
+haiku,plain25,v5item53,DENIED,30,False,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item54,APPROVED,34,False,,APPROVED,True,NONE,True,False,False,True,False
+haiku,plain25,v5item55,DENIED,24,False,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item56,APPROVED,32,False,,DENIED,False,UNMATCHED,False,True,False,False,False
+haiku,plain25,v5item57,APPROVED,38,False,,DENIED,False,UNMATCHED,False,True,False,True,False
+haiku,plain25,v5item58,APPROVED,28,False,,DENIED,False,lyophilization residual moisture,False,True,False,True,False
+haiku,plain25,v5item59,APPROVED,32,False,,APPROVED,True,UNMATCHED,False,True,False,True,True
+haiku,manifest,v5item00,DENIED,32,True,True,DENIED,True,propellant tank ullage pressure,True,False,False,True,True
+haiku,manifest,v5item01,DENIED,31,True,False,DENIED,True,UNMATCHED,False,True,False,False,False
+haiku,manifest,v5item02,APPROVED,73,True,,APPROVED,True,NONE,True,False,False,True,False
+haiku,manifest,v5item03,DENIED,47,True,True,DENIED,True,UPS reserve charge,True,False,False,True,True
+haiku,manifest,v5item04,APPROVED,42,True,,DENIED,False,UNMATCHED,False,False,False,True,True
+haiku,manifest,v5item05,APPROVED,59,True,,APPROVED,True,NONE,True,False,False,True,True
+haiku,manifest,v5item06,DENIED,45,True,False,APPROVED,False,UNMATCHED,False,True,False,True,False
+haiku,manifest,v5item07,DENIED,37,True,False,APPROVED,False,NONE,False,False,False,True,False
+haiku,manifest,v5item08,APPROVED,64,True,,APPROVED,True,NONE,True,False,False,True,True
+haiku,manifest,v5item09,DENIED,33,True,True,DENIED,True,generator fuel reserve,True,False,False,True,True
+haiku,manifest,v5item10,DENIED,29,True,False,DENIED,True,NONE,False,True,True,False,False
+haiku,manifest,v5item11,DENIED,32,True,False,DENIED,True,UNMATCHED,False,True,False,False,False
+haiku,manifest,v5item12,DENIED,34,True,True,DENIED,True,star tracker residual,True,False,False,True,True
+haiku,manifest,v5item13,APPROVED,28,True,,DENIED,False,UNMATCHED,False,True,False,True,True
+haiku,manifest,v5item14,APPROVED,67,True,,APPROVED,True,UNMATCHED,False,False,False,True,True
+haiku,manifest,v5item15,DENIED,53,True,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,manifest,v5item16,APPROVED,45,True,,DENIED,False,UNMATCHED,False,False,False,True,False
+haiku,manifest,v5item17,APPROVED,50,True,,APPROVED,True,UNMATCHED,False,False,False,True,True
+haiku,manifest,v5item18,APPROVED,34,True,,DENIED,False,guidance regression pass rate,False,False,False,True,False
+haiku,manifest,v5item19,DENIED,53,True,True,DENIED,True,condenser outlet temperature,True,True,False,True,True
+haiku,manifest,v5item20,APPROVED,45,True,,APPROVED,True,NONE,True,False,False,True,True
+haiku,manifest,v5item21,DENIED,49,True,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,manifest,v5item22,DENIED,66,True,True,DENIED,True,UNMATCHED,False,False,False,True,True
+haiku,manifest,v5item23,DENIED,58,True,True,DENIED,True,rebar cover depth,True,False,False,True,True
+haiku,manifest,v5item24,DENIED,29,True,True,DENIED,True,backup battery charge,True,True,False,True,True
+haiku,manifest,v5item25,DENIED,55,True,True,DENIED,True,condenser outlet temperature,True,False,False,True,True
+haiku,manifest,v5item26,DENIED,30,True,False,DENIED,True,NONE,False,True,True,False,False
+haiku,manifest,v5item27,DENIED,58,True,True,DENIED,True,UNMATCHED,False,False,False,True,True
+haiku,manifest,v5item28,APPROVED,32,True,,DENIED,False,UNMATCHED,False,True,False,False,False
+haiku,manifest,v5item29,APPROVED,47,True,,DENIED,False,maximum crack width,False,False,False,True,True
+haiku,manifest,v5item30,DENIED,25,True,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,manifest,v5item31,APPROVED,32,True,,DENIED,False,UNMATCHED,False,True,False,True,True
+haiku,manifest,v5item32,DENIED,32,True,False,DENIED,True,UNMATCHED,False,True,False,False,False
+haiku,manifest,v5item33,APPROVED,37,True,,,False,UNMATCHED,False,True,False,True,True
+haiku,manifest,v5item34,DENIED,38,True,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,manifest,v5item35,APPROVED,56,True,,APPROVED,True,NONE,True,False,False,True,True
+haiku,manifest,v5item36,DENIED,30,True,True,DENIED,True,UNMATCHED,False,False,False,True,True
+haiku,manifest,v5item37,DENIED,42,True,True,DENIED,True,catalyst moisture content,True,True,False,True,True
+haiku,manifest,v5item38,APPROVED,30,True,,DENIED,False,UNMATCHED,False,True,False,False,False
+haiku,manifest,v5item39,DENIED,49,True,True,DENIED,True,DNS failover propagation time,True,False,False,True,True
+haiku,manifest,v5item40,APPROVED,31,True,,APPROVED,True,NONE,True,False,False,True,True
+haiku,manifest,v5item41,DENIED,59,True,True,DENIED,True,gust speed during test,True,False,False,True,True
+haiku,manifest,v5item42,APPROVED,30,True,,APPROVED,True,UNMATCHED,False,True,False,True,True
+haiku,manifest,v5item43,APPROVED,38,True,,APPROVED,True,nitrogen blanket pressure,False,True,False,True,True
+haiku,manifest,v5item44,DENIED,47,True,True,DENIED,True,lubrication film thickness,True,False,False,True,True
+haiku,manifest,v5item45,APPROVED,36,True,,APPROVED,True,NONE,True,False,False,True,True
+haiku,manifest,v5item46,APPROVED,33,True,,DENIED,False,UNMATCHED,False,True,False,True,False
+haiku,manifest,v5item47,APPROVED,35,True,,DENIED,False,UNMATCHED,False,True,False,True,False
+haiku,manifest,v5item48,DENIED,60,True,True,DENIED,True,UNMATCHED,False,False,False,True,True
+haiku,manifest,v5item49,DENIED,35,True,False,DENIED,True,UNMATCHED,False,True,False,True,False
+haiku,manifest,v5item50,APPROVED,28,True,,DENIED,False,UNMATCHED,False,True,False,False,False
+haiku,manifest,v5item51,APPROVED,33,True,,APPROVED,True,UNMATCHED,False,False,False,True,True
+haiku,manifest,v5item52,APPROVED,36,True,,DENIED,False,UNMATCHED,False,True,False,True,True
+haiku,manifest,v5item53,DENIED,37,True,False,DENIED,True,UNMATCHED,False,True,False,False,False
+haiku,manifest,v5item54,APPROVED,68,True,,APPROVED,True,NONE,True,False,False,True,True
+haiku,manifest,v5item55,DENIED,34,True,True,DENIED,True,seal integrity margin,True,False,False,True,True
+haiku,manifest,v5item56,APPROVED,59,True,,APPROVED,True,UNMATCHED,False,False,False,True,True
+haiku,manifest,v5item57,APPROVED,60,True,,APPROVED,True,NONE,True,False,False,True,True
+haiku,manifest,v5item58,APPROVED,28,True,,DENIED,False,UNMATCHED,False,True,False,True,False
+haiku,manifest,v5item59,APPROVED,46,True,,APPROVED,True,UNMATCHED,False,True,False,True,False
+gpt,plain25,v5item00,DENIED,24,False,False,DENIED,True,NONE,False,False,True,True,False
+gpt,plain25,v5item01,DENIED,39,False,False,DENIED,True,NONE,False,True,True,True,True
+gpt,plain25,v5item02,APPROVED,26,False,,DENIED,False,NONE,True,True,True,True,True
+gpt,plain25,v5item03,DENIED,24,False,False,DENIED,True,NONE,False,False,True,True,False
+gpt,plain25,v5item04,APPROVED,24,False,,DENIED,False,adjuvant concentration ratio,False,True,False,True,False
+gpt,plain25,v5item05,APPROVED,28,False,,DENIED,False,NONE,True,True,True,True,False
+gpt,plain25,v5item06,DENIED,31,False,False,DENIED,True,NONE,False,True,True,True,False
+gpt,plain25,v5item07,DENIED,26,False,False,DENIED,True,NONE,False,True,True,True,False
+gpt,plain25,v5item08,APPROVED,27,False,,APPROVED,True,NONE,True,False,False,True,True
+gpt,plain25,v5item09,DENIED,27,False,True,DENIED,True,generator fuel reserve,True,False,False,True,True
+gpt,plain25,v5item10,DENIED,41,False,True,DENIED,True,freezer alarm response time,False,False,False,True,True
+gpt,plain25,v5item11,DENIED,63,False,True,DENIED,True,anchor bolt torque,True,False,False,True,True
+gpt,plain25,v5item12,DENIED,25,False,False,APPROVED,False,NONE,False,False,False,True,False
+gpt,plain25,v5item13,APPROVED,24,False,,DENIED,False,discharge line conductivity,False,False,False,True,False
+gpt,plain25,v5item14,APPROVED,27,False,,DENIED,False,NONE,True,True,True,True,True
+gpt,plain25,v5item15,DENIED,27,False,False,DENIED,True,NONE,False,True,True,True,False
+gpt,plain25,v5item16,APPROVED,31,False,,DENIED,False,diluent conductivity,False,False,False,True,True
+gpt,plain25,v5item17,APPROVED,35,False,,APPROVED,True,NONE,True,False,False,True,True
+gpt,plain25,v5item18,APPROVED,26,False,,DENIED,False,NONE,True,True,True,True,False
+gpt,plain25,v5item19,DENIED,37,False,True,DENIED,True,condenser outlet temperature,True,False,False,True,True
+gpt,plain25,v5item20,APPROVED,22,False,,DENIED,False,crossing angle tolerance,False,True,False,True,False
+gpt,plain25,v5item21,DENIED,29,False,False,DENIED,True,NONE,False,True,True,True,False
+gpt,plain25,v5item22,DENIED,23,False,False,DENIED,True,seal torque retention,True,True,False,True,True
+gpt,plain25,v5item23,DENIED,29,False,True,DENIED,True,rebar cover depth,True,False,False,True,True
+gpt,plain25,v5item24,DENIED,29,False,False,DENIED,True,NONE,False,True,True,True,False
+gpt,plain25,v5item25,DENIED,27,False,False,DENIED,True,NONE,False,True,True,True,False
+gpt,plain25,v5item26,DENIED,26,False,False,DENIED,True,NONE,False,True,True,True,False
+gpt,plain25,v5item27,DENIED,41,False,False,DENIED,True,NONE,False,True,True,True,False
+gpt,plain25,v5item28,APPROVED,28,False,,DENIED,False,NONE,True,True,True,True,False
+gpt,plain25,v5item29,APPROVED,27,False,,DENIED,False,maximum crack width,False,False,False,True,False
+gpt,plain25,v5item30,DENIED,27,False,False,DENIED,True,umbilical retract time,False,True,False,True,False
+gpt,plain25,v5item31,APPROVED,27,False,,DENIED,False,NONE,True,True,True,True,True
+gpt,plain25,v5item32,DENIED,58,False,True,DENIED,True,interlock relay voltage,True,False,False,True,True
+gpt,plain25,v5item33,APPROVED,45,False,,APPROVED,True,NONE,True,False,False,True,True
+gpt,plain25,v5item34,DENIED,27,False,False,DENIED,True,NONE,False,True,True,True,False
+gpt,plain25,v5item35,APPROVED,32,False,,APPROVED,True,NONE,True,True,False,True,False
+gpt,plain25,v5item36,DENIED,26,False,False,DENIED,True,telemetry downlink margin,True,False,False,True,True
+gpt,plain25,v5item37,DENIED,28,False,True,DENIED,True,catalyst moisture content,True,False,False,True,True
+gpt,plain25,v5item38,APPROVED,23,False,,DENIED,False,sleeper spacing variance,False,False,False,True,True
+gpt,plain25,v5item39,DENIED,25,False,False,APPROVED,False,NONE,False,False,False,True,False
+gpt,plain25,v5item40,APPROVED,27,False,,APPROVED,True,NONE,True,False,False,True,True
+gpt,plain25,v5item41,DENIED,24,False,False,DENIED,True,NONE,False,True,True,True,False
+gpt,plain25,v5item42,APPROVED,28,False,,DENIED,False,avionics bus load,False,False,False,True,False
+gpt,plain25,v5item43,APPROVED,39,False,,DENIED,False,NONE,True,True,True,True,False
+gpt,plain25,v5item44,DENIED,22,False,False,APPROVED,False,NONE,False,False,False,True,True
+gpt,plain25,v5item45,APPROVED,24,False,,DENIED,False,NONE,True,True,True,True,True
+gpt,plain25,v5item46,APPROVED,35,False,,DENIED,False,NONE,True,True,True,True,True
+gpt,plain25,v5item47,APPROVED,53,False,,APPROVED,True,NONE,True,False,False,True,False
+gpt,plain25,v5item48,DENIED,26,False,False,DENIED,True,lead operator certification rating,False,False,False,True,False
+gpt,plain25,v5item49,DENIED,26,False,False,DENIED,True,seal integrity margin,False,True,False,True,False
+gpt,plain25,v5item50,APPROVED,28,False,,DENIED,False,NONE,True,True,True,True,False
+gpt,plain25,v5item51,APPROVED,27,False,,DENIED,False,NONE,True,False,True,True,True
+gpt,plain25,v5item52,APPROVED,25,False,,DENIED,False,diluent conductivity,False,True,False,True,False
+gpt,plain25,v5item53,DENIED,25,False,False,DENIED,True,rebar cover depth,False,False,False,True,False
+gpt,plain25,v5item54,APPROVED,29,False,,APPROVED,True,NONE,True,False,False,True,True
+gpt,plain25,v5item55,DENIED,33,False,False,DENIED,True,NONE,False,False,True,True,False
+gpt,plain25,v5item56,APPROVED,30,False,,DENIED,False,lubrication film thickness,False,True,False,True,False
+gpt,plain25,v5item57,APPROVED,27,False,,DENIED,False,standby CPU headroom,False,True,False,True,False
+gpt,plain25,v5item58,APPROVED,22,False,,DENIED,False,NONE,True,True,True,True,False
+gpt,plain25,v5item59,APPROVED,26,False,,DENIED,False,NONE,True,False,True,True,True
+gpt,manifest,v5item00,DENIED,29,True,True,DENIED,True,propellant tank ullage pressure,True,False,False,True,True
+gpt,manifest,v5item01,DENIED,28,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item02,APPROVED,26,True,,DENIED,False,NONE,True,True,True,True,True
+gpt,manifest,v5item03,DENIED,42,True,True,DENIED,True,UPS reserve charge,True,False,False,True,True
+gpt,manifest,v5item04,APPROVED,27,True,,DENIED,False,sterility clarity index,False,True,False,True,False
+gpt,manifest,v5item05,APPROVED,28,True,,DENIED,False,peak midspan deflection,False,True,False,True,False
+gpt,manifest,v5item06,DENIED,27,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item07,DENIED,24,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item08,APPROVED,41,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item09,DENIED,27,True,True,DENIED,True,generator fuel reserve,True,False,False,True,True
+gpt,manifest,v5item10,DENIED,27,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item11,DENIED,28,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item12,DENIED,27,True,False,DENIED,True,star tracker residual,True,True,False,True,True
+gpt,manifest,v5item13,APPROVED,25,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item14,APPROVED,28,True,,DENIED,False,ballast compaction index,False,True,False,True,True
+gpt,manifest,v5item15,DENIED,27,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item16,APPROVED,33,True,,DENIED,False,NONE,True,True,True,True,True
+gpt,manifest,v5item17,APPROVED,27,True,,DENIED,False,NONE,True,True,True,True,True
+gpt,manifest,v5item18,APPROVED,30,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item19,DENIED,28,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item20,APPROVED,24,True,,DENIED,False,ballast compaction index,False,True,False,True,False
+gpt,manifest,v5item21,DENIED,27,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item22,DENIED,41,True,True,DENIED,True,seal torque retention,True,False,False,True,True
+gpt,manifest,v5item23,DENIED,28,True,False,DENIED,True,bearing seat rotation,False,True,False,True,False
+gpt,manifest,v5item24,DENIED,27,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item25,DENIED,25,True,False,DENIED,True,NONE,False,True,True,True,True
+gpt,manifest,v5item26,DENIED,23,True,False,DENIED,True,NONE,False,True,True,True,True
+gpt,manifest,v5item27,DENIED,27,True,False,DENIED,True,standby CPU headroom,False,True,False,True,False
+gpt,manifest,v5item28,APPROVED,26,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item29,APPROVED,24,True,,DENIED,False,maximum crack width,False,False,False,True,False
+gpt,manifest,v5item30,DENIED,27,True,False,DENIED,True,NONE,False,True,True,True,True
+gpt,manifest,v5item31,APPROVED,23,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item32,DENIED,23,True,False,DENIED,True,cable insulation resistance,False,True,False,True,False
+gpt,manifest,v5item33,APPROVED,28,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item34,DENIED,28,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item35,APPROVED,27,True,,DENIED,False,NONE,True,True,True,True,True
+gpt,manifest,v5item36,DENIED,24,True,False,DENIED,True,fairing pressure differential,False,True,False,True,True
+gpt,manifest,v5item37,DENIED,28,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item38,APPROVED,24,True,,DENIED,False,detection loop sensitivity,False,True,False,True,False
+gpt,manifest,v5item39,DENIED,27,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item40,APPROVED,26,True,,DENIED,False,NONE,True,False,True,True,True
+gpt,manifest,v5item41,DENIED,26,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item42,APPROVED,31,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item43,APPROVED,24,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item44,DENIED,27,True,False,DENIED,True,lubrication film thickness,True,True,False,True,True
+gpt,manifest,v5item45,APPROVED,30,True,,DENIED,False,NONE,True,True,True,True,True
+gpt,manifest,v5item46,APPROVED,37,True,,DENIED,False,fill-volume deviation,False,False,False,True,False
+gpt,manifest,v5item47,APPROVED,46,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item48,DENIED,26,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item49,DENIED,30,True,False,DENIED,True,NONE,False,True,True,True,False
+gpt,manifest,v5item50,APPROVED,25,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item51,APPROVED,84,True,,APPROVED,True,NONE,True,False,False,True,True
+gpt,manifest,v5item52,APPROVED,25,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item53,DENIED,26,True,False,DENIED,True,load distribution factor,False,True,False,True,False
+gpt,manifest,v5item54,APPROVED,28,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item55,DENIED,28,True,False,DENIED,True,NONE,False,True,True,True,True
+gpt,manifest,v5item56,APPROVED,25,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item57,APPROVED,28,True,,DENIED,False,NONE,True,True,True,True,False
+gpt,manifest,v5item58,APPROVED,24,True,,DENIED,False,lyophilization residual moisture,False,True,False,True,False
+gpt,manifest,v5item59,APPROVED,26,True,,DENIED,False,NONE,True,True,True,True,False

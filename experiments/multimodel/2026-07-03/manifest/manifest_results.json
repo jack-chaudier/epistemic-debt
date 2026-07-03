@@ -1,0 +1,198 @@
+{
+  "design": {
+    "arms": [
+      "plain25",
+      "manifest"
+    ],
+    "corpus": "v5 items.jsonl",
+    "prereg": "prereg_manifest.md"
+  },
+  "per_model": {
+    "grok": {
+      "plain25": {
+        "n": 60,
+        "n_lost": 10,
+        "n_retained": 20,
+        "mean_words": 33.56666666666667,
+        "manifest_rate": 0.0,
+        "decision_overall": 0.8333333333333334,
+        "decision_lost": 0.8,
+        "which_lost": 0.0,
+        "which_retained": 0.85,
+        "abstain_lost": 0.6,
+        "abstain_retained": 0.05,
+        "incoherent_lost": 0.6,
+        "repair_specific_lost": 1.0,
+        "repair_ok_lost": 0.0
+      },
+      "manifest": {
+        "n": 60,
+        "n_lost": 23,
+        "n_retained": 7,
+        "mean_words": 24.483333333333334,
+        "manifest_rate": 1.0,
+        "decision_overall": 0.6,
+        "decision_lost": 0.8695652173913043,
+        "which_lost": 0.0,
+        "which_retained": 1.0,
+        "abstain_lost": 0.782608695652174,
+        "abstain_retained": 0.0,
+        "incoherent_lost": 0.7391304347826086,
+        "repair_specific_lost": 1.0,
+        "repair_ok_lost": 0.21739130434782608
+      }
+    },
+    "haiku": {
+      "plain25": {
+        "n": 60,
+        "n_lost": 16,
+        "n_retained": 14,
+        "mean_words": 34.416666666666664,
+        "manifest_rate": 0.0,
+        "decision_overall": 0.7333333333333333,
+        "decision_lost": 0.8125,
+        "which_lost": 0.0,
+        "which_retained": 0.9285714285714286,
+        "abstain_lost": 0.625,
+        "abstain_retained": 0.21428571428571427,
+        "incoherent_lost": 0.125,
+        "repair_specific_lost": 0.9375,
+        "repair_ok_lost": 0.0625
+      },
+      "manifest": {
+        "n": 60,
+        "n_lost": 13,
+        "n_retained": 17,
+        "mean_words": 42.68333333333333,
+        "manifest_rate": 1.0,
+        "decision_overall": 0.7333333333333333,
+        "decision_lost": 0.8461538461538461,
+        "which_lost": 0.0,
+        "which_retained": 0.7647058823529411,
+        "abstain_lost": 0.9230769230769231,
+        "abstain_retained": 0.17647058823529413,
+        "incoherent_lost": 0.15384615384615385,
+        "repair_specific_lost": 0.5384615384615384,
+        "repair_ok_lost": 0.0
+      }
+    },
+    "gpt": {
+      "plain25": {
+        "n": 60,
+        "n_lost": 23,
+        "n_retained": 7,
+        "mean_words": 29.783333333333335,
+        "manifest_rate": 0.0,
+        "decision_overall": 0.5666666666666667,
+        "decision_lost": 0.8695652173913043,
+        "which_lost": 0.08695652173913043,
+        "which_retained": 0.8571428571428571,
+        "abstain_lost": 0.6086956521739131,
+        "abstain_retained": 0.0,
+        "incoherent_lost": 0.6086956521739131,
+        "repair_specific_lost": 1.0,
+        "repair_ok_lost": 0.17391304347826086
+      },
+      "manifest": {
+        "n": 60,
+        "n_lost": 26,
+        "n_retained": 4,
+        "mean_words": 28.866666666666667,
+        "manifest_rate": 1.0,
+        "decision_overall": 0.5166666666666667,
+        "decision_lost": 1.0,
+        "which_lost": 0.07692307692307693,
+        "which_retained": 1.0,
+        "abstain_lost": 1.0,
+        "abstain_retained": 0.0,
+        "incoherent_lost": 0.7307692307692307,
+        "repair_specific_lost": 1.0,
+        "repair_ok_lost": 0.2692307692307692
+      }
+    }
+  },
+  "preregistered": {
+    "grok": {
+      "applicable": true,
+      "PM1_fabrication_drops": {
+        "criteria": "repair_specific_lost(manifest) <= repair_specific_lost(plain25) - 0.30",
+        "values": {
+          "plain25": 1.0,
+          "manifest": 1.0
+        },
+        "passed": false
+      },
+      "PM2_verdict_free": {
+        "criteria": "decision_overall(manifest) >= decision_overall(plain25) - 0.10",
+        "values": {
+          "plain25": 0.8333333333333334,
+          "manifest": 0.6
+        },
+        "passed": false
+      }
+    },
+    "haiku": {
+      "applicable": true,
+      "PM1_fabrication_drops": {
+        "criteria": "repair_specific_lost(manifest) <= repair_specific_lost(plain25) - 0.30",
+        "values": {
+          "plain25": 0.9375,
+          "manifest": 0.5384615384615384
+        },
+        "passed": true
+      },
+      "PM2_verdict_free": {
+        "criteria": "decision_overall(manifest) >= decision_overall(plain25) - 0.10",
+        "values": {
+          "plain25": 0.7333333333333333,
+          "manifest": 0.7333333333333333
+        },
+        "passed": true
+      }
+    },
+    "gpt": {
+      "applicable": true,
+      "PM1_fabrication_drops": {
+        "criteria": "repair_specific_lost(manifest) <= repair_specific_lost(plain25) - 0.30",
+        "values": {
+          "plain25": 1.0,
+          "manifest": 1.0
+        },
+        "passed": false
+      },
+      "PM2_verdict_free": {
+        "criteria": "decision_overall(manifest) >= decision_overall(plain25) - 0.10",
+        "values": {
+          "plain25": 0.5666666666666667,
+          "manifest": 0.5166666666666667
+        },
+        "passed": true
+      }
+    }
+  },
+  "tokens": {
+    "grok": {
+      "prompt": 276804,
+      "completion": 17480
+    },
+    "haiku": {
+      "prompt": 250600,
+      "completion": 87068
+    },
+    "gpt": {
+      "prompt": 209016,
+      "completion": 20707
+    },
+    "gemlite": {
+      "prompt": 0,
+      "completion": 0
+    }
+  },
+  "cost_usd": {
+    "grok": 0.0641,
+    "haiku": 0.6859,
+    "gpt": 0.1167,
+    "gemlite": 0.0
+  },
+  "total_cost_usd": 0.8667
+}

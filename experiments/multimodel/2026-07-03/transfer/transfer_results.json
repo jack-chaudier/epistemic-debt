@@ -1,0 +1,172 @@
+{
+  "design": {
+    "grid": "4x4",
+    "probes": [
+      "decision",
+      "which",
+      "which_abstain"
+    ],
+    "corpus": "v5 items.jsonl",
+    "summaries": "v5 cached",
+    "prereg": "prereg_transfer.md"
+  },
+  "comp_applicable": {
+    "grok": true,
+    "haiku": true,
+    "gpt": false
+  },
+  "pair_stats": {
+    "grok->grok": {
+      "n_lost": 22,
+      "n_retained": 8,
+      "decision_lost": 0.8636363636363636,
+      "which_lost": 0.0,
+      "which_retained": 1.0,
+      "which_confab_lost": 0.13636363636363635,
+      "abstain_lost": 0.8181818181818182,
+      "abstain_retained": 0.0,
+      "incoherent_lost": 0.7272727272727273
+    },
+    "grok->haiku": {
+      "n_lost": 22,
+      "n_retained": 8,
+      "decision_lost": 0.5909090909090909,
+      "which_lost": 0.0,
+      "which_retained": 1.0,
+      "which_confab_lost": 0.0,
+      "abstain_lost": 0.7727272727272727,
+      "abstain_retained": 0.0,
+      "incoherent_lost": 0.0
+    },
+    "grok->gpt": {
+      "n_lost": 22,
+      "n_retained": 8,
+      "decision_lost": 0.8636363636363636,
+      "which_lost": 0.09090909090909091,
+      "which_retained": 1.0,
+      "which_confab_lost": 0.18181818181818182,
+      "abstain_lost": 0.7727272727272727,
+      "abstain_retained": 0.0,
+      "incoherent_lost": 0.5909090909090909
+    },
+    "haiku->grok": {
+      "n_lost": 19,
+      "n_retained": 11,
+      "decision_lost": 0.8947368421052632,
+      "which_lost": 0.0,
+      "which_retained": 1.0,
+      "which_confab_lost": 0.10526315789473684,
+      "abstain_lost": 0.8947368421052632,
+      "abstain_retained": 0.0,
+      "incoherent_lost": 0.7894736842105263
+    },
+    "haiku->haiku": {
+      "n_lost": 19,
+      "n_retained": 11,
+      "decision_lost": 0.9473684210526315,
+      "which_lost": 0.0,
+      "which_retained": 1.0,
+      "which_confab_lost": 0.0,
+      "abstain_lost": 0.9473684210526315,
+      "abstain_retained": 0.09090909090909091,
+      "incoherent_lost": 0.05263157894736842
+    },
+    "haiku->gpt": {
+      "n_lost": 19,
+      "n_retained": 11,
+      "decision_lost": 0.9473684210526315,
+      "which_lost": 0.05263157894736842,
+      "which_retained": 0.9090909090909091,
+      "which_confab_lost": 0.05263157894736842,
+      "abstain_lost": 0.8947368421052632,
+      "abstain_retained": 0.0,
+      "incoherent_lost": 0.8421052631578947
+    },
+    "gpt->grok": {
+      "n_lost": 28,
+      "n_retained": 2,
+      "decision_lost": 0.9285714285714286,
+      "which_lost": 0.0,
+      "which_retained": 1.0,
+      "which_confab_lost": 0.07142857142857142,
+      "abstain_lost": 0.8571428571428571,
+      "abstain_retained": 0.0,
+      "incoherent_lost": 0.8571428571428571
+    },
+    "gpt->haiku": {
+      "n_lost": 28,
+      "n_retained": 2,
+      "decision_lost": 0.8214285714285714,
+      "which_lost": 0.03571428571428571,
+      "which_retained": 1.0,
+      "which_confab_lost": 0.0,
+      "abstain_lost": 0.9285714285714286,
+      "abstain_retained": 0.0,
+      "incoherent_lost": 0.03571428571428571
+    },
+    "gpt->gpt": {
+      "n_lost": 28,
+      "n_retained": 2,
+      "decision_lost": 1.0,
+      "which_lost": 0.10714285714285714,
+      "which_retained": 1.0,
+      "which_confab_lost": 0.03571428571428571,
+      "abstain_lost": 0.8928571428571429,
+      "abstain_retained": 0.0,
+      "incoherent_lost": 0.8571428571428571
+    }
+  },
+  "preregistered": {
+    "P-T1_debt_transfers": {
+      "votes": {
+        "grok->haiku": true,
+        "grok->gpt": true,
+        "haiku->grok": true,
+        "haiku->gpt": true
+      },
+      "n_pass": 4,
+      "n_applicable": 4,
+      "holds": true
+    },
+    "P-T2_verdict_shelf_transfers": {
+      "votes": {
+        "grok->haiku": false,
+        "grok->gpt": true,
+        "haiku->grok": true,
+        "haiku->gpt": true
+      },
+      "n_pass": 3,
+      "n_applicable": 4,
+      "holds": false
+    },
+    "P-T3_no_reader_recovers": {
+      "votes": {
+        "grok": true,
+        "haiku": true
+      },
+      "n_pass": 2,
+      "n_applicable": 2,
+      "holds": true
+    }
+  },
+  "tokens": {
+    "grok": {
+      "prompt": 101807,
+      "completion": 9554
+    },
+    "haiku": {
+      "prompt": 67555,
+      "completion": 50236
+    },
+    "gpt": {
+      "prompt": 63028,
+      "completion": 12150
+    }
+  },
+  "cost_usd": {
+    "grok": 0.0251,
+    "haiku": 0.3187,
+    "gpt": 0.0447
+  },
+  "total_cost_usd": 0.3885
+}

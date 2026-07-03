@@ -1,0 +1,61 @@
+item,truth,fail_retained,decision_correct,which,which_correct,which_confab,abstained,incoherent
+v5item00,DENIED,True,True,propellant tank ullage pressure,True,False,False,False
+v5item01,DENIED,False,True,discharge line conductivity,True,False,True,False
+v5item02,APPROVED,,False,point blade wear,False,True,False,False
+v5item03,DENIED,True,True,UPS reserve charge,True,False,False,False
+v5item04,APPROVED,,False,NONE,True,False,True,True
+v5item05,APPROVED,,True,NONE,True,False,True,False
+v5item06,DENIED,False,True,NONE,False,False,True,True
+v5item07,DENIED,False,True,UNMATCHED,False,False,True,False
+v5item08,APPROVED,,True,NONE,True,False,False,False
+v5item09,DENIED,True,True,generator fuel reserve,True,False,False,False
+v5item10,DENIED,False,False,NONE,False,False,False,False
+v5item11,DENIED,False,True,NONE,False,False,True,True
+v5item12,DENIED,True,True,star tracker residual,True,False,False,False
+v5item13,APPROVED,,False,discharge line conductivity,False,True,True,False
+v5item14,APPROVED,,False,UNMATCHED,False,False,True,False
+v5item15,DENIED,False,True,UNMATCHED,False,False,True,False
+v5item16,APPROVED,,False,diluent conductivity,False,True,True,False
+v5item17,APPROVED,,False,vibration amplitude,False,True,True,False
+v5item18,APPROVED,,False,gyro drift rate,False,True,True,False
+v5item19,DENIED,False,True,NONE,False,False,True,True
+v5item20,APPROVED,,False,UNMATCHED,False,False,True,False
+v5item21,DENIED,False,True,UNMATCHED,False,False,True,False
+v5item22,DENIED,False,True,adjuvant concentration ratio,False,True,True,False
+v5item23,DENIED,True,True,rebar cover depth,True,False,False,False
+v5item24,DENIED,False,True,UNMATCHED,False,False,True,False
+v5item25,DENIED,False,True,,False,False,True,False
+v5item26,DENIED,False,True,UNMATCHED,False,False,True,False
+v5item27,DENIED,True,True,generator fuel reserve,True,False,False,False
+v5item28,APPROVED,,False,label reconciliation rate,False,True,True,False
+v5item29,APPROVED,,False,pier settlement reading,False,True,True,False
+v5item30,DENIED,False,True,NONE,False,False,True,True
+v5item31,APPROVED,,False,NONE,True,False,True,True
+v5item32,DENIED,True,True,interlock relay voltage,True,False,False,False
+v5item33,APPROVED,,False,battery string impedance,False,True,True,False
+v5item34,DENIED,False,False,NONE,False,False,False,False
+v5item35,APPROVED,,False,vibration amplitude,False,True,True,False
+v5item36,DENIED,False,True,NONE,False,False,True,True
+v5item37,DENIED,False,True,filtrate turbidity,False,True,True,False
+v5item38,APPROVED,,False,point blade wear,False,True,True,False
+v5item39,DENIED,False,True,DNS failover propagation time,True,False,True,False
+v5item40,APPROVED,,False,NONE,True,False,True,True
+v5item41,DENIED,False,True,gust speed during test,True,False,True,False
+v5item42,APPROVED,,True,NONE,True,False,False,False
+v5item43,APPROVED,,False,nitrogen blanket pressure,False,True,True,False
+v5item44,DENIED,False,True,lubrication film thickness,True,False,True,False
+v5item45,APPROVED,,False,rack inlet temperature,False,True,True,False
+v5item46,APPROVED,,False,freezer alarm response time,False,True,False,False
+v5item47,APPROVED,,False,NONE,True,False,True,True
+v5item48,DENIED,False,True,NONE,False,False,True,True
+v5item49,DENIED,False,True,seal integrity margin,False,True,True,False
+v5item50,APPROVED,,False,detection loop sensitivity,False,True,True,False
+v5item51,APPROVED,,True,NONE,True,False,False,False
+v5item52,APPROVED,,False,stability composite score,False,True,True,False
+v5item53,DENIED,False,True,,False,False,True,False
+v5item54,APPROVED,,False,umbilical retract time,False,True,True,False
+v5item55,DENIED,True,True,seal integrity margin,True,False,False,False
+v5item56,APPROVED,,False,lubrication film thickness,False,True,True,False
+v5item57,APPROVED,,False,UNMATCHED,False,False,True,False
+v5item58,APPROVED,,False,lyophilization residual moisture,False,True,True,False
+v5item59,APPROVED,,False,gust speed during test,False,True,True,False

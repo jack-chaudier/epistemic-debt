@@ -1,0 +1,184 @@
+{"model": "grok", "item": "v5item00", "summary": "Sable Heron launch: wind 11.1 m/s, guidance 97.84 %, avionics 45 %, ullage 6.11 bar, star tracker 28.2\u2033, gyro 0.51 \u00b0/h."}
+{"model": "grok", "item": "v5item01", "summary": "Scarlet Compass batch: purity 98.78 %, yield 88.57 %, catalyst 2.75 % moisture, jacket 72.45 \u00b0C, solvent 72 ppm."}
+{"model": "grok", "item": "v5item02", "summary": "Jade Zephyr switch assembly: insulation 26.94 M\u03a9, lube 56.42 \u00b5m, relay 22.65 V, throw 5.45 kN, gauge 4.86 mm, alignment 0.63\u00b0, current 21.8 A, heater 27.74 \u03a9, sensitivity 78 %."}
+{"model": "grok", "item": "v5item03", "summary": "Slate Windlass failover: humidity 37.73%, rebuild 40.26%, impedance 24.86 m\u03a9, DNS 40.47 s, lag 11.21 s, transfer 130 ms, queue 23.42, packet loss 2.4%, fuel 18.21 h, UPS 73.65%."}
+{"model": "grok", "item": "v5item04", "summary": "Emerald Cairn vaccine lot QC: endotoxin 1.11 EU/mL, moisture 2.74%, fill 2.48%, sterility 93.78, cold-chain 25.45 min, adjuvant 97.92%, seal 93.73%, stability 82.32. Minor maintenance notes."}
+{"model": "grok", "item": "v5item05", "summary": "Scarlet Keystone load test: torque 467.74 N-m, settlement 6.23 mm, vibration 6.19 mm/s, tension 89.3%, deflection 26.67 mm, crack 0.38 mm."}
+{"model": "grok", "item": "v5item06", "summary": "Jade Isthmus launch: routine ops, minor maintenance, telemetry nominal, no anomalies."}
+{"model": "grok", "item": "v5item07", "summary": "Coral Bulwark batch: 96.32% purity, 90.1% yield; key metrics logged; minor admin & maintenance notes."}
+{"model": "grok", "item": "v5item08", "summary": "Violet Marten switch assembly: gauge 3.74 mm, motor 15.31 A, throw 4.21 kN, alignment 0.89\u00b0, latency 332 ms."}
+{"model": "grok", "item": "v5item09", "summary": "Onyx Vanguard failover: storage 50.54%, fuel 16.21h, humidity 33.11%, queue 15.83, water 9.4\u00b0C, link 43.62%, UPS 77.61%, battery 34.88m\u03a9, inlet 25.62\u00b0C, loss 2.18%, CPU 29.09%, DNS 53.41s."}
+{"model": "grok", "item": "v5item10", "summary": "Emerald Lattice vaccine lot: uneventful visits, minor maintenance, metrics within limits."}
+{"model": "grok", "item": "v5item11", "summary": "Sable Windlass load test: temps, torques, cracks, settlements, visits logged; minor badge & ledger fixes."}
+{"model": "grok", "item": "v5item12", "summary": "Basalt Sextant launch: key metrics\u2014pressure 3.02 kPa, avionics 46.41 %, star tracker 23.9\", thermal 97.52 %, gyro 0.49 \u00b0/h, RF 8.62 dB, battery 77.93 %. Routine admin, weather, maintenance noted."}
+{"model": "grok", "item": "v5item13", "summary": "Golden Mallet batch: purity 112.47%, yield 77.01%, solvent 69.16 ppm, torque 188.62 N-m, seal 93.23%."}
+{"model": "grok", "item": "v5item14", "summary": "Viridian Yardarm: routine maintenance, badge/escort updates, sensor readings, minor ledger fixes, uneventful visits."}
+{"model": "grok", "item": "v5item15", "summary": "Viridian Cairn failover: metrics, maint logs, anomalies, staffing notes."}
+{"model": "grok", "item": "v5item16", "summary": "Violet Lattice vaccine lot: multiple clicking noises, work orders opened; key metrics logged (torque 99.53%, potency 113.22%, stability 85.09, excursions noted)."}
+{"model": "grok", "item": "v5item17", "summary": "Cobalt Rampart load test: 54.9 mm joint, 5.42 mm settlement, 59.17 mm deflection, 0.05 mm crack, 90.25 % grout margin."}
+{"model": "grok", "item": "v5item18", "summary": "Quartz Yardarm launch: minor anomalies, work orders, 74.93% battery, 5.17 dB margin, 96.4% coverage."}
+{"model": "grok", "item": "v5item19", "summary": "Flint Marten batch: minor admin fixes, routine readings, equipment notes, uneventful visits."}
+{"model": "grok", "item": "v5item20", "summary": "Maroon Nimbus: switch metrics, huddles, maintenance fixes, inspections, readings logged."}
+{"model": "grok", "item": "v5item21", "summary": "Viridian Rampart failover: metrics, maintenance, weather, staffing, minor issues logged."}
+{"model": "grok", "item": "v5item22", "summary": "Cobalt Bulwark vaccine lot QC: potency 100.92%, sterility 98.53%, moisture 2.1%, O\u2082 4.34%; minor equipment notes."}
+{"model": "grok", "item": "v5item23", "summary": "Pier settlement 7.44 mm, midspan 40.85 mm; rebar 42.43 mm, tension 91.64 %, torque 310.39 N-m, gust 10.09 m/s, gap 32.86 mm, vibration 5.52 mm/s, core 33.46 MPa, grout 80.63 %, bearing 0.99\u00b0."}
+{"model": "grok", "item": "v5item24", "summary": "Slate Vanguard: pressure, temps, sensors, maintenance, staffing, minor anomalies logged."}
+{"model": "grok", "item": "v5item25", "summary": "Pewter Mallet batch: 85.09% yield, 45.97 ppm solvent; routine ops, minor maintenance, uneventful visits."}
+{"model": "grok", "item": "v5item26", "summary": "Golden Dynamo switch assembly: routine maint, visitor tours, badge issues, sensor readings logged."}
+{"model": "grok", "item": "v5item27", "summary": "DNS failover 38s; rack 20.35 \u00b0C; fuel 10.73 h; battery 22.23 m\u03a9; rebuild 43.78 %; link 69.97 %; UPS 80.39 %; chilled water 7.88 \u00b0C; transfer 88.98 ms; packet loss 0.63 %; replication lag 10.88 s; CPU headroom 55.26 %."}
+{"model": "grok", "item": "v5item28", "summary": "Opal Fathom vaccine lot: endotoxin 1.24 EU/mL, cold-chain 75 min, O\u2082 2.08 %, potency 97 %, moisture 2.68 %, seal 89 %, fill dev 1.72 %."}
+{"model": "grok", "item": "v5item29", "summary": "Ivory Osprey span load test: deflection 57.93 mm, strength 53.77 MPa, rebar 51.92 mm, vibration 6.4 mm/s."}
+{"model": "grok", "item": "v5item30", "summary": "Granite Harbor launch: routine visits, badge recoveries, maintenance, sensor readings, no anomalies."}
+{"model": "grok", "item": "v5item31", "summary": "Garnet Yardarm batch: 80.53% yield, 95.34% purity, key metrics logged."}
+{"model": "grok", "item": "v5item32", "summary": "Garnet Windlass: heater 29.46 \u03a9, throw 6.1 kN, ballast 88.95, gauge 2.76 mm, film 55.58 \u00b5m, motor 18.03 A, spacing 3.86 mm, sensitivity 92.45 %, relay 17.18 V, insulation 36.94 M\u03a9, latency 268 ms, alignment 1.3\u00b0."}
+{"model": "grok", "item": "v5item33", "summary": "Emerald Marten failover: HVAC/PM, badge training, UPS 96.67%, lag 6.1s, temps/humidity normal, minor work orders."}
+{"model": "grok", "item": "v5item34", "summary": "Crimson Marten vaccine lot: routine ops, minor deviations, all QC metrics within limits."}
+{"model": "grok", "item": "v5item35", "summary": "Golden Heron load test: deflection 32.16 mm, strength 37.68 MPa, tension 87.8 %, grout 90.59 %, rebar 52.18 mm, crack 0.2 mm."}
+{"model": "grok", "item": "v5item36", "summary": "Cerulean Quarry launch: ullage 6.85 bar, fairing \u0394P 3.57 kPa, gyro 0.76 \u00b0/h, star-tracker 13.41\u2033, margins nominal."}
+{"model": "grok", "item": "v5item37", "summary": "Bronze Mallet batch: purity 95.59%, yield 90.66%, seal 83.93%; minor maintenance notes, badge fixes, routine readings."}
+{"model": "grok", "item": "v5item38", "summary": "Teal Hollow switch assembly: insulation 40.1 M\u03a9, spacing 7.61 mm, gauge 4.77 mm, throw 5.37 kN, alignment 1.57\u00b0."}
+{"model": "grok", "item": "v5item39", "summary": "Pewter Nimbus failover: 135 ms switch, 9.3 h fuel, 0.78 % packet loss, 83.8 % UPS, temps/humidity nominal."}
+{"model": "grok", "item": "v5item40", "summary": "Pewter Heron vaccine lot: potency 94.66%, cold-chain 33 min, endotoxin 1.16 EU/mL, stability 82.3, label reconciliation 98.17%."}
+{"model": "grok", "item": "v5item41", "summary": "Indigo Harbor load test: crack 0.31 mm, deflection 59.95 mm, strength 45.48 MPa, settlement 8.13 mm, tension 97.32%."}
+{"model": "grok", "item": "v5item42", "summary": "Crimson Hollow launch: 95.81% thermal coverage, 9.85 m/s wind, 0.73\u00b0/hr gyro drift, 51.47% avionics load, 8.46 dB margin, 3.48 kPa fairing \u0394P."}
+{"model": "grok", "item": "v5item43", "summary": "Birch Ember batch: purity 96.28%, yield 79.19%, QA 105.22; temps, flows, pressures logged; minor maint. & admin notes."}
+{"model": "grok", "item": "v5item44", "summary": "Slate Zephyr: 22.22 V interlock, 17.7 M\u03a9 insulation, 350 ms latency, 1.33\u00b0 alignment, 3.22 mm gauge."}
+{"model": "grok", "item": "v5item45", "summary": "Cobalt Cairn failover: temps, lags, CPU, DNS, temps, fuel, UPS, rebuilds logged."}
+{"model": "grok", "item": "v5item46", "summary": "Saffron Summit vaccine lot: stability 91.87, sterility 89.59, potency 93.99%, moisture 1.29%, oxygen 3.37%, excursions 33.76 min."}
+{"model": "grok", "item": "v5item47", "summary": "Quartz Quarry load test: 54.51 MPa core, 83.93% grout, 8.34 mm/s vibration, 41.11 mm deflection, 74.02 factor; minor work orders, badge updates, resolved admin items."}
+{"model": "grok", "item": "v5item48", "summary": "Opal Zephyr launch: routine ops, minor admin fixes, all metrics nominal."}
+{"model": "grok", "item": "v5item49", "summary": "Quartz Vanguard batch: conductivity 29.11 \u00b5S, yield 83.26%, purity 98.83%, torque 145.64 N-m, turbidity 6.01 NTU, jacket 92.15 \u00b0C, N\u2082 35.52 kPa, flow 75.83 L/min, QA 90.46; minor admin/visitor notes."}
+{"model": "grok", "item": "v5item50", "summary": "Copper Lattice: switch 6.93 kN, 24.34 V, gauge 2.89 mm, ballast 76.8, latency 206 ms, insulation 29.5 M\u03a9. Minor admin notes."}
+{"model": "grok", "item": "v5item51", "summary": "Auburn Summit failover: CPU 44.57%, packet loss 1.62%, switch 151.47 ms, rebuild 54.55%, humidity 31.37%, link 35.63%, water 7.76 \u00b0C, DNS 88.03 s, lag 6.32 s, fuel 13.15 h, inlet 20.73 \u00b0C, queue 24.84."}
+{"model": "grok", "item": "v5item52", "summary": "Bronze Jetty vaccine lot: sterility 73.79, potency 94.32%, cold-chain excursion 39 min, minor equipment notes."}
+{"model": "grok", "item": "v5item53", "summary": "Cerulean Heron span load test: temps, deflections, rotations, cracks, settlement, torques, strengths logged; minor admin/maintenance notes."}
+{"model": "grok", "item": "v5item54", "summary": "Ivory Harbor: guidance 119%, pressures 2.75 kPa/4.71 bar, temps 91.59%, wind 12.1 m/s, margins 8.58 dB; minor equipment notes, uneventful visits."}
+{"model": "grok", "item": "v5item55", "summary": "Violet Quarry batch: yield 89.7%, purity 97.02%, QA 90.46; solvent 108.45 ppm, turbidity 7.69 NTU; seal 70.04%, conductivity 33.84 \u00b5S; minor ledger fixes, routine maintenance."}
+{"model": "grok", "item": "v5item56", "summary": "Op Copper Vanguard: switch assembly deployment; key metrics logged (force, angles, resistance, latency); routine admin & maintenance noted."}
+{"model": "grok", "item": "v5item57", "summary": "Emerald Vanguard failover: temps, humidity, UPS, CPU, links, rebuilds, work orders, memos, corrections logged."}
+{"model": "grok", "item": "v5item58", "summary": "Sable Marten vaccine lot QC: conductivity, cold-chain, potency, sterility, fill, stability, endotoxin, O\u2082 all within limits."}
+{"model": "grok", "item": "v5item59", "summary": "Pewter Anvil span load test: deflection 45.5 mm, vibration 5.86 mm/s, grout 84.24 %, LDF 70.8, core 44.92 MPa, pier 4.94 mm, bearing 0.56\u00b0, crack 0.03 mm, rebar 31.53 mm. Minor work orders opened."}
+{"model": "haiku", "item": "v5item00", "summary": "Sable Heron payload launch: pad wind 11.1 m/s, guidance pass 97.84%, backup battery 89.72%, fairing pressure 3.32 kPa, propellant ullage 6.11 bar."}
+{"model": "haiku", "item": "v5item01", "summary": "Scarlet Compass batch release: QA score 85.08, purity 98.78%, yield 88.57%, routine operations, minor maintenance items logged."}
+{"model": "haiku", "item": "v5item02", "summary": "Jade Zephyr switch assembly deployment: routine maintenance completed, technical readings nominal, administrative items resolved, no critical issues identified."}
+{"model": "haiku", "item": "v5item03", "summary": "Slate Windlass failover: DNS 40.47s, replication 11.21s, transfer switch 130.02ms, packet loss 2.4%, standby link 62.12%, UPS 73.65%, generator 18.21hrs, HVAC chiller clicking issue logged."}
+{"model": "haiku", "item": "v5item04", "summary": "Emerald Cairn vaccine lot: endotoxin 1.11 EU/mL, moisture 2.74%, fill deviation 2.48%, sterility 93.78, cold-chain excursion 25.45 min, adjuvant 97.92%, seal torque 93.73%."}
+{"model": "haiku", "item": "v5item05", "summary": "Scarlet Keystone span load test: anchor bolt 467.74 N-m, pier settlement 6.23 mm, vibration 6.19 mm/s, cable tension 89.3%, load distribution 67.91, bearing rotation 0.95\u00b0, gust 14.4 m/s, crack width 0.38 mm, concrete strength 43.26 MPa, midspan deflection 26.67 mm, deck temperature differential 16.69\u00b0C, grout margin 90.2%."}
+{"model": "haiku", "item": "v5item06", "summary": "Jade Isthmus payload launch: nominal readings, routine maintenance, staff training completed, minor equipment issues logged."}
+{"model": "haiku", "item": "v5item07", "summary": "Coral Bulwark batch released: purity 96.32%, yield 90.1%, moisture 2.07%, key systems nominal, personnel certified, minor maintenance issues logged."}
+{"model": "haiku", "item": "v5item08", "summary": "Violet Marten switch assembly: track gauge 3.74mm, motor current 15.31A, crossing angle 1.6\u00b0, blade wear 3.73mm, switch throw force 4.21kN, signal alignment 0.89\u00b0."}
+{"model": "haiku", "item": "v5item09", "summary": "Operation Onyx Vanguard failover: storage array 50.54%, generator 16.21hrs, UPS 77.61%, standby link 43.62%, packet loss 2.18%."}
+{"model": "haiku", "item": "v5item10", "summary": "Emerald Lattice vaccine lot release: multiple visitor tours with recovered badges, routine maintenance completed, all quality metrics within acceptable ranges."}
+{"model": "haiku", "item": "v5item11", "summary": "Sable Windlass span load test certification. Multiple routine inspections, maintenance tasks, and administrative updates logged. No critical issues identified."}
+{"model": "haiku", "item": "v5item12", "summary": "Basalt Sextant payload launch: fairing pressure 3.02 kPa, avionics 46.41%, star tracker 23.9 arcsec, thermal blanket 97.52%, gyro drift 0.49\u00b0/hr, guidance pass rate 96.1%."}
+{"model": "haiku", "item": "v5item13", "summary": "Golden Mallet batch release: residual solvent 69.16 ppm, purity assay 112.47%, seal integrity 93.23%, yield efficiency 77.01%."}
+{"model": "haiku", "item": "v5item14", "summary": "Viridian Yardarm switch assembly deployment: inventory corrections made, maintenance completed, technical readings recorded, visitor tours uneventful, staff training updated."}
+{"model": "haiku", "item": "v5item15", "summary": "Viridian Cairn failover: replication lag 13.67s, rack inlet 21.46\u00b0C, UPS 69.42%, generator 23.22h, transfer switch 193.75ms, DNS failover 41.63s."}
+{"model": "haiku", "item": "v5item16", "summary": "Violet Lattice vaccine lot: seal torque 99.53%, potency 113.22%, particulates 23.67, stability 85.09, fill-volume deviation 3.34%, endotoxin 0.78 EU/mL, moisture 1.54%, adjuvant 97.06%, headspace oxygen 4.93%."}
+{"model": "haiku", "item": "v5item17", "summary": "Cobalt Rampart span load test: expansion joint 54.9mm, pier settlement 5.42mm, vibration 5.13mm/s, crack width 0.05mm, deflection 59.17mm, cable tension 97.6%, grout margin 90.25%, load factor 62.09."}
+{"model": "haiku", "item": "v5item18", "summary": "Quartz Yardarm payload launch: multiple clicking sounds reported, umbilical retract 2.81s, battery 74.93%, telemetry margin 5.17dB, avionics load 65.03%."}
+{"model": "haiku", "item": "v5item19", "summary": "Operation Flint Marten production batch released. Multiple documentation corrections made. Key readings: condenser 32.59\u00b0C, catalyst moisture 3.19%, cooling loop 70.68 L/min, filtrate turbidity 7.71 NTU, agitator torque 194.61 N-m, batch purity 96.66%. Minor equipment issues reported; work orders opened. Visitor tours uneventful. QA score 87.51."}
+{"model": "haiku", "item": "v5item20", "summary": "Maroon Nimbus switch assembly deployment. Track gauge deviation 2.18mm, cable insulation 31.51M\u03a9, switch throw 5.69kN, sleeper spacing 3.11mm, signal alignment 0.45\u00b0, crossing tolerance 1.03\u00b0, ballast index 72.89, point blade wear 7.68mm. All inspections normal, maintenance current."}
+{"model": "haiku", "item": "v5item21", "summary": "Viridian Rampart failover: routine maintenance completed, systems nominal, minor equipment issues logged for repair."}
+{"model": "haiku", "item": "v5item22", "summary": "Cobalt Bulwark vaccine lot release: particulate burden 61.06, sterility clarity 98.53, potency 100.92%, stability 86.52, adjuvant 110.25%, seal torque 71.29%."}
+{"model": "haiku", "item": "v5item23", "summary": "Teal Yardarm span load test: pier settlement 7.44mm, midspan deflection 40.85mm, rebar cover 42.43mm, cable tension 91.64%, anchor bolt torque 310.39N-m, gust speed 10.09m/s, bearing rotation 0.99\u00b0."}
+{"model": "haiku", "item": "v5item24", "summary": "Slate Vanguard payload launch: propellant tank 5.35 bar, star tracker 22.35 arcsec, backup battery 65.75%, thermal blanket 96.04%, all systems nominal."}
+{"model": "haiku", "item": "v5item25", "summary": "Pewter Mallet production batch: 85.09% yield, normal operations, routine maintenance, two visitor badge incidents resolved."}
+{"model": "haiku", "item": "v5item26", "summary": "Golden Dynamo switch assembly: routine maintenance completed, all systems nominal, minor badge incidents during visitor tours resolved same-day."}
+{"model": "haiku", "item": "v5item27", "summary": "DNS failover 38.29s; transfer switch 88.98ms; rack inlet 20.35\u00b0C; UPS 80.39%; storage array 43.78%; standby link 69.97%; battery impedance 22.23m\u03a9; chilled water 7.88\u00b0C; packet loss 0.63%; replication lag 10.88s; generator fuel 10.73h; standby CPU 55.26%; minor equipment issues logged."}
+{"model": "haiku", "item": "v5item28", "summary": "Opal Fathom vaccine lot: endotoxin 1.24 EU/mL, cold-chain excursion 75.19 min, stability 93.49, potency 97.28%, sterility 72.4 points."}
+{"model": "haiku", "item": "v5item29", "summary": "Ivory Osprey span load test: crack width -0.24mm, concrete strength 53.77MPa, midspan deflection 57.93mm, vibration 6.4mm/s, gust speed 6.9m/s."}
+{"model": "haiku", "item": "v5item30", "summary": "Granite Harbor payload launch: nominal systems, routine maintenance completed, three visitor badge incidents recovered, all inspections uneventful."}
+{"model": "haiku", "item": "v5item31", "summary": "Garnet Yardarm production batch released May. Yield 80.53%, purity 95.34%, all systems normal. Utility cart clicking sound reported, work order opened."}
+{"model": "haiku", "item": "v5item32", "summary": "Garnet Windlass switch assembly deployment: heater circuit 29.46\u03a9, switch force 6.1kN, ballast index 88.95, motor current 18.03A, detection sensitivity 92.45%."}
+{"model": "haiku", "item": "v5item33", "summary": "Operation Emerald Marten failover: systems nominal, maintenance completed, minor equipment issues logged, all personnel certifications current."}
+{"model": "haiku", "item": "v5item34", "summary": "Crimson Marten vaccine lot released with all quality parameters within specification; routine maintenance and staffing adjustments completed."}
+{"model": "haiku", "item": "v5item35", "summary": "Golden Heron span load test: grout margin 90.59%, cable tension 87.8%, deflection 32.16mm, concrete strength 37.68MPa, rebar depth 52.18mm, bearing rotation 1.3\u00b0, vibration 3.48mm/s."}
+{"model": "haiku", "item": "v5item36", "summary": "Cerulean Quarry payload launch: umbilical retract 3.79s, ullage pressure 6.85 bar, guidance pass 93.75%, gyro drift 0.76\u00b0/hr, telemetry margin 6.4dB."}
+{"model": "haiku", "item": "v5item37", "summary": "Bronze Mallet batch release: purity 95.59%, catalyst moisture 3.33%, yield 90.66%. Multiple equipment clicking sounds reported; work orders opened. Routine maintenance and administrative items completed."}
+{"model": "haiku", "item": "v5item38", "summary": "Teal Hollow switch assembly deployment: preventive maintenance completed, technical readings within parameters, personnel certifications updated, routine operations normal."}
+{"model": "haiku", "item": "v5item39", "summary": "Pewter Nimbus failover: transfer switch 135.32ms, generator 9.31hrs fuel, storage array 37.9% rebuild margin, systems nominal."}
+{"model": "haiku", "item": "v5item40", "summary": "Pewter Heron vaccine lot: potency 94.66%, cold-chain excursion 33.21 min, all quality parameters within spec."}
+{"model": "haiku", "item": "v5item41", "summary": "Indigo Harbor span load test: max crack 0.31mm, deflection 59.95mm, cable tension 97.32%, concrete strength 45.48MPa, settlement 8.13mm."}
+{"model": "haiku", "item": "v5item42", "summary": "Crimson Hollow payload launch: thermal blanket 95.81%, gyro drift 0.73\u00b0/hr, avionics bus 51.47%, telemetry margin 8.46dB, backup battery 89.76%."}
+{"model": "haiku", "item": "v5item43", "summary": "Birch Ember batch release: QA score 105.22, purity 96.28%, cooling flow 57.06 L/min, condenser outlet 20.41\u00b0C, yield 79.19%, all systems nominal."}
+{"model": "haiku", "item": "v5item44", "summary": "Slate Zephyr switch assembly deployment: nominal readings across electrical, mechanical, and safety systems; routine maintenance and training completed."}
+{"model": "haiku", "item": "v5item45", "summary": "Operation Cobalt Cairn failover: transfer switch 86.4ms, DNS failover 44.94s, replication lag 6.99s, all systems nominal."}
+{"model": "haiku", "item": "v5item46", "summary": "Saffron Summit vaccine lot release: stability 91.87, sterility 89.59, potency 93.99%, adjuvant 92.85%, endotoxin 1.76 EU/mL acceptable."}
+{"model": "haiku", "item": "v5item47", "summary": "Quartz Quarry span load test: concrete 54.51 MPa, grout 83.93%, vibration 8.34 mm/s, deflection 41.11 mm, cable tension 88.89%."}
+{"model": "haiku", "item": "v5item48", "summary": "Operation Opal Zephyr payload launch: all systems nominal, routine maintenance completed, no anomalies detected."}
+{"model": "haiku", "item": "v5item49", "summary": "Quartz Vanguard batch release: yield 83.26%, purity 98.83%, all process parameters nominal, visitor tours uneventful, administrative items resolved."}
+{"model": "haiku", "item": "v5item50", "summary": "Copper Lattice switch assembly deployment: routine operations, minor maintenance items, normal technical readings, visitor tour completed, administrative tasks resolved."}
+{"model": "haiku", "item": "v5item51", "summary": "Auburn Summit failover: 44.57% CPU headroom, 1.62% packet loss, 151.47ms switch actuation, 54.55% storage rebuild margin."}
+{"model": "haiku", "item": "v5item52", "summary": "Bronze Jetty vaccine lot release: sterility 73.79, potency 94.32%, endotoxin 0.96 EU/mL, cold-chain excursion 39.28 minutes."}
+{"model": "haiku", "item": "v5item53", "summary": "Cerulean Heron span load test: midspan deflection 35.82mm, peak gust 11.84m/s, concrete strength 52.91MPa, minor maintenance issues noted."}
+{"model": "haiku", "item": "v5item54", "summary": "Ivory Harbor payload launch: guidance regression 119.09%, fairing pressure 2.75 kPa, thermal blanket 91.59%, backup battery 89.73%, wind 12.1 m/s, avionics 45.45%, propellant ullage 4.71 bar, routine inspections normal."}
+{"model": "haiku", "item": "v5item55", "summary": "Violet Quarry production batch released. Key metrics: purity 97.02%, yield 89.7%, QA score 90.46. All maintenance completed, ledgers corrected, inspections passed."}
+{"model": "haiku", "item": "v5item56", "summary": "Copper Vanguard switch assembly deployment: routine maintenance completed, technical readings logged, personnel certifications updated, minor encoder clicking noted."}
+{"model": "haiku", "item": "v5item57", "summary": "Emerald Vanguard failover: multiple clicking sounds reported; packet loss 2.3%; normal environmental metrics; routine maintenance completed; ledger corrections processed."}
+{"model": "haiku", "item": "v5item58", "summary": "Sable Marten vaccine lot: diluent conductivity 10.15 \u00b5S, cold-chain excursion 64.43 min, potency 90.11%, stability 92.4 pts."}
+{"model": "haiku", "item": "v5item59", "summary": "Pewter Anvil span load test: midspan deflection 45.5mm, vibration 5.86mm/s, grout margin 84.24%, load factor 70.8, pier settlement 4.94mm, concrete strength 44.92MPa, cable tension 96.45%, bearing rotation 0.56\u00b0, crack width 0.03mm."}
+{"model": "gpt", "item": "v5item00", "summary": "Sable Heron launch: maintenance, inspections, recycling, briefings, sensor readings, certifications, no anomalies reported."}
+{"model": "gpt", "item": "v5item01", "summary": "Operation Scarlet Compass: routine inspections, maintenance, visitor tours, stable environmental and production metrics, minor equipment issues."}
+{"model": "gpt", "item": "v5item02", "summary": "Jade Zephyr deployment: briefings hosted, maintenance done, equipment readings logged, visitor escorts managed, schedules adjusted."}
+{"model": "gpt", "item": "v5item03", "summary": "Slate Windlass failover: humidity 37.73%, rebuild margin 40.26%, DNS failover 40.47s, replication lag 11.21s, HVAC clicking, recycling collected, preventive maintenance done."}
+{"model": "gpt", "item": "v5item04", "summary": "Emerald Cairn vaccine release: endotoxin 1.11 EU/mL, moisture 2.74%, fill deviation 2.48%, stability 82.32, multiple maintenance issues logged."}
+{"model": "gpt", "item": "v5item05", "summary": "Scarlet Keystone test: anchor torque 467.74 N-m, pier settlement 6.23 mm, gust 14.4 m/s, clicking equipment, work orders opened."}
+{"model": "gpt", "item": "v5item06", "summary": "Operation Jade Isthmus: routine maintenance, visitor tours, sensor readings, minor equipment issues, no major incidents."}
+{"model": "gpt", "item": "v5item07", "summary": "Coral Bulwark batch: purity 96.32%, yield 90.1%, catalyst moisture 2.07%, minor equipment issues logged."}
+{"model": "gpt", "item": "v5item08", "summary": "Track gauge 3.74mm, motor current 15.31A, switch throw force 4.21kN, signal error 0.89\u00b0, visitor tours uneventful."}
+{"model": "gpt", "item": "v5item09", "summary": "Onyx Vanguard failover: storage rebuild 50.54%, generator fuel 16.21h, humidity 33.11%, briefings hosted, maintenance done, recycling collected, packet loss 2.18%, DNS failover 53.41s."}
+{"model": "gpt", "item": "v5item10", "summary": "Emerald Lattice vaccine release: visitor tours, misplaced badges, maintenance issues, instrument readings, shift coverage, no major incidents."}
+{"model": "gpt", "item": "v5item11", "summary": "Sable Windlass test: visitor tours, badge issues, maintenance corrections, weather normal, structural readings logged."}
+{"model": "gpt", "item": "v5item12", "summary": "Basalt Sextant launch: pressure 3.02 kPa, avionics load 46.41%, wind 12.13 m/s, gyro drift 0.49\u00b0/hr, guidance pass 96.1%."}
+{"model": "gpt", "item": "v5item13", "summary": "Golden Mallet batch release: equipment readings, maintenance, visitor tours, recycling, briefings, schedules, no major issues."}
+{"model": "gpt", "item": "v5item14", "summary": "Corrected duplicate inventory and safety ledger items; badge refresher completions; visitor tours; equipment readings; maintenance updates."}
+{"model": "gpt", "item": "v5item15", "summary": "Duplicated ledger corrected; maintenance closed; projector, printer clicking; environmental, power, temp readings logged; memos on repaint, returns."}
+{"model": "gpt", "item": "v5item16", "summary": "Multiple equipment clicking sounds reported; work orders opened. Visitor badges misplaced but recovered. Vaccine metrics within normal ranges."}
+{"model": "gpt", "item": "v5item17", "summary": "Cobalt Rampart load test: stable weather, measured expansion gap 54.9mm, max crack 0.05mm, peak deflection 59.17mm."}
+{"model": "gpt", "item": "v5item18", "summary": "Quartz Yardarm launch: multiple clicking sounds reported, work orders opened; ledger corrections; telemetry and environmental logs normal; briefings hosted; certifications and maintenance updated."}
+{"model": "gpt", "item": "v5item19", "summary": "Duplicate ledger corrections; condenser 32.59\u00b0C; catalyst moisture 3.19%; visitor tours uneventful; various maintenance notes."}
+{"model": "gpt", "item": "v5item20", "summary": "Maroon Nimbus ops: equipment readings, maintenance corrections, shift rotations, briefings, inspections, recycling, visitor tour, power-down reminders."}
+{"model": "gpt", "item": "v5item21", "summary": "Viridian Rampart failover: corrected ledger, resolved briefings, routine checks, equipment notes, stable weather, updated rosters, normal readings."}
+{"model": "gpt", "item": "v5item22", "summary": "Cobalt Bulwark vaccine release: particulate 61.06, sterility 98.53, potency 100.92%, maintenance done, minor equipment issues."}
+{"model": "gpt", "item": "v5item23", "summary": "Teal Yardarm test: pier settlement 7.44mm, deflection 40.85mm, multiple equipment clicking sounds, visitor tours uneventful."}
+{"model": "gpt", "item": "v5item24", "summary": "Slate Vanguard launch: uniform briefing, maintenance updates, sensor readings, visitor tour, work orders, weather normal."}
+{"model": "gpt", "item": "v5item25", "summary": "Pewter Mallet batch: 85.09% yield, normal equipment, minor badge losses, routine memos, stable weather, key readings logged."}
+{"model": "gpt", "item": "v5item26", "summary": "Golden Dynamo: maintenance, inspections, visitor tours, badge issues, environmental reports, instrument readings, shift huddles, no major incidents."}
+{"model": "gpt", "item": "v5item27", "summary": "Quartz Nimbus failover: DNS 38.29s, backup printer/intercom/projector clicking, visitor badges misplaced, multiple maintenance corrections."}
+{"model": "gpt", "item": "v5item28", "summary": "Opal Fathom vaccine release: endotoxin 1.24 EU/mL, cold-chain 75.19 min, potency 97.28%, maintenance done, no major issues."}
+{"model": "gpt", "item": "v5item29", "summary": "Ivory Osprey test: crack -0.24mm, core strength 53.77MPa, deflection 57.93mm, vibrations 6.4mm/s, multiple briefings, maintenance, visitor tours uneventful."}
+{"model": "gpt", "item": "v5item30", "summary": "Granite Harbor launch: visitor tours, badge recoveries, equipment serviced, sensor readings, maintenance, no major incidents."}
+{"model": "gpt", "item": "v5item31", "summary": "Operation Garnet Yardarm: inspections, maintenance, environmental reports, briefings, equipment issues, yield 80.53%, purity 95.34%."}
+{"model": "gpt", "item": "v5item32", "summary": "Garnet Windlass deployment: resistance, force, maintenance, recycling, measurements, memos, repairs, repainting, no major issues."}
+{"model": "gpt", "item": "v5item33", "summary": "Emerald Marten failover: HVAC, keycard maintenance done; visitor tours uneventful; logs show normal readings; minor clicking sounds reported."}
+{"model": "gpt", "item": "v5item34", "summary": "Crimson Marten vaccine release: routine schedules, maintenance, environmental checks, instrument logs, assay results, no major issues."}
+{"model": "gpt", "item": "v5item35", "summary": "Golden Heron test: uneventful visits, resolved briefings, stable weather, key measurements recorded, minor equipment issues reported."}
+{"model": "gpt", "item": "v5item36", "summary": "Cerulean Quarry launch: umbilical 3.79s, guidance 93.75%, ullage 6.85 bar, gyro drift 0.76\u00b0/hr, maintenance done."}
+{"model": "gpt", "item": "v5item37", "summary": "Duplicate ledger corrections; intermittent clicking sounds reported; batch purity 95.59%; seal integrity 83.93%; yield efficiency 90.66%."}
+{"model": "gpt", "item": "v5item38", "summary": "Teal Hollow operation: maintenance, inspections, schedules, training, recycling, weather normal, instrumentation readings logged."}
+{"model": "gpt", "item": "v5item39", "summary": "Pewter Nimbus failover: maintenance completed, inspections normal, uniform briefings held, key metrics logged, minor corrections made."}
+{"model": "gpt", "item": "v5item40", "summary": "Pewter Heron vaccine release: potency 94.66%, cold-chain 33.21 min, endotoxin 1.16 EU/mL, stability 82.3 points."}
+{"model": "gpt", "item": "v5item41", "summary": "Indigo Harbor load test: measurements, maintenance, recycling, briefings, roster updates, and contract corrections logged."}
+{"model": "gpt", "item": "v5item42", "summary": "Crimson Hollow launch: 95.81% thermal blanket, minor visitor badge losses, routine maintenance, stable telemetry."}
+{"model": "gpt", "item": "v5item43", "summary": "Birch Ember batch release: maintenance updates, instrument readings, visitor escort, locker and parking briefings, duplicate ledger corrections."}
+{"model": "gpt", "item": "v5item44", "summary": "Slate Zephyr deployment: instrument readings, training completions, recycling, maintenance corrections, inspections, minor issues logged."}
+{"model": "gpt", "item": "v5item45", "summary": "Cobalt Cairn failover: escort refreshers done, schedules swapped, temps logged, maintenance closed, no major issues."}
+{"model": "gpt", "item": "v5item46", "summary": "Saffron Summit vaccine release: stability 91.87, sterility 89.59, potency 93.99%, maintenance, huddles, recycling."}
+{"model": "gpt", "item": "v5item47", "summary": "Quartz Quarry load test: concrete 54.51 MPa, grout 83.93%, vibration 8.34 mm/s, deflection 41.11 mm, multiple escort refreshers completed, intermittent clicking printers and compressor reported, supply reorders and briefings resolved."}
+{"model": "gpt", "item": "v5item48", "summary": "Opal Zephyr launch: corrected ledger duplicates, battery 79.96%, weather normal, inspections clear, telemetry stable, maintenance logged."}
+{"model": "gpt", "item": "v5item49", "summary": "Quartz Vanguard batch: yield 83.26%, purity 98.83%, minor badge losses, maintenance corrections, visitor tours uneventful."}
+{"model": "gpt", "item": "v5item50", "summary": "Visitor tour uneventful; maintenance, briefings, measurements logged; badge renewals, equipment checks, no incidents."}
+{"model": "gpt", "item": "v5item51", "summary": "Auburn Summit failover: CPU headroom 44.57%, packet loss 1.62%, storage rebuild 54.55%, multiple maintenance tasks, visitor tours uneventful."}
+{"model": "gpt", "item": "v5item52", "summary": "Bronze Jetty vaccine release: routine weather, schedule swaps, pallet wrapper clicking, sterility 73.79, potency 94.32%, cold-chain 39.28min."}
+{"model": "gpt", "item": "v5item53", "summary": "Cerulean Heron load test: key readings, schedules, maintenance, briefings, badge updates, no major issues reported."}
+{"model": "gpt", "item": "v5item54", "summary": "Ivory Harbor launch: inspections normal, keycard encoders clicking, visitor badges misplaced, various system metrics logged."}
+{"model": "gpt", "item": "v5item55", "summary": "Operation Violet Quarry: maintenance corrections, environmental checks, yield 89.7%, purity 97.02%, resolved expense briefings."}
+{"model": "gpt", "item": "v5item56", "summary": "Copper Vanguard switch deployed; maintenance, inspections, replacements done; keycard encoder clicking; various measurements logged; staff rotations updated."}
+{"model": "gpt", "item": "v5item57", "summary": "Emerald Vanguard failover: clicking equipment, maintenance updates, environmental logs, inventory corrections, repainting scheduled, system metrics recorded."}
+{"model": "gpt", "item": "v5item58", "summary": "Sable Marten vaccine release: cold-chain 64.43 min, potency 90.11%, maintenance done, briefings resolved, stability 92.4."}
+{"model": "gpt", "item": "v5item59", "summary": "Pewter Anvil test: deflection 45.5mm, vibration 5.86mm/s, grout 84.24%, maintenance, briefings resolved."}
+{"model": "gemlite", "item": "v5item00", "summary": "Sable Heron launch: wind, maintenance, recycling, training, bulletins, schedules, avionics, pressure, ratings, calibration, drift, noise, coverage, escort, intercom."}
+{"model": "gemlite", "item": "v5item01", "summary": "Operation Scarlet Compass: QA score 85.08, cooling flow 73.83 L/min, turbidity 3.49 NTU, catalyst moisture 2.75%, jacket temp 72.45\u00b0C."}
+{"model": "gemlite", "item": "v5item02", "summary": "Jade Zephyr: switch assembly deployment, various maintenance, and scheduling updates."}
+{"model": "gemlite", "item": "v5item03", "summary": "Slate Windlass failover: humidity, array margin, impedance, escort, DNS, replication lag, HVAC, link utilization, transfer switch, disk depth, packet loss, fuel reserve, UPS."}

@@ -1,0 +1,817 @@
+{
+  "design": {
+    "n_items": 60,
+    "approved": 30,
+    "denied": 30,
+    "denied_fail_slots": [
+      10,
+      10,
+      10
+    ],
+    "compression_word_limit": 15,
+    "temperature": 0,
+    "seed": "Random(5151) corpus / Random(11000+i) per item",
+    "models": {
+      "grok": "grok-4-1-fast-non-reasoning",
+      "haiku": "claude-haiku-4-5-20251001",
+      "gpt": "gpt-4.1-mini",
+      "gemlite": "gemini-2.5-flash-lite"
+    },
+    "prereg": "prereg.md (fixed before run)"
+  },
+  "per_model": {
+    "grok": {
+      "model": "grok-4-1-fast-non-reasoning",
+      "applicable": true,
+      "cells": {
+        "n": 60,
+        "n_denied": 30,
+        "n_approved": 30,
+        "n_lost": 22,
+        "n_retained": 8,
+        "n_app_lost": 26,
+        "n_app_kept": 4,
+        "mean_summary_words": 19.05,
+        "mean_policy_retention": 0.3444444444444444,
+        "decision_lost": [
+          19,
+          22
+        ],
+        "decision_retained": [
+          8,
+          8
+        ],
+        "which_lost": [
+          0,
+          22
+        ],
+        "which_retained": [
+          8,
+          8
+        ],
+        "repair_lost": [
+          2,
+          22
+        ],
+        "repair_retained": [
+          8,
+          8
+        ],
+        "repair_specific_lost": [
+          22,
+          22
+        ],
+        "which_confab_lost": [
+          3,
+          22
+        ],
+        "abstain_lost": [
+          18,
+          22
+        ],
+        "abstain_retained": [
+          0,
+          8
+        ],
+        "incoherent_lost": [
+          16,
+          22
+        ],
+        "incoherent_retained": [
+          0,
+          8
+        ],
+        "approved_decision_lost": [
+          10,
+          26
+        ],
+        "approved_decision_retained": [
+          4,
+          4
+        ],
+        "gist_lost": [
+          7,
+          22
+        ],
+        "gist_retained": [
+          3,
+          8
+        ],
+        "nonotes_decision_denied": [
+          30,
+          30
+        ],
+        "nonotes_decision_approved": [
+          0,
+          30
+        ],
+        "balanced_lost_notes": 0.6241258741258742,
+        "balanced_lost_nonotes": 0.5
+      },
+      "preds": {
+        "P-A5_dissociation": {
+          "criteria": "decision_lost>=0.6 AND which_lost<=0.33 AND which_retained>=0.8",
+          "values": {
+            "decision_lost": 0.8636363636363636,
+            "which_lost": 0.0,
+            "which_retained": 1.0
+          },
+          "passed": true
+        },
+        "P-B_channel_asymmetry": {
+          "criteria": "approved_decision_lost < decision_lost",
+          "values": {
+            "approved_lost": 0.38461538461538464,
+            "denied_lost": 0.8636363636363636
+          },
+          "passed": true
+        },
+        "P-C_confabulation_locus": {
+          "criteria": "which_confab_lost<0.25 AND repair_specific_lost>=0.75",
+          "values": {
+            "which_confab_lost": 0.13636363636363635,
+            "repair_specific_lost": 1.0
+          },
+          "passed": true
+        },
+        "P-D_honesty_uptake": {
+          "criteria": "abstain_lost>=0.5 AND abstain_retained<=0.1",
+          "values": {
+            "abstain_lost": 0.8181818181818182,
+            "abstain_retained": 0.0
+          },
+          "passed": true
+        },
+        "P-E_calibrated_prior": {
+          "criteria": "balanced_lost_notes - balanced_lost_nonotes >= 0.10",
+          "values": {
+            "balanced_lost_notes": 0.6241258741258742,
+            "balanced_lost_nonotes": 0.5
+          },
+          "passed": true
+        },
+        "P-F_incoherence": {
+          "criteria": "incoherent_lost>=0.5 AND incoherent_retained<=0.1",
+          "values": {
+            "incoherent_lost": 0.7272727272727273,
+            "incoherent_retained": 0.0
+          },
+          "passed": true
+        }
+      },
+      "wilson": {
+        "decision_lost": {
+          "k": 19,
+          "n": 22,
+          "p": 0.8636363636363636,
+          "ci95": [
+            0.6666458812053,
+            0.9525108273576373
+          ]
+        },
+        "which_lost": {
+          "k": 0,
+          "n": 22,
+          "p": 0.0,
+          "ci95": [
+            1.3877787807814457e-17,
+            0.14865952572596125
+          ]
+        },
+        "which_retained": {
+          "k": 8,
+          "n": 8,
+          "p": 1.0,
+          "ci95": [
+            0.6755843804891231,
+            1.0
+          ]
+        },
+        "repair_lost": {
+          "k": 2,
+          "n": 22,
+          "p": 0.09090909090909091,
+          "ci95": [
+            0.025294896282837792,
+            0.2781538065838578
+          ]
+        }
+      },
+      "tokens": {
+        "prompt": 144876,
+        "completion": 7848
+      },
+      "cost_usd": 0.0329,
+      "anomalies": 0
+    },
+    "haiku": {
+      "model": "claude-haiku-4-5-20251001",
+      "applicable": true,
+      "cells": {
+        "n": 60,
+        "n_denied": 30,
+        "n_approved": 30,
+        "n_lost": 19,
+        "n_retained": 11,
+        "n_app_lost": 25,
+        "n_app_kept": 5,
+        "mean_summary_words": 21.016666666666666,
+        "mean_policy_retention": 0.33888888888888885,
+        "decision_lost": [
+          18,
+          19
+        ],
+        "decision_retained": [
+          11,
+          11
+        ],
+        "which_lost": [
+          0,
+          19
+        ],
+        "which_retained": [
+          11,
+          11
+        ],
+        "repair_lost": [
+          1,
+          19
+        ],
+        "repair_retained": [
+          8,
+          11
+        ],
+        "repair_specific_lost": [
+          17,
+          19
+        ],
+        "which_confab_lost": [
+          0,
+          19
+        ],
+        "abstain_lost": [
+          18,
+          19
+        ],
+        "abstain_retained": [
+          1,
+          11
+        ],
+        "incoherent_lost": [
+          1,
+          19
+        ],
+        "incoherent_retained": [
+          0,
+          11
+        ],
+        "approved_decision_lost": [
+          5,
+          25
+        ],
+        "approved_decision_retained": [
+          4,
+          5
+        ],
+        "gist_lost": [
+          4,
+          19
+        ],
+        "gist_retained": [
+          3,
+          11
+        ],
+        "nonotes_decision_denied": [
+          26,
+          30
+        ],
+        "nonotes_decision_approved": [
+          2,
+          30
+        ],
+        "balanced_lost_notes": 0.5736842105263158,
+        "balanced_lost_nonotes": 0.48736842105263156
+      },
+      "preds": {
+        "P-A5_dissociation": {
+          "criteria": "decision_lost>=0.6 AND which_lost<=0.33 AND which_retained>=0.8",
+          "values": {
+            "decision_lost": 0.9473684210526315,
+            "which_lost": 0.0,
+            "which_retained": 1.0
+          },
+          "passed": true
+        },
+        "P-B_channel_asymmetry": {
+          "criteria": "approved_decision_lost < decision_lost",
+          "values": {
+            "approved_lost": 0.2,
+            "denied_lost": 0.9473684210526315
+          },
+          "passed": true
+        },
+        "P-C_confabulation_locus": {
+          "criteria": "which_confab_lost<0.25 AND repair_specific_lost>=0.75",
+          "values": {
+            "which_confab_lost": 0.0,
+            "repair_specific_lost": 0.8947368421052632
+          },
+          "passed": true
+        },
+        "P-D_honesty_uptake": {
+          "criteria": "abstain_lost>=0.5 AND abstain_retained<=0.1",
+          "values": {
+            "abstain_lost": 0.9473684210526315,
+            "abstain_retained": 0.09090909090909091
+          },
+          "passed": true
+        },
+        "P-E_calibrated_prior": {
+          "criteria": "balanced_lost_notes - balanced_lost_nonotes >= 0.10",
+          "values": {
+            "balanced_lost_notes": 0.5736842105263158,
+            "balanced_lost_nonotes": 0.48736842105263156
+          },
+          "passed": false
+        },
+        "P-F_incoherence": {
+          "criteria": "incoherent_lost>=0.5 AND incoherent_retained<=0.1",
+          "values": {
+            "incoherent_lost": 0.05263157894736842,
+            "incoherent_retained": 0.0
+          },
+          "passed": false
+        }
+      },
+      "wilson": {
+        "decision_lost": {
+          "k": 18,
+          "n": 19,
+          "p": 0.9473684210526315,
+          "ci95": [
+            0.7536078466345479,
+            0.99064824750947
+          ]
+        },
+        "which_lost": {
+          "k": 0,
+          "n": 19,
+          "p": 0.0,
+          "ci95": [
+            0.0,
+            0.16818436536845052
+          ]
+        },
+        "which_retained": {
+          "k": 11,
+          "n": 11,
+          "p": 1.0,
+          "ci95": [
+            0.7411599827511859,
+            1.0
+          ]
+        },
+        "repair_lost": {
+          "k": 1,
+          "n": 19,
+          "p": 0.05263157894736842,
+          "ci95": [
+            0.009351752490529969,
+            0.2463921533654521
+          ]
+        }
+      },
+      "tokens": {
+        "prompt": 121154,
+        "completion": 57484
+      },
+      "cost_usd": 0.4086,
+      "anomalies": 3
+    },
+    "gpt": {
+      "model": "gpt-4.1-mini",
+      "applicable": false,
+      "cells": {
+        "n": 60,
+        "n_denied": 30,
+        "n_approved": 30,
+        "n_lost": 28,
+        "n_retained": 2,
+        "n_app_lost": 29,
+        "n_app_kept": 1,
+        "mean_summary_words": 16.116666666666667,
+        "mean_policy_retention": 0.1,
+        "decision_lost": [
+          28,
+          28
+        ],
+        "decision_retained": [
+          2,
+          2
+        ],
+        "which_lost": [
+          3,
+          28
+        ],
+        "which_retained": [
+          2,
+          2
+        ],
+        "repair_lost": [
+          7,
+          28
+        ],
+        "repair_retained": [
+          2,
+          2
+        ],
+        "repair_specific_lost": [
+          28,
+          28
+        ],
+        "which_confab_lost": [
+          1,
+          28
+        ],
+        "abstain_lost": [
+          25,
+          28
+        ],
+        "abstain_retained": [
+          0,
+          2
+        ],
+        "incoherent_lost": [
+          24,
+          28
+        ],
+        "incoherent_retained": [
+          0,
+          2
+        ],
+        "approved_decision_lost": [
+          0,
+          29
+        ],
+        "approved_decision_retained": [
+          0,
+          1
+        ],
+        "gist_lost": [
+          5,
+          28
+        ],
+        "gist_retained": [
+          1,
+          2
+        ],
+        "nonotes_decision_denied": [
+          30,
+          30
+        ],
+        "nonotes_decision_approved": [
+          0,
+          30
+        ],
+        "balanced_lost_notes": 0.5,
+        "balanced_lost_nonotes": 0.5
+      },
+      "preds": {
+        "P-A5_dissociation": {
+          "criteria": "decision_lost>=0.6 AND which_lost<=0.33 AND which_retained>=0.8",
+          "values": {
+            "decision_lost": 1.0,
+            "which_lost": 0.10714285714285714,
+            "which_retained": 1.0
+          },
+          "passed": true
+        },
+        "P-B_channel_asymmetry": {
+          "criteria": "approved_decision_lost < decision_lost",
+          "values": {
+            "approved_lost": 0.0,
+            "denied_lost": 1.0
+          },
+          "passed": true
+        },
+        "P-C_confabulation_locus": {
+          "criteria": "which_confab_lost<0.25 AND repair_specific_lost>=0.75",
+          "values": {
+            "which_confab_lost": 0.03571428571428571,
+            "repair_specific_lost": 1.0
+          },
+          "passed": true
+        },
+        "P-D_honesty_uptake": {
+          "criteria": "abstain_lost>=0.5 AND abstain_retained<=0.1",
+          "values": {
+            "abstain_lost": 0.8928571428571429,
+            "abstain_retained": 0.0
+          },
+          "passed": true
+        },
+        "P-E_calibrated_prior": {
+          "criteria": "balanced_lost_notes - balanced_lost_nonotes >= 0.10",
+          "values": {
+            "balanced_lost_notes": 0.5,
+            "balanced_lost_nonotes": 0.5
+          },
+          "passed": false
+        },
+        "P-F_incoherence": {
+          "criteria": "incoherent_lost>=0.5 AND incoherent_retained<=0.1",
+          "values": {
+            "incoherent_lost": 0.8571428571428571,
+            "incoherent_retained": 0.0
+          },
+          "passed": true
+        }
+      },
+      "wilson": {
+        "decision_lost": {
+          "k": 28,
+          "n": 28,
+          "p": 1.0,
+          "ci95": [
+            0.8793527963418923,
+            1.0
+          ]
+        },
+        "which_lost": {
+          "k": 3,
+          "n": 28,
+          "p": 0.10714285714285714,
+          "ci95": [
+            0.03711769205479949,
+            0.2719622536765708
+          ]
+        },
+        "which_retained": {
+          "k": 2,
+          "n": 2,
+          "p": 1.0,
+          "ci95": [
+            0.34237195288961925,
+            1.0
+          ]
+        },
+        "repair_lost": {
+          "k": 7,
+          "n": 28,
+          "p": 0.25,
+          "ci95": [
+            0.12676334942200781,
+            0.433560252407046
+          ]
+        }
+      },
+      "tokens": {
+        "prompt": 103329,
+        "completion": 9419
+      },
+      "cost_usd": 0.0564,
+      "anomalies": 0
+    },
+    "gemlite": {
+      "model": "gemini-2.5-flash-lite",
+      "applicable": false,
+      "cells": {
+        "n": 4,
+        "n_denied": 3,
+        "n_approved": 1,
+        "n_lost": 3,
+        "n_retained": 0,
+        "n_app_lost": 1,
+        "n_app_kept": 0,
+        "mean_summary_words": 17.5,
+        "mean_policy_retention": 0.08333333333333333,
+        "decision_lost": [
+          1,
+          3
+        ],
+        "decision_retained": [
+          0,
+          0
+        ],
+        "which_lost": [
+          0,
+          3
+        ],
+        "which_retained": [
+          0,
+          0
+        ],
+        "repair_lost": [
+          0,
+          3
+        ],
+        "repair_retained": [
+          0,
+          0
+        ],
+        "repair_specific_lost": [
+          2,
+          3
+        ],
+        "which_confab_lost": [
+          0,
+          3
+        ],
+        "abstain_lost": [
+          1,
+          3
+        ],
+        "abstain_retained": [
+          0,
+          0
+        ],
+        "incoherent_lost": [
+          0,
+          3
+        ],
+        "incoherent_retained": [
+          0,
+          0
+        ],
+        "approved_decision_lost": [
+          0,
+          1
+        ],
+        "approved_decision_retained": [
+          0,
+          0
+        ],
+        "gist_lost": [
+          1,
+          3
+        ],
+        "gist_retained": [
+          0,
+          0
+        ],
+        "nonotes_decision_denied": [
+          2,
+          3
+        ],
+        "nonotes_decision_approved": [
+          1,
+          1
+        ],
+        "balanced_lost_notes": 0.16666666666666666,
+        "balanced_lost_nonotes": 0.8333333333333333
+      },
+      "preds": {
+        "P-A5_dissociation": {
+          "criteria": "decision_lost>=0.6 AND which_lost<=0.33 AND which_retained>=0.8",
+          "values": {
+            "decision_lost": 0.3333333333333333,
+            "which_lost": 0.0,
+            "which_retained": NaN
+          },
+          "passed": false
+        },
+        "P-B_channel_asymmetry": {
+          "criteria": "approved_decision_lost < decision_lost",
+          "values": {
+            "approved_lost": 0.0,
+            "denied_lost": 0.3333333333333333
+          },
+          "passed": true
+        },
+        "P-C_confabulation_locus": {
+          "criteria": "which_confab_lost<0.25 AND repair_specific_lost>=0.75",
+          "values": {
+            "which_confab_lost": 0.0,
+            "repair_specific_lost": 0.6666666666666666
+          },
+          "passed": false
+        },
+        "P-D_honesty_uptake": {
+          "criteria": "abstain_lost>=0.5 AND abstain_retained<=0.1",
+          "values": {
+            "abstain_lost": 0.3333333333333333,
+            "abstain_retained": NaN
+          },
+          "passed": false
+        },
+        "P-E_calibrated_prior": {
+          "criteria": "balanced_lost_notes - balanced_lost_nonotes >= 0.10",
+          "values": {
+            "balanced_lost_notes": 0.16666666666666666,
+            "balanced_lost_nonotes": 0.8333333333333333
+          },
+          "passed": false
+        },
+        "P-F_incoherence": {
+          "criteria": "incoherent_lost>=0.5 AND incoherent_retained<=0.1",
+          "values": {
+            "incoherent_lost": 0.0,
+            "incoherent_retained": NaN
+          },
+          "passed": false
+        }
+      },
+      "wilson": {
+        "decision_lost": {
+          "k": 1,
+          "n": 3,
+          "p": 0.3333333333333333,
+          "ci95": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "which_lost": {
+          "k": 0,
+          "n": 3,
+          "p": 0.0,
+          "ci95": [
+            0.0,
+            0.5615060804490177
+          ]
+        },
+        "which_retained": {
+          "k": 0,
+          "n": 0,
+          "p": NaN,
+          "ci95": [
+            NaN,
+            NaN
+          ]
+        },
+        "repair_lost": {
+          "k": 0,
+          "n": 3,
+          "p": 0.0,
+          "ci95": [
+            0.0,
+            0.5615060804490177
+          ]
+        }
+      },
+      "tokens": {
+        "prompt": 6076,
+        "completion": 3740
+      },
+      "cost_usd": 0.0021,
+      "anomalies": 1
+    }
+  },
+  "generalization": {
+    "P-A5_dissociation": {
+      "votes": {
+        "grok": true,
+        "haiku": true
+      },
+      "n_pass": 2,
+      "n_applicable": 2,
+      "generalizes": false
+    },
+    "P-B_channel_asymmetry": {
+      "votes": {
+        "grok": true,
+        "haiku": true
+      },
+      "n_pass": 2,
+      "n_applicable": 2,
+      "generalizes": false
+    },
+    "P-C_confabulation_locus": {
+      "votes": {
+        "grok": true,
+        "haiku": true
+      },
+      "n_pass": 2,
+      "n_applicable": 2,
+      "generalizes": false
+    },
+    "P-D_honesty_uptake": {
+      "votes": {
+        "grok": true,
+        "haiku": true
+      },
+      "n_pass": 2,
+      "n_applicable": 2,
+      "generalizes": false
+    },
+    "P-E_calibrated_prior": {
+      "votes": {
+        "grok": true,
+        "haiku": false
+      },
+      "n_pass": 1,
+      "n_applicable": 2,
+      "generalizes": false
+    },
+    "P-F_incoherence": {
+      "votes": {
+        "grok": true,
+        "haiku": false
+      },
+      "n_pass": 1,
+      "n_applicable": 2,
+      "generalizes": false
+    }
+  },
+  "total_cost_usd": 0.5
+}

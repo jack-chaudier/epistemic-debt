@@ -1,0 +1,86 @@
+{
+  "sample": {
+    "lost": [
+      "v5item01",
+      "v5item07",
+      "v5item11",
+      "v5item19",
+      "v5item22",
+      "v5item25",
+      "v5item30",
+      "v5item34",
+      "v5item36",
+      "v5item37",
+      "v5item39",
+      "v5item41"
+    ],
+    "retained": [
+      "v5item00",
+      "v5item03",
+      "v5item09",
+      "v5item12",
+      "v5item23",
+      "v5item27",
+      "v5item32",
+      "v5item55"
+    ]
+  },
+  "channels": {
+    "which": "gemini-3.1-flash-lite",
+    "which_abstain": "gemini-3.1-flash-lite"
+  },
+  "cells": {
+    "which_lost": {
+      "k": 3,
+      "n": 12,
+      "p": 0.25,
+      "ci95": [
+        0.08894003962896138,
+        0.53231033912066
+      ]
+    },
+    "which_retained": {
+      "k": 8,
+      "n": 8,
+      "p": 1.0,
+      "ci95": [
+        0.6755843804891231,
+        1.0
+      ]
+    },
+    "abstain_lost": {
+      "k": 11,
+      "n": 12,
+      "p": 0.9166666666666666,
+      "ci95": [
+        0.6461140782014047,
+        0.9851352905492264
+      ]
+    },
+    "abstain_retained": {
+      "k": 0,
+      "n": 8,
+      "p": 0.0,
+      "ci95": [
+        0.0,
+        0.3244156195108769
+      ]
+    }
+  },
+  "preds": {
+    "P-G1": {
+      "criteria": "which_lost<=1/3 AND which_retained>=0.7",
+      "passed": true
+    },
+    "P-G2": {
+      "criteria": "abstain_lost>=0.5 AND abstain_retained<=0.25",
+      "passed": true
+    }
+  },
+  "discarded_partial_calls": 10,
+  "tokens": {
+    "prompt": 8730,
+    "completion": 352
+  },
+  "cost_usd": 0.0
+}

@@ -1,0 +1,541 @@
+compressor,answerer,item,truth,fail_retained,any_policy_lost,decision,decision_correct,which,which_correct,which_confab,abstained,incoherent
+grok,grok,v5item00,DENIED,True,True,DENIED,True,propellant tank ullage pressure,True,False,False,False
+grok,haiku,v5item00,DENIED,True,True,DENIED,True,propellant tank ullage pressure,True,False,False,False
+grok,gpt,v5item00,DENIED,True,True,DENIED,True,propellant tank ullage pressure,True,False,False,False
+grok,grok,v5item01,DENIED,False,True,DENIED,True,nitrogen blanket pressure,False,True,False,False
+grok,haiku,v5item01,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item01,DENIED,False,True,DENIED,True,discharge line conductivity,True,False,True,False
+grok,grok,v5item02,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item02,APPROVED,,True,APPROVED,True,track gauge deviation,False,True,False,False
+grok,gpt,v5item02,APPROVED,,True,DENIED,False,track gauge deviation,False,True,False,False
+grok,grok,v5item03,DENIED,True,False,DENIED,True,UPS reserve charge,True,False,False,False
+grok,haiku,v5item03,DENIED,True,False,DENIED,True,UPS reserve charge,True,False,False,False
+grok,gpt,v5item03,DENIED,True,False,DENIED,True,UPS reserve charge,True,False,False,False
+grok,grok,v5item04,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item04,APPROVED,,True,APPROVED,True,sterility clarity index,False,True,False,False
+grok,gpt,v5item04,APPROVED,,True,DENIED,False,sterility clarity index,False,True,False,False
+grok,grok,v5item05,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item05,APPROVED,,False,APPROVED,True,NONE,True,False,True,False
+grok,gpt,v5item05,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+grok,grok,v5item06,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item06,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item06,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item07,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item07,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item07,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item08,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item08,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+grok,gpt,v5item08,APPROVED,,False,DENIED,False,NONE,True,False,False,True
+grok,grok,v5item09,DENIED,True,False,DENIED,True,generator fuel reserve,True,False,False,False
+grok,haiku,v5item09,DENIED,True,False,DENIED,True,generator fuel reserve,True,False,False,False
+grok,gpt,v5item09,DENIED,True,False,DENIED,True,generator fuel reserve,True,False,False,False
+grok,grok,v5item10,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item10,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item10,DENIED,False,True,APPROVED,False,NONE,False,False,True,False
+grok,grok,v5item11,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item11,DENIED,False,True,,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item11,DENIED,False,True,DENIED,True,cable tension uniformity,False,True,True,False
+grok,grok,v5item12,DENIED,True,False,DENIED,True,star tracker residual,True,False,False,False
+grok,haiku,v5item12,DENIED,True,False,DENIED,True,star tracker residual,True,False,False,False
+grok,gpt,v5item12,DENIED,True,False,DENIED,True,star tracker residual,True,False,False,False
+grok,grok,v5item13,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item13,APPROVED,,True,DENIED,False,batch purity assay,False,True,False,False
+grok,gpt,v5item13,APPROVED,,True,DENIED,False,batch purity assay,False,True,False,False
+grok,grok,v5item14,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,haiku,v5item14,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item14,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item15,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item15,DENIED,False,True,,False,UNMATCHED,False,False,False,False
+grok,gpt,v5item15,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item16,APPROVED,,True,DENIED,False,NONE,True,False,False,True
+grok,haiku,v5item16,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item16,APPROVED,,True,DENIED,False,diluent conductivity,False,True,False,False
+grok,grok,v5item17,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item17,APPROVED,,True,APPROVED,True,UNMATCHED,False,False,False,False
+grok,gpt,v5item17,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,grok,v5item18,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,haiku,v5item18,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item18,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item19,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item19,DENIED,False,True,,False,,False,False,True,False
+grok,gpt,v5item19,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item20,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,haiku,v5item20,APPROVED,,True,,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item20,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item21,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item21,DENIED,False,True,,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item21,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item22,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item22,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item22,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item23,DENIED,True,False,DENIED,True,rebar cover depth,True,False,False,False
+grok,haiku,v5item23,DENIED,True,False,DENIED,True,rebar cover depth,True,False,False,False
+grok,gpt,v5item23,DENIED,True,False,DENIED,True,rebar cover depth,True,False,False,False
+grok,grok,v5item24,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item24,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item24,DENIED,False,True,DENIED,True,guidance regression pass rate,False,True,True,False
+grok,grok,v5item25,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item25,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item25,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item26,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item26,DENIED,False,True,,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item26,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item27,DENIED,True,False,DENIED,True,generator fuel reserve,True,False,False,False
+grok,haiku,v5item27,DENIED,True,False,DENIED,True,generator fuel reserve,True,False,False,False
+grok,gpt,v5item27,DENIED,True,False,DENIED,True,generator fuel reserve,True,False,False,False
+grok,grok,v5item28,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item28,APPROVED,,True,DENIED,False,UNMATCHED,False,False,False,False
+grok,gpt,v5item28,APPROVED,,True,APPROVED,True,label reconciliation rate,False,True,False,False
+grok,grok,v5item29,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,haiku,v5item29,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item29,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item30,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item30,DENIED,False,True,,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item30,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item31,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,haiku,v5item31,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item31,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item32,DENIED,True,False,DENIED,True,interlock relay voltage,True,False,False,False
+grok,haiku,v5item32,DENIED,True,False,DENIED,True,interlock relay voltage,True,False,False,False
+grok,gpt,v5item32,DENIED,True,False,DENIED,True,interlock relay voltage,True,False,False,False
+grok,grok,v5item33,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,haiku,v5item33,APPROVED,,True,APPROVED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item33,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item34,DENIED,False,True,APPROVED,False,NONE,False,False,True,False
+grok,haiku,v5item34,DENIED,False,True,,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item34,DENIED,False,True,APPROVED,False,NONE,False,False,False,False
+grok,grok,v5item35,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item35,APPROVED,,True,APPROVED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item35,APPROVED,,True,DENIED,False,vibration amplitude,False,True,True,False
+grok,grok,v5item36,DENIED,False,True,APPROVED,False,NONE,False,False,False,False
+grok,haiku,v5item36,DENIED,False,True,APPROVED,False,UNMATCHED,False,False,False,False
+grok,gpt,v5item36,DENIED,False,True,DENIED,True,NONE,False,False,False,True
+grok,grok,v5item37,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item37,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item37,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item38,APPROVED,,True,DENIED,False,point blade wear,False,True,False,False
+grok,haiku,v5item38,APPROVED,,True,APPROVED,True,detection loop sensitivity,False,True,True,False
+grok,gpt,v5item38,APPROVED,,True,DENIED,False,point blade wear,False,True,False,False
+grok,grok,v5item39,DENIED,False,True,APPROVED,False,NONE,False,False,False,False
+grok,haiku,v5item39,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item39,DENIED,False,True,DENIED,True,DNS failover propagation time,True,False,False,False
+grok,grok,v5item40,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item40,APPROVED,,True,DENIED,False,particulate burden index,False,True,True,False
+grok,gpt,v5item40,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,grok,v5item41,DENIED,False,True,DENIED,True,NONE,False,False,False,True
+grok,haiku,v5item41,DENIED,False,True,APPROVED,False,UNMATCHED,False,False,False,False
+grok,gpt,v5item41,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item42,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item42,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+grok,gpt,v5item42,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+grok,grok,v5item43,APPROVED,,True,APPROVED,True,NONE,True,False,True,False
+grok,haiku,v5item43,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item43,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item44,DENIED,False,True,DENIED,True,point blade wear,False,True,True,False
+grok,haiku,v5item44,DENIED,False,True,DENIED,True,UNMATCHED,False,False,False,False
+grok,gpt,v5item44,DENIED,False,True,DENIED,True,heater circuit resistance,False,True,False,False
+grok,grok,v5item45,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,haiku,v5item45,APPROVED,,True,,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item45,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item46,APPROVED,,True,DENIED,False,cumulative cold-chain excursion,False,True,False,False
+grok,haiku,v5item46,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item46,APPROVED,,True,DENIED,False,freezer alarm response time,False,True,False,False
+grok,grok,v5item47,APPROVED,,True,DENIED,False,expansion joint gap,False,True,False,False
+grok,haiku,v5item47,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item47,APPROVED,,True,DENIED,False,deck temperature differential,False,True,False,False
+grok,grok,v5item48,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item48,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item48,DENIED,False,True,APPROVED,False,NONE,False,False,True,False
+grok,grok,v5item49,DENIED,False,True,DENIED,True,QA composite audit score,False,True,True,False
+grok,haiku,v5item49,DENIED,False,True,DENIED,True,UNMATCHED,False,False,False,False
+grok,gpt,v5item49,DENIED,False,True,DENIED,True,seal integrity margin,False,True,False,False
+grok,grok,v5item50,APPROVED,,True,DENIED,False,detection loop sensitivity,False,True,True,False
+grok,haiku,v5item50,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item50,APPROVED,,True,DENIED,False,detection loop sensitivity,False,True,True,False
+grok,grok,v5item51,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item51,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+grok,gpt,v5item51,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+grok,grok,v5item52,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item52,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item52,APPROVED,,True,DENIED,False,NONE,True,False,False,True
+grok,grok,v5item53,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,haiku,v5item53,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+grok,gpt,v5item53,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+grok,grok,v5item54,APPROVED,,True,DENIED,False,NONE,True,False,False,True
+grok,haiku,v5item54,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item54,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item55,DENIED,True,True,DENIED,True,seal integrity margin,True,False,False,False
+grok,haiku,v5item55,DENIED,True,True,DENIED,True,seal integrity margin,True,False,False,False
+grok,gpt,v5item55,DENIED,True,True,DENIED,True,seal integrity margin,True,False,False,False
+grok,grok,v5item56,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,haiku,v5item56,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item56,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item57,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,haiku,v5item57,APPROVED,,True,,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item57,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item58,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,haiku,v5item58,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+grok,gpt,v5item58,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+grok,grok,v5item59,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+grok,haiku,v5item59,APPROVED,,True,APPROVED,True,UNMATCHED,False,False,False,False
+grok,gpt,v5item59,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,grok,v5item00,DENIED,True,False,DENIED,True,propellant tank ullage pressure,True,False,False,False
+haiku,haiku,v5item00,DENIED,True,False,DENIED,True,propellant tank ullage pressure,True,False,False,False
+haiku,gpt,v5item00,DENIED,True,False,DENIED,True,propellant tank ullage pressure,True,False,False,False
+haiku,grok,v5item01,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item01,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item01,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item02,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item02,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item02,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item03,DENIED,True,True,DENIED,True,UPS reserve charge,True,False,False,False
+haiku,haiku,v5item03,DENIED,True,True,DENIED,True,UPS reserve charge,True,False,False,False
+haiku,gpt,v5item03,DENIED,True,True,DENIED,True,UPS reserve charge,True,False,False,False
+haiku,grok,v5item04,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item04,APPROVED,,True,APPROVED,True,UNMATCHED,False,False,False,False
+haiku,gpt,v5item04,APPROVED,,True,DENIED,False,NONE,True,False,False,True
+haiku,grok,v5item05,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item05,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,gpt,v5item05,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,grok,v5item06,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item06,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item06,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item07,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item07,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item07,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item08,APPROVED,,False,APPROVED,True,crossing angle tolerance,False,True,False,False
+haiku,haiku,v5item08,APPROVED,,False,DENIED,False,NONE,True,False,False,True
+haiku,gpt,v5item08,APPROVED,,False,DENIED,False,NONE,True,False,False,True
+haiku,grok,v5item09,DENIED,True,True,DENIED,True,generator fuel reserve,True,False,False,False
+haiku,haiku,v5item09,DENIED,True,True,DENIED,True,generator fuel reserve,True,False,False,False
+haiku,gpt,v5item09,DENIED,True,True,DENIED,True,generator fuel reserve,True,False,False,False
+haiku,grok,v5item10,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item10,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item10,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item11,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item11,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item11,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item12,DENIED,True,False,DENIED,True,star tracker residual,True,False,False,False
+haiku,haiku,v5item12,DENIED,True,False,DENIED,True,star tracker residual,True,False,False,False
+haiku,gpt,v5item12,DENIED,True,False,DENIED,True,star tracker residual,True,False,False,False
+haiku,grok,v5item13,APPROVED,,True,DENIED,False,discharge line conductivity,False,True,False,False
+haiku,haiku,v5item13,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,gpt,v5item13,APPROVED,,True,DENIED,False,residual solvent concentration,False,True,True,False
+haiku,grok,v5item14,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item14,APPROVED,,True,DENIED,False,,False,False,True,False
+haiku,gpt,v5item14,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item15,DENIED,False,True,DENIED,True,chilled water supply temperature,False,True,True,False
+haiku,haiku,v5item15,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item15,DENIED,False,True,DENIED,True,NONE,False,False,False,True
+haiku,grok,v5item16,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item16,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item16,APPROVED,,True,DENIED,False,diluent conductivity,False,True,True,False
+haiku,grok,v5item17,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item17,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,gpt,v5item17,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,grok,v5item18,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item18,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item18,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item19,DENIED,True,True,DENIED,True,condenser outlet temperature,True,False,False,False
+haiku,haiku,v5item19,DENIED,True,True,DENIED,True,condenser outlet temperature,True,False,False,False
+haiku,gpt,v5item19,DENIED,True,True,DENIED,True,condenser outlet temperature,True,False,False,False
+haiku,grok,v5item20,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item20,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,gpt,v5item20,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,grok,v5item21,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item21,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item21,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item22,DENIED,True,False,DENIED,True,seal torque retention,True,False,False,False
+haiku,haiku,v5item22,DENIED,True,False,DENIED,True,seal torque retention,True,False,False,False
+haiku,gpt,v5item22,DENIED,True,False,DENIED,True,seal torque retention,True,False,False,False
+haiku,grok,v5item23,DENIED,True,False,DENIED,True,rebar cover depth,True,False,False,False
+haiku,haiku,v5item23,DENIED,True,False,DENIED,True,rebar cover depth,True,False,False,False
+haiku,gpt,v5item23,DENIED,True,False,DENIED,True,rebar cover depth,True,False,False,False
+haiku,grok,v5item24,DENIED,True,True,DENIED,True,backup battery charge,True,False,False,False
+haiku,haiku,v5item24,DENIED,True,True,DENIED,True,backup battery charge,True,False,True,False
+haiku,gpt,v5item24,DENIED,True,True,DENIED,True,guidance regression pass rate,False,True,False,False
+haiku,grok,v5item25,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item25,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item25,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item26,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item26,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item26,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item27,DENIED,True,False,DENIED,True,generator fuel reserve,True,False,False,False
+haiku,haiku,v5item27,DENIED,True,False,DENIED,True,generator fuel reserve,True,False,False,False
+haiku,gpt,v5item27,DENIED,True,False,DENIED,True,generator fuel reserve,True,False,False,False
+haiku,grok,v5item28,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item28,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,gpt,v5item28,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item29,APPROVED,,True,DENIED,False,maximum crack width,False,True,False,False
+haiku,haiku,v5item29,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item29,APPROVED,,True,DENIED,False,maximum crack width,False,True,True,False
+haiku,grok,v5item30,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item30,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item30,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item31,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item31,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item31,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item32,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item32,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item32,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item33,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item33,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item33,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item34,DENIED,False,True,DENIED,True,NONE,False,False,False,True
+haiku,haiku,v5item34,DENIED,False,True,APPROVED,False,NONE,False,False,True,False
+haiku,gpt,v5item34,DENIED,False,True,APPROVED,False,NONE,False,False,False,False
+haiku,grok,v5item35,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item35,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,gpt,v5item35,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+haiku,grok,v5item36,DENIED,True,True,DENIED,True,telemetry downlink margin,True,False,False,False
+haiku,haiku,v5item36,DENIED,True,True,DENIED,True,telemetry downlink margin,True,False,False,False
+haiku,gpt,v5item36,DENIED,True,True,DENIED,True,telemetry downlink margin,True,False,False,False
+haiku,grok,v5item37,DENIED,True,True,DENIED,True,catalyst moisture content,True,False,False,False
+haiku,haiku,v5item37,DENIED,True,True,DENIED,True,catalyst moisture content,True,False,False,False
+haiku,gpt,v5item37,DENIED,True,True,DENIED,True,catalyst moisture content,True,False,False,False
+haiku,grok,v5item38,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item38,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item38,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item39,DENIED,False,True,APPROVED,False,NONE,False,False,False,False
+haiku,haiku,v5item39,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,gpt,v5item39,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item40,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item40,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,gpt,v5item40,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,grok,v5item41,DENIED,False,True,APPROVED,False,NONE,False,False,True,False
+haiku,haiku,v5item41,DENIED,False,True,DENIED,True,UNMATCHED,False,False,False,False
+haiku,gpt,v5item41,DENIED,False,True,DENIED,True,gust speed during test,True,False,True,False
+haiku,grok,v5item42,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item42,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item42,APPROVED,,True,DENIED,False,NONE,True,False,False,True
+haiku,grok,v5item43,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item43,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,gpt,v5item43,APPROVED,,True,DENIED,False,NONE,True,False,False,True
+haiku,grok,v5item44,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item44,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item44,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item45,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item45,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item45,APPROVED,,True,DENIED,False,NONE,True,False,False,True
+haiku,grok,v5item46,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item46,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item46,APPROVED,,True,DENIED,False,freezer alarm response time,False,True,True,False
+haiku,grok,v5item47,APPROVED,,True,DENIED,False,expansion joint gap,False,True,True,False
+haiku,haiku,v5item47,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item47,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item48,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item48,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item48,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item49,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item49,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item49,DENIED,False,True,DENIED,True,seal integrity margin,False,True,True,False
+haiku,grok,v5item50,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item50,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item50,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item51,APPROVED,,True,DENIED,False,standby link utilization,False,True,True,False
+haiku,haiku,v5item51,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item51,APPROVED,,True,DENIED,False,standby link utilization,False,True,True,False
+haiku,grok,v5item52,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item52,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item52,APPROVED,,True,DENIED,False,diluent conductivity,False,True,False,False
+haiku,grok,v5item53,DENIED,False,True,DENIED,True,load distribution factor,False,True,True,False
+haiku,haiku,v5item53,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item53,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item54,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item54,APPROVED,,True,APPROVED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item54,APPROVED,,True,DENIED,False,umbilical retract time,False,True,False,False
+haiku,grok,v5item55,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,haiku,v5item55,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item55,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+haiku,grok,v5item56,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item56,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item56,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item57,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item57,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item57,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item58,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,haiku,v5item58,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+haiku,gpt,v5item58,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+haiku,grok,v5item59,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+haiku,haiku,v5item59,APPROVED,,True,APPROVED,True,UNMATCHED,False,False,True,False
+haiku,gpt,v5item59,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+gpt,grok,v5item00,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item00,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item00,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item01,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item01,DENIED,False,True,,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item01,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item02,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item02,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item02,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item03,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item03,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,gpt,v5item03,DENIED,False,True,DENIED,True,UPS reserve charge,True,False,True,False
+gpt,grok,v5item04,APPROVED,,True,DENIED,False,sterility clarity index,False,True,True,False
+gpt,haiku,v5item04,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item04,APPROVED,,True,DENIED,False,sterility clarity index,False,True,False,False
+gpt,grok,v5item05,APPROVED,,True,DENIED,False,grout compressive margin,False,True,True,False
+gpt,haiku,v5item05,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item05,APPROVED,,True,DENIED,False,NONE,True,False,False,True
+gpt,grok,v5item06,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item06,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item06,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item07,DENIED,False,True,APPROVED,False,NONE,False,False,False,False
+gpt,haiku,v5item07,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item07,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item08,APPROVED,,False,APPROVED,True,NONE,True,False,False,False
+gpt,haiku,v5item08,APPROVED,,False,DENIED,False,UNMATCHED,False,False,False,False
+gpt,gpt,v5item08,APPROVED,,False,DENIED,False,NONE,True,False,False,True
+gpt,grok,v5item09,DENIED,True,True,DENIED,True,generator fuel reserve,True,False,False,False
+gpt,haiku,v5item09,DENIED,True,True,DENIED,True,generator fuel reserve,True,False,False,False
+gpt,gpt,v5item09,DENIED,True,True,DENIED,True,generator fuel reserve,True,False,False,False
+gpt,grok,v5item10,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item10,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item10,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item11,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item11,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item11,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item12,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item12,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item12,DENIED,False,True,DENIED,True,NONE,False,False,False,True
+gpt,grok,v5item13,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item13,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item13,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item14,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item14,APPROVED,,True,,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item14,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item15,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item15,DENIED,False,True,,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item15,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item16,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item16,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,gpt,v5item16,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item17,APPROVED,,True,DENIED,False,NONE,True,False,False,True
+gpt,haiku,v5item17,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item17,APPROVED,,True,DENIED,False,pier settlement reading,False,True,True,False
+gpt,grok,v5item18,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item18,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item18,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item19,DENIED,True,True,DENIED,True,condenser outlet temperature,True,False,False,False
+gpt,haiku,v5item19,DENIED,True,True,DENIED,True,condenser outlet temperature,True,False,False,False
+gpt,gpt,v5item19,DENIED,True,True,DENIED,True,condenser outlet temperature,True,False,False,False
+gpt,grok,v5item20,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item20,APPROVED,,True,,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item20,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item21,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item21,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item21,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item22,DENIED,False,True,DENIED,True,NONE,False,False,False,True
+gpt,haiku,v5item22,DENIED,False,True,DENIED,True,seal torque retention,True,False,True,False
+gpt,gpt,v5item22,DENIED,False,True,DENIED,True,seal torque retention,True,False,False,False
+gpt,grok,v5item23,DENIED,False,True,APPROVED,False,NONE,False,False,False,False
+gpt,haiku,v5item23,DENIED,False,True,DENIED,True,UNMATCHED,False,False,False,False
+gpt,gpt,v5item23,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item24,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item24,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item24,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item25,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item25,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item25,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item26,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item26,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item26,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item27,DENIED,False,True,DENIED,True,standby CPU headroom,False,True,True,False
+gpt,haiku,v5item27,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item27,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item28,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item28,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item28,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item29,APPROVED,,True,DENIED,False,maximum crack width,False,True,False,False
+gpt,haiku,v5item29,APPROVED,,True,DENIED,False,maximum crack width,False,True,False,False
+gpt,gpt,v5item29,APPROVED,,True,DENIED,False,maximum crack width,False,True,False,False
+gpt,grok,v5item30,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item30,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item30,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item31,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item31,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item31,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item32,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item32,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item32,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item33,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item33,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item33,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item34,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item34,DENIED,False,True,,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item34,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item35,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item35,APPROVED,,True,,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item35,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item36,DENIED,False,True,DENIED,True,umbilical retract time,False,True,False,False
+gpt,haiku,v5item36,DENIED,False,True,DENIED,True,UNMATCHED,False,False,False,False
+gpt,gpt,v5item36,DENIED,False,True,DENIED,True,telemetry downlink margin,True,False,False,False
+gpt,grok,v5item37,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item37,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item37,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item38,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item38,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item38,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item39,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item39,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item39,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item40,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+gpt,haiku,v5item40,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item40,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item41,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item41,DENIED,False,True,,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item41,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item42,APPROVED,,True,DENIED,False,avionics bus load,False,True,True,False
+gpt,haiku,v5item42,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item42,APPROVED,,True,DENIED,False,avionics bus load,False,True,False,False
+gpt,grok,v5item43,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item43,APPROVED,,True,,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item43,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item44,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item44,DENIED,False,True,,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item44,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item45,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item45,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item45,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item46,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item46,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item46,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item47,APPROVED,,True,DENIED,False,expansion joint gap,False,True,True,False
+gpt,haiku,v5item47,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item47,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item48,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item48,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item48,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item49,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item49,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item49,DENIED,False,True,DENIED,True,seal integrity margin,False,True,True,False
+gpt,grok,v5item50,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item50,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,gpt,v5item50,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item51,APPROVED,,True,DENIED,False,standby link utilization,False,True,True,False
+gpt,haiku,v5item51,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item51,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item52,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+gpt,haiku,v5item52,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item52,APPROVED,,True,DENIED,False,diluent conductivity,False,True,False,False
+gpt,grok,v5item53,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item53,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item53,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item54,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item54,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item54,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item55,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,haiku,v5item55,DENIED,False,True,DENIED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item55,DENIED,False,True,DENIED,True,NONE,False,False,True,True
+gpt,grok,v5item56,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item56,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item56,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item57,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item57,APPROVED,,True,DENIED,False,,False,False,True,False
+gpt,gpt,v5item57,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item58,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,haiku,v5item58,APPROVED,,True,DENIED,False,UNMATCHED,False,False,True,False
+gpt,gpt,v5item58,APPROVED,,True,DENIED,False,NONE,True,False,True,True
+gpt,grok,v5item59,APPROVED,,True,APPROVED,True,NONE,True,False,False,False
+gpt,haiku,v5item59,APPROVED,,True,APPROVED,True,UNMATCHED,False,False,True,False
+gpt,gpt,v5item59,APPROVED,,True,DENIED,False,NONE,True,False,False,True
