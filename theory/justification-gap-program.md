@@ -196,7 +196,7 @@ Both checks run against artifacts already in this repository; verification scrip
 ### A.1 Shelf Width Law: VERIFIED (3/3 closure families)
 
 Predicted `ω_closed = log2(|Q_(k,p)| / |M_k|)` vs measured post-closure shelf width in
-[separator_closure_experiment.md](../../../results/quotient-thresholds/separator-closure-experiment/separator_closure_experiment.md):
+the stark separator-closure artifact (`results/quotient-thresholds/separator-closure-experiment/` in [jack-chaudier/stark](https://github.com/jack-chaudier/stark); exact check reproduced here by [proofs/shelf_width_law.py](../proofs/shelf_width_law.py)):
 
 | family | measured | predicted | answer states at closure |
 |---|---|---|---|
@@ -258,7 +258,7 @@ Also: gist supports the verdict, not the witness (out-of-spec whiffs survived in
 
 ## Appendix E — LLM pilot 4: preregistered confirmation (2026-07-03, REPLICATED)
 
-Single-budget, preregistered, fresh corpus (N=60; 30 DENIED with exactly one failing parameter; 15-word compression instruction; retention 0.372; artifacts in [results/llm-pilots/2026-07-03-grok/v4](../../../results/llm-pilots/2026-07-03-grok/v4/v4_results.json)). Predictions: P-B, P-C, P-D **pass**; P-A fails only on its floor conjunct, and informatively (below).
+Single-budget, preregistered, fresh corpus (N=60; 30 DENIED with exactly one failing parameter; 15-word compression instruction; retention 0.372; artifacts in [experiments/grok-pilots/2026-07-03/v4](../experiments/grok-pilots/2026-07-03/v4/v4_results.json)). Predictions: P-B, P-C, P-D **pass**; P-A fails only on its floor conjunct, and informatively (below).
 
 Headline cells (Wilson 95% CIs):
 
