@@ -1,0 +1,31 @@
+item,fail_retained,abstained,notes_answer,notes_correct,full_correct,routed_correct,pipeline_correct
+v5item00,True,False,propellant tank ullage pressure,True,True,,True
+v5item01,False,False,nitrogen blanket pressure,False,True,,False
+v5item03,True,False,UPS reserve charge,True,True,,True
+v5item06,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item07,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item09,True,False,generator fuel reserve,True,True,,True
+v5item10,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item11,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item12,True,False,star tracker residual,True,True,,True
+v5item15,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item19,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item21,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item22,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item23,True,False,rebar cover depth,True,True,,True
+v5item24,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item25,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item26,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item27,True,False,generator fuel reserve,True,True,,True
+v5item30,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item32,True,False,interlock relay voltage,True,True,,True
+v5item34,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item36,False,False,NONE,False,True,,False
+v5item37,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item39,False,False,NONE,False,True,,False
+v5item41,False,False,NONE,False,True,,False
+v5item44,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item48,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item49,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item53,False,True,INSUFFICIENT_EVIDENCE,False,True,True,True
+v5item55,True,False,seal integrity margin,True,True,,True

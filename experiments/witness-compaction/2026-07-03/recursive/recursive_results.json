@@ -1,0 +1,58 @@
+{
+  "design": {
+    "model": "grok",
+    "chain": [
+      80,
+      40,
+      15
+    ],
+    "direct": "phase-B 15w cache",
+    "n_items": 30,
+    "prereg": "prereg_recursive.md"
+  },
+  "arms": {
+    "direct": {
+      "n": 30,
+      "words": 19.3,
+      "retention": 0.3222222222222222,
+      "fail_survival": 0.3333333333333333,
+      "decision": 0.8666666666666667,
+      "which": 0.26666666666666666
+    },
+    "chain": {
+      "n": 30,
+      "words": 18.4,
+      "retention": 0.36666666666666664,
+      "fail_survival": 0.36666666666666664,
+      "decision": 0.8333333333333334,
+      "which": 0.3333333333333333
+    }
+  },
+  "chain_decay": {
+    "gen80": 0.9444444444444444,
+    "gen40": 0.8111111111111111,
+    "gen15": 0.36666666666666664
+  },
+  "preds": {
+    "P-C1_dpi_sanity": {
+      "direct": 0.3222222222222222,
+      "chain": 0.36666666666666664,
+      "passed": true
+    },
+    "P-C2_compounding": {
+      "direct": 0.3222222222222222,
+      "chain": 0.36666666666666664,
+      "passed": false
+    },
+    "P-C3_gist_corrupts": {
+      "direct": 0.8666666666666667,
+      "chain": 0.8333333333333334,
+      "passed": false
+    }
+  },
+  "tokens": {
+    "prompt": 66518,
+    "completion": 9791
+  },
+  "cost_usd": 0.0182
+}

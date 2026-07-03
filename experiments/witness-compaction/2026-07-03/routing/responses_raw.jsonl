@@ -1,0 +1,48 @@
+{"item": "v5item00", "call": "which_full", "text": "PARAMETER: propellant tank ullage pressure", "usage": {"prompt": 1144, "completion": 7}}
+{"item": "v5item01", "call": "which_full", "text": "PARAMETER: discharge line conductivity", "usage": {"prompt": 1182, "completion": 5}}
+{"item": "v5item03", "call": "which_full", "text": "PARAMETER: UPS reserve charge", "usage": {"prompt": 1154, "completion": 5}}
+{"item": "v5item06", "call": "which_full", "text": "PARAMETER: umbilical retract time", "usage": {"prompt": 1177, "completion": 5}}
+{"item": "v5item06", "call": "which_routed", "text": "PARAMETER: umbilical retract time", "usage": {"prompt": 1177, "completion": 5}}
+{"item": "v5item07", "call": "which_full", "text": "PARAMETER: filtrate turbidity", "usage": {"prompt": 1161, "completion": 4}}
+{"item": "v5item07", "call": "which_routed", "text": "PARAMETER: filtrate turbidity", "usage": {"prompt": 1161, "completion": 4}}
+{"item": "v5item09", "call": "which_full", "text": "PARAMETER: generator fuel reserve", "usage": {"prompt": 1151, "completion": 5}}
+{"item": "v5item10", "call": "which_full", "text": "PARAMETER: label reconciliation rate", "usage": {"prompt": 1125, "completion": 5}}
+{"item": "v5item10", "call": "which_routed", "text": "PARAMETER: label reconciliation rate", "usage": {"prompt": 1125, "completion": 5}}
+{"item": "v5item11", "call": "which_full", "text": "PARAMETER: anchor bolt torque", "usage": {"prompt": 1171, "completion": 5}}
+{"item": "v5item11", "call": "which_routed", "text": "PARAMETER: anchor bolt torque", "usage": {"prompt": 1171, "completion": 5}}
+{"item": "v5item12", "call": "which_full", "text": "PARAMETER: star tracker residual", "usage": {"prompt": 1195, "completion": 5}}
+{"item": "v5item15", "call": "which_full", "text": "PARAMETER: storage array rebuild margin", "usage": {"prompt": 1145, "completion": 6}}
+{"item": "v5item15", "call": "which_routed", "text": "PARAMETER: storage array rebuild margin", "usage": {"prompt": 1145, "completion": 6}}
+{"item": "v5item19", "call": "which_full", "text": "PARAMETER: condenser outlet temperature", "usage": {"prompt": 1175, "completion": 5}}
+{"item": "v5item19", "call": "which_routed", "text": "PARAMETER: condenser outlet temperature", "usage": {"prompt": 1175, "completion": 5}}
+{"item": "v5item21", "call": "which_full", "text": "PARAMETER: chilled water supply temperature", "usage": {"prompt": 1170, "completion": 6}}
+{"item": "v5item21", "call": "which_routed", "text": "PARAMETER: chilled water supply temperature", "usage": {"prompt": 1170, "completion": 6}}
+{"item": "v5item22", "call": "which_full", "text": "PARAMETER: seal torque retention", "usage": {"prompt": 1193, "completion": 5}}
+{"item": "v5item22", "call": "which_routed", "text": "PARAMETER: seal torque retention", "usage": {"prompt": 1193, "completion": 5}}
+{"item": "v5item23", "call": "which_full", "text": "PARAMETER: rebar cover depth", "usage": {"prompt": 1196, "completion": 6}}
+{"item": "v5item24", "call": "which_full", "text": "PARAMETER: backup battery charge", "usage": {"prompt": 1175, "completion": 5}}
+{"item": "v5item24", "call": "which_routed", "text": "PARAMETER: backup battery charge", "usage": {"prompt": 1175, "completion": 5}}
+{"item": "v5item25", "call": "which_full", "text": "PARAMETER: condenser outlet temperature", "usage": {"prompt": 1156, "completion": 5}}
+{"item": "v5item25", "call": "which_routed", "text": "PARAMETER: condenser outlet temperature", "usage": {"prompt": 1156, "completion": 5}}
+{"item": "v5item26", "call": "which_full", "text": "PARAMETER: track gauge deviation", "usage": {"prompt": 1195, "completion": 5}}
+{"item": "v5item26", "call": "which_routed", "text": "PARAMETER: track gauge deviation", "usage": {"prompt": 1195, "completion": 5}}
+{"item": "v5item27", "call": "which_full", "text": "PARAMETER: generator fuel reserve", "usage": {"prompt": 1146, "completion": 5}}
+{"item": "v5item30", "call": "which_full", "text": "PARAMETER: sensor calibration offset", "usage": {"prompt": 1179, "completion": 5}}
+{"item": "v5item30", "call": "which_routed", "text": "PARAMETER: sensor calibration offset", "usage": {"prompt": 1179, "completion": 5}}
+{"item": "v5item32", "call": "which_full", "text": "PARAMETER: interlock relay voltage", "usage": {"prompt": 1179, "completion": 6}}
+{"item": "v5item34", "call": "which_full", "text": "PARAMETER: particulate burden index", "usage": {"prompt": 1158, "completion": 5}}
+{"item": "v5item34", "call": "which_routed", "text": "PARAMETER: particulate burden index", "usage": {"prompt": 1158, "completion": 5}}
+{"item": "v5item36", "call": "which_full", "text": "PARAMETER: telemetry downlink margin", "usage": {"prompt": 1145, "completion": 5}}
+{"item": "v5item37", "call": "which_full", "text": "PARAMETER: catalyst moisture content", "usage": {"prompt": 1181, "completion": 5}}
+{"item": "v5item37", "call": "which_routed", "text": "PARAMETER: catalyst moisture content", "usage": {"prompt": 1181, "completion": 5}}
+{"item": "v5item39", "call": "which_full", "text": "PARAMETER: DNS failover propagation time", "usage": {"prompt": 1174, "completion": 6}}
+{"item": "v5item41", "call": "which_full", "text": "PARAMETER: gust speed during test", "usage": {"prompt": 1170, "completion": 6}}
+{"item": "v5item44", "call": "which_full", "text": "PARAMETER: lubrication film thickness", "usage": {"prompt": 1137, "completion": 5}}
+{"item": "v5item44", "call": "which_routed", "text": "PARAMETER: lubrication film thickness", "usage": {"prompt": 1137, "completion": 5}}
+{"item": "v5item48", "call": "which_full", "text": "PARAMETER: thermal blanket coverage", "usage": {"prompt": 1158, "completion": 5}}
+{"item": "v5item48", "call": "which_routed", "text": "PARAMETER: thermal blanket coverage", "usage": {"prompt": 1158, "completion": 5}}
+{"item": "v5item49", "call": "which_full", "text": "PARAMETER: condenser outlet temperature", "usage": {"prompt": 1122, "completion": 5}}
+{"item": "v5item49", "call": "which_routed", "text": "PARAMETER: condenser outlet temperature", "usage": {"prompt": 1122, "completion": 5}}
+{"item": "v5item53", "call": "which_full", "text": "PARAMETER: expansion joint gap", "usage": {"prompt": 1150, "completion": 5}}
+{"item": "v5item53", "call": "which_routed", "text": "PARAMETER: expansion joint gap", "usage": {"prompt": 1150, "completion": 5}}
+{"item": "v5item55", "call": "which_full", "text": "PARAMETER: seal integrity margin", "usage": {"prompt": 1145, "completion": 5}}

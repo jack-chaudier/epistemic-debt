@@ -1,0 +1,302 @@
+{
+  "design": {
+    "arms": [
+      "valuedense",
+      "auditor"
+    ],
+    "baseline": "v5 plain-15 cached",
+    "models": [
+      "grok",
+      "haiku"
+    ],
+    "wl": 15,
+    "prereg": "prereg_valuedense.md"
+  },
+  "per_model": {
+    "grok": {
+      "plain_v5": {
+        "n": 60,
+        "mean_words": 19.05,
+        "mean_values": 4.183333333333334,
+        "retention": 0.3444444444444444,
+        "n_lost": 22,
+        "n_retained": 8,
+        "which_denied_overall": {
+          "k": 8,
+          "n": 30,
+          "p": 0.26666666666666666,
+          "ci95": [
+            0.14182495553910618,
+            0.4444830204431169
+          ]
+        },
+        "which_lost": 0.0,
+        "which_retained": 1.0,
+        "decision_overall": 0.6833333333333333,
+        "abstain_lost": 0.8181818181818182,
+        "abstain_retained": 0.0
+      },
+      "plain25": {
+        "n": 60,
+        "mean_words": 33.56666666666667,
+        "mean_values": 8.133333333333333,
+        "retention": 0.6944444444444444,
+        "n_lost": 10,
+        "n_retained": 20,
+        "which_denied_overall": {
+          "k": 17,
+          "n": 30,
+          "p": 0.5666666666666667,
+          "ci95": [
+            0.3919700954540873,
+            0.7262276256938489
+          ]
+        },
+        "which_lost": 0.0,
+        "which_retained": 0.85,
+        "decision_overall": 0.8333333333333334,
+        "abstain_lost": 0.6,
+        "abstain_retained": 0.05
+      },
+      "valuedense": {
+        "n": 60,
+        "mean_words": 31.666666666666668,
+        "mean_values": 10.883333333333333,
+        "retention": 0.85,
+        "n_lost": 5,
+        "n_retained": 25,
+        "which_denied_overall": {
+          "k": 25,
+          "n": 30,
+          "p": 0.8333333333333334,
+          "ci95": [
+            0.6643529481431982,
+            0.9266356575964831
+          ]
+        },
+        "which_lost": 0.0,
+        "which_retained": 1.0,
+        "decision_overall": 0.8833333333333333,
+        "abstain_lost": 0.2,
+        "abstain_retained": 0.0
+      },
+      "auditor": {
+        "n": 60,
+        "mean_words": 17.6,
+        "mean_values": 6.35,
+        "retention": 0.6,
+        "n_lost": 17,
+        "n_retained": 13,
+        "which_denied_overall": {
+          "k": 14,
+          "n": 30,
+          "p": 0.4666666666666667,
+          "ci95": [
+            0.30232127224128236,
+            0.6385798671847496
+          ]
+        },
+        "which_lost": 0.17647058823529413,
+        "which_retained": 0.8461538461538461,
+        "decision_overall": 0.5333333333333333,
+        "abstain_lost": 0.058823529411764705,
+        "abstain_retained": 0.0
+      }
+    },
+    "haiku": {
+      "plain_v5": {
+        "n": 60,
+        "mean_words": 21.016666666666666,
+        "mean_values": 3.8666666666666667,
+        "retention": 0.33888888888888885,
+        "n_lost": 19,
+        "n_retained": 11,
+        "which_denied_overall": {
+          "k": 11,
+          "n": 30,
+          "p": 0.36666666666666664,
+          "ci95": [
+            0.21873702204017678,
+            0.5448675356639506
+          ]
+        },
+        "which_lost": 0.0,
+        "which_retained": 1.0,
+        "decision_overall": 0.6333333333333333,
+        "abstain_lost": 0.9473684210526315,
+        "abstain_retained": 0.09090909090909091
+      },
+      "plain25": {
+        "n": 60,
+        "mean_words": 34.416666666666664,
+        "mean_values": 5.966666666666667,
+        "retention": 0.5111111111111111,
+        "n_lost": 16,
+        "n_retained": 14,
+        "which_denied_overall": {
+          "k": 13,
+          "n": 30,
+          "p": 0.43333333333333335,
+          "ci95": [
+            0.2737723743061511,
+            0.6080299045459127
+          ]
+        },
+        "which_lost": 0.0,
+        "which_retained": 0.9285714285714286,
+        "decision_overall": 0.7333333333333333,
+        "abstain_lost": 0.625,
+        "abstain_retained": 0.21428571428571427
+      },
+      "valuedense": {
+        "n": 60,
+        "mean_words": 43.733333333333334,
+        "mean_values": 10.683333333333334,
+        "retention": 0.9,
+        "n_lost": 1,
+        "n_retained": 29,
+        "which_denied_overall": {
+          "k": 29,
+          "n": 30,
+          "p": 0.9666666666666667,
+          "ci95": [
+            0.8332924860304112,
+            0.9940915620051425
+          ]
+        },
+        "which_lost": 0.0,
+        "which_retained": 1.0,
+        "decision_overall": 0.8666666666666667,
+        "abstain_lost": 1.0,
+        "abstain_retained": 0.034482758620689655
+      },
+      "auditor": {
+        "n": 60,
+        "mean_words": 20.266666666666666,
+        "mean_values": 6.216666666666667,
+        "retention": 0.5833333333333334,
+        "n_lost": 14,
+        "n_retained": 16,
+        "which_denied_overall": {
+          "k": 17,
+          "n": 30,
+          "p": 0.5666666666666667,
+          "ci95": [
+            0.3919700954540873,
+            0.7262276256938489
+          ]
+        },
+        "which_lost": 0.07142857142857142,
+        "which_retained": 1.0,
+        "decision_overall": 0.6833333333333333,
+        "abstain_lost": 0.6428571428571429,
+        "abstain_retained": 0.125
+      }
+    }
+  },
+  "preds": {
+    "grok:valuedense": {
+      "applicable_A4": false,
+      "A1_retention": {
+        "base": 0.6944444444444444,
+        "arm": 0.85,
+        "passed": true
+      },
+      "A2_justified": {
+        "base": 0.5666666666666667,
+        "arm": 0.8333333333333334,
+        "passed": true
+      },
+      "A3_blind_price": {
+        "arm": 0.85,
+        "passed": false
+      },
+      "A4_shelf_persists": {
+        "which_lost": 0.0,
+        "which_retained": 1.0,
+        "passed": null
+      }
+    },
+    "grok:auditor": {
+      "applicable_A4": true,
+      "A1_retention": {
+        "base": 0.3444444444444444,
+        "arm": 0.6,
+        "passed": true
+      },
+      "A2_justified": {
+        "base": 0.26666666666666666,
+        "arm": 0.4666666666666667,
+        "passed": true
+      },
+      "A3_blind_price": {
+        "arm": 0.6,
+        "passed": true
+      },
+      "A4_shelf_persists": {
+        "which_lost": 0.17647058823529413,
+        "which_retained": 0.8461538461538461,
+        "passed": true
+      }
+    },
+    "haiku:valuedense": {
+      "applicable_A4": false,
+      "A1_retention": {
+        "base": 0.5111111111111111,
+        "arm": 0.9,
+        "passed": true
+      },
+      "A2_justified": {
+        "base": 0.43333333333333335,
+        "arm": 0.9666666666666667,
+        "passed": true
+      },
+      "A3_blind_price": {
+        "arm": 0.9,
+        "passed": false
+      },
+      "A4_shelf_persists": {
+        "which_lost": 0.0,
+        "which_retained": 1.0,
+        "passed": null
+      }
+    },
+    "haiku:auditor": {
+      "applicable_A4": true,
+      "A1_retention": {
+        "base": 0.33888888888888885,
+        "arm": 0.5833333333333334,
+        "passed": true
+      },
+      "A2_justified": {
+        "base": 0.36666666666666664,
+        "arm": 0.5666666666666667,
+        "passed": true
+      },
+      "A3_blind_price": {
+        "arm": 0.5833333333333334,
+        "passed": true
+      },
+      "A4_shelf_persists": {
+        "which_lost": 0.07142857142857142,
+        "which_retained": 1.0,
+        "passed": true
+      }
+    }
+  },
+  "tokens": {
+    "grok": {
+      "prompt": 318350,
+      "completion": 19698
+    },
+    "haiku": {
+      "prompt": 306104,
+      "completion": 62766
+    }
+  },
+  "cost_usd": {
+    "grok": 0.0735,
+    "haiku": 0.6199
+  },
+  "total_cost_usd": 0.6934
+}

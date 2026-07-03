@@ -1,0 +1,120 @@
+{
+  "design": {
+    "model": "grok",
+    "budgets": [
+      5,
+      10,
+      15,
+      25,
+      40,
+      60,
+      80
+    ],
+    "n_items": 30,
+    "prereg": "prereg_curve.md"
+  },
+  "curve": {
+    "5": {
+      "n": 30,
+      "realized_words": 5.733333333333333,
+      "retention": 0.0,
+      "fail_survival": 0.0,
+      "decision": 1.0,
+      "which": 0.13333333333333333
+    },
+    "10": {
+      "n": 30,
+      "realized_words": 12.733333333333333,
+      "retention": 0.2,
+      "fail_survival": 0.16666666666666666,
+      "decision": 0.9666666666666667,
+      "which": 0.16666666666666666
+    },
+    "15": {
+      "n": 30,
+      "realized_words": 19.3,
+      "retention": 0.3222222222222222,
+      "fail_survival": 0.3333333333333333,
+      "decision": 0.8666666666666667,
+      "which": 0.26666666666666666
+    },
+    "25": {
+      "n": 30,
+      "realized_words": 33.8,
+      "retention": 0.6888888888888889,
+      "fail_survival": 0.6333333333333333,
+      "decision": 0.8333333333333334,
+      "which": 0.6
+    },
+    "40": {
+      "n": 30,
+      "realized_words": 48.03333333333333,
+      "retention": 0.8444444444444444,
+      "fail_survival": 0.8666666666666667,
+      "decision": 0.9,
+      "which": 0.8666666666666667
+    },
+    "60": {
+      "n": 30,
+      "realized_words": 53.833333333333336,
+      "retention": 0.9111111111111111,
+      "fail_survival": 0.9,
+      "decision": 0.9,
+      "which": 0.8666666666666667
+    },
+    "80": {
+      "n": 30,
+      "realized_words": 63.5,
+      "retention": 0.9555555555555556,
+      "fail_survival": 0.9666666666666667,
+      "decision": 0.9333333333333333,
+      "which": 0.9
+    }
+  },
+  "preds": {
+    "P-B1_answer_saturates": {
+      "values": {
+        "5": 1.0,
+        "10": 0.9666666666666667,
+        "15": 0.8666666666666667,
+        "25": 0.8333333333333334,
+        "40": 0.9,
+        "60": 0.9,
+        "80": 0.9333333333333333
+      },
+      "passed": true
+    },
+    "P-B2_reason_monotone": {
+      "values": {
+        "5": 0.13333333333333333,
+        "10": 0.16666666666666666,
+        "15": 0.26666666666666666,
+        "25": 0.6,
+        "40": 0.8666666666666667,
+        "60": 0.8666666666666667,
+        "80": 0.9
+      },
+      "monotone": true,
+      "passed": true
+    },
+    "P-B3_wide_shelf": {
+      "shelf_budgets": [
+        5,
+        10,
+        15
+      ],
+      "passed": true
+    }
+  },
+  "logistic_fit": {
+    "midpoint_words": 30.0,
+    "slope": 0.1,
+    "loglik": -87.46,
+    "note": "exploratory grid MLE, WHICH vs realized words"
+  },
+  "tokens": {
+    "prompt": 359361,
+    "completion": 29083
+  },
+  "cost_usd": 0.0864
+}

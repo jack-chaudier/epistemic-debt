@@ -52,6 +52,22 @@ def test_multimodel_campaign_artifacts_present():
         assert json.loads((d / results).read_text()), f"{phase}: missing/empty {results}"
 
 
+WITNESS = REPO / "experiments" / "witness-compaction" / "2026-07-03"
+
+
+def test_witness_compaction_artifacts_present():
+    for phase, results in (("valuedense", "valuedense_results.json"),
+                           ("curve", "curve_results.json"),
+                           ("recursive", "recursive_results.json"),
+                           ("routing", "routing_results.json")):
+        d = WITNESS / phase
+        assert (d / "responses_raw.jsonl").exists(), f"{phase}: missing responses_raw.jsonl"
+        assert list(d.glob("runner*.py")), f"{phase}: missing runner script"
+        assert list(d.glob("prereg*.md")), f"{phase}: missing preregistration"
+        res = json.loads((d / results).read_text())
+        assert res, f"{phase}: missing/empty {results}"
+
+
 def test_no_env_file_committed():
     # the repo rule is "no .env files in the tree"; keys live in a gitignored .env
     # locally but must never be tracked/committed

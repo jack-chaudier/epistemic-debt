@@ -1,0 +1,481 @@
+model,arm,item,truth,summary_words,n_values,ret_policy,fail_retained,decision_correct,which,which_correct,abstained
+grok,plain_v5,v5item00,DENIED,21,6,0.6666666666666666,True,True,propellant tank ullage pressure,True,False
+grok,plain25,v5item00,DENIED,36,10,1.0,True,True,propellant tank ullage pressure,True,False
+grok,valuedense,v5item00,DENIED,28,10,0.6666666666666666,True,True,propellant tank ullage pressure,True,False
+grok,auditor,v5item00,DENIED,18,6,1.0,True,True,propellant tank ullage pressure,True,False
+grok,plain_v5,v5item01,DENIED,19,5,0.3333333333333333,False,True,nitrogen blanket pressure,False,False
+grok,plain25,v5item01,DENIED,45,12,1.0,True,True,discharge line conductivity,True,False
+grok,valuedense,v5item01,DENIED,39,12,1.0,True,True,discharge line conductivity,True,False
+grok,auditor,v5item01,DENIED,16,6,0.3333333333333333,False,False,nitrogen blanket pressure,False,False
+grok,plain_v5,v5item02,APPROVED,30,9,0.6666666666666666,,True,NONE,True,False
+grok,plain25,v5item02,APPROVED,39,12,1.0,,True,NONE,True,False
+grok,valuedense,v5item02,APPROVED,35,12,1.0,,True,NONE,True,False
+grok,auditor,v5item02,APPROVED,11,6,0.6666666666666666,,False,UNMATCHED,False,False
+grok,plain_v5,v5item03,DENIED,29,10,1.0,True,True,UPS reserve charge,True,False
+grok,plain25,v5item03,DENIED,35,11,1.0,True,True,UPS reserve charge,True,False
+grok,valuedense,v5item03,DENIED,44,12,1.0,True,True,UPS reserve charge,True,False
+grok,auditor,v5item03,DENIED,17,6,0.3333333333333333,False,True,battery string impedance,False,False
+grok,plain_v5,v5item04,APPROVED,26,8,0.6666666666666666,,True,NONE,True,False
+grok,plain25,v5item04,APPROVED,34,9,0.6666666666666666,,True,NONE,True,False
+grok,valuedense,v5item04,APPROVED,29,12,1.0,,True,NONE,True,False
+grok,auditor,v5item04,APPROVED,15,6,0.6666666666666666,,True,NONE,True,False
+grok,plain_v5,v5item05,APPROVED,21,6,1.0,,True,NONE,True,False
+grok,plain25,v5item05,APPROVED,28,7,1.0,,True,NONE,True,False
+grok,valuedense,v5item05,APPROVED,36,12,1.0,,True,NONE,True,False
+grok,auditor,v5item05,APPROVED,19,6,0.6666666666666666,,False,grout compressive margin,False,False
+grok,plain_v5,v5item06,DENIED,11,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item06,DENIED,21,3,0.3333333333333333,False,False,NONE,False,False
+grok,valuedense,v5item06,DENIED,27,10,1.0,True,True,umbilical retract time,True,False
+grok,auditor,v5item06,DENIED,15,6,0.6666666666666666,False,False,umbilical retract time,True,False
+grok,plain_v5,v5item07,DENIED,15,2,0.0,False,True,NONE,False,True
+grok,plain25,v5item07,DENIED,41,12,1.0,True,True,filtrate turbidity,True,False
+grok,valuedense,v5item07,DENIED,33,12,1.0,True,True,filtrate turbidity,True,False
+grok,auditor,v5item07,DENIED,15,6,0.6666666666666666,False,False,NONE,False,False
+grok,plain_v5,v5item08,APPROVED,18,5,1.0,,True,NONE,True,False
+grok,plain25,v5item08,APPROVED,31,8,1.0,,True,NONE,True,False
+grok,valuedense,v5item08,APPROVED,36,12,1.0,,False,crossing angle tolerance,False,False
+grok,auditor,v5item08,APPROVED,33,12,1.0,,False,crossing angle tolerance,False,False
+grok,plain_v5,v5item09,DENIED,27,12,1.0,True,True,generator fuel reserve,True,False
+grok,plain25,v5item09,DENIED,33,12,1.0,True,True,generator fuel reserve,True,False
+grok,valuedense,v5item09,DENIED,30,12,1.0,True,True,generator fuel reserve,True,False
+grok,auditor,v5item09,DENIED,16,6,1.0,True,True,generator fuel reserve,True,False
+grok,plain_v5,v5item10,DENIED,11,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item10,DENIED,19,2,0.3333333333333333,True,True,NONE,False,True
+grok,valuedense,v5item10,DENIED,21,8,0.0,False,True,cumulative cold-chain excursion,False,False
+grok,auditor,v5item10,DENIED,17,6,1.0,True,True,stability composite score,False,False
+grok,plain_v5,v5item11,DENIED,15,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item11,DENIED,20,0,0.0,False,True,NONE,False,True
+grok,valuedense,v5item11,DENIED,38,12,1.0,True,True,anchor bolt torque,True,False
+grok,auditor,v5item11,DENIED,33,11,1.0,True,True,anchor bolt torque,True,False
+grok,plain_v5,v5item12,DENIED,30,7,1.0,True,True,star tracker residual,True,False
+grok,plain25,v5item12,DENIED,33,8,1.0,True,True,star tracker residual,True,False
+grok,valuedense,v5item12,DENIED,41,12,1.0,True,True,star tracker residual,True,False
+grok,auditor,v5item12,DENIED,19,6,1.0,True,True,star tracker residual,True,False
+grok,plain_v5,v5item13,APPROVED,15,5,0.6666666666666666,,True,NONE,True,False
+grok,plain25,v5item13,APPROVED,39,12,1.0,,True,NONE,True,False
+grok,valuedense,v5item13,APPROVED,29,11,1.0,,False,batch purity assay,False,False
+grok,auditor,v5item13,APPROVED,20,6,0.6666666666666666,,False,discharge line conductivity,False,False
+grok,plain_v5,v5item14,APPROVED,13,0,0.0,,False,NONE,True,True
+grok,plain25,v5item14,APPROVED,27,2,0.3333333333333333,,True,NONE,True,True
+grok,valuedense,v5item14,APPROVED,35,12,1.0,,True,NONE,True,False
+grok,auditor,v5item14,APPROVED,17,6,1.0,,True,NONE,True,False
+grok,plain_v5,v5item15,DENIED,9,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item15,DENIED,36,8,0.3333333333333333,False,True,chilled water supply temperature,False,False
+grok,valuedense,v5item15,DENIED,25,8,0.0,False,True,chilled water supply temperature,False,True
+grok,auditor,v5item15,DENIED,13,6,0.0,False,True,chilled water supply temperature,False,True
+grok,plain_v5,v5item16,APPROVED,21,3,0.6666666666666666,,False,NONE,True,False
+grok,plain25,v5item16,APPROVED,25,3,0.6666666666666666,,True,NONE,True,False
+grok,valuedense,v5item16,APPROVED,24,11,0.6666666666666666,,True,NONE,True,False
+grok,auditor,v5item16,APPROVED,15,6,0.6666666666666666,,True,NONE,True,False
+grok,plain_v5,v5item17,APPROVED,20,5,0.6666666666666666,,True,NONE,True,False
+grok,plain25,v5item17,APPROVED,41,10,1.0,,True,NONE,True,False
+grok,valuedense,v5item17,APPROVED,36,12,1.0,,True,NONE,True,False
+grok,auditor,v5item17,APPROVED,36,12,1.0,,True,NONE,True,False
+grok,plain_v5,v5item18,APPROVED,14,3,0.0,,False,NONE,True,True
+grok,plain25,v5item18,APPROVED,19,0,0.0,,False,NONE,True,True
+grok,valuedense,v5item18,APPROVED,29,9,0.6666666666666666,,True,NONE,True,False
+grok,auditor,v5item18,APPROVED,16,6,0.6666666666666666,,False,guidance regression pass rate,False,False
+grok,plain_v5,v5item19,DENIED,12,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item19,DENIED,18,1,0.0,False,True,NONE,False,True
+grok,valuedense,v5item19,DENIED,27,9,0.6666666666666666,True,True,condenser outlet temperature,True,False
+grok,auditor,v5item19,DENIED,18,6,0.3333333333333333,True,True,condenser outlet temperature,True,False
+grok,plain_v5,v5item20,APPROVED,10,0,0.0,,False,NONE,True,True
+grok,plain25,v5item20,APPROVED,35,8,0.6666666666666666,,True,NONE,True,False
+grok,valuedense,v5item20,APPROVED,33,11,0.6666666666666666,,True,crossing angle tolerance,False,False
+grok,auditor,v5item20,APPROVED,16,6,0.6666666666666666,,True,NONE,True,False
+grok,plain_v5,v5item21,DENIED,10,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item21,DENIED,44,11,1.0,True,False,NONE,False,False
+grok,valuedense,v5item21,DENIED,41,12,1.0,True,True,chilled water supply temperature,True,False
+grok,auditor,v5item21,DENIED,18,6,0.3333333333333333,False,True,packet loss on the interconnect,False,False
+grok,plain_v5,v5item22,DENIED,16,4,0.3333333333333333,False,True,NONE,False,True
+grok,plain25,v5item22,DENIED,30,9,1.0,True,True,seal torque retention,True,False
+grok,valuedense,v5item22,DENIED,26,12,1.0,True,True,seal torque retention,True,False
+grok,auditor,v5item22,DENIED,12,6,0.3333333333333333,False,True,adjuvant concentration ratio,False,False
+grok,plain_v5,v5item23,DENIED,33,11,1.0,True,True,rebar cover depth,True,False
+grok,plain25,v5item23,DENIED,49,12,1.0,True,True,rebar cover depth,True,False
+grok,valuedense,v5item23,DENIED,36,12,1.0,True,False,rebar cover depth,True,False
+grok,auditor,v5item23,DENIED,18,6,0.6666666666666666,True,True,rebar cover depth,True,False
+grok,plain_v5,v5item24,DENIED,10,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item24,DENIED,31,8,0.6666666666666666,True,True,backup battery charge,True,False
+grok,valuedense,v5item24,DENIED,28,9,0.6666666666666666,True,True,backup battery charge,True,False
+grok,auditor,v5item24,DENIED,14,6,0.3333333333333333,True,True,backup battery charge,True,False
+grok,plain_v5,v5item25,DENIED,14,2,0.0,False,True,NONE,False,True
+grok,plain25,v5item25,DENIED,35,7,0.3333333333333333,False,True,particulate count index,False,False
+grok,valuedense,v5item25,DENIED,31,13,1.0,True,True,condenser outlet temperature,True,False
+grok,auditor,v5item25,DENIED,15,6,0.6666666666666666,False,False,NONE,False,False
+grok,plain_v5,v5item26,DENIED,13,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item26,DENIED,23,0,0.0,False,True,NONE,False,True
+grok,valuedense,v5item26,DENIED,14,7,0.3333333333333333,False,True,crossing angle tolerance,False,False
+grok,auditor,v5item26,DENIED,22,5,0.3333333333333333,False,True,crossing angle tolerance,False,False
+grok,plain_v5,v5item27,DENIED,40,12,1.0,True,True,generator fuel reserve,True,False
+grok,plain25,v5item27,DENIED,48,12,1.0,True,True,generator fuel reserve,True,False
+grok,valuedense,v5item27,DENIED,44,12,1.0,True,True,generator fuel reserve,True,False
+grok,auditor,v5item27,DENIED,19,6,0.6666666666666666,True,True,generator fuel reserve,True,False
+grok,plain_v5,v5item28,APPROVED,26,7,0.6666666666666666,,True,NONE,True,False
+grok,plain25,v5item28,APPROVED,51,12,1.0,,True,label reconciliation rate,False,False
+grok,valuedense,v5item28,APPROVED,31,11,0.6666666666666666,,True,NONE,True,False
+grok,auditor,v5item28,APPROVED,14,6,0.3333333333333333,,False,label reconciliation rate,False,True
+grok,plain_v5,v5item29,APPROVED,17,4,0.0,,False,NONE,True,True
+grok,plain25,v5item29,APPROVED,47,10,0.6666666666666666,,False,maximum crack width,False,False
+grok,valuedense,v5item29,APPROVED,27,7,0.6666666666666666,,False,maximum crack width,False,False
+grok,auditor,v5item29,APPROVED,20,6,0.3333333333333333,,False,maximum crack width,False,False
+grok,plain_v5,v5item30,DENIED,12,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item30,DENIED,19,0,0.0,False,True,NONE,False,True
+grok,valuedense,v5item30,DENIED,22,6,0.3333333333333333,False,False,NONE,False,False
+grok,auditor,v5item30,DENIED,15,6,0.6666666666666666,True,True,umbilical retract time,False,False
+grok,plain_v5,v5item31,APPROVED,10,2,0.0,,False,NONE,True,True
+grok,plain25,v5item31,APPROVED,30,8,0.6666666666666666,,True,NONE,True,False
+grok,valuedense,v5item31,APPROVED,29,10,0.6666666666666666,,True,NONE,True,False
+grok,auditor,v5item31,APPROVED,16,6,0.6666666666666666,,True,NONE,True,False
+grok,plain_v5,v5item32,DENIED,36,12,1.0,True,True,interlock relay voltage,True,False
+grok,plain25,v5item32,DENIED,42,12,1.0,True,True,interlock relay voltage,True,False
+grok,valuedense,v5item32,DENIED,34,12,1.0,True,True,interlock relay voltage,True,False
+grok,auditor,v5item32,DENIED,17,6,0.3333333333333333,False,False,NONE,False,False
+grok,plain_v5,v5item33,APPROVED,15,2,0.3333333333333333,,False,NONE,True,True
+grok,plain25,v5item33,APPROVED,37,11,1.0,,True,NONE,True,False
+grok,valuedense,v5item33,APPROVED,25,10,1.0,,True,NONE,True,False
+grok,auditor,v5item33,APPROVED,12,6,0.6666666666666666,,False,battery string impedance,False,False
+grok,plain_v5,v5item34,DENIED,13,0,0.0,False,False,NONE,False,True
+grok,plain25,v5item34,DENIED,23,3,0.0,False,True,NONE,False,True
+grok,valuedense,v5item34,DENIED,33,13,1.0,True,True,particulate burden index,True,False
+grok,auditor,v5item34,DENIED,15,6,0.3333333333333333,False,False,NONE,False,False
+grok,plain_v5,v5item35,APPROVED,22,6,0.6666666666666666,,True,NONE,True,False
+grok,plain25,v5item35,APPROVED,32,7,0.6666666666666666,,True,NONE,True,False
+grok,valuedense,v5item35,APPROVED,34,12,1.0,,True,NONE,True,False
+grok,auditor,v5item35,APPROVED,15,6,1.0,,True,NONE,True,False
+grok,plain_v5,v5item36,DENIED,17,4,0.3333333333333333,False,False,NONE,False,False
+grok,plain25,v5item36,DENIED,32,10,1.0,True,True,telemetry downlink margin,True,False
+grok,valuedense,v5item36,DENIED,21,6,0.6666666666666666,False,False,NONE,False,False
+grok,auditor,v5item36,DENIED,14,6,0.3333333333333333,False,True,umbilical retract time,False,False
+grok,plain_v5,v5item37,DENIED,16,3,0.0,False,True,NONE,False,True
+grok,plain25,v5item37,DENIED,42,12,1.0,True,True,catalyst moisture content,True,False
+grok,valuedense,v5item37,DENIED,36,11,1.0,True,True,catalyst moisture content,True,False
+grok,auditor,v5item37,DENIED,15,6,0.6666666666666666,True,True,catalyst moisture content,True,False
+grok,plain_v5,v5item38,APPROVED,18,5,0.3333333333333333,,False,point blade wear,False,False
+grok,plain25,v5item38,APPROVED,37,10,1.0,,True,NONE,True,False
+grok,valuedense,v5item38,APPROVED,39,12,1.0,,True,NONE,True,False
+grok,auditor,v5item38,APPROVED,18,6,0.6666666666666666,,False,point blade wear,False,False
+grok,plain_v5,v5item39,DENIED,18,4,0.3333333333333333,False,False,NONE,False,False
+grok,plain25,v5item39,DENIED,26,7,0.3333333333333333,False,False,NONE,False,False
+grok,valuedense,v5item39,DENIED,33,11,1.0,True,True,DNS failover propagation time,True,False
+grok,auditor,v5item39,DENIED,19,6,0.3333333333333333,False,False,DNS failover propagation time,True,False
+grok,plain_v5,v5item40,APPROVED,17,5,0.6666666666666666,,True,NONE,True,False
+grok,plain25,v5item40,APPROVED,35,12,1.0,,True,NONE,True,False
+grok,valuedense,v5item40,APPROVED,28,12,1.0,,True,NONE,True,False
+grok,auditor,v5item40,APPROVED,14,6,0.6666666666666666,,False,endotoxin level,False,False
+grok,plain_v5,v5item41,DENIED,18,5,0.3333333333333333,False,True,NONE,False,False
+grok,plain25,v5item41,DENIED,22,6,0.6666666666666666,True,True,gust speed during test,True,False
+grok,valuedense,v5item41,DENIED,33,12,1.0,True,True,gust speed during test,True,False
+grok,auditor,v5item41,DENIED,18,6,0.6666666666666666,True,True,gust speed during test,True,False
+grok,plain_v5,v5item42,APPROVED,22,6,1.0,,True,NONE,True,False
+grok,plain25,v5item42,APPROVED,45,11,1.0,,True,NONE,True,False
+grok,valuedense,v5item42,APPROVED,36,11,1.0,,True,NONE,True,False
+grok,auditor,v5item42,APPROVED,19,6,1.0,,True,NONE,True,False
+grok,plain_v5,v5item43,APPROVED,18,3,0.3333333333333333,,True,NONE,True,True
+grok,plain25,v5item43,APPROVED,36,12,1.0,,True,NONE,True,False
+grok,valuedense,v5item43,APPROVED,18,7,0.6666666666666666,,True,NONE,True,False
+grok,auditor,v5item43,APPROVED,14,6,0.3333333333333333,,False,nitrogen blanket pressure,False,False
+grok,plain_v5,v5item44,DENIED,16,5,0.0,False,True,point blade wear,False,True
+grok,plain25,v5item44,DENIED,34,10,1.0,True,True,UNMATCHED,False,False
+grok,valuedense,v5item44,DENIED,34,12,1.0,True,True,lubrication film thickness,True,False
+grok,auditor,v5item44,DENIED,17,6,0.3333333333333333,False,False,heater circuit resistance,False,False
+grok,plain_v5,v5item45,APPROVED,12,0,0.0,,False,NONE,True,True
+grok,plain25,v5item45,APPROVED,41,12,1.0,,True,NONE,True,False
+grok,valuedense,v5item45,APPROVED,37,12,1.0,,True,NONE,True,False
+grok,auditor,v5item45,APPROVED,17,6,0.6666666666666666,,False,replication lag,False,False
+grok,plain_v5,v5item46,APPROVED,17,6,0.0,,False,cumulative cold-chain excursion,False,False
+grok,plain25,v5item46,APPROVED,50,12,1.0,,True,NONE,True,False
+grok,valuedense,v5item46,APPROVED,28,12,0.6666666666666666,,True,cumulative cold-chain excursion,False,False
+grok,auditor,v5item46,APPROVED,13,6,0.3333333333333333,,False,NONE,True,False
+grok,plain_v5,v5item47,APPROVED,25,5,0.0,,False,expansion joint gap,False,False
+grok,plain25,v5item47,APPROVED,27,5,0.0,,False,expansion joint gap,False,True
+grok,valuedense,v5item47,APPROVED,29,11,0.6666666666666666,,True,NONE,True,False
+grok,auditor,v5item47,APPROVED,15,6,0.3333333333333333,,False,deck temperature differential,False,False
+grok,plain_v5,v5item48,DENIED,11,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item48,DENIED,20,2,0.0,False,True,NONE,False,True
+grok,valuedense,v5item48,DENIED,35,11,0.6666666666666666,True,True,thermal blanket coverage,True,False
+grok,auditor,v5item48,DENIED,15,6,0.3333333333333333,False,True,thermal blanket coverage,True,False
+grok,plain_v5,v5item49,DENIED,30,9,0.3333333333333333,False,True,QA composite audit score,False,True
+grok,plain25,v5item49,DENIED,41,12,1.0,True,True,condenser outlet temperature,True,False
+grok,valuedense,v5item49,DENIED,32,12,1.0,True,True,condenser outlet temperature,True,False
+grok,auditor,v5item49,DENIED,12,6,0.3333333333333333,False,True,seal integrity margin,False,False
+grok,plain_v5,v5item50,APPROVED,21,6,0.0,,False,detection loop sensitivity,False,True
+grok,plain25,v5item50,APPROVED,38,11,0.6666666666666666,,False,detection loop sensitivity,False,False
+grok,valuedense,v5item50,APPROVED,37,11,0.6666666666666666,,False,UNMATCHED,False,False
+grok,auditor,v5item50,APPROVED,18,6,0.6666666666666666,,True,NONE,True,False
+grok,plain_v5,v5item51,APPROVED,34,12,1.0,,True,NONE,True,False
+grok,plain25,v5item51,APPROVED,35,10,0.6666666666666666,,True,NONE,True,False
+grok,valuedense,v5item51,APPROVED,29,10,0.6666666666666666,,True,standby link utilization,False,False
+grok,auditor,v5item51,APPROVED,15,6,0.3333333333333333,,False,chilled water supply temperature,False,False
+grok,plain_v5,v5item52,APPROVED,15,3,0.3333333333333333,,True,NONE,True,False
+grok,plain25,v5item52,APPROVED,26,6,0.3333333333333333,,True,NONE,True,False
+grok,valuedense,v5item52,APPROVED,27,11,1.0,,True,NONE,True,False
+grok,auditor,v5item52,APPROVED,13,6,0.6666666666666666,,True,stability composite score,False,False
+grok,plain_v5,v5item53,DENIED,16,0,0.0,False,True,NONE,False,True
+grok,plain25,v5item53,DENIED,45,10,1.0,True,True,expansion joint gap,True,False
+grok,valuedense,v5item53,DENIED,35,11,1.0,True,True,expansion joint gap,True,False
+grok,auditor,v5item53,DENIED,23,6,0.6666666666666666,False,False,NONE,False,False
+grok,plain_v5,v5item54,APPROVED,21,6,0.3333333333333333,,False,NONE,True,False
+grok,plain25,v5item54,APPROVED,29,7,0.6666666666666666,,False,backup battery charge,False,False
+grok,valuedense,v5item54,APPROVED,32,12,1.0,,True,NONE,True,False
+grok,auditor,v5item54,APPROVED,15,6,1.0,,False,backup battery charge,False,False
+grok,plain_v5,v5item55,DENIED,25,7,0.3333333333333333,True,True,seal integrity margin,True,False
+grok,plain25,v5item55,DENIED,29,8,0.6666666666666666,True,True,seal integrity margin,True,False
+grok,valuedense,v5item55,DENIED,26,11,0.6666666666666666,True,True,seal integrity margin,True,False
+grok,auditor,v5item55,DENIED,27,12,1.0,True,True,seal integrity margin,True,False
+grok,plain_v5,v5item56,APPROVED,18,0,0.0,,False,NONE,True,True
+grok,plain25,v5item56,APPROVED,33,8,0.3333333333333333,,False,detection loop sensitivity,False,False
+grok,valuedense,v5item56,APPROVED,34,11,1.0,,True,NONE,True,False
+grok,auditor,v5item56,APPROVED,16,6,0.3333333333333333,,False,detection loop sensitivity,False,False
+grok,plain_v5,v5item57,APPROVED,14,0,0.0,,False,NONE,True,True
+grok,plain25,v5item57,APPROVED,26,3,0.3333333333333333,,False,generator fuel reserve,False,False
+grok,valuedense,v5item57,APPROVED,38,11,1.0,,True,NONE,True,False
+grok,auditor,v5item57,APPROVED,32,5,0.6666666666666666,,False,storage array rebuild margin,False,False
+grok,plain_v5,v5item58,APPROVED,16,0,0.0,,False,NONE,True,True
+grok,plain25,v5item58,APPROVED,38,12,1.0,,True,NONE,True,False
+grok,valuedense,v5item58,APPROVED,28,12,1.0,,True,NONE,True,False
+grok,auditor,v5item58,APPROVED,17,6,0.6666666666666666,,False,sterility clarity index,False,False
+grok,plain_v5,v5item59,APPROVED,34,9,0.6666666666666666,,True,NONE,True,False
+grok,plain25,v5item59,APPROVED,31,8,0.6666666666666666,,True,NONE,True,False
+grok,valuedense,v5item59,APPROVED,45,12,1.0,,True,NONE,True,False
+grok,auditor,v5item59,APPROVED,23,6,0.3333333333333333,,True,NONE,True,False
+haiku,plain_v5,v5item00,DENIED,22,5,1.0,True,True,propellant tank ullage pressure,True,False
+haiku,plain25,v5item00,DENIED,27,5,1.0,True,True,propellant tank ullage pressure,True,False
+haiku,valuedense,v5item00,DENIED,37,10,0.6666666666666666,True,True,propellant tank ullage pressure,True,False
+haiku,auditor,v5item00,DENIED,21,6,0.6666666666666666,True,True,propellant tank ullage pressure,True,False
+haiku,plain_v5,v5item01,DENIED,17,3,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item01,DENIED,25,3,0.0,False,True,UNMATCHED,False,True
+haiku,valuedense,v5item01,DENIED,25,7,0.6666666666666666,False,False,UNMATCHED,False,True
+haiku,auditor,v5item01,DENIED,21,6,0.6666666666666666,False,False,UNMATCHED,False,False
+haiku,plain_v5,v5item02,APPROVED,18,0,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item02,APPROVED,30,5,0.3333333333333333,,True,UNMATCHED,False,True
+haiku,valuedense,v5item02,APPROVED,40,8,1.0,,True,NONE,True,False
+haiku,auditor,v5item02,APPROVED,19,6,0.3333333333333333,,True,UNMATCHED,False,True
+haiku,plain_v5,v5item03,DENIED,25,7,0.6666666666666666,True,True,UPS reserve charge,True,False
+haiku,plain25,v5item03,DENIED,44,10,1.0,True,True,UPS reserve charge,True,False
+haiku,valuedense,v5item03,DENIED,45,11,1.0,True,True,UPS reserve charge,True,False
+haiku,auditor,v5item03,DENIED,21,6,0.3333333333333333,False,True,UNMATCHED,False,True
+haiku,plain_v5,v5item04,APPROVED,23,7,0.6666666666666666,,True,UNMATCHED,False,False
+haiku,plain25,v5item04,APPROVED,30,6,0.3333333333333333,,False,UNMATCHED,False,False
+haiku,valuedense,v5item04,APPROVED,20,6,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,auditor,v5item04,APPROVED,17,6,0.6666666666666666,,False,UNMATCHED,False,False
+haiku,plain_v5,v5item05,APPROVED,47,12,1.0,,True,NONE,True,False
+haiku,plain25,v5item05,APPROVED,50,12,1.0,,True,NONE,True,False
+haiku,valuedense,v5item05,APPROVED,53,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item05,APPROVED,41,12,1.0,,True,NONE,True,False
+haiku,plain_v5,v5item06,DENIED,15,0,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item06,DENIED,29,3,0.3333333333333333,False,True,UNMATCHED,False,True
+haiku,valuedense,v5item06,DENIED,45,12,1.0,True,True,umbilical retract time,True,False
+haiku,auditor,v5item06,DENIED,42,12,1.0,True,True,umbilical retract time,True,False
+haiku,plain_v5,v5item07,DENIED,19,3,0.3333333333333333,False,True,UNMATCHED,False,True
+haiku,plain25,v5item07,DENIED,28,5,0.6666666666666666,False,False,NONE,False,False
+haiku,valuedense,v5item07,DENIED,42,12,1.0,True,True,filtrate turbidity,True,False
+haiku,auditor,v5item07,DENIED,19,6,0.6666666666666666,False,False,NONE,False,False
+haiku,plain_v5,v5item08,APPROVED,23,6,1.0,,False,NONE,True,False
+haiku,plain25,v5item08,APPROVED,48,11,1.0,,True,NONE,True,False
+haiku,valuedense,v5item08,APPROVED,45,10,1.0,,True,NONE,True,False
+haiku,auditor,v5item08,APPROVED,23,6,0.6666666666666666,,False,crossing angle tolerance,False,False
+haiku,plain_v5,v5item09,DENIED,17,5,0.6666666666666666,True,True,generator fuel reserve,True,False
+haiku,plain25,v5item09,DENIED,29,6,0.6666666666666666,True,True,generator fuel reserve,True,False
+haiku,valuedense,v5item09,DENIED,44,12,1.0,True,True,generator fuel reserve,True,False
+haiku,auditor,v5item09,DENIED,22,6,1.0,True,True,generator fuel reserve,True,False
+haiku,plain_v5,v5item10,DENIED,20,0,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item10,DENIED,38,6,0.3333333333333333,True,True,label reconciliation rate,True,False
+haiku,valuedense,v5item10,DENIED,40,11,0.6666666666666666,True,True,label reconciliation rate,True,False
+haiku,auditor,v5item10,DENIED,19,6,1.0,True,True,label reconciliation rate,True,False
+haiku,plain_v5,v5item11,DENIED,19,0,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item11,DENIED,38,5,0.6666666666666666,True,True,anchor bolt torque,True,False
+haiku,valuedense,v5item11,DENIED,53,12,1.0,True,True,anchor bolt torque,True,False
+haiku,auditor,v5item11,DENIED,20,6,0.6666666666666666,True,True,anchor bolt torque,True,False
+haiku,plain_v5,v5item12,DENIED,24,6,1.0,True,True,star tracker residual,True,False
+haiku,plain25,v5item12,DENIED,34,8,1.0,True,True,star tracker residual,True,False
+haiku,valuedense,v5item12,DENIED,57,12,1.0,True,True,star tracker residual,True,False
+haiku,auditor,v5item12,DENIED,26,6,0.6666666666666666,True,True,star tracker residual,True,False
+haiku,plain_v5,v5item13,APPROVED,17,4,0.3333333333333333,,False,NONE,True,True
+haiku,plain25,v5item13,APPROVED,53,12,1.0,,True,NONE,True,False
+haiku,valuedense,v5item13,APPROVED,43,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item13,APPROVED,21,6,0.6666666666666666,,False,batch purity assay,False,False
+haiku,plain_v5,v5item14,APPROVED,19,0,0.0,,False,,False,True
+haiku,plain25,v5item14,APPROVED,33,3,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,valuedense,v5item14,APPROVED,53,11,1.0,,True,NONE,True,False
+haiku,auditor,v5item14,APPROVED,24,6,1.0,,True,NONE,True,False
+haiku,plain_v5,v5item15,DENIED,19,6,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item15,DENIED,37,7,0.0,False,True,UNMATCHED,False,True
+haiku,valuedense,v5item15,DENIED,43,12,1.0,True,True,storage array rebuild margin,True,False
+haiku,auditor,v5item15,DENIED,19,6,0.0,False,True,UNMATCHED,False,True
+haiku,plain_v5,v5item16,APPROVED,26,9,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,plain25,v5item16,APPROVED,49,10,0.6666666666666666,,True,UNMATCHED,False,True
+haiku,valuedense,v5item16,APPROVED,46,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item16,APPROVED,14,6,0.6666666666666666,,False,UNMATCHED,False,False
+haiku,plain_v5,v5item17,APPROVED,27,8,1.0,,True,NONE,True,False
+haiku,plain25,v5item17,APPROVED,34,10,1.0,,True,NONE,True,False
+haiku,valuedense,v5item17,APPROVED,52,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item17,APPROVED,19,6,1.0,,True,NONE,True,False
+haiku,plain_v5,v5item18,APPROVED,19,4,0.3333333333333333,,False,UNMATCHED,False,True
+haiku,plain25,v5item18,APPROVED,28,3,0.3333333333333333,,True,NONE,True,True
+haiku,valuedense,v5item18,APPROVED,40,10,1.0,,True,NONE,True,False
+haiku,auditor,v5item18,APPROVED,18,6,0.6666666666666666,,False,guidance regression pass rate,False,False
+haiku,plain_v5,v5item19,DENIED,45,7,0.3333333333333333,True,True,condenser outlet temperature,True,False
+haiku,plain25,v5item19,DENIED,27,3,0.3333333333333333,True,True,condenser outlet temperature,True,False
+haiku,valuedense,v5item19,DENIED,28,8,0.6666666666666666,True,True,condenser outlet temperature,True,False
+haiku,auditor,v5item19,DENIED,21,6,0.3333333333333333,True,True,condenser outlet temperature,True,False
+haiku,plain_v5,v5item20,APPROVED,36,8,1.0,,True,NONE,True,False
+haiku,plain25,v5item20,APPROVED,47,11,1.0,,True,NONE,True,False
+haiku,valuedense,v5item20,APPROVED,60,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item20,APPROVED,30,6,0.6666666666666666,,True,UNMATCHED,False,True
+haiku,plain_v5,v5item21,DENIED,14,0,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item21,DENIED,26,4,0.3333333333333333,True,True,UNMATCHED,False,True
+haiku,valuedense,v5item21,DENIED,44,12,1.0,True,True,chilled water supply temperature,True,False
+haiku,auditor,v5item21,DENIED,19,6,0.3333333333333333,True,True,chilled water supply temperature,True,False
+haiku,plain_v5,v5item22,DENIED,20,6,1.0,True,True,seal torque retention,True,False
+haiku,plain25,v5item22,DENIED,34,8,1.0,True,True,seal torque retention,True,False
+haiku,valuedense,v5item22,DENIED,46,12,1.0,True,True,seal torque retention,True,False
+haiku,auditor,v5item22,DENIED,16,6,0.3333333333333333,False,True,seal torque retention,True,True
+haiku,plain_v5,v5item23,DENIED,27,7,1.0,True,True,rebar cover depth,True,False
+haiku,plain25,v5item23,DENIED,42,12,1.0,True,True,rebar cover depth,True,False
+haiku,valuedense,v5item23,DENIED,51,12,1.0,True,True,rebar cover depth,True,False
+haiku,auditor,v5item23,DENIED,17,6,0.6666666666666666,True,True,rebar cover depth,True,True
+haiku,plain_v5,v5item24,DENIED,21,4,0.3333333333333333,True,True,backup battery charge,True,True
+haiku,plain25,v5item24,DENIED,31,5,0.3333333333333333,True,True,backup battery charge,True,True
+haiku,valuedense,v5item24,DENIED,58,11,1.0,True,True,backup battery charge,True,False
+haiku,auditor,v5item24,DENIED,23,6,0.3333333333333333,True,True,backup battery charge,True,False
+haiku,plain_v5,v5item25,DENIED,15,1,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item25,DENIED,28,2,0.3333333333333333,False,True,UNMATCHED,False,True
+haiku,valuedense,v5item25,DENIED,45,12,1.0,True,True,condenser outlet temperature,True,False
+haiku,auditor,v5item25,DENIED,21,6,0.3333333333333333,False,True,UNMATCHED,False,True
+haiku,plain_v5,v5item26,DENIED,18,0,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item26,DENIED,35,0,0.0,False,True,NONE,False,True
+haiku,valuedense,v5item26,DENIED,57,12,1.0,True,True,track gauge deviation,True,False
+haiku,auditor,v5item26,DENIED,18,6,0.3333333333333333,False,True,UNMATCHED,False,True
+haiku,plain_v5,v5item27,DENIED,39,12,1.0,True,True,generator fuel reserve,True,False
+haiku,plain25,v5item27,DENIED,59,12,1.0,True,True,generator fuel reserve,True,False
+haiku,valuedense,v5item27,DENIED,41,12,1.0,True,False,generator fuel reserve,True,False
+haiku,auditor,v5item27,DENIED,18,6,0.6666666666666666,True,True,generator fuel reserve,True,False
+haiku,plain_v5,v5item28,APPROVED,18,5,0.0,,False,NONE,True,True
+haiku,plain25,v5item28,APPROVED,24,7,0.3333333333333333,,False,seal torque retention,False,True
+haiku,valuedense,v5item28,APPROVED,20,6,0.6666666666666666,,False,UNMATCHED,False,False
+haiku,auditor,v5item28,APPROVED,16,6,0.0,,False,UNMATCHED,False,True
+haiku,plain_v5,v5item29,APPROVED,19,5,0.3333333333333333,,False,UNMATCHED,False,True
+haiku,plain25,v5item29,APPROVED,35,5,0.3333333333333333,,False,maximum crack width,False,False
+haiku,valuedense,v5item29,APPROVED,25,6,0.3333333333333333,,True,UNMATCHED,False,True
+haiku,auditor,v5item29,APPROVED,21,6,0.3333333333333333,,False,UNMATCHED,False,True
+haiku,plain_v5,v5item30,DENIED,17,0,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item30,DENIED,38,4,0.3333333333333333,False,True,UNMATCHED,False,True
+haiku,valuedense,v5item30,DENIED,33,9,0.6666666666666666,True,True,sensor calibration offset,True,False
+haiku,auditor,v5item30,DENIED,22,6,0.6666666666666666,True,True,sensor calibration offset,True,False
+haiku,plain_v5,v5item31,APPROVED,21,2,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item31,APPROVED,33,3,0.3333333333333333,,False,NONE,True,True
+haiku,valuedense,v5item31,APPROVED,32,8,0.6666666666666666,,False,UNMATCHED,False,False
+haiku,auditor,v5item31,APPROVED,19,6,1.0,,True,NONE,True,False
+haiku,plain_v5,v5item32,DENIED,20,5,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item32,DENIED,56,8,0.6666666666666666,False,False,UNMATCHED,False,False
+haiku,valuedense,v5item32,DENIED,60,12,1.0,True,True,interlock relay voltage,True,False
+haiku,auditor,v5item32,DENIED,17,6,0.3333333333333333,False,True,UNMATCHED,False,True
+haiku,plain_v5,v5item33,APPROVED,16,0,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item33,APPROVED,23,0,0.0,,False,UNMATCHED,False,True
+haiku,valuedense,v5item33,APPROVED,38,11,0.6666666666666666,,True,UNMATCHED,False,True
+haiku,auditor,v5item33,APPROVED,18,6,0.6666666666666666,,True,UNMATCHED,False,True
+haiku,plain_v5,v5item34,DENIED,17,0,0.0,False,False,NONE,False,True
+haiku,plain25,v5item34,DENIED,32,3,0.6666666666666666,False,False,NONE,False,False
+haiku,valuedense,v5item34,DENIED,52,12,1.0,True,True,particulate burden index,True,False
+haiku,auditor,v5item34,DENIED,18,6,0.0,False,True,UNMATCHED,False,True
+haiku,plain_v5,v5item35,APPROVED,24,7,1.0,,True,NONE,True,False
+haiku,plain25,v5item35,APPROVED,50,12,1.0,,True,NONE,True,False
+haiku,valuedense,v5item35,APPROVED,53,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item35,APPROVED,14,6,1.0,,True,NONE,True,False
+haiku,plain_v5,v5item36,DENIED,20,5,0.6666666666666666,True,True,telemetry downlink margin,True,False
+haiku,plain25,v5item36,DENIED,28,7,0.6666666666666666,True,True,telemetry downlink margin,True,False
+haiku,valuedense,v5item36,DENIED,48,12,1.0,True,True,telemetry downlink margin,True,False
+haiku,auditor,v5item36,DENIED,18,6,0.3333333333333333,False,True,UNMATCHED,False,False
+haiku,plain_v5,v5item37,DENIED,25,3,0.3333333333333333,True,True,catalyst moisture content,True,False
+haiku,plain25,v5item37,DENIED,30,3,0.3333333333333333,True,True,catalyst moisture content,True,True
+haiku,valuedense,v5item37,DENIED,38,11,1.0,True,True,catalyst moisture content,True,False
+haiku,auditor,v5item37,DENIED,21,6,0.6666666666666666,True,True,catalyst moisture content,True,False
+haiku,plain_v5,v5item38,APPROVED,18,0,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item38,APPROVED,32,3,0.6666666666666666,,True,UNMATCHED,False,False
+haiku,valuedense,v5item38,APPROVED,25,5,0.3333333333333333,,False,UNMATCHED,False,True
+haiku,auditor,v5item38,APPROVED,24,6,0.6666666666666666,,True,UNMATCHED,False,True
+haiku,plain_v5,v5item39,DENIED,16,3,0.3333333333333333,False,True,NONE,False,True
+haiku,plain25,v5item39,DENIED,28,3,0.3333333333333333,False,True,NONE,False,False
+haiku,valuedense,v5item39,DENIED,47,12,1.0,True,True,DNS failover propagation time,True,False
+haiku,auditor,v5item39,DENIED,14,6,1.0,True,True,DNS failover propagation time,True,False
+haiku,plain_v5,v5item40,APPROVED,15,2,0.3333333333333333,,True,NONE,True,False
+haiku,plain25,v5item40,APPROVED,28,5,0.6666666666666666,,True,NONE,True,False
+haiku,valuedense,v5item40,APPROVED,37,10,0.6666666666666666,,True,UNMATCHED,False,False
+haiku,auditor,v5item40,APPROVED,17,7,0.3333333333333333,,False,UNMATCHED,False,True
+haiku,plain_v5,v5item41,DENIED,18,5,0.3333333333333333,False,True,UNMATCHED,False,False
+haiku,plain25,v5item41,DENIED,26,6,0.3333333333333333,False,True,UNMATCHED,False,False
+haiku,valuedense,v5item41,DENIED,57,12,1.0,True,True,gust speed during test,True,False
+haiku,auditor,v5item41,DENIED,20,6,0.6666666666666666,True,True,gust speed during test,True,False
+haiku,plain_v5,v5item42,APPROVED,19,5,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,plain25,v5item42,APPROVED,35,6,1.0,,True,NONE,True,False
+haiku,valuedense,v5item42,APPROVED,32,9,1.0,,True,NONE,True,False
+haiku,auditor,v5item42,APPROVED,16,6,0.6666666666666666,,True,UNMATCHED,False,True
+haiku,plain_v5,v5item43,APPROVED,21,5,0.6666666666666666,,True,NONE,True,False
+haiku,plain25,v5item43,APPROVED,42,6,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,valuedense,v5item43,APPROVED,36,10,1.0,,True,NONE,True,False
+haiku,auditor,v5item43,APPROVED,16,6,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,plain_v5,v5item44,DENIED,18,0,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item44,DENIED,27,4,0.0,False,True,UNMATCHED,False,True
+haiku,valuedense,v5item44,DENIED,60,12,1.0,True,True,lubrication film thickness,True,False
+haiku,auditor,v5item44,DENIED,18,6,0.3333333333333333,False,True,UNMATCHED,False,False
+haiku,plain_v5,v5item45,APPROVED,16,3,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,plain25,v5item45,APPROVED,31,8,0.6666666666666666,,True,NONE,True,False
+haiku,valuedense,v5item45,APPROVED,45,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item45,APPROVED,18,6,0.6666666666666666,,True,UNMATCHED,False,False
+haiku,plain_v5,v5item46,APPROVED,17,5,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item46,APPROVED,40,10,0.3333333333333333,,False,UNMATCHED,False,True
+haiku,valuedense,v5item46,APPROVED,43,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item46,APPROVED,14,6,0.3333333333333333,,False,UNMATCHED,False,True
+haiku,plain_v5,v5item47,APPROVED,19,5,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item47,APPROVED,37,6,0.0,,False,UNMATCHED,False,True
+haiku,valuedense,v5item47,APPROVED,52,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item47,APPROVED,19,6,0.3333333333333333,,False,UNMATCHED,False,False
+haiku,plain_v5,v5item48,DENIED,14,0,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item48,DENIED,37,6,0.3333333333333333,False,True,UNMATCHED,False,False
+haiku,valuedense,v5item48,DENIED,44,10,0.6666666666666666,True,True,thermal blanket coverage,True,True
+haiku,auditor,v5item48,DENIED,22,6,0.6666666666666666,False,True,UNMATCHED,False,True
+haiku,plain_v5,v5item49,DENIED,18,2,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item49,DENIED,26,3,0.0,False,True,seal integrity margin,False,True
+haiku,valuedense,v5item49,DENIED,41,12,1.0,True,True,condenser outlet temperature,True,False
+haiku,auditor,v5item49,DENIED,15,6,0.3333333333333333,False,True,UNMATCHED,False,False
+haiku,plain_v5,v5item50,APPROVED,19,0,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item50,APPROVED,34,3,0.3333333333333333,,True,NONE,True,False
+haiku,valuedense,v5item50,APPROVED,56,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item50,APPROVED,30,6,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,plain_v5,v5item51,APPROVED,16,4,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item51,APPROVED,32,6,0.0,,True,UNMATCHED,False,True
+haiku,valuedense,v5item51,APPROVED,44,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item51,APPROVED,24,6,0.3333333333333333,,False,UNMATCHED,False,True
+haiku,plain_v5,v5item52,APPROVED,16,4,0.3333333333333333,,False,UNMATCHED,False,True
+haiku,plain25,v5item52,APPROVED,30,7,0.6666666666666666,,False,NONE,True,True
+haiku,valuedense,v5item52,APPROVED,40,10,1.0,,True,NONE,True,False
+haiku,auditor,v5item52,APPROVED,19,6,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,plain_v5,v5item53,DENIED,18,3,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item53,DENIED,30,5,0.0,False,True,UNMATCHED,False,True
+haiku,valuedense,v5item53,DENIED,58,11,1.0,True,True,expansion joint gap,True,False
+haiku,auditor,v5item53,DENIED,20,6,0.6666666666666666,False,True,UNMATCHED,False,True
+haiku,plain_v5,v5item54,APPROVED,29,7,0.6666666666666666,,True,UNMATCHED,False,True
+haiku,plain25,v5item54,APPROVED,34,7,1.0,,True,NONE,True,False
+haiku,valuedense,v5item54,APPROVED,38,10,0.6666666666666666,,False,backup battery charge,False,True
+haiku,auditor,v5item54,APPROVED,21,6,1.0,,True,NONE,True,False
+haiku,plain_v5,v5item55,DENIED,21,3,0.0,False,True,UNMATCHED,False,True
+haiku,plain25,v5item55,DENIED,24,2,0.0,False,True,UNMATCHED,False,True
+haiku,valuedense,v5item55,DENIED,43,11,0.6666666666666666,True,True,seal integrity margin,True,False
+haiku,auditor,v5item55,DENIED,20,6,0.6666666666666666,True,True,seal integrity margin,True,True
+haiku,plain_v5,v5item56,APPROVED,18,0,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item56,APPROVED,32,3,0.0,,False,UNMATCHED,False,True
+haiku,valuedense,v5item56,APPROVED,56,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item56,APPROVED,21,6,0.3333333333333333,,False,UNMATCHED,False,True
+haiku,plain_v5,v5item57,APPROVED,19,1,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item57,APPROVED,38,4,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,valuedense,v5item57,APPROVED,48,12,1.0,,True,NONE,True,False
+haiku,auditor,v5item57,APPROVED,16,6,0.6666666666666666,,True,NONE,True,False
+haiku,plain_v5,v5item58,APPROVED,17,4,0.0,,False,UNMATCHED,False,True
+haiku,plain25,v5item58,APPROVED,28,7,0.3333333333333333,,False,lyophilization residual moisture,False,True
+haiku,valuedense,v5item58,APPROVED,23,6,0.6666666666666666,,False,sterility clarity index,False,False
+haiku,auditor,v5item58,APPROVED,19,6,0.6666666666666666,,False,UNMATCHED,False,True
+haiku,plain_v5,v5item59,APPROVED,31,9,0.6666666666666666,,True,UNMATCHED,False,True
+haiku,plain25,v5item59,APPROVED,32,9,0.6666666666666666,,True,UNMATCHED,False,True
+haiku,valuedense,v5item59,APPROVED,47,11,1.0,,True,NONE,True,False
+haiku,auditor,v5item59,APPROVED,20,6,0.3333333333333333,,False,UNMATCHED,False,True
