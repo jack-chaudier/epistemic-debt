@@ -1,0 +1,187 @@
+{
+  "design": {
+    "n_items": 60,
+    "approved": 30,
+    "denied": 30,
+    "denied_fail_slots": [
+      10,
+      10,
+      10
+    ],
+    "compression_word_limit": 15,
+    "model": "grok-4-1-fast-non-reasoning",
+    "temperature": 0,
+    "seed": "Random(4242) corpus / Random(9000+i) per item",
+    "calls_per_item": 6,
+    "retention_scoring": "rounding-tolerant (1% or displayed precision)"
+  },
+  "preregistered_predictions": {
+    "P-A_shelf": {
+      "criteria": "decision_lost>=0.6 AND decision_lost>=nonotes_denied_floor AND which_lost<=0.33 AND which_retained>=0.8",
+      "values": {
+        "decision_lost": 0.9285714285714286,
+        "nonotes_denied_floor": 1.0,
+        "which_lost": 0.07142857142857142,
+        "which_retained": 0.9375
+      },
+      "passed": false
+    },
+    "P-B_channel_asymmetry": {
+      "criteria": "approved_decision_under_some_loss < denied_decision_under_loss",
+      "values": {
+        "approved_lost": 0.37037037037037035,
+        "denied_lost": 0.9285714285714286
+      },
+      "passed": true
+    },
+    "P-C_confabulation_locus": {
+      "criteria": "which_confab_lost<0.25 AND repair_specific_lost>=0.75",
+      "values": {
+        "which_confab_lost": 0.07142857142857142,
+        "repair_specific_lost": 1.0
+      },
+      "passed": true
+    },
+    "P-D_honesty_uptake": {
+      "criteria": "abstain_lost>=0.5 AND abstain_retained<=0.1",
+      "values": {
+        "abstain_lost": 0.9285714285714286,
+        "abstain_retained": 0.0
+      },
+      "passed": true
+    }
+  },
+  "cells": {
+    "n": 60,
+    "n_denied": 30,
+    "n_approved": 30,
+    "n_lost": 14,
+    "n_retained": 16,
+    "mean_summary_words": 19.916666666666668,
+    "mean_policy_retention": 0.3722222222222222,
+    "decision_lost": [
+      13,
+      14
+    ],
+    "decision_retained": [
+      16,
+      16
+    ],
+    "which_lost": [
+      1,
+      14
+    ],
+    "which_retained": [
+      15,
+      16
+    ],
+    "repair_lost": [
+      2,
+      14
+    ],
+    "repair_retained": [
+      14,
+      16
+    ],
+    "repair_specific_lost": [
+      14,
+      14
+    ],
+    "which_confab_lost": [
+      1,
+      14
+    ],
+    "abstain_lost": [
+      13,
+      14
+    ],
+    "abstain_retained": [
+      0,
+      16
+    ],
+    "incoherent_lost": [
+      12,
+      14
+    ],
+    "incoherent_retained": [
+      0,
+      16
+    ],
+    "approved_decision_lost": [
+      10,
+      27
+    ],
+    "approved_decision_retained": [
+      3,
+      3
+    ],
+    "approved_which_none": [
+      22,
+      30
+    ],
+    "gist_lost": [
+      5,
+      14
+    ],
+    "gist_retained": [
+      3,
+      16
+    ],
+    "nonotes_decision": [
+      30,
+      60
+    ],
+    "nonotes_decision_denied": [
+      30,
+      30
+    ],
+    "nonotes_param_denied": [
+      2,
+      30
+    ]
+  },
+  "headline_wilson_ci": {
+    "decision_lost": {
+      "k": 13,
+      "n": 14,
+      "p": 0.9285714285714286,
+      "ci95": [
+        0.6853073044604219,
+        0.9872781138877085
+      ]
+    },
+    "which_lost": {
+      "k": 1,
+      "n": 14,
+      "p": 0.07142857142857142,
+      "ci95": [
+        0.012721886112291636,
+        0.3146926955395781
+      ]
+    },
+    "which_retained": {
+      "k": 15,
+      "n": 16,
+      "p": 0.9375,
+      "ci95": [
+        0.7167073163197013,
+        0.9888809426916687
+      ]
+    },
+    "repair_lost": {
+      "k": 2,
+      "n": 14,
+      "p": 0.14285714285714285,
+      "ci95": [
+        0.040093073737921175,
+        0.39941907763863693
+      ]
+    }
+  },
+  "tokens": {
+    "prompt": 145917,
+    "completion": 7893,
+    "total": 153810
+  },
+  "anomalies": 0
+}

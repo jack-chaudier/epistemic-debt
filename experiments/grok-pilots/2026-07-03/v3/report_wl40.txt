@@ -1,0 +1,34 @@
+
+=== v3 REPORT (n=40, wl=40) ===
+mean summary words 48.4; policy retention (tolerant) 0.867
+
+PRIMARY: DENIED items by failing-value retention in summary
+  retained (n=19): decision 19/19  WHICH 18/19  REPAIR 18/19
+  lost     (n=1): decision 0/1  WHICH 0/1  REPAIR 0/1
+
+Lost-cell 2x2 (WHICH correct?) x (abstain-variant abstained?):
+  which_correct=True abstained=True: 0
+  which_correct=True abstained=False: 0
+  which_correct=False abstained=True: 0
+  which_correct=False abstained=False: 1
+  confabulated-which (specific wrong param) in lost cell: 0/1
+  abstentions in retained DENIED cell: 0/19
+
+APPROVED control (no shelf):
+  decision 13/20, WHICH=NONE 13/20, REPAIR 14/20, abstain 2/20
+    all policy retained (n=15): decision 11/15, WHICH=NONE 10/15
+    some policy lost    (n=5): decision 2/5, WHICH=NONE 3/5
+
+Gist leakage in DENIED summaries (qualitative out-of-spec language):
+  retained: 8/19
+  lost    : 0/1
+
+No-notes baseline: decision 7/40, parameter 8/40 (DENIED param floor: 1/20)
+
+tokens: prompt=132839 completion=8821 total=141660
+anomalies: 0
+
+--- lost-witness DENIED v3item24 (failing: lead operator certification rating) ---
+SUMMARY: Crimson Badger payload launch: gyro drift 0.21°/hr, sensor offset 0.67 mrad, battery 93.64 %, wind 8.11 m/s, RF margin 4.93 dB, star tracker residual 24.59", propellant 4.95 bar, avionics load 75.49 %, downlink margin 10.77 dB, thermal coverage 98.25 %, umbilical retract 5.84 s. Routine badge/training, maintenance, weather, and admin notes logged Apr–Jun.
+WHICH  : PARAMETER: NONE
+ABSTAIN: PARAMETER: NONE

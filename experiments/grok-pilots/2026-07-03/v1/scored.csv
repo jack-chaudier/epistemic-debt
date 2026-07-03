@@ -1,0 +1,31 @@
+item,domain,truth,cf_truth,cf_flips,summary_words,retention,full_answer,full_witness,comp_answer,comp_witness,cf_answer,ab_answer,full_correct,comp_correct,cf_correct,abstained,ab_correct,cls
+item00,satellite launch,DENIED,APPROVED,True,42,1.0,DENIED,0.3333333333333333,DENIED,1.0,APPROVED,DENIED,True,True,True,False,True,justified
+item01,chemical batch release,APPROVED,APPROVED,False,22,1.0,APPROVED,1.0,APPROVED,1.0,APPROVED,APPROVED,True,True,True,False,True,justified
+item02,rail switch deployment,APPROVED,APPROVED,False,31,1.0,APPROVED,1.0,APPROVED,1.0,APPROVED,APPROVED,True,True,True,False,True,justified
+item03,data-center failover,DENIED,DENIED,False,28,1.0,DENIED,1.0,DENIED,0.3333333333333333,DENIED,DENIED,True,True,True,False,True,debt
+item04,vaccine lot release,DENIED,DENIED,False,20,1.0,DENIED,0.3333333333333333,DENIED,1.0,DENIED,DENIED,True,True,True,False,True,justified
+item05,bridge load test,APPROVED,DENIED,True,29,1.0,APPROVED,1.0,APPROVED,1.0,DENIED,APPROVED,True,True,True,False,True,justified
+item06,satellite launch,APPROVED,DENIED,True,22,1.0,APPROVED,1.0,APPROVED,1.0,DENIED,APPROVED,True,True,True,False,True,justified
+item07,chemical batch release,APPROVED,APPROVED,False,27,1.0,APPROVED,1.0,APPROVED,1.0,APPROVED,APPROVED,True,True,True,False,True,justified
+item08,rail switch deployment,APPROVED,APPROVED,False,32,1.0,APPROVED,1.0,APPROVED,1.0,APPROVED,APPROVED,True,True,True,False,True,justified
+item09,data-center failover,DENIED,APPROVED,True,22,1.0,DENIED,0.3333333333333333,DENIED,0.3333333333333333,APPROVED,DENIED,True,True,True,False,True,debt
+item10,vaccine lot release,APPROVED,APPROVED,False,23,1.0,APPROVED,1.0,APPROVED,1.0,APPROVED,APPROVED,True,True,True,False,True,justified
+item11,bridge load test,DENIED,DENIED,False,30,1.0,DENIED,1.0,DENIED,1.0,DENIED,DENIED,True,True,True,False,True,justified
+item12,satellite launch,DENIED,DENIED,False,24,1.0,DENIED,1.0,DENIED,1.0,DENIED,DENIED,True,True,True,False,True,justified
+item13,chemical batch release,DENIED,APPROVED,True,22,1.0,DENIED,0.3333333333333333,DENIED,0.3333333333333333,APPROVED,DENIED,True,True,True,False,True,debt
+item14,rail switch deployment,DENIED,APPROVED,True,34,1.0,DENIED,1.0,DENIED,1.0,APPROVED,DENIED,True,True,True,False,True,justified
+item15,data-center failover,DENIED,DENIED,False,41,1.0,DENIED,1.0,DENIED,1.0,DENIED,DENIED,True,True,True,False,True,justified
+item16,vaccine lot release,APPROVED,DENIED,True,26,1.0,APPROVED,1.0,APPROVED,1.0,DENIED,APPROVED,True,True,True,False,True,justified
+item17,bridge load test,APPROVED,APPROVED,False,29,1.0,APPROVED,1.0,APPROVED,1.0,APPROVED,APPROVED,True,True,True,False,True,justified
+item18,satellite launch,DENIED,APPROVED,True,31,1.0,DENIED,0.3333333333333333,DENIED,0.3333333333333333,APPROVED,DENIED,True,True,True,False,True,debt
+item19,chemical batch release,APPROVED,DENIED,True,28,1.0,APPROVED,1.0,APPROVED,1.0,DENIED,APPROVED,True,True,True,False,True,justified
+item20,rail switch deployment,DENIED,APPROVED,True,37,1.0,DENIED,1.0,DENIED,0.3333333333333333,APPROVED,DENIED,True,True,True,False,True,debt
+item21,data-center failover,DENIED,DENIED,False,27,1.0,DENIED,1.0,DENIED,1.0,DENIED,DENIED,True,True,True,False,True,justified
+item22,vaccine lot release,APPROVED,DENIED,True,24,1.0,APPROVED,1.0,APPROVED,1.0,DENIED,APPROVED,True,True,True,False,True,justified
+item23,bridge load test,DENIED,DENIED,False,31,1.0,DENIED,1.0,DENIED,1.0,DENIED,DENIED,True,True,True,False,True,justified
+item24,satellite launch,APPROVED,DENIED,True,33,1.0,APPROVED,1.0,APPROVED,1.0,DENIED,APPROVED,True,True,True,False,True,justified
+item25,chemical batch release,APPROVED,APPROVED,False,26,1.0,APPROVED,1.0,APPROVED,1.0,APPROVED,APPROVED,True,True,True,False,True,justified
+item26,rail switch deployment,DENIED,DENIED,False,38,1.0,DENIED,1.0,DENIED,1.0,DENIED,DENIED,True,True,True,False,True,justified
+item27,data-center failover,APPROVED,DENIED,True,38,1.0,APPROVED,1.0,APPROVED,1.0,DENIED,APPROVED,True,True,True,False,True,justified
+item28,vaccine lot release,APPROVED,DENIED,True,25,1.0,APPROVED,1.0,APPROVED,1.0,DENIED,APPROVED,True,True,True,False,True,justified
+item29,bridge load test,DENIED,APPROVED,True,28,1.0,DENIED,1.0,DENIED,0.3333333333333333,APPROVED,DENIED,True,True,True,False,True,debt

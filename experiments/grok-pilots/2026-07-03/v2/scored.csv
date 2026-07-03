@@ -1,0 +1,61 @@
+item,domain,truth,nfail,cf_truth,cf_flips,summary_words,ret_policy,ret_nonpolicy,lost_any_policy,cf_param_retained,determinable,gist_leak,answer_full,answer_comp,cf_comp,abstain_comp,full_witness,comp_witness,full_correct,comp_correct,cf_correct,abstained,debt,confabulated
+v2item00,satellite launch,APPROVED,0,APPROVED,False,53,1.0,0.8888888888888888,False,True,True,False,APPROVED,APPROVED,APPROVED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item01,chemical batch release,APPROVED,0,APPROVED,False,43,1.0,0.8888888888888888,False,True,True,False,APPROVED,DENIED,APPROVED,APPROVED,1.0,1.0,True,False,True,False,False,False
+v2item02,rail switch deployment,APPROVED,0,DENIED,True,46,0.3333333333333333,1.0,True,True,False,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,0.3333333333333333,True,True,True,False,True,True
+v2item03,data-center failover,APPROVED,0,DENIED,True,38,0.0,0.4444444444444444,True,False,False,True,APPROVED,DENIED,DENIED,INSUFFICIENT_EVIDENCE,1.0,0.0,True,False,True,True,False,False
+v2item04,vaccine lot release,APPROVED,0,DENIED,True,44,1.0,1.0,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item05,bridge load test,DENIED,2,DENIED,False,53,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,1.0,True,True,True,False,False,False
+v2item06,satellite launch,APPROVED,0,APPROVED,False,44,0.6666666666666666,0.7777777777777778,True,True,False,False,APPROVED,APPROVED,APPROVED,APPROVED,1.0,0.6666666666666666,True,True,True,False,True,True
+v2item07,chemical batch release,DENIED,3,DENIED,False,52,0.6666666666666666,0.8888888888888888,True,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,0.6666666666666666,True,True,True,False,True,False
+v2item08,rail switch deployment,APPROVED,0,DENIED,True,39,1.0,0.4444444444444444,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item09,data-center failover,DENIED,1,APPROVED,True,52,0.3333333333333333,0.1111111111111111,True,False,False,True,DENIED,APPROVED,APPROVED,APPROVED,1.0,0.3333333333333333,True,False,True,False,False,True
+v2item10,vaccine lot release,APPROVED,0,APPROVED,False,48,0.6666666666666666,1.0,True,False,False,False,APPROVED,DENIED,APPROVED,DENIED,1.0,0.6666666666666666,True,False,True,False,False,True
+v2item11,bridge load test,DENIED,1,APPROVED,True,56,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,0.3333333333333333,True,True,False,False,False,False
+v2item12,satellite launch,APPROVED,0,APPROVED,False,39,0.6666666666666666,0.6666666666666666,True,True,False,False,APPROVED,DENIED,DENIED,DENIED,1.0,0.6666666666666666,True,False,False,False,False,True
+v2item13,chemical batch release,APPROVED,0,DENIED,True,41,1.0,0.7777777777777778,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item14,rail switch deployment,DENIED,3,DENIED,False,46,1.0,0.7777777777777778,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,1.0,True,True,True,False,False,False
+v2item15,data-center failover,DENIED,1,APPROVED,True,39,1.0,0.8888888888888888,False,True,True,False,DENIED,DENIED,DENIED,DENIED,0.3333333333333333,1.0,True,True,False,False,False,False
+v2item16,vaccine lot release,DENIED,1,APPROVED,True,51,1.0,0.7777777777777778,False,True,True,False,DENIED,DENIED,DENIED,DENIED,0.3333333333333333,1.0,True,True,False,False,False,False
+v2item17,bridge load test,APPROVED,0,DENIED,True,56,1.0,1.0,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item18,satellite launch,APPROVED,0,DENIED,True,47,1.0,0.8888888888888888,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item19,chemical batch release,APPROVED,0,DENIED,True,44,0.6666666666666666,0.8888888888888888,True,True,False,True,APPROVED,APPROVED,DENIED,APPROVED,1.0,0.6666666666666666,True,True,True,False,True,True
+v2item20,rail switch deployment,DENIED,2,DENIED,False,50,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,0.6666666666666666,0.6666666666666666,True,True,True,False,False,False
+v2item21,data-center failover,DENIED,3,DENIED,False,38,0.3333333333333333,0.5555555555555556,True,False,True,True,DENIED,DENIED,DENIED,DENIED,1.0,0.3333333333333333,True,True,True,False,True,False
+v2item22,vaccine lot release,APPROVED,0,DENIED,True,44,0.6666666666666666,0.8888888888888888,True,False,False,True,APPROVED,DENIED,DENIED,INSUFFICIENT_EVIDENCE,1.0,0.6666666666666666,True,False,True,True,False,False
+v2item23,bridge load test,APPROVED,0,DENIED,True,46,1.0,0.8888888888888888,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item24,satellite launch,DENIED,3,DENIED,False,52,0.6666666666666666,0.8888888888888888,True,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,0.6666666666666666,True,True,True,False,True,False
+v2item25,chemical batch release,APPROVED,0,DENIED,True,45,1.0,1.0,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item26,rail switch deployment,DENIED,1,APPROVED,True,45,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,0.3333333333333333,True,True,False,False,False,False
+v2item27,data-center failover,DENIED,3,DENIED,False,44,0.3333333333333333,0.8888888888888888,True,True,True,True,DENIED,DENIED,DENIED,DENIED,1.0,0.3333333333333333,True,True,True,False,True,False
+v2item28,vaccine lot release,DENIED,2,DENIED,False,44,1.0,0.8888888888888888,False,True,True,False,DENIED,DENIED,DENIED,DENIED,0.6666666666666666,0.6666666666666666,True,True,True,False,False,False
+v2item29,bridge load test,DENIED,2,DENIED,False,52,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,1.0,True,True,True,False,False,False
+v2item30,satellite launch,APPROVED,0,APPROVED,False,49,0.3333333333333333,0.5555555555555556,True,True,False,True,APPROVED,DENIED,APPROVED,INSUFFICIENT_EVIDENCE,1.0,0.3333333333333333,True,False,True,True,False,False
+v2item31,chemical batch release,APPROVED,0,DENIED,True,47,1.0,1.0,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item32,rail switch deployment,APPROVED,0,DENIED,True,51,0.6666666666666666,0.8888888888888888,True,False,False,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,0.6666666666666666,True,True,True,False,True,True
+v2item33,data-center failover,DENIED,2,DENIED,False,50,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,1.0,True,True,True,False,False,False
+v2item34,vaccine lot release,DENIED,2,DENIED,False,52,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,0.6666666666666666,1.0,True,True,True,False,False,False
+v2item35,bridge load test,APPROVED,0,APPROVED,False,51,1.0,1.0,False,True,True,False,APPROVED,APPROVED,APPROVED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item36,satellite launch,DENIED,3,DENIED,False,39,0.3333333333333333,0.8888888888888888,True,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,0.3333333333333333,True,True,True,False,True,False
+v2item37,chemical batch release,DENIED,2,DENIED,False,51,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,1.0,True,True,True,False,False,False
+v2item38,rail switch deployment,DENIED,2,DENIED,False,50,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,1.0,True,True,True,False,False,False
+v2item39,data-center failover,DENIED,3,DENIED,False,54,0.6666666666666666,0.5555555555555556,True,True,True,True,DENIED,DENIED,DENIED,DENIED,1.0,0.6666666666666666,True,True,True,False,True,False
+v2item40,vaccine lot release,DENIED,2,DENIED,False,35,1.0,0.5555555555555556,False,True,True,False,DENIED,DENIED,DENIED,DENIED,0.6666666666666666,1.0,True,True,True,False,False,False
+v2item41,bridge load test,APPROVED,0,DENIED,True,57,1.0,1.0,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item42,satellite launch,DENIED,2,DENIED,False,43,0.6666666666666666,0.6666666666666666,True,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,0.6666666666666666,True,True,True,False,True,False
+v2item43,chemical batch release,DENIED,1,APPROVED,True,57,1.0,1.0,False,True,True,False,DENIED,DENIED,APPROVED,DENIED,1.0,1.0,True,True,True,False,False,False
+v2item44,rail switch deployment,APPROVED,0,DENIED,True,40,0.6666666666666666,0.8888888888888888,True,False,False,True,APPROVED,APPROVED,DENIED,APPROVED,1.0,0.6666666666666666,True,True,True,False,True,True
+v2item45,data-center failover,APPROVED,0,DENIED,True,48,0.0,0.1111111111111111,True,False,False,True,APPROVED,APPROVED,DENIED,APPROVED,1.0,0.0,True,True,True,False,True,True
+v2item46,vaccine lot release,DENIED,1,APPROVED,True,42,1.0,0.8888888888888888,False,True,True,False,DENIED,DENIED,DENIED,DENIED,0.3333333333333333,1.0,True,True,False,False,False,False
+v2item47,bridge load test,DENIED,3,DENIED,False,56,0.6666666666666666,1.0,True,True,True,True,DENIED,DENIED,DENIED,DENIED,1.0,0.6666666666666666,True,True,True,False,True,False
+v2item48,satellite launch,DENIED,1,APPROVED,True,50,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,1.0,True,True,False,False,False,False
+v2item49,chemical batch release,DENIED,1,APPROVED,True,44,1.0,0.8888888888888888,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,1.0,True,True,False,False,False,False
+v2item50,rail switch deployment,APPROVED,0,DENIED,True,46,0.3333333333333333,0.5555555555555556,True,False,False,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,0.3333333333333333,True,True,True,False,True,True
+v2item51,data-center failover,APPROVED,0,DENIED,True,55,1.0,1.0,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item52,vaccine lot release,APPROVED,0,APPROVED,False,47,1.0,1.0,False,True,True,False,APPROVED,APPROVED,APPROVED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item53,bridge load test,DENIED,3,DENIED,False,48,1.0,1.0,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,1.0,True,True,True,False,False,False
+v2item54,satellite launch,APPROVED,0,APPROVED,False,38,1.0,0.6666666666666666,False,True,True,False,APPROVED,APPROVED,APPROVED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item55,chemical batch release,DENIED,1,APPROVED,True,44,0.6666666666666666,0.5555555555555556,True,True,True,False,DENIED,DENIED,DENIED,DENIED,0.3333333333333333,0.6666666666666666,True,True,False,False,True,False
+v2item56,rail switch deployment,APPROVED,0,DENIED,True,50,1.0,0.8888888888888888,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item57,data-center failover,APPROVED,0,DENIED,True,54,1.0,1.0,False,True,True,False,APPROVED,APPROVED,DENIED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item58,vaccine lot release,APPROVED,0,APPROVED,False,42,1.0,0.7777777777777778,False,True,True,False,APPROVED,APPROVED,APPROVED,APPROVED,1.0,1.0,True,True,True,False,False,False
+v2item59,bridge load test,DENIED,3,DENIED,False,58,1.0,0.8888888888888888,False,True,True,False,DENIED,DENIED,DENIED,DENIED,1.0,1.0,True,True,True,False,False,False

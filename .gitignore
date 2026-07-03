@@ -1,0 +1,14 @@
+# secrets — keys live in the environment, never in the tree
+.env
+.env.*
+*.key
+secrets/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# OS noise
+.DS_Store

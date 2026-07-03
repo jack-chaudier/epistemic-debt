@@ -1,0 +1,12 @@
+{"item": "v3item00", "wl": 15, "summary": "Teal Gantry launch: uneventful visits, minor equipment notes, nominal telemetry & environmental readings."}
+{"item": "v3item01", "wl": 15, "summary": "Slate Trellis batch: purity 98.99 %, turbidity 8.15 NTU, yield 78.62 %, multiple routine maintenance & visitor events logged."}
+{"item": "v3item03", "wl": 15, "summary": "Auburn Gantry failover: battery 29.73 m\u03a9, DNS 69.37 s, UPS 59.98 %, rack 18.76 \u00b0C, generator 8.39 h, packet loss 0.51 %, chilled water 7.86 \u00b0C, storage 29.43 %, transfer 184 ms, CPU 34.26 %, humidity 38.12 %."}
+{"item": "v3item04", "wl": 15, "summary": "Silver Paddock vaccine lot: 97.76% label reconciliation, 3.44% O\u2082, 96.54 SCI, 91.6% potency, 92.47% seal torque, 89.46 stability, 1.08 EU/mL endotoxin, 40.28 particulate, 103.38% adjuvant, 2.65% fill deviation, 21.7 min cold-chain."}
+{"item": "v3item05", "wl": 15, "summary": "Crimson Falcon span load test: concrete 50.53 MPa, deflection 37.13 mm, cable uniformity 86.85 %, grout margin 83.31 %, rebar cover 67.54 mm, crack 0.23 mm, pier settlement 5.28 mm, anchor torque 405 N-m."}
+{"item": "v3item06", "wl": 15, "summary": "Saffron Vanguard launch: routine ops, maintenance, telemetry, environmental logs, minor anomalies noted."}
+{"item": "v3item08", "wl": 15, "summary": "Hazel Windlass switch: PM, inspections, resistances, forces, wear, deviations logged."}
+{"item": "v3item13", "wl": 15, "summary": "Bronze Isthmus batch: yield 86.49 %, purity 97.71 %, key metrics logged; minor maintenance & admin notes."}
+{"item": "v3item19", "wl": 15, "summary": "Flint Lantern batch: seal 84.91%, purity 98.39%, yield 91.5%, QA 85.7; minor equipment notes, no incidents."}
+{"item": "v3item21", "wl": 15, "summary": "Ivory Jetty failover: 53% link, 18h fuel, 11.5s lag, 1.2% loss, temps/humidity OK, PMs closed, visits uneventful."}
+{"item": "v3item23", "wl": 15, "summary": "Cobalt Meridian load test: HVAC/training ledger duplicates corrected; core 53.15 MPa, deflection 35.11 mm, crack 0.27 mm, tension 114.44%."}
+{"item": "v3item24", "wl": 15, "summary": "Crimson Badger: gyro 0.21\u00b0/h, cal 0.67 mrad, battery 93.64%, wind 8.11 m/s, RF 4.93 dB, star tracker 24.59\", propellant 4.95 bar, avionics 75.49%, umbilical 5.84 s."}
