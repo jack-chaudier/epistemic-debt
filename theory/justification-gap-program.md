@@ -317,6 +317,62 @@ Four preregistered phases (`experiments/witness-compaction/2026-07-03/`, $0.81) 
 
 **H.5 The composite claim.** Justified accuracy ≈ witness survival (H.1); witness survival is buyable blind at ~2× prose-baseline density (H.2); it survives re-compaction (H.3); and residual risk is concentrated in false confidence, which is detectable behaviorally (H.4). So the road to durable long context is concrete: **value-dense contract-blind compaction + terminal-budget floors + calibrated-abstention retrieval**, with incoherent confidence as the one identified failure mode still standing. The theory-side successor question: formalize H.2 as a covering statement — the blind compactor pays for the witness superset `Σ|candidates|`, the aware compactor for the fiber `log₂|Q|/|M|`, and the gap between them is the measurable price of contract-blindness, which this corpus shows can be driven to ≈ 0 when candidates fit the budget.
 
+## Appendix I — The re-score, the ledger router, and the death of J = S (2026-07-06)
+
+Three developments from auditing the campaign's own measurement layer and running the
+preregistered budget-line test (`experiments/rescore/2026-07-06/`,
+`experiments/laws/2026-07-03/budgetline/`; combined new spend $1.18).
+
+**I.1 The instrument was part of the phenomenon.** The v5 WHICH scorer (first-match,
+optional-colon regex) silently binned verbose readers' final `PARAMETER:` lines as `UNMATCHED` —
+neither confabulation nor incoherence nor NONE. Corrected parsing plus a dual-judge re-score
+(agreement 0.974; judges never see ground truth; NONE split into "no parameter failed" vs
+"the readings are absent") shows the F.3 phenotype claim survives but its mechanism was
+misidentified. On lost witnesses: grok and gpt assert **strong incoherence** (`DENIED` + "nothing
+failed": 16/22 and 24/28); haiku emits **coherent missing-data acknowledgment** (15/19); the
+reasoning tier sits between via explicit abstention. The axis is **calibration quality**, not
+output-format or assertion-vs-declination. Two consequences. (a) *Haiku natively emits the loss
+manifest* — the signal the F.5 `OMITTED:` intervention could not prompt into grok/gpt is already
+in one vendor's training, which is Appendix A's honesty-premium claim observed in the wild:
+honesty priced in during shaping is cheap; retrofitted, unbuyable. (b) A methods law for this
+program: **when the claim is a phenotype, the parser is a confound** — the same regex flipped the
+budget-line law verdict in *both directions* on haiku (v1: J&lt;S, slope 0.733; corrected: J&gt;S,
+slope 1.203). Scorers must surface unparsed counts; phenotype claims need semantic judging.
+
+**I.2 The ledger belongs to the router, not the reader.** H.4 left one failure mode standing:
+incoherent confidence caps the abstention router's recall at 0.82. Re-analysis of the cached
+routing corpus shows the fix was already implied by F.4: since debt is artifact-borne, the routing
+trigger should be too. A deterministic **loss-ledger router** — route iff a policy value is absent
+from the artifact by string check, deployable contract-blind by having the compactor log the
+*names* of dropped values and intersecting them with the query's policy at read time — achieves
+recall 1.00, precision 0.917, end-to-end 30/30 (vs 26/30 reader-side). The F.5 negative result
+("manifests don't fix confabulation") was aimed at the wrong consumer: the manifest changes little
+when the *reader* sees it, and everything when the *router* consumes it. Composite recipe, updated:
+value-dense compaction + terminal-budget floors + **ledger-triggered re-expansion**, with reader
+calibration now optional rather than load-bearing. (Status: OBSERVED on cached data, one model;
+a fresh preregistered run where the compactor actually emits the ledger is the successor.)
+
+**I.3 J = S is dead; long live J ≥ S.** The preregistered budget-line test (5 arms, 3 models,
+fresh clinical domain) refutes reader-efficiency-1 as a law: only grok/clinical passes (slope
+0.952, R² 0.995 — the H.1 result *does* replicate cross-domain for grok), while gpt and haiku sit
+strictly **above** the line (pooled J ≈ 0.92·S + 0.05, R² 0.96; every arm's own fit R² ≥ 0.96).
+The mechanism is identified, not mysterious: the WHICH probe includes the policy text, which
+discloses the three candidate witnesses by name, and readers recover the failing one by
+elimination over surviving values plus guessing over the disclosed set (18 gpt/incident items have
+J=1 with the value destroyed; 15/18 lack even the parameter's name in the summary). Theory
+consequences. (a) **String-checkable witness survival S is a conservative lower bound on justified
+accuracy, not an estimator of it** — the greppable-debt story survives only in its safe direction:
+a ledger can prove something load-bearing was dropped; it cannot certify what a reader can still
+justify, because readers import structure from the probe/task context itself. (b) This is G.2's
+lesson inverted: G.2 showed readers do *less* than logical inference over the artifact (p=1
+recovery fails); I.3 shows they do *more* than retrieval when the candidate set is disclosed.
+Reader efficiency is neither 0 nor 1 nor universal — it is a **model-specific coefficient α on
+witness survival** (measured range 0.89–1.20 under the corrected parser; the prereg parser's
+0.73 for haiku is the I.1 artifact, not an efficiency), and "the artifact carries the whole
+exchange rate" (H.1) is the α=1 special case grok happens to occupy. (c) Probe design now bifurcates: to measure
+artifact content, hide the candidates; to measure deployed justified accuracy, disclose them —
+preregistrations must say which quantity they target.
+
 ## 9. The one-sentence version
 
 **Justification is a conserved, priced resource: the shelf width is the entropy of the witness orbit, behavioral optimization always defaults on the debt, abstention is the only honest refinancing, and the bill arrives exactly when the world changes.**

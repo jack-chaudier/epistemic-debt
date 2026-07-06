@@ -1,0 +1,313 @@
+{
+ "summary": {
+  "pairs": 304,
+  "agreement": 0.9737,
+  "unresolved": 0
+ },
+ "cells": {
+  "reasoning/gpt5mini/which/lost": {
+   "n": 22,
+   "correct": 4,
+   "confab": 3,
+   "none_no_failure": 7,
+   "none_missing": 1,
+   "insufficient": 7,
+   "unclear": 0,
+   "strong_incoherent": 5
+  },
+  "reasoning/gpt5mini/which/retained": {
+   "n": 8,
+   "correct": 8,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 0,
+   "insufficient": 0,
+   "unclear": 0,
+   "strong_incoherent": 0
+  },
+  "reasoning/gpt5mini/which_abstain/lost": {
+   "n": 22,
+   "correct": 0,
+   "confab": 0,
+   "none_no_failure": 2,
+   "none_missing": 0,
+   "insufficient": 20,
+   "unclear": 0,
+   "strong_incoherent": 0
+  },
+  "reasoning/gpt5mini/which_abstain/retained": {
+   "n": 8,
+   "correct": 8,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 0,
+   "insufficient": 0,
+   "unclear": 0,
+   "strong_incoherent": 0
+  },
+  "v5/gemlite/which/lost": {
+   "n": 2,
+   "correct": 0,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 1,
+   "insufficient": 1,
+   "unclear": 0,
+   "strong_incoherent": 0
+  },
+  "v5/gemlite/which/retained": {
+   "n": 0
+  },
+  "v5/gemlite/which_abstain/lost": {
+   "n": 2,
+   "correct": 0,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 0,
+   "insufficient": 2,
+   "unclear": 0,
+   "strong_incoherent": 0
+  },
+  "v5/gemlite/which_abstain/retained": {
+   "n": 0
+  },
+  "v5/gpt/which/lost": {
+   "n": 28,
+   "correct": 3,
+   "confab": 1,
+   "none_no_failure": 24,
+   "none_missing": 0,
+   "insufficient": 0,
+   "unclear": 0,
+   "strong_incoherent": 24
+  },
+  "v5/gpt/which/retained": {
+   "n": 2,
+   "correct": 2,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 0,
+   "insufficient": 0,
+   "unclear": 0,
+   "strong_incoherent": 0
+  },
+  "v5/gpt/which_abstain/lost": {
+   "n": 28,
+   "correct": 2,
+   "confab": 0,
+   "none_no_failure": 1,
+   "none_missing": 0,
+   "insufficient": 25,
+   "unclear": 0,
+   "strong_incoherent": 1
+  },
+  "v5/gpt/which_abstain/retained": {
+   "n": 2,
+   "correct": 2,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 0,
+   "insufficient": 0,
+   "unclear": 0,
+   "strong_incoherent": 0
+  },
+  "v5/grok/which/lost": {
+   "n": 22,
+   "correct": 0,
+   "confab": 3,
+   "none_no_failure": 19,
+   "none_missing": 0,
+   "insufficient": 0,
+   "unclear": 0,
+   "strong_incoherent": 16
+  },
+  "v5/grok/which/retained": {
+   "n": 8,
+   "correct": 7,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 0,
+   "insufficient": 0,
+   "unclear": 1,
+   "strong_incoherent": 0
+  },
+  "v5/grok/which_abstain/lost": {
+   "n": 22,
+   "correct": 0,
+   "confab": 1,
+   "none_no_failure": 3,
+   "none_missing": 0,
+   "insufficient": 18,
+   "unclear": 0,
+   "strong_incoherent": 1
+  },
+  "v5/grok/which_abstain/retained": {
+   "n": 8,
+   "correct": 4,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 0,
+   "insufficient": 0,
+   "unclear": 4,
+   "strong_incoherent": 0
+  },
+  "v5/haiku/which/lost": {
+   "n": 19,
+   "correct": 0,
+   "confab": 0,
+   "none_no_failure": 4,
+   "none_missing": 15,
+   "insufficient": 0,
+   "unclear": 0,
+   "strong_incoherent": 3
+  },
+  "v5/haiku/which/retained": {
+   "n": 11,
+   "correct": 11,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 0,
+   "insufficient": 0,
+   "unclear": 0,
+   "strong_incoherent": 0
+  },
+  "v5/haiku/which_abstain/lost": {
+   "n": 19,
+   "correct": 0,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 0,
+   "insufficient": 19,
+   "unclear": 0,
+   "strong_incoherent": 0
+  },
+  "v5/haiku/which_abstain/retained": {
+   "n": 11,
+   "correct": 10,
+   "confab": 0,
+   "none_no_failure": 0,
+   "none_missing": 0,
+   "insufficient": 1,
+   "unclear": 0,
+   "strong_incoherent": 0
+  }
+ },
+ "repair": {
+  "plain25": {
+   "n": 30,
+   "lost": {
+    "specific": 15,
+    "hedged": 0,
+    "decline": 1,
+    "n": 16
+   }
+  },
+  "manifest": {
+   "n": 30,
+   "lost": {
+    "specific": 7,
+    "hedged": 0,
+    "decline": 6,
+    "n": 13
+   }
+  }
+ },
+ "disagreements": [
+  {
+   "k": "v5|grok|v5item03|which_abstain",
+   "grok": [
+    "UNCLEAR",
+    "NONE"
+   ],
+   "gpt": [
+    "PARAM",
+    "UPS reserve charge"
+   ],
+   "resolved": true
+  },
+  {
+   "k": "v5|grok|v5item09|which_abstain",
+   "grok": [
+    "PARAM",
+    "generator fuel reserve"
+   ],
+   "gpt": [
+    "UNCLEAR",
+    "NONE"
+   ],
+   "resolved": true
+  },
+  {
+   "k": "v5|grok|v5item27|which_abstain",
+   "grok": [
+    "PARAM",
+    "generator fuel reserve"
+   ],
+   "gpt": [
+    "UNCLEAR",
+    "NONE"
+   ],
+   "resolved": true
+  },
+  {
+   "k": "v5|grok|v5item32|which_abstain",
+   "grok": [
+    "UNCLEAR",
+    "NONE"
+   ],
+   "gpt": [
+    "PARAM",
+    "interlock relay voltage"
+   ],
+   "resolved": true
+  },
+  {
+   "k": "v5|haiku|v5item30|which",
+   "grok": [
+    "NONE_MISSING_DATA",
+    "NONE"
+   ],
+   "gpt": [
+    "NONE_NO_FAILURE",
+    "NONE"
+   ],
+   "resolved": true
+  },
+  {
+   "k": "v5|haiku|v5item48|which",
+   "grok": [
+    "NONE_MISSING_DATA",
+    "NONE"
+   ],
+   "gpt": [
+    "NONE_NO_FAILURE",
+    "NONE"
+   ],
+   "resolved": true
+  },
+  {
+   "k": "reasoning|gpt5mini|v5item11|which",
+   "grok": [
+    "NONE_MISSING_DATA",
+    "NONE"
+   ],
+   "gpt": [
+    "INSUFFICIENT",
+    "NONE"
+   ],
+   "resolved": true
+  },
+  {
+   "k": "reasoning|gpt5mini|v5item25|which",
+   "grok": [
+    "INSUFFICIENT",
+    "NONE"
+   ],
+   "gpt": [
+    "NONE_MISSING_DATA",
+    "NONE"
+   ],
+   "resolved": true
+  }
+ ]
+}

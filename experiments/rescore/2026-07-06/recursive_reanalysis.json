@@ -1,0 +1,95 @@
+{
+ "all": {
+  "n": 30,
+  "chain_ret": 0.3667,
+  "direct_ret": 0.3222,
+  "chain_which": 10,
+  "direct_which": 8
+ },
+ "both_final_le_20w": {
+  "n": 17,
+  "chain_ret": 0.1765,
+  "direct_ret": 0.0784,
+  "chain_which": 2,
+  "direct_which": 0
+ },
+ "both_final_le_25w": {
+  "n": 19,
+  "chain_ret": 0.193,
+  "direct_ret": 0.1228,
+  "chain_which": 3,
+  "direct_which": 2
+ },
+ "overshoot": {
+  "chain": [
+   [
+    "v5item09",
+    29
+   ],
+   [
+    "v5item15",
+    47
+   ],
+   [
+    "v5item23",
+    36
+   ],
+   [
+    "v5item24",
+    32
+   ],
+   [
+    "v5item26",
+    31
+   ],
+   [
+    "v5item44",
+    49
+   ],
+   [
+    "v5item49",
+    27
+   ]
+  ],
+  "direct": [
+   [
+    "v5item03",
+    29
+   ],
+   [
+    "v5item09",
+    27
+   ],
+   [
+    "v5item12",
+    28
+   ],
+   [
+    "v5item23",
+    45
+   ],
+   [
+    "v5item27",
+    37
+   ],
+   [
+    "v5item32",
+    36
+   ],
+   [
+    "v5item44",
+    36
+   ]
+  ]
+ },
+ "path_ensemble": {
+  "which_chain": 10,
+  "which_direct": 8,
+  "which_union": 13,
+  "which_intersection": 5,
+  "retained_chain": 11,
+  "retained_direct": 10,
+  "retained_union": 14,
+  "n": 30
+ }
+}

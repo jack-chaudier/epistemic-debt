@@ -19,11 +19,24 @@ Research repo: exact theory + LLM experiments on the answer/justification gap un
 ## Workflow
 
 ```bash
-python3 -m pytest tests/ -q        # must pass before and after your change
-python3 proofs/shelf_width_law.py  # exact checks are cheap — run them
+uv run --with pytest --no-project -- pytest tests/ -q   # must pass before and after your change
+# (system python3 has no pytest and pip is PEP-668 blocked; plain `python3 -m pytest` fails here)
+python3 proofs/shelf_width_law.py                        # exact checks are cheap — run them
 ```
 
-For multi-step work (new experiment design, multi-model replication), plan the design first — item generation is where validity lives; the three pilot confounds documented in theory-doc Appendix B (salience leak, verdict leak, metric confound) are the checklist. Smoke-test 3 items end-to-end and inspect raw outputs before spending the full call budget.
+For multi-step work (new experiment design, multi-model replication), plan the design first — item generation is where validity lives. The confound checklist, in order discovered:
+1. **Salience leak, verdict leak, metric confound** (pilot v1–v2; theory-doc Appendix B).
+2. **Scoring-parser artifact** (2026-07-06 re-score): verbose readers' answers get dropped by
+   first-match regexes; the same bug flipped a law verdict in both directions. Parse the *last*
+   `PARAMETER:`-style anchor (colon required), surface `UNMATCHED`/anomaly counts in every
+   results JSON (never silently bin them), and dual-judge any channel where the phenotype —
+   not just accuracy — is the claim. See `experiments/rescore/2026-07-06/`.
+3. **Candidate-set disclosure** (budgetline): a probe that shows the policy text discloses the
+   candidate witnesses, so readers recover the answer by elimination and J exceeds string
+   survival S. Decide per-experiment whether the probe measures artifact content (hide
+   candidates) or deployed behavior (disclose them) — and say which in the prereg.
+
+Smoke-test 3 items end-to-end and inspect raw outputs before spending the full call budget.
 
 ## Style
 

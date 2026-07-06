@@ -38,3 +38,23 @@ def test_honesty_tax_accounting_identity_and_known_values():
     res_full = forced_optimal_partition(model, 7)
     A_f, J, C = evaluate(model, res_full[2])
     assert (A_f, J, C) == (1.0, 1.0, 1.0)
+
+
+def test_honesty_premium_reproduces_causal_referee_constants():
+    # The premium/retrofit-gap headline numbers (README row 3, theory Appendix A.2)
+    # must be reproducible from committed machinery, not just transcribed.
+    from honesty_premium import premium_table
+    import exact_pareto_frontier as epf
+
+    ref = premium_table(epf.build_dataset_support_model(epf.build_causal_referee_spec()))
+    at2 = next(r for r in ref if r["bits"] == 2)
+    at3 = next(r for r in ref if r["bits"] == 3)
+    assert abs(at2["C_star"] - 0.8317) < 2e-3            # breach-optimal certified mass
+    assert abs(at2["premium_over_D"] - 0.469) < 5e-3     # honesty cheaper than the debt
+    assert abs(at3["tax_over_D"] - 18.01) < 0.1          # retrofit tax on answer layout
+    retrofit_gap = at3["tax_over_D"] / at2["premium_over_D"]
+    assert 36.0 < retrofit_gap < 40.0                    # ~38x
+    # On every synthetic Q family, by contrast, honesty is never cheaper than the debt.
+    for k, p in ((3, 2), (4, 2)):
+        rows = premium_table(epf.build_probe_joint_model(k, p))
+        assert all(r["premium_over_D"] is None or r["premium_over_D"] > 1.0 for r in rows)

@@ -88,3 +88,52 @@ def test_v5_preregistered_results_consistent():
     # the gemini arm never becomes confirmatory silently
     assert "gemlite" not in per or per["gemlite"]["cells"]["n"] < 60 \
         or per["gemlite"]["applicable"] in (True, False)
+
+
+RESCORE = REPO / "experiments" / "rescore" / "2026-07-06"
+
+
+def test_rescore_campaign_artifacts_and_corrected_cells():
+    for f in ("reparse.py", "judge.py", "judge_raw.jsonl", "adjudications.json",
+              "reparse_results.json", "judge_results.json", "rescore_results.json",
+              "routing_reanalysis.json", "recursive_reanalysis.json", "README.md"):
+        assert (RESCORE / f).exists(), f"rescore: missing {f}"
+    judge = json.loads((RESCORE / "judge_results.json").read_text())
+    # judge instrument validity bar (fixed in the rescore README before the run)
+    assert judge["summary"]["agreement"] >= 0.85
+    assert judge["summary"]["unresolved"] == 0
+    # the corrected phenotype cells: strong incoherence grok/gpt, missing-data haiku
+    cells = judge["cells"]
+    assert cells["v5/grok/which/lost"]["strong_incoherent"] == 16
+    assert cells["v5/gpt/which/lost"]["strong_incoherent"] == 24
+    assert cells["v5/haiku/which/lost"]["none_missing"] == 15
+    assert cells["v5/haiku/which/lost"]["strong_incoherent"] <= 4
+    # correctness conjuncts unaffected by the parser fix (WHICH-lost ~ 0)
+    for m in ("grok", "haiku"):
+        assert cells[f"v5/{m}/which/lost"]["correct"] == 0
+    # ledger router re-analysis: recall 1.0, end-to-end 30/30
+    routing = json.loads((RESCORE / "routing_reanalysis.json").read_text())
+    assert routing["C_ledger_sim"]["recall"] == 1.0
+    assert routing["C_ledger_sim"]["end_to_end"] == "30/30"
+
+
+BUDGETLINE = REPO / "experiments" / "laws" / "2026-07-03" / "budgetline"
+
+
+def test_budgetline_refutation_artifacts_consistent():
+    for f in ("prereg_budgetline.md", "runner_budgetline.py", "items_clinical.jsonl",
+              "responses_raw.jsonl", "scored.csv", "budgetline_results.json",
+              "dualparser_results.json", "README.md"):
+        assert (BUDGETLINE / f).exists(), f"budgetline: missing {f}"
+    res = json.loads((BUDGETLINE / "budgetline_results.json").read_text())
+    # the law's refutation must not silently flip: campaign fails, grok/clinical passes
+    assert res["campaign"]["law_survives"] is False
+    assert res["per_arm"]["grok/clinical"]["law_holds"] is True
+    # every confirmatory arm ran all 7 budgets at n=30
+    for arm in res["design"]["arms"]:
+        assert all(v["n"] == 30 for v in res["per_arm"][arm]["curve"].values()), arm
+    # the refutation is parser-robust (1/4 confirmatory arms under both parsers)
+    dual = json.loads((BUDGETLINE / "dualparser_results.json").read_text())
+    for parser in ("v1", "v2"):
+        assert dual[f"{parser}/campaign"]["law_survives"] is False
+        assert dual[f"{parser}/campaign"]["arms_passing"] == 1

@@ -1,0 +1,14 @@
+{
+ "v5|haiku|v5item30|which": {"label": "NONE_NO_FAILURE", "name": "NONE",
+   "note": "hybrid: acknowledges missing readings, then commits to 'conditions satisfied' from gist ('all inspections uneventful'). Coded to the final operative inference (no-failure) — the conservative reading against the more-coherent-haiku hypothesis."},
+ "v5|haiku|v5item48|which": {"label": "NONE_NO_FAILURE", "name": "NONE",
+   "note": "hybrid: 'cannot determine' then 'all systems nominal suggests within range'. Same rule as item30."},
+ "v5|grok|v5item03|which_abstain": {"label": "UNCLEAR", "name": "NONE",
+   "note": "abstain-channel edge case; judges split PARAM vs UNCLEAR. Dropped from cells."},
+ "v5|grok|v5item09|which_abstain": {"label": "UNCLEAR", "name": "NONE", "note": "as item03"},
+ "v5|grok|v5item27|which_abstain": {"label": "UNCLEAR", "name": "NONE", "note": "as item03"},
+ "v5|grok|v5item32|which_abstain": {"label": "UNCLEAR", "name": "NONE", "note": "as item03"},
+ "reasoning|gpt5mini|v5item11|which": {"label": "INSUFFICIENT", "name": "NONE",
+   "note": "judges split INSUFFICIENT vs NONE_MISSING_DATA; both are coherent debt-aware responses, coded to the abstention reading."},
+ "reasoning|gpt5mini|v5item25|which": {"label": "INSUFFICIENT", "name": "NONE", "note": "as item11"}
+}

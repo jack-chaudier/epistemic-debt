@@ -1,0 +1,452 @@
+{
+ "v5/grok": {
+  "v1": {
+   "lost": {
+    "n": 22,
+    "which_correct": 0,
+    "which_none": 19,
+    "which_confab": 3,
+    "which_unmatched": 0,
+    "incoherent": 16,
+    "abstained": 18
+   },
+   "retained": {
+    "n": 8,
+    "which_correct": 8,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 22,
+    "which_correct": 0,
+    "which_none": 19,
+    "which_confab": 3,
+    "which_unmatched": 0,
+    "incoherent": 16,
+    "abstained": 18
+   },
+   "retained": {
+    "n": 8,
+    "which_correct": 8,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  }
+ },
+ "v5/haiku": {
+  "v1": {
+   "lost": {
+    "n": 19,
+    "which_correct": 0,
+    "which_none": 2,
+    "which_confab": 0,
+    "which_unmatched": 17,
+    "incoherent": 1,
+    "abstained": 18
+   },
+   "retained": {
+    "n": 11,
+    "which_correct": 11,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 1
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 19,
+    "which_correct": 0,
+    "which_none": 15,
+    "which_confab": 0,
+    "which_unmatched": 4,
+    "incoherent": 14,
+    "abstained": 19
+   },
+   "retained": {
+    "n": 11,
+    "which_correct": 11,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 1
+   }
+  }
+ },
+ "v5/gpt": {
+  "v1": {
+   "lost": {
+    "n": 28,
+    "which_correct": 3,
+    "which_none": 24,
+    "which_confab": 1,
+    "which_unmatched": 0,
+    "incoherent": 24,
+    "abstained": 25
+   },
+   "retained": {
+    "n": 2,
+    "which_correct": 2,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 28,
+    "which_correct": 3,
+    "which_none": 24,
+    "which_confab": 1,
+    "which_unmatched": 0,
+    "incoherent": 24,
+    "abstained": 25
+   },
+   "retained": {
+    "n": 2,
+    "which_correct": 2,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  }
+ },
+ "v5/gemlite": {
+  "v1": {
+   "lost": {
+    "n": 3,
+    "which_correct": 0,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 3,
+    "incoherent": 0,
+    "abstained": 1
+   },
+   "retained": {
+    "n": 0
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 3,
+    "which_correct": 0,
+    "which_none": 2,
+    "which_confab": 0,
+    "which_unmatched": 1,
+    "incoherent": 1,
+    "abstained": 2
+   },
+   "retained": {
+    "n": 0
+   }
+  }
+ },
+ "transfer/gpt->grok": {
+  "v1": {
+   "lost": {
+    "n": 28,
+    "which_correct": 0,
+    "which_none": 26,
+    "which_confab": 2,
+    "which_unmatched": 0,
+    "incoherent": 24,
+    "abstained": 24
+   },
+   "retained": {
+    "n": 2,
+    "which_correct": 2,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 28,
+    "which_correct": 0,
+    "which_none": 26,
+    "which_confab": 2,
+    "which_unmatched": 0,
+    "incoherent": 24,
+    "abstained": 24
+   },
+   "retained": {
+    "n": 2,
+    "which_correct": 2,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  }
+ },
+ "transfer/gpt->haiku": {
+  "v1": {
+   "lost": {
+    "n": 28,
+    "which_correct": 1,
+    "which_none": 1,
+    "which_confab": 0,
+    "which_unmatched": 26,
+    "incoherent": 1,
+    "abstained": 26
+   },
+   "retained": {
+    "n": 2,
+    "which_correct": 2,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 28,
+    "which_correct": 2,
+    "which_none": 14,
+    "which_confab": 2,
+    "which_unmatched": 9,
+    "incoherent": 14,
+    "abstained": 28
+   },
+   "retained": {
+    "n": 2,
+    "which_correct": 2,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  }
+ },
+ "transfer/grok->gpt": {
+  "v1": {
+   "lost": {
+    "n": 22,
+    "which_correct": 2,
+    "which_none": 16,
+    "which_confab": 4,
+    "which_unmatched": 0,
+    "incoherent": 13,
+    "abstained": 17
+   },
+   "retained": {
+    "n": 8,
+    "which_correct": 8,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 22,
+    "which_correct": 2,
+    "which_none": 16,
+    "which_confab": 4,
+    "which_unmatched": 0,
+    "incoherent": 13,
+    "abstained": 17
+   },
+   "retained": {
+    "n": 8,
+    "which_correct": 8,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  }
+ },
+ "transfer/grok->haiku": {
+  "v1": {
+   "lost": {
+    "n": 22,
+    "which_correct": 0,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 22,
+    "incoherent": 0,
+    "abstained": 17
+   },
+   "retained": {
+    "n": 8,
+    "which_correct": 8,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 22,
+    "which_correct": 2,
+    "which_none": 9,
+    "which_confab": 2,
+    "which_unmatched": 9,
+    "incoherent": 6,
+    "abstained": 21
+   },
+   "retained": {
+    "n": 8,
+    "which_correct": 8,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  }
+ },
+ "transfer/haiku->gpt": {
+  "v1": {
+   "lost": {
+    "n": 19,
+    "which_correct": 1,
+    "which_none": 17,
+    "which_confab": 1,
+    "which_unmatched": 0,
+    "incoherent": 16,
+    "abstained": 17
+   },
+   "retained": {
+    "n": 11,
+    "which_correct": 10,
+    "which_none": 0,
+    "which_confab": 1,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 19,
+    "which_correct": 1,
+    "which_none": 17,
+    "which_confab": 1,
+    "which_unmatched": 0,
+    "incoherent": 16,
+    "abstained": 17
+   },
+   "retained": {
+    "n": 11,
+    "which_correct": 10,
+    "which_none": 0,
+    "which_confab": 1,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  }
+ },
+ "transfer/haiku->grok": {
+  "v1": {
+   "lost": {
+    "n": 19,
+    "which_correct": 0,
+    "which_none": 17,
+    "which_confab": 2,
+    "which_unmatched": 0,
+    "incoherent": 15,
+    "abstained": 17
+   },
+   "retained": {
+    "n": 11,
+    "which_correct": 11,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 19,
+    "which_correct": 0,
+    "which_none": 17,
+    "which_confab": 2,
+    "which_unmatched": 0,
+    "incoherent": 15,
+    "abstained": 17
+   },
+   "retained": {
+    "n": 11,
+    "which_correct": 11,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  }
+ },
+ "reasoning/gpt5mini": {
+  "v1": {
+   "lost": {
+    "n": 22,
+    "which_correct": 4,
+    "which_none": 8,
+    "which_confab": 3,
+    "which_unmatched": 7,
+    "incoherent": 6,
+    "abstained": 20
+   },
+   "retained": {
+    "n": 8,
+    "which_correct": 8,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  },
+  "v2": {
+   "lost": {
+    "n": 22,
+    "which_correct": 4,
+    "which_none": 8,
+    "which_confab": 3,
+    "which_unmatched": 7,
+    "incoherent": 6,
+    "abstained": 20
+   },
+   "retained": {
+    "n": 8,
+    "which_correct": 8,
+    "which_none": 0,
+    "which_confab": 0,
+    "which_unmatched": 0,
+    "incoherent": 0,
+    "abstained": 0
+   }
+  }
+ }
+}

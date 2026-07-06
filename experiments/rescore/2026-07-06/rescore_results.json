@@ -1,0 +1,194 @@
+{
+ "type": "re-analysis of cached responses (2026-07-06); new API spend = LLM-judge only",
+ "instruments": {
+  "deterministic_reparse": "last PARAMETER: match, colon-required (parse_which_v2)",
+  "dual_judge": {
+   "judges": [
+    "grok-4-1-fast",
+    "gpt-4.1-mini"
+   ],
+   "agreement": 0.9737,
+   "unresolved_after_adjudication": 0,
+   "pairs": 304
+  }
+ },
+ "finding_1_parser_artifact": {
+  "claim": "original v5 scorer dropped verbose readers WHICH responses as UNMATCHED (first-match, optional-colon regex hit the plural word parameters.)",
+  "haiku_lost_which_unmatched_v1_to_v2": [
+   17,
+   4
+  ],
+  "transfer_x_to_haiku_unmatched": {
+   "transfer/gpt->haiku": [
+    26,
+    9
+   ],
+   "transfer/grok->haiku": [
+    22,
+    9
+   ]
+  },
+  "verdict": "CONFIRMED \u2014 parser artifact real; ~15/19 haiku lost-cell WHICH were mis-scored"
+ },
+ "finding_2_phenotype_reinterpreted": {
+  "original_claim": "incoherence is model-specific (haiku 1/19 vs grok 16/22); haiku declines instead of asserting",
+  "naive_reparse_overcorrects": "treating DENIED+NONE as incoherent gives haiku 14/19 \u2014 WRONG",
+  "judge_corrected_lost_cell": {
+   "grok": {
+    "n": 22,
+    "correct": 0,
+    "confab": 3,
+    "none_no_failure": 19,
+    "none_missing": 0,
+    "insufficient": 0,
+    "unclear": 0,
+    "strong_incoherent": 16
+   },
+   "haiku": {
+    "n": 19,
+    "correct": 0,
+    "confab": 0,
+    "none_no_failure": 4,
+    "none_missing": 15,
+    "insufficient": 0,
+    "unclear": 0,
+    "strong_incoherent": 3
+   },
+   "gpt": {
+    "n": 28,
+    "correct": 3,
+    "confab": 1,
+    "none_no_failure": 24,
+    "none_missing": 0,
+    "insufficient": 0,
+    "unclear": 0,
+    "strong_incoherent": 24
+   }
+  },
+  "reasoning_reader": {
+   "n": 22,
+   "correct": 4,
+   "confab": 3,
+   "none_no_failure": 7,
+   "none_missing": 1,
+   "insufficient": 7,
+   "unclear": 0,
+   "strong_incoherent": 5
+  },
+  "coherent_debt_ack_rate": {
+   "grok": 0.0,
+   "gpt": 0.0,
+   "haiku": 0.79,
+   "gpt5mini": 0.53
+  },
+  "verdict": "headline SURVIVES but reinterpreted: grok/gpt emit STRONG incoherence (DENIED + no-failure assertion); haiku emits COHERENT missing-data acknowledgment; reasoning model intermediate via explicit abstention. Difference is calibration quality, not output format. Haiku natively produces the loss-manifest signal F.5 could not prompt into grok/gpt."
+ },
+ "finding_3_correctness_conjuncts_survive": {
+  "lost_cell_correct": {
+   "grok": 0,
+   "haiku": 0,
+   "gpt": 3
+  },
+  "retained_cell_correct": {
+   "grok": [
+    7,
+    8
+   ],
+   "haiku": [
+    11,
+    11
+   ],
+   "gpt": [
+    2,
+    2
+   ]
+  },
+  "verdict": "preregistered dissociation (WHICH-lost approx 0, WHICH-retained high) UNAFFECTED by parser fix"
+ },
+ "finding_4_manifest_pm1_survives": {
+  "haiku_repair_lost": {
+   "plain25": {
+    "specific": 15,
+    "hedged": 0,
+    "decline": 1,
+    "n": 16
+   },
+   "manifest": {
+    "specific": 7,
+    "hedged": 0,
+    "decline": 6,
+    "n": 13
+   }
+  },
+  "verdict": "judge confirms haiku genuinely DECLINES repair 6/13 in manifest arm vs 1/16 plain \u2014 P-M1 pass is real behavior, not parser artifact"
+ },
+ "finding_5_ledger_router": {
+  "designs": {
+   "A_abstention": {
+    "fires": 18,
+    "n": 30,
+    "recall": 0.8182,
+    "precision": 1.0,
+    "end_to_end": "26/30"
+   },
+   "B_plus_incoherence": {
+    "fires": 19,
+    "n": 30,
+    "recall": 0.8636,
+    "precision": 1.0,
+    "end_to_end": "27/30"
+   },
+   "C_ledger_sim": {
+    "fires": 24,
+    "n": 30,
+    "recall": 1.0,
+    "precision": 0.9167,
+    "end_to_end": "30/30"
+   },
+   "D_union": {
+    "fires": 24,
+    "n": 30,
+    "recall": 1.0,
+    "precision": 0.9167,
+    "end_to_end": "30/30"
+   }
+  },
+  "verdict": "deterministic loss-ledger router (route iff policy value absent by string check) achieves recall 1.00, end-to-end 30/30, vs abstention-router 26/30 and incoherence-augmented 27/30. CORRECTED after audit: the 3 misses surviving every reader-side trigger are v5item01 (confident confabulation), v5item36/39 (coherent-but-wrong APPROVED+NONE) \u2014 no reader-side signal exists for them even in principle; the incoherence trigger catches only v5item41. The routing ceiling is dissolved by moving the trigger from the reader to the artifact."
+ },
+ "finding_6_recursive_confound": {
+  "compliance_conditioned": {
+   "all": {
+    "n": 30,
+    "chain_ret": 0.3667,
+    "direct_ret": 0.3222,
+    "chain_which": 10,
+    "direct_which": 8
+   },
+   "both_final_le_20w": {
+    "n": 17,
+    "chain_ret": 0.1765,
+    "direct_ret": 0.0784,
+    "chain_which": 2,
+    "direct_which": 0
+   },
+   "both_final_le_25w": {
+    "n": 19,
+    "chain_ret": 0.193,
+    "direct_ret": 0.1228,
+    "chain_which": 3,
+    "direct_which": 2
+   }
+  },
+  "path_ensemble": {
+   "which_chain": 10,
+   "which_direct": 8,
+   "which_union": 13,
+   "which_intersection": 5,
+   "retained_chain": 11,
+   "retained_direct": 10,
+   "retained_union": 14,
+   "n": 30
+  },
+  "verdict": "chain-approx-direct holds directionally but both arms violate the 15w budget asymmetrically (>15w: chain 11/30, direct 14/30; >25w: 7/30 each); within budget-compliant items chain retention 0.176 vs direct 0.078 (edge persists, tiny n). Path-ensemble: WHICH-correct union 13 vs 8-10 either alone; fail-retained union 14 vs 10-11 \u2014 compaction-path diversity is an untested intervention worth ~1 USD."
+ }
+}

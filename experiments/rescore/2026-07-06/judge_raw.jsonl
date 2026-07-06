@@ -1,0 +1,608 @@
+{"scope": "v5", "key": "grok", "item": "v5item00", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 446, "completion": 11}}
+{"scope": "v5", "key": "grok", "item": "v5item00", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 343, "completion": 12}}
+{"scope": "v5", "key": "grok", "item": "v5item00", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 461, "completion": 11}}
+{"scope": "v5", "key": "grok", "item": "v5item00", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 360, "completion": 12}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item00", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 499, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item00", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 390, "completion": 5}}
+{"scope": "v5", "key": "grok", "item": "v5item01", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: nitrogen blanket pressure", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item01", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: nitrogen blanket pressure", "usage": {"prompt": 338, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item01", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: nitrogen blanket pressure", "usage": {"prompt": 455, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item01", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: nitrogen blanket pressure", "usage": {"prompt": 355, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item03", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 444, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item03", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item03", "call": "which_abstain", "judge": "grok", "text": "LABEL: UNCLEAR\nNAME: NONE", "usage": {"prompt": 459, "completion": 8}}
+{"scope": "v5", "key": "grok", "item": "v5item03", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 360, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item06", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item06", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 345, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item06", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item06", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 368, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item07", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 437, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item07", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 335, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item07", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 458, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item07", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 358, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item09", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item09", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item09", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 460, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item09", "call": "which_abstain", "judge": "gpt", "text": "LABEL: UNCLEAR\nNAME: NONE", "usage": {"prompt": 360, "completion": 8}}
+{"scope": "v5", "key": "grok", "item": "v5item10", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 441, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item10", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 340, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item10", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 462, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item10", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 363, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item11", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 439, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item11", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 337, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item11", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 460, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item11", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 360, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item12", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 443, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item12", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 342, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item12", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 458, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item12", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 359, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item15", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 442, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item15", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 340, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item15", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 463, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item15", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 363, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item19", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 439, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item19", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 337, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item19", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 460, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item19", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 360, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item21", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item21", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 344, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item21", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item21", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 367, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item22", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 441, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item22", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 342, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item22", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 462, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item22", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item23", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 443, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item23", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 342, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item23", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 458, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item23", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item24", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item24", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 342, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item24", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item24", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item25", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 437, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item25", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 335, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item25", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 458, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item25", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 358, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item26", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item26", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 336, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item26", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item26", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item27", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 444, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item27", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item27", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 459, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item27", "call": "which_abstain", "judge": "gpt", "text": "LABEL: UNCLEAR\nNAME: NONE", "usage": {"prompt": 360, "completion": 8}}
+{"scope": "v5", "key": "grok", "item": "v5item30", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 443, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item30", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 341, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item30", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 464, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item30", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 364, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item32", "call": "which", "judge": "grok", "text": "LABEL: UNCLEAR\nNAME: NONE", "usage": {"prompt": 440, "completion": 8}}
+{"scope": "v5", "key": "grok", "item": "v5item32", "call": "which", "judge": "gpt", "text": "LABEL: UNCLEAR\nNAME: NONE", "usage": {"prompt": 337, "completion": 8}}
+{"scope": "v5", "key": "grok", "item": "v5item32", "call": "which_abstain", "judge": "grok", "text": "LABEL: UNCLEAR\nNAME: NONE", "usage": {"prompt": 455, "completion": 8}}
+{"scope": "v5", "key": "grok", "item": "v5item32", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: interlock relay voltage", "usage": {"prompt": 354, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item34", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 441, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item34", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item34", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 462, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item34", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 366, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item36", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 444, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item36", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 344, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item36", "call": "which_abstain", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 459, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item36", "call": "which_abstain", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 361, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item37", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 438, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item37", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 336, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item37", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 459, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item37", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item39", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 443, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item39", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 342, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item39", "call": "which_abstain", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 458, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item39", "call": "which_abstain", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 359, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item41", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item41", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 339, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item41", "call": "which_abstain", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 455, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item41", "call": "which_abstain", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 356, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item44", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: point blade wear", "usage": {"prompt": 442, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item44", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: point blade wear", "usage": {"prompt": 338, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item44", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item44", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item48", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 444, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item48", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 342, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item48", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 465, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item48", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item49", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: QA composite audit score", "usage": {"prompt": 438, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item49", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: QA composite audit score", "usage": {"prompt": 336, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item49", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 459, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item49", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item53", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item53", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 337, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item53", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item53", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 360, "completion": 10}}
+{"scope": "v5", "key": "grok", "item": "v5item55", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item55", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 338, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item55", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 455, "completion": 9}}
+{"scope": "v5", "key": "grok", "item": "v5item55", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 355, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item00", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 449, "completion": 11}}
+{"scope": "v5", "key": "haiku", "item": "v5item00", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 347, "completion": 12}}
+{"scope": "v5", "key": "haiku", "item": "v5item00", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 462, "completion": 11}}
+{"scope": "v5", "key": "haiku", "item": "v5item00", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 362, "completion": 12}}
+{"scope": "v5", "key": "haiku", "item": "v5item01", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 618, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item01", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 518, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item01", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 519, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item01", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 421, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item03", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 468, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item03", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 367, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item03", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 481, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item03", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 382, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item06", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 580, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item06", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 482, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item06", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 576, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item06", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 480, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item07", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 670, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item07", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 579, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item07", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 542, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item07", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 444, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item09", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item09", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item09", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 460, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item09", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 360, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item10", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 548, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item10", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 446, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item10", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 512, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item10", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 413, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item11", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 688, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item11", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 588, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item11", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 489, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item11", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 390, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item12", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 444, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item12", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item12", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 458, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item12", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 359, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item15", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 702, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item15", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 606, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item15", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 569, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item15", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 470, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item19", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: condenser outlet temperature", "usage": {"prompt": 441, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item19", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: condenser outlet temperature", "usage": {"prompt": 339, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item19", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: condenser outlet temperature", "usage": {"prompt": 488, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item19", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: condenser outlet temperature", "usage": {"prompt": 388, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item21", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 515, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item21", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 414, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item21", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 522, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item21", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 424, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item22", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: seal torque retention", "usage": {"prompt": 442, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item22", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: seal torque retention", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item22", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: seal torque retention", "usage": {"prompt": 457, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item22", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: seal torque retention", "usage": {"prompt": 360, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item23", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 553, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item23", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 455, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item23", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 569, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item23", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 473, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item24", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: backup battery charge", "usage": {"prompt": 446, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item24", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: backup battery charge", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item24", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 542, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item24", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 442, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item25", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 505, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item25", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 403, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item25", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 513, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item25", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 414, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item26", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 655, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item26", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 550, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item26", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 541, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item26", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 438, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item27", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item27", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 344, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item27", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 460, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item27", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 361, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item30", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 659, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item30", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 562, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item30", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 527, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item30", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 429, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item32", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 707, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item32", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 603, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item32", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 582, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item32", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 480, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item34", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 441, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item34", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item34", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 536, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item34", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 442, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item36", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: telemetry downlink margin", "usage": {"prompt": 589, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item36", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: telemetry downlink margin", "usage": {"prompt": 494, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item36", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: telemetry downlink margin", "usage": {"prompt": 633, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item36", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: telemetry downlink margin", "usage": {"prompt": 540, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item37", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: catalyst moisture content", "usage": {"prompt": 439, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item37", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: catalyst moisture content", "usage": {"prompt": 337, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item37", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: catalyst moisture content", "usage": {"prompt": 455, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item37", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: catalyst moisture content", "usage": {"prompt": 355, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item39", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 528, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item39", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 430, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item39", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 516, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item39", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 419, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item41", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 697, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item41", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 603, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item41", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 600, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item41", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 507, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item44", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 636, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item44", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 539, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item44", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 539, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item44", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 439, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item48", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 615, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item48", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 513, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item48", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 547, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item48", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 447, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item49", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 631, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item49", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 529, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item49", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 519, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item49", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 419, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item53", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 640, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item53", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 540, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item53", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 503, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item53", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 402, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item55", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 670, "completion": 9}}
+{"scope": "v5", "key": "haiku", "item": "v5item55", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 569, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item55", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 529, "completion": 10}}
+{"scope": "v5", "key": "haiku", "item": "v5item55", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 430, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item00", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item00", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 342, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item00", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item00", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item01", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 438, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item01", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 336, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item01", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 459, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item01", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item03", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 446, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item03", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 345, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item03", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 465, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item03", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 366, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item06", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item06", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 345, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item06", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item06", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 368, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item07", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 437, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item07", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 335, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item07", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 458, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item07", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 358, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item09", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 447, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item09", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 345, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item09", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 461, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item09", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 361, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item10", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 441, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item10", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 340, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item10", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 462, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item10", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 363, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item11", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 439, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item11", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 337, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item11", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 460, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item11", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 360, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item12", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 442, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item12", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 341, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item12", "call": "which_abstain", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 457, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item12", "call": "which_abstain", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 358, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item15", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 442, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item15", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 340, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item15", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 463, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item15", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 363, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item19", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: condenser outlet temperature", "usage": {"prompt": 441, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item19", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: condenser outlet temperature", "usage": {"prompt": 339, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item19", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: condenser outlet temperature", "usage": {"prompt": 456, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item19", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: condenser outlet temperature", "usage": {"prompt": 356, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item21", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item21", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 344, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item21", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item21", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 367, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item22", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: seal torque retention", "usage": {"prompt": 443, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item22", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: seal torque retention", "usage": {"prompt": 344, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item22", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: seal torque retention", "usage": {"prompt": 458, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item22", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: seal torque retention", "usage": {"prompt": 361, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item23", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item23", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 339, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item23", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item23", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 362, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item24", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item24", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 342, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item24", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item24", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item25", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 437, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item25", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 335, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item25", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 458, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item25", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 358, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item26", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item26", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 336, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item26", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item26", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item27", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 444, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item27", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item27", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 465, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item27", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 366, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item30", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 443, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item30", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 341, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item30", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 464, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item30", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 364, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item32", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item32", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 337, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item32", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item32", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 360, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item34", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 441, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item34", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item34", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 462, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item34", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 366, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item36", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: telemetry downlink margin", "usage": {"prompt": 446, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item36", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: telemetry downlink margin", "usage": {"prompt": 347, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item36", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: telemetry downlink margin", "usage": {"prompt": 461, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item36", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: telemetry downlink margin", "usage": {"prompt": 364, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item37", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 438, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item37", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 336, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item37", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 459, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item37", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item39", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 443, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item39", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 342, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item39", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 464, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item39", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item41", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item41", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 339, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item41", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item41", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 362, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item44", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item44", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 336, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item44", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item44", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item48", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 444, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item48", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 342, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item48", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 465, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item48", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item49", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item49", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 338, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item49", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 459, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item49", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item53", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item53", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 337, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item53", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item53", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 360, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item55", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 438, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item55", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 336, "completion": 9}}
+{"scope": "v5", "key": "gpt", "item": "v5item55", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 459, "completion": 10}}
+{"scope": "v5", "key": "gpt", "item": "v5item55", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "v5", "key": "gemlite", "item": "v5item00", "call": "which", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 1206, "completion": 10}}
+{"scope": "v5", "key": "gemlite", "item": "v5item00", "call": "which", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 1108, "completion": 10}}
+{"scope": "v5", "key": "gemlite", "item": "v5item00", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "v5", "key": "gemlite", "item": "v5item00", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "v5", "key": "gemlite", "item": "v5item01", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 1177, "completion": 9}}
+{"scope": "v5", "key": "gemlite", "item": "v5item01", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 1084, "completion": 10}}
+{"scope": "v5", "key": "gemlite", "item": "v5item01", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 686, "completion": 10}}
+{"scope": "v5", "key": "gemlite", "item": "v5item01", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 590, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item00", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 449, "completion": 11}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item00", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 347, "completion": 12}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item00", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 464, "completion": 11}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item00", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: propellant tank ullage pressure", "usage": {"prompt": 364, "completion": 12}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item01", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: discharge line conductivity", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item01", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: discharge line conductivity", "usage": {"prompt": 338, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item01", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 459, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item01", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item03", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 446, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item03", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 345, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item03", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 461, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item03", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: UPS reserve charge", "usage": {"prompt": 362, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item06", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 445, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item06", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 345, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item06", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item06", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 368, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item07", "call": "which", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 478, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item07", "call": "which", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 378, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item07", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 458, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item07", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 358, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item09", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 447, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item09", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 345, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item09", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 462, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item09", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 362, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item10", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 441, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item10", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 340, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item10", "call": "which_abstain", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 456, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item10", "call": "which_abstain", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 357, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item11", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 513, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item11", "call": "which", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 413, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item11", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 460, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item11", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 360, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item12", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 444, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item12", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item12", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 459, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item12", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: star tracker residual", "usage": {"prompt": 360, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item15", "call": "which", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 500, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item15", "call": "which", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 400, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item15", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 463, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item15", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 363, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item19", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 439, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item19", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 337, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item19", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 460, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item19", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 360, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item21", "call": "which", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 513, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item21", "call": "which", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 416, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item21", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item21", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 367, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item22", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: adjuvant concentration ratio", "usage": {"prompt": 443, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item22", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: adjuvant concentration ratio", "usage": {"prompt": 346, "completion": 11}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item22", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 462, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item22", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item23", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 443, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item23", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 342, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item23", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 458, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item23", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: rebar cover depth", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item24", "call": "which", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 532, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item24", "call": "which", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 429, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item24", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 466, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item24", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item25", "call": "which", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 495, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item25", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 394, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item25", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 458, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item25", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 358, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item26", "call": "which", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 527, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item26", "call": "which", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 424, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item26", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item26", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item27", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 446, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item27", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 345, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item27", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 461, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item27", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: generator fuel reserve", "usage": {"prompt": 362, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item30", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 443, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item30", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 341, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item30", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 464, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item30", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 364, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item32", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: interlock relay voltage", "usage": {"prompt": 443, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item32", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: interlock relay voltage", "usage": {"prompt": 340, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item32", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: interlock relay voltage", "usage": {"prompt": 458, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item32", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: interlock relay voltage", "usage": {"prompt": 357, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item34", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 441, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item34", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 343, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item34", "call": "which_abstain", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 456, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item34", "call": "which_abstain", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 360, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item36", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 444, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item36", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 344, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item36", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 465, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item36", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 367, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item37", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: filtrate turbidity", "usage": {"prompt": 439, "completion": 8}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item37", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: filtrate turbidity", "usage": {"prompt": 339, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item37", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 459, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item37", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item39", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: DNS failover propagation time", "usage": {"prompt": 446, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item39", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: DNS failover propagation time", "usage": {"prompt": 346, "completion": 11}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item39", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 464, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item39", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item41", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: gust speed during test", "usage": {"prompt": 442, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item41", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: gust speed during test", "usage": {"prompt": 341, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item41", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item41", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 362, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item44", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: lubrication film thickness", "usage": {"prompt": 442, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item44", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: lubrication film thickness", "usage": {"prompt": 338, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item44", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item44", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item48", "call": "which", "judge": "grok", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 444, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item48", "call": "which", "judge": "gpt", "text": "LABEL: NONE_NO_FAILURE\nNAME: NONE", "usage": {"prompt": 342, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item48", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 465, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item48", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 365, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item49", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item49", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 338, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item49", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 459, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item49", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 359, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item53", "call": "which", "judge": "grok", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 503, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item53", "call": "which", "judge": "gpt", "text": "LABEL: NONE_MISSING_DATA\nNAME: NONE", "usage": {"prompt": 399, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item53", "call": "which_abstain", "judge": "grok", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 461, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item53", "call": "which_abstain", "judge": "gpt", "text": "LABEL: INSUFFICIENT\nNAME: NONE", "usage": {"prompt": 360, "completion": 10}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item55", "call": "which", "judge": "grok", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 440, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item55", "call": "which", "judge": "gpt", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 338, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item55", "call": "which_abstain", "judge": "grok", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 455, "completion": 9}}
+{"scope": "reasoning", "key": "gpt5mini", "item": "v5item55", "call": "which_abstain", "judge": "gpt", "text": "LABEL: PARAM\nNAME: seal integrity margin", "usage": {"prompt": 355, "completion": 9}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item01", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 598, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item01", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 487, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item03", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 305, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item03", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 193, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item06", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 625, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item06", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 525, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item07", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 538, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item07", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 431, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item09", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 439, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item09", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 331, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item10", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 533, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item10", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 424, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item11", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 552, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item11", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 446, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item12", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 488, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item12", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 379, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item15", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 558, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item15", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 447, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item19", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 448, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item19", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 338, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item21", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 565, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item21", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 460, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item22", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 452, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item22", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 341, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item23", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 473, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item23", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 364, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item24", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 475, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item24", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 365, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item25", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 626, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item25", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 523, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item26", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 596, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item26", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 481, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item27", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 470, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item27", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 359, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item30", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 565, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item30", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 458, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item32", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 502, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item32", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 392, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item34", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 616, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item34", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 512, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item36", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 542, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item36", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 438, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item37", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 305, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item37", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 193, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item39", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 575, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item39", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 472, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item41", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 590, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item41", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 486, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item44", "call": "repair", "judge": "grok", "text": "LABEL: DECLINE", "usage": {"prompt": 424, "completion": 4}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item44", "call": "repair", "judge": "gpt", "text": "LABEL: DECLINE", "usage": {"prompt": 316, "completion": 4}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item48", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 509, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item48", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 399, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item49", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 594, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item49", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 486, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item53", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 576, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item53", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 467, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item55", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 600, "completion": 5}}
+{"scope": "manifest-repair", "key": "plain25", "item": "v5item55", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 495, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item00", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 307, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item00", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 196, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item01", "call": "repair", "judge": "grok", "text": "LABEL: DECLINE", "usage": {"prompt": 570, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item01", "call": "repair", "judge": "gpt", "text": "LABEL: DECLINE", "usage": {"prompt": 462, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item03", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 452, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item03", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 341, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item06", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 580, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item06", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 475, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item07", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 568, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item07", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 464, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item09", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 530, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item09", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 419, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item10", "call": "repair", "judge": "grok", "text": "LABEL: DECLINE", "usage": {"prompt": 431, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item10", "call": "repair", "judge": "gpt", "text": "LABEL: DECLINE", "usage": {"prompt": 321, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item11", "call": "repair", "judge": "grok", "text": "LABEL: DECLINE", "usage": {"prompt": 384, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item11", "call": "repair", "judge": "gpt", "text": "LABEL: DECLINE", "usage": {"prompt": 274, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item12", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 514, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item12", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 408, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item15", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 617, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item15", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 507, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item19", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 531, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item19", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 427, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item21", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 613, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item21", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 509, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item22", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 432, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item22", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 328, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item23", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 466, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item23", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 355, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item24", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 476, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item24", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 367, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item25", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 485, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item25", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 374, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item26", "call": "repair", "judge": "grok", "text": "LABEL: DECLINE", "usage": {"prompt": 426, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item26", "call": "repair", "judge": "gpt", "text": "LABEL: DECLINE", "usage": {"prompt": 314, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item27", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 481, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item27", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 371, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item30", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 569, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item30", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 462, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item32", "call": "repair", "judge": "grok", "text": "LABEL: DECLINE", "usage": {"prompt": 522, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item32", "call": "repair", "judge": "gpt", "text": "LABEL: DECLINE", "usage": {"prompt": 411, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item34", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 620, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item34", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 522, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item36", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 505, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item36", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 398, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item37", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 479, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item37", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 371, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item39", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 484, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item39", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 381, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item41", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 530, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item41", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 426, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item44", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 459, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item44", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 355, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item48", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 546, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item48", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 437, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item49", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 594, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item49", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 487, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item53", "call": "repair", "judge": "grok", "text": "LABEL: DECLINE", "usage": {"prompt": 523, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item53", "call": "repair", "judge": "gpt", "text": "LABEL: DECLINE", "usage": {"prompt": 415, "completion": 4}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item55", "call": "repair", "judge": "grok", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 454, "completion": 5}}
+{"scope": "manifest-repair", "key": "manifest", "item": "v5item55", "call": "repair", "judge": "gpt", "text": "LABEL: SPECIFIC_CHANGE", "usage": {"prompt": 344, "completion": 5}}
