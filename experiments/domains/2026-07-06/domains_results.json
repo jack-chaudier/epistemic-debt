@@ -1,0 +1,1917 @@
+{
+ "design": {
+  "domains": [
+   "ops_incident",
+   "clinical_enroll",
+   "ci_release",
+   "loan_underwrite",
+   "vendor_sla",
+   "sec_triage"
+  ],
+  "n_per_domain": 100,
+  "budget_words": 15,
+  "reader": "compressor",
+  "predictions": {
+   "P-D1_dissociation_per_domain": "which_lost.ci upper < which_retained.ci lower AND which_lost.p < 0.34, per (model,domain) with a populated split",
+   "P-D2_verdict_survives": "decision_lost.p >= 0.70 per (model,domain)",
+   "P-D3_generalizes": "P-D1 holds on >= 5 of 6 domains for each model that is applicable (retention in (0.15,0.85) so the split is populated)"
+  }
+ },
+ "cells": {
+  "gpt/ops_incident": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 35,
+    "n_kept": 15,
+    "n_approved": 50,
+    "fail_retention": 0.3,
+    "decision_lost": {
+     "k": 34,
+     "n": 35,
+     "p": 0.9714,
+     "ci": [
+      0.8547,
+      0.9949
+     ]
+    },
+    "which_lost": {
+     "k": 5,
+     "n": 35,
+     "p": 0.1429,
+     "ci": [
+      0.0626,
+      0.2938
+     ]
+    },
+    "which_retained": {
+     "k": 15,
+     "n": 15,
+     "p": 1.0,
+     "ci": [
+      0.7961,
+      1.0
+     ]
+    },
+    "which_confab_lost": {
+     "k": 5,
+     "n": 35,
+     "p": 0.1429,
+     "ci": [
+      0.0626,
+      0.2938
+     ]
+    },
+    "incoherent_lost": {
+     "k": 24,
+     "n": 35,
+     "p": 0.6857,
+     "ci": [
+      0.5202,
+      0.8145
+     ]
+    },
+    "none_missing_lost": {
+     "k": 0,
+     "n": 25,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1332
+     ]
+    },
+    "abstain_lost": {
+     "k": 28,
+     "n": 35,
+     "p": 0.8,
+     "ci": [
+      0.6411,
+      0.8996
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 15,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.2039
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 35,
+     "n": 35,
+     "p": 1.0,
+     "ci": [
+      0.9011,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 16,
+     "n": 35,
+     "p": 0.4571,
+     "ci": [
+      0.3047,
+      0.6181
+     ]
+    },
+    "nonotes_deny_rate": 0.52,
+    "approved_denied_under_loss": 0.54
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "grok/ops_incident": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 37,
+    "n_kept": 13,
+    "n_approved": 50,
+    "fail_retention": 0.26,
+    "decision_lost": {
+     "k": 24,
+     "n": 37,
+     "p": 0.6486,
+     "ci": [
+      0.4876,
+      0.7817
+     ]
+    },
+    "which_lost": {
+     "k": 2,
+     "n": 37,
+     "p": 0.0541,
+     "ci": [
+      0.015,
+      0.177
+     ]
+    },
+    "which_retained": {
+     "k": 10,
+     "n": 13,
+     "p": 0.7692,
+     "ci": [
+      0.4974,
+      0.9182
+     ]
+    },
+    "which_confab_lost": {
+     "k": 2,
+     "n": 37,
+     "p": 0.0541,
+     "ci": [
+      0.015,
+      0.177
+     ]
+    },
+    "incoherent_lost": {
+     "k": 21,
+     "n": 37,
+     "p": 0.5676,
+     "ci": [
+      0.4091,
+      0.7133
+     ]
+    },
+    "none_missing_lost": {
+     "k": 0,
+     "n": 33,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1043
+     ]
+    },
+    "abstain_lost": {
+     "k": 20,
+     "n": 37,
+     "p": 0.5405,
+     "ci": [
+      0.3838,
+      0.6896
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 13,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.2281
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 37,
+     "n": 37,
+     "p": 1.0,
+     "ci": [
+      0.9059,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 15,
+     "n": 37,
+     "p": 0.4054,
+     "ci": [
+      0.2635,
+      0.5651
+     ]
+    },
+    "nonotes_deny_rate": 1.0,
+    "approved_denied_under_loss": 1.0
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": false
+  },
+  "haiku/ops_incident": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 40,
+    "n_kept": 10,
+    "n_approved": 50,
+    "fail_retention": 0.2,
+    "decision_lost": {
+     "k": 36,
+     "n": 40,
+     "p": 0.9,
+     "ci": [
+      0.7695,
+      0.9604
+     ]
+    },
+    "which_lost": {
+     "k": 1,
+     "n": 40,
+     "p": 0.025,
+     "ci": [
+      0.0044,
+      0.1288
+     ]
+    },
+    "which_retained": {
+     "k": 10,
+     "n": 10,
+     "p": 1.0,
+     "ci": [
+      0.7225,
+      1.0
+     ]
+    },
+    "which_confab_lost": {
+     "k": 1,
+     "n": 40,
+     "p": 0.025,
+     "ci": [
+      0.0044,
+      0.1288
+     ]
+    },
+    "incoherent_lost": {
+     "k": 29,
+     "n": 40,
+     "p": 0.725,
+     "ci": [
+      0.5716,
+      0.8389
+     ]
+    },
+    "none_missing_lost": {
+     "k": 31,
+     "n": 32,
+     "p": 0.9688,
+     "ci": [
+      0.8426,
+      0.9945
+     ]
+    },
+    "abstain_lost": {
+     "k": 40,
+     "n": 40,
+     "p": 1.0,
+     "ci": [
+      0.9124,
+      1.0
+     ]
+    },
+    "abstain_retained": {
+     "k": 2,
+     "n": 10,
+     "p": 0.2,
+     "ci": [
+      0.0567,
+      0.5098
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 26,
+     "n": 40,
+     "p": 0.65,
+     "ci": [
+      0.4951,
+      0.7787
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 10,
+     "n": 40,
+     "p": 0.25,
+     "ci": [
+      0.1419,
+      0.4019
+     ]
+    },
+    "nonotes_deny_rate": 0.56,
+    "approved_denied_under_loss": 0.7
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "gpt/clinical_enroll": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 29,
+    "n_kept": 21,
+    "n_approved": 50,
+    "fail_retention": 0.42,
+    "decision_lost": {
+     "k": 25,
+     "n": 29,
+     "p": 0.8621,
+     "ci": [
+      0.6944,
+      0.945
+     ]
+    },
+    "which_lost": {
+     "k": 4,
+     "n": 29,
+     "p": 0.1379,
+     "ci": [
+      0.055,
+      0.3056
+     ]
+    },
+    "which_retained": {
+     "k": 15,
+     "n": 21,
+     "p": 0.7143,
+     "ci": [
+      0.5004,
+      0.8619
+     ]
+    },
+    "which_confab_lost": {
+     "k": 7,
+     "n": 29,
+     "p": 0.2414,
+     "ci": [
+      0.1222,
+      0.4211
+     ]
+    },
+    "incoherent_lost": {
+     "k": 14,
+     "n": 29,
+     "p": 0.4828,
+     "ci": [
+      0.3139,
+      0.6557
+     ]
+    },
+    "none_missing_lost": {
+     "k": 1,
+     "n": 18,
+     "p": 0.0556,
+     "ci": [
+      0.0099,
+      0.2576
+     ]
+    },
+    "abstain_lost": {
+     "k": 22,
+     "n": 29,
+     "p": 0.7586,
+     "ci": [
+      0.5789,
+      0.8778
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 21,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1546
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 29,
+     "n": 29,
+     "p": 1.0,
+     "ci": [
+      0.883,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 15,
+     "n": 29,
+     "p": 0.5172,
+     "ci": [
+      0.3443,
+      0.6861
+     ]
+    },
+    "nonotes_deny_rate": 0.48,
+    "approved_denied_under_loss": 0.6
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "grok/clinical_enroll": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 14,
+    "n_kept": 36,
+    "n_approved": 50,
+    "fail_retention": 0.72,
+    "decision_lost": {
+     "k": 9,
+     "n": 14,
+     "p": 0.6429,
+     "ci": [
+      0.3876,
+      0.8366
+     ]
+    },
+    "which_lost": {
+     "k": 0,
+     "n": 14,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.2153
+     ]
+    },
+    "which_retained": {
+     "k": 12,
+     "n": 36,
+     "p": 0.3333,
+     "ci": [
+      0.2021,
+      0.4967
+     ]
+    },
+    "which_confab_lost": {
+     "k": 0,
+     "n": 14,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.2153
+     ]
+    },
+    "incoherent_lost": {
+     "k": 9,
+     "n": 14,
+     "p": 0.6429,
+     "ci": [
+      0.3876,
+      0.8366
+     ]
+    },
+    "none_missing_lost": {
+     "k": 0,
+     "n": 14,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.2153
+     ]
+    },
+    "abstain_lost": {
+     "k": 9,
+     "n": 14,
+     "p": 0.6429,
+     "ci": [
+      0.3876,
+      0.8366
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 36,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.0964
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 14,
+     "n": 14,
+     "p": 1.0,
+     "ci": [
+      0.7847,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 5,
+     "n": 14,
+     "p": 0.3571,
+     "ci": [
+      0.1634,
+      0.6124
+     ]
+    },
+    "nonotes_deny_rate": 1.0,
+    "approved_denied_under_loss": 1.0
+   },
+   "applicable": true,
+   "P_D1": false,
+   "P_D2": false
+  },
+  "haiku/clinical_enroll": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 15,
+    "n_kept": 35,
+    "n_approved": 50,
+    "fail_retention": 0.7,
+    "decision_lost": {
+     "k": 14,
+     "n": 15,
+     "p": 0.9333,
+     "ci": [
+      0.7018,
+      0.9881
+     ]
+    },
+    "which_lost": {
+     "k": 4,
+     "n": 15,
+     "p": 0.2667,
+     "ci": [
+      0.109,
+      0.5195
+     ]
+    },
+    "which_retained": {
+     "k": 25,
+     "n": 35,
+     "p": 0.7143,
+     "ci": [
+      0.5494,
+      0.8367
+     ]
+    },
+    "which_confab_lost": {
+     "k": 0,
+     "n": 15,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.2039
+     ]
+    },
+    "incoherent_lost": {
+     "k": 9,
+     "n": 15,
+     "p": 0.6,
+     "ci": [
+      0.3575,
+      0.8018
+     ]
+    },
+    "none_missing_lost": {
+     "k": 9,
+     "n": 10,
+     "p": 0.9,
+     "ci": [
+      0.5958,
+      0.9821
+     ]
+    },
+    "abstain_lost": {
+     "k": 15,
+     "n": 15,
+     "p": 1.0,
+     "ci": [
+      0.7961,
+      1.0
+     ]
+    },
+    "abstain_retained": {
+     "k": 3,
+     "n": 35,
+     "p": 0.0857,
+     "ci": [
+      0.0296,
+      0.2238
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 14,
+     "n": 15,
+     "p": 0.9333,
+     "ci": [
+      0.7018,
+      0.9881
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 6,
+     "n": 15,
+     "p": 0.4,
+     "ci": [
+      0.1982,
+      0.6425
+     ]
+    },
+    "nonotes_deny_rate": 0.6,
+    "approved_denied_under_loss": 0.6
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "gpt/ci_release": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 31,
+    "n_kept": 19,
+    "n_approved": 50,
+    "fail_retention": 0.38,
+    "decision_lost": {
+     "k": 29,
+     "n": 31,
+     "p": 0.9355,
+     "ci": [
+      0.7928,
+      0.9821
+     ]
+    },
+    "which_lost": {
+     "k": 8,
+     "n": 31,
+     "p": 0.2581,
+     "ci": [
+      0.137,
+      0.4325
+     ]
+    },
+    "which_retained": {
+     "k": 19,
+     "n": 19,
+     "p": 1.0,
+     "ci": [
+      0.8318,
+      1.0
+     ]
+    },
+    "which_confab_lost": {
+     "k": 11,
+     "n": 31,
+     "p": 0.3548,
+     "ci": [
+      0.2112,
+      0.5305
+     ]
+    },
+    "incoherent_lost": {
+     "k": 11,
+     "n": 31,
+     "p": 0.3548,
+     "ci": [
+      0.2112,
+      0.5305
+     ]
+    },
+    "none_missing_lost": {
+     "k": 0,
+     "n": 12,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.2425
+     ]
+    },
+    "abstain_lost": {
+     "k": 20,
+     "n": 31,
+     "p": 0.6452,
+     "ci": [
+      0.4695,
+      0.7888
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 19,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1682
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 31,
+     "n": 31,
+     "p": 1.0,
+     "ci": [
+      0.8897,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 11,
+     "n": 31,
+     "p": 0.3548,
+     "ci": [
+      0.2112,
+      0.5305
+     ]
+    },
+    "nonotes_deny_rate": 0.3,
+    "approved_denied_under_loss": 0.26
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "grok/ci_release": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 21,
+    "n_kept": 29,
+    "n_approved": 50,
+    "fail_retention": 0.58,
+    "decision_lost": {
+     "k": 18,
+     "n": 21,
+     "p": 0.8571,
+     "ci": [
+      0.6536,
+      0.9502
+     ]
+    },
+    "which_lost": {
+     "k": 3,
+     "n": 21,
+     "p": 0.1429,
+     "ci": [
+      0.0498,
+      0.3464
+     ]
+    },
+    "which_retained": {
+     "k": 25,
+     "n": 29,
+     "p": 0.8621,
+     "ci": [
+      0.6944,
+      0.945
+     ]
+    },
+    "which_confab_lost": {
+     "k": 14,
+     "n": 21,
+     "p": 0.6667,
+     "ci": [
+      0.4537,
+      0.8281
+     ]
+    },
+    "incoherent_lost": {
+     "k": 2,
+     "n": 21,
+     "p": 0.0952,
+     "ci": [
+      0.0265,
+      0.2891
+     ]
+    },
+    "none_missing_lost": {
+     "k": 0,
+     "n": 4,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.4899
+     ]
+    },
+    "abstain_lost": {
+     "k": 8,
+     "n": 21,
+     "p": 0.381,
+     "ci": [
+      0.2075,
+      0.5912
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 29,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.117
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 21,
+     "n": 21,
+     "p": 1.0,
+     "ci": [
+      0.8454,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 6,
+     "n": 21,
+     "p": 0.2857,
+     "ci": [
+      0.1381,
+      0.4996
+     ]
+    },
+    "nonotes_deny_rate": 1.0,
+    "approved_denied_under_loss": 1.0
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "haiku/ci_release": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 28,
+    "n_kept": 22,
+    "n_approved": 50,
+    "fail_retention": 0.44,
+    "decision_lost": {
+     "k": 23,
+     "n": 28,
+     "p": 0.8214,
+     "ci": [
+      0.6441,
+      0.9212
+     ]
+    },
+    "which_lost": {
+     "k": 7,
+     "n": 28,
+     "p": 0.25,
+     "ci": [
+      0.1268,
+      0.4336
+     ]
+    },
+    "which_retained": {
+     "k": 21,
+     "n": 22,
+     "p": 0.9545,
+     "ci": [
+      0.782,
+      0.9919
+     ]
+    },
+    "which_confab_lost": {
+     "k": 9,
+     "n": 28,
+     "p": 0.3214,
+     "ci": [
+      0.1793,
+      0.5066
+     ]
+    },
+    "incoherent_lost": {
+     "k": 11,
+     "n": 28,
+     "p": 0.3929,
+     "ci": [
+      0.2357,
+      0.5759
+     ]
+    },
+    "none_missing_lost": {
+     "k": 12,
+     "n": 12,
+     "p": 1.0,
+     "ci": [
+      0.7575,
+      1.0
+     ]
+    },
+    "abstain_lost": {
+     "k": 28,
+     "n": 28,
+     "p": 1.0,
+     "ci": [
+      0.8794,
+      1.0
+     ]
+    },
+    "abstain_retained": {
+     "k": 1,
+     "n": 22,
+     "p": 0.0455,
+     "ci": [
+      0.0081,
+      0.218
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 27,
+     "n": 28,
+     "p": 0.9643,
+     "ci": [
+      0.8229,
+      0.9937
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 7,
+     "n": 28,
+     "p": 0.25,
+     "ci": [
+      0.1268,
+      0.4336
+     ]
+    },
+    "nonotes_deny_rate": 0.84,
+    "approved_denied_under_loss": 0.8
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "gpt/loan_underwrite": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 16,
+    "n_kept": 34,
+    "n_approved": 50,
+    "fail_retention": 0.68,
+    "decision_lost": {
+     "k": 15,
+     "n": 16,
+     "p": 0.9375,
+     "ci": [
+      0.7167,
+      0.9889
+     ]
+    },
+    "which_lost": {
+     "k": 4,
+     "n": 16,
+     "p": 0.25,
+     "ci": [
+      0.1018,
+      0.495
+     ]
+    },
+    "which_retained": {
+     "k": 31,
+     "n": 34,
+     "p": 0.9118,
+     "ci": [
+      0.7704,
+      0.9695
+     ]
+    },
+    "which_confab_lost": {
+     "k": 5,
+     "n": 16,
+     "p": 0.3125,
+     "ci": [
+      0.1416,
+      0.556
+     ]
+    },
+    "incoherent_lost": {
+     "k": 6,
+     "n": 16,
+     "p": 0.375,
+     "ci": [
+      0.1848,
+      0.6136
+     ]
+    },
+    "none_missing_lost": {
+     "k": 0,
+     "n": 7,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.3543
+     ]
+    },
+    "abstain_lost": {
+     "k": 9,
+     "n": 16,
+     "p": 0.5625,
+     "ci": [
+      0.3318,
+      0.769
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 34,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1015
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 16,
+     "n": 16,
+     "p": 1.0,
+     "ci": [
+      0.8064,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 7,
+     "n": 16,
+     "p": 0.4375,
+     "ci": [
+      0.231,
+      0.6682
+     ]
+    },
+    "nonotes_deny_rate": 0.66,
+    "approved_denied_under_loss": 0.58
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "grok/loan_underwrite": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 5,
+    "n_kept": 45,
+    "n_approved": 50,
+    "fail_retention": 0.9,
+    "decision_lost": {
+     "k": 2,
+     "n": 5,
+     "p": 0.4,
+     "ci": [
+      0.1176,
+      0.7693
+     ]
+    },
+    "which_lost": {
+     "k": 4,
+     "n": 5,
+     "p": 0.8,
+     "ci": [
+      0.3755,
+      0.9638
+     ]
+    },
+    "which_retained": {
+     "k": 38,
+     "n": 45,
+     "p": 0.8444,
+     "ci": [
+      0.7122,
+      0.9225
+     ]
+    },
+    "which_confab_lost": {
+     "k": 0,
+     "n": 5,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.4345
+     ]
+    },
+    "incoherent_lost": {
+     "k": 0,
+     "n": 5,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.4345
+     ]
+    },
+    "none_missing_lost": {
+     "k": 0,
+     "n": 1,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.7935
+     ]
+    },
+    "abstain_lost": {
+     "k": 0,
+     "n": 5,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.4345
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 45,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.0787
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 5,
+     "n": 5,
+     "p": 1.0,
+     "ci": [
+      0.5655,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 4,
+     "n": 5,
+     "p": 0.8,
+     "ci": [
+      0.3755,
+      0.9638
+     ]
+    },
+    "nonotes_deny_rate": 1.0,
+    "approved_denied_under_loss": 1.0
+   },
+   "applicable": false,
+   "P_D1": null,
+   "P_D2": false
+  },
+  "haiku/loan_underwrite": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 13,
+    "n_kept": 37,
+    "n_approved": 50,
+    "fail_retention": 0.74,
+    "decision_lost": {
+     "k": 11,
+     "n": 13,
+     "p": 0.8462,
+     "ci": [
+      0.5776,
+      0.9567
+     ]
+    },
+    "which_lost": {
+     "k": 4,
+     "n": 13,
+     "p": 0.3077,
+     "ci": [
+      0.1268,
+      0.5763
+     ]
+    },
+    "which_retained": {
+     "k": 34,
+     "n": 37,
+     "p": 0.9189,
+     "ci": [
+      0.787,
+      0.972
+     ]
+    },
+    "which_confab_lost": {
+     "k": 4,
+     "n": 13,
+     "p": 0.3077,
+     "ci": [
+      0.1268,
+      0.5763
+     ]
+    },
+    "incoherent_lost": {
+     "k": 4,
+     "n": 13,
+     "p": 0.3077,
+     "ci": [
+      0.1268,
+      0.5763
+     ]
+    },
+    "none_missing_lost": {
+     "k": 4,
+     "n": 4,
+     "p": 1.0,
+     "ci": [
+      0.5101,
+      1.0
+     ]
+    },
+    "abstain_lost": {
+     "k": 12,
+     "n": 13,
+     "p": 0.9231,
+     "ci": [
+      0.6669,
+      0.9863
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 37,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.0941
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 13,
+     "n": 13,
+     "p": 1.0,
+     "ci": [
+      0.7719,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 6,
+     "n": 13,
+     "p": 0.4615,
+     "ci": [
+      0.2321,
+      0.7086
+     ]
+    },
+    "nonotes_deny_rate": 0.9,
+    "approved_denied_under_loss": 0.88
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "gpt/vendor_sla": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 26,
+    "n_kept": 24,
+    "n_approved": 50,
+    "fail_retention": 0.48,
+    "decision_lost": {
+     "k": 25,
+     "n": 26,
+     "p": 0.9615,
+     "ci": [
+      0.8111,
+      0.9932
+     ]
+    },
+    "which_lost": {
+     "k": 8,
+     "n": 26,
+     "p": 0.3077,
+     "ci": [
+      0.165,
+      0.4999
+     ]
+    },
+    "which_retained": {
+     "k": 22,
+     "n": 24,
+     "p": 0.9167,
+     "ci": [
+      0.7415,
+      0.9768
+     ]
+    },
+    "which_confab_lost": {
+     "k": 13,
+     "n": 26,
+     "p": 0.5,
+     "ci": [
+      0.3206,
+      0.6794
+     ]
+    },
+    "incoherent_lost": {
+     "k": 5,
+     "n": 26,
+     "p": 0.1923,
+     "ci": [
+      0.0851,
+      0.3788
+     ]
+    },
+    "none_missing_lost": {
+     "k": 0,
+     "n": 5,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.4345
+     ]
+    },
+    "abstain_lost": {
+     "k": 15,
+     "n": 26,
+     "p": 0.5769,
+     "ci": [
+      0.3895,
+      0.7446
+     ]
+    },
+    "abstain_retained": {
+     "k": 1,
+     "n": 24,
+     "p": 0.0417,
+     "ci": [
+      0.0074,
+      0.2024
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 26,
+     "n": 26,
+     "p": 1.0,
+     "ci": [
+      0.8713,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 7,
+     "n": 26,
+     "p": 0.2692,
+     "ci": [
+      0.137,
+      0.4608
+     ]
+    },
+    "nonotes_deny_rate": 0.42,
+    "approved_denied_under_loss": 0.5
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "grok/vendor_sla": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 16,
+    "n_kept": 34,
+    "n_approved": 50,
+    "fail_retention": 0.68,
+    "decision_lost": {
+     "k": 11,
+     "n": 16,
+     "p": 0.6875,
+     "ci": [
+      0.444,
+      0.8584
+     ]
+    },
+    "which_lost": {
+     "k": 2,
+     "n": 16,
+     "p": 0.125,
+     "ci": [
+      0.035,
+      0.3602
+     ]
+    },
+    "which_retained": {
+     "k": 29,
+     "n": 34,
+     "p": 0.8529,
+     "ci": [
+      0.6987,
+      0.9355
+     ]
+    },
+    "which_confab_lost": {
+     "k": 9,
+     "n": 16,
+     "p": 0.5625,
+     "ci": [
+      0.3318,
+      0.769
+     ]
+    },
+    "incoherent_lost": {
+     "k": 3,
+     "n": 16,
+     "p": 0.1875,
+     "ci": [
+      0.0659,
+      0.4301
+     ]
+    },
+    "none_missing_lost": {
+     "k": 0,
+     "n": 5,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.4345
+     ]
+    },
+    "abstain_lost": {
+     "k": 6,
+     "n": 16,
+     "p": 0.375,
+     "ci": [
+      0.1848,
+      0.6136
+     ]
+    },
+    "abstain_retained": {
+     "k": 2,
+     "n": 34,
+     "p": 0.0588,
+     "ci": [
+      0.0163,
+      0.1909
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 16,
+     "n": 16,
+     "p": 1.0,
+     "ci": [
+      0.8064,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 5,
+     "n": 16,
+     "p": 0.3125,
+     "ci": [
+      0.1416,
+      0.556
+     ]
+    },
+    "nonotes_deny_rate": 1.0,
+    "approved_denied_under_loss": 1.0
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": false
+  },
+  "haiku/vendor_sla": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 27,
+    "n_kept": 23,
+    "n_approved": 50,
+    "fail_retention": 0.46,
+    "decision_lost": {
+     "k": 25,
+     "n": 27,
+     "p": 0.9259,
+     "ci": [
+      0.7663,
+      0.9794
+     ]
+    },
+    "which_lost": {
+     "k": 5,
+     "n": 27,
+     "p": 0.1852,
+     "ci": [
+      0.0818,
+      0.367
+     ]
+    },
+    "which_retained": {
+     "k": 23,
+     "n": 23,
+     "p": 1.0,
+     "ci": [
+      0.8569,
+      1.0
+     ]
+    },
+    "which_confab_lost": {
+     "k": 3,
+     "n": 27,
+     "p": 0.1111,
+     "ci": [
+      0.0385,
+      0.2806
+     ]
+    },
+    "incoherent_lost": {
+     "k": 18,
+     "n": 27,
+     "p": 0.6667,
+     "ci": [
+      0.4782,
+      0.8136
+     ]
+    },
+    "none_missing_lost": {
+     "k": 19,
+     "n": 19,
+     "p": 1.0,
+     "ci": [
+      0.8318,
+      1.0
+     ]
+    },
+    "abstain_lost": {
+     "k": 26,
+     "n": 27,
+     "p": 0.963,
+     "ci": [
+      0.8172,
+      0.9934
+     ]
+    },
+    "abstain_retained": {
+     "k": 3,
+     "n": 23,
+     "p": 0.1304,
+     "ci": [
+      0.0454,
+      0.3213
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 27,
+     "n": 27,
+     "p": 1.0,
+     "ci": [
+      0.8754,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 9,
+     "n": 27,
+     "p": 0.3333,
+     "ci": [
+      0.1864,
+      0.5218
+     ]
+    },
+    "nonotes_deny_rate": 0.82,
+    "approved_denied_under_loss": 0.9
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "gpt/sec_triage": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 17,
+    "n_kept": 33,
+    "n_approved": 50,
+    "fail_retention": 0.66,
+    "decision_lost": {
+     "k": 16,
+     "n": 17,
+     "p": 0.9412,
+     "ci": [
+      0.7302,
+      0.9895
+     ]
+    },
+    "which_lost": {
+     "k": 4,
+     "n": 17,
+     "p": 0.2353,
+     "ci": [
+      0.0955,
+      0.4726
+     ]
+    },
+    "which_retained": {
+     "k": 31,
+     "n": 33,
+     "p": 0.9394,
+     "ci": [
+      0.8039,
+      0.9832
+     ]
+    },
+    "which_confab_lost": {
+     "k": 7,
+     "n": 17,
+     "p": 0.4118,
+     "ci": [
+      0.2161,
+      0.6399
+     ]
+    },
+    "incoherent_lost": {
+     "k": 5,
+     "n": 17,
+     "p": 0.2941,
+     "ci": [
+      0.1328,
+      0.5313
+     ]
+    },
+    "none_missing_lost": {
+     "k": 1,
+     "n": 5,
+     "p": 0.2,
+     "ci": [
+      0.0362,
+      0.6245
+     ]
+    },
+    "abstain_lost": {
+     "k": 5,
+     "n": 17,
+     "p": 0.2941,
+     "ci": [
+      0.1328,
+      0.5313
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 33,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1043
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 17,
+     "n": 17,
+     "p": 1.0,
+     "ci": [
+      0.8157,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 7,
+     "n": 17,
+     "p": 0.4118,
+     "ci": [
+      0.2161,
+      0.6399
+     ]
+    },
+    "nonotes_deny_rate": 0.66,
+    "approved_denied_under_loss": 0.56
+   },
+   "applicable": true,
+   "P_D1": true,
+   "P_D2": true
+  },
+  "grok/sec_triage": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 7,
+    "n_kept": 43,
+    "n_approved": 50,
+    "fail_retention": 0.86,
+    "decision_lost": {
+     "k": 3,
+     "n": 7,
+     "p": 0.4286,
+     "ci": [
+      0.1582,
+      0.7495
+     ]
+    },
+    "which_lost": {
+     "k": 0,
+     "n": 7,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.3543
+     ]
+    },
+    "which_retained": {
+     "k": 33,
+     "n": 43,
+     "p": 0.7674,
+     "ci": [
+      0.6226,
+      0.8685
+     ]
+    },
+    "which_confab_lost": {
+     "k": 4,
+     "n": 7,
+     "p": 0.5714,
+     "ci": [
+      0.2505,
+      0.8418
+     ]
+    },
+    "incoherent_lost": {
+     "k": 0,
+     "n": 7,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.3543
+     ]
+    },
+    "none_missing_lost": {
+     "k": 0,
+     "n": 2,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.6576
+     ]
+    },
+    "abstain_lost": {
+     "k": 0,
+     "n": 7,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.3543
+     ]
+    },
+    "abstain_retained": {
+     "k": 0,
+     "n": 43,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.082
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 7,
+     "n": 7,
+     "p": 1.0,
+     "ci": [
+      0.6457,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 2,
+     "n": 7,
+     "p": 0.2857,
+     "ci": [
+      0.0822,
+      0.6411
+     ]
+    },
+    "nonotes_deny_rate": 1.0,
+    "approved_denied_under_loss": 1.0
+   },
+   "applicable": false,
+   "P_D1": null,
+   "P_D2": false
+  },
+  "haiku/sec_triage": {
+   "metrics": {
+    "n_denied": 50,
+    "n_lost": 18,
+    "n_kept": 32,
+    "n_approved": 50,
+    "fail_retention": 0.64,
+    "decision_lost": {
+     "k": 16,
+     "n": 18,
+     "p": 0.8889,
+     "ci": [
+      0.672,
+      0.969
+     ]
+    },
+    "which_lost": {
+     "k": 8,
+     "n": 18,
+     "p": 0.4444,
+     "ci": [
+      0.2456,
+      0.6628
+     ]
+    },
+    "which_retained": {
+     "k": 29,
+     "n": 32,
+     "p": 0.9062,
+     "ci": [
+      0.7578,
+      0.9676
+     ]
+    },
+    "which_confab_lost": {
+     "k": 2,
+     "n": 18,
+     "p": 0.1111,
+     "ci": [
+      0.031,
+      0.328
+     ]
+    },
+    "incoherent_lost": {
+     "k": 7,
+     "n": 18,
+     "p": 0.3889,
+     "ci": [
+      0.203,
+      0.6138
+     ]
+    },
+    "none_missing_lost": {
+     "k": 7,
+     "n": 8,
+     "p": 0.875,
+     "ci": [
+      0.5291,
+      0.9776
+     ]
+    },
+    "abstain_lost": {
+     "k": 16,
+     "n": 18,
+     "p": 0.8889,
+     "ci": [
+      0.672,
+      0.969
+     ]
+    },
+    "abstain_retained": {
+     "k": 1,
+     "n": 32,
+     "p": 0.0312,
+     "ci": [
+      0.0055,
+      0.1574
+     ]
+    },
+    "repair_specific_lost": {
+     "k": 18,
+     "n": 18,
+     "p": 1.0,
+     "ci": [
+      0.8241,
+      1.0
+     ]
+    },
+    "repair_param_correct_lost": {
+     "k": 9,
+     "n": 18,
+     "p": 0.5,
+     "ci": [
+      0.2903,
+      0.7097
+     ]
+    },
+    "nonotes_deny_rate": 0.94,
+    "approved_denied_under_loss": 0.86
+   },
+   "applicable": true,
+   "P_D1": false,
+   "P_D2": true
+  }
+ },
+ "P_D3_generalizes": {
+  "gpt": {
+   "applicable": 6,
+   "passed": 6,
+   "holds": true
+  },
+  "grok": {
+   "applicable": 4,
+   "passed": 3,
+   "holds": false
+  },
+  "haiku": {
+   "applicable": 6,
+   "passed": 5,
+   "holds": true
+  }
+ },
+ "cost_usd": {
+  "grok": 0.2738,
+  "gpt": 0.5064,
+  "haiku": 4.049
+ },
+ "total_cost_usd": 4.8292
+}

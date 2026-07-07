@@ -373,6 +373,65 @@ exchange rate" (H.1) is the α=1 special case grok happens to occupy. (c) Probe 
 artifact content, hide the candidates; to measure deployed justified accuracy, disclose them —
 preregistrations must say which quantity they target.
 
+## Appendix J — High power and schema generalization (2026-07-06)
+
+Two preregistered campaigns stress the within-item dissociation on the two axes it had not yet
+survived: statistical power and document schema (`experiments/highpower/2026-07-06/`,
+`experiments/domains/2026-07-06/`; combined new spend $8.09, 20,400 calls).
+
+**J.1 The effect is not a small-sample artifact.** At N=400 (200 DENIED, one domain, three
+models) the lost/retained identification split holds with Wilson CIs of ±0.03–0.09, an order
+tighter than the n=14–22 originals: which_lost 0.007/0.054/0.128 (grok/haiku/gpt), which_retained
+0.90/0.98/0.96, no CI anywhere near overlap (P-H1 pass 3/3). More consequentially, verdict
+survival (P-H2, decision_lost ≥ 0.75) now passes on two models — haiku and gpt — whose *no-notes*
+prior is near chance (nonotes_deny 0.585 and 0.535), with gpt reaching decision_lost 0.992 against
+a 0.535 prior. This retires, for those two models, the Appendix E/G.2 worry that "the answer
+survives" is a degenerate always-DENY prior masquerading as knowledge: for haiku and gpt the
+surviving verdict carries gist the blind prior does not supply. grok remains a pure prior-rider
+(nonotes_deny 1.00) and is still read under the bias-shelf caveat. P-H3 (abstention as debt
+detector) fails on haiku — not by missing debt (lost-cell abstention 1.00) but by *over*-abstaining
+in the retained cell (0.176 > the 0.15 ceiling), the calibration-first phenotype of I.1 showing its
+cost: a model tuned to flag missing data also flags present data it has compressed past easy
+recognition. The paraphrase arm is a methods caution: rewording the compression instruction halved
+grok's realized summary length (18→9 words) and emptied the retained cell (retention 0.01), so "15
+words" is a nominal not an effective budget — realized length is the operative variable, and probe
+paraphrase can move it enough to break the design. The dissociation direction is unchanged within
+the surviving lost cell.
+
+**J.2 The dissociation is schema-general; verdict survival is not.** Across six document registers
+sharing only the verdict interface (operations, clinical enrollment, CI release, loan underwriting,
+vendor SLA, security triage), P-D1 passes on 14 of 16 applicable (model,domain) cells (15/16 under semantic scoring); P-D3
+(≥5/6 domains) holds for gpt (6/6) and haiku (5/6). The shelf is therefore a property of lossy
+contract-blind compaction, not of the incident item schema — the schema-specificity fear is
+retired. The two non-passes are both accounted for without weakening the effect: one is a scoring
+artifact (J.3), the other is the disclosed candidate-set elimination mechanism (I.3) operating
+per-domain — lost-cell identification rises to 0.67–1.00 exactly when *all sibling* witnesses
+survive in the summary (vs 0.00–0.33 otherwise), because the reader deduces the culprit as the one
+missing value. haiku/sec_triage clears the 1/3 floor (which_lost 0.444) for this reason and fails
+P-D1 honestly. The genuinely new theory content is **P-D2's split**: the verdict survives
+compaction for gpt and haiku in all six domains (decision_lost ≥ 0.82) but for grok in only one
+(0.40–0.69 in the other five). grok's compressor writes "all systems nominal" when it drops the
+failing witness, and grok's reader *believes that gist and flips DENIED→APPROVED* — overriding its
+own always-DENY prior. So verdict survival is not a monolithic law of the panel: it is a reader
+property, and for at least one model the lossy artifact's false-nominal gist actively defeats both
+the ground truth and the model's own conservative prior. "The answer survives compaction" (the
+program's most-cited headline) must now carry a per-model coefficient, exactly as reader efficiency
+did in I.3 — and grok, the α=1 exemplar there, is the verdict-fragile outlier here, a reminder that
+a model can be witness-faithful in what it *names* while gist-credulous in what it *decides*.
+
+**J.3 The parser is still a confound (I.1, third instance).** The frozen `match_param` scorer
+prefix-matches word tokens and cannot map a self-consistent acronym — LVEF, DTI, MTTR, SBP — to its
+multi-word canonical name, binning the model's own correct abbreviation as UNMATCHED. This touches
+only the *retained* cell (models abbreviate witnesses that survived) and is therefore strictly
+conservative for the dissociation, but it is load-bearing for one headline: grok's clinical_enroll
+which_retained reads 0.333 under the frozen parser (P-D1 fail, dragging grok's P-D3 to 3/4) and
+1.000 under semantic rescue (P-D1 pass, P-D3 hold 4/4). Per ground rule the frozen parser was not
+edited mid-campaign; the flip is disclosed and the correction deferred to the semantic-judge WHICH
+re-score already scoped for these raw responses. Third time the measurement layer has decided a
+verdict in this program (after the last-anchor re-score and the budget-line dual-parser): the
+methods law from I.1 — *when the claim is a phenotype, the parser is a confound; surface unparsed
+counts and semantically judge* — is now upgraded from observation to standing operating procedure.
+
 ## 9. The one-sentence version
 
 **Justification is a conserved, priced resource: the shelf width is the entropy of the witness orbit, behavioral optimization always defaults on the debt, abstention is the only honest refinancing, and the bill arrives exactly when the world changes.**
