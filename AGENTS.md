@@ -1,6 +1,6 @@
 # justification-gap — agent workflow
 
-Research repo: exact theory + LLM experiments on the answer/justification gap under memory pressure. Read `README.md` for the results table, `theory/justification-gap-program.md` for the program (laws, conjectures, theorem targets).
+Research repo: exact theory + LLM experiments on the answer/justification gap under memory pressure. Read `README.md` for the results table, `theory/justification-gap-program.md` for the program (laws, conjectures, theorem targets), and **`NEXT.md` for the live queue of next experiments, open theory questions, and the ideas scratchpad — check it before proposing new work, and append to it (per its conventions) when your run surfaces something worth chasing.**
 
 ## Ground rules
 
