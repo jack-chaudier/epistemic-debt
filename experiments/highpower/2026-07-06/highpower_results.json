@@ -1,0 +1,669 @@
+{
+ "design": {
+  "domain": "ops_incident",
+  "n_items": 400,
+  "budget_words": 15,
+  "reader": "compressor",
+  "predictions": {
+   "P-H1_dissociation": "which_lost.ci upper < which_retained.ci lower (non-overlapping); which_lost.p < 0.34 (below 1/3 guess)",
+   "P-H2_verdict_survives": "decision_lost.p >= 0.75",
+   "P-H3_abstain_detects": "abstain_lost.p >= 0.6 AND abstain_retained.p <= 0.15",
+   "P-H4_confab_locus": "repair_specific_lost.p >= 0.6 (action channel fabricates) while which_confab_lost.p <= 0.25",
+   "P-H5_prior_guard": "approved_denied_under_loss reported; decision_lost balanced-accuracy vs prior noted (not a pass/fail, characterization)"
+  }
+ },
+ "by_variant": {
+  "0": {
+   "gpt": {
+    "metrics": {
+     "n_denied": 200,
+     "n_lost": 125,
+     "n_kept": 75,
+     "n_approved": 200,
+     "fail_retention": 0.375,
+     "decision_lost": {
+      "k": 124,
+      "n": 125,
+      "p": 0.992,
+      "ci": [
+       0.9561,
+       0.9986
+      ]
+     },
+     "which_lost": {
+      "k": 16,
+      "n": 125,
+      "p": 0.128,
+      "ci": [
+       0.0803,
+       0.1978
+      ]
+     },
+     "which_retained": {
+      "k": 72,
+      "n": 75,
+      "p": 0.96,
+      "ci": [
+       0.8889,
+       0.9863
+      ]
+     },
+     "which_confab_lost": {
+      "k": 15,
+      "n": 125,
+      "p": 0.12,
+      "ci": [
+       0.0741,
+       0.1886
+      ]
+     },
+     "incoherent_lost": {
+      "k": 93,
+      "n": 125,
+      "p": 0.744,
+      "ci": [
+       0.661,
+       0.8124
+      ]
+     },
+     "none_missing_lost": {
+      "k": 1,
+      "n": 94,
+      "p": 0.0106,
+      "ci": [
+       0.0019,
+       0.0578
+      ]
+     },
+     "abstain_lost": {
+      "k": 106,
+      "n": 125,
+      "p": 0.848,
+      "ci": [
+       0.7748,
+       0.9005
+      ]
+     },
+     "abstain_retained": {
+      "k": 0,
+      "n": 75,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0487
+      ]
+     },
+     "repair_specific_lost": {
+      "k": 125,
+      "n": 125,
+      "p": 1.0,
+      "ci": [
+       0.9702,
+       1.0
+      ]
+     },
+     "repair_param_correct_lost": {
+      "k": 53,
+      "n": 125,
+      "p": 0.424,
+      "ci": [
+       0.3409,
+       0.5116
+      ]
+     },
+     "nonotes_deny_rate": 0.535,
+     "approved_denied_under_loss": 0.515
+    },
+    "predictions": {
+     "P-H1_dissociation": true,
+     "P-H2_verdict_survives": true,
+     "P-H3_abstain_detects": true,
+     "P-H4_confab_locus": true
+    }
+   },
+   "grok": {
+    "metrics": {
+     "n_denied": 200,
+     "n_lost": 140,
+     "n_kept": 60,
+     "n_approved": 200,
+     "fail_retention": 0.3,
+     "decision_lost": {
+      "k": 113,
+      "n": 140,
+      "p": 0.8071,
+      "ci": [
+       0.7339,
+       0.8639
+      ]
+     },
+     "which_lost": {
+      "k": 1,
+      "n": 140,
+      "p": 0.0071,
+      "ci": [
+       0.0013,
+       0.0393
+      ]
+     },
+     "which_retained": {
+      "k": 54,
+      "n": 60,
+      "p": 0.9,
+      "ci": [
+       0.7985,
+       0.9534
+      ]
+     },
+     "which_confab_lost": {
+      "k": 9,
+      "n": 140,
+      "p": 0.0643,
+      "ci": [
+       0.0342,
+       0.1177
+      ]
+     },
+     "incoherent_lost": {
+      "k": 103,
+      "n": 140,
+      "p": 0.7357,
+      "ci": [
+       0.6571,
+       0.8018
+      ]
+     },
+     "none_missing_lost": {
+      "k": 0,
+      "n": 130,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0287
+      ]
+     },
+     "abstain_lost": {
+      "k": 92,
+      "n": 140,
+      "p": 0.6571,
+      "ci": [
+       0.5753,
+       0.7306
+      ]
+     },
+     "abstain_retained": {
+      "k": 1,
+      "n": 60,
+      "p": 0.0167,
+      "ci": [
+       0.0029,
+       0.0886
+      ]
+     },
+     "repair_specific_lost": {
+      "k": 140,
+      "n": 140,
+      "p": 1.0,
+      "ci": [
+       0.9733,
+       1.0
+      ]
+     },
+     "repair_param_correct_lost": {
+      "k": 48,
+      "n": 140,
+      "p": 0.3429,
+      "ci": [
+       0.2694,
+       0.4247
+      ]
+     },
+     "nonotes_deny_rate": 1.0,
+     "approved_denied_under_loss": 1.0
+    },
+    "predictions": {
+     "P-H1_dissociation": true,
+     "P-H2_verdict_survives": true,
+     "P-H3_abstain_detects": true,
+     "P-H4_confab_locus": true
+    }
+   },
+   "haiku": {
+    "metrics": {
+     "n_denied": 200,
+     "n_lost": 149,
+     "n_kept": 51,
+     "n_approved": 200,
+     "fail_retention": 0.255,
+     "decision_lost": {
+      "k": 134,
+      "n": 149,
+      "p": 0.8993,
+      "ci": [
+       0.8405,
+       0.938
+      ]
+     },
+     "which_lost": {
+      "k": 8,
+      "n": 149,
+      "p": 0.0537,
+      "ci": [
+       0.0275,
+       0.1024
+      ]
+     },
+     "which_retained": {
+      "k": 50,
+      "n": 51,
+      "p": 0.9804,
+      "ci": [
+       0.897,
+       0.9965
+      ]
+     },
+     "which_confab_lost": {
+      "k": 4,
+      "n": 149,
+      "p": 0.0268,
+      "ci": [
+       0.0105,
+       0.067
+      ]
+     },
+     "incoherent_lost": {
+      "k": 104,
+      "n": 149,
+      "p": 0.698,
+      "ci": [
+       0.6201,
+       0.766
+      ]
+     },
+     "none_missing_lost": {
+      "k": 112,
+      "n": 116,
+      "p": 0.9655,
+      "ci": [
+       0.9147,
+       0.9865
+      ]
+     },
+     "abstain_lost": {
+      "k": 149,
+      "n": 149,
+      "p": 1.0,
+      "ci": [
+       0.9749,
+       1.0
+      ]
+     },
+     "abstain_retained": {
+      "k": 9,
+      "n": 51,
+      "p": 0.1765,
+      "ci": [
+       0.0957,
+       0.3025
+      ]
+     },
+     "repair_specific_lost": {
+      "k": 99,
+      "n": 149,
+      "p": 0.6644,
+      "ci": [
+       0.5853,
+       0.7353
+      ]
+     },
+     "repair_param_correct_lost": {
+      "k": 46,
+      "n": 149,
+      "p": 0.3087,
+      "ci": [
+       0.2401,
+       0.3869
+      ]
+     },
+     "nonotes_deny_rate": 0.585,
+     "approved_denied_under_loss": 0.58
+    },
+    "predictions": {
+     "P-H1_dissociation": true,
+     "P-H2_verdict_survives": true,
+     "P-H3_abstain_detects": false,
+     "P-H4_confab_locus": true
+    }
+   }
+  },
+  "1": {
+   "gpt": {
+    "metrics": {
+     "n_denied": 0,
+     "n_lost": 0,
+     "n_kept": 0,
+     "n_approved": 0,
+     "fail_retention": null,
+     "decision_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "which_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "which_retained": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "which_confab_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "incoherent_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "none_missing_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "abstain_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "abstain_retained": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "repair_specific_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "repair_param_correct_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "nonotes_deny_rate": null,
+     "approved_denied_under_loss": null
+    },
+    "predictions": {
+     "P-H1_dissociation": false,
+     "P-H2_verdict_survives": false,
+     "P-H3_abstain_detects": false,
+     "P-H4_confab_locus": false
+    }
+   },
+   "grok": {
+    "metrics": {
+     "n_denied": 200,
+     "n_lost": 198,
+     "n_kept": 2,
+     "n_approved": 200,
+     "fail_retention": 0.01,
+     "decision_lost": {
+      "k": 149,
+      "n": 198,
+      "p": 0.7525,
+      "ci": [
+       0.688,
+       0.8074
+      ]
+     },
+     "which_lost": {
+      "k": 0,
+      "n": 198,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.019
+      ]
+     },
+     "which_retained": {
+      "k": 2,
+      "n": 2,
+      "p": 1.0,
+      "ci": [
+       0.3424,
+       1.0
+      ]
+     },
+     "which_confab_lost": {
+      "k": 0,
+      "n": 198,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.019
+      ]
+     },
+     "incoherent_lost": {
+      "k": 149,
+      "n": 198,
+      "p": 0.7525,
+      "ci": [
+       0.688,
+       0.8074
+      ]
+     },
+     "none_missing_lost": {
+      "k": 0,
+      "n": 198,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.019
+      ]
+     },
+     "abstain_lost": {
+      "k": 177,
+      "n": 198,
+      "p": 0.8939,
+      "ci": [
+       0.8433,
+       0.9296
+      ]
+     },
+     "abstain_retained": {
+      "k": 0,
+      "n": 2,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.6576
+      ]
+     },
+     "repair_specific_lost": {
+      "k": 198,
+      "n": 198,
+      "p": 1.0,
+      "ci": [
+       0.981,
+       1.0
+      ]
+     },
+     "repair_param_correct_lost": {
+      "k": 64,
+      "n": 198,
+      "p": 0.3232,
+      "ci": [
+       0.262,
+       0.3912
+      ]
+     },
+     "nonotes_deny_rate": 1.0,
+     "approved_denied_under_loss": 1.0
+    },
+    "predictions": {
+     "P-H1_dissociation": true,
+     "P-H2_verdict_survives": true,
+     "P-H3_abstain_detects": true,
+     "P-H4_confab_locus": true
+    }
+   },
+   "haiku": {
+    "metrics": {
+     "n_denied": 0,
+     "n_lost": 0,
+     "n_kept": 0,
+     "n_approved": 0,
+     "fail_retention": null,
+     "decision_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "which_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "which_retained": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "which_confab_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "incoherent_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "none_missing_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "abstain_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "abstain_retained": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "repair_specific_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "repair_param_correct_lost": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "nonotes_deny_rate": null,
+     "approved_denied_under_loss": null
+    },
+    "predictions": {
+     "P-H1_dissociation": false,
+     "P-H2_verdict_survives": false,
+     "P-H3_abstain_detects": false,
+     "P-H4_confab_locus": false
+    }
+   }
+  }
+ },
+ "cost_usd": {
+  "grok": 0.3382,
+  "haiku": 2.577,
+  "gpt": 0.3494
+ },
+ "total_cost_usd": 3.2646
+}
