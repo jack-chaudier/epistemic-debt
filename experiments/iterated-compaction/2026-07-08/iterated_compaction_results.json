@@ -1,0 +1,274 @@
+{
+ "design": {
+  "W": 40,
+  "R": 4,
+  "n_items": 40,
+  "domains": [
+   "ops_incident",
+   "clinical_enroll",
+   "ci_release"
+  ],
+  "predictions": {
+   "P-IC-0_budget_binds": "round-1 realized length >= 0.70*W (>=28 words)",
+   "P-IC-1_monotone_decay": "S non-increasing (tol 0.03) AND S4 < S1 - 0.10",
+   "P-IC-2_gist_persists": "g4 >= g1 - 0.10 while S4 < S1 - 0.10",
+   "P-IC-3_stable_ratio": "successive rho = S(r+1)/S(r) span (max-min) <= 0.20"
+  }
+ },
+ "per_model": {
+  "gpt": {
+   "n_scored": 40,
+   "curve": {
+    "1": {
+     "S": 0.925,
+     "fail": 0.875,
+     "L": 52.475,
+     "gverdict": 0.95,
+     "ggist": 0.225
+    },
+    "2": {
+     "S": 0.9,
+     "fail": 0.875,
+     "L": 43.0,
+     "gverdict": 0.9,
+     "ggist": 0.225
+    },
+    "3": {
+     "S": 0.8833,
+     "fail": 0.85,
+     "L": 42.1,
+     "gverdict": 0.925,
+     "ggist": 0.2
+    },
+    "4": {
+     "S": 0.8833,
+     "fail": 0.85,
+     "L": 42.075,
+     "gverdict": 0.9,
+     "ggist": 0.2
+    }
+   },
+   "S_curve": [
+    0.925,
+    0.9,
+    0.8833,
+    0.8833
+   ],
+   "rho_ratios": [
+    0.973,
+    0.9814,
+    1.0
+   ],
+   "rho_bar": 0.9847,
+   "shelf_widening": -0.0083,
+   "predictions": {
+    "P-IC-0_budget_binds": {
+     "L1": 52.475,
+     "passed": true
+    },
+    "P-IC-1_monotone_decay": {
+     "S1": 0.925,
+     "S4": 0.8833,
+     "monotone": true,
+     "net_decay": false,
+     "passed": false
+    },
+    "P-IC-2_gist_persists": {
+     "g1": 0.95,
+     "g4": 0.9,
+     "S1": 0.925,
+     "S4": 0.8833,
+     "passed": false
+    },
+    "P-IC-3_stable_ratio": {
+     "ratios": [
+      0.973,
+      0.9814,
+      1.0
+     ],
+     "span": 0.027,
+     "rho_bar": 0.9847,
+     "passed": true
+    }
+   },
+   "cost_usd": 0.0672
+  },
+  "grok": {
+   "n_scored": 40,
+   "curve": {
+    "1": {
+     "S": 0.95,
+     "fail": 1.0,
+     "L": 43.575,
+     "gverdict": 1.0,
+     "ggist": 0.2
+    },
+    "2": {
+     "S": 0.8583,
+     "fail": 0.9,
+     "L": 32.625,
+     "gverdict": 0.925,
+     "ggist": 0.075
+    },
+    "3": {
+     "S": 0.775,
+     "fail": 0.825,
+     "L": 29.65,
+     "gverdict": 0.925,
+     "ggist": 0.05
+    },
+    "4": {
+     "S": 0.7667,
+     "fail": 0.825,
+     "L": 28.875,
+     "gverdict": 0.925,
+     "ggist": 0.05
+    }
+   },
+   "S_curve": [
+    0.95,
+    0.8583,
+    0.775,
+    0.7667
+   ],
+   "rho_ratios": [
+    0.9035,
+    0.9029,
+    0.9893
+   ],
+   "rho_bar": 0.931,
+   "shelf_widening": 0.1083,
+   "predictions": {
+    "P-IC-0_budget_binds": {
+     "L1": 43.575,
+     "passed": true
+    },
+    "P-IC-1_monotone_decay": {
+     "S1": 0.95,
+     "S4": 0.7667,
+     "monotone": true,
+     "net_decay": true,
+     "passed": true
+    },
+    "P-IC-2_gist_persists": {
+     "g1": 1.0,
+     "g4": 0.925,
+     "S1": 0.95,
+     "S4": 0.7667,
+     "passed": true
+    },
+    "P-IC-3_stable_ratio": {
+     "ratios": [
+      0.9035,
+      0.9029,
+      0.9893
+     ],
+     "span": 0.0864,
+     "rho_bar": 0.931,
+     "passed": true
+    }
+   },
+   "cost_usd": 0.0287
+  },
+  "haiku": {
+   "n_scored": 40,
+   "curve": {
+    "1": {
+     "S": 0.6583,
+     "fail": 0.575,
+     "L": 44.625,
+     "gverdict": 0.85,
+     "ggist": 0.3
+    },
+    "2": {
+     "S": 0.575,
+     "fail": 0.525,
+     "L": 34.45,
+     "gverdict": 0.875,
+     "ggist": 0.325
+    },
+    "3": {
+     "S": 0.55,
+     "fail": 0.525,
+     "L": 30.725,
+     "gverdict": 0.875,
+     "ggist": 0.325
+    },
+    "4": {
+     "S": 0.5417,
+     "fail": 0.525,
+     "L": 29.6,
+     "gverdict": 0.875,
+     "ggist": 0.3
+    }
+   },
+   "S_curve": [
+    0.6583,
+    0.575,
+    0.55,
+    0.5417
+   ],
+   "rho_ratios": [
+    0.8735,
+    0.9565,
+    0.9849
+   ],
+   "rho_bar": 0.9371,
+   "shelf_widening": 0.1416,
+   "predictions": {
+    "P-IC-0_budget_binds": {
+     "L1": 44.625,
+     "passed": true
+    },
+    "P-IC-1_monotone_decay": {
+     "S1": 0.6583,
+     "S4": 0.5417,
+     "monotone": true,
+     "net_decay": true,
+     "passed": true
+    },
+    "P-IC-2_gist_persists": {
+     "g1": 0.85,
+     "g4": 0.875,
+     "S1": 0.6583,
+     "S4": 0.5417,
+     "passed": true
+    },
+    "P-IC-3_stable_ratio": {
+     "ratios": [
+      0.8735,
+      0.9565,
+      0.9849
+     ],
+     "span": 0.1114,
+     "rho_bar": 0.9371,
+     "passed": true
+    }
+   },
+   "cost_usd": 0.218
+  }
+ },
+ "verdict": {
+  "applicable": {
+   "gpt": true,
+   "grok": true,
+   "haiku": true
+  },
+  "interest_rate_confirmed_on": [
+   "grok",
+   "haiku"
+  ],
+  "rho_bar": {
+   "gpt": 0.9847,
+   "grok": 0.931,
+   "haiku": 0.9371
+  },
+  "confirmed": true
+ },
+ "cost_usd": {
+  "gpt": 0.0672,
+  "grok": 0.0287,
+  "haiku": 0.218
+ },
+ "total_cost_usd": 0.3139
+}

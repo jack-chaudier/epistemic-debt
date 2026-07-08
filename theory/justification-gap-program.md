@@ -125,11 +125,14 @@ This is the law that matters economically. It says the mirage shelf is not an ep
 
 The abstention result, pushed to its limit, is a statement about the price of honesty:
 
-**Conjecture (Honesty Theorem).** *Calibrated confidence costs as much memory as justification. Formally: the minimal state supporting the contract "answer correctly or abstain, with abstention exactly on witness-ambiguous states" is the witness quotient — the answer quotient does not suffice for any calibrated abstention policy with full coverage of the unambiguous region.*
+**Exact finite check (2026-07-08; semantic split).** *Calibrated confidence costs as much memory as exact witness identity, but not necessarily as much as one valid certificate.* Exhaustive partition search over the vendored frontier models (`Q_(3,2)`, `Q_(4,2)`, `Q_(5,3)`, `causal_referee`) gives two outcomes:
 
-In slogan form: **you cannot know that you know for less than it costs to know why.** A system can be right cheaply, but it cannot be *reliably confident* cheaply — because telling justified correctness apart from mirage correctness requires exactly the fiber information that the shelf destroyed.
+- **Exact-witness honesty:** if answering requires the full witness tuple/set, the minimal honest state equals the full witness quotient on every checked model.
+- **Certificate honesty:** if answering only requires one valid certificate for the answer, the Q families admit a strict intermediate quotient between answer and full witness: answer/certificate/joint state counts are 5/6/7, 6/7/8, and 7/9/13. `causal_referee` has no shortcut in this support model because only unique minimal adjustment sets are represented.
 
-If provable (and the finite machinery to prove or refute it exists in this repo), the mechanism-design consequence is large: **mandating calibrated abstention forces systems to carry witness state.** Auditability stops being a favor you ask of a model and becomes a resource requirement you impose on it. You don't inspect the system's reasons; you make it structurally impossible to be confidently right without having them. This is a compliance mechanism enforced by information theory rather than by trust — the difference between asking for honesty and making dishonesty unaffordable.
+In slogan form: **you cannot know that you know for less than it costs to know the exact witness — but you sometimes can know enough to certify one reason for less.** A system can be right cheaply; exact-witness confidence is expensive; certificate-confidence defines the new quotient between M and Q.
+
+The mechanism-design consequence is sharper than the original conjecture: mandates for *exact* auditability force witness state, while mandates for *certified answerability* may admit cheaper, task-specific certificate quotients. Auditability stops being a binary favor you ask of a model and becomes a resource requirement whose price depends on the required justification object.
 
 Contrapositive, equally important: any system that never abstains is *free* to live on the shelf, and by Law 1 it will. Confident systems are cheap precisely because confidence without calibration carries no witness obligation. That is a design indictment of every always-answer deployment.
 
@@ -184,7 +187,7 @@ Each law above has a cheap empirical assassin. In order of impact-per-dollar:
 - **The IB-triviality objection.** "I(Z;W) can vanish while I(Z;Y) stays maximal — that's obvious information bottleneck." Response: the static fact is trivial; the program's content is the *compositional* version (state must compose associatively under streaming, which is what forces the quotient structure and exact counts), the *closed-form width*, the *conservation law*, and the *transfer bound*. If those reduce to known IB results, the program collapses to a rediscovery. Priority: check against IB-with-side-information literature early.
 - **The shelf might be an artifact of forced decoding.** If real systems, unlike the forced policy, hold graded uncertainty, debt may partly self-report. The Grok data (0/36 degradation flags at high confidence) argues otherwise, but on one model, with confounds. Kill-shot #2 settles it.
 - **Law 2's exchange rate may only hold on pure-answer buckets.** Then conservation becomes an inequality — still useful, less beautiful. Checkable this week against the pareto JSON.
-- **The Honesty Theorem may be false**: there might exist clever sub-witness state sufficient for calibration (knowing *that* the fiber is ambiguous without knowing the fiber). If so, that failure is itself interesting — it would define exactly the cheapest honest state, a new quotient between M and Q. Either outcome is a result.
+- **The Honesty Theorem has a semantic fork**: the exact check shows full-witness calibration needs Q, while one-valid-certificate calibration can use a cheaper quotient between M and Q. The remaining risk is not whether the finite result exists, but which justification object an application actually needs.
 - **Reinvention exposure.** The quotient/holonomy substrate must be repositioned on Myhill–Nerode / ε-machines / Vorob'ev / Abramsky–Brandenburger *before* any external claim is staked, or credibility dies on contact with the first expert reviewer.
 
 ---
@@ -452,6 +455,96 @@ that the decisive next design must first match ordinary accuracy — e.g. using 
 a looser realized budget, or a model-ladder setup where source-task performance is held fixed.
 Law 3 remains a conjecture; this pilot upgrades it from zero experiments to a concrete, partially
 positive measurement target.
+
+## Appendix L — Honesty exact check: witness identity vs certificate state (2026-07-08)
+
+The queue item asked whether calibrated abstention requires the full witness quotient or whether a
+cheaper intermediate state exists. The exact answer is a semantic split, verified by
+[`proofs/honesty_theorem.py`](../proofs/honesty_theorem.py) with exhaustive partition search over
+the vendored frontier row spaces.
+
+| model | answer quotient | certificate quotient | exact-witness quotient |
+|---|---:|---:|---:|
+| `Q_(3,2)` | 5 | 6 | 7 |
+| `Q_(4,2)` | 6 | 7 | 8 |
+| `Q_(5,3)` | 7 | 9 | 13 |
+| `causal_referee` | 4 | 15 | 15 |
+
+**EXACT:** under exact-witness semantics — answering is licensed only when the full witness tuple or
+set is recoverable — the minimal honest partition equals the full witness quotient on every checked
+model. That is the original Honesty Theorem as stated for exact auditability.
+
+**EXACT / REFUTED variant:** under one-valid-certificate semantics — answering is licensed when the
+state shares at least one valid certificate for the answer — the Q families have a strict
+intermediate quotient between M and Q. The original slogan therefore overstates the price of
+honesty for applications that only require *some* valid reason rather than exact witness identity.
+`causal_referee` shows no shortcut here because the support model records unique minimal adjustment
+sets; alternative adjustment sets are not represented, so certificate identity collapses to witness
+identity.
+
+The new formal target is the **certificate quotient**: characterize when a task's certificates compose
+strictly more cheaply than its full witnesses, and when they collapse to the witness quotient. This
+is a better mechanism-design object than a single yes/no Honesty Theorem.
+
+## Appendix M — The read channel computes: the retrieval-only reading refuted (2026-07-08)
+
+G.2 read the reason channel as *retrieval-gated* ("name the reason" = retrieve the value token,
+not infer from structure); I.3 sharpened this to *retrieval + one-step elimination over the
+disclosed candidate set* (α up to 1.20). Both left open whether the read channel does any
+*computation*. A preregistered probe settles it
+(`experiments/reader-inference-boundary/2026-07-08/`, $0.91, 3 models). Constructed notes (no
+compressor) encode the lost witness at four derivability depths — absent, absence-spottable,
+recoverable by one `base±offset` arithmetic step, or plainly present — with candidates disclosed.
+
+The depth-1 hypothesis ("recovery = elimination and nothing deeper, no arithmetic") is **REFUTED**:
+all three models recover the arithmetic-encoded culprit well above the guess floor (0.65/0.65/0.93
+grok/gpt/haiku) while demonstrably able to do the isolated arithmetic (≥0.88), so the recovery is a
+*deployment* fact, not capacity. A confirmatory corpus (`c2`) that forces the base-only heuristic to
+exactly chance by construction upholds it at preregistered strength (0.65/0.73/0.98, Wilson lower
+bounds above 0.50 on all three). Traces are explicit (`97 + 25 = 122 > 100 ⇒ fail`).
+
+Consequences. (a) **The read channel is not retrieval-gated at depth 0** — it inverts G.2 a second
+time (I.3: more than retrieval; M: more than elimination). Read-time reader efficiency α has a
+ceiling *above* candidate-elimination: a witness a reader can *recompute* from surviving numbers is
+not lost to it, so string-survival S is an even looser lower bound on deployed justified accuracy.
+(b) **There is no cross-model depth-1 constant.** The hoped-for "recover at elimination, collapse at
+arithmetic" boundary does not exist at one step; haiku computes near-ceiling while grok/gpt carry a
+real error rate. If an inference-depth constant exists (the model-card axis of the 2026-07-07 idea)
+it lives *deeper* — chained/multi-hop derivation — which is the successor design. (c) For the
+greppable-debt program this cuts the same way I.3 did but harder: a ledger can still prove a value
+was dropped, but "dropped" ≠ "unrecoverable" when the reader can recompute it from what survived.
+
+## Appendix N — The epistemic interest rate: compaction debt accrues geometrically (2026-07-08)
+
+Everything in the program to Appendix M is single-shot. This is the first *dynamical* measurement
+(`experiments/iterated-compaction/2026-07-08/`, $0.31, preregistered). Compress a document to a
+fixed 40 words, then re-compress the summary to 40 words for 4 rounds, and track witness
+string-survival S_r each round. H.3 had shown decreasing-budget rolling compaction is near-
+idempotent on one model; the new question is whether a *fixed* budget produces a stable per-round
+decay ratio.
+
+It does, on two of three models. grok and haiku lose witnesses geometrically at a strikingly close
+rate — ρ̄ = S_(r+1)/S_r ≈ **0.931** (grok) and **0.937** (haiku), ~6–7% per round, with
+successive-ratio spans ≤ 0.11 (P-IC-3) — while the decision verdict stays essentially flat (grok
+1.00→0.925, haiku 0.85→0.875 over four rounds). The gap between verdict persistence and witness
+survival *widens* with round count (+0.108, +0.142): the mirage shelf is not just a static state
+but an **accruing debt**, and ρ̄ is its interest rate. gpt is the informative null — it re-compresses
+near-losslessly (ρ̄ 0.985, net decay 0.042), extending H.3's idempotence to a fixed budget for a
+model that holds summary length steady.
+
+Interpretation and its load-bearing caveat. This is Law 1 / F.4 made dynamical: witness bits, being
+gradient-orphaned, decay under each lossy re-encoding while the answer token (defended by the
+decision) persists, so an iterated memory converges toward pure asserted-verdict. The caveat, stated
+plainly: on the two decaying models the realized summary length *also* settles below the 40-word
+budget across rounds (grok 44→29 words), so the measured ρ̄ mixes genuine per-round witness loss with
+the summary still contracting toward its stable length; gpt, which holds length ≈ 42, shows the
+near-zero decay this predicts. What survives the caveat is robust — decay is monotone and geometric,
+the verdict persists while witnesses fall, and the two decaying models share ρ̄ ≈ 0.93. What the
+caveat costs is the clean interpretation of ρ̄ as *pure* iteration loss; a length-clamped successor
+(force each round to spend the full budget; extend to R = 6–8) is required to partition ρ̄ into
+iteration loss vs length-settling and to test ρ stability deeper into the chain. Recorded therefore
+as: **the interest rate is PREREGISTERED-confirmed as a geometric, verdict-preserving witness decay
+with ρ̄ ≈ 0.93 on two models**, with the length-settling share an OBSERVED caveat for the successor.
 
 ## 9. The one-sentence version
 

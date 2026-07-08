@@ -142,6 +142,8 @@ def test_budgetline_refutation_artifacts_consistent():
 HIGHPOWER = REPO / "experiments" / "highpower" / "2026-07-06"
 DOMAINS = REPO / "experiments" / "domains" / "2026-07-06"
 TRANSFER_LAW = REPO / "experiments" / "transfer-law" / "2026-07-08"
+READER_INF = REPO / "experiments" / "reader-inference-boundary" / "2026-07-08"
+ITER_COMPACT = REPO / "experiments" / "iterated-compaction" / "2026-07-08"
 
 
 def _load_domains_lib():
@@ -267,3 +269,86 @@ def test_transfer_law_source_truth_reanalysis():
     assert pooled["cf_present"]["p"] == 0.9778
     assert pooled["cf_missing"]["p"] == 0.5111
     assert pooled["gap"] == 0.4667
+
+
+def _load_rib_gen():
+    import importlib.util
+    import sys as _sys
+    _sys.path.insert(0, str(READER_INF))
+    spec = importlib.util.spec_from_file_location("rib_gen", READER_INF / "gen_items.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def test_reader_inference_boundary_corpus_and_confound_clean():
+    # the corpus is only valid if the derivability-class construction still passes its mechanical
+    # guards (single culprit, margins, verdict-leak-free notes, per-class encoding, c2 base-leak)
+    for f in ("prereg_reader_inference_boundary.md", "prereg_c2_confirmatory.md", "gen_items.py",
+              "gen_c2.py", "items.jsonl", "items_c2.jsonl", "runner.py", "responses_raw.jsonl",
+              "reader_inference_boundary_results.json", "reader_inference_boundary_c2_results.json",
+              "README.md"):
+        assert (READER_INF / f).exists(), f"reader-inference-boundary: missing {f}"
+    items = [json.loads(l) for l in (READER_INF / "items.jsonl").open()]
+    assert len(items) == 240
+    from collections import Counter
+    assert Counter(it["cls"] for it in items) == {"a": 60, "b": 60, "c": 60, "d": 60}
+    gen = _load_rib_gen()
+    assert gen.selfcheck(items) == [], "reader-inference-boundary corpus has confound problems"
+    c2 = [json.loads(l) for l in (READER_INF / "items_c2.jsonl").open()]
+    assert len(c2) == 60
+
+
+def test_reader_inference_boundary_headline_results():
+    # pin the 2026-07-08 verdict: the "retrieval-not-inference" reading is REFUTED — arithmetic
+    # recovery (class c) is above the guess floor on all three models, arithmetic is in capacity,
+    # and elimination (class b) is genuine. A re-score must not silently flip this.
+    res = json.loads((READER_INF / "reader_inference_boundary_results.json").read_text())
+    for m in ("grok", "haiku", "gpt"):
+        preds = res["per_model"][m]["predictions"]
+        # retrieval control + elimination + arithmetic-in-capacity all hold
+        assert preds["P-RIB-0_retrieval_control"]["passed"] is True, f"{m}: retrieval control"
+        assert preds["P-RIB-1_elimination_works"]["passed"] is True, f"{m}: elimination"
+        assert preds["P-RIB-4_elimination_genuine"]["passed"] is True, f"{m}: elimination genuine"
+        assert preds["P-RIB-5_arithmetic_in_capacity"]["passed"] is True, f"{m}: arith capacity"
+        # the depth-boundary prediction FAILED — arithmetic recovery is above the floor
+        assert preds["P-RIB-2_arithmetic_fails"]["passed"] is False, f"{m}: P-RIB-2 must fail"
+        assert res["per_model"][m]["recovery"]["c"]["p"] > 0.50, f"{m}: recovery(c) above floor"
+    assert res["verdict"]["retrieval_reading_refuted_on"] == ["gpt", "grok", "haiku"]
+
+    # the c2 confirmatory (base-only leak forced to 0) upholds the refutation at prereg strength
+    c2 = json.loads((READER_INF / "reader_inference_boundary_c2_results.json").read_text())
+    assert c2["base_only_leak"] == 0.0
+    assert c2["P-C2-3_no_residual_base_leak"]["passed"] is True
+    assert c2["P-C2-1_recovery_survives"]["passed"] is True
+    assert c2["P-C2-2_above_guess_floor"]["passed"] is True
+    assert c2["verdict_retrieval_only_refuted"] is True
+    for m in ("grok", "haiku", "gpt"):
+        assert c2["per_model"][m]["recovery"]["ci"][0] > 0.50, f"{m}: c2 CI above guess floor"
+
+
+def test_iterated_compaction_interest_rate_results():
+    # pin the 2026-07-08 dynamical result: the epistemic interest rate is confirmed on grok+haiku
+    # (geometric witness decay ~0.93/round while the verdict persists) and gpt is the near-
+    # idempotent null. A re-score must not silently flip the confirmation or the null.
+    for f in ("prereg_iterated_compaction.md", "runner.py", "responses_raw.jsonl",
+              "iterated_compaction_results.json", "README.md"):
+        assert (ITER_COMPACT / f).exists(), f"iterated-compaction: missing {f}"
+    res = json.loads((ITER_COMPACT / "iterated_compaction_results.json").read_text())
+    # budget binds on all three (validity guard)
+    for m in ("grok", "haiku", "gpt"):
+        assert res["per_model"][m]["predictions"]["P-IC-0_budget_binds"]["passed"] is True
+        assert res["per_model"][m]["n_scored"] == 40, f"{m}: incomplete run"
+    # interest rate confirmed on grok + haiku; not gpt (near-idempotent)
+    assert set(res["verdict"]["interest_rate_confirmed_on"]) == {"grok", "haiku"}
+    assert res["verdict"]["confirmed"] is True
+    for m in ("grok", "haiku"):
+        preds = res["per_model"][m]["predictions"]
+        assert preds["P-IC-1_monotone_decay"]["passed"] is True, f"{m}: decay"
+        assert preds["P-IC-2_gist_persists"]["passed"] is True, f"{m}: verdict persists"
+        assert preds["P-IC-3_stable_ratio"]["passed"] is True, f"{m}: stable ratio"
+        # decaying models share a per-round survival ratio near 0.93
+        assert 0.90 <= res["per_model"][m]["rho_bar"] <= 0.95, f"{m}: rho_bar out of band"
+    # gpt is the informative null: monotone-net-decay fails (near-idempotent), ratio still stable
+    assert res["per_model"]["gpt"]["predictions"]["P-IC-1_monotone_decay"]["passed"] is False
+    assert res["per_model"]["gpt"]["rho_bar"] > 0.97
