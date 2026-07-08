@@ -83,6 +83,34 @@ re-analysis surfaces something worth chasing. Conventions:
    accuracy worst at mid-compression — characterize the dip, possible standalone note);
    Gemini P-G3 completion when a billed key exists.
 
+## Flagship deliverable: the witness-preserving RLM (adopted 2026-07-08)
+
+Public artifact goal — a usable model + HuggingFace demo proving the thesis: **context
+utilization is being mismeasured** — accuracy metrics can't distinguish an answer that survived
+with its justification from an orphaned verdict. Anchor: Recursive Language Models (arXiv
+2512.24601, Zhang/Kraska/Khattab — verified 2026-07-08; they post-trained RLM-Qwen3-8B, so
+"train the root" has precedent). Key observation: **RLM relocates compaction rather than
+eliminating it** — every recursive sub-call returns a summary into the root's window, and that
+return value is a compaction artifact our instruments can audit. Moat = the certificate
+contract + the Δ meter, NOT the recursion (we extend their work, we don't race it).
+
+- **R1. Δ-audit of vanilla RLM** (~$5, first — a standalone result either way). Run an open
+  RLM implementation (verify minRLM/rlm-minimal forks exist; else implement the thin loop from
+  the paper) over our ledger corpora + the realdoc corpus; pipe sub-call returns and final
+  answers through the existing Δ/witness pipeline. Prereg: Law 1 predicts sub-call returns
+  shed witnesses unless certificate-tasked — high accuracy + high Δ = hidden debt inside the
+  year's hottest long-context result; low Δ = explains *why* RLM beats compaction, in our
+  terms. Either is the first pricing of RLM justification.
+- **R2. Certificate-typed RLM trace dataset** ($0 API): wrap the B4 generator in RLM trace
+  format — sub-calls must return `claim + witness + source pointer`, root must cite the
+  witness chain or abstain-naming-the-loss. Reuses the ft-dataset gold-templating machinery.
+- **R3. Train the root** (~$5–10 GPU): QLoRA Qwen3-8B (or 4B first) on R2 traces. The pod
+  workflow is proven (PTY transfer runbook in experiments/ft-dataset/2026-07-08/remote/).
+- **R4. Ship**: HF Space (Gradio) — paste a long doc, ask questions; UI shows answer + clickable
+  witness chain + a live **Δ meter** vs the same base model with naive compaction; weights +
+  model card written like a prereg page (claims, thresholds, refutations included). Framing:
+  "mismeasured, and here's the meter" — not "misunderstood".
+
 ## Infinite-context build track (the road — see site/#road)
 
 Goal, honestly defined: **bounded-debt memory** — an agent that cannot forget *silently*
