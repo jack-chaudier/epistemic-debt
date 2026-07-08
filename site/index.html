@@ -72,6 +72,40 @@
   }
   .subtitle { font-size: 1.25rem; font-style: italic; color: var(--muted); margin: 0 0 2rem; text-wrap: balance; }
 
+  /* ---- tabs ---- */
+  .tabs {
+    display: flex; gap: 1.75rem; font-family: var(--mono); font-size: .71875rem;
+    letter-spacing: .12em; text-transform: uppercase;
+    border-bottom: 1px solid var(--rule); margin: 0 0 2.5rem;
+  }
+  .tabs a { color: var(--muted); text-decoration: none; padding: .55rem 0 .6rem; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .tabs a:hover { color: var(--ink); }
+  .tabs a.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tabs a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---- road view ---- */
+  .prospectus-note {
+    font-family: var(--mono); font-size: .71875rem; color: var(--muted);
+    border: 1px dashed var(--rule); border-radius: 3px; padding: .7rem .9rem; margin: 0 0 2rem;
+  }
+  .stage { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1.25rem; padding: 1.1rem 0; border-top: 1px solid var(--rule); }
+  .stage:last-of-type { border-bottom: 1px solid var(--rule); }
+  .stage .k { font-family: var(--mono); font-size: .75rem; color: var(--accent); padding-top: .3rem; white-space: nowrap; }
+  .stage p { margin: 0 0 .5rem; }
+  .stage .meta { margin-top: 0; }
+  @media (max-width: 34rem) { .stage { grid-template-columns: 1fr; gap: .2rem; } }
+  .s-debt-dash { stroke: var(--accent); stroke-width: 2; fill: none; stroke-linecap: round; stroke-dasharray: 2 6; }
+  .arch-box    { fill: var(--card); stroke: var(--rule); }
+  .arch-title  { font-family: var(--mono); font-size: 10px; fill: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+  .arch-text   { font-family: var(--mono); font-size: 10.5px; fill: var(--ink); }
+  .arch-mutedt { font-family: var(--mono); font-size: 10px; fill: var(--muted); }
+  .arch-cert   { fill: var(--accent); opacity: .1; stroke: var(--accent); stroke-opacity: .55; }
+  .arch-flow   { stroke: var(--muted); stroke-width: 1.25; fill: none; }
+  .arch-flow-a { stroke: var(--accent); stroke-width: 1.25; fill: none; }
+  .tower-bar   { fill: var(--card); stroke: var(--rule); }
+  .tower-hot   { fill: var(--accent); opacity: .12; }
+  .tower-hot-s { fill: none; stroke: var(--accent); }
+
   .abstract {
     border-left: 2px solid var(--accent); padding: .25rem 0 .25rem 1.25rem; margin: 0 0 1rem;
   }
@@ -197,6 +231,13 @@
   <h1>Epistemic Debt</h1>
   <p class="subtitle">A resource theory of being right for reasons.</p>
 
+  <nav class="tabs" aria-label="Page views">
+    <a href="#" data-view="ledger" class="active">The Ledger</a>
+    <a href="#road" data-view="road">The Road to Infinite Context</a>
+  </nav>
+
+  <div id="view-ledger">
+
   <div class="abstract">
     <p class="lede">Under memory pressure, systems keep correct answers after losing the reasons
     for them. The answers survive compression; the justifications don't. The difference is
@@ -211,10 +252,10 @@
 
   <div class="strip" aria-label="Program at a glance">
     <!-- UPDATE: these four numbers track README.md's results table and spend line. -->
-    <div><b>29</b><span>recorded results</span></div>
+    <div><b>30</b><span>recorded results</span></div>
     <div><b>4</b><span>model vendors</span></div>
-    <div><b>35,753</b><span>API calls</span></div>
-    <div><b>$14.18</b><span>total spend</span></div>
+    <div><b>39,263</b><span>API calls</span></div>
+    <div><b>$15.82</b><span>total spend</span></div>
   </div>
 
   <hr class="double-rule">
@@ -420,6 +461,18 @@
     </article>
 
     <article class="finding">
+      <h3>A one-sentence honesty rule drives unwitnessed confidence to zero.</h3>
+      <p>Telling the compactor "never state an evaluative claim without its deciding value in
+      the same clause" eliminated the mirage signature — confidently asserting a verdict while
+      unable to name any reason — on all three models: <span class="stat">11–22% → 0.00</span>.
+      But not at matched budget: every model overrode the word limit to keep the values
+      (~1.8×). The honesty rule dominates the length rule — compaction refuses to compress past
+      the witness floor, converting hidden epistemic debt into visible token spend.</p>
+      <div class="meta"><span class="label prereg">Preregistered</span><span class="label refuted">Matched-budget claim refuted</span>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/signpost-fusion">signpost-fusion</a></div>
+    </article>
+
+    <article class="finding">
       <h3>The debt is avoidable — the failure is an objective problem, not a wall.</h3>
       <p>A one-line change to the compaction objective — spend the budget on names, numbers, and
       units — lifts justified accuracy <span class="stat">17/30 → 25/30</span> at the same length,
@@ -481,6 +534,242 @@
     </div>
   </section>
 
+  </div><!-- /view-ledger -->
+
+  <div id="view-road" hidden>
+
+  <div class="abstract">
+    <p class="lede">The goal is not a model that remembers everything. It is a model that
+    <em>cannot lie about what it forgot</em>. Lossless infinite memory is impossible — the
+    Shelf Width Law prices it out exactly. What is possible is something no system ships today:
+    <em>bounded-debt memory</em>. What the agent drops, it logs. What it logs, it can reclaim.
+    What it cannot reclaim, it says so. Every answer is witnessed, re-fetched, or flagged —
+    Δ&nbsp;=&nbsp;accuracy&nbsp;−&nbsp;justified accuracy held at zero <em>by construction</em>,
+    with a deterministic audit trail instead of a promise. That is infinite context, honestly
+    defined: justified accuracy that does not decay with session length.</p>
+    <p>The stakes are not hypothetical. Every long-running AI system in production — agent
+    memory, compacted contexts, distilled models, knowledge bases — is accumulating this debt
+    <em>right now</em>, silently, and no benchmark on earth reports it. Forgetting is fine.
+    Silent forgetting is the disease.</p>
+  </div>
+
+  <p class="prospectus-note">This tab is prospectus, not ledger. The mechanisms below cite
+  their evidence; the destination does not have any yet. Claims live on the Ledger tab and in
+  <code>results/RESULTS.md</code>.</p>
+
+  <div class="law"><div class="k">Proved</div>
+    <p>Correctness and justification are different physical resources with a computable
+    exchange rate. Certificates are strictly cheaper than full witnesses. Honesty costs 0.47×
+    designed-in, ~38× retrofitted. <em>Exact — exhaustive finite search.</em></p></div>
+  <div class="law"><div class="k">Demonstrated</div>
+    <p>The debt is real in frontier models — four vendors, N=400, six schemas. It is
+    deterministically accountable (ledger recall 1.00), repayable (re-expansion 30/30
+    end-to-end), and its decay rate is measured (ρ̄ ≈ 0.93/round).
+    <em>Preregistered, small corpora.</em></p></div>
+  <div class="law"><div class="k">Promised</div>
+    <p>The assembled runtime; the fixed point ρ̄ = 1.0; the agent that never silently forgets.
+    <em>No evidence yet — that is what the road is for, and the real-document gate decides
+    it.</em></p></div>
+
+  <hr class="double-rule">
+
+  <section>
+    <h2><span class="no">1</span>Proof-carrying context</h2>
+
+    <p>Today's context window stores <em>content</em>; RAG stores embeddings with no
+    guarantees. The third option, which nobody ships: store <em>commitments</em>. The live
+    context holds each claim with a compact <b>certificate</b> and a pointer into an
+    append-only archive; a deterministic router verifies or re-expands any certificate the
+    current query leans on. The working set stays bounded; the ground it can prove things
+    against does not. The context window stops being a window and becomes a cache with a
+    correctness contract.</p>
+
+    <figure role="img" aria-label="Architecture diagram: a bounded context window containing a gist line and claims with certificates, connected by verify and expand-on-miss arrows to an append-only immortal archive, with a deterministic loss ledger underneath recording everything dropped.">
+      <svg viewBox="0 0 560 330" xmlns="http://www.w3.org/2000/svg">
+        <!-- context window -->
+        <rect class="arch-box" x="24" y="34" width="220" height="196" rx="3"/>
+        <text class="arch-title" x="36" y="56">Context window · bounded</text>
+        <rect class="arch-box" x="36" y="70" width="196" height="26" rx="2"/>
+        <text class="arch-text" x="46" y="87">gist — the verdict channel</text>
+        <rect class="arch-cert" x="36" y="106" width="196" height="26" rx="2"/>
+        <text class="arch-text" x="46" y="123">claim · certificate ▸ ptr</text>
+        <rect class="arch-cert" x="36" y="142" width="196" height="26" rx="2"/>
+        <text class="arch-text" x="46" y="159">claim · certificate ▸ ptr</text>
+        <rect class="arch-cert" x="36" y="178" width="196" height="26" rx="2"/>
+        <text class="arch-text" x="46" y="195">claim · certificate ▸ ptr</text>
+        <!-- archive -->
+        <rect class="arch-box" x="356" y="34" width="180" height="196" rx="3"/>
+        <text class="arch-title" x="368" y="56">Immortal archive</text>
+        <line class="chart-grid" x1="368" y1="76"  x2="524" y2="76"/>
+        <line class="chart-grid" x1="368" y1="100" x2="524" y2="100"/>
+        <line class="chart-grid" x1="368" y1="124" x2="524" y2="124"/>
+        <line class="chart-grid" x1="368" y1="148" x2="524" y2="148"/>
+        <line class="chart-grid" x1="368" y1="172" x2="524" y2="172"/>
+        <line class="chart-grid" x1="368" y1="196" x2="524" y2="196"/>
+        <text class="arch-mutedt" x="368" y="221">append-only · O(∞)</text>
+        <!-- flows -->
+        <path class="arch-flow-a" d="M244 119 L352 119"/>
+        <path class="arch-flow-a" d="M346 115 L352 119 L346 123"/>
+        <text class="arch-mutedt" x="298" y="111" text-anchor="middle">verify</text>
+        <path class="arch-flow" d="M352 191 L248 191"/>
+        <path class="arch-flow" d="M254 187 L248 191 L254 195"/>
+        <text class="arch-mutedt" x="298" y="183" text-anchor="middle">expand on miss</text>
+        <!-- ledger -->
+        <rect class="arch-box" x="24" y="262" width="512" height="40" rx="3"/>
+        <text class="arch-title" x="36" y="286">Loss ledger</text>
+        <text class="arch-text" x="130" y="286">names of everything dropped — deterministic, recall 1.00</text>
+        <path class="arch-flow" d="M134 262 L134 236"/>
+        <path class="arch-flow" d="M130 242 L134 236 L138 242"/>
+        <path class="arch-flow" d="M446 262 L446 236"/>
+        <path class="arch-flow" d="M442 242 L446 236 L450 242"/>
+      </svg>
+      <figcaption><b>Fig. R1 — The runtime.</b> Components already validated in-repo:
+      value-dense compaction (preregistered, README row 16), deterministic loss-ledger routing
+      (recall 1.00 / 30-of-30 end-to-end on cached corpora, row 21). The certificate layer is
+      the open build.</figcaption>
+    </figure>
+  </section>
+
+  <hr class="double-rule">
+
+  <section>
+    <h2><span class="no">2</span>Why this is possible — three mechanisms, each with evidence</h2>
+
+    <p><b>Certificates are exactly cheaper than witnesses.</b> The honesty-theorem computation
+    split the conjecture: calibrated honesty via <em>one valid certificate</em> admits a strictly
+    smaller memory state than exact-witness honesty — on <code>Q₍₅,₃₎</code>, 9 states against 13,
+    saving over half the fiber bits. You don't have to remember all the reasons; you have to
+    remember enough to prove them on demand. That is the theoretical license for the entire
+    architecture.</p>
+
+    <figure role="img" aria-label="Tower diagram of memory quotients for the Q 5 3 model: answer quotient 7 states on top, certificate quotient 9 states highlighted beneath it, exact witness quotient 13 states below that, and the unbounded raw archive at the base.">
+      <svg viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg">
+        <rect class="tower-bar" x="172" y="24" width="216" height="38" rx="2"/>
+        <text class="arch-text" x="280" y="47" text-anchor="middle">answer quotient · 7 states</text>
+        <rect class="tower-hot" x="141" y="70" width="278" height="38" rx="2"/>
+        <rect class="tower-hot-s" x="141" y="70" width="278" height="38" rx="2"/>
+        <text class="arch-text" x="280" y="93" text-anchor="middle">certificate quotient · 9 states</text>
+        <text class="lbl-debt" x="432" y="93">← the cheap rung</text>
+        <rect class="tower-bar" x="80" y="116" width="400" height="38" rx="2"/>
+        <text class="arch-text" x="280" y="139" text-anchor="middle">exact-witness quotient · 13 states</text>
+        <rect class="tower-bar" x="40" y="162" width="480" height="38" rx="2" stroke-dasharray="4 4"/>
+        <text class="arch-mutedt" x="280" y="185" text-anchor="middle">raw archive · unbounded, append-only</text>
+        <text class="arch-mutedt" x="280" y="228" text-anchor="middle">certificate honesty: 0.36 bits · exact-witness honesty: 0.89 bits</text>
+      </svg>
+      <figcaption><b>Fig. R2 — The tower of quotients</b> (<code>Q₍₅,₃₎</code>, exact by
+      exhaustive partition search, <code>proofs/honesty_theorem.py</code>). The certificate rung
+      is new — found 2026-07-08 — and it is what makes proof-carrying context strictly cheaper
+      than witness retention.</figcaption>
+    </figure>
+
+    <p><b>Prose can refuse to take on debt.</b> The first signpost pilot tested a one-sentence
+    fusion rule — never assert without the witness in the same clause. It killed unwitnessed
+    confidence outright (incoherence → 0.00, all three models) and collapsed the gap where the
+    shelf exists — at a measured price in length (~1.8×), because the honesty rule dominates
+    the budget rule. Honest compaction has a floor, the floor is the witness set, and the
+    system now stops at the floor and hands you the bill instead of silently crossing it.</p>
+
+    <p><b>Readers re-derive what compactors drop.</b> All three tested models recover a
+    destroyed witness by a one-step computation from what survived (preregistered refutation of
+    our own retrieval-only law, row 28). A compactor calibrated to the reader's measured
+    inference depth can therefore store a <em>generating set</em> of the knowledge, not the
+    knowledge — compression against the reader's derivation power, which no long-context system
+    currently attempts.</p>
+
+    <p><b>Immortality is a fixed point.</b> Naive iterated compaction decays witnesses
+    geometrically at ρ̄&nbsp;≈&nbsp;0.93 per round (preregistered 2/3, row 29) — but one model
+    sat at 0.985, nearly idempotent natively. The formal target: a compaction operator with
+    C(C(x))&nbsp;=&nbsp;C(x), ledger routing repaying whatever it drops — effective
+    ρ̄&nbsp;=&nbsp;1.0, epistemic state stationary under unbounded rounds.</p>
+
+    <figure role="img" aria-label="Line chart over eight compaction rounds extending to infinity: the naive dashed line decays geometrically from 0.95 toward 0.57, while the runtime line holds flat at 0.95 with the annotation rho equals 1.0, the fixed point.">
+      <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
+        <line class="chart-grid" x1="46" y1="26"  x2="544" y2="26"/>
+        <line class="chart-grid" x1="46" y1="140" x2="544" y2="140"/>
+        <line class="chart-base" x1="46" y1="254" x2="544" y2="254"/>
+        <text class="chart-tick" x="38" y="29"  text-anchor="end">1.0</text>
+        <text class="chart-tick" x="38" y="143" text-anchor="end">0.75</text>
+        <text class="chart-tick" x="38" y="257" text-anchor="end">0.5</text>
+        <text class="chart-tick" x="70"  y="271" text-anchor="middle">1</text>
+        <text class="chart-tick" x="186" y="271" text-anchor="middle">3</text>
+        <text class="chart-tick" x="302" y="271" text-anchor="middle">5</text>
+        <text class="chart-tick" x="418" y="271" text-anchor="middle">7</text>
+        <text class="chart-tick" x="522" y="271" text-anchor="middle">∞</text>
+        <text class="chart-axis" x="295" y="292" text-anchor="middle">compaction rounds</text>
+        <!-- naive decay (dashed) -->
+        <path class="s-debt-dash" d="M70 48.8 L128 79.1 L186 107.3 L244 133.5 L302 157.9 L360 180.6 L418 201.7 L476 221.4"/>
+        <circle class="dot-debt" cx="476" cy="221.4" r="4"/>
+        <text class="lbl-debt" x="470" y="241" text-anchor="end">naive · ρ̄ ≈ 0.93 — measured</text>
+        <!-- runtime flat -->
+        <path class="s-debt" d="M70 48.8 L476 48.8"/>
+        <path class="s-debt-dash" d="M476 48.8 L522 48.8"/>
+        <circle class="dot-debt" cx="476" cy="48.8" r="4"/>
+        <text class="lbl-debt" x="470" y="38" text-anchor="end">ledger runtime · ρ̄ = 1.0 — the fixed point</text>
+      </svg>
+      <figcaption><b>Fig. R3 — Rounds-to-half-witness: 9 vs ∞.</b> The dashed decay is measured
+      (row 29, grok); the flat line is the target, not a result. Witness survival in both
+      conditions — same channel, different operator.</figcaption>
+    </figure>
+  </section>
+
+  <hr class="double-rule">
+
+  <section>
+    <h2><span class="no">3</span>The road</h2>
+
+    <div class="stage"><div class="k">Stage 0</div><div>
+      <p><b>Components validated.</b> Value-dense compaction, deterministic loss-ledger routing,
+      the interest-rate measurement, read-time recovery depth 1.</p>
+      <div class="meta"><span class="label prereg">Done · in the ledger</span></div>
+    </div></div>
+
+    <div class="stage"><div class="k">Stage 1</div><div>
+      <p><b>Certificate-compaction pilot.</b> Compact to claim + certificate + pointer instead
+      of raw values; preregister justified accuracy and Δ against value-dense compaction at
+      matched budget. Do cheap certificate-shaped summaries license calibrated behavior in a
+      real reader?</p>
+      <div class="meta"><span class="label observed">Next · ~$5</span></div>
+    </div></div>
+
+    <div class="stage"><div class="k">Stage 2</div><div>
+      <p><b>Depth-calibrated basis compaction.</b> Measure each reader's inference depth
+      (the depth ladder), then compress to a minimal generating set under depth-d closure —
+      drop everything the reader provably re-derives.</p>
+      <div class="meta"><span class="label observed">Open · needs the depth ladder</span></div>
+    </div></div>
+
+    <div class="stage"><div class="k">Stage 3</div><div>
+      <p><b>The fixed point.</b> Length-clamped interest-rate rerun, then the head-to-head:
+      naive stack decays at ρ̄ ≈ 0.93; ledger runtime holds ρ̄ = 1.0 over 10+ rounds with Δ flat.
+      Rounds-to-half-witness becomes the benchmark.</p>
+      <div class="meta"><span class="label observed">Open</span></div>
+    </div></div>
+
+    <div class="stage"><div class="k">Stage 4</div><div>
+      <p><b>Real documents.</b> Semi-synthetic injection into natural prose — transcripts,
+      postmortems, PR threads. Gates every production claim on this page.</p>
+      <div class="meta"><span class="label refuted">The gate</span></div>
+    </div></div>
+
+    <div class="stage"><div class="k">Stage 5</div><div>
+      <p><b>The immortal agent.</b> A reader fine-tuned for calibrated debt acknowledgment —
+      the phenotype one model already exhibits natively, and exact theory prices at 0.47× to
+      build in versus ~38× to retrofit — running on the full runtime. An agent whose justified
+      accuracy does not decay with session length: infinite context, honestly defined.</p>
+      <div class="meta"><span class="label observed">The destination</span></div>
+    </div></div>
+
+    <p style="margin-top:2rem">The long-context arms race scales attention over raw tokens.
+    Retrieval offers answers without guarantees. This is the third road: a bounded working set
+    over unbounded verified ground, with a conservation law at the interface. The entire
+    compression pipeline of modern ML — every distilled model, every compacted context — may be
+    manufacturing debt that no current eval detects. That conjecture is this program's open
+    kill-shot, and the instruments to test it cost dollars, not clusters. The ledger is
+    open.</p>
+  </section>
+
+  </div><!-- /view-road -->
+
   <footer class="page">
     <span>theory · proofs · experiments: <a href="https://github.com/jack-chaudier/epistemic-debt">github.com/jack-chaudier/epistemic-debt</a></span>
     <!-- UPDATE: bump the date when findings change. -->
@@ -488,5 +777,26 @@
   </footer>
 
 </main>
+<script>
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tabs a'));
+  var views = {
+    ledger: document.getElementById('view-ledger'),
+    road: document.getElementById('view-road')
+  };
+  function sync() {
+    var v = location.hash === '#road' ? 'road' : 'ledger';
+    for (var k in views) views[k].hidden = (k !== v);
+    tabs.forEach(function (t) {
+      var active = t.getAttribute('data-view') === v;
+      t.classList.toggle('active', active);
+      if (active) t.setAttribute('aria-current', 'page');
+      else t.removeAttribute('aria-current');
+    });
+  }
+  window.addEventListener('hashchange', function () { sync(); window.scrollTo(0, 0); });
+  sync();
+})();
+</script>
 </body>
 </html>

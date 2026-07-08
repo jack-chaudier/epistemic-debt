@@ -16,6 +16,7 @@ Research repo: exact theory + LLM experiments on the answer/justification gap un
 - New exact verification → `proofs/` (stdlib-only, self-contained, exit code 0 iff verified) + a regression test in `tests/`.
 - Every finding → one row in `results/RESULTS.md` with status label and artifact link; substantive interpretation → an appendix in the theory doc.
 - README-changing findings → also the public splash page `site/index.html` (program name: **Epistemic Debt**; self-contained HTML, no build step). It is communication, not evidence — claims live in `results/RESULTS.md`; the page must never carry a stronger label than the ledger does. Update it when a result changes what the page claims: copy an `<article class="finding">` block (spots are marked with `UPDATE` comments), keep the evidence-label chip honest, refresh the numbers strip (results count / vendors / calls / spend from `README.md`) and the footer date. Deploys to Vercel from root dir `site/` — see `site/README.md`.
+- The splash page has two hash-routed views: **The Ledger** (findings, default) and **The Road to Infinite Context** (`#road`). The road tab is prospectus: its mechanisms cite evidence rows, its stages carry plans. When a road stage completes, update its status chip and cite the new RESULTS.md row; never present an unproven stage as a result. The road's build track lives in `NEXT.md` ("Infinite-context build track").
 
 ## Workflow
 

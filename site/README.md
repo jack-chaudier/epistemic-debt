@@ -1,6 +1,9 @@
 # site/ — splash page
 
 Single self-contained `index.html` (no build step, no dependencies, light/dark themes).
+Two views, hash-routed: **The Ledger** (findings, default) and **The Road to Infinite
+Context** (`#road` — prospectus; mechanisms cite evidence, stages carry plans, and it must
+never present an unproven stage as a result).
 
 ## Updating
 
