@@ -252,10 +252,10 @@
 
   <div class="strip" aria-label="Program at a glance">
     <!-- UPDATE: these four numbers track README.md's results table and spend line. -->
-    <div><b>30</b><span>recorded results</span></div>
+    <div><b>32</b><span>recorded results</span></div>
     <div><b>4</b><span>model vendors</span></div>
-    <div><b>39,263</b><span>API calls</span></div>
-    <div><b>$15.82</b><span>total spend</span></div>
+    <div><b>44,693</b><span>API calls</span></div>
+    <div><b>$17.85</b><span>total spend</span></div>
   </div>
 
   <hr class="double-rule">
@@ -365,6 +365,20 @@
          block. Labels: exact | prereg | refuted | observed.
          Keep newest-or-strongest first; full ledger is results/RESULTS.md.
          ============================================================ -->
+
+    <article class="finding">
+      <h3>On real documents, compressed "answers" are vibes — and accuracy hides it.</h3>
+      <p>On genuine NTSB accident narratives with policy values woven into the prose, blind
+      compaction dropped every witness and the surviving verdict was a content-free
+      crash→deny reflex: decision accuracy on APPROVED documents was
+      <span class="stat">0.00</span> for both models while DENIED-side accuracy looked fine
+      (0.87–1.00). Justified accuracy exposed the failure instantly
+      (<span class="stat">J = 0.00–0.07</span>); the fusion register recovered it to
+      <span class="stat">0.67–0.77</span>. The external-validity gate is passed — and on real
+      prose the disease is worse than the synthetic labs showed.</p>
+      <div class="meta"><span class="label prereg">Preregistered · 4/4 both models</span>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/realdoc">realdoc</a></div>
+    </article>
 
     <article class="finding">
       <h3>Answers survive compression; reasons don't.</h3>
@@ -562,14 +576,16 @@
     exchange rate. Certificates are strictly cheaper than full witnesses. Honesty costs 0.47×
     designed-in, ~38× retrofitted. <em>Exact — exhaustive finite search.</em></p></div>
   <div class="law"><div class="k">Demonstrated</div>
-    <p>The debt is real in frontier models — four vendors, N=400, six schemas. It is
-    deterministically accountable (ledger recall 1.00), repayable (re-expansion 30/30
-    end-to-end), and its decay rate is measured (ρ̄ ≈ 0.93/round).
-    <em>Preregistered, small corpora.</em></p></div>
+    <p>The debt is real in frontier models — four vendors, N=400, six schemas, and now
+    <em>real documents</em>: on NTSB accident narratives the failure sharpens into
+    answers-by-vibes that accuracy metrics conceal. It is deterministically accountable
+    (ledger recall 1.00), repayable (re-expansion 30/30), its decay rate is measured
+    (ρ̄ ≈ 0.93/round), and the fusion register recovers most justification on real prose.
+    <em>Preregistered.</em></p></div>
   <div class="law"><div class="k">Promised</div>
     <p>The assembled runtime; the fixed point ρ̄ = 1.0; the agent that never silently forgets.
-    <em>No evidence yet — that is what the road is for, and the real-document gate decides
-    it.</em></p></div>
+    <em>No evidence yet — that is what the road is for. The real-document gate is passed with
+    a caveat; production transcripts and long-document budgets remain open.</em></p></div>
 
   <hr class="double-rule">
 
@@ -724,11 +740,12 @@
     </div></div>
 
     <div class="stage"><div class="k">Stage 1</div><div>
-      <p><b>Certificate-compaction pilot.</b> Compact to claim + certificate + pointer instead
-      of raw values; preregister justified accuracy and Δ against value-dense compaction at
-      matched budget. Do cheap certificate-shaped summaries license calibrated behavior in a
-      real reader?</p>
-      <div class="meta"><span class="label observed">Next · ~$5</span></div>
+      <p><b>Certificate-compaction pilot.</b> Run: certificates deliver the best justified
+      accuracy of any format (0.96–0.98, gap-free) and beat blind value-dense at half the
+      words — but a policy-aware value-dense writer is terser still, and certifying
+      <em>approval</em> (no single deciding value) breaks calibration on two of three models.
+      The quotient transfers partially; the decision risk concentrates at the writer.</p>
+      <div class="meta"><span class="label prereg">Done · split verdict</span></div>
     </div></div>
 
     <div class="stage"><div class="k">Stage 2</div><div>
@@ -746,9 +763,13 @@
     </div></div>
 
     <div class="stage"><div class="k">Stage 4</div><div>
-      <p><b>Real documents.</b> Semi-synthetic injection into natural prose — transcripts,
-      postmortems, PR threads. Gates every production claim on this page.</p>
-      <div class="meta"><span class="label refuted">The gate</span></div>
+      <p><b>Real documents.</b> First passage run on genuine NTSB accident narratives: the
+      dissociation survives real prose and <em>sharpens</em> — blind compaction keeps narrative
+      valence instead of content (APPROVED-side accuracy 0.00), and fusion recovers most of the
+      justification. The gate is passed with a load-bearing caveat: on real documents the
+      failure is unreliable answers, not just missing reasons. Long-document budgets and
+      production transcripts remain open.</p>
+      <div class="meta"><span class="label prereg">Passed with caveat</span></div>
     </div></div>
 
     <div class="stage"><div class="k">Stage 5</div><div>
