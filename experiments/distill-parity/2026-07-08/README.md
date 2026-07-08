@@ -47,11 +47,12 @@ Pod stopped (not deleted) at the STOP boundary; volume + HF cache persist for re
 - Observation (not a claim): demanding fused justification degrades the teacher's DENIED
   verdict accuracy by 0.36 — justification-interference in the teacher itself.
 
-## Step-0 note (pre-existing pod)
+## Step-0 note (pre-existing pod) — RESOLVED
 
-Pod `8huucke042ftjo` (EXITED, 200GB volume, created 2026-07-08) could not be started for
-inspection — RunPod host reports no free GPUs (two attempts). Not deleted uninspected; retry at
-each session boundary.
+Pod `8huucke042ftjo` (EXITED, 200GB volume) was never startable for inspection (host full,
+4 attempts over ~2.5h) and disappeared from the account at ~23:15 UTC — deleted outside this
+session (console). Repo evidence indicated the volume held only uploads reproducible from the
+repo (no committed remote adapter, no completed remote training log). Nothing retrieved.
 
 ## Revision-1 resolution (2026-07-08, ~22:30 UTC)
 
