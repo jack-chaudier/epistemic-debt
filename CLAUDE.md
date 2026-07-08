@@ -15,6 +15,7 @@ Research repo: exact theory + LLM experiments on the answer/justification gap un
 - New experiment campaign → `experiments/<name>/<date>/`; protocol iterations as `v1/, v2/ ...` each with `runner*.py`, `items.jsonl`, `responses_raw.jsonl`, `scored.csv`, a short `README.md` (design, confounds found, verdict), and `*_results.json` for confirmatory runs.
 - New exact verification → `proofs/` (stdlib-only, self-contained, exit code 0 iff verified) + a regression test in `tests/`.
 - Every finding → one row in `results/RESULTS.md` with status label and artifact link; substantive interpretation → an appendix in the theory doc.
+- README-changing findings → also the public splash page `site/index.html` (program name: **Epistemic Debt**; self-contained HTML, no build step). It is communication, not evidence — claims live in `results/RESULTS.md`; the page must never carry a stronger label than the ledger does. Update it when a result changes what the page claims: copy an `<article class="finding">` block (spots are marked with `UPDATE` comments), keep the evidence-label chip honest, refresh the numbers strip (results count / vendors / calls / spend from `README.md`) and the footer date. Deploys to Vercel from root dir `site/` — see `site/README.md`.
 
 ## Workflow
 

@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epistemic Debt — a resource theory of being right for reasons</title>
+<meta name="description" content="Under memory pressure, systems keep correct answers after losing the reasons for them. Exact theory, falsifiable laws, and preregistered LLM experiments.">
+<style>
+  :root {
+    --paper: #FCFBF8;
+    --ink: #1D1F23;
+    --muted: #6B675F;
+    --rule: #DAD6CC;
+    --accent: #A3212E;      /* debt — the justification channel */
+    --answer: #1F63A8;      /* the answer channel */
+    --ok: #3D6B4F;
+    --card: #F6F4EE;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, Georgia, serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #15171B; --ink: #E6E3DC; --muted: #9B968B; --rule: #35383F;
+      --accent: #E05C64; --answer: #5292CC; --ok: #7FB593; --card: #1C1F24;
+    }
+  }
+  :root[data-theme="light"] {
+    --paper: #FCFBF8; --ink: #1D1F23; --muted: #6B675F; --rule: #DAD6CC;
+    --accent: #A3212E; --answer: #1F63A8; --ok: #3D6B4F; --card: #F6F4EE;
+  }
+  :root[data-theme="dark"] {
+    --paper: #15171B; --ink: #E6E3DC; --muted: #9B968B; --rule: #35383F;
+    --accent: #E05C64; --answer: #5292CC; --ok: #7FB593; --card: #1C1F24;
+  }
+
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0;
+    font-family: var(--serif);
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+    font-size: 1.0625rem;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 4rem 1.25rem 5rem; }
+
+  /* ---- ledger double rule ---- */
+  .double-rule { border: 0; border-top: 1px solid var(--ink); height: 3px; border-bottom: 1px solid var(--ink); margin: 3rem 0 2.5rem; opacity: .85; }
+
+  /* ---- title block ---- */
+  .eyebrow {
+    font-family: var(--mono); font-size: .6875rem; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted); margin: 0 0 1.25rem;
+    display: flex; flex-wrap: wrap; gap: .5rem 1.5rem;
+  }
+  h1 {
+    font-size: clamp(2.1rem, 6vw, 3rem); line-height: 1.12; font-weight: 600;
+    letter-spacing: -0.015em; margin: 0 0 .75rem; text-wrap: balance;
+  }
+  .subtitle { font-size: 1.25rem; font-style: italic; color: var(--muted); margin: 0 0 2rem; text-wrap: balance; }
+
+  .abstract {
+    border-left: 2px solid var(--accent); padding: .25rem 0 .25rem 1.25rem; margin: 0 0 1rem;
+  }
+  .abstract p { margin: 0 0 .75rem; }
+  .abstract p:last-child { margin-bottom: 0; }
+  .abstract .lede::first-letter { color: var(--accent); }
+
+  /* ---- numbers strip ---- */
+  .strip {
+    display: flex; flex-wrap: wrap; gap: 1.75rem 2.5rem; margin: 2rem 0 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .strip div { display: flex; flex-direction: column; gap: .1rem; }
+  .strip b { font-size: 1.4rem; font-weight: 600; letter-spacing: -.01em; }
+  .strip span { font-family: var(--mono); font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+
+  /* ---- sections ---- */
+  h2 { font-size: 1.5rem; font-weight: 600; margin: 0 0 1.25rem; letter-spacing: -.01em; text-wrap: balance; }
+  h2 .no { color: var(--accent); font-variant-numeric: tabular-nums; margin-right: .5rem; }
+  section p { margin: 0 0 1rem; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2.5px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  blockquote {
+    margin: 2rem 0; padding: 0; border: 0;
+    font-size: 1.35rem; line-height: 1.45; font-style: italic; text-wrap: balance;
+  }
+  blockquote footer { font-size: .8125rem; font-style: normal; font-family: var(--mono); color: var(--muted); margin-top: .6rem; }
+  blockquote footer::before { content: "— "; }
+
+  .act { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1.25rem; margin-bottom: 1.5rem; }
+  .act .k { font-family: var(--mono); font-size: .6875rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding-top: .45rem; }
+  @media (max-width: 34rem) { .act { grid-template-columns: 1fr; gap: .25rem; } }
+
+  /* ---- lineage strip ---- */
+  .lineage {
+    display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .65rem;
+    font-family: var(--mono); font-size: .75rem; margin: 2rem 0 .5rem;
+  }
+  .lineage span { background: var(--card); border: 1px solid var(--rule); border-radius: 2px; padding: .3rem .6rem; white-space: nowrap; }
+  .lineage span b { font-weight: 600; }
+  .lineage span i { color: var(--muted); font-style: normal; }
+  .lineage .arrow { background: none; border: 0; padding: 0; color: var(--muted); }
+  .lineage .here { border-color: var(--accent); color: var(--accent); }
+
+  /* ---- figures ---- */
+  figure { margin: 2rem 0; }
+  figure svg { width: 100%; height: auto; display: block; }
+  figcaption { font-family: var(--mono); font-size: .71875rem; color: var(--muted); margin-top: .6rem; line-height: 1.6; }
+  figcaption b { color: var(--ink); font-weight: 600; }
+  .chart-grid   { stroke: var(--rule); stroke-width: 1; }
+  .chart-base   { stroke: var(--muted); stroke-width: 1; }
+  .chart-tick   { font-family: var(--mono); font-size: 10.5px; fill: var(--muted); }
+  .chart-axis   { font-family: var(--mono); font-size: 10.5px; fill: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+  .chart-note   { font-family: var(--serif); font-style: italic; font-size: 15px; fill: var(--accent); }
+  .s-answer     { stroke: var(--answer); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .s-debt       { stroke: var(--accent); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .dot-answer   { fill: var(--answer); stroke: var(--paper); stroke-width: 2; }
+  .dot-debt     { fill: var(--accent); stroke: var(--paper); stroke-width: 2; }
+  .lbl-answer   { font-family: var(--mono); font-size: 11px; fill: var(--answer); }
+  .lbl-debt     { font-family: var(--mono); font-size: 11px; fill: var(--accent); }
+  .gap-fill     { fill: var(--accent); opacity: .07; }
+
+  /* ---- findings ledger ---- */
+  .finding {
+    padding: 1.4rem 0 1.5rem; border-top: 1px solid var(--rule);
+  }
+  .finding:last-of-type { border-bottom: 1px solid var(--rule); }
+  .finding h3 { font-size: 1.125rem; font-weight: 600; margin: 0 0 .5rem; letter-spacing: -.005em; text-wrap: balance; }
+  .finding p { margin: 0 0 .6rem; }
+  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin-top: .35rem; }
+  .label {
+    font-family: var(--mono); font-size: .625rem; letter-spacing: .1em; text-transform: uppercase;
+    padding: .18rem .5rem; border-radius: 2px; white-space: nowrap;
+  }
+  .label.exact       { background: var(--ink); color: var(--paper); }
+  .label.prereg      { background: var(--accent); color: var(--paper); }
+  .label.refuted     { background: transparent; color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+  .label.observed    { background: transparent; color: var(--muted); box-shadow: inset 0 0 0 1px var(--muted); }
+  .meta a { font-family: var(--mono); font-size: .75rem; }
+  .stat { font-family: var(--mono); font-size: .9375rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+
+  /* ---- laws ---- */
+  .law { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1.25rem; padding: 1.1rem 0; border-top: 1px solid var(--rule); }
+  .law:last-of-type { border-bottom: 1px solid var(--rule); }
+  .law .k { font-family: var(--mono); font-size: .75rem; color: var(--accent); padding-top: .3rem; white-space: nowrap; }
+  .law p { margin: 0; }
+  .law b { font-weight: 600; }
+  @media (max-width: 34rem) { .law { grid-template-columns: 1fr; gap: .2rem; } }
+
+  /* ---- method card ---- */
+  .method {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 3px;
+    padding: 1.4rem 1.5rem; margin-top: .5rem;
+  }
+  .method p { margin: 0 0 .8rem; }
+  .method p:last-child { margin-bottom: 0; }
+  .legend { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+
+  footer.page {
+    margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+    font-family: var(--mono); font-size: .75rem; color: var(--muted);
+    display: flex; flex-wrap: wrap; gap: .5rem 2rem; justify-content: space-between;
+  }
+  footer.page a { color: var(--muted); }
+
+  code { font-family: var(--mono); font-size: .875em; background: var(--card); padding: .1em .35em; border-radius: 3px; }
+  @media (prefers-reduced-motion: no-preference) {
+    a { transition: text-decoration-thickness 120ms ease; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <p class="eyebrow">
+    <span>Research program</span>
+    <span>2026 · ongoing</span>
+    <span>jack-chaudier / justification-gap</span>
+  </p>
+
+  <h1>Epistemic Debt</h1>
+  <p class="subtitle">A resource theory of being right for reasons.</p>
+
+  <div class="abstract">
+    <p class="lede">Under memory pressure, systems keep correct answers after losing the reasons
+    for them. The answers survive compression; the justifications don't. The difference is
+    <em>epistemic debt</em>: it accumulates silently, pays interest, and comes due exactly when
+    conditions change. This program makes the debt exact — as laws with computable prices,
+    verified by exhaustive finite search — and tests it with preregistered experiments on
+    frontier language models.</p>
+    <p>The practical edge: every leaderboard measures whether the answer is right; none measures
+    whether the reason survived. The <em>justification gap</em>, Δ&nbsp;=&nbsp;accuracy&nbsp;−&nbsp;justified
+    accuracy, is measurable today with no access to model internals.</p>
+  </div>
+
+  <div class="strip" aria-label="Program at a glance">
+    <!-- UPDATE: these four numbers track README.md's results table and spend line. -->
+    <div><b>29</b><span>recorded results</span></div>
+    <div><b>4</b><span>model vendors</span></div>
+    <div><b>35,753</b><span>API calls</span></div>
+    <div><b>$14.18</b><span>total spend</span></div>
+  </div>
+
+  <hr class="double-rule">
+
+  <section>
+    <h2><span class="no">1</span>Where this came from</h2>
+
+    <p>None of this began as an alignment project. It began as a <em>narrative engine</em>.</p>
+
+    <div class="act">
+      <div class="k">Act I<br>the engine</div>
+      <div>
+        <p>NarrativeField was a simulation-first storytelling engine: a deterministic
+        multi-agent world in which six characters with secrets, debts, and conflicting goals
+        collide over a dinner party. The simulation was the ground truth; prose was a downstream
+        projection. The engine kept ledgers of belief — what the world knows, what each
+        character believes, what the reader has been shown — and a sibling build stated the
+        design thesis outright:</p>
+        <blockquote>
+          A story is not a stream of text. It is a graph of debts.
+          <footer>The Narrative Architect, project brief</footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="k">Act II<br>the failure</div>
+      <div>
+        <p>Watching the characters interact exposed the crack. Across 3,250+ simulation runs the
+        story-extraction step kept failing in ways that looked random but weren't: the output
+        stayed fluent, coherent, and structurally valid while the <em>specific fact an outcome
+        hinged on</em> quietly changed. Characters carried conclusions forward after the beliefs
+        that justified them had decayed out of the persistent canon. Formalized, this became the
+        <a href="https://github.com/jack-chaudier/mirage">validity mirage</a>: across five models,
+        validity scores held above 0.83 while pivot preservation fell to 0.42 — and on real NTSB
+        incident reports, naive compression silently shifted root-cause attribution in 57% of
+        trials.</p>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="k">Act III<br>the theory</div>
+      <div>
+        <p>The question underneath was sharp enough to make exact: <em>when a system runs low on
+        memory, can it still know why it's right — or only that it's right?</em>
+        <a href="https://github.com/jack-chaudier/stark">Stark</a> answered by exhaustive finite
+        search: memory is a tower of quotients, and there is a measurable zone — the
+        <em>mirage shelf</em> — where a system remains right after losing the ability to say why.
+        A bridge experiment showed frontier models walking onto that shelf as context grows
+        (answer accuracy nearly flat while witness fidelity falls 0.79&nbsp;→&nbsp;0.55). This
+        program is the consolidation: the laws, their prices, and the preregistered experiments
+        that test them.</p>
+      </div>
+    </div>
+
+    <div class="lineage" aria-label="Program lineage">
+      <span><b>NarrativeField</b> <i>story engine</i></span>
+      <span class="arrow">→</span>
+      <span><b>mirage</b> <i>the failure, formalized</i></span>
+      <span class="arrow">→</span>
+      <span><b>stark</b> <i>exact theory</i></span>
+      <span class="arrow">→</span>
+      <span class="here"><b>epistemic debt</b> <i>laws + experiments</i></span>
+    </div>
+  </section>
+
+  <hr class="double-rule">
+
+  <section>
+    <h2><span class="no">2</span>Headline findings</h2>
+
+    <figure role="img" aria-label="Line chart: as the compressed summary budget shrinks and grows, answer accuracy stays near ceiling from about 5 words, while justification accuracy follows a logistic curve with midpoint near 30 words. The shaded region between the curves is the justification gap.">
+      <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
+        <!-- grid -->
+        <line class="chart-grid" x1="46" y1="26"  x2="544" y2="26"/>
+        <line class="chart-grid" x1="46" y1="140" x2="544" y2="140"/>
+        <line class="chart-base" x1="46" y1="254" x2="544" y2="254"/>
+        <text class="chart-tick" x="38" y="29"  text-anchor="end">1.0</text>
+        <text class="chart-tick" x="38" y="143" text-anchor="end">0.5</text>
+        <text class="chart-tick" x="38" y="257" text-anchor="end">0</text>
+        <text class="chart-tick" x="75"  y="271" text-anchor="middle">5</text>
+        <text class="chart-tick" x="163" y="271" text-anchor="middle">20</text>
+        <text class="chart-tick" x="280" y="271" text-anchor="middle">40</text>
+        <text class="chart-tick" x="398" y="271" text-anchor="middle">60</text>
+        <text class="chart-tick" x="515" y="271" text-anchor="middle">80</text>
+        <text class="chart-axis" x="295" y="292" text-anchor="middle">summary budget (realized words)</text>
+        <!-- the gap -->
+        <path class="gap-fill" d="M75.3 240.3 L104.6 231.2 L133.9 217.5 L163.2 197 L192.5 171.9 L221.8 140 L280.4 92.1 L339 64.8 L397.5 51.1 L456.1 44.2 L514.7 42 L514.7 29.4 L397.5 30.6 L280.4 30.6 L221.8 32.8 L163.2 31.7 L104.6 32.8 L75.3 36.2 Z"/>
+        <text class="chart-note" x="150" y="112">the justification gap</text>
+        <!-- answers (blue) -->
+        <path class="s-answer" d="M75.3 36.2 L104.6 32.8 L163.2 31.7 L221.8 32.8 L280.4 30.6 L397.5 30.6 L514.7 29.4"/>
+        <circle class="dot-answer" cx="514.7" cy="29.4" r="4"/>
+        <text class="lbl-answer" x="508" y="19" text-anchor="end">answer accuracy</text>
+        <!-- justification (red) -->
+        <path class="s-debt" d="M75.3 240.3 L104.6 231.2 L133.9 217.5 L163.2 197 L192.5 171.9 L221.8 140 L280.4 92.1 L339 64.8 L397.5 51.1 L456.1 44.2 L514.7 42"/>
+        <circle class="dot-debt" cx="514.7" cy="42" r="4"/>
+        <text class="lbl-debt" x="508" y="62" text-anchor="end">justified accuracy</text>
+      </svg>
+      <figcaption><b>Fig. 1 — Answers hold, reasons collapse.</b> Stylized from the measured
+      exchange-rate curve: the answer channel is flat at ceiling from ~5 words while the reason
+      channel is logistic with midpoint ≈30 realized words (preregistered, README row 17). The
+      shaded region is the debt.</figcaption>
+    </figure>
+
+    <!-- ============================================================
+         UPDATE HERE: to add a finding, copy one <article class="finding">
+         block. Labels: exact | prereg | refuted | observed.
+         Keep newest-or-strongest first; full ledger is results/RESULTS.md.
+         ============================================================ -->
+
+    <article class="finding">
+      <h3>Answers survive compression; reasons don't.</h3>
+      <p>After lossy summarization, models still deliver the correct verdict while naming the
+      value that justifies it collapses below guessing — <span class="stat">0.93 vs 0.07</span>
+      within the same items. Replicated across four vendor families, at N=400 with ±0.05
+      confidence intervals, and across six document schemas.</p>
+      <div class="meta"><span class="label prereg">Preregistered</span>
+        <a href="https://github.com/jack-chaudier/justification-gap/tree/main/experiments/highpower">highpower</a>
+        <a href="https://github.com/jack-chaudier/justification-gap/tree/main/experiments/domains">domains</a></div>
+    </article>
+
+    <article class="finding">
+      <h3>Debt is set by the compactor, and no reader can buy it back.</h3>
+      <p>In all nine compressor×reader pairings, no model recovers a witness another model's
+      compression destroyed (<span class="stat">≤ 0.107 lost vs ≥ 0.909 retained</span>) — including
+      reasoning models given inference-time compute. Compaction is where justification dies;
+      audit the compactor, not the answerer.</p>
+      <div class="meta"><span class="label prereg">Preregistered</span>
+        <a href="https://github.com/jack-chaudier/justification-gap/tree/main/experiments/multimodel/2026-07-03/transfer">transfer grid</a></div>
+    </article>
+
+    <article class="finding">
+      <h3>Honesty is cheap to build in and ~38× more expensive to retrofit.</h3>
+      <p>Exact computation on finite models: adding calibrated abstention to answer-optimized
+      memory costs up to <span class="stat">38.4×</span> the debt it removes; memory designed for
+      honesty from the start costs <span class="stat">0.47×</span>. Faithfulness must be trained
+      in, not bolted on.</p>
+      <div class="meta"><span class="label exact">Exact</span>
+        <a href="https://github.com/jack-chaudier/justification-gap/blob/main/proofs/honesty_tax.py">honesty_tax.py</a>
+        <a href="https://github.com/jack-chaudier/justification-gap/blob/main/proofs/honesty_premium.py">honesty_premium.py</a></div>
+    </article>
+
+    <article class="finding">
+      <h3>Compaction pays interest: ~7% of witnesses lost per round while verdicts hold.</h3>
+      <p>Iterating compaction at a fixed budget decays witness survival geometrically with a
+      stable per-round ratio <span class="stat">ρ̄ ≈ 0.93</span> on two of three models, while
+      decision accuracy stays flat — the gap between right and justified widens with every round.
+      The program's first dynamical constant.</p>
+
+      <figure role="img" aria-label="Line chart over four compaction rounds: verdict accuracy declines only slightly from 1.0 to about 0.93, while witness survival decays from 0.95 to 0.77. The shaded region between them widens each round.">
+        <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
+          <line class="chart-grid" x1="46" y1="26"  x2="544" y2="26"/>
+          <line class="chart-grid" x1="46" y1="140" x2="544" y2="140"/>
+          <line class="chart-base" x1="46" y1="254" x2="544" y2="254"/>
+          <text class="chart-tick" x="38" y="29"  text-anchor="end">1.0</text>
+          <text class="chart-tick" x="38" y="143" text-anchor="end">0.75</text>
+          <text class="chart-tick" x="38" y="257" text-anchor="end">0.5</text>
+          <text class="chart-tick" x="80"  y="271" text-anchor="middle">round 1</text>
+          <text class="chart-tick" x="224" y="271" text-anchor="middle">round 2</text>
+          <text class="chart-tick" x="368" y="271" text-anchor="middle">round 3</text>
+          <text class="chart-tick" x="512" y="271" text-anchor="middle">round 4</text>
+          <text class="chart-axis" x="295" y="292" text-anchor="middle">successive compactions, fixed 40-word budget</text>
+          <!-- widening gap -->
+          <path class="gap-fill" d="M80 48.8 L224 78.4 L368 106.3 L512 132.3 L512 60.2 L368 48.8 L224 37.4 L80 26 Z"/>
+          <!-- verdict (blue) -->
+          <path class="s-answer" d="M80 26 L224 37.4 L368 48.8 L512 60.2"/>
+          <circle class="dot-answer" cx="512" cy="60.2" r="4"/>
+          <text class="lbl-answer" x="506" y="52" text-anchor="end">verdict accuracy</text>
+          <!-- witness survival (red) -->
+          <path class="s-debt" d="M80 48.8 L224 78.4 L368 106.3 L512 132.3"/>
+          <circle class="dot-debt" cx="512" cy="132.3" r="4"/>
+          <text class="lbl-debt" x="506" y="152" text-anchor="end">witness survival</text>
+          <text class="chart-note" x="255" y="120">−7% per round (ρ̄ ≈ 0.93)</text>
+        </svg>
+        <figcaption><b>Fig. 2 — The debt compounds.</b> Iterated compaction, grok, fixed 40-word
+        budget: witness survival 0.95 → 0.77 at a stable ρ̄ = 0.931 per round while the verdict
+        holds (preregistered 2/3, README row 29; length-settling caveat disclosed, verdict points
+        interpolated between measured endpoints).</figcaption>
+      </figure>
+
+      <div class="meta"><span class="label prereg">Preregistered</span><span class="label observed">2/3 · caveat disclosed</span>
+        <a href="https://github.com/jack-chaudier/justification-gap/tree/main/experiments/iterated-compaction">iterated-compaction</a></div>
+    </article>
+
+    <article class="finding">
+      <h3>Lost justification predicts future failure.</h3>
+      <p>Change the policy after compression and re-query: accuracy is near-ceiling when the
+      newly-required value survived in the artifact and collapses when it didn't —
+      <span class="stat">0.98 vs 0.51</span> on the guard-passing subset. Debt is a brittleness
+      forecast, not a bookkeeping curiosity.</p>
+      <div class="meta"><span class="label prereg">Preregistered pilot</span>
+        <a href="https://github.com/jack-chaudier/justification-gap/tree/main/experiments/transfer-law">transfer-law</a></div>
+    </article>
+
+    <article class="finding">
+      <h3>Readers compute more than we predicted — our own law got refuted.</h3>
+      <p>The preregistered "retrieval and elimination only" hypothesis failed: all three models
+      deploy a one-step arithmetic recovery of a destroyed witness
+      (<span class="stat">0.65–0.98</span>, with the shortcut heuristic forced to zero by
+      construction). Read-time inference depth is real, model-specific, and now measurable.</p>
+      <div class="meta"><span class="label refuted">Refuted — sharper law recorded</span>
+        <a href="https://github.com/jack-chaudier/justification-gap/tree/main/experiments/reader-inference-boundary">reader-inference-boundary</a></div>
+    </article>
+
+    <article class="finding">
+      <h3>The debt is avoidable — the failure is an objective problem, not a wall.</h3>
+      <p>A one-line change to the compaction objective — spend the budget on names, numbers, and
+      units — lifts justified accuracy <span class="stat">17/30 → 25/30</span> at the same length,
+      and deterministic loss-ledger routing closes the rest (<span class="stat">30/30</span>
+      end-to-end on cached corpora). The failure mode is fixable; today nobody measures it.</p>
+      <div class="meta"><span class="label prereg">Preregistered</span><span class="label observed">routing: observed</span>
+        <a href="https://github.com/jack-chaudier/justification-gap/tree/main/experiments/witness-compaction">witness-compaction</a></div>
+    </article>
+
+  </section>
+
+  <hr class="double-rule">
+
+  <section>
+    <h2><span class="no">3</span>The laws under test</h2>
+
+    <div class="law"><div class="k">Law 1</div>
+      <p><b>Justification has no gradient.</b> Optimization pressure preserves answers and sheds
+      the reasons for them, because nothing in the loss ever asks for the reasons. Predicts —
+      and unifies — CoT-unfaithfulness, attribution drift, and citation fragility.</p></div>
+
+    <div class="law"><div class="k">Law 2</div>
+      <p><b>Epistemic debt is conserved, with prices.</b> Rate-1 conservation was refuted exactly;
+      what survives is an exchange rate — the honesty tax, the retrofit gap, and debt that is
+      artifact-borne: fixed by the compression, converted (not created) by the reader's output
+      policy.</p></div>
+
+    <div class="law"><div class="k">Law 3</div>
+      <p><b>Debt is brittleness.</b> Systems carrying hidden debt fail disproportionately when
+      conditions shift. Pilot confirmed the localization; the benchmark-parity kill-shot —
+      distilled students matching teachers on evals while carrying invisible debt — is the open
+      headline experiment.</p></div>
+
+    <div class="law"><div class="k">Theorem</div>
+      <p><b>Calibrated abstention costs as much memory as justification</b> — exactly verified for
+      exact-witness calibration on all checked finite models, with a genuinely cheaper
+      intermediate quotient discovered for certificate-level honesty. Confidence without
+      calibration is cheap precisely because it carries no witness obligation.</p></div>
+  </section>
+
+  <hr class="double-rule">
+
+  <section>
+    <h2><span class="no">4</span>Method</h2>
+    <div class="method">
+      <p>Confirmatory runs are preregistered — predictions and thresholds fixed in the run spec
+      before any API call — and every prediction is reported pass or fail, including the awkward
+      ones. Exact results are exhaustive finite-model computations, stdlib-only, exiting 0 iff
+      verified, pinned by regression tests. Three of the program's sharpest results are
+      preregistered <em>refutations</em> of its own conjectures.</p>
+      <p>Every claim in the ledger carries one of:</p>
+      <div class="legend">
+        <span class="label exact">Exact</span>
+        <span class="label prereg">Preregistered</span>
+        <span class="label refuted">Refuted</span>
+        <span class="label observed">Observed</span>
+        <span class="label observed">Conjecture</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page">
+    <span>theory · proofs · experiments: <a href="https://github.com/jack-chaudier/justification-gap">github.com/jack-chaudier/justification-gap</a></span>
+    <!-- UPDATE: bump the date when findings change. -->
+    <span>last updated 2026-07-08</span>
+  </footer>
+
+</main>
+</body>
+</html>
