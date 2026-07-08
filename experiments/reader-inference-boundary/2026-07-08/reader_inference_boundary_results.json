@@ -1,0 +1,299 @@
+{
+ "design": {
+  "n_per_class": 60,
+  "classes": [
+   "a",
+   "b",
+   "c",
+   "d"
+  ],
+  "disclosed_candidates": true,
+  "reader": "direct (no compressor)",
+  "predictions": {
+   "P-RIB-0_retrieval_control": "recovery(d) >= 0.85",
+   "P-RIB-1_elimination_works": "recovery(b) >= 0.75",
+   "P-RIB-2_arithmetic_fails": "recovery(c) <= 0.50",
+   "P-RIB-3_depth_boundary": "recovery(b)-recovery(c) >= 0.25 AND b.ci_lo > c.ci_hi",
+   "P-RIB-4_elimination_genuine": "recovery(a) <= 0.50 AND b.ci_lo > a.ci_hi",
+   "P-RIB-5_arithmetic_in_capacity": "direct_arith_accuracy >= 0.85"
+  }
+ },
+ "per_model": {
+  "gpt": {
+   "recovery": {
+    "a": {
+     "k": 15,
+     "n": 60,
+     "p": 0.25,
+     "ci": [
+      0.1578,
+      0.3723
+     ]
+    },
+    "b": {
+     "k": 60,
+     "n": 60,
+     "p": 1.0,
+     "ci": [
+      0.9398,
+      1.0
+     ]
+    },
+    "c": {
+     "k": 39,
+     "n": 60,
+     "p": 0.65,
+     "ci": [
+      0.5236,
+      0.7583
+     ]
+    },
+    "d": {
+     "k": 60,
+     "n": 60,
+     "p": 1.0,
+     "ci": [
+      0.9398,
+      1.0
+     ]
+    }
+   },
+   "direct_arith": {
+    "k": 56,
+    "n": 60,
+    "p": 0.9333,
+    "ci": [
+     0.8407,
+     0.9738
+    ]
+   },
+   "abstain_rate": {
+    "a": 0.9833,
+    "b": 0.0167,
+    "c": 0.0,
+    "d": 0.0
+   },
+   "unmatched": {},
+   "predictions": {
+    "P-RIB-0_retrieval_control": {
+     "value": 1.0,
+     "passed": true
+    },
+    "P-RIB-1_elimination_works": {
+     "value": 1.0,
+     "passed": true
+    },
+    "P-RIB-2_arithmetic_fails": {
+     "value": 0.65,
+     "passed": false
+    },
+    "P-RIB-3_depth_boundary": {
+     "gap": 0.35,
+     "ci_separated": true,
+     "passed": true
+    },
+    "P-RIB-4_elimination_genuine": {
+     "value_a": 0.25,
+     "ci_separated": true,
+     "passed": true
+    },
+    "P-RIB-5_arithmetic_in_capacity": {
+     "value": 0.9333,
+     "passed": true
+    }
+   },
+   "cost_usd": 0.0855
+  },
+  "grok": {
+   "recovery": {
+    "a": {
+     "k": 20,
+     "n": 60,
+     "p": 0.3333,
+     "ci": [
+      0.2273,
+      0.4594
+     ]
+    },
+    "b": {
+     "k": 51,
+     "n": 60,
+     "p": 0.85,
+     "ci": [
+      0.7389,
+      0.919
+     ]
+    },
+    "c": {
+     "k": 39,
+     "n": 60,
+     "p": 0.65,
+     "ci": [
+      0.5236,
+      0.7583
+     ]
+    },
+    "d": {
+     "k": 60,
+     "n": 60,
+     "p": 1.0,
+     "ci": [
+      0.9398,
+      1.0
+     ]
+    }
+   },
+   "direct_arith": {
+    "k": 53,
+    "n": 60,
+    "p": 0.8833,
+    "ci": [
+     0.7782,
+     0.9423
+    ]
+   },
+   "abstain_rate": {
+    "a": 1.0,
+    "b": 0.0333,
+    "c": 0.0,
+    "d": 0.0
+   },
+   "unmatched": {},
+   "predictions": {
+    "P-RIB-0_retrieval_control": {
+     "value": 1.0,
+     "passed": true
+    },
+    "P-RIB-1_elimination_works": {
+     "value": 0.85,
+     "passed": true
+    },
+    "P-RIB-2_arithmetic_fails": {
+     "value": 0.65,
+     "passed": false
+    },
+    "P-RIB-3_depth_boundary": {
+     "gap": 0.2,
+     "ci_separated": false,
+     "passed": false
+    },
+    "P-RIB-4_elimination_genuine": {
+     "value_a": 0.3333,
+     "ci_separated": true,
+     "passed": true
+    },
+    "P-RIB-5_arithmetic_in_capacity": {
+     "value": 0.8833,
+     "passed": true
+    }
+   },
+   "cost_usd": 0.0386
+  },
+  "haiku": {
+   "recovery": {
+    "a": {
+     "k": 12,
+     "n": 60,
+     "p": 0.2,
+     "ci": [
+      0.1183,
+      0.3178
+     ]
+    },
+    "b": {
+     "k": 58,
+     "n": 60,
+     "p": 0.9667,
+     "ci": [
+      0.8864,
+      0.9908
+     ]
+    },
+    "c": {
+     "k": 56,
+     "n": 60,
+     "p": 0.9333,
+     "ci": [
+      0.8407,
+      0.9738
+     ]
+    },
+    "d": {
+     "k": 60,
+     "n": 60,
+     "p": 1.0,
+     "ci": [
+      0.9398,
+      1.0
+     ]
+    }
+   },
+   "direct_arith": {
+    "k": 53,
+    "n": 60,
+    "p": 0.8833,
+    "ci": [
+     0.7782,
+     0.9423
+    ]
+   },
+   "abstain_rate": {
+    "a": 1.0,
+    "b": 0.5167,
+    "c": 0.0167,
+    "d": 0.0167
+   },
+   "unmatched": {
+    "a": 25
+   },
+   "predictions": {
+    "P-RIB-0_retrieval_control": {
+     "value": 1.0,
+     "passed": true
+    },
+    "P-RIB-1_elimination_works": {
+     "value": 0.9667,
+     "passed": true
+    },
+    "P-RIB-2_arithmetic_fails": {
+     "value": 0.9333,
+     "passed": false
+    },
+    "P-RIB-3_depth_boundary": {
+     "gap": 0.0334,
+     "ci_separated": false,
+     "passed": false
+    },
+    "P-RIB-4_elimination_genuine": {
+     "value_a": 0.2,
+     "ci_separated": true,
+     "passed": true
+    },
+    "P-RIB-5_arithmetic_in_capacity": {
+     "value": 0.8833,
+     "passed": true
+    }
+   },
+   "cost_usd": 0.5972
+  }
+ },
+ "verdict": {
+  "per_model_boundary_confirmed": {
+   "gpt": false,
+   "grok": false,
+   "haiku": false
+  },
+  "boundary_is_cross_model_constant": false,
+  "retrieval_reading_refuted_on": [
+   "gpt",
+   "grok",
+   "haiku"
+  ]
+ },
+ "cost_usd": {
+  "gpt": 0.0855,
+  "grok": 0.0386,
+  "haiku": 0.5972
+ },
+ "total_cost_usd": 0.7213
+}

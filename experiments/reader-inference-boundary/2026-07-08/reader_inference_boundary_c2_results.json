@@ -1,0 +1,71 @@
+{
+ "design": {
+  "n": 60,
+  "disclosed_candidates": true,
+  "note": "base-only leak forced to chance; see prereg_c2_confirmatory.md"
+ },
+ "per_model": {
+  "gpt": {
+   "recovery": {
+    "k": 44,
+    "n": 60,
+    "p": 0.7333,
+    "ci": [
+     0.6099,
+     0.8287
+    ]
+   },
+   "unmatched": 0,
+   "P_C2_1": true,
+   "P_C2_2": true,
+   "cost_usd": 0.0257
+  },
+  "grok": {
+   "recovery": {
+    "k": 39,
+    "n": 60,
+    "p": 0.65,
+    "ci": [
+     0.5236,
+     0.7583
+    ]
+   },
+   "unmatched": 0,
+   "P_C2_1": true,
+   "P_C2_2": true,
+   "cost_usd": 0.0076
+  },
+  "haiku": {
+   "recovery": {
+    "k": 59,
+    "n": 60,
+    "p": 0.9833,
+    "ci": [
+     0.9114,
+     0.9971
+    ]
+   },
+   "unmatched": 0,
+   "P_C2_1": true,
+   "P_C2_2": true,
+   "cost_usd": 0.1547
+  }
+ },
+ "base_only_leak": 0.0,
+ "P-C2-3_no_residual_base_leak": {
+  "value": 0.0,
+  "passed": true
+ },
+ "P-C2-1_recovery_survives": {
+  "models_passing": 3,
+  "criterion": ">=2 of 3",
+  "passed": true
+ },
+ "P-C2-2_above_guess_floor": {
+  "models_passing": 3,
+  "criterion": ">=2 of 3",
+  "passed": true
+ },
+ "verdict_retrieval_only_refuted": true,
+ "total_cost_usd": 0.188
+}
