@@ -48,12 +48,30 @@ ARM3_PER_DOMAIN = 30
 SPEC_BY_DOMAIN = {key: {p[0]: p for p in spec["params"]} for key, spec in D.DOMAINS.items()}
 
 
+def gen_domain(key, seed0, n):
+    """Chunked generation (<=250/chunk, the proven prior-campaign scale) with a deterministic
+    seed-retry rule: chunk k uses seed0 + 600000*k; a chunk whose rejection sampler fails is
+    skipped and k advances. Deterministic in (key, seed0, n); each chunk is verdict-balanced."""
+    items, k, got = [], 0, 0
+    while got < n:
+        m = min(250, n - got)
+        try:
+            batch = D.gen_items(key, seed=seed0 + 600000 * k, n=m)
+        except RuntimeError:
+            k += 1
+            continue
+        items.extend(batch)
+        got += m
+        k += 1
+    return items
+
+
 def gen_split(name, seed_base, n_per_domain):
     items = []
     for idx, key in enumerate(D.DOMAIN_KEYS):
-        batch = D.gen_items(key, seed=seed_base + idx, n=n_per_domain)
-        for it in batch:
-            it["id"] = f"{name}-{it['id']}"
+        batch = gen_domain(key, seed_base + idx, n_per_domain)
+        for j, it in enumerate(batch):
+            it["id"] = f"{name}-{key}-{j:04d}"
             it["split"] = name
         items.extend(batch)
     problems = D.selfcheck(items)
