@@ -1,0 +1,19 @@
+{
+ "DENIED": {
+  "n": 250,
+  "v_ok": 0.8,
+  "j_verdict_ok": 1.0,
+  "joint_survival": 0.796
+ },
+ "APPROVED": {
+  "n": 250,
+  "v_ok": 0.972,
+  "j_verdict_ok": 0.992,
+  "joint_survival": 0.952
+ },
+ "threshold": {
+  "metric": "DENIED joint_survival",
+  "value": 0.55,
+  "passed": true
+ }
+}
