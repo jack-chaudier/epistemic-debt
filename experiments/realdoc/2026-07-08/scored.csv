@@ -1,0 +1,241 @@
+model,arm,item,truth,failing,realized_words,fail_retained,policy_survival,decision,decision_correct,which,which_raw,which_correct,which_unmatched,incoherent,nn_decision
+haiku,control,aviation_airworthiness-000,APPROVED,,18,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,control,aviation_airworthiness-001,APPROVED,,26,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-002,DENIED,pitot heat current draw,15,False,0.0,,False,,,False,False,False,APPROVED
+haiku,control,aviation_airworthiness-003,APPROVED,,19,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-004,APPROVED,,16,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-005,APPROVED,,20,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,control,aviation_airworthiness-006,DENIED,brake wear pin projection,20,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,control,aviation_airworthiness-007,DENIED,engine oil temperature,22,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,control,aviation_airworthiness-008,DENIED,static system leak rate,21,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-009,DENIED,engine oil temperature,20,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,control,aviation_airworthiness-010,DENIED,fuel reserve at dispatch,18,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,control,aviation_airworthiness-011,APPROVED,,16,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-012,DENIED,fuel reserve at dispatch,16,False,0.0,,False,,,False,False,False,APPROVED
+haiku,control,aviation_airworthiness-013,APPROVED,,16,,0.0,DENIED,False,,,False,False,False,APPROVED
+haiku,control,aviation_airworthiness-014,DENIED,propeller blade track deviation,16,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,control,aviation_airworthiness-015,APPROVED,,13,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,control,aviation_airworthiness-016,APPROVED,,13,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-017,DENIED,magneto drop,17,False,0.0,DENIED,True,,,False,False,False,APPROVED
+haiku,control,aviation_airworthiness-018,DENIED,static system leak rate,13,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-019,APPROVED,,13,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-020,APPROVED,,24,,0.0,DENIED,False,,,False,False,False,DENIED
+haiku,control,aviation_airworthiness-021,DENIED,pitot heat current draw,23,False,0.0,DENIED,True,,,False,False,False,DENIED
+haiku,control,aviation_airworthiness-022,APPROVED,,26,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-023,DENIED,pitot heat current draw,20,False,0.0,DENIED,True,,,False,False,False,DENIED
+haiku,control,aviation_airworthiness-024,DENIED,nose strut extension,21,False,0.0,,False,,,False,False,False,APPROVED
+haiku,control,aviation_airworthiness-025,DENIED,aileron cable tension,25,False,0.0,DENIED,True,static system leak rate,Static system leak rate,False,False,False,APPROVED
+haiku,control,aviation_airworthiness-026,DENIED,propeller blade track deviation,34,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,control,aviation_airworthiness-027,APPROVED,,21,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-028,APPROVED,,28,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-029,APPROVED,,27,,0.0,,False,NONE,NONE,True,False,False,DENIED
+haiku,control,aviation_airworthiness-030,DENIED,propeller blade track deviation,20,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-031,DENIED,engine oil temperature,22,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-032,DENIED,nose strut extension,30,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-033,APPROVED,,24,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-034,DENIED,hydraulic system pressure,26,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,control,aviation_airworthiness-035,APPROVED,,15,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,control,aviation_airworthiness-036,APPROVED,,19,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-037,APPROVED,,17,,0.0,DENIED,False,brake wear pin projection,brake wear pin projection,False,False,False,DENIED
+haiku,control,aviation_airworthiness-038,APPROVED,,16,,0.0,,False,,,False,False,False,APPROVED
+haiku,control,aviation_airworthiness-039,DENIED,magneto drop,20,False,0.0,,False,,,False,False,False,APPROVED
+haiku,control,aviation_airworthiness-040,DENIED,magneto drop,22,False,0.0,DENIED,True,,,False,False,False,APPROVED
+haiku,control,aviation_airworthiness-041,APPROVED,,23,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-042,APPROVED,,29,,0.0,,False,,,False,False,False,DENIED
+haiku,control,aviation_airworthiness-043,DENIED,propeller blade track deviation,21,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,control,aviation_airworthiness-044,DENIED,nose strut extension,22,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,control,aviation_airworthiness-045,DENIED,engine oil temperature,25,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-046,APPROVED,,20,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,control,aviation_airworthiness-047,DENIED,propeller blade track deviation,23,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-048,APPROVED,,24,,0.0,DENIED,False,static system leak rate,static system leak,False,False,False,DENIED
+haiku,control,aviation_airworthiness-049,DENIED,nose strut extension,27,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-050,APPROVED,,18,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,control,aviation_airworthiness-051,APPROVED,,18,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,control,aviation_airworthiness-052,DENIED,brake wear pin projection,18,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-053,APPROVED,,18,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,control,aviation_airworthiness-054,APPROVED,,18,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,control,aviation_airworthiness-055,APPROVED,,20,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,control,aviation_airworthiness-056,DENIED,propeller blade track deviation,18,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-057,DENIED,magneto drop,22,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,control,aviation_airworthiness-058,DENIED,brake wear pin projection,19,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,control,aviation_airworthiness-059,APPROVED,,19,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,fusion,aviation_airworthiness-000,APPROVED,,50,,0.6666666666666666,DENIED,False,engine oil temperature,Engine oil temperature,False,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-001,APPROVED,,40,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-002,DENIED,pitot heat current draw,41,False,0.3333333333333333,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-003,APPROVED,,48,,0.6666666666666666,DENIED,False,nose strut extension,Nose strut extension,False,False,False,DENIED
+haiku,fusion,aviation_airworthiness-004,APPROVED,,51,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-005,APPROVED,,72,,0.6666666666666666,DENIED,False,nose strut extension,nose strut extension,False,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-006,DENIED,brake wear pin projection,47,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,fusion,aviation_airworthiness-007,DENIED,engine oil temperature,78,True,1.0,DENIED,True,engine oil temperature,Engine oil temperature,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-008,DENIED,static system leak rate,44,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-009,DENIED,engine oil temperature,61,True,1.0,DENIED,True,engine oil temperature,Engine oil temperature,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-010,DENIED,fuel reserve at dispatch,41,True,1.0,DENIED,True,fuel reserve at dispatch,Fuel reserve at dispatch,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-011,APPROVED,,34,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-012,DENIED,fuel reserve at dispatch,28,True,0.3333333333333333,DENIED,True,fuel reserve at dispatch,Fuel reserve,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-013,APPROVED,,47,,1.0,APPROVED,True,NONE,NONE,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-014,DENIED,propeller blade track deviation,41,True,1.0,DENIED,True,propeller blade track deviation,propeller blade track deviation,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-015,APPROVED,,30,,1.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-016,APPROVED,,53,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-017,DENIED,magneto drop,39,True,1.0,DENIED,True,magneto drop,Magneto drop,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-018,DENIED,static system leak rate,22,True,0.6666666666666666,DENIED,True,static system leak rate,Static system leak rate,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-019,APPROVED,,70,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-020,APPROVED,,39,,0.0,,False,NONE,NONE,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-021,DENIED,pitot heat current draw,52,True,0.6666666666666666,DENIED,True,pitot heat current draw,pitot heat current draw,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-022,APPROVED,,55,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-023,DENIED,pitot heat current draw,42,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,fusion,aviation_airworthiness-024,DENIED,nose strut extension,30,True,1.0,DENIED,True,nose strut extension,Nose strut extension,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-025,DENIED,aileron cable tension,49,True,1.0,DENIED,True,aileron cable tension,Aileron cable tension,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-026,DENIED,propeller blade track deviation,52,True,1.0,DENIED,True,propeller blade track deviation,Propeller blade track deviation,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-027,APPROVED,,29,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,fusion,aviation_airworthiness-028,APPROVED,,54,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-029,APPROVED,,40,,0.6666666666666666,DENIED,False,battery open-circuit voltage,Battery open-circuit voltage,False,False,False,DENIED
+haiku,fusion,aviation_airworthiness-030,DENIED,propeller blade track deviation,38,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-031,DENIED,engine oil temperature,41,True,0.3333333333333333,DENIED,True,engine oil temperature,Engine oil temperature,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-032,DENIED,nose strut extension,30,True,0.6666666666666666,DENIED,True,nose strut extension,nose strut extension,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-033,APPROVED,,23,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,fusion,aviation_airworthiness-034,DENIED,hydraulic system pressure,30,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,fusion,aviation_airworthiness-035,APPROVED,,31,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-036,APPROVED,,29,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,fusion,aviation_airworthiness-037,APPROVED,,31,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,fusion,aviation_airworthiness-038,APPROVED,,39,,0.6666666666666666,DENIED,False,magneto drop,magneto drop,False,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-039,DENIED,magneto drop,28,False,0.0,,False,NONE,NONE,False,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-040,DENIED,magneto drop,61,True,1.0,DENIED,True,magneto drop,Magneto drop,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-041,APPROVED,,39,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-042,APPROVED,,54,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-043,DENIED,propeller blade track deviation,35,True,0.6666666666666666,DENIED,True,propeller blade track deviation,propeller blade track deviation,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-044,DENIED,nose strut extension,27,True,0.6666666666666666,DENIED,True,nose strut extension,nose strut extension,True,False,False,DENIED
+haiku,fusion,aviation_airworthiness-045,DENIED,engine oil temperature,36,True,1.0,DENIED,True,engine oil temperature,engine oil temperature,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-046,APPROVED,,35,,0.6666666666666666,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,fusion,aviation_airworthiness-047,DENIED,propeller blade track deviation,35,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-048,APPROVED,,26,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,True,DENIED
+haiku,fusion,aviation_airworthiness-049,DENIED,nose strut extension,35,True,1.0,DENIED,True,nose strut extension,Nose strut extension,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-050,APPROVED,,29,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-051,APPROVED,,40,,1.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-052,DENIED,brake wear pin projection,34,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-053,APPROVED,,32,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-054,APPROVED,,30,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+haiku,fusion,aviation_airworthiness-055,APPROVED,,47,,0.6666666666666666,DENIED,False,aileron cable tension,Aileron cable tension,False,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-056,DENIED,propeller blade track deviation,35,True,0.3333333333333333,DENIED,True,propeller blade track deviation,Propeller blade track deviation,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-057,DENIED,magneto drop,47,True,0.6666666666666666,DENIED,True,magneto drop,Magneto drop,True,False,False,APPROVED
+haiku,fusion,aviation_airworthiness-058,DENIED,brake wear pin projection,49,False,0.3333333333333333,DENIED,True,NONE,NONE,False,False,True,DENIED
+haiku,fusion,aviation_airworthiness-059,APPROVED,,46,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-000,APPROVED,,18,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,control,aviation_airworthiness-001,APPROVED,,17,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-002,DENIED,pitot heat current draw,19,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+gpt,control,aviation_airworthiness-003,APPROVED,,16,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-004,APPROVED,,17,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,control,aviation_airworthiness-005,APPROVED,,18,,0.0,DENIED,False,NONE,NONE,True,False,True,
+gpt,control,aviation_airworthiness-006,DENIED,brake wear pin projection,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-007,DENIED,engine oil temperature,18,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-008,DENIED,static system leak rate,16,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-009,DENIED,engine oil temperature,18,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-010,DENIED,fuel reserve at dispatch,14,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-011,APPROVED,,15,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-012,DENIED,fuel reserve at dispatch,16,False,0.0,DENIED,True,fuel reserve at dispatch,fuel reserve,True,False,False,DENIED
+gpt,control,aviation_airworthiness-013,APPROVED,,15,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-014,DENIED,propeller blade track deviation,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-015,APPROVED,,15,,0.0,DENIED,False,battery open-circuit voltage,battery open-circuit voltage,False,False,False,DENIED
+gpt,control,aviation_airworthiness-016,APPROVED,,14,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-017,DENIED,magneto drop,14,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-018,DENIED,static system leak rate,14,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+gpt,control,aviation_airworthiness-019,APPROVED,,14,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-020,APPROVED,,16,,0.0,DENIED,False,brake wear pin projection,brake wear pin projection,False,False,False,APPROVED
+gpt,control,aviation_airworthiness-021,DENIED,pitot heat current draw,16,False,0.0,DENIED,True,measured crosswind component,crosswind component,False,False,False,DENIED
+gpt,control,aviation_airworthiness-022,APPROVED,,14,,0.0,DENIED,False,cylinder head temperature,cylinder head temperature,False,False,False,DENIED
+gpt,control,aviation_airworthiness-023,DENIED,pitot heat current draw,17,False,0.0,DENIED,True,main tire pressure,main tire pressure,False,False,False,DENIED
+gpt,control,aviation_airworthiness-024,DENIED,nose strut extension,16,False,0.0,DENIED,True,NONE,NONE,False,False,True,
+gpt,control,aviation_airworthiness-025,DENIED,aileron cable tension,15,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-026,DENIED,propeller blade track deviation,14,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-027,APPROVED,,15,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,control,aviation_airworthiness-028,APPROVED,,12,,0.0,DENIED,False,NONE,NONE,True,False,True,
+gpt,control,aviation_airworthiness-029,APPROVED,,15,,0.0,DENIED,False,nose strut extension,nose strut extension,False,False,False,DENIED
+gpt,control,aviation_airworthiness-030,DENIED,propeller blade track deviation,16,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-031,DENIED,engine oil temperature,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-032,DENIED,nose strut extension,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-033,APPROVED,,17,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,control,aviation_airworthiness-034,DENIED,hydraulic system pressure,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+gpt,control,aviation_airworthiness-035,APPROVED,,17,,0.0,DENIED,False,pitot heat current draw,pitot heat current draw,False,False,False,DENIED
+gpt,control,aviation_airworthiness-036,APPROVED,,16,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,control,aviation_airworthiness-037,APPROVED,,17,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-038,APPROVED,,16,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-039,DENIED,magneto drop,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-040,DENIED,magneto drop,15,False,0.0,DENIED,True,NONE,NONE,False,False,True,
+gpt,control,aviation_airworthiness-041,APPROVED,,15,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,control,aviation_airworthiness-042,APPROVED,,16,,0.0,DENIED,False,NONE,NONE,True,False,True,
+gpt,control,aviation_airworthiness-043,DENIED,propeller blade track deviation,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-044,DENIED,nose strut extension,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+gpt,control,aviation_airworthiness-045,DENIED,engine oil temperature,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+gpt,control,aviation_airworthiness-046,APPROVED,,16,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-047,DENIED,propeller blade track deviation,15,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+gpt,control,aviation_airworthiness-048,APPROVED,,16,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-049,DENIED,nose strut extension,17,True,0.6666666666666666,DENIED,True,nose strut extension,nose strut extension,True,False,False,DENIED
+gpt,control,aviation_airworthiness-050,APPROVED,,15,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,control,aviation_airworthiness-051,APPROVED,,15,,0.0,DENIED,False,battery open-circuit voltage,battery open-circuit voltage,False,False,False,DENIED
+gpt,control,aviation_airworthiness-052,DENIED,brake wear pin projection,14,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,control,aviation_airworthiness-053,APPROVED,,15,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,control,aviation_airworthiness-054,APPROVED,,15,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-055,APPROVED,,18,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,control,aviation_airworthiness-056,DENIED,propeller blade track deviation,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+gpt,control,aviation_airworthiness-057,DENIED,magneto drop,18,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+gpt,control,aviation_airworthiness-058,DENIED,brake wear pin projection,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+gpt,control,aviation_airworthiness-059,APPROVED,,18,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,fusion,aviation_airworthiness-000,APPROVED,,20,,0.6666666666666666,DENIED,False,engine oil temperature,engine oil temperature,False,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-001,APPROVED,,33,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-002,DENIED,pitot heat current draw,35,True,1.0,DENIED,True,pitot heat current draw,pitot heat current draw,True,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-003,APPROVED,,15,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,fusion,aviation_airworthiness-004,APPROVED,,49,,1.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,fusion,aviation_airworthiness-005,APPROVED,,20,,0.0,DENIED,False,NONE,NONE,True,False,True,
+gpt,fusion,aviation_airworthiness-006,DENIED,brake wear pin projection,57,True,0.6666666666666666,DENIED,True,brake wear pin projection,brake wear pin projection,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-007,DENIED,engine oil temperature,17,True,0.3333333333333333,DENIED,True,engine oil temperature,engine oil temperature,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-008,DENIED,static system leak rate,18,True,0.3333333333333333,DENIED,True,static system leak rate,static system leak rate,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-009,DENIED,engine oil temperature,33,True,1.0,DENIED,True,engine oil temperature,engine oil temperature,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-010,DENIED,fuel reserve at dispatch,17,True,1.0,DENIED,True,fuel reserve at dispatch,fuel reserve,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-011,APPROVED,,18,,0.6666666666666666,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,fusion,aviation_airworthiness-012,DENIED,fuel reserve at dispatch,27,True,1.0,DENIED,True,fuel reserve at dispatch,fuel reserve,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-013,APPROVED,,16,,0.6666666666666666,DENIED,False,pitot heat current draw,pitot heat current draw,False,False,False,DENIED
+gpt,fusion,aviation_airworthiness-014,DENIED,propeller blade track deviation,17,False,0.6666666666666666,DENIED,True,propeller blade track deviation,propeller blade track deviation,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-015,APPROVED,,14,,0.6666666666666666,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,fusion,aviation_airworthiness-016,APPROVED,,18,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-017,DENIED,magneto drop,24,True,1.0,DENIED,True,magneto drop,magneto drop,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-018,DENIED,static system leak rate,15,True,0.6666666666666666,DENIED,True,static system leak rate,static system leak rate,True,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-019,APPROVED,,14,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,fusion,aviation_airworthiness-020,APPROVED,,17,,1.0,APPROVED,True,NONE,NONE,True,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-021,DENIED,pitot heat current draw,17,True,1.0,DENIED,True,pitot heat current draw,pitot heat current draw,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-022,APPROVED,,18,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-023,DENIED,pitot heat current draw,22,True,1.0,DENIED,True,pitot heat current draw,pitot heat current draw,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-024,DENIED,nose strut extension,18,False,0.0,DENIED,True,NONE,NONE,False,False,True,
+gpt,fusion,aviation_airworthiness-025,DENIED,aileron cable tension,31,True,1.0,DENIED,True,aileron cable tension,aileron cable tension,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-026,DENIED,propeller blade track deviation,26,False,0.6666666666666666,APPROVED,False,propeller blade track deviation,propeller blade track deviation,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-027,APPROVED,,16,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-028,APPROVED,,28,,1.0,APPROVED,True,NONE,NONE,True,False,False,
+gpt,fusion,aviation_airworthiness-029,APPROVED,,25,,0.6666666666666666,DENIED,False,nose strut extension,nose strut extension,False,False,False,DENIED
+gpt,fusion,aviation_airworthiness-030,DENIED,propeller blade track deviation,16,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,fusion,aviation_airworthiness-031,DENIED,engine oil temperature,17,True,0.3333333333333333,DENIED,True,engine oil temperature,oil temperature,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-032,DENIED,nose strut extension,16,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,fusion,aviation_airworthiness-033,APPROVED,,18,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,fusion,aviation_airworthiness-034,DENIED,hydraulic system pressure,17,False,0.0,DENIED,True,NONE,NONE,False,False,True,APPROVED
+gpt,fusion,aviation_airworthiness-035,APPROVED,,17,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,fusion,aviation_airworthiness-036,APPROVED,,19,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,fusion,aviation_airworthiness-037,APPROVED,,16,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,fusion,aviation_airworthiness-038,APPROVED,,17,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,fusion,aviation_airworthiness-039,DENIED,magneto drop,34,False,0.6666666666666666,DENIED,True,magneto drop,magneto drop,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-040,DENIED,magneto drop,23,True,1.0,DENIED,True,magneto drop,magneto drop,True,False,False,
+gpt,fusion,aviation_airworthiness-041,APPROVED,,17,,0.6666666666666666,DENIED,False,aileron cable tension,aileron cable tension,False,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-042,APPROVED,,16,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,True,
+gpt,fusion,aviation_airworthiness-043,DENIED,propeller blade track deviation,23,True,1.0,DENIED,True,propeller blade track deviation,propeller blade track deviation,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-044,DENIED,nose strut extension,21,True,1.0,DENIED,True,nose strut extension,nose strut extension,True,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-045,DENIED,engine oil temperature,18,True,1.0,DENIED,True,engine oil temperature,engine oil temperature,True,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-046,APPROVED,,22,,1.0,APPROVED,True,NONE,NONE,True,False,False,DENIED
+gpt,fusion,aviation_airworthiness-047,DENIED,propeller blade track deviation,17,True,1.0,DENIED,True,propeller blade track deviation,propeller blade track deviation,True,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-048,APPROVED,,14,,0.6666666666666666,APPROVED,True,pitot heat current draw,pitot heat current draw,False,False,False,DENIED
+gpt,fusion,aviation_airworthiness-049,DENIED,nose strut extension,15,False,0.6666666666666666,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,fusion,aviation_airworthiness-050,APPROVED,,16,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,fusion,aviation_airworthiness-051,APPROVED,,15,,0.0,DENIED,False,battery open-circuit voltage,battery open-circuit voltage,False,False,False,DENIED
+gpt,fusion,aviation_airworthiness-052,DENIED,brake wear pin projection,14,False,0.0,DENIED,True,NONE,NONE,False,False,True,DENIED
+gpt,fusion,aviation_airworthiness-053,APPROVED,,14,,0.0,DENIED,False,NONE,NONE,True,False,True,APPROVED
+gpt,fusion,aviation_airworthiness-054,APPROVED,,17,,0.0,DENIED,False,NONE,NONE,True,False,True,DENIED
+gpt,fusion,aviation_airworthiness-055,APPROVED,,21,,0.6666666666666666,DENIED,False,aileron cable tension,aileron cable tension,False,False,False,DENIED
+gpt,fusion,aviation_airworthiness-056,DENIED,propeller blade track deviation,20,True,0.6666666666666666,DENIED,True,propeller blade track deviation,propeller blade track deviation,True,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-057,DENIED,magneto drop,34,True,1.0,DENIED,True,magneto drop,magneto drop,True,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-058,DENIED,brake wear pin projection,36,True,1.0,DENIED,True,brake wear pin projection,brake wear pin projection,True,False,False,APPROVED
+gpt,fusion,aviation_airworthiness-059,APPROVED,,18,,0.6666666666666666,DENIED,False,main tire pressure,main tire pressure,False,False,False,DENIED

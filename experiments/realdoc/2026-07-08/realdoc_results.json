@@ -1,0 +1,272 @@
+{
+ "design": {
+  "n_items": 60,
+  "domain": "aviation_airworthiness",
+  "budget": "fixed 15 words",
+  "candidates_disclosed": true,
+  "models": [
+   "haiku",
+   "gpt"
+  ],
+  "n_sources": 12
+ },
+ "per_model": {
+  "haiku": {
+   "control": {
+    "n": 60,
+    "n_denied": 30,
+    "n_lost": 30,
+    "n_kept": 0,
+    "n_approved": 30,
+    "realized_words": 20.5,
+    "decision_acc": 0.4333,
+    "decision_acc_A": 0.0,
+    "decision_acc_D": 0.8667,
+    "which_acc_D": 0.0,
+    "which_unmatched_D": 0,
+    "S": 0.0,
+    "J": 0.0,
+    "delta": 0.8667,
+    "incoherence_D": {
+     "k": 21,
+     "n": 30,
+     "p": 0.7,
+     "ci": [
+      0.5212,
+      0.8334
+     ]
+    },
+    "decision_lost": {
+     "k": 26,
+     "n": 30,
+     "p": 0.8667,
+     "ci": [
+      0.7032,
+      0.9469
+     ]
+    },
+    "which_lost": {
+     "k": 0,
+     "n": 30,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1135
+     ]
+    },
+    "nn_deny_rate_D": 0.4,
+    "nn_deny_rate_A": 0.6333
+   },
+   "fusion": {
+    "n": 60,
+    "n_denied": 30,
+    "n_lost": 10,
+    "n_kept": 20,
+    "n_approved": 30,
+    "realized_words": 41.18,
+    "decision_acc": 0.65,
+    "decision_acc_A": 0.3333,
+    "decision_acc_D": 0.9667,
+    "which_acc_D": 0.6667,
+    "which_unmatched_D": 0,
+    "S": 0.6667,
+    "J": 0.6667,
+    "delta": 0.3,
+    "incoherence_D": {
+     "k": 9,
+     "n": 30,
+     "p": 0.3,
+     "ci": [
+      0.1666,
+      0.4788
+     ]
+    },
+    "decision_lost": {
+     "k": 9,
+     "n": 10,
+     "p": 0.9,
+     "ci": [
+      0.5958,
+      0.9821
+     ]
+    },
+    "which_lost": {
+     "k": 0,
+     "n": 10,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.2775
+     ]
+    },
+    "nn_deny_rate_D": 0.4,
+    "nn_deny_rate_A": 0.6333
+   },
+   "predictions": {
+    "applicable_regime_guard": {
+     "control_n_lost": 30,
+     "min_lost": 10,
+     "applicable": true
+    },
+    "P-RD-1_dissociation": {
+     "delta_control": 0.8667,
+     "dec_D": 0.8667,
+     "which_D": 0.0,
+     "threshold": 0.2,
+     "passed": true
+    },
+    "P-RD-2_incoherence": {
+     "incoherence_control": 0.7,
+     "threshold": 0.05,
+     "passed": true
+    },
+    "P-RD-3_fusion_kills": {
+     "incoherence_control": 0.7,
+     "incoherence_fusion": 0.3,
+     "passed": true
+    },
+    "P-RD-4_survival": {
+     "S_control": 0.0,
+     "S_fusion": 0.6667,
+     "passed": true
+    },
+    "realized_length_ratio": {
+     "rw_control": 20.5,
+     "rw_fusion": 41.18,
+     "ratio": 2.009
+    }
+   }
+  },
+  "gpt": {
+   "control": {
+    "n": 60,
+    "n_denied": 30,
+    "n_lost": 29,
+    "n_kept": 1,
+    "n_approved": 30,
+    "realized_words": 16.03,
+    "decision_acc": 0.5,
+    "decision_acc_A": 0.0,
+    "decision_acc_D": 1.0,
+    "which_acc_D": 0.0667,
+    "which_unmatched_D": 0,
+    "S": 0.0333,
+    "J": 0.0667,
+    "delta": 0.9333,
+    "incoherence_D": {
+     "k": 26,
+     "n": 30,
+     "p": 0.8667,
+     "ci": [
+      0.7032,
+      0.9469
+     ]
+    },
+    "decision_lost": {
+     "k": 29,
+     "n": 29,
+     "p": 1.0,
+     "ci": [
+      0.883,
+      1.0
+     ]
+    },
+    "which_lost": {
+     "k": 1,
+     "n": 29,
+     "p": 0.0345,
+     "ci": [
+      0.0061,
+      0.1718
+     ]
+    },
+    "nn_deny_rate_D": 0.6333,
+    "nn_deny_rate_A": 0.6
+   },
+   "fusion": {
+    "n": 60,
+    "n_denied": 30,
+    "n_lost": 9,
+    "n_kept": 21,
+    "n_approved": 30,
+    "realized_words": 21.22,
+    "decision_acc": 0.6167,
+    "decision_acc_A": 0.2667,
+    "decision_acc_D": 0.9667,
+    "which_acc_D": 0.8,
+    "which_unmatched_D": 0,
+    "S": 0.7,
+    "J": 0.7667,
+    "delta": 0.1667,
+    "incoherence_D": {
+     "k": 6,
+     "n": 30,
+     "p": 0.2,
+     "ci": [
+      0.095,
+      0.3731
+     ]
+    },
+    "decision_lost": {
+     "k": 8,
+     "n": 9,
+     "p": 0.8889,
+     "ci": [
+      0.565,
+      0.9801
+     ]
+    },
+    "which_lost": {
+     "k": 3,
+     "n": 9,
+     "p": 0.3333,
+     "ci": [
+      0.1206,
+      0.6458
+     ]
+    },
+    "nn_deny_rate_D": 0.6333,
+    "nn_deny_rate_A": 0.6
+   },
+   "predictions": {
+    "applicable_regime_guard": {
+     "control_n_lost": 29,
+     "min_lost": 10,
+     "applicable": true
+    },
+    "P-RD-1_dissociation": {
+     "delta_control": 0.9333,
+     "dec_D": 1.0,
+     "which_D": 0.0667,
+     "threshold": 0.2,
+     "passed": true
+    },
+    "P-RD-2_incoherence": {
+     "incoherence_control": 0.8667,
+     "threshold": 0.05,
+     "passed": true
+    },
+    "P-RD-3_fusion_kills": {
+     "incoherence_control": 0.8667,
+     "incoherence_fusion": 0.2,
+     "passed": true
+    },
+    "P-RD-4_survival": {
+     "S_control": 0.0333,
+     "S_fusion": 0.7,
+     "passed": true
+    },
+    "realized_length_ratio": {
+     "rw_control": 16.03,
+     "rw_fusion": 21.22,
+     "ratio": 1.324
+    }
+   }
+  }
+ },
+ "cost_usd": {
+  "haiku": 0.3905,
+  "gpt": 0.0671
+ },
+ "total_cost_usd": 0.4576
+}
