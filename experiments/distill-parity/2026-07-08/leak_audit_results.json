@@ -1,14 +1,14 @@
 {
- "pool": "train_pool.jsonl",
- "n": 6000,
+ "pool": "train_pool_r1.jsonl",
+ "n": 9500,
  "folds": [
-  0.5141,
-  0.5127,
-  0.5315,
-  0.4738,
-  0.5
+  0.4944,
+  0.4754,
+  0.4965,
+  0.5034,
+  0.4963
  ],
- "mean_auc": 0.5064,
+ "mean_auc": 0.4932,
  "gate_threshold": 0.6,
  "verdict": "PASS (< 0.60)",
  "dim": 262144,

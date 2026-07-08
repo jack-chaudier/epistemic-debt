@@ -27,6 +27,11 @@ parity-matched, Δ-separated, shift-tested (full-doc counterfactual = the weight
 | date | pod id | GPU | $/hr | hours | purpose | $ |
 |---|---|---|---|---|---|---|
 | 2026-07-08 | nmzb9ecrnq2gwb | H100 80GB SXM (AP-IN-1, secure) | 2.99 | 0.36 (21:24–21:46 UTC) | deps + vLLM + 12,000 teacher trace calls | 1.07 |
+| 2026-07-08 | a17mckiju6mrk6 | H100 80GB SXM (AP-IN-1, secure) | 2.99 | session open 21:54 UTC | probe (500) + regen traces (19,000) + 2× student QLoRA + evals | TBD at stop |
+
+Note: nmzb9ecrnq2gwb could not restart after the STOP pause (host GPU taken — the stop/start
+trap); volume held nothing unique (teacher_raw committed, venv/HF-cache rebuildable), deleted
+and re-provisioned as a17mckiju6mrk6 with a scripted setup.
 
 **Cumulative GPU spend: $1.07.** API spend: $0.00 (all inference is pod-local).
 Pod stopped (not deleted) at the STOP boundary; volume + HF cache persist for restart.
@@ -47,6 +52,34 @@ Pod stopped (not deleted) at the STOP boundary; volume + HF cache persist for re
 Pod `8huucke042ftjo` (EXITED, 200GB volume, created 2026-07-08) could not be started for
 inspection — RunPod host reports no free GPUs (two attempts). Not deleted uninspected; retry at
 each session boundary.
+
+## Revision-1 resolution (2026-07-08, ~22:30 UTC)
+
+The frozen revision protocol resolved the STOP: probe DENIED joint-survival **0.796** vs the
+0.55 gate (J-verdict on DENIED 0.427 → **1.000**). Regenerated pool: 5 kept domains × 1,900 =
+9,500 (5,000 ids byte-identical to the committed original). Gates on r1: **G2 0 dropped**
+(clinical 0.901, ci ✓, vendor 0.874, sec 0.873, loan 0.857); **G3** v_wrong 1,158 /
+j_verdict_wrong 23 / j_witness_wrong 43 / **j_unsound 81** (the right-for-wrong-reasons
+sub-check; ~1% of J-correct items, dropped) → 8,195 survivors; **G4 → 7,272** balanced
+examples (floor 3,000). Soundness caveat: reading+threshold quoting verified on every trace;
+explicit pass/fail direction language present in ~40% of policy clauses (15,068 unverifiable
+clauses counted, not dropped). **G1 re-audit on the r1 pool: AUC 0.4932 — chance.** With the
+J channel at ceiling, the retained set is conditioned on *bare-channel* competence (the more
+benign direction — the corpus keeps items the teacher can decide without help). Training fired
+on these numbers per the lead's rule.
+
+## OBSERVED row candidate (frozen note — logged, not chased)
+
+**Verdict–justification ordering interference in the teacher.** Same model (Qwen3-8B, temp 0,
+thinking off), same synthetic review items, three prompt orderings, three DENIED-side verdict
+accuracies: bare ANSWER **0.784** (n=2,500 kept-domain pool; 0.800 on the 500-item probe
+slice), justify-with-verdict-first (r0 fusion register) **0.427** (n=2,500), quote-evidence-
+then-verdict (r1 register) **1.000** (n=250 probe slice, seed 813000). A 0.57 swing on
+ordering alone; asking for justification *before* the verdict destroys DENIED accuracy,
+demanding evidence *first* beats the bare channel. Mechanism unresolved (emission garbling vs
+genuine decision interference) — verdict-then-justify vs justify-then-verdict micro-experiment
+queued in NEXT.md; no campaign GPU spent on it. Provenance: `gate_manifest.json` (r0 run,
+git history at ea7cae7), `probe_results.json`, `revision_protocol.md`.
 
 ## Verdict
 

@@ -257,6 +257,13 @@ page's road tab mirrors these stages — update its status chips as stages land.
   Test-time-compute variants (reasoning readers, G.1) should move the depth; if they don't, that
   is a much deeper statement about where justification lives.
 
+- 2026-07-08 — *Verdict–justification ordering interference (from the distill-parity teacher
+  gates).* Same teacher, same items, three orderings: bare verdict 0.784/0.800, justify-with-
+  verdict-first 0.427, evidence-then-verdict 1.000 (DENIED side; distill-parity README has the
+  frozen note + provenance). Micro-experiment queued: isolate emission-garbling vs decision
+  interference by crossing ordering × whether the verdict token is pre-committed. Cheap (~$1,
+  API or pod). Do not fold into the distill-parity campaign.
+
 ## Done (moved from queue)
 
 - ~~High-power replication (Tier 1)~~ → `experiments/highpower/2026-07-06/` — P-H1/H2/H4 3/3,

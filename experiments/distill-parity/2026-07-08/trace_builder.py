@@ -85,6 +85,42 @@ def parse_j_verdict_r1(text):
     return m[-1].upper() if m else None
 
 
+PASS_RE = re.compile(r"\b(passes|pass|meets|satisf\w+|within|complies|acceptable)\b", re.I)
+FAIL_RE = re.compile(r"\b(fails|fail|violat\w+|exceeds the|below the|does not meet|"
+                     r"outside|breach\w*|non-?compliant)\b", re.I)
+
+
+def j_soundness(item, jtext):
+    """G3 sub-check (lead directive 2026-07-08, added before the r1 pool entered the set):
+    a J-trace whose final verdict is right can still be right-for-wrong-reasons — garbled
+    reading, wrong threshold, or inverted comparison. Mechanical per-trace assertions against
+    ground truth: (a) every policy reading is quoted, (b) every policy threshold is quoted,
+    (c) in each clause (line/sentence) quoting a reading, any stated pass/fail direction
+    matches ground truth. Returns (sound, unverifiable): demonstrated inconsistency -> item
+    leaves the shared set; clauses with no direction language are counted, not dropped
+    (never silently bin — confound rule)."""
+    pol = [p for p in item["parameters"] if p["policy"]]
+    if not all(retained(jtext, p["value"]) for p in pol):
+        return False, 0
+    if not all(retained(jtext, p["thr"]) for p in pol):
+        return False, 0
+    unverifiable = 0
+    clauses = re.split(r"(?<=[.!?])\s+|\n", jtext)
+    for p in pol:
+        stated = None
+        for cl in clauses:
+            if retained(cl, p["value"]):
+                has_pass, has_fail = bool(PASS_RE.search(cl)), bool(FAIL_RE.search(cl))
+                if has_pass != has_fail:
+                    stated = has_pass
+                    break
+        if stated is None:
+            unverifiable += 1
+        elif stated != p["passes"]:
+            return False, unverifiable
+    return True, unverifiable
+
+
 def j_witness_ok(item, jtext):
     anchors = PARAM_COLON_RE.findall(jtext or "")
     named = anchors[-1].strip().rstrip(".") if anchors else None
@@ -147,6 +183,12 @@ def main():
         if not j_witness_ok(it, j_txt[iid]):
             tallies["j_witness_wrong"] += 1
             continue
+        if a.rev != "r0":  # soundness sub-check applies to r1+ (r0 manifest stays reproducible)
+            sound, unver = j_soundness(it, j_txt[iid])
+            tallies["j_unverifiable_clauses"] = tallies.get("j_unverifiable_clauses", 0) + unver
+            if not sound:
+                tallies["j_unsound"] = tallies.get("j_unsound", 0) + 1
+                continue
         survivors.append(it)
     manifest["g3"] = dict(tallies, survivors=len(survivors))
     # G4

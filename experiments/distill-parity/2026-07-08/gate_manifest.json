@@ -1,45 +1,41 @@
 {
  "g2": {
   "ci_release": {
-   "n": 1000,
-   "teacher_v_acc": 0.882
+   "n": 1900,
+   "teacher_v_acc": 0.8863
   },
   "clinical_enroll": {
-   "n": 1000,
-   "teacher_v_acc": 0.903
+   "n": 1900,
+   "teacher_v_acc": 0.9011
   },
   "loan_underwrite": {
-   "n": 1000,
-   "teacher_v_acc": 0.854
-  },
-  "ops_incident": {
-   "n": 1000,
-   "teacher_v_acc": 0.826
+   "n": 1900,
+   "teacher_v_acc": 0.8568
   },
   "sec_triage": {
-   "n": 1000,
-   "teacher_v_acc": 0.87
+   "n": 1900,
+   "teacher_v_acc": 0.8726
   },
   "vendor_sla": {
-   "n": 1000,
-   "teacher_v_acc": 0.88
+   "n": 1900,
+   "teacher_v_acc": 0.8737
   }
  },
- "g2_dropped": [
-  "ops_incident"
- ],
+ "g2_dropped": [],
  "g3": {
-  "total": 5000,
+  "total": 9500,
   "missing_calls": 0,
-  "v_wrong": 611,
-  "j_verdict_wrong": 1396,
-  "j_witness_wrong": 238,
-  "survivors": 2755
+  "v_wrong": 1158,
+  "j_verdict_wrong": 23,
+  "j_witness_wrong": 43,
+  "j_unverifiable_clauses": 15068,
+  "j_unsound": 81,
+  "survivors": 8195
  },
  "g4": {
-  "approved": 1962,
-  "denied": 793,
-  "per_side": 793,
-  "final": 1586
+  "approved": 4559,
+  "denied": 3636,
+  "per_side": 3636,
+  "final": 7272
  }
 }
