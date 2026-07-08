@@ -65,12 +65,50 @@ respin). Eval = R1 harness before/after: headline Δ, witness-chain citation rat
 abstain-naming-the-loss rate, with R1's vanilla + certificate-prompted numbers as baselines.
 The tune must beat certificate-*prompting* (P-R1-4) to justify existing.
 
-### R4 — Ship (HF Space + weights + model card)
-- Gradio Space: paste long doc → answer + clickable witness chain (pointers highlight source
-  slices) + live Δ meter vs same base model with naive compaction.
-- Weights: LoRA adapter on HF hub. Model card written like a prereg page: claims with
-  thresholds, refutations included (the repo's evidence-label discipline, public).
+### R4 — Ship (HF Space + weights + model card): THE DEMO
+
+Design goal: one screen that makes the thesis undeniable in 30 seconds. Split-screen,
+**same base model, same document, same question**:
+
+- LEFT ("how everyone does it"): naive compaction → answer. Confident prose, no receipts.
+- RIGHT (witness-RLM): answer + **clickable witness chain** — click a certificate, the exact
+  source span lights up in the document pane. When evidence is missing: the explicit
+  `MISSING:` flag naming the value, and a FETCH that repays it from the archive.
+- **The Δ meter**: live justified-accuracy vs accuracy on a preset probe battery for the
+  loaded document, both sides. The number nobody else's demo shows.
+- **The compression slider** (the showstopper): drag the context budget down 80→15 words per
+  slice. LEFT degrades into confident vibes (the realdoc crash→DENY reflex, live). RIGHT's
+  answers stay pinned to receipts or degrade into *named* gaps. The exchange-rate curve
+  (row 17) made tangible.
+- Preloaded examples where ground truth is verifiable: 2–3 real NTSB narratives (public
+  domain, already in-repo — including an APPROVED case the naive side gets wrong on vibes),
+  one long RFC/codebase doc, one synthetic ledger corpus. Plus paste-your-own.
+- Weights: LoRA adapter on HF hub; model card written like a prereg page (claims with
+  thresholds, refutations included — the P-R1-4 prompting ablation reported honestly).
 - Framing: "mismeasured, and here's the meter." Never "misunderstood."
+
+## Generalization path (G-track): a general assistant with the register baked in
+
+Don't train a general assistant — start from one (Qwen3-8B-Instruct) and train only the deltas.
+
+- **G1. The three-way epistemic register** (generalizes the fusion contract): every factual
+  claim carries WITNESSED (value + pointer into session archive) / PARAMETRIC (from weights —
+  say so) / MISSING (context should contain it, doesn't — name it). Training mix ≈ 50%
+  certificate/RLM traces broadened across domains (the realdoc injection method is a factory:
+  works on any public long document), 30% existing attribution-QA/RAG-citation data rewritten
+  into the register, 20% general instruction replay (no chat regression).
+- **G2. Two-sided eval prereg**: our Δ battery for the new behavior AND a general-capability
+  no-regression guard (IFEval-style spot checks). A register model that loses general
+  competence is a failed run, preregistered as such.
+- **G3. Serve inside the runtime**: chat harness where every conversation has an append-only
+  archive + loss ledger; RLM recursion is the escalation path (context overflow or
+  ledger-flagged query → certificate-typed recursive retrieval), not the default. The user
+  experiences an assistant that never *silently* forgets.
+- **RLVR endgame (the scaling story):** certificate validity is mechanically checkable —
+  WITNESS-at-POINTER is a deterministic string check, no judge. The register is therefore a
+  native target for RL with verifiable rewards; our ledger machinery IS the reward function.
+  SFT installs the register; RLVR is how it hardens at scale. "The honesty layer ships with a
+  free verifier."
 
 ## Budget & sequence
 
