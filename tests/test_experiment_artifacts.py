@@ -144,6 +144,7 @@ DOMAINS = REPO / "experiments" / "domains" / "2026-07-06"
 TRANSFER_LAW = REPO / "experiments" / "transfer-law" / "2026-07-08"
 READER_INF = REPO / "experiments" / "reader-inference-boundary" / "2026-07-08"
 ITER_COMPACT = REPO / "experiments" / "iterated-compaction" / "2026-07-08"
+SIGNPOST_FUSION = REPO / "experiments" / "signpost-fusion" / "2026-07-08"
 
 
 def _load_domains_lib():
@@ -352,3 +353,60 @@ def test_iterated_compaction_interest_rate_results():
     # gpt is the informative null: monotone-net-decay fails (near-idempotent), ratio still stable
     assert res["per_model"]["gpt"]["predictions"]["P-IC-1_monotone_decay"]["passed"] is False
     assert res["per_model"]["gpt"]["rho_bar"] > 0.97
+
+
+def test_signpost_fusion_pilot_artifacts_and_headline_results():
+    # pin the 2026-07-08 B5a fusion-contract split verdict: the mechanism (no unwitnessed
+    # confidence, witness survival) is confirmed and the gap collapses where a shelf exists, but
+    # the "collapse by construction at a MATCHED budget" claim is REFUTED — fusion overrides the
+    # word budget (P-FU-3 fails 3/3 at 15w). A re-score must not silently upgrade this to a clean
+    # win or lose the budget-confound.
+    for f in ("prereg_fusion.md", "prereg_fusion_v2.md", "gen_items.py", "items.jsonl",
+              "runner.py", "responses_raw.jsonl", "scored.csv", "fusion_results.json", "README.md"):
+        assert (SIGNPOST_FUSION / f).exists(), f"signpost-fusion: missing {f}"
+    res = json.loads((SIGNPOST_FUSION / "fusion_results.json").read_text())
+    b40, b15 = res["budgets"]["40w"], res["budgets"]["15w"]
+
+    # v1 (40w) is non-discriminative: control never enters the shelf regime (n_lost < 10 for
+    # grok/gpt -> P-FU-1 inapplicable), the loose-budget confound.
+    assert b40["verdict"]["applicable"] == {"grok": False, "haiku": True, "gpt": False}
+    assert b40["per_model"]["grok"]["predictions"]["P-FU-1_gap_collapse"]["control_n_lost"] == 1
+
+    # v2 (15w) enters the shelf regime on all three (control n_lost >= 10).
+    assert b15["verdict"]["applicable"] == {"grok": True, "haiku": True, "gpt": True}
+    for m in ("grok", "haiku", "gpt"):
+        assert b15["per_model"][m]["predictions"]["P-FU-1_gap_collapse"]["control_n_lost"] >= 10
+
+    # Mechanism confirmed at 15w: no unwitnessed confidence (P-FU-2) and witness survival (P-FU-4)
+    # pass on all three; incoherence driven to 0 and S to ceiling by fusion.
+    for m in ("grok", "haiku", "gpt"):
+        pm = b15["per_model"][m]
+        assert pm["predictions"]["P-FU-2_no_unwitnessed_confidence"]["passed"] is True, m
+        assert pm["predictions"]["P-FU-4_survival"]["passed"] is True, m
+        assert pm["fusion"]["incoherence_D"]["p"] == 0.0, m
+        assert pm["fusion"]["S"] >= 0.97, m
+
+    # Gap collapse holds where a shelf exists: P-FU-1 passes haiku + gpt, fails grok (parser
+    # artifact + always-DENY prior).
+    p1 = {m: b15["per_model"][m]["predictions"]["P-FU-1_gap_collapse"]["passed"] for m in ("grok", "haiku", "gpt")}
+    assert p1 == {"grok": False, "haiku": True, "gpt": True}
+    # gpt is the textbook collapse: Δ 0.44 -> ~0.07.
+    assert b15["per_model"]["gpt"]["control"]["delta"] >= 0.40
+    assert b15["per_model"]["gpt"]["fusion"]["delta"] <= 0.10
+
+    # The matched-budget claim is REFUTED: the length guard fails on ALL three at 15w (fusion
+    # overshoots control realized words by >1.25x) -> gap bought with length, not re-fused.
+    for m in ("grok", "haiku", "gpt"):
+        p3 = b15["per_model"][m]["predictions"]["P-FU-3_length_guard"]
+        assert p3["passed"] is False, m
+        assert p3["ratio"] > 1.25, m
+    assert b15["verdict"]["fusion_collapses_gap"] is False
+
+    # grok WHICH UNMATCHED > 5 in both 15w arms -> frozen-parser phenotype flagged for dual-judge.
+    assert b15["per_model"]["grok"]["control"]["which_unmatched_D"] > 5
+    assert b15["per_model"]["grok"]["fusion"]["which_unmatched_D"] > 5
+
+    # cost sanity (well under the $5 cap) and scored.csv completeness (2 budgets x 2 arms x 3 x 90).
+    assert res["total_cost_usd"] < 5.0
+    with (SIGNPOST_FUSION / "scored.csv").open() as fh:
+        assert sum(1 for _ in csv.DictReader(fh)) == 1080
