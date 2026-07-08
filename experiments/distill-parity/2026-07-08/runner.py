@@ -33,7 +33,9 @@ import json
 import os
 import re
 import sys
+import threading
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
@@ -88,6 +90,7 @@ def notes_prompt(item, summary, req, policy_key="policy_text"):
 class Client:
     def __init__(self, model, raw_path):
         self.model, self.raw_path = model, raw_path
+        self.lock = threading.Lock()
         self.cache = {}
         if os.path.exists(raw_path):
             for line in open(raw_path):
@@ -97,11 +100,12 @@ class Client:
 
     def chat(self, iid, call, messages, system=None):
         key = (self.model, iid, call, 0)
-        if key in self.cache:
-            return self.cache[key]["text"]
-        if len(self.cache) - self.n0 + 1 > CAP:
-            print(f"HARD CAP {CAP} reached", flush=True)
-            sys.exit(2)
+        with self.lock:
+            if key in self.cache:
+                return self.cache[key]["text"]
+            if len(self.cache) - self.n0 + 1 > CAP:
+                print(f"HARD CAP {CAP} reached", flush=True)
+                os._exit(2)
         msgs = ([{"role": "system", "content": system}] if system else []) + messages
         body = json.dumps(dict(model=self.model, messages=msgs, temperature=0,
                                max_tokens=MAXTOK.get(call, 128), seed=0,
@@ -113,86 +117,85 @@ class Client:
         text = THINK_RE.sub("", out["choices"][0]["message"]["content"] or "").strip()
         usage = out.get("usage", {})
         rec = dict(model=self.model, item=iid, call=call, variant=0, text=text, usage=usage)
-        with open(self.raw_path, "a") as f:
-            f.write(json.dumps(rec) + "\n")
-        self.cache[key] = rec
-        return text
+        with self.lock:
+            if key not in self.cache:  # concurrent duplicate: first writer wins
+                with open(self.raw_path, "a") as f:
+                    f.write(json.dumps(rec) + "\n")
+                self.cache[key] = rec
+        return self.cache[key]["text"]
 
 
-def run_traces(c, items):
-    for n, it in enumerate(items):
-        c.chat(it["id"], "teacher_v", [dict(role="user", content=fulldoc_prompt(it, TEACHER_V))])
-        c.chat(it["id"], "teacher_j", [dict(role="user", content=fulldoc_prompt(it, TEACHER_J))])
-        if (n + 1) % 200 == 0:
-            print(f"  traces {n + 1}/{len(items)}", flush=True)
+def run_items(c, items, per_item, workers, label):
+    done = [0]
+    lock = threading.Lock()
+
+    def work(it):
+        per_item(c, it)
+        with lock:
+            done[0] += 1
+            if done[0] % 100 == 0:
+                print(f"  {label} {done[0]}/{len(items)}", flush=True)
+
+    if workers <= 1:
+        for it in items:
+            work(it)
+    else:
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            list(ex.map(work, items))
 
 
-def run_decision(c, items, call="decision"):
-    for n, it in enumerate(items):
-        c.chat(it["id"], call, [dict(role="user", content=fulldoc_prompt(it, DECISION))])
-        if (n + 1) % 100 == 0:
-            print(f"  {call} {n + 1}/{len(items)}", flush=True)
+def item_traces(c, it):
+    c.chat(it["id"], "teacher_v", [dict(role="user", content=fulldoc_prompt(it, TEACHER_V))])
+    c.chat(it["id"], "teacher_j", [dict(role="user", content=fulldoc_prompt(it, TEACHER_J))])
 
 
-def run_capability(c, items):
-    for n, it in enumerate(items):
-        c.chat(it["id"], "cap_answer", [dict(role="user", content=it["prompt"])])
-        if (n + 1) % 100 == 0:
-            print(f"  capability {n + 1}/{len(items)}", flush=True)
+def item_decision(c, it):
+    c.chat(it["id"], "decision", [dict(role="user", content=fulldoc_prompt(it, DECISION))])
 
 
-def run_delta(c, items, budget=15):
-    for n, it in enumerate(items):
-        iid = it["id"]
-        summary = c.chat(iid, "compress", [dict(role="user", content=it["document"])],
-                         system=COMPRESS_SYS.format(wl=budget))
-        c.chat(iid, "decision", [dict(role="user", content=notes_prompt(it, summary, DECISION))])
-        c.chat(iid, "which", [dict(role="user", content=notes_prompt(it, summary, WHICH))])
-        c.chat(iid, "which_abstain",
-               [dict(role="user", content=notes_prompt(it, summary, WHICH + ABSTAIN))])
-        c.chat(iid, "nonotes", [dict(role="user", content=it["policy_text"] + "\n\n" + NONOTES)])
-        if (n + 1) % 50 == 0:
-            print(f"  delta {n + 1}/{len(items)}", flush=True)
+def item_capability(c, it):
+    c.chat(it["id"], "cap_answer", [dict(role="user", content=it["prompt"])])
 
 
-def run_arm3a(c, items):
-    for n, it in enumerate(items):
-        c.chat(it["id"], "cf_decision",
-               [dict(role="user", content=fulldoc_prompt(it, DECISION, "cf_policy_text"))])
-        if (n + 1) % 50 == 0:
-            print(f"  arm3a {n + 1}/{len(items)}", flush=True)
+def item_delta(c, it, budget=15):
+    iid = it["id"]
+    summary = c.chat(iid, "compress", [dict(role="user", content=it["document"])],
+                     system=COMPRESS_SYS.format(wl=budget))
+    c.chat(iid, "decision", [dict(role="user", content=notes_prompt(it, summary, DECISION))])
+    c.chat(iid, "which", [dict(role="user", content=notes_prompt(it, summary, WHICH))])
+    c.chat(iid, "which_abstain",
+           [dict(role="user", content=notes_prompt(it, summary, WHICH + ABSTAIN))])
+    c.chat(iid, "nonotes", [dict(role="user", content=it["policy_text"] + "\n\n" + NONOTES)])
 
 
-def run_arm3b(c, items, budget=40):
-    for n, it in enumerate(items):
-        iid = it["id"]
-        summary = c.chat(iid, "compress_vd", [dict(role="user", content=it["document"])],
-                         system=COMPRESS_VD_SYS.format(wl=budget))
-        c.chat(iid, "guard_decision",
-               [dict(role="user", content=notes_prompt(it, summary, DECISION))])
-        c.chat(iid, "cf_decision",
-               [dict(role="user", content=notes_prompt(it, summary, DECISION, "cf_policy_text"))])
-        c.chat(iid, "cf_which",
-               [dict(role="user", content=notes_prompt(it, summary, WHICH + ABSTAIN,
-                                                       "cf_policy_text"))])
-        if (n + 1) % 50 == 0:
-            print(f"  arm3b {n + 1}/{len(items)}", flush=True)
+def item_arm3a(c, it):
+    c.chat(it["id"], "cf_decision",
+           [dict(role="user", content=fulldoc_prompt(it, DECISION, "cf_policy_text"))])
 
 
-def run_realdoc(c, items, budget=15):
-    run_delta(c, items, budget=budget)
+def item_arm3b(c, it, budget=40):
+    iid = it["id"]
+    summary = c.chat(iid, "compress_vd", [dict(role="user", content=it["document"])],
+                     system=COMPRESS_VD_SYS.format(wl=budget))
+    c.chat(iid, "guard_decision",
+           [dict(role="user", content=notes_prompt(it, summary, DECISION))])
+    c.chat(iid, "cf_decision",
+           [dict(role="user", content=notes_prompt(it, summary, DECISION, "cf_policy_text"))])
+    c.chat(iid, "cf_which",
+           [dict(role="user", content=notes_prompt(it, summary, WHICH + ABSTAIN,
+                                                   "cf_policy_text"))])
 
 
 BATTERIES = dict(
-    traces=("train_pool.jsonl", run_traces, "teacher_raw.jsonl"),
-    parity=("parity_gauge.jsonl", run_decision, "responses_raw.jsonl"),
-    dev=("dev_slice.jsonl", run_decision, "responses_raw.jsonl"),
-    capability=("capability_items.jsonl", run_capability, "responses_raw.jsonl"),
-    delta=("delta_battery.jsonl", run_delta, "responses_raw.jsonl"),
-    arm3a=("arm3.jsonl", run_arm3a, "responses_raw.jsonl"),
-    arm3b=("arm3.jsonl", run_arm3b, "responses_raw.jsonl"),
+    traces=("train_pool.jsonl", item_traces, "teacher_raw.jsonl"),
+    parity=("parity_gauge.jsonl", item_decision, "responses_raw.jsonl"),
+    dev=("dev_slice.jsonl", item_decision, "responses_raw.jsonl"),
+    capability=("capability_items.jsonl", item_capability, "responses_raw.jsonl"),
+    delta=("delta_battery.jsonl", item_delta, "responses_raw.jsonl"),
+    arm3a=("arm3.jsonl", item_arm3a, "responses_raw.jsonl"),
+    arm3b=("arm3.jsonl", item_arm3b, "responses_raw.jsonl"),
     realdoc=(os.path.join(REPO, "experiments", "realdoc", "2026-07-08", "items.jsonl"),
-             run_realdoc, "responses_raw.jsonl"),
+             item_delta, "responses_raw.jsonl"),
 )
 
 
@@ -227,19 +230,21 @@ def main():
     ap.add_argument("mode", choices=list(BATTERIES) + ["smoke"])
     ap.add_argument("--model", help="vLLM served-model name")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--workers", type=int, default=1,
+                    help="concurrent requests (vLLM batches them; cache stays idempotent)")
     a = ap.parse_args()
     if a.mode == "smoke":
         smoke()
         return
     if not a.model:
         sys.exit("--model required for battery modes")
-    path, fn, raw = BATTERIES[a.mode]
+    path, per_item, raw = BATTERIES[a.mode]
     items = [json.loads(l) for l in open(path if os.path.isabs(path)
                                          else os.path.join(HERE, path))]
     if a.limit:
         items = items[:a.limit]
     c = Client(a.model, os.path.join(HERE, raw))
-    fn(c, items)
+    run_items(c, items, per_item, a.workers, a.mode)
     print(f"{a.mode} done: {len(c.cache)} records in {raw}")
 
 
