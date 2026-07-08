@@ -26,9 +26,10 @@ parity-matched, Δ-separated, shift-tested (full-doc counterfactual = the weight
 
 | date | pod id | GPU | $/hr | hours | purpose | $ |
 |---|---|---|---|---|---|---|
-| — | — | — | — | — | none yet | 0.00 |
+| 2026-07-08 | nmzb9ecrnq2gwb | H100 80GB SXM (AP-IN-1, secure) | 2.99 | session open 21:24 UTC | deps + teacher traces + training | TBD at stop |
 
-**Cumulative GPU spend: $0.00.** API spend: $0.00 (all inference is pod-local).
+**Cumulative GPU spend: session open (started 21:24 UTC 2026-07-08).** API spend: $0.00
+(all inference is pod-local).
 
 ## Step-0 note (pre-existing pod)
 
