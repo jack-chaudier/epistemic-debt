@@ -15,6 +15,9 @@ were already too weak on original decision accuracy to support the strongest Law
 - `responses_raw.jsonl` — raw counterfactual probe responses (created by smoke/run).
 - `scored.csv` — row-level scored outputs (created by score).
 - `transfer_law_results.json` — aggregate metrics and pass/fail predictions (created by score).
+- `reanalysis_by_source_truth.py` / `reanalysis_by_source_truth.json` — exploratory split of the
+  P-L3-2 guard failure by source verdict (no API; deterministic; exit 0 iff the DENIED-side
+  interpretation reproduces).
 
 ## Run sequence
 
@@ -30,6 +33,9 @@ python3 runner.py run --model all
 
 # 3. Score and write saved test artifacts.
 python3 runner.py score
+
+# 4. Exploratory split of the guard failure by source verdict (no API; deterministic).
+python3 reanalysis_by_source_truth.py
 ```
 
 ## Design summary
@@ -73,11 +79,39 @@ summaries came from the domain-battery regime where original decision accuracy w
 so the result is not yet the desired "standard accuracy looks fine while debt predicts future
 failure" claim.
 
+**Where the guard failure lives (exploratory re-analysis, no API — `reanalysis_by_source_truth.py`).**
+The P-L3-2 failure is not uniform weakness; it is confined to the conjunctive APPROVED source side.
+Splitting original accuracy by source verdict:
+
+| model | orig acc, APPROVED-source | orig acc, DENIED-source |
+|---|---:|---:|
+| grok | 0.533 | 0.822 |
+| haiku | 0.289 | 0.933 |
+| gpt | 0.289 | 0.933 |
+
+This is the documented "missing≈failing" conservative bias (theory Appendix C): under lossy
+compaction the reader defaults to DENIED, so an APPROVED source is misread as a wrong DENIED and
+drags pooled original accuracy under 0.70. Restricting to the DENIED source subset — where original
+accuracy clears the guard for every model — the Law-3 localization not only survives but sharpens,
+with non-overlapping Wilson intervals for all three:
+
+| model | orig acc (DENIED src) | CF acc if present | CF acc if missing | gap | CI-separated |
+|---|---:|---:|---:|---:|:--:|
+| grok | 0.822 | 0.955 | 0.609 | +0.346 | yes |
+| haiku | 0.933 | 1.000 | 0.438 | +0.562 | yes |
+| gpt | 0.933 | 1.000 | 0.514 | +0.486 | yes |
+| pooled | — | 0.978 | 0.511 | +0.467 | — |
+
+So the honest reading is stronger than "inconclusive": on the logical side where the compressor did
+not collapse to its prior, missing witnesses predict counterfactual failure cleanly. The pooled
+guard failure is an artifact of the APPROVED-side conservative bias, not evidence against Law 3.
+
 **Next design change.** Run the same counterfactual transfer probes on a higher-accuracy source
-artifact: either value-dense summaries from the witness-compaction campaign, a fresh source corpus
-with a looser terminal budget, or a model-ladder campaign where ordinary accuracy is matched first.
-Keep this pilot's witness-conditioned analysis and full-document sanity check; make the original
-accuracy guard non-negotiable for the headline claim.
+artifact so the guard passes on *both* logical sides: value-dense summaries from the
+witness-compaction campaign, a looser realized terminal budget, or a model-ladder campaign where
+ordinary accuracy is matched first. Keep this pilot's witness-conditioned analysis, the
+source-verdict split, and the full-document sanity check; make the original-accuracy guard
+non-negotiable for the headline claim.
 
 **Cost.** $0.6884 total (`grok` $0.0349, `haiku` $0.5634, `gpt` $0.0901). Re-running is idempotent
 from `responses_raw.jsonl`. The stale shell `XAI_API_KEY` in this session overrode `.env` and failed

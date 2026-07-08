@@ -245,3 +245,25 @@ def test_transfer_law_pilot_artifacts_and_headline_results():
     assert res["per_model"]["grok"]["metrics"]["transfer_gap_present_minus_missing"] == 0.2828
     assert res["per_model"]["haiku"]["metrics"]["transfer_gap_present_minus_missing"] == 0.5167
     assert res["per_model"]["gpt"]["metrics"]["transfer_gap_present_minus_missing"] == 0.5385
+
+
+def test_transfer_law_source_truth_reanalysis():
+    # pin the sharpened interpretation: the P-L3-2 guard failure is APPROVED-side only, and the
+    # Law-3 transfer gap survives on the DENIED source subset (orig accuracy >= 0.70) with
+    # CI-separated intervals for all three models. This keeps a future re-score from silently
+    # collapsing the pilot to "inconclusive" when the localization is in fact robust.
+    for f in ("reanalysis_by_source_truth.py", "reanalysis_by_source_truth.json"):
+        assert (TRANSFER_LAW / f).exists(), f"transfer-law: missing {f}"
+    res = json.loads((TRANSFER_LAW / "reanalysis_by_source_truth.json").read_text())
+    assert res["denied_side_interpretation_holds"] is True
+    for m in ("grok", "haiku", "gpt"):
+        approved = res["by_model"][m]["APPROVED"]
+        denied = res["by_model"][m]["DENIED"]
+        # guard failure is APPROVED-side; DENIED-side clears the 0.70 prereg threshold
+        assert approved["orig_decision_accuracy"]["p"] < 0.70, f"{m}: APPROVED side should fail guard"
+        assert denied["orig_decision_accuracy"]["p"] >= 0.70, f"{m}: DENIED side should clear guard"
+        assert denied["gap"] > 0 and denied["ci_separated"] is True, f"{m}: DENIED-side gap must be CI-separated"
+    pooled = res["pooled_denied_source"]
+    assert pooled["cf_present"]["p"] == 0.9778
+    assert pooled["cf_missing"]["p"] == 0.5111
+    assert pooled["gap"] == 0.4667
