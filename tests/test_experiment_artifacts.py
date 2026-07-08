@@ -141,6 +141,7 @@ def test_budgetline_refutation_artifacts_consistent():
 
 HIGHPOWER = REPO / "experiments" / "highpower" / "2026-07-06"
 DOMAINS = REPO / "experiments" / "domains" / "2026-07-06"
+TRANSFER_LAW = REPO / "experiments" / "transfer-law" / "2026-07-08"
 
 
 def _load_domains_lib():
@@ -213,3 +214,34 @@ def test_domains_tier2_headline_results():
     # grok's verdict loss is not prior-driven — its no-notes prior is pure always-DENY everywhere
     for x in domains:
         assert res["cells"][f"grok/{x}"]["metrics"]["nonotes_deny_rate"] == 1.0
+
+
+def test_transfer_law_pilot_artifacts_and_headline_results():
+    # 2026-07-08 Law-3 pilot: strong witness-conditioned transfer localization, but not the
+    # hidden benchmark-parity kill-shot because the original-accuracy guard fails 3/3.
+    for f in ("gen_items.py", "items.jsonl", "prereg_transfer_law.md", "runner.py",
+              "responses_raw.jsonl", "scored.csv", "transfer_law_results.json", "README.md"):
+        assert (TRANSFER_LAW / f).exists(), f"transfer-law: missing {f}"
+    items = [json.loads(l) for l in (TRANSFER_LAW / "items.jsonl").open()]
+    assert len(items) == 90
+    from collections import Counter
+    per_domain = Counter(it["domain"] for it in items)
+    assert per_domain == {"ops_incident": 30, "clinical_enroll": 30, "ci_release": 30}
+    raw = [json.loads(l) for l in (TRANSFER_LAW / "responses_raw.jsonl").open()]
+    assert len(raw) == 1350
+    per_model = Counter(r["model"] for r in raw)
+    assert per_model == {"grok": 450, "haiku": 450, "gpt": 450}
+    res = json.loads((TRANSFER_LAW / "transfer_law_results.json").read_text())
+    assert res["pooled"]["transfer_gap_present_minus_missing"] == 0.4501
+    for model in ("grok", "haiku", "gpt"):
+        preds = res["per_model"][model]["predictions"]
+        assert preds["P-L3-1_full_doc_sanity"] is True
+        assert preds["P-L3-2_original_accuracy_guard"] is False
+        assert preds["P-L3-3_witness_conditioned_transfer"] is True
+        assert preds["P-L3-5_debt_localizes_failure"] is True
+    assert res["per_model"]["grok"]["predictions"]["P-L3-4_reason_channel"] is False
+    assert res["per_model"]["haiku"]["predictions"]["P-L3-4_reason_channel"] is True
+    assert res["per_model"]["gpt"]["predictions"]["P-L3-4_reason_channel"] is True
+    assert res["per_model"]["grok"]["metrics"]["transfer_gap_present_minus_missing"] == 0.2828
+    assert res["per_model"]["haiku"]["metrics"]["transfer_gap_present_minus_missing"] == 0.5167
+    assert res["per_model"]["gpt"]["metrics"]["transfer_gap_present_minus_missing"] == 0.5385

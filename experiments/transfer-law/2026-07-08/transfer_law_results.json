@@ -1,0 +1,417 @@
+{
+ "design": {
+  "n_items": 90,
+  "models": [
+   "grok",
+   "haiku",
+   "gpt"
+  ],
+  "source": "cached domain-battery summaries",
+  "predictions": {
+   "P-L3-1_full_doc_sanity": "full-document counterfactual decision accuracy >= 0.90",
+   "P-L3-2_original_accuracy_guard": "cached-summary original decision accuracy >= 0.70 (otherwise not hidden debt)",
+   "P-L3-3_witness_conditioned_transfer": "cf decision accuracy with required witness present exceeds missing-witness accuracy by >= 0.20",
+   "P-L3-4_reason_channel": "on cf-DENIED items, which_missing < 0.34 and which_retained >= 0.75",
+   "P-L3-5_debt_localizes_failure": "among originally-correct rows, missing required cf witness has >=0.20 higher cf error than present witness"
+  }
+ },
+ "per_model": {
+  "grok": {
+   "metrics": {
+    "n": 90,
+    "orig_decision_accuracy": {
+     "k": 61,
+     "n": 90,
+     "p": 0.6778,
+     "ci": [
+      0.5757,
+      0.7653
+     ]
+    },
+    "cf_full_doc_accuracy": {
+     "k": 86,
+     "n": 90,
+     "p": 0.9556,
+     "ci": [
+      0.8912,
+      0.9826
+     ]
+    },
+    "cf_decision_accuracy": {
+     "k": 70,
+     "n": 90,
+     "p": 0.7778,
+     "ci": [
+      0.6815,
+      0.8513
+     ]
+    },
+    "cf_required_survival": {
+     "k": 42,
+     "n": 90,
+     "p": 0.4667,
+     "ci": [
+      0.3671,
+      0.569
+     ]
+    },
+    "cf_decision_when_required_present": {
+     "k": 39,
+     "n": 42,
+     "p": 0.9286,
+     "ci": [
+      0.8099,
+      0.9754
+     ]
+    },
+    "cf_decision_when_required_missing": {
+     "k": 31,
+     "n": 48,
+     "p": 0.6458,
+     "ci": [
+      0.5044,
+      0.7657
+     ]
+    },
+    "cf_error_orig_correct_present": {
+     "k": 2,
+     "n": 34,
+     "p": 0.0588,
+     "ci": [
+      0.0163,
+      0.1909
+     ]
+    },
+    "cf_error_orig_correct_missing": {
+     "k": 9,
+     "n": 27,
+     "p": 0.3333,
+     "ci": [
+      0.1864,
+      0.5218
+     ]
+    },
+    "cf_which_denied_present": {
+     "k": 12,
+     "n": 22,
+     "p": 0.5455,
+     "ci": [
+      0.3466,
+      0.7308
+     ]
+    },
+    "cf_which_denied_missing": {
+     "k": 3,
+     "n": 23,
+     "p": 0.1304,
+     "ci": [
+      0.0454,
+      0.3213
+     ]
+    },
+    "cf_abstain_denied_present": {
+     "k": 0,
+     "n": 22,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1487
+     ]
+    },
+    "cf_abstain_denied_missing": {
+     "k": 8,
+     "n": 23,
+     "p": 0.3478,
+     "ci": [
+      0.1881,
+      0.5511
+     ]
+    },
+    "mean_summary_words": 22.13,
+    "transfer_gap_present_minus_missing": 0.2828,
+    "debt_error_gap_missing_minus_present": 0.2745
+   },
+   "predictions": {
+    "P-L3-1_full_doc_sanity": true,
+    "P-L3-2_original_accuracy_guard": false,
+    "P-L3-3_witness_conditioned_transfer": true,
+    "P-L3-4_reason_channel": false,
+    "P-L3-5_debt_localizes_failure": true
+   }
+  },
+  "haiku": {
+   "metrics": {
+    "n": 90,
+    "orig_decision_accuracy": {
+     "k": 55,
+     "n": 90,
+     "p": 0.6111,
+     "ci": [
+      0.5078,
+      0.7053
+     ]
+    },
+    "cf_full_doc_accuracy": {
+     "k": 90,
+     "n": 90,
+     "p": 1.0,
+     "ci": [
+      0.9591,
+      1.0
+     ]
+    },
+    "cf_decision_accuracy": {
+     "k": 56,
+     "n": 90,
+     "p": 0.6222,
+     "ci": [
+      0.519,
+      0.7154
+     ]
+    },
+    "cf_required_survival": {
+     "k": 30,
+     "n": 90,
+     "p": 0.3333,
+     "ci": [
+      0.2445,
+      0.4358
+     ]
+    },
+    "cf_decision_when_required_present": {
+     "k": 29,
+     "n": 30,
+     "p": 0.9667,
+     "ci": [
+      0.8333,
+      0.9941
+     ]
+    },
+    "cf_decision_when_required_missing": {
+     "k": 27,
+     "n": 60,
+     "p": 0.45,
+     "ci": [
+      0.3309,
+      0.5751
+     ]
+    },
+    "cf_error_orig_correct_present": {
+     "k": 0,
+     "n": 19,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1682
+     ]
+    },
+    "cf_error_orig_correct_missing": {
+     "k": 20,
+     "n": 36,
+     "p": 0.5556,
+     "ci": [
+      0.3958,
+      0.7046
+     ]
+    },
+    "cf_which_denied_present": {
+     "k": 18,
+     "n": 22,
+     "p": 0.8182,
+     "ci": [
+      0.6148,
+      0.9269
+     ]
+    },
+    "cf_which_denied_missing": {
+     "k": 3,
+     "n": 23,
+     "p": 0.1304,
+     "ci": [
+      0.0454,
+      0.3213
+     ]
+    },
+    "cf_abstain_denied_present": {
+     "k": 0,
+     "n": 22,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1487
+     ]
+    },
+    "cf_abstain_denied_missing": {
+     "k": 23,
+     "n": 23,
+     "p": 1.0,
+     "ci": [
+      0.8569,
+      1.0
+     ]
+    },
+    "mean_summary_words": 24.93,
+    "transfer_gap_present_minus_missing": 0.5167,
+    "debt_error_gap_missing_minus_present": 0.5556
+   },
+   "predictions": {
+    "P-L3-1_full_doc_sanity": true,
+    "P-L3-2_original_accuracy_guard": false,
+    "P-L3-3_witness_conditioned_transfer": true,
+    "P-L3-4_reason_channel": true,
+    "P-L3-5_debt_localizes_failure": true
+   }
+  },
+  "gpt": {
+   "metrics": {
+    "n": 90,
+    "orig_decision_accuracy": {
+     "k": 55,
+     "n": 90,
+     "p": 0.6111,
+     "ci": [
+      0.5078,
+      0.7053
+     ]
+    },
+    "cf_full_doc_accuracy": {
+     "k": 90,
+     "n": 90,
+     "p": 1.0,
+     "ci": [
+      0.9591,
+      1.0
+     ]
+    },
+    "cf_decision_accuracy": {
+     "k": 55,
+     "n": 90,
+     "p": 0.6111,
+     "ci": [
+      0.5078,
+      0.7053
+     ]
+    },
+    "cf_required_survival": {
+     "k": 25,
+     "n": 90,
+     "p": 0.2778,
+     "ci": [
+      0.1958,
+      0.378
+     ]
+    },
+    "cf_decision_when_required_present": {
+     "k": 25,
+     "n": 25,
+     "p": 1.0,
+     "ci": [
+      0.8668,
+      1.0
+     ]
+    },
+    "cf_decision_when_required_missing": {
+     "k": 30,
+     "n": 65,
+     "p": 0.4615,
+     "ci": [
+      0.3459,
+      0.5815
+     ]
+    },
+    "cf_error_orig_correct_present": {
+     "k": 0,
+     "n": 20,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1611
+     ]
+    },
+    "cf_error_orig_correct_missing": {
+     "k": 20,
+     "n": 35,
+     "p": 0.5714,
+     "ci": [
+      0.4086,
+      0.7202
+     ]
+    },
+    "cf_which_denied_present": {
+     "k": 13,
+     "n": 16,
+     "p": 0.8125,
+     "ci": [
+      0.5699,
+      0.9341
+     ]
+    },
+    "cf_which_denied_missing": {
+     "k": 5,
+     "n": 29,
+     "p": 0.1724,
+     "ci": [
+      0.076,
+      0.3455
+     ]
+    },
+    "cf_abstain_denied_present": {
+     "k": 0,
+     "n": 16,
+     "p": 0.0,
+     "ci": [
+      0.0,
+      0.1936
+     ]
+    },
+    "cf_abstain_denied_missing": {
+     "k": 21,
+     "n": 29,
+     "p": 0.7241,
+     "ci": [
+      0.5428,
+      0.853
+     ]
+    },
+    "mean_summary_words": 20.68,
+    "transfer_gap_present_minus_missing": 0.5385,
+    "debt_error_gap_missing_minus_present": 0.5714
+   },
+   "predictions": {
+    "P-L3-1_full_doc_sanity": true,
+    "P-L3-2_original_accuracy_guard": false,
+    "P-L3-3_witness_conditioned_transfer": true,
+    "P-L3-4_reason_channel": true,
+    "P-L3-5_debt_localizes_failure": true
+   }
+  }
+ },
+ "pooled": {
+  "n": 270,
+  "cf_decision_when_required_present": {
+   "k": 93,
+   "n": 97,
+   "p": 0.9588,
+   "ci": [
+    0.8987,
+    0.9838
+   ]
+  },
+  "cf_decision_when_required_missing": {
+   "k": 88,
+   "n": 173,
+   "p": 0.5087,
+   "ci": [
+    0.4348,
+    0.5822
+   ]
+  },
+  "transfer_gap_present_minus_missing": 0.4501
+ },
+ "cost_usd": {
+  "grok": 0.0349,
+  "haiku": 0.5634,
+  "gpt": 0.0901
+ },
+ "total_cost_usd": 0.6884
+}

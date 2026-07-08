@@ -432,6 +432,27 @@ verdict in this program (after the last-anchor re-score and the budget-line dual
 methods law from I.1 — *when the claim is a phenotype, the parser is a confound; surface unparsed
 counts and semantically judge* — is now upgraded from observation to standing operating procedure.
 
+## Appendix K — Law-3 cached-summary transfer pilot (2026-07-08)
+
+A first preregistered empirical probe of Law 3 reuses the 2026-07-06 domain-battery cached
+summaries and changes the policy after compaction (`experiments/transfer-law/2026-07-08/`; 90
+counterfactual items × 3 models × 5 probes, $0.688). The result is a split pilot, not the final
+kill-shot. Full-document sanity passes (0.956/1.000/1.000), and the Law-3 localization is large:
+when the counterfactual-required witness survives in the compressed artifact, decision accuracy is
+near ceiling; when it is absent, accuracy falls sharply (grok 0.929→0.646, haiku 0.967→0.450, gpt
+1.000→0.462; pooled 0.959→0.509). Among rows whose original cached-summary answer was correct,
+missing counterfactual witnesses add 0.27–0.57 error. This is exactly the conditional pattern Law 3
+wants: debt forecasts failure under a changed policy better than ordinary counterfactual probing
+alone.
+
+The load-bearing caveat is that the original-accuracy guard fails on all three models
+(0.61–0.68 < the preregistered 0.70 threshold). So the result does **not** yet show hidden
+benchmark-parity brittleness. It shows that the measurement is pointed in the right direction and
+that the decisive next design must first match ordinary accuracy — e.g. using value-dense summaries,
+a looser realized budget, or a model-ladder setup where source-task performance is held fixed.
+Law 3 remains a conjecture; this pilot upgrades it from zero experiments to a concrete, partially
+positive measurement target.
+
 ## 9. The one-sentence version
 
 **Justification is a conserved, priced resource: the shelf width is the entropy of the witness orbit, behavioral optimization always defaults on the debt, abstention is the only honest refinancing, and the bill arrives exactly when the world changes.**

@@ -1,0 +1,271 @@
+model,item,source_id,domain,source_truth,source_failing_param,cf_truth,cf_failing_param,orig_decision,orig_correct,orig_required_survived,cf_required_survived,cf_decision,cf_decision_correct,cf_full_doc_decision,cf_full_doc_correct,cf_nonotes_decision,cf_which,cf_which_raw,cf_which_correct,cf_which_confab,cf_abstained,summary_words
+grok,ops_incident-cf-000,ops_incident-059,ops_incident,APPROVED,,DENIED,gyro drift rate,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,13
+grok,ops_incident-cf-001,ops_incident-000,ops_incident,APPROVED,,DENIED,particulate count,DENIED,False,False,False,APPROVED,False,DENIED,True,DENIED,NONE,NONE,False,False,False,10
+grok,ops_incident-cf-002,ops_incident-072,ops_incident,DENIED,telemetry downlink margin,APPROVED,,DENIED,True,True,False,APPROVED,True,APPROVED,True,DENIED,avionics bus load,avionics bus load,False,True,False,23
+grok,ops_incident-cf-003,ops_incident-068,ops_incident,APPROVED,,APPROVED,,APPROVED,True,True,False,APPROVED,True,APPROVED,True,DENIED,guidance solution confidence,guidance solution confidence,False,True,False,33
+grok,ops_incident-cf-004,ops_incident-055,ops_incident,APPROVED,,APPROVED,,APPROVED,True,False,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,10
+grok,ops_incident-cf-005,ops_incident-014,ops_incident,DENIED,coolant loop flow rate,DENIED,star tracker residual,DENIED,True,True,True,DENIED,True,APPROVED,False,DENIED,star tracker residual,star tracker,True,False,False,35
+grok,ops_incident-cf-006,ops_incident-042,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,9
+grok,ops_incident-cf-007,ops_incident-069,ops_incident,APPROVED,,APPROVED,,DENIED,False,True,False,DENIED,False,APPROVED,True,DENIED,telemetry downlink margin,telemetry downlink margin,False,True,False,19
+grok,ops_incident-cf-008,ops_incident-008,ops_incident,APPROVED,,DENIED,particulate count,APPROVED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,14
+grok,ops_incident-cf-009,ops_incident-064,ops_incident,APPROVED,,DENIED,umbilical release delay,APPROVED,True,False,False,APPROVED,False,DENIED,True,DENIED,NONE,NONE,False,False,False,26
+grok,ops_incident-cf-010,ops_incident-077,ops_incident,DENIED,avionics bus load,DENIED,condenser outlet temperature,DENIED,True,False,False,APPROVED,False,DENIED,True,DENIED,NONE,NONE,False,False,False,17
+grok,ops_incident-cf-011,ops_incident-021,ops_incident,DENIED,seal torque retention,APPROVED,,APPROVED,False,False,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,11
+grok,ops_incident-cf-012,ops_incident-061,ops_incident,DENIED,telemetry downlink margin,DENIED,seal torque retention,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,seal torque retention,torque,True,False,False,44
+grok,ops_incident-cf-013,ops_incident-032,ops_incident,DENIED,seal torque retention,DENIED,particulate count,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,False,10
+grok,ops_incident-cf-014,ops_incident-066,ops_incident,DENIED,seal torque retention,DENIED,guidance solution confidence,APPROVED,False,False,True,DENIED,True,APPROVED,False,DENIED,guidance solution confidence,guidance solution confidence,True,False,False,37
+grok,ops_incident-cf-015,ops_incident-027,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,12
+grok,ops_incident-cf-016,ops_incident-030,ops_incident,DENIED,particulate count,APPROVED,,APPROVED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,False,11
+grok,ops_incident-cf-017,ops_incident-071,ops_incident,APPROVED,,DENIED,thermal blanket coverage,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,11
+grok,ops_incident-cf-018,ops_incident-063,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,10
+grok,ops_incident-cf-019,ops_incident-016,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,False,14
+grok,ops_incident-cf-020,ops_incident-098,ops_incident,DENIED,seal torque retention,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,avionics bus load,avionics bus load,False,True,False,12
+grok,ops_incident-cf-021,ops_incident-004,ops_incident,DENIED,condenser outlet temperature,DENIED,particulate count,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,11
+grok,ops_incident-cf-022,ops_incident-057,ops_incident,APPROVED,,DENIED,coolant loop flow rate,APPROVED,True,False,True,APPROVED,False,DENIED,True,DENIED,coolant loop flow rate,coolant,True,False,False,21
+grok,ops_incident-cf-023,ops_incident-018,ops_incident,DENIED,particulate count,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,False,12
+grok,ops_incident-cf-024,ops_incident-087,ops_incident,APPROVED,,DENIED,guidance solution confidence,APPROVED,True,True,True,DENIED,True,DENIED,True,DENIED,guidance solution confidence,guidance,True,False,False,30
+grok,ops_incident-cf-025,ops_incident-002,ops_incident,DENIED,battery bus impedance,DENIED,seal torque retention,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,False,9
+grok,ops_incident-cf-026,ops_incident-037,ops_incident,DENIED,thermal blanket coverage,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,34
+grok,ops_incident-cf-027,ops_incident-099,ops_incident,DENIED,umbilical release delay,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,False,13
+grok,ops_incident-cf-028,ops_incident-062,ops_incident,DENIED,particulate count,DENIED,reserve charge margin,APPROVED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,False,11
+grok,ops_incident-cf-029,ops_incident-073,ops_incident,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,49
+grok,clinical_enroll-cf-000,clinical_enroll-030,clinical_enroll,DENIED,platelet count,DENIED,systolic blood pressure,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,10
+grok,clinical_enroll-cf-001,clinical_enroll-070,clinical_enroll,APPROVED,,DENIED,absolute neutrophil count,APPROVED,True,True,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,ANC,False,False,False,32
+grok,clinical_enroll-cf-002,clinical_enroll-081,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,False,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,19
+grok,clinical_enroll-cf-003,clinical_enroll-079,clinical_enroll,DENIED,creatinine clearance,DENIED,estimated glomerular filtration rate,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,eGFR,False,False,False,33
+grok,clinical_enroll-cf-004,clinical_enroll-010,clinical_enroll,APPROVED,,DENIED,absolute neutrophil count,APPROVED,True,False,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,ANC,False,False,False,28
+grok,clinical_enroll-cf-005,clinical_enroll-045,clinical_enroll,DENIED,corrected QT interval,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,34
+grok,clinical_enroll-cf-006,clinical_enroll-034,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,33
+grok,clinical_enroll-cf-007,clinical_enroll-047,clinical_enroll,APPROVED,,DENIED,creatinine clearance,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,12
+grok,clinical_enroll-cf-008,clinical_enroll-041,clinical_enroll,DENIED,fasting glucose,APPROVED,,DENIED,True,True,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,19
+grok,clinical_enroll-cf-009,clinical_enroll-071,clinical_enroll,APPROVED,,DENIED,triglycerides,APPROVED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,15
+grok,clinical_enroll-cf-010,clinical_enroll-082,clinical_enroll,APPROVED,,DENIED,fasting glucose,APPROVED,True,True,True,DENIED,True,DENIED,True,DENIED,fasting glucose,glucose,True,False,False,28
+grok,clinical_enroll-cf-011,clinical_enroll-002,clinical_enroll,DENIED,total bilirubin,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,32
+grok,clinical_enroll-cf-012,clinical_enroll-057,clinical_enroll,DENIED,left ventricular ejection fraction,DENIED,alanine aminotransferase,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,ALT,False,False,False,24
+grok,clinical_enroll-cf-013,clinical_enroll-000,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,33
+grok,clinical_enroll-cf-014,clinical_enroll-050,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,31
+grok,clinical_enroll-cf-015,clinical_enroll-098,clinical_enroll,DENIED,total bilirubin,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,30
+grok,clinical_enroll-cf-016,clinical_enroll-028,clinical_enroll,DENIED,hemoglobin,DENIED,left ventricular ejection fraction,DENIED,True,True,True,DENIED,True,APPROVED,False,DENIED,UNMATCHED,LVEF,False,False,False,27
+grok,clinical_enroll-cf-017,clinical_enroll-021,clinical_enroll,DENIED,triglycerides,DENIED,hemoglobin,APPROVED,False,False,False,APPROVED,False,DENIED,True,DENIED,NONE,NONE,False,False,False,16
+grok,clinical_enroll-cf-018,clinical_enroll-099,clinical_enroll,DENIED,estimated glomerular filtration rate,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,34
+grok,clinical_enroll-cf-019,clinical_enroll-060,clinical_enroll,DENIED,absolute neutrophil count,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,29
+grok,clinical_enroll-cf-020,clinical_enroll-031,clinical_enroll,DENIED,hemoglobin,DENIED,creatinine clearance,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,CrCl,False,False,False,33
+grok,clinical_enroll-cf-021,clinical_enroll-056,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,21
+grok,clinical_enroll-cf-022,clinical_enroll-066,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,34
+grok,clinical_enroll-cf-023,clinical_enroll-019,clinical_enroll,DENIED,creatinine clearance,DENIED,alanine aminotransferase,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,ALT,False,False,False,30
+grok,clinical_enroll-cf-024,clinical_enroll-012,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,33
+grok,clinical_enroll-cf-025,clinical_enroll-018,clinical_enroll,DENIED,fasting glucose,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,31
+grok,clinical_enroll-cf-026,clinical_enroll-033,clinical_enroll,APPROVED,,DENIED,triglycerides,APPROVED,True,False,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,TG,False,False,False,24
+grok,clinical_enroll-cf-027,clinical_enroll-085,clinical_enroll,APPROVED,,DENIED,alanine aminotransferase,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,10
+grok,clinical_enroll-cf-028,clinical_enroll-068,clinical_enroll,APPROVED,,APPROVED,,DENIED,False,False,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,15
+grok,clinical_enroll-cf-029,clinical_enroll-053,clinical_enroll,DENIED,alanine aminotransferase,DENIED,body mass index,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,BMI,False,False,False,24
+grok,ci_release-cf-000,ci_release-019,ci_release,APPROVED,,DENIED,p95 request latency,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,p95 request latency,p95 request latency,True,False,False,16
+grok,ci_release-cf-001,ci_release-016,ci_release,APPROVED,,DENIED,flaky test count,APPROVED,True,False,False,DENIED,True,DENIED,True,DENIED,error budget remaining,error budget remaining,False,True,False,14
+grok,ci_release-cf-002,ci_release-037,ci_release,DENIED,mean time to acknowledge,DENIED,line coverage,APPROVED,False,True,True,DENIED,True,DENIED,True,DENIED,line coverage,line coverage,True,False,False,30
+grok,ci_release-cf-003,ci_release-052,ci_release,APPROVED,,APPROVED,,DENIED,False,True,False,APPROVED,True,APPROVED,True,DENIED,rollback drill success,rollback drill success,False,True,False,23
+grok,ci_release-cf-004,ci_release-090,ci_release,DENIED,mean time to acknowledge,APPROVED,,DENIED,True,False,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,23
+grok,ci_release-cf-005,ci_release-056,ci_release,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,DENIED,peak heap usage,peak heap usage,False,True,False,33
+grok,ci_release-cf-006,ci_release-049,ci_release,APPROVED,,DENIED,mean time to acknowledge,DENIED,False,True,False,DENIED,True,DENIED,True,DENIED,rollback drill success,rollback drill success,False,True,False,18
+grok,ci_release-cf-007,ci_release-045,ci_release,DENIED,p95 request latency,APPROVED,,DENIED,True,True,True,DENIED,False,APPROVED,True,DENIED,error budget remaining,error budget remaining,False,True,False,26
+grok,ci_release-cf-008,ci_release-004,ci_release,DENIED,mean time to acknowledge,APPROVED,,DENIED,True,False,True,APPROVED,True,APPROVED,True,DENIED,dependency audit findings,dependency audit findings,False,True,False,30
+grok,ci_release-cf-009,ci_release-017,ci_release,DENIED,peak heap usage,DENIED,cold start time,APPROVED,False,False,False,DENIED,True,DENIED,True,DENIED,cold start time,cold start time,True,False,False,16
+grok,ci_release-cf-010,ci_release-079,ci_release,APPROVED,,APPROVED,,DENIED,False,True,True,APPROVED,True,APPROVED,True,DENIED,error budget remaining,error budget remaining,False,True,False,28
+grok,ci_release-cf-011,ci_release-012,ci_release,APPROVED,,APPROVED,,DENIED,False,True,True,DENIED,False,APPROVED,True,DENIED,rollback drill success,rollback drill success,False,True,False,27
+grok,ci_release-cf-012,ci_release-010,ci_release,APPROVED,,DENIED,rollback drill success,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,rollback drill success,rollback,True,False,False,22
+grok,ci_release-cf-013,ci_release-026,ci_release,APPROVED,,APPROVED,,APPROVED,True,False,False,DENIED,False,APPROVED,True,DENIED,error budget remaining,error budget remaining,False,True,False,16
+grok,ci_release-cf-014,ci_release-036,ci_release,APPROVED,,DENIED,line coverage,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,rollback drill success,rollback,False,True,False,17
+grok,ci_release-cf-015,ci_release-003,ci_release,APPROVED,,APPROVED,,APPROVED,True,False,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,17
+grok,ci_release-cf-016,ci_release-000,ci_release,DENIED,error budget remaining,APPROVED,,DENIED,True,True,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,13
+grok,ci_release-cf-017,ci_release-077,ci_release,APPROVED,,APPROVED,,DENIED,False,False,True,APPROVED,True,APPROVED,True,DENIED,error budget remaining,error budget remaining,False,True,False,14
+grok,ci_release-cf-018,ci_release-001,ci_release,DENIED,cold start time,DENIED,line coverage,DENIED,True,True,True,DENIED,True,APPROVED,False,DENIED,line coverage,coverage,True,False,False,31
+grok,ci_release-cf-019,ci_release-054,ci_release,APPROVED,,DENIED,p95 request latency,APPROVED,True,True,True,DENIED,True,DENIED,True,DENIED,p95 request latency,p95 request latency,True,False,False,31
+grok,ci_release-cf-020,ci_release-082,ci_release,DENIED,rollback drill success,DENIED,canary error rate,DENIED,True,False,False,APPROVED,False,DENIED,True,DENIED,open severity-one defects,open severity-one defects,False,True,False,22
+grok,ci_release-cf-021,ci_release-051,ci_release,APPROVED,,APPROVED,,DENIED,False,True,False,APPROVED,True,APPROVED,True,DENIED,canary error rate,canary error rate,False,True,False,21
+grok,ci_release-cf-022,ci_release-024,ci_release,DENIED,peak heap usage,APPROVED,,DENIED,True,False,False,APPROVED,True,APPROVED,True,DENIED,cold start time,cold start time,False,True,False,21
+grok,ci_release-cf-023,ci_release-032,ci_release,DENIED,dependency audit findings,DENIED,canary error rate,DENIED,True,False,True,DENIED,True,DENIED,True,DENIED,canary error rate,canary error rate,True,False,False,19
+grok,ci_release-cf-024,ci_release-096,ci_release,DENIED,line coverage,DENIED,canary error rate,DENIED,True,True,False,DENIED,True,DENIED,True,DENIED,build reproducibility,reproducibility,False,True,False,21
+grok,ci_release-cf-025,ci_release-094,ci_release,DENIED,open severity-one defects,DENIED,bundle size,DENIED,True,True,False,APPROVED,False,DENIED,True,DENIED,NONE,NONE,False,False,False,14
+grok,ci_release-cf-026,ci_release-072,ci_release,APPROVED,,APPROVED,,DENIED,False,True,False,APPROVED,True,APPROVED,True,DENIED,cold start time,cold start time,False,True,False,34
+grok,ci_release-cf-027,ci_release-028,ci_release,DENIED,build reproducibility,DENIED,peak heap usage,DENIED,True,True,False,DENIED,True,DENIED,True,DENIED,peak heap usage,peak heap usage,True,False,False,18
+grok,ci_release-cf-028,ci_release-069,ci_release,DENIED,build reproducibility,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,error budget remaining,error budget remaining,False,True,False,18
+grok,ci_release-cf-029,ci_release-076,ci_release,DENIED,unit test pass rate,DENIED,build reproducibility,APPROVED,False,True,False,DENIED,True,DENIED,True,DENIED,build reproducibility,reproducibility,True,False,False,14
+haiku,ops_incident-cf-000,ops_incident-059,ops_incident,APPROVED,,DENIED,gyro drift rate,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,gyro drift rate,gyro drift rate,True,False,False,19
+haiku,ops_incident-cf-001,ops_incident-000,ops_incident,APPROVED,,DENIED,particulate count,DENIED,False,False,False,,False,DENIED,True,DENIED,NONE,NONE,False,False,True,14
+haiku,ops_incident-cf-002,ops_incident-072,ops_incident,DENIED,telemetry downlink margin,APPROVED,,DENIED,True,False,False,,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,14
+haiku,ops_incident-cf-003,ops_incident-068,ops_incident,APPROVED,,APPROVED,,APPROVED,True,False,False,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,True,36
+haiku,ops_incident-cf-004,ops_incident-055,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,True,16
+haiku,ops_incident-cf-005,ops_incident-014,ops_incident,DENIED,coolant loop flow rate,DENIED,star tracker residual,DENIED,True,True,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,33
+haiku,ops_incident-cf-006,ops_incident-042,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,star tracker residual,star tracker residual,False,True,True,24
+haiku,ops_incident-cf-007,ops_incident-069,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,22
+haiku,ops_incident-cf-008,ops_incident-008,ops_incident,APPROVED,,DENIED,particulate count,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,22
+haiku,ops_incident-cf-009,ops_incident-064,ops_incident,APPROVED,,DENIED,umbilical release delay,DENIED,False,False,True,DENIED,True,DENIED,True,APPROVED,umbilical release delay,umbilical release delay,True,False,False,38
+haiku,ops_incident-cf-010,ops_incident-077,ops_incident,DENIED,avionics bus load,DENIED,condenser outlet temperature,DENIED,True,True,False,DENIED,True,DENIED,True,DENIED,condenser outlet temperature,Condenser outlet temperature,True,False,True,28
+haiku,ops_incident-cf-011,ops_incident-021,ops_incident,DENIED,seal torque retention,APPROVED,,DENIED,True,False,False,,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,15
+haiku,ops_incident-cf-012,ops_incident-061,ops_incident,DENIED,telemetry downlink margin,DENIED,seal torque retention,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,seal torque retention,Seal torque retention,True,False,False,45
+haiku,ops_incident-cf-013,ops_incident-032,ops_incident,DENIED,seal torque retention,DENIED,particulate count,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,20
+haiku,ops_incident-cf-014,ops_incident-066,ops_incident,DENIED,seal torque retention,DENIED,guidance solution confidence,DENIED,True,False,True,DENIED,True,DENIED,True,APPROVED,guidance solution confidence,guidance confidence,True,False,False,19
+haiku,ops_incident-cf-015,ops_incident-027,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,False,24
+haiku,ops_incident-cf-016,ops_incident-030,ops_incident,DENIED,particulate count,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,26
+haiku,ops_incident-cf-017,ops_incident-071,ops_incident,APPROVED,,DENIED,thermal blanket coverage,APPROVED,True,True,True,DENIED,True,DENIED,True,DENIED,thermal blanket coverage,thermal coverage,True,False,False,53
+haiku,ops_incident-cf-018,ops_incident-063,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,17
+haiku,ops_incident-cf-019,ops_incident-016,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,20
+haiku,ops_incident-cf-020,ops_incident-098,ops_incident,DENIED,seal torque retention,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,coolant loop flow rate,coolant loop flow rate,False,True,True,25
+haiku,ops_incident-cf-021,ops_incident-004,ops_incident,DENIED,condenser outlet temperature,DENIED,particulate count,DENIED,True,False,False,,False,DENIED,True,DENIED,NONE,NONE,False,False,True,14
+haiku,ops_incident-cf-022,ops_incident-057,ops_incident,APPROVED,,DENIED,coolant loop flow rate,DENIED,False,False,False,,False,DENIED,True,DENIED,NONE,NONE,False,False,True,16
+haiku,ops_incident-cf-023,ops_incident-018,ops_incident,DENIED,particulate count,APPROVED,,DENIED,True,True,False,,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,37
+haiku,ops_incident-cf-024,ops_incident-087,ops_incident,APPROVED,,DENIED,guidance solution confidence,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,guidance solution confidence,guidance confidence,True,False,False,36
+haiku,ops_incident-cf-025,ops_incident-002,ops_incident,DENIED,battery bus impedance,DENIED,seal torque retention,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,umbilical release delay,umbilical release delay,False,True,True,21
+haiku,ops_incident-cf-026,ops_incident-037,ops_incident,DENIED,thermal blanket coverage,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,64
+haiku,ops_incident-cf-027,ops_incident-099,ops_incident,DENIED,umbilical release delay,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,17
+haiku,ops_incident-cf-028,ops_incident-062,ops_incident,DENIED,particulate count,DENIED,reserve charge margin,DENIED,True,False,False,,False,DENIED,True,APPROVED,NONE,NONE,False,False,True,13
+haiku,ops_incident-cf-029,ops_incident-073,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,18
+haiku,clinical_enroll-cf-000,clinical_enroll-030,clinical_enroll,DENIED,platelet count,DENIED,systolic blood pressure,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,24
+haiku,clinical_enroll-cf-001,clinical_enroll-070,clinical_enroll,APPROVED,,DENIED,absolute neutrophil count,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,23
+haiku,clinical_enroll-cf-002,clinical_enroll-081,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,33
+haiku,clinical_enroll-cf-003,clinical_enroll-079,clinical_enroll,DENIED,creatinine clearance,DENIED,estimated glomerular filtration rate,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,eGFR,False,False,False,34
+haiku,clinical_enroll-cf-004,clinical_enroll-010,clinical_enroll,APPROVED,,DENIED,absolute neutrophil count,APPROVED,True,True,True,DENIED,True,DENIED,True,APPROVED,UNMATCHED,ANC,False,False,False,38
+haiku,clinical_enroll-cf-005,clinical_enroll-045,clinical_enroll,DENIED,corrected QT interval,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,absolute neutrophil count,Absolute neutrophil count,False,True,True,19
+haiku,clinical_enroll-cf-006,clinical_enroll-034,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,False,34
+haiku,clinical_enroll-cf-007,clinical_enroll-047,clinical_enroll,APPROVED,,DENIED,creatinine clearance,APPROVED,True,True,True,DENIED,True,DENIED,True,APPROVED,creatinine clearance,creatinine clearance,True,False,False,33
+haiku,clinical_enroll-cf-008,clinical_enroll-041,clinical_enroll,DENIED,fasting glucose,APPROVED,,DENIED,True,True,False,DENIED,False,APPROVED,True,DENIED,serum albumin,serum albumin,False,True,True,20
+haiku,clinical_enroll-cf-009,clinical_enroll-071,clinical_enroll,APPROVED,,DENIED,triglycerides,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,triglycerides,triglycerides,True,False,False,19
+haiku,clinical_enroll-cf-010,clinical_enroll-082,clinical_enroll,APPROVED,,DENIED,fasting glucose,APPROVED,True,True,True,DENIED,True,DENIED,True,DENIED,fasting glucose,glucose,True,False,False,33
+haiku,clinical_enroll-cf-011,clinical_enroll-002,clinical_enroll,DENIED,total bilirubin,APPROVED,,DENIED,True,False,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,20
+haiku,clinical_enroll-cf-012,clinical_enroll-057,clinical_enroll,DENIED,left ventricular ejection fraction,DENIED,alanine aminotransferase,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,alanine aminotransferase,alanine aminotransferase,True,False,False,35
+haiku,clinical_enroll-cf-013,clinical_enroll-000,clinical_enroll,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,17
+haiku,clinical_enroll-cf-014,clinical_enroll-050,clinical_enroll,APPROVED,,APPROVED,,DENIED,False,False,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,29
+haiku,clinical_enroll-cf-015,clinical_enroll-098,clinical_enroll,DENIED,total bilirubin,APPROVED,,DENIED,True,False,False,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,True,16
+haiku,clinical_enroll-cf-016,clinical_enroll-028,clinical_enroll,DENIED,hemoglobin,DENIED,left ventricular ejection fraction,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,LVEF,False,False,False,24
+haiku,clinical_enroll-cf-017,clinical_enroll-021,clinical_enroll,DENIED,triglycerides,DENIED,hemoglobin,DENIED,True,True,False,,False,DENIED,True,,NONE,NONE,False,False,True,16
+haiku,clinical_enroll-cf-018,clinical_enroll-099,clinical_enroll,DENIED,estimated glomerular filtration rate,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,alanine aminotransferase,alanine aminotransferase,False,True,True,18
+haiku,clinical_enroll-cf-019,clinical_enroll-060,clinical_enroll,DENIED,absolute neutrophil count,APPROVED,,DENIED,True,False,False,APPROVED,True,APPROVED,True,DENIED,corrected QT interval,corrected QT interval,False,True,True,22
+haiku,clinical_enroll-cf-020,clinical_enroll-031,clinical_enroll,DENIED,hemoglobin,DENIED,creatinine clearance,DENIED,True,True,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,16
+haiku,clinical_enroll-cf-021,clinical_enroll-056,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,False,32
+haiku,clinical_enroll-cf-022,clinical_enroll-066,clinical_enroll,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,15
+haiku,clinical_enroll-cf-023,clinical_enroll-019,clinical_enroll,DENIED,creatinine clearance,DENIED,alanine aminotransferase,DENIED,True,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,18
+haiku,clinical_enroll-cf-024,clinical_enroll-012,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,False,DENIED,False,APPROVED,True,DENIED,creatinine clearance,creatinine clearance,False,True,True,26
+haiku,clinical_enroll-cf-025,clinical_enroll-018,clinical_enroll,DENIED,fasting glucose,APPROVED,,DENIED,True,True,False,DENIED,False,APPROVED,True,APPROVED,total bilirubin,Total bilirubin,False,True,True,21
+haiku,clinical_enroll-cf-026,clinical_enroll-033,clinical_enroll,APPROVED,,DENIED,triglycerides,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,triglycerides,Triglycerides,True,False,False,18
+haiku,clinical_enroll-cf-027,clinical_enroll-085,clinical_enroll,APPROVED,,DENIED,alanine aminotransferase,DENIED,False,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,16
+haiku,clinical_enroll-cf-028,clinical_enroll-068,clinical_enroll,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,21
+haiku,clinical_enroll-cf-029,clinical_enroll-053,clinical_enroll,DENIED,alanine aminotransferase,DENIED,body mass index,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,UNMATCHED,BMI,False,False,False,34
+haiku,ci_release-cf-000,ci_release-019,ci_release,APPROVED,,DENIED,p95 request latency,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,19
+haiku,ci_release-cf-001,ci_release-016,ci_release,APPROVED,,DENIED,flaky test count,DENIED,False,False,True,APPROVED,False,DENIED,True,APPROVED,flaky test count,flaky tests,True,False,False,28
+haiku,ci_release-cf-002,ci_release-037,ci_release,DENIED,mean time to acknowledge,DENIED,line coverage,APPROVED,False,False,True,DENIED,True,DENIED,True,APPROVED,line coverage,line coverage,True,False,False,22
+haiku,ci_release-cf-003,ci_release-052,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,True,22
+haiku,ci_release-cf-004,ci_release-090,ci_release,DENIED,mean time to acknowledge,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,29
+haiku,ci_release-cf-005,ci_release-056,ci_release,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,False,46
+haiku,ci_release-cf-006,ci_release-049,ci_release,APPROVED,,DENIED,mean time to acknowledge,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,mean time to acknowledge,mean time to acknowledge,True,False,True,37
+haiku,ci_release-cf-007,ci_release-045,ci_release,DENIED,p95 request latency,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,dependency audit findings,dependency audit findings,False,True,True,17
+haiku,ci_release-cf-008,ci_release-004,ci_release,DENIED,mean time to acknowledge,APPROVED,,APPROVED,False,False,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,32
+haiku,ci_release-cf-009,ci_release-017,ci_release,DENIED,peak heap usage,DENIED,cold start time,APPROVED,False,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,19
+haiku,ci_release-cf-010,ci_release-079,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,24
+haiku,ci_release-cf-011,ci_release-012,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,mean time to acknowledge,mean time to acknowledge,False,True,True,34
+haiku,ci_release-cf-012,ci_release-010,ci_release,APPROVED,,DENIED,rollback drill success,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,rollback drill success,rollback drill success,True,False,False,25
+haiku,ci_release-cf-013,ci_release-026,ci_release,APPROVED,,APPROVED,,APPROVED,True,False,False,DENIED,False,APPROVED,True,APPROVED,peak heap usage,peak heap usage,False,True,True,26
+haiku,ci_release-cf-014,ci_release-036,ci_release,APPROVED,,DENIED,line coverage,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,line coverage,line coverage,True,False,False,21
+haiku,ci_release-cf-015,ci_release-003,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,19
+haiku,ci_release-cf-016,ci_release-000,ci_release,DENIED,error budget remaining,APPROVED,,DENIED,True,True,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,20
+haiku,ci_release-cf-017,ci_release-077,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,APPROVED,True,APPROVED,True,DENIED,error budget remaining,error budget remaining,False,True,True,19
+haiku,ci_release-cf-018,ci_release-001,ci_release,DENIED,cold start time,DENIED,line coverage,DENIED,True,False,True,DENIED,True,DENIED,True,DENIED,line coverage,line coverage,True,False,False,24
+haiku,ci_release-cf-019,ci_release-054,ci_release,APPROVED,,DENIED,p95 request latency,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,22
+haiku,ci_release-cf-020,ci_release-082,ci_release,DENIED,rollback drill success,DENIED,canary error rate,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,canary error rate,canary error rate,True,False,False,23
+haiku,ci_release-cf-021,ci_release-051,ci_release,APPROVED,,APPROVED,,APPROVED,True,False,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,True,23
+haiku,ci_release-cf-022,ci_release-024,ci_release,DENIED,peak heap usage,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,cold start time,cold start time,False,True,True,22
+haiku,ci_release-cf-023,ci_release-032,ci_release,DENIED,dependency audit findings,DENIED,canary error rate,DENIED,True,True,True,DENIED,True,DENIED,True,DENIED,canary error rate,Canary error rate,True,False,False,36
+haiku,ci_release-cf-024,ci_release-096,ci_release,DENIED,line coverage,DENIED,canary error rate,DENIED,True,True,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,30
+haiku,ci_release-cf-025,ci_release-094,ci_release,DENIED,open severity-one defects,DENIED,bundle size,DENIED,True,True,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,21
+haiku,ci_release-cf-026,ci_release-072,ci_release,APPROVED,,APPROVED,,APPROVED,True,True,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,True,25
+haiku,ci_release-cf-027,ci_release-028,ci_release,DENIED,build reproducibility,DENIED,peak heap usage,DENIED,True,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,23
+haiku,ci_release-cf-028,ci_release-069,ci_release,DENIED,build reproducibility,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,mean time to acknowledge,mean time to acknowledge,False,True,True,21
+haiku,ci_release-cf-029,ci_release-076,ci_release,DENIED,unit test pass rate,DENIED,build reproducibility,DENIED,True,True,False,DENIED,True,DENIED,True,APPROVED,build reproducibility,build reproducibility,True,False,True,25
+gpt,ops_incident-cf-000,ops_incident-059,ops_incident,APPROVED,,DENIED,gyro drift rate,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,14
+gpt,ops_incident-cf-001,ops_incident-000,ops_incident,APPROVED,,DENIED,particulate count,DENIED,False,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,12
+gpt,ops_incident-cf-002,ops_incident-072,ops_incident,DENIED,telemetry downlink margin,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,48
+gpt,ops_incident-cf-003,ops_incident-068,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,APPROVED,star tracker residual,star tracker residual,False,True,True,14
+gpt,ops_incident-cf-004,ops_incident-055,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,14
+gpt,ops_incident-cf-005,ops_incident-014,ops_incident,DENIED,coolant loop flow rate,DENIED,star tracker residual,DENIED,True,True,True,DENIED,True,DENIED,True,APPROVED,star tracker residual,star tracker residual,True,False,False,56
+gpt,ops_incident-cf-006,ops_incident-042,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,star tracker residual,star tracker residual,False,True,True,20
+gpt,ops_incident-cf-007,ops_incident-069,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,13
+gpt,ops_incident-cf-008,ops_incident-008,ops_incident,APPROVED,,DENIED,particulate count,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,14
+gpt,ops_incident-cf-009,ops_incident-064,ops_incident,APPROVED,,DENIED,umbilical release delay,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,umbilical release delay,umbilical release delay,True,False,False,30
+gpt,ops_incident-cf-010,ops_incident-077,ops_incident,DENIED,avionics bus load,DENIED,condenser outlet temperature,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,15
+gpt,ops_incident-cf-011,ops_incident-021,ops_incident,DENIED,seal torque retention,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,reserve charge margin,reserve charge margin,False,True,True,13
+gpt,ops_incident-cf-012,ops_incident-061,ops_incident,DENIED,telemetry downlink margin,DENIED,seal torque retention,DENIED,True,False,True,DENIED,True,DENIED,True,APPROVED,seal torque retention,seal torque retention,True,False,False,15
+gpt,ops_incident-cf-013,ops_incident-032,ops_incident,DENIED,seal torque retention,DENIED,particulate count,DENIED,True,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,19
+gpt,ops_incident-cf-014,ops_incident-066,ops_incident,DENIED,seal torque retention,DENIED,guidance solution confidence,DENIED,True,False,True,DENIED,True,DENIED,True,DENIED,guidance solution confidence,guidance,True,False,False,12
+gpt,ops_incident-cf-015,ops_incident-027,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,APPROVED,thermal blanket coverage,thermal blanket coverage,False,True,False,15
+gpt,ops_incident-cf-016,ops_incident-030,ops_incident,DENIED,particulate count,APPROVED,,DENIED,True,True,False,DENIED,False,APPROVED,True,APPROVED,telemetry downlink margin,telemetry downlink margin,False,True,False,14
+gpt,ops_incident-cf-017,ops_incident-071,ops_incident,APPROVED,,DENIED,thermal blanket coverage,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,13
+gpt,ops_incident-cf-018,ops_incident-063,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,14
+gpt,ops_incident-cf-019,ops_incident-016,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,seal torque retention,seal torque retention,False,True,True,20
+gpt,ops_incident-cf-020,ops_incident-098,ops_incident,DENIED,seal torque retention,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,False,14
+gpt,ops_incident-cf-021,ops_incident-004,ops_incident,DENIED,condenser outlet temperature,DENIED,particulate count,DENIED,True,True,True,DENIED,True,DENIED,True,APPROVED,particulate count,particulate,True,False,False,44
+gpt,ops_incident-cf-022,ops_incident-057,ops_incident,APPROVED,,DENIED,coolant loop flow rate,DENIED,False,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,16
+gpt,ops_incident-cf-023,ops_incident-018,ops_incident,DENIED,particulate count,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,14
+gpt,ops_incident-cf-024,ops_incident-087,ops_incident,APPROVED,,DENIED,guidance solution confidence,APPROVED,True,True,True,DENIED,True,DENIED,True,DENIED,guidance solution confidence,guidance solution confidence,True,False,False,58
+gpt,ops_incident-cf-025,ops_incident-002,ops_incident,DENIED,battery bus impedance,DENIED,seal torque retention,DENIED,True,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,16
+gpt,ops_incident-cf-026,ops_incident-037,ops_incident,DENIED,thermal blanket coverage,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,14
+gpt,ops_incident-cf-027,ops_incident-099,ops_incident,DENIED,umbilical release delay,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,15
+gpt,ops_incident-cf-028,ops_incident-062,ops_incident,DENIED,particulate count,DENIED,reserve charge margin,DENIED,True,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,14
+gpt,ops_incident-cf-029,ops_incident-073,ops_incident,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,gyro drift rate,gyro drift rate,False,True,False,24
+gpt,clinical_enroll-cf-000,clinical_enroll-030,clinical_enroll,DENIED,platelet count,DENIED,systolic blood pressure,DENIED,True,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,15
+gpt,clinical_enroll-cf-001,clinical_enroll-070,clinical_enroll,APPROVED,,DENIED,absolute neutrophil count,DENIED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,19
+gpt,clinical_enroll-cf-002,clinical_enroll-081,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,False,39
+gpt,clinical_enroll-cf-003,clinical_enroll-079,clinical_enroll,DENIED,creatinine clearance,DENIED,estimated glomerular filtration rate,DENIED,True,False,True,DENIED,True,DENIED,True,APPROVED,UNMATCHED,eGFR,False,False,False,25
+gpt,clinical_enroll-cf-004,clinical_enroll-010,clinical_enroll,APPROVED,,DENIED,absolute neutrophil count,DENIED,False,False,False,DENIED,True,DENIED,True,APPROVED,alanine aminotransferase,alanine aminotransferase,False,True,True,21
+gpt,clinical_enroll-cf-005,clinical_enroll-045,clinical_enroll,DENIED,corrected QT interval,APPROVED,,APPROVED,False,False,False,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,True,13
+gpt,clinical_enroll-cf-006,clinical_enroll-034,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,False,40
+gpt,clinical_enroll-cf-007,clinical_enroll-047,clinical_enroll,APPROVED,,DENIED,creatinine clearance,APPROVED,True,True,True,DENIED,True,DENIED,True,DENIED,creatinine clearance,creatinine clearance,True,False,False,44
+gpt,clinical_enroll-cf-008,clinical_enroll-041,clinical_enroll,DENIED,fasting glucose,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,False,44
+gpt,clinical_enroll-cf-009,clinical_enroll-071,clinical_enroll,APPROVED,,DENIED,triglycerides,DENIED,False,False,False,DENIED,True,DENIED,True,APPROVED,fasting glucose,fasting glucose,False,True,True,14
+gpt,clinical_enroll-cf-010,clinical_enroll-082,clinical_enroll,APPROVED,,DENIED,fasting glucose,APPROVED,True,True,True,DENIED,True,DENIED,True,APPROVED,fasting glucose,glucose,True,False,False,39
+gpt,clinical_enroll-cf-011,clinical_enroll-002,clinical_enroll,DENIED,total bilirubin,APPROVED,,DENIED,True,False,False,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,False,14
+gpt,clinical_enroll-cf-012,clinical_enroll-057,clinical_enroll,DENIED,left ventricular ejection fraction,DENIED,alanine aminotransferase,DENIED,True,True,False,DENIED,True,DENIED,True,APPROVED,fasting glucose,fasting glucose,False,True,True,12
+gpt,clinical_enroll-cf-013,clinical_enroll-000,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,39
+gpt,clinical_enroll-cf-014,clinical_enroll-050,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,False,43
+gpt,clinical_enroll-cf-015,clinical_enroll-098,clinical_enroll,DENIED,total bilirubin,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,False,17
+gpt,clinical_enroll-cf-016,clinical_enroll-028,clinical_enroll,DENIED,hemoglobin,DENIED,left ventricular ejection fraction,DENIED,True,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,13
+gpt,clinical_enroll-cf-017,clinical_enroll-021,clinical_enroll,DENIED,triglycerides,DENIED,hemoglobin,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,False,22
+gpt,clinical_enroll-cf-018,clinical_enroll-099,clinical_enroll,DENIED,estimated glomerular filtration rate,APPROVED,,DENIED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,37
+gpt,clinical_enroll-cf-019,clinical_enroll-060,clinical_enroll,DENIED,absolute neutrophil count,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,16
+gpt,clinical_enroll-cf-020,clinical_enroll-031,clinical_enroll,DENIED,hemoglobin,DENIED,creatinine clearance,DENIED,True,True,False,DENIED,True,DENIED,True,DENIED,total bilirubin,total bilirubin,False,True,False,18
+gpt,clinical_enroll-cf-021,clinical_enroll-056,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,False,False,DENIED,False,APPROVED,True,DENIED,platelet count,platelet count,False,True,True,17
+gpt,clinical_enroll-cf-022,clinical_enroll-066,clinical_enroll,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,40
+gpt,clinical_enroll-cf-023,clinical_enroll-019,clinical_enroll,DENIED,creatinine clearance,DENIED,alanine aminotransferase,APPROVED,False,False,False,DENIED,True,DENIED,True,APPROVED,alanine aminotransferase,alanine aminotransferase,True,False,True,17
+gpt,clinical_enroll-cf-024,clinical_enroll-012,clinical_enroll,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,systolic blood pressure,systolic blood pressure,False,True,True,16
+gpt,clinical_enroll-cf-025,clinical_enroll-018,clinical_enroll,DENIED,fasting glucose,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,True,13
+gpt,clinical_enroll-cf-026,clinical_enroll-033,clinical_enroll,APPROVED,,DENIED,triglycerides,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,triglycerides,triglycerides,True,False,False,18
+gpt,clinical_enroll-cf-027,clinical_enroll-085,clinical_enroll,APPROVED,,DENIED,alanine aminotransferase,APPROVED,True,False,False,APPROVED,False,DENIED,True,APPROVED,NONE,NONE,False,False,False,18
+gpt,clinical_enroll-cf-028,clinical_enroll-068,clinical_enroll,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,False,18
+gpt,clinical_enroll-cf-029,clinical_enroll-053,clinical_enroll,DENIED,alanine aminotransferase,DENIED,body mass index,DENIED,True,False,True,DENIED,True,DENIED,True,APPROVED,UNMATCHED,BMI,False,False,False,15
+gpt,ci_release-cf-000,ci_release-019,ci_release,APPROVED,,DENIED,p95 request latency,APPROVED,True,True,True,DENIED,True,DENIED,True,APPROVED,peak heap usage,peak heap usage,False,True,False,47
+gpt,ci_release-cf-001,ci_release-016,ci_release,APPROVED,,DENIED,flaky test count,DENIED,False,False,True,DENIED,True,DENIED,True,APPROVED,flaky test count,flaky test count,True,False,False,16
+gpt,ci_release-cf-002,ci_release-037,ci_release,DENIED,mean time to acknowledge,DENIED,line coverage,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,16
+gpt,ci_release-cf-003,ci_release-052,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,APPROVED,cold start time,COLD START TIME,False,True,True,17
+gpt,ci_release-cf-004,ci_release-090,ci_release,DENIED,mean time to acknowledge,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,True,15
+gpt,ci_release-cf-005,ci_release-056,ci_release,APPROVED,,APPROVED,,APPROVED,True,True,True,APPROVED,True,APPROVED,True,APPROVED,NONE,NONE,True,False,False,33
+gpt,ci_release-cf-006,ci_release-049,ci_release,APPROVED,,DENIED,mean time to acknowledge,DENIED,False,False,False,DENIED,True,DENIED,True,APPROVED,mean time to acknowledge,mean time to acknowledge,True,False,False,22
+gpt,ci_release-cf-007,ci_release-045,ci_release,DENIED,p95 request latency,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,NONE,NONE,True,False,False,14
+gpt,ci_release-cf-008,ci_release-004,ci_release,DENIED,mean time to acknowledge,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,DENIED,line coverage,line coverage,False,True,False,13
+gpt,ci_release-cf-009,ci_release-017,ci_release,DENIED,peak heap usage,DENIED,cold start time,APPROVED,False,False,False,DENIED,True,DENIED,True,DENIED,NONE,NONE,False,False,True,15
+gpt,ci_release-cf-010,ci_release-079,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,APPROVED,error budget remaining,error budget remaining,False,True,False,16
+gpt,ci_release-cf-011,ci_release-012,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,DENIED,mean time to acknowledge,mean time to acknowledge,False,True,False,16
+gpt,ci_release-cf-012,ci_release-010,ci_release,APPROVED,,DENIED,rollback drill success,DENIED,False,False,True,DENIED,True,DENIED,True,APPROVED,rollback drill success,rollback drill success,True,False,False,14
+gpt,ci_release-cf-013,ci_release-026,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,APPROVED,error budget remaining,error budget remaining,False,True,False,13
+gpt,ci_release-cf-014,ci_release-036,ci_release,APPROVED,,DENIED,line coverage,DENIED,False,False,True,DENIED,True,DENIED,True,DENIED,line coverage,line coverage,True,False,False,16
+gpt,ci_release-cf-015,ci_release-003,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,APPROVED,True,APPROVED,True,,NONE,NONE,True,False,False,20
+gpt,ci_release-cf-016,ci_release-000,ci_release,DENIED,error budget remaining,APPROVED,,DENIED,True,True,False,DENIED,False,APPROVED,True,,flaky test count,flaky test count,False,True,True,15
+gpt,ci_release-cf-017,ci_release-077,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,APPROVED,True,APPROVED,True,DENIED,NONE,NONE,True,False,False,14
+gpt,ci_release-cf-018,ci_release-001,ci_release,DENIED,cold start time,DENIED,line coverage,DENIED,True,False,True,DENIED,True,DENIED,True,APPROVED,line coverage,coverage,True,False,False,15
+gpt,ci_release-cf-019,ci_release-054,ci_release,APPROVED,,DENIED,p95 request latency,DENIED,False,False,False,DENIED,True,DENIED,True,APPROVED,NONE,NONE,False,False,True,14
+gpt,ci_release-cf-020,ci_release-082,ci_release,DENIED,rollback drill success,DENIED,canary error rate,DENIED,True,True,False,APPROVED,False,DENIED,True,APPROVED,NONE,NONE,False,False,False,31
+gpt,ci_release-cf-021,ci_release-051,ci_release,APPROVED,,APPROVED,,DENIED,False,False,False,DENIED,False,APPROVED,True,APPROVED,flaky test count,flaky test count,False,True,True,14
+gpt,ci_release-cf-022,ci_release-024,ci_release,DENIED,peak heap usage,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,NONE,NONE,True,False,False,13
+gpt,ci_release-cf-023,ci_release-032,ci_release,DENIED,dependency audit findings,DENIED,canary error rate,DENIED,True,False,False,APPROVED,False,DENIED,True,APPROVED,canary error rate,canary error rate,True,False,False,24
+gpt,ci_release-cf-024,ci_release-096,ci_release,DENIED,line coverage,DENIED,canary error rate,DENIED,True,True,False,DENIED,True,DENIED,True,APPROVED,build reproducibility,build reproducibility,False,True,False,16
+gpt,ci_release-cf-025,ci_release-094,ci_release,DENIED,open severity-one defects,DENIED,bundle size,DENIED,True,True,False,DENIED,True,DENIED,True,APPROVED,p95 request latency,p95 request latency,False,True,True,13
+gpt,ci_release-cf-026,ci_release-072,ci_release,APPROVED,,APPROVED,,APPROVED,True,False,False,DENIED,False,APPROVED,True,APPROVED,line coverage,line coverage,False,True,False,14
+gpt,ci_release-cf-027,ci_release-028,ci_release,DENIED,build reproducibility,DENIED,peak heap usage,DENIED,True,False,False,DENIED,True,DENIED,True,DENIED,peak heap usage,peak heap usage,True,False,True,15
+gpt,ci_release-cf-028,ci_release-069,ci_release,DENIED,build reproducibility,APPROVED,,DENIED,True,False,False,DENIED,False,APPROVED,True,APPROVED,error budget remaining,error budget remaining,False,True,False,17
+gpt,ci_release-cf-029,ci_release-076,ci_release,DENIED,unit test pass rate,DENIED,build reproducibility,DENIED,True,True,False,DENIED,True,DENIED,True,APPROVED,build reproducibility,build reproducibility,True,False,False,13

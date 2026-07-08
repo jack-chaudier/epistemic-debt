@@ -38,8 +38,10 @@ re-analysis surfaces something worth chasing. Conventions:
 4. **Law 3 / distillation kill-shot — the headline gap.** Teacher–student ladders that exist
    in the market (gpt-4.1→mini→nano; gemini flash→flash-lite; sonnet→haiku): match on standard
    items, diverge on counterfactual re-queries; prediction: witness fidelity falls before
-   accuracy, students degrade disproportionately. The economically central law has zero
-   experiments. (~$10–20.) Status: unstarted; biggest strategic hole.
+   accuracy, students degrade disproportionately. A cached-summary pilot now shows strong
+   witness-conditioned transfer localization but fails the original-accuracy guard (row 26), so
+   the next run must first match ordinary accuracy using value-dense or looser-budget source
+   artifacts. (~$10–20.) Status: **pilot complete; full kill-shot still open**.
 5. **Real-document tier (external validity — the last big fear).** Semi-synthetic injection:
    real transcripts/PR threads/postmortems with decision-relevant values planted in natural
    prose (controlled ground truth, real linguistic texture). Also the in-harness variant:
