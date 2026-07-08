@@ -1,6 +1,9 @@
 # Distill-parity campaign — 2026-07-08
 
-**Status: STEP 1 (local build) in progress. Nothing trained, no pod spend yet.**
+**Status: STEP 1 (local build) COMPLETE 2026-07-08. G1 leak audit PASS (mean AUC 0.5064,
+folds 0.4738–0.5315, threshold 0.60 — no regeneration needed). All corpora generated,
+selfchecks clean, 50/50 balanced; 3-item smoke through every battery's prompt construction
+inspected. Nothing trained, no pod spend yet.**
 Plan: `PLAN.md`. Prereg: `prereg_distill_parity.md` — **FROZEN at commit d24e198**; thresholds
 pinned by `tests/test_distill_parity_prereg.py`. Two students distilled from the same Qwen3-8B
 teacher, differing only in trace content (verdict-only vs verdict+witness fusion register);

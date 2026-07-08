@@ -1,0 +1,38 @@
+{
+ "trainpool": {
+  "n": 6000,
+  "denied": 3000,
+  "seed_base": 812100,
+  "words_mean": 437
+ },
+ "parity": {
+  "n": 360,
+  "denied": 180,
+  "seed_base": 812200,
+  "words_mean": 437
+ },
+ "dev": {
+  "n": 300,
+  "denied": 150,
+  "seed_base": 812300,
+  "words_mean": 437
+ },
+ "delta": {
+  "n": 1200,
+  "denied": 600,
+  "seed_base": 812400,
+  "words_mean": 437
+ },
+ "deltares": {
+  "n": 600,
+  "denied": 300,
+  "seed_base": 812500,
+  "words_mean": 436
+ },
+ "arm3": {
+  "n": 180,
+  "cf_denied": 90,
+  "src_seed": 812600,
+  "cf_seed": 812700
+ }
+}

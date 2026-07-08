@@ -1,0 +1,18 @@
+{
+ "pool": "train_pool.jsonl",
+ "n": 6000,
+ "folds": [
+  0.5141,
+  0.5127,
+  0.5315,
+  0.4738,
+  0.5
+ ],
+ "mean_auc": 0.5064,
+ "gate_threshold": 0.6,
+ "verdict": "PASS (< 0.60)",
+ "dim": 262144,
+ "epochs": 4,
+ "lr": 0.1,
+ "seed": 812900
+}
