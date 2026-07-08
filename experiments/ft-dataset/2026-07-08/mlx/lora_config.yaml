@@ -1,0 +1,18 @@
+# B4 QLoRA — local MLX run on Apple Silicon (M1 Pro 16GB), frozen 2026-07-08
+model: "mlx-community/Qwen3-4B-Instruct-2507-4bit"
+train: true
+data: "experiments/ft-dataset/2026-07-08/mlx/data"
+adapter_path: "experiments/ft-dataset/2026-07-08/mlx/adapters"
+batch_size: 1
+iters: 10042            # 5,021 examples x 2 epochs at batch 1
+max_seq_length: 1024
+learning_rate: 1e-4
+steps_per_report: 50
+steps_per_eval: 1000
+save_every: 1000
+grad_checkpoint: true
+num_layers: 16
+lora_parameters:
+  rank: 16
+  dropout: 0.05
+  scale: 20.0

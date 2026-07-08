@@ -192,6 +192,11 @@ Each law above has a cheap empirical assassin. In order of impact-per-dollar:
 
 ---
 
+- **Priority exposure, empirical (2026-07-08 audit):** "When Summaries Distort Decisions" (2606.29251, Jun 2026) independently runs blind real-document compression that silently drops evidence and flips decisions. Row 31 must cite it and hold the valence-vs-decontextualization + spuriously-preserved-answer daylight, or it reads as a special case.
+- **Priority exposure, phenomenon:** attribution drift is owned by FACTUM (2601.05866); Law 1 must cite it as prior for phenomenon (b), and the "justified accuracy" metric must concede AttributedQA/AIS/ALCE. Calibrated debt-acknowledgment FT (B4) must benchmark against Abstain-R1 (2604.17073).
+- **Quotient-math exposure:** Bounded-Interaction Myhill–Nerode (2603.21399) independently reformalizes the coarse/fine quotient gap in an exact setting. The moat is the calibration interpretation + honesty-premium numbers + certificate quotient, not the identity "shelf = fiber entropy" (a restatement of orbit-stabilizer / Myhill–Nerode / C_mu).
+- **Term collision:** "epistemic debt" is taken in the human-comprehension sense (2602.20206, viXra 2601.0013); "justification gap" collides with Levine and an adjacent CoT-compression usage. Disambiguate on first external use. Full audit: theory/related-work-positioning.md.
+
 ## Appendix A — First exact checks (2026-07-03)
 
 Both checks run against artifacts already in this repository; verification scripts in the session scratchpad (`verify_conservation.py`).
