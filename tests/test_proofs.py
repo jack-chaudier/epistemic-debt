@@ -58,3 +58,18 @@ def test_honesty_premium_reproduces_causal_referee_constants():
     for k, p in ((3, 2), (4, 2)):
         rows = premium_table(epf.build_probe_joint_model(k, p))
         assert all(r["premium_over_D"] is None or r["premium_over_D"] > 1.0 for r in rows)
+
+
+def test_honesty_theorem_exact_witness_vs_certificate_quotients():
+    from honesty_theorem import frontier_models, summarize_model
+
+    rows = {row.label: row for row in (summarize_model(model) for model in frontier_models())}
+    assert rows["Q_(3,2)"].answer_states == 5
+    assert rows["Q_(3,2)"].certificate_states == 6
+    assert rows["Q_(3,2)"].exact_witness_states == rows["Q_(3,2)"].joint_states == 7
+    assert rows["Q_(4,2)"].certificate_states == 7
+    assert rows["Q_(4,2)"].exact_witness_states == rows["Q_(4,2)"].joint_states == 8
+    assert rows["Q_(5,3)"].certificate_states == 9
+    assert rows["Q_(5,3)"].exact_witness_states == rows["Q_(5,3)"].joint_states == 13
+    assert rows["causal_referee"].answer_states == 4
+    assert rows["causal_referee"].certificate_states == rows["causal_referee"].joint_states == 15
