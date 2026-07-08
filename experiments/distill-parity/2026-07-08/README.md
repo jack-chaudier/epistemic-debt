@@ -26,10 +26,21 @@ parity-matched, Δ-separated, shift-tested (full-doc counterfactual = the weight
 
 | date | pod id | GPU | $/hr | hours | purpose | $ |
 |---|---|---|---|---|---|---|
-| 2026-07-08 | nmzb9ecrnq2gwb | H100 80GB SXM (AP-IN-1, secure) | 2.99 | session open 21:24 UTC | deps + teacher traces + training | TBD at stop |
+| 2026-07-08 | nmzb9ecrnq2gwb | H100 80GB SXM (AP-IN-1, secure) | 2.99 | 0.36 (21:24–21:46 UTC) | deps + vLLM + 12,000 teacher trace calls | 1.07 |
 
-**Cumulative GPU spend: session open (started 21:24 UTC 2026-07-08).** API spend: $0.00
-(all inference is pod-local).
+**Cumulative GPU spend: $1.07.** API spend: $0.00 (all inference is pod-local).
+Pod stopped (not deleted) at the STOP boundary; volume + HF cache persist for restart.
+
+## STOP 2026-07-08 21:46 UTC — G3 floor breached (1,586 < 3,000), awaiting lead decision
+
+- G2: ops_incident dropped (teacher_v 0.826 < 0.85); ci 0.882 / clinical 0.903 / loan 0.854 /
+  sec 0.870 / vendor 0.880 kept (1 dropped ≤ 2, no stop).
+- G3 on 5,000: APPROVED survive 0.785; **DENIED survive 0.317** — the J-request flips the
+  teacher's own verdict on DENIED items (j_verdict_ok 0.427 vs v_ok 0.784), and a further
+  slice names the right parameter without quoting the reading (register non-compliance).
+- G4 balances to min side: 793/side → 1,586.
+- Observation (not a claim): demanding fused justification degrades the teacher's DENIED
+  verdict accuracy by 0.36 — justification-interference in the teacher itself.
 
 ## Step-0 note (pre-existing pod)
 
