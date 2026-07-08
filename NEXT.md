@@ -66,6 +66,15 @@ re-analysis surfaces something worth chasing. Conventions:
    witness-conditioned transfer localization but fails the original-accuracy guard (README row 27), so
    the next run must first match ordinary accuracy using value-dense or looser-budget source
    artifacts. (~$10–20.) Status: **pilot complete; full kill-shot still open**.
+   **2026-07-08 upgrade — controlled distillation-parity run (RunPod):** replace the market
+   ladder with two students QLoRA-distilled from the same Qwen3-8B teacher on identical items,
+   differing only in trace content (verdict-only vs verdict+witness fusion register); engineer
+   benchmark parity, prereg Δ separation + Δ-predicts-shift-failure + calibration curve, with
+   the honest negative-result branch. Full design, budget (~$30–50 GPU, ~$0 API), and RunPod
+   runbook → `experiments/distill-parity/2026-07-08/PLAN.md`. Design-reviewed 2026-07-08
+   (weight-borne vs artifact-borne shift arms split; DPI prediction moved to WHICH-lost;
+   surface-leak audit added); prereg drafted alongside (`prereg_distill_parity.md`, freezes on
+   commit). Status: **prereg ready to freeze; build next**.
 7. **Real-document tier — DONE 2026-07-08, external validity UPHELD with a load-bearing
    caveat.** On 12 real NTSB narratives with injected readings, the dissociation *sharpens*:
    blind compaction keeps narrative valence, not content (crash→DENY reflex, APPROVED-side
