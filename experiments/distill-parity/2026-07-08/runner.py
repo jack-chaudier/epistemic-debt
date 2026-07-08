@@ -69,6 +69,14 @@ TEACHER_J = (" State the decision and its justification in the fusion register: 
              "verdict without its deciding value in the same clause. Then on a new line reply "
              "exactly: PARAMETER: <failing parameter name> if DENIED, or PARAMETER: NONE if "
              "APPROVED. If a needed reading is absent, say [MISSING DATA] and name what is missing.")
+# Revision 1 (revision_protocol.md, frozen before its probe): verdict-after-evidence ordering.
+# MUST stay byte-identical to trace_builder.py J_REQ_R1.
+TEACHER_J_R1 = (" For each policy parameter, quote its observed reading from the case file next "
+                "to its policy threshold and state whether it passes or fails — never assert any "
+                "conclusion without the deciding reading in the same clause. If a needed reading "
+                "is absent from the file, write [MISSING DATA] and name what is missing. Then end "
+                "with exactly two lines:\nDECISION: APPROVED or DECISION: DENIED\n"
+                "PARAMETER: <the single failing parameter name> or PARAMETER: NONE")
 
 MAXTOK = dict(compress=256, compress_vd=256, decision=64, which=192, which_abstain=192,
               nonotes=48, teacher_v=32, teacher_j=256, cap_answer=512,
@@ -149,6 +157,15 @@ def item_traces(c, it):
     c.chat(it["id"], "teacher_j", [dict(role="user", content=fulldoc_prompt(it, TEACHER_J))])
 
 
+def item_traces_r1(c, it):
+    c.chat(it["id"], "teacher_v", [dict(role="user", content=fulldoc_prompt(it, TEACHER_V))])
+    c.chat(it["id"], "teacher_j", [dict(role="user", content=fulldoc_prompt(it, TEACHER_J_R1))])
+
+
+def item_probe_j(c, it):
+    c.chat(it["id"], "teacher_j", [dict(role="user", content=fulldoc_prompt(it, TEACHER_J_R1))])
+
+
 def item_decision(c, it):
     c.chat(it["id"], "decision", [dict(role="user", content=fulldoc_prompt(it, DECISION))])
 
@@ -188,6 +205,10 @@ def item_arm3b(c, it, budget=40):
 
 BATTERIES = dict(
     traces=("train_pool.jsonl", item_traces, "teacher_raw.jsonl"),
+    # prompt-revision machinery (revision_protocol.md): fresh raw files across a prompt change —
+    # the idempotent cache must never serve an old-prompt response for a new-prompt call.
+    probe_j=("probe_slice.jsonl", item_probe_j, "probe_j_raw.jsonl"),
+    traces_r1=("train_pool_r1.jsonl", item_traces_r1, "teacher_raw_r1.jsonl"),
     parity=("parity_gauge.jsonl", item_decision, "responses_raw.jsonl"),
     dev=("dev_slice.jsonl", item_decision, "responses_raw.jsonl"),
     capability=("capability_items.jsonl", item_capability, "responses_raw.jsonl"),

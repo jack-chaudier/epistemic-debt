@@ -8,9 +8,10 @@ Output: train_V.jsonl / train_J.jsonl (messages format) + gate_manifest.json.
 Gates (FROZEN, prereg d24e198):
   G2  per corpus: teacher full-document verdict accuracy (from the teacher_v channel) >= 0.85;
       corpora below the gate are dropped entirely. STOP condition if > 2 of 6 drop.
-  G3  joint filter -> ONE shared item set: an item survives iff
-        - teacher_v verdict correct, AND
-        - teacher_j verdict correct, AND
+  G3  joint filter -> ONE shared item set. PINNED DEFINITION (the conjunction — this is what
+      the 2026-07-08 failed-gate run used, and what every rerun uses): an item survives iff
+        - teacher_v (bare-ANSWER channel) verdict correct, AND
+        - teacher_j (J channel) verdict correct, AND
         - the J-trace's named deciding witness is correct against ground truth:
             DENIED item:   last PARAMETER: anchor matches failing_param AND the failing
                            value string is retained() in the trace;
@@ -18,7 +19,12 @@ Gates (FROZEN, prereg d24e198):
                            AND all three policy values are retained() in the trace.
       (Implementation note, not reinterpretation: for APPROVED items "the deciding witness"
       is the full passing triple, since no single reading decides an approval.)
-      STOP condition if < 3000 items survive.
+      V-traces are built from the bare channel, J-traces from the J channel; the shared set is
+      conditioned on BOTH channels' teacher competence — per-channel rates are disclosed in the
+      gate manifest and the writeup. STOP condition if < 3000 items survive.
+      Under --rev r1 the J verdict is parsed by the last DECISION: anchor (colon required),
+      because revision-1 scaffolding legitimately contains verdict tokens mid-justification;
+      the bare channel keeps ANS_RE. See revision_protocol.md.
   G4  50/50 APPROVED/DENIED downsample (seeded, per prereg) applied to the shared set.
 
 Both conditions are built from the SAME post-G4 item list:
@@ -49,6 +55,14 @@ J_REQ = (" State the decision and its justification in the fusion register: one 
          "verdict without its deciding value in the same clause. Then on a new line reply "
          "exactly: PARAMETER: <failing parameter name> if DENIED, or PARAMETER: NONE if "
          "APPROVED. If a needed reading is absent, say [MISSING DATA] and name what is missing.")
+# MUST stay byte-identical to runner.py TEACHER_J_R1 (revision_protocol.md, revision 1).
+J_REQ_R1 = (" For each policy parameter, quote its observed reading from the case file next "
+            "to its policy threshold and state whether it passes or fails — never assert any "
+            "conclusion without the deciding reading in the same clause. If a needed reading "
+            "is absent from the file, write [MISSING DATA] and name what is missing. Then end "
+            "with exactly two lines:\nDECISION: APPROVED or DECISION: DENIED\n"
+            "PARAMETER: <the single failing parameter name> or PARAMETER: NONE")
+DECISION_ANCHOR_RE = re.compile(r"DECISION\s*:\s*\**\s*(APPROVED|DENIED)", re.I)
 
 
 def user_content(item, req):
@@ -61,6 +75,14 @@ def parse_verdict(text):
         return m.group(1).upper()
     m = re.search(r"\b(APPROVED|DENIED)\b", text or "", re.I)
     return m.group(1).upper() if m else None
+
+
+def parse_j_verdict_r1(text):
+    m = DECISION_ANCHOR_RE.findall(text or "")
+    if m:
+        return m[-1].upper()
+    m = re.findall(r"\b(APPROVED|DENIED)\b", text or "", re.I)
+    return m[-1].upper() if m else None
 
 
 def j_witness_ok(item, jtext):
@@ -77,9 +99,18 @@ def j_witness_ok(item, jtext):
 
 
 def main():
-    items = {it["id"]: it for it in map(json.loads, open(os.path.join(HERE, "train_pool.jsonl")))}
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--pool", default="train_pool.jsonl")
+    ap.add_argument("--raw", default="teacher_raw.jsonl")
+    ap.add_argument("--rev", choices=["r0", "r1"], default="r0",
+                    help="J-prompt revision: selects J_REQ vs J_REQ_R1 and the J verdict parser")
+    a = ap.parse_args()
+    j_req = J_REQ if a.rev == "r0" else J_REQ_R1
+    parse_j = parse_verdict if a.rev == "r0" else parse_j_verdict_r1
+    items = {it["id"]: it for it in map(json.loads, open(os.path.join(HERE, a.pool)))}
     v_txt, j_txt = {}, {}
-    for line in open(os.path.join(HERE, "teacher_raw.jsonl")):
+    for line in open(os.path.join(HERE, a.raw)):
         r = json.loads(line)
         if r["call"] == "teacher_v":
             v_txt[r["item"]] = r["text"]
@@ -110,7 +141,7 @@ def main():
         if parse_verdict(v_txt[iid]) != it["truth"]:
             tallies["v_wrong"] += 1
             continue
-        if parse_verdict(j_txt[iid]) != it["truth"]:
+        if parse_j(j_txt[iid]) != it["truth"]:
             tallies["j_verdict_wrong"] += 1
             continue
         if not j_witness_ok(it, j_txt[iid]):
@@ -128,7 +159,7 @@ def main():
     rng.shuffle(final)
     manifest["g4"] = dict(approved=len(app), denied=len(den), per_side=k, final=2 * k)
 
-    for name, req, txt in (("train_V.jsonl", V_REQ, v_txt), ("train_J.jsonl", J_REQ, j_txt)):
+    for name, req, txt in (("train_V.jsonl", V_REQ, v_txt), ("train_J.jsonl", j_req, j_txt)):
         with open(os.path.join(HERE, name), "w") as f:
             for it in final:
                 f.write(json.dumps(dict(messages=[
