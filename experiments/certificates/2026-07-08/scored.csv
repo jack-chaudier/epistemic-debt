@@ -1,0 +1,1081 @@
+model,arm,item,domain,truth,failing,realized_words,n_values,fail_retained,policy_survival,decision,decision_correct,which,which_raw,which_correct,which_unmatched,whichab,whichab_raw,whichab_correct,whichab_abstain,whichab_none,incoherent,nn_decision
+grok,ctrl,ops_incident-000,ops_incident,DENIED,umbilical release delay,14,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,ctrl,ops_incident-001,ops_incident,DENIED,seal torque retention,38,12,True,1.0,DENIED,True,seal torque retention,seal,True,False,seal torque retention,seal,True,False,False,False,DENIED
+grok,ctrl,ops_incident-002,ops_incident,DENIED,seal torque retention,11,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,ctrl,ops_incident-003,ops_incident,APPROVED,,14,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ops_incident-004,ops_incident,APPROVED,,32,12,,1.0,DENIED,False,reserve charge margin,reserve charge margin,False,False,reserve charge margin,reserve charge margin,False,False,False,False,DENIED
+grok,ctrl,ops_incident-005,ops_incident,DENIED,reserve charge margin,10,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,ctrl,ops_incident-006,ops_incident,APPROVED,,41,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ops_incident-007,ops_incident,APPROVED,,10,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,ctrl,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,28,10,True,0.6666666666666666,DENIED,True,coolant loop flow rate,coolant loop flow rate,True,False,coolant loop flow rate,coolant loop flow rate,True,False,False,False,DENIED
+grok,ctrl,ops_incident-009,ops_incident,DENIED,battery bus impedance,12,0,False,0.0,APPROVED,False,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,ctrl,ops_incident-010,ops_incident,APPROVED,,16,3,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,ctrl,ops_incident-011,ops_incident,APPROVED,,39,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ops_incident-012,ops_incident,APPROVED,,20,6,,0.6666666666666666,DENIED,False,telemetry downlink margin,telemetry downlink margin,False,False,telemetry downlink margin,telemetry downlink margin,False,False,False,False,DENIED
+grok,ctrl,ops_incident-013,ops_incident,APPROVED,,10,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,ctrl,ops_incident-014,ops_incident,DENIED,particulate count,29,12,True,1.0,DENIED,True,particulate count,particulate count,True,False,particulate count,particulate count,True,False,False,False,DENIED
+grok,ctrl,ops_incident-015,ops_incident,DENIED,seal torque retention,41,12,True,1.0,DENIED,True,seal torque retention,seal,True,False,seal torque retention,seal torque retention,True,False,False,False,DENIED
+grok,ctrl,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,18,3,False,0.3333333333333333,DENIED,True,NONE,NONE,False,False,NONE,NONE,False,False,True,True,DENIED
+grok,ctrl,ops_incident-017,ops_incident,DENIED,star tracker residual,13,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,ctrl,ops_incident-018,ops_incident,APPROVED,,10,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,ctrl,ops_incident-019,ops_incident,APPROVED,,19,3,,0.3333333333333333,DENIED,False,coolant loop flow rate,coolant loop flow rate,False,False,coolant loop flow rate,coolant loop flow rate,False,False,False,False,DENIED
+grok,ctrl,ops_incident-020,ops_incident,APPROVED,,13,1,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,ctrl,ops_incident-021,ops_incident,APPROVED,,24,8,,0.6666666666666666,APPROVED,True,gyro drift rate,gyro drift rate,False,False,gyro drift rate,gyro drift rate,False,False,False,False,DENIED
+grok,ctrl,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,36,12,True,1.0,DENIED,True,thermal blanket coverage,thermal,True,False,thermal blanket coverage,thermal,True,False,False,False,DENIED
+grok,ctrl,ops_incident-023,ops_incident,APPROVED,,15,4,,0.3333333333333333,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,39,12,True,1.0,DENIED,True,telemetry downlink margin,telemetry,True,False,telemetry downlink margin,telemetry,True,False,False,False,DENIED
+grok,ctrl,ops_incident-025,ops_incident,APPROVED,,35,11,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ops_incident-026,ops_incident,DENIED,gyro drift rate,11,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,ctrl,ops_incident-027,ops_incident,DENIED,battery bus impedance,36,12,True,1.0,DENIED,True,coolant loop flow rate,coolant loop flow rate,False,False,coolant loop flow rate,coolant loop flow rate,False,False,False,False,DENIED
+grok,ctrl,ops_incident-028,ops_incident,DENIED,star tracker residual,40,12,True,1.0,DENIED,True,star tracker residual,star tracker residual,True,False,star tracker residual,star tracker residual,True,False,False,False,DENIED
+grok,ctrl,ops_incident-029,ops_incident,APPROVED,,22,5,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,NONE,NONE,True,False,True,True,DENIED
+grok,ctrl,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,35,12,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,33,12,True,1.0,APPROVED,False,UNMATCHED,TG,False,True,UNMATCHED,TG,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,18,4,False,0.3333333333333333,APPROVED,False,NONE,NONE,False,False,NONE,NONE,False,False,True,False,DENIED
+grok,ctrl,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,36,12,True,1.0,DENIED,True,UNMATCHED,CrCl,False,True,UNMATCHED,CrCl,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-004,clinical_enroll,APPROVED,,36,12,,1.0,APPROVED,True,UNMATCHED,CrCl,False,True,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,33,11,True,1.0,DENIED,True,UNMATCHED,LVEF,False,True,UNMATCHED,LVEF,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-006,clinical_enroll,APPROVED,,34,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,32,12,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-008,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-009,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-010,clinical_enroll,APPROVED,,19,5,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,30,12,True,1.0,DENIED,True,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-012,clinical_enroll,APPROVED,,33,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,32,12,True,1.0,DENIED,True,UNMATCHED,CrCl,False,True,UNMATCHED,CrCl,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-014,clinical_enroll,APPROVED,,31,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-015,clinical_enroll,APPROVED,,19,4,,0.3333333333333333,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-016,clinical_enroll,APPROVED,,34,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-017,clinical_enroll,APPROVED,,19,3,,0.3333333333333333,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-018,clinical_enroll,APPROVED,,30,10,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-019,clinical_enroll,APPROVED,,34,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,34,12,True,1.0,DENIED,True,UNMATCHED,Hb,False,True,UNMATCHED,Hb,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-021,clinical_enroll,APPROVED,,36,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,37,12,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-023,clinical_enroll,APPROVED,,33,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,33,12,True,1.0,DENIED,True,UNMATCHED,TG,False,True,UNMATCHED,TG,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-025,clinical_enroll,DENIED,body mass index,44,12,True,1.0,DENIED,True,UNMATCHED,BMI,False,True,UNMATCHED,BMI,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,31,10,True,1.0,DENIED,True,fasting glucose,glucose,True,False,fasting glucose,glucose,True,False,False,False,DENIED
+grok,ctrl,clinical_enroll-027,clinical_enroll,APPROVED,,31,10,,0.3333333333333333,DENIED,False,creatinine clearance,creatinine clearance,False,False,creatinine clearance,creatinine clearance,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,28,10,False,0.6666666666666666,DENIED,True,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,DENIED
+grok,ctrl,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,33,12,True,1.0,DENIED,True,fasting glucose,glucose,True,False,fasting glucose,glucose,True,False,False,False,DENIED
+grok,ctrl,ci_release-000,ci_release,APPROVED,,18,10,,0.6666666666666666,DENIED,False,error budget remaining,error budget remaining,False,False,error budget remaining,error budget remaining,False,False,False,False,DENIED
+grok,ctrl,ci_release-001,ci_release,APPROVED,,34,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ci_release-002,ci_release,DENIED,line coverage,15,8,True,1.0,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,DENIED
+grok,ctrl,ci_release-003,ci_release,DENIED,open severity-one defects,16,9,True,0.6666666666666666,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,DENIED
+grok,ctrl,ci_release-004,ci_release,DENIED,flaky test count,34,14,True,1.0,DENIED,True,flaky test count,flaky test count,True,False,rollback drill success,rollback drill success,False,False,False,False,DENIED
+grok,ctrl,ci_release-005,ci_release,DENIED,rollback drill success,27,11,True,0.6666666666666666,DENIED,True,rollback drill success,rollback drill success,True,False,rollback drill success,rollback drill success,True,False,False,False,DENIED
+grok,ctrl,ci_release-006,ci_release,DENIED,dependency audit findings,17,9,True,0.6666666666666666,DENIED,True,dependency audit findings,dependency audit findings,True,False,error budget remaining,error budget remaining,False,False,False,False,DENIED
+grok,ctrl,ci_release-007,ci_release,APPROVED,,16,8,,0.0,DENIED,False,build reproducibility,build reproducibility,False,False,build reproducibility,build reproducibility,False,False,False,False,DENIED
+grok,ctrl,ci_release-008,ci_release,APPROVED,,20,10,,0.3333333333333333,DENIED,False,line coverage,line coverage,False,False,line coverage,line coverage,False,False,False,False,DENIED
+grok,ctrl,ci_release-009,ci_release,DENIED,bundle size,19,9,True,0.6666666666666666,DENIED,True,bundle size,bundle size,True,False,bundle size,bundle size,True,False,False,False,DENIED
+grok,ctrl,ci_release-010,ci_release,APPROVED,,28,11,,0.6666666666666666,DENIED,False,dependency audit findings,dependency audit findings,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,ctrl,ci_release-011,ci_release,APPROVED,,31,15,,1.0,APPROVED,True,open severity-one defects,open severity-one defects,False,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ci_release-012,ci_release,DENIED,cold start time,34,14,True,1.0,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,DENIED
+grok,ctrl,ci_release-013,ci_release,APPROVED,,19,8,,0.3333333333333333,DENIED,False,dependency audit findings,dependency audit findings,False,False,dependency audit findings,dependency audit findings,False,False,False,False,DENIED
+grok,ctrl,ci_release-014,ci_release,APPROVED,,28,11,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ci_release-015,ci_release,APPROVED,,26,12,,0.6666666666666666,DENIED,False,error budget remaining,error budget remaining,False,False,error budget remaining,52% budget,False,False,False,False,DENIED
+grok,ctrl,ci_release-016,ci_release,DENIED,error budget remaining,24,13,True,1.0,DENIED,True,unit test pass rate,tests,False,False,unit test pass rate,test pass rate,False,False,False,False,DENIED
+grok,ctrl,ci_release-017,ci_release,DENIED,cold start time,37,13,True,1.0,APPROVED,False,line coverage,line coverage,False,False,line coverage,line coverage,False,False,False,False,DENIED
+grok,ctrl,ci_release-018,ci_release,APPROVED,,42,15,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ci_release-019,ci_release,APPROVED,,20,10,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ci_release-020,ci_release,DENIED,dependency audit findings,22,13,True,1.0,APPROVED,False,NONE,NONE,False,False,NONE,NONE,False,False,True,False,DENIED
+grok,ctrl,ci_release-021,ci_release,APPROVED,,25,10,,0.3333333333333333,DENIED,False,line coverage,line coverage,False,False,line coverage,line coverage,False,False,False,False,DENIED
+grok,ctrl,ci_release-022,ci_release,APPROVED,,19,10,,0.3333333333333333,DENIED,False,error budget remaining,error budget remaining,False,False,error budget remaining,error budget remaining,False,False,False,False,DENIED
+grok,ctrl,ci_release-023,ci_release,APPROVED,,34,12,,0.6666666666666666,DENIED,False,error budget remaining,error budget remaining,False,False,error budget remaining,error budget remaining,False,False,False,False,DENIED
+grok,ctrl,ci_release-024,ci_release,DENIED,open severity-one defects,14,6,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,DENIED
+grok,ctrl,ci_release-025,ci_release,APPROVED,,24,11,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,ctrl,ci_release-026,ci_release,DENIED,line coverage,35,14,True,1.0,DENIED,True,line coverage,coverage,True,False,line coverage,coverage,True,False,False,False,DENIED
+grok,ctrl,ci_release-027,ci_release,DENIED,open severity-one defects,27,10,True,0.3333333333333333,DENIED,True,unit test pass rate,unit test pass rate,False,False,unit test pass rate,unit test pass rate,False,False,False,False,DENIED
+grok,ctrl,ci_release-028,ci_release,DENIED,flaky test count,32,13,True,0.6666666666666666,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,DENIED
+grok,ctrl,ci_release-029,ci_release,DENIED,peak heap usage,15,8,False,0.3333333333333333,DENIED,True,rollback drill success,rollback drill success,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,vd,ops_incident-000,ops_incident,DENIED,umbilical release delay,31,11,False,0.6666666666666666,APPROVED,False,NONE,NONE,False,False,NONE,NONE,False,False,True,False,DENIED
+grok,vd,ops_incident-001,ops_incident,DENIED,seal torque retention,36,12,True,1.0,DENIED,True,seal torque retention,seal torque,True,False,seal torque retention,seal torque,True,False,False,False,DENIED
+grok,vd,ops_incident-002,ops_incident,DENIED,seal torque retention,34,11,True,1.0,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque,True,False,False,False,DENIED
+grok,vd,ops_incident-003,ops_incident,APPROVED,,14,5,,0.3333333333333333,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ops_incident-004,ops_incident,APPROVED,,36,12,,1.0,APPROVED,True,reserve charge margin,reserve,False,False,reserve charge margin,reserve,False,False,False,False,DENIED
+grok,vd,ops_incident-005,ops_incident,DENIED,reserve charge margin,37,12,True,1.0,DENIED,True,reserve charge margin,reserve,True,False,reserve charge margin,reserve,True,False,False,False,DENIED
+grok,vd,ops_incident-006,ops_incident,APPROVED,,31,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ops_incident-007,ops_incident,APPROVED,,36,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,34,12,True,1.0,DENIED,True,coolant loop flow rate,coolant,True,False,coolant loop flow rate,coolant,True,False,False,False,DENIED
+grok,vd,ops_incident-009,ops_incident,DENIED,battery bus impedance,33,12,True,1.0,DENIED,True,battery bus impedance,impedance,True,False,battery bus impedance,impedance,True,False,False,False,DENIED
+grok,vd,ops_incident-010,ops_incident,APPROVED,,33,12,,1.0,APPROVED,True,reserve charge margin,charge,False,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ops_incident-011,ops_incident,APPROVED,,30,11,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ops_incident-012,ops_incident,APPROVED,,29,9,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ops_incident-013,ops_incident,APPROVED,,34,11,,1.0,APPROVED,True,guidance solution confidence,guidance,False,False,guidance solution confidence,guidance,False,False,False,False,DENIED
+grok,vd,ops_incident-014,ops_incident,DENIED,particulate count,35,12,True,1.0,DENIED,True,particulate count,particulate,True,False,particulate count,particulate,True,False,False,False,DENIED
+grok,vd,ops_incident-015,ops_incident,DENIED,seal torque retention,42,12,True,1.0,DENIED,True,seal torque retention,seal,True,False,seal torque retention,seal,True,False,False,False,DENIED
+grok,vd,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,25,8,True,0.6666666666666666,DENIED,True,coolant loop flow rate,coolant,True,False,coolant loop flow rate,coolant,True,False,False,False,DENIED
+grok,vd,ops_incident-017,ops_incident,DENIED,star tracker residual,35,12,True,1.0,DENIED,True,star tracker residual,star,True,False,star tracker residual,star,True,False,False,False,DENIED
+grok,vd,ops_incident-018,ops_incident,APPROVED,,35,12,,1.0,APPROVED,True,guidance solution confidence,guidance,False,False,guidance solution confidence,guidance,False,False,False,False,DENIED
+grok,vd,ops_incident-019,ops_incident,APPROVED,,35,12,,1.0,APPROVED,True,coolant loop flow rate,coolant,False,False,coolant loop flow rate,coolant,False,False,False,False,DENIED
+grok,vd,ops_incident-020,ops_incident,APPROVED,,32,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ops_incident-021,ops_incident,APPROVED,,33,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,34,12,True,1.0,DENIED,True,thermal blanket coverage,thermal,True,False,thermal blanket coverage,thermal,True,False,False,False,DENIED
+grok,vd,ops_incident-023,ops_incident,APPROVED,,34,10,,0.3333333333333333,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,33,12,True,1.0,DENIED,True,telemetry downlink margin,downlink,True,False,telemetry downlink margin,downlink,True,False,False,False,DENIED
+grok,vd,ops_incident-025,ops_incident,APPROVED,,38,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ops_incident-026,ops_incident,DENIED,gyro drift rate,37,12,True,1.0,DENIED,True,gyro drift rate,gyro,True,False,gyro drift rate,gyro,True,False,False,False,DENIED
+grok,vd,ops_incident-027,ops_incident,DENIED,battery bus impedance,34,12,True,1.0,DENIED,True,battery bus impedance,impedance,True,False,battery bus impedance,impedance,True,False,False,False,DENIED
+grok,vd,ops_incident-028,ops_incident,DENIED,star tracker residual,34,12,True,1.0,DENIED,True,star tracker residual,star tracker,True,False,star tracker residual,star tracker,True,False,False,False,DENIED
+grok,vd,ops_incident-029,ops_incident,APPROVED,,43,12,,1.0,APPROVED,True,guidance solution confidence,guidance,False,False,guidance solution confidence,guidance,False,False,False,False,DENIED
+grok,vd,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,34,12,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+grok,vd,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,13,5,True,0.3333333333333333,DENIED,True,UNMATCHED,TG,False,True,UNMATCHED,TG,False,False,False,False,DENIED
+grok,vd,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,34,12,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+grok,vd,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,35,12,True,1.0,DENIED,True,UNMATCHED,CrCl,False,True,UNMATCHED,CrCl,False,False,False,False,DENIED
+grok,vd,clinical_enroll-004,clinical_enroll,APPROVED,,14,5,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,NONE,NONE,True,False,True,True,DENIED
+grok,vd,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,34,12,True,1.0,DENIED,True,UNMATCHED,LVEF,False,True,UNMATCHED,LVEF,False,False,False,False,DENIED
+grok,vd,clinical_enroll-006,clinical_enroll,APPROVED,,33,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,33,12,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+grok,vd,clinical_enroll-008,clinical_enroll,APPROVED,,23,8,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-009,clinical_enroll,APPROVED,,34,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-010,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,33,12,True,1.0,DENIED,True,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,DENIED
+grok,vd,clinical_enroll-012,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,36,12,True,1.0,DENIED,True,UNMATCHED,CrCl,False,True,UNMATCHED,CrCl,False,False,False,False,DENIED
+grok,vd,clinical_enroll-014,clinical_enroll,APPROVED,,18,6,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,vd,clinical_enroll-015,clinical_enroll,APPROVED,,30,10,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-016,clinical_enroll,APPROVED,,33,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-017,clinical_enroll,APPROVED,,33,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-018,clinical_enroll,APPROVED,,15,5,,0.3333333333333333,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-019,clinical_enroll,APPROVED,,19,7,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,vd,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,33,12,True,1.0,DENIED,True,UNMATCHED,Hb,False,True,UNMATCHED,Hb,False,False,False,False,DENIED
+grok,vd,clinical_enroll-021,clinical_enroll,APPROVED,,34,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,35,12,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+grok,vd,clinical_enroll-023,clinical_enroll,APPROVED,,22,8,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,14,5,False,0.3333333333333333,APPROVED,False,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,vd,clinical_enroll-025,clinical_enroll,DENIED,body mass index,34,12,True,1.0,DENIED,True,UNMATCHED,BMI,False,True,UNMATCHED,BMI,False,False,False,False,DENIED
+grok,vd,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,34,12,True,1.0,DENIED,True,UNMATCHED,glu,False,True,UNMATCHED,glu,False,False,False,False,DENIED
+grok,vd,clinical_enroll-027,clinical_enroll,APPROVED,,33,11,,0.6666666666666666,APPROVED,True,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,DENIED
+grok,vd,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,33,12,True,1.0,DENIED,True,UNMATCHED,CrCl,False,True,UNMATCHED,CrCl,False,False,False,False,DENIED
+grok,vd,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,22,8,True,0.6666666666666666,DENIED,True,fasting glucose,glucose,True,False,fasting glucose,glucose,True,False,False,False,DENIED
+grok,vd,ci_release-000,ci_release,APPROVED,,29,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-001,ci_release,APPROVED,,31,13,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-002,ci_release,DENIED,line coverage,14,8,True,0.3333333333333333,DENIED,True,line coverage,line coverage,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,vd,ci_release-003,ci_release,DENIED,open severity-one defects,29,14,True,1.0,DENIED,True,UNMATCHED,S1,False,True,UNMATCHED,S1,False,False,False,False,DENIED
+grok,vd,ci_release-004,ci_release,DENIED,flaky test count,26,10,True,1.0,DENIED,True,flaky test count,flaky,True,False,flaky test count,flaky,True,False,False,False,DENIED
+grok,vd,ci_release-005,ci_release,DENIED,rollback drill success,28,11,True,0.3333333333333333,DENIED,True,rollback drill success,rollback,True,False,rollback drill success,rollback,True,False,False,False,DENIED
+grok,vd,ci_release-006,ci_release,DENIED,dependency audit findings,31,13,False,0.6666666666666666,APPROVED,False,NONE,NONE,False,False,NONE,NONE,False,False,True,False,DENIED
+grok,vd,ci_release-007,ci_release,APPROVED,,22,10,,0.0,DENIED,False,unit test pass rate,unit test pass rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,vd,ci_release-008,ci_release,APPROVED,,35,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-009,ci_release,DENIED,bundle size,16,8,True,0.6666666666666666,DENIED,True,bundle size,bundle size,True,False,bundle size,bundle size,True,False,False,False,DENIED
+grok,vd,ci_release-010,ci_release,APPROVED,,22,10,,0.3333333333333333,DENIED,False,dependency audit findings,dependency audit findings,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,vd,ci_release-011,ci_release,APPROVED,,32,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-012,ci_release,DENIED,cold start time,32,14,True,1.0,APPROVED,False,cold start time,cold start,True,False,cold start time,cold start,True,False,False,False,DENIED
+grok,vd,ci_release-013,ci_release,APPROVED,,24,9,,0.3333333333333333,DENIED,False,dependency audit findings,dependency audit findings,False,False,dependency audit findings,dependency audit findings,False,False,False,False,DENIED
+grok,vd,ci_release-014,ci_release,APPROVED,,26,13,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-015,ci_release,APPROVED,,18,8,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-016,ci_release,DENIED,error budget remaining,21,11,True,0.6666666666666666,DENIED,True,error budget remaining,error-budget,True,False,error budget remaining,error-budget,True,False,False,False,DENIED
+grok,vd,ci_release-017,ci_release,DENIED,cold start time,32,13,True,1.0,DENIED,True,cold start time,cold start,True,False,cold start time,cold start,True,False,False,False,DENIED
+grok,vd,ci_release-018,ci_release,APPROVED,,24,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-019,ci_release,APPROVED,,30,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-020,ci_release,DENIED,dependency audit findings,34,14,True,1.0,DENIED,True,UNMATCHED,dep findings,False,True,UNMATCHED,dep findings,False,False,False,False,DENIED
+grok,vd,ci_release-021,ci_release,APPROVED,,26,11,,0.3333333333333333,DENIED,False,line coverage,line coverage,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,vd,ci_release-022,ci_release,APPROVED,,36,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-023,ci_release,APPROVED,,34,13,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-024,ci_release,DENIED,open severity-one defects,31,13,True,1.0,DENIED,True,UNMATCHED,S1 defects,False,True,UNMATCHED,S1 defects,False,False,False,False,DENIED
+grok,vd,ci_release-025,ci_release,APPROVED,,30,13,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vd,ci_release-026,ci_release,DENIED,line coverage,26,13,True,1.0,DENIED,True,line coverage,coverage,True,False,line coverage,coverage,True,False,False,False,DENIED
+grok,vd,ci_release-027,ci_release,DENIED,open severity-one defects,32,14,True,1.0,DENIED,True,UNMATCHED,sev1,False,True,UNMATCHED,sev1,False,False,False,False,DENIED
+grok,vd,ci_release-028,ci_release,DENIED,flaky test count,25,12,True,0.6666666666666666,DENIED,True,flaky test count,flaky,True,False,flaky test count,flaky,True,False,False,False,DENIED
+grok,vd,ci_release-029,ci_release,DENIED,peak heap usage,22,9,True,0.6666666666666666,DENIED,True,peak heap usage,heap,True,False,peak heap usage,heap,True,False,False,False,DENIED
+grok,vda,ops_incident-000,ops_incident,DENIED,umbilical release delay,9,3,True,1.0,DENIED,True,umbilical release delay,umbilical release delay,True,False,umbilical release delay,umbilical release delay,True,False,False,False,DENIED
+grok,vda,ops_incident-001,ops_incident,DENIED,seal torque retention,12,3,True,1.0,DENIED,True,seal torque retention,seal torque,True,False,seal torque retention,seal torque,True,False,False,False,DENIED
+grok,vda,ops_incident-002,ops_incident,DENIED,seal torque retention,9,3,True,1.0,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,DENIED
+grok,vda,ops_incident-003,ops_incident,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-004,ops_incident,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-005,ops_incident,DENIED,reserve charge margin,7,3,True,1.0,DENIED,True,reserve charge margin,reserve charge,True,False,reserve charge margin,reserve charge,True,False,False,False,DENIED
+grok,vda,ops_incident-006,ops_incident,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-007,ops_incident,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,9,3,True,1.0,DENIED,True,coolant loop flow rate,coolant,True,False,coolant loop flow rate,coolant,True,False,False,False,DENIED
+grok,vda,ops_incident-009,ops_incident,DENIED,battery bus impedance,11,3,True,1.0,DENIED,True,battery bus impedance,battery bus impedance,True,False,battery bus impedance,battery bus,True,False,False,False,DENIED
+grok,vda,ops_incident-010,ops_incident,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-011,ops_incident,APPROVED,,8,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-012,ops_incident,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-013,ops_incident,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-014,ops_incident,DENIED,particulate count,10,3,True,1.0,DENIED,True,particulate count,particulate,True,False,particulate count,particulate,True,False,False,False,DENIED
+grok,vda,ops_incident-015,ops_incident,DENIED,seal torque retention,8,3,True,1.0,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal,True,False,False,False,DENIED
+grok,vda,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,12,3,True,1.0,DENIED,True,coolant loop flow rate,coolant loop,True,False,coolant loop flow rate,coolant loop,True,False,False,False,DENIED
+grok,vda,ops_incident-017,ops_incident,DENIED,star tracker residual,11,3,True,1.0,DENIED,True,star tracker residual,star tracker,True,False,star tracker residual,star tracker,True,False,False,False,DENIED
+grok,vda,ops_incident-018,ops_incident,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-019,ops_incident,APPROVED,,15,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-020,ops_incident,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-021,ops_incident,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,12,3,True,1.0,DENIED,True,thermal blanket coverage,thermal blanket,True,False,thermal blanket coverage,thermal blanket,True,False,False,False,DENIED
+grok,vda,ops_incident-023,ops_incident,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,10,3,True,1.0,DENIED,True,telemetry downlink margin,telemetry downlink margin,True,False,telemetry downlink margin,telemetry downlink margin,True,False,False,False,DENIED
+grok,vda,ops_incident-025,ops_incident,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ops_incident-026,ops_incident,DENIED,gyro drift rate,17,3,True,1.0,DENIED,True,gyro drift rate,gyro drift rate,True,False,gyro drift rate,gyro drift rate,True,False,False,False,DENIED
+grok,vda,ops_incident-027,ops_incident,DENIED,battery bus impedance,9,3,True,1.0,DENIED,True,battery bus impedance,battery bus impedance,True,False,battery bus impedance,battery bus impedance,True,False,False,False,DENIED
+grok,vda,ops_incident-028,ops_incident,DENIED,star tracker residual,10,3,True,1.0,DENIED,True,star tracker residual,star tracker,True,False,star tracker residual,star tracker,True,False,False,False,DENIED
+grok,vda,ops_incident-029,ops_incident,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,10,3,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,DENIED
+grok,vda,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,9,3,True,1.0,DENIED,True,triglycerides,trig,True,False,triglycerides,trig,True,False,False,False,DENIED
+grok,vda,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,10,3,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+grok,vda,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,9,3,True,1.0,DENIED,True,UNMATCHED,CrCl,False,True,UNMATCHED,CrCl,False,False,False,False,DENIED
+grok,vda,clinical_enroll-004,clinical_enroll,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,8,3,True,1.0,DENIED,True,UNMATCHED,LVEF,False,True,UNMATCHED,LVEF,False,False,False,False,DENIED
+grok,vda,clinical_enroll-006,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,9,3,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,DENIED
+grok,vda,clinical_enroll-008,clinical_enroll,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-009,clinical_enroll,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-010,clinical_enroll,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,11,3,True,1.0,DENIED,True,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,DENIED
+grok,vda,clinical_enroll-012,clinical_enroll,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,9,3,True,1.0,DENIED,True,UNMATCHED,CrCl,False,True,UNMATCHED,CrCl,False,False,False,False,DENIED
+grok,vda,clinical_enroll-014,clinical_enroll,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-015,clinical_enroll,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-016,clinical_enroll,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-017,clinical_enroll,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-018,clinical_enroll,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-019,clinical_enroll,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,11,3,True,1.0,DENIED,True,hemoglobin,hemoglobin,True,False,hemoglobin,hemoglobin,True,False,False,False,DENIED
+grok,vda,clinical_enroll-021,clinical_enroll,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,10,3,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+grok,vda,clinical_enroll-023,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,9,3,True,1.0,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,trig,True,False,False,False,DENIED
+grok,vda,clinical_enroll-025,clinical_enroll,DENIED,body mass index,9,3,True,1.0,DENIED,True,UNMATCHED,BMI,False,True,UNMATCHED,BMI,False,False,False,False,DENIED
+grok,vda,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,11,3,True,1.0,DENIED,True,fasting glucose,fasting glucose,True,False,fasting glucose,fasting glucose,True,False,False,False,DENIED
+grok,vda,clinical_enroll-027,clinical_enroll,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,10,3,True,1.0,DENIED,True,UNMATCHED,CrCl,False,True,UNMATCHED,CrCl,False,False,False,False,DENIED
+grok,vda,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,11,3,True,1.0,DENIED,True,fasting glucose,fasting glucose,True,False,fasting glucose,fasting glucose,True,False,False,False,DENIED
+grok,vda,ci_release-000,ci_release,APPROVED,,7,4,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-001,ci_release,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-002,ci_release,DENIED,line coverage,8,3,True,1.0,DENIED,True,UNMATCHED,line cov,False,True,line coverage,line coverage,True,False,False,False,DENIED
+grok,vda,ci_release-003,ci_release,DENIED,open severity-one defects,6,4,True,1.0,DENIED,True,UNMATCHED,sev1,False,True,UNMATCHED,sev1,False,False,False,False,DENIED
+grok,vda,ci_release-004,ci_release,DENIED,flaky test count,7,3,True,1.0,DENIED,True,flaky test count,flaky,True,False,flaky test count,flaky,True,False,False,False,DENIED
+grok,vda,ci_release-005,ci_release,DENIED,rollback drill success,14,3,True,1.0,DENIED,True,rollback drill success,rollback drill,True,False,rollback drill success,rollback drill,True,False,False,False,DENIED
+grok,vda,ci_release-006,ci_release,DENIED,dependency audit findings,10,3,True,1.0,DENIED,True,dependency audit findings,findings,True,False,dependency audit findings,findings,True,False,False,False,DENIED
+grok,vda,ci_release-007,ci_release,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-008,ci_release,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-009,ci_release,DENIED,bundle size,10,3,True,1.0,DENIED,True,bundle size,bundle size,True,False,bundle size,bundle,True,False,False,False,DENIED
+grok,vda,ci_release-010,ci_release,APPROVED,,8,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-011,ci_release,APPROVED,,8,4,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-012,ci_release,DENIED,cold start time,10,3,True,1.0,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,DENIED
+grok,vda,ci_release-013,ci_release,APPROVED,,7,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-014,ci_release,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-015,ci_release,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-016,ci_release,DENIED,error budget remaining,10,3,True,1.0,DENIED,True,error budget remaining,error budget remaining,True,False,error budget remaining,error budget,True,False,False,False,DENIED
+grok,vda,ci_release-017,ci_release,DENIED,cold start time,12,3,True,1.0,DENIED,True,cold start time,cold start,True,False,cold start time,cold start,True,False,False,False,DENIED
+grok,vda,ci_release-018,ci_release,APPROVED,,12,4,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-019,ci_release,APPROVED,,11,4,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-020,ci_release,DENIED,dependency audit findings,12,4,True,1.0,DENIED,True,UNMATCHED,dep audit,False,True,UNMATCHED,dep audit,False,False,False,False,DENIED
+grok,vda,ci_release-021,ci_release,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-022,ci_release,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-023,ci_release,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-024,ci_release,DENIED,open severity-one defects,9,4,True,1.0,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,DENIED
+grok,vda,ci_release-025,ci_release,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+grok,vda,ci_release-026,ci_release,DENIED,line coverage,10,3,True,1.0,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,DENIED
+grok,vda,ci_release-027,ci_release,DENIED,open severity-one defects,6,4,True,1.0,DENIED,True,UNMATCHED,open sev1,False,True,UNMATCHED,open sev1,False,False,False,False,DENIED
+grok,vda,ci_release-028,ci_release,DENIED,flaky test count,10,3,True,1.0,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky tests,True,False,False,False,DENIED
+grok,vda,ci_release-029,ci_release,DENIED,peak heap usage,9,3,True,1.0,DENIED,True,peak heap usage,peak heap,True,False,peak heap usage,peak heap,True,False,False,False,DENIED
+grok,cert,ops_incident-000,ops_incident,DENIED,umbilical release delay,18,2,False,0.3333333333333333,DENIED,True,coolant loop flow rate,coolant loop flow rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,cert,ops_incident-001,ops_incident,DENIED,seal torque retention,16,2,True,0.3333333333333333,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,DENIED
+grok,cert,ops_incident-002,ops_incident,DENIED,seal torque retention,17,2,True,0.3333333333333333,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,DENIED
+grok,cert,ops_incident-003,ops_incident,APPROVED,,19,2,,0.3333333333333333,DENIED,False,coolant loop flow rate,coolant loop flow rate,False,False,coolant loop flow rate,coolant loop flow rate,False,False,False,False,DENIED
+grok,cert,ops_incident-004,ops_incident,APPROVED,,15,2,,0.3333333333333333,DENIED,False,reserve charge margin,reserve charge margin,False,False,reserve charge margin,reserve charge margin,False,False,False,False,DENIED
+grok,cert,ops_incident-005,ops_incident,DENIED,reserve charge margin,15,2,True,0.3333333333333333,DENIED,True,reserve charge margin,reserve charge margin,True,False,reserve charge margin,reserve charge margin,True,False,False,False,DENIED
+grok,cert,ops_incident-006,ops_incident,APPROVED,,15,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,cert,ops_incident-007,ops_incident,APPROVED,,14,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,cert,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,18,2,True,0.3333333333333333,DENIED,True,coolant loop flow rate,coolant loop flow rate,True,False,coolant loop flow rate,coolant loop flow rate,True,False,False,False,DENIED
+grok,cert,ops_incident-009,ops_incident,DENIED,battery bus impedance,15,2,True,0.3333333333333333,DENIED,True,battery bus impedance,battery bus impedance,True,False,battery bus impedance,battery bus impedance,True,False,False,False,DENIED
+grok,cert,ops_incident-010,ops_incident,APPROVED,,16,2,,0.3333333333333333,DENIED,False,reserve charge margin,reserve charge margin,False,False,NONE,NONE,True,False,True,False,DENIED
+grok,cert,ops_incident-011,ops_incident,APPROVED,,15,2,,0.3333333333333333,DENIED,False,guidance solution confidence,guidance solution confidence,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,cert,ops_incident-012,ops_incident,APPROVED,,16,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,cert,ops_incident-013,ops_incident,APPROVED,,15,2,,0.3333333333333333,DENIED,False,guidance solution confidence,guidance solution confidence,False,False,guidance solution confidence,guidance solution confidence,False,False,False,False,DENIED
+grok,cert,ops_incident-014,ops_incident,DENIED,particulate count,17,2,True,0.3333333333333333,DENIED,True,particulate count,particulate count,True,False,particulate count,particulate count,True,False,False,False,DENIED
+grok,cert,ops_incident-015,ops_incident,DENIED,seal torque retention,16,2,True,0.3333333333333333,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,DENIED
+grok,cert,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,18,2,True,0.3333333333333333,DENIED,True,coolant loop flow rate,coolant loop flow rate,True,False,coolant loop flow rate,coolant loop flow rate,True,False,False,False,DENIED
+grok,cert,ops_incident-017,ops_incident,DENIED,star tracker residual,15,2,True,0.3333333333333333,DENIED,True,star tracker residual,star tracker residual,True,False,star tracker residual,star tracker residual,True,False,False,False,DENIED
+grok,cert,ops_incident-018,ops_incident,APPROVED,,17,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,cert,ops_incident-019,ops_incident,APPROVED,,18,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,cert,ops_incident-020,ops_incident,APPROVED,,15,2,,0.3333333333333333,DENIED,False,thermal blanket coverage,thermal blanket coverage,False,False,NONE,NONE,True,False,True,False,DENIED
+grok,cert,ops_incident-021,ops_incident,APPROVED,,17,2,,0.3333333333333333,DENIED,False,battery bus impedance,battery bus impedance,False,False,battery bus impedance,battery bus impedance,False,False,False,False,DENIED
+grok,cert,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,15,2,True,0.3333333333333333,DENIED,True,thermal blanket coverage,thermal blanket coverage,True,False,thermal blanket coverage,thermal blanket coverage,True,False,False,False,DENIED
+grok,cert,ops_incident-023,ops_incident,APPROVED,,15,2,,0.3333333333333333,DENIED,False,thermal blanket coverage,thermal blanket coverage,False,False,NONE,NONE,True,False,True,False,DENIED
+grok,cert,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,15,2,True,0.3333333333333333,DENIED,True,telemetry downlink margin,telemetry downlink margin,True,False,telemetry downlink margin,telemetry downlink margin,True,False,False,False,DENIED
+grok,cert,ops_incident-025,ops_incident,APPROVED,,16,2,,0.3333333333333333,DENIED,False,condenser outlet temperature,condenser outlet temperature,False,False,condenser outlet temperature,condenser outlet temperature,False,False,False,False,DENIED
+grok,cert,ops_incident-026,ops_incident,DENIED,gyro drift rate,18,2,True,0.3333333333333333,DENIED,True,gyro drift rate,gyro drift rate,True,False,gyro drift rate,gyro drift rate,True,False,False,False,DENIED
+grok,cert,ops_incident-027,ops_incident,DENIED,battery bus impedance,18,2,False,0.3333333333333333,DENIED,True,NONE,NONE,False,False,NONE,NONE,False,False,True,True,DENIED
+grok,cert,ops_incident-028,ops_incident,DENIED,star tracker residual,16,2,True,0.3333333333333333,DENIED,True,star tracker residual,star tracker residual,True,False,star tracker residual,star tracker residual,True,False,False,False,DENIED
+grok,cert,ops_incident-029,ops_incident,APPROVED,,16,2,,0.3333333333333333,DENIED,False,seal torque retention,seal torque retention,False,False,seal torque retention,seal torque retention,False,False,False,False,DENIED
+grok,cert,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,15,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,DENIED
+grok,cert,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,15,2,True,0.3333333333333333,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,DENIED
+grok,cert,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,16,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,DENIED
+grok,cert,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,16,2,True,0.3333333333333333,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+grok,cert,clinical_enroll-004,clinical_enroll,APPROVED,,19,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,NONE,NONE,True,False,True,True,DENIED
+grok,cert,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,16,2,True,0.3333333333333333,DENIED,True,left ventricular ejection fraction,left ventricular ejection fraction,True,False,left ventricular ejection fraction,left ventricular ejection fraction,True,False,False,False,DENIED
+grok,cert,clinical_enroll-006,clinical_enroll,APPROVED,,15,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,cert,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,15,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,DENIED
+grok,cert,clinical_enroll-008,clinical_enroll,APPROVED,,14,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,cert,clinical_enroll-009,clinical_enroll,APPROVED,,15,2,,0.3333333333333333,DENIED,False,total bilirubin,total bilirubin,False,False,total bilirubin,total bilirubin,False,False,False,False,DENIED
+grok,cert,clinical_enroll-010,clinical_enroll,APPROVED,,15,2,,0.3333333333333333,DENIED,False,systolic blood pressure,systolic blood pressure,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,cert,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,18,2,True,0.3333333333333333,DENIED,True,estimated glomerular filtration rate,estimated glomerular filtration rate,True,False,estimated glomerular filtration rate,estimated glomerular filtration rate,True,False,False,False,DENIED
+grok,cert,clinical_enroll-012,clinical_enroll,APPROVED,,17,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,cert,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,17,2,True,0.3333333333333333,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+grok,cert,clinical_enroll-014,clinical_enroll,APPROVED,,17,2,,0.3333333333333333,DENIED,False,systolic blood pressure,systolic blood pressure,False,False,systolic blood pressure,systolic blood pressure,False,False,False,False,DENIED
+grok,cert,clinical_enroll-015,clinical_enroll,APPROVED,,17,2,,0.3333333333333333,DENIED,False,alanine aminotransferase,alanine aminotransferase,False,False,alanine aminotransferase,alanine aminotransferase,False,False,False,False,DENIED
+grok,cert,clinical_enroll-016,clinical_enroll,APPROVED,,16,2,,0.3333333333333333,DENIED,False,systolic blood pressure,systolic blood pressure,False,False,systolic blood pressure,systolic blood pressure,False,False,False,False,DENIED
+grok,cert,clinical_enroll-017,clinical_enroll,APPROVED,,18,2,,0.3333333333333333,DENIED,False,estimated glomerular filtration rate,estimated glomerular filtration rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,cert,clinical_enroll-018,clinical_enroll,APPROVED,,16,2,,0.3333333333333333,DENIED,False,left ventricular ejection fraction,left ventricular ejection fraction,False,False,NONE,NONE,True,False,True,False,DENIED
+grok,cert,clinical_enroll-019,clinical_enroll,APPROVED,,17,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,NONE,NONE,True,False,True,True,DENIED
+grok,cert,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,14,2,True,0.3333333333333333,DENIED,True,hemoglobin,hemoglobin,True,False,hemoglobin,hemoglobin,True,False,False,False,DENIED
+grok,cert,clinical_enroll-021,clinical_enroll,APPROVED,,16,2,,0.3333333333333333,DENIED,False,systolic blood pressure,systolic blood pressure,False,False,systolic blood pressure,systolic blood pressure,False,False,False,False,DENIED
+grok,cert,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,15,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,DENIED
+grok,cert,clinical_enroll-023,clinical_enroll,APPROVED,,15,2,,0.3333333333333333,DENIED,False,triglycerides,triglycerides,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,cert,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,15,2,True,0.3333333333333333,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,DENIED
+grok,cert,clinical_enroll-025,clinical_enroll,DENIED,body mass index,15,2,True,0.3333333333333333,DENIED,True,body mass index,body mass index,True,False,body mass index,body mass index,True,False,False,False,DENIED
+grok,cert,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,14,2,True,0.3333333333333333,DENIED,True,fasting glucose,fasting glucose,True,False,fasting glucose,fasting glucose,True,False,False,False,DENIED
+grok,cert,clinical_enroll-027,clinical_enroll,APPROVED,,15,2,,0.3333333333333333,DENIED,False,creatinine clearance,creatinine clearance,False,False,creatinine clearance,creatinine clearance,False,False,False,False,DENIED
+grok,cert,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,16,2,True,0.3333333333333333,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+grok,cert,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,17,2,True,0.3333333333333333,DENIED,True,fasting glucose,fasting glucose,True,False,fasting glucose,fasting glucose,True,False,False,False,DENIED
+grok,cert,ci_release-000,ci_release,APPROVED,,15,1,,0.3333333333333333,DENIED,False,flaky test count,flaky test count,False,False,flaky test count,flaky test count,False,False,False,False,DENIED
+grok,cert,ci_release-001,ci_release,APPROVED,,16,2,,0.3333333333333333,DENIED,False,dependency audit findings,dependency audit findings,False,False,dependency audit findings,dependency audit findings,False,False,False,False,DENIED
+grok,cert,ci_release-002,ci_release,DENIED,line coverage,14,2,True,0.3333333333333333,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,DENIED
+grok,cert,ci_release-003,ci_release,DENIED,open severity-one defects,16,2,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,DENIED
+grok,cert,ci_release-004,ci_release,DENIED,flaky test count,16,2,True,0.3333333333333333,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,DENIED
+grok,cert,ci_release-005,ci_release,DENIED,rollback drill success,16,2,True,0.3333333333333333,DENIED,True,rollback drill success,rollback drill success,True,False,rollback drill success,rollback drill success,True,False,False,False,DENIED
+grok,cert,ci_release-006,ci_release,DENIED,dependency audit findings,16,2,True,0.3333333333333333,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,DENIED
+grok,cert,ci_release-007,ci_release,APPROVED,,15,1,,0.3333333333333333,DENIED,False,dependency audit findings,dependency audit findings,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,cert,ci_release-008,ci_release,APPROVED,,17,2,,0.3333333333333333,DENIED,False,mean time to acknowledge,mean time to acknowledge,False,False,NONE,NONE,True,False,True,False,DENIED
+grok,cert,ci_release-009,ci_release,DENIED,bundle size,15,2,True,0.3333333333333333,DENIED,True,bundle size,bundle size,True,False,bundle size,bundle size,True,False,False,False,DENIED
+grok,cert,ci_release-010,ci_release,APPROVED,,15,2,,0.3333333333333333,DENIED,False,build reproducibility,build reproducibility,False,False,build reproducibility,build reproducibility,False,False,False,False,DENIED
+grok,cert,ci_release-011,ci_release,APPROVED,,16,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+grok,cert,ci_release-012,ci_release,DENIED,cold start time,15,2,True,0.3333333333333333,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,DENIED
+grok,cert,ci_release-013,ci_release,APPROVED,,16,2,,0.3333333333333333,DENIED,False,rollback drill success,rollback drill success,False,False,rollback drill success,rollback drill success,False,False,False,False,DENIED
+grok,cert,ci_release-014,ci_release,APPROVED,,16,2,,0.3333333333333333,DENIED,False,mean time to acknowledge,mean time to acknowledge,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+grok,cert,ci_release-015,ci_release,APPROVED,,17,2,,0.3333333333333333,DENIED,False,unit test pass rate,unit test pass rate,False,False,unit test pass rate,unit test pass rate,False,False,False,False,DENIED
+grok,cert,ci_release-016,ci_release,DENIED,error budget remaining,16,2,True,0.3333333333333333,DENIED,True,error budget remaining,error budget remaining,True,False,error budget remaining,error budget remaining,True,False,False,False,DENIED
+grok,cert,ci_release-017,ci_release,DENIED,cold start time,15,2,True,0.3333333333333333,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,DENIED
+grok,cert,ci_release-018,ci_release,APPROVED,,15,1,,0.3333333333333333,DENIED,False,flaky test count,flaky test count,False,False,flaky test count,flaky test count,False,False,False,False,DENIED
+grok,cert,ci_release-019,ci_release,APPROVED,,15,2,,0.3333333333333333,DENIED,False,cold start time,cold start time,False,False,NONE,NONE,True,False,True,False,DENIED
+grok,cert,ci_release-020,ci_release,DENIED,dependency audit findings,16,2,True,0.3333333333333333,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,DENIED
+grok,cert,ci_release-021,ci_release,APPROVED,,15,2,,0.3333333333333333,DENIED,False,line coverage,line coverage,False,False,line coverage,line coverage,False,False,False,False,DENIED
+grok,cert,ci_release-022,ci_release,APPROVED,,15,2,,0.3333333333333333,DENIED,False,error budget remaining,error budget remaining,False,False,NONE,NONE,True,False,True,False,DENIED
+grok,cert,ci_release-023,ci_release,APPROVED,,15,1,,0.3333333333333333,DENIED,False,dependency audit findings,dependency audit findings,False,False,dependency audit findings,dependency audit findings,False,False,False,False,DENIED
+grok,cert,ci_release-024,ci_release,DENIED,open severity-one defects,16,2,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,DENIED
+grok,cert,ci_release-025,ci_release,APPROVED,,17,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,NONE,NONE,True,False,True,True,DENIED
+grok,cert,ci_release-026,ci_release,DENIED,line coverage,15,2,True,0.3333333333333333,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,DENIED
+grok,cert,ci_release-027,ci_release,DENIED,open severity-one defects,16,2,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,DENIED
+grok,cert,ci_release-028,ci_release,DENIED,flaky test count,16,2,True,0.3333333333333333,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,DENIED
+grok,cert,ci_release-029,ci_release,DENIED,peak heap usage,15,2,True,0.3333333333333333,DENIED,True,peak heap usage,peak heap usage,True,False,peak heap usage,peak heap usage,True,False,False,False,DENIED
+haiku,ctrl,ops_incident-000,ops_incident,DENIED,umbilical release delay,19,3,False,0.3333333333333333,DENIED,True,coolant loop flow rate,coolant loop flow rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,ctrl,ops_incident-001,ops_incident,DENIED,seal torque retention,45,10,False,0.6666666666666666,DENIED,True,seal torque retention,Seal torque retention,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ops_incident-002,ops_incident,DENIED,seal torque retention,39,5,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,ctrl,ops_incident-003,ops_incident,APPROVED,,26,4,,0.3333333333333333,DENIED,False,coolant loop flow rate,coolant loop flow rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,ctrl,ops_incident-004,ops_incident,APPROVED,,19,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,ctrl,ops_incident-005,ops_incident,DENIED,reserve charge margin,18,0,False,0.0,DENIED,True,,,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ops_incident-006,ops_incident,APPROVED,,35,7,,0.6666666666666666,APPROVED,True,telemetry downlink margin,Telemetry downlink margin,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ops_incident-007,ops_incident,APPROVED,,50,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,ctrl,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,32,5,True,0.3333333333333333,DENIED,True,coolant loop flow rate,coolant flow,True,False,coolant loop flow rate,coolant flow,True,False,False,False,DENIED
+haiku,ctrl,ops_incident-009,ops_incident,DENIED,battery bus impedance,28,4,False,0.3333333333333333,APPROVED,False,NONE,NONE,False,False,NONE,NONE,False,False,True,False,APPROVED
+haiku,ctrl,ops_incident-010,ops_incident,APPROVED,,32,5,,0.3333333333333333,DENIED,False,condenser outlet temperature,condenser outlet temperature,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ops_incident-011,ops_incident,APPROVED,,31,7,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,ctrl,ops_incident-012,ops_incident,APPROVED,,20,2,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,ctrl,ops_incident-013,ops_incident,APPROVED,,21,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,ctrl,ops_incident-014,ops_incident,DENIED,particulate count,18,1,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,ctrl,ops_incident-015,ops_incident,DENIED,seal torque retention,52,10,False,0.6666666666666666,APPROVED,False,seal torque retention,Seal torque retention,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,37,8,True,1.0,DENIED,True,coolant loop flow rate,coolant loop flow rate,True,False,coolant loop flow rate,coolant,True,False,False,False,APPROVED
+haiku,ctrl,ops_incident-017,ops_incident,DENIED,star tracker residual,54,11,True,0.6666666666666666,DENIED,True,star tracker residual,star tracker,True,False,star tracker residual,star tracker,True,False,False,False,APPROVED
+haiku,ctrl,ops_incident-018,ops_incident,APPROVED,,38,7,,0.6666666666666666,APPROVED,True,gyro drift rate,Gyro drift rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,ctrl,ops_incident-019,ops_incident,APPROVED,,19,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,ctrl,ops_incident-020,ops_incident,APPROVED,,15,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,ctrl,ops_incident-021,ops_incident,APPROVED,,20,3,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,ctrl,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,41,9,False,0.6666666666666666,DENIED,True,reserve charge margin,reserve charge,False,False,reserve charge margin,reserve charge,False,False,False,False,DENIED
+haiku,ctrl,ops_incident-023,ops_incident,APPROVED,,21,4,,0.3333333333333333,DENIED,False,propellant tank ullage pressure,propellant tank ullage pressure,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,31,6,True,0.6666666666666666,DENIED,True,telemetry downlink margin,telemetry downlink margin,True,False,telemetry downlink margin,telemetry,True,False,False,False,APPROVED
+haiku,ctrl,ops_incident-025,ops_incident,APPROVED,,25,4,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,ctrl,ops_incident-026,ops_incident,DENIED,gyro drift rate,32,4,False,0.6666666666666666,APPROVED,False,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ops_incident-027,ops_incident,DENIED,battery bus impedance,18,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,ctrl,ops_incident-028,ops_incident,DENIED,star tracker residual,15,0,False,0.0,DENIED,True,,,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,ctrl,ops_incident-029,ops_incident,APPROVED,,30,4,,0.3333333333333333,DENIED,False,reserve charge margin,reserve charge margin,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,20,5,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+haiku,ctrl,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,27,9,True,0.6666666666666666,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+haiku,ctrl,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,35,12,True,1.0,DENIED,True,systolic blood pressure,Systolic blood pressure,True,False,UNMATCHED,SBP,False,False,False,False,DENIED
+haiku,ctrl,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,15,0,False,0.0,,False,,,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,clinical_enroll-004,clinical_enroll,APPROVED,,20,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,ctrl,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,18,4,True,0.3333333333333333,DENIED,True,UNMATCHED,LVEF,False,True,UNMATCHED,LVEF,False,False,False,False,DENIED
+haiku,ctrl,clinical_enroll-006,clinical_enroll,APPROVED,,30,10,,0.3333333333333333,DENIED,False,UNMATCHED,PARAMETER: NONE,False,True,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,ctrl,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,30,12,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+haiku,ctrl,clinical_enroll-008,clinical_enroll,APPROVED,,32,9,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,ctrl,clinical_enroll-009,clinical_enroll,APPROVED,,25,8,,0.6666666666666666,DENIED,False,total bilirubin,total bilirubin,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,clinical_enroll-010,clinical_enroll,APPROVED,,26,6,,0.6666666666666666,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,ctrl,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,21,7,False,0.3333333333333333,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,ctrl,clinical_enroll-012,clinical_enroll,APPROVED,,36,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,ctrl,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,44,12,True,1.0,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+haiku,ctrl,clinical_enroll-014,clinical_enroll,APPROVED,,21,7,,0.6666666666666666,DENIED,False,platelet count,Platelet count,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,clinical_enroll-015,clinical_enroll,APPROVED,,31,10,,0.6666666666666666,APPROVED,True,alanine aminotransferase,Alanine aminotransferase,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,clinical_enroll-016,clinical_enroll,APPROVED,,18,6,,0.6666666666666666,DENIED,False,corrected QT interval,Corrected QT interval,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,clinical_enroll-017,clinical_enroll,APPROVED,,19,4,,0.6666666666666666,DENIED,False,UNMATCHED,eGFR,False,True,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,clinical_enroll-018,clinical_enroll,APPROVED,,33,11,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,ctrl,clinical_enroll-019,clinical_enroll,APPROVED,,32,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,ctrl,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,21,6,True,1.0,DENIED,True,hemoglobin,hemoglobin,True,False,hemoglobin,hemoglobin,True,False,False,False,DENIED
+haiku,ctrl,clinical_enroll-021,clinical_enroll,APPROVED,,36,9,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,ctrl,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,25,8,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+haiku,ctrl,clinical_enroll-023,clinical_enroll,APPROVED,,27,9,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,ctrl,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,33,12,True,1.0,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+haiku,ctrl,clinical_enroll-025,clinical_enroll,DENIED,body mass index,13,0,False,0.0,,False,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,20,5,True,0.3333333333333333,DENIED,True,fasting glucose,fasting glucose,True,False,fasting glucose,fasting glucose,True,False,False,False,DENIED
+haiku,ctrl,clinical_enroll-027,clinical_enroll,APPROVED,,19,6,,0.3333333333333333,DENIED,False,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,APPROVED
+haiku,ctrl,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,23,8,False,0.6666666666666666,DENIED,True,UNMATCHED,eGFR,False,True,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,26,8,True,0.6666666666666666,DENIED,True,fasting glucose,glucose,True,False,fasting glucose,glucose,True,False,False,False,APPROVED
+haiku,ctrl,ci_release-000,ci_release,APPROVED,,40,9,,0.6666666666666666,DENIED,False,flaky test count,flaky test count,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-001,ci_release,APPROVED,,42,12,,1.0,APPROVED,True,NONE,NONE,True,False,,,False,False,False,False,DENIED
+haiku,ctrl,ci_release-002,ci_release,DENIED,line coverage,23,4,True,0.6666666666666666,DENIED,True,build reproducibility,build reproducibility,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-003,ci_release,DENIED,open severity-one defects,19,2,False,0.0,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+haiku,ctrl,ci_release-004,ci_release,DENIED,flaky test count,27,6,True,0.6666666666666666,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,DENIED
+haiku,ctrl,ci_release-005,ci_release,DENIED,rollback drill success,25,4,True,0.3333333333333333,DENIED,True,rollback drill success,rollback drill success,True,False,rollback drill success,rollback drill success,True,False,False,False,DENIED
+haiku,ctrl,ci_release-006,ci_release,DENIED,dependency audit findings,25,7,True,0.6666666666666666,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,DENIED
+haiku,ctrl,ci_release-007,ci_release,APPROVED,,28,6,,0.3333333333333333,APPROVED,True,unit test pass rate,unit test pass rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,ctrl,ci_release-008,ci_release,APPROVED,,32,5,,0.3333333333333333,DENIED,False,mean time to acknowledge,mean time to acknowledge,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-009,ci_release,DENIED,bundle size,22,3,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,ctrl,ci_release-010,ci_release,APPROVED,,34,3,,0.3333333333333333,DENIED,False,unit test pass rate,unit test pass rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-011,ci_release,APPROVED,,32,7,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,ctrl,ci_release-012,ci_release,DENIED,cold start time,30,7,False,0.0,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,APPROVED
+haiku,ctrl,ci_release-013,ci_release,APPROVED,,35,6,,0.3333333333333333,DENIED,False,rollback drill success,rollback drill success,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,ctrl,ci_release-014,ci_release,APPROVED,,16,4,,0.3333333333333333,DENIED,False,mean time to acknowledge,mean time to acknowledge,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-015,ci_release,APPROVED,,26,6,,0.3333333333333333,DENIED,False,error budget remaining,error budget remaining,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-016,ci_release,DENIED,error budget remaining,23,5,False,0.0,DENIED,True,unit test pass rate,unit test pass rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,ctrl,ci_release-017,ci_release,DENIED,cold start time,24,3,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,ctrl,ci_release-018,ci_release,APPROVED,,21,6,,0.6666666666666666,DENIED,False,error budget remaining,error budget remaining,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-019,ci_release,APPROVED,,24,6,,0.3333333333333333,DENIED,False,cold start time,cold start time,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-020,ci_release,DENIED,dependency audit findings,41,7,False,0.6666666666666666,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,DENIED
+haiku,ctrl,ci_release-021,ci_release,APPROVED,,23,3,,0.3333333333333333,DENIED,False,line coverage,line coverage,False,False,line coverage,line coverage,False,False,False,False,DENIED
+haiku,ctrl,ci_release-022,ci_release,APPROVED,,20,6,,0.3333333333333333,APPROVED,True,mean time to acknowledge,mean time to acknowledge,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-023,ci_release,APPROVED,,19,6,,0.3333333333333333,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-024,ci_release,DENIED,open severity-one defects,22,5,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,DENIED
+haiku,ctrl,ci_release-025,ci_release,APPROVED,,23,5,,1.0,APPROVED,True,NONE,NONE,True,False,,,False,False,False,False,APPROVED
+haiku,ctrl,ci_release-026,ci_release,DENIED,line coverage,17,3,False,0.3333333333333333,DENIED,True,line coverage,line coverage,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,ctrl,ci_release-027,ci_release,DENIED,open severity-one defects,26,10,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+haiku,ctrl,ci_release-028,ci_release,DENIED,flaky test count,30,5,True,0.3333333333333333,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,APPROVED
+haiku,ctrl,ci_release-029,ci_release,DENIED,peak heap usage,28,6,False,0.3333333333333333,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,vd,ops_incident-000,ops_incident,DENIED,umbilical release delay,27,6,False,0.3333333333333333,DENIED,True,coolant loop flow rate,Coolant loop flow rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,vd,ops_incident-001,ops_incident,DENIED,seal torque retention,37,10,True,1.0,DENIED,True,seal torque retention,Seal torque,True,False,seal torque retention,Seal torque,True,False,False,False,DENIED
+haiku,vd,ops_incident-002,ops_incident,DENIED,seal torque retention,30,8,False,0.3333333333333333,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,vd,ops_incident-003,ops_incident,APPROVED,,38,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vd,ops_incident-004,ops_incident,APPROVED,,39,11,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,ops_incident-005,ops_incident,DENIED,reserve charge margin,44,10,True,1.0,DENIED,True,reserve charge margin,Reserve charge,True,False,reserve charge margin,Reserve charge,True,False,False,False,DENIED
+haiku,vd,ops_incident-006,ops_incident,APPROVED,,53,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,ops_incident-007,ops_incident,APPROVED,,44,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,31,8,True,0.6666666666666666,DENIED,True,coolant loop flow rate,coolant flow,True,False,coolant loop flow rate,coolant flow,True,False,False,False,DENIED
+haiku,vd,ops_incident-009,ops_incident,DENIED,battery bus impedance,47,11,True,1.0,DENIED,True,battery bus impedance,Battery impedance,True,False,battery bus impedance,Battery impedance,True,False,False,False,APPROVED
+haiku,vd,ops_incident-010,ops_incident,APPROVED,,36,10,,0.6666666666666666,DENIED,False,seal torque retention,Seal torque retention,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vd,ops_incident-011,ops_incident,APPROVED,,36,10,,0.6666666666666666,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,vd,ops_incident-012,ops_incident,APPROVED,,38,9,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vd,ops_incident-013,ops_incident,APPROVED,,48,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,ops_incident-014,ops_incident,DENIED,particulate count,41,10,False,0.3333333333333333,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,vd,ops_incident-015,ops_incident,DENIED,seal torque retention,46,12,True,1.0,DENIED,True,seal torque retention,Seal torque,True,False,seal torque retention,Seal torque,True,False,False,False,DENIED
+haiku,vd,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,43,10,True,1.0,DENIED,True,coolant loop flow rate,Coolant flow,True,False,coolant loop flow rate,Coolant flow,True,False,False,False,APPROVED
+haiku,vd,ops_incident-017,ops_incident,DENIED,star tracker residual,49,12,True,1.0,DENIED,True,star tracker residual,Star tracker,True,False,star tracker residual,Star tracker,True,False,False,False,APPROVED
+haiku,vd,ops_incident-018,ops_incident,APPROVED,,40,10,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vd,ops_incident-019,ops_incident,APPROVED,,29,8,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,vd,ops_incident-020,ops_incident,APPROVED,,36,8,,1.0,APPROVED,True,NONE,NONE,True,False,,,False,False,False,False,DENIED
+haiku,vd,ops_incident-021,ops_incident,APPROVED,,38,9,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vd,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,33,8,False,0.6666666666666666,DENIED,True,reserve charge margin,Reserve margin,False,False,reserve charge margin,Reserve margin,False,False,False,False,DENIED
+haiku,vd,ops_incident-023,ops_incident,APPROVED,,34,9,,0.6666666666666666,APPROVED,True,thermal blanket coverage,Thermal blanket coverage,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vd,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,40,10,True,1.0,DENIED,True,telemetry downlink margin,Telemetry margin,True,False,telemetry downlink margin,Telemetry margin,True,False,False,False,APPROVED
+haiku,vd,ops_incident-025,ops_incident,APPROVED,,41,9,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,vd,ops_incident-026,ops_incident,DENIED,gyro drift rate,38,12,True,1.0,DENIED,True,gyro drift rate,Gyro drift,True,False,gyro drift rate,Gyro drift,True,False,False,False,DENIED
+haiku,vd,ops_incident-027,ops_incident,DENIED,battery bus impedance,35,8,True,0.6666666666666666,DENIED,True,battery bus impedance,Battery bus impedance,True,False,battery bus impedance,Battery bus impedance,True,False,False,False,APPROVED
+haiku,vd,ops_incident-028,ops_incident,DENIED,star tracker residual,48,12,True,1.0,DENIED,True,star tracker residual,Star tracker residual,True,False,star tracker residual,Star tracker residual,True,False,False,False,APPROVED
+haiku,vd,ops_incident-029,ops_incident,APPROVED,,38,9,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vd,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,18,6,True,0.3333333333333333,DENIED,True,systolic blood pressure,Systolic blood pressure,True,False,systolic blood pressure,Systolic blood pressure,True,False,False,False,APPROVED
+haiku,vd,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,22,7,True,0.6666666666666666,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+haiku,vd,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,23,7,True,0.6666666666666666,DENIED,True,UNMATCHED,systolic BP,False,True,UNMATCHED,systolic BP,False,False,False,False,DENIED
+haiku,vd,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,40,12,True,1.0,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+haiku,vd,clinical_enroll-004,clinical_enroll,APPROVED,,20,6,,0.6666666666666666,DENIED,False,platelet count,Platelet count,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vd,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,23,7,True,1.0,DENIED,True,UNMATCHED,LVEF,False,True,UNMATCHED,LVEF,False,False,False,False,DENIED
+haiku,vd,clinical_enroll-006,clinical_enroll,APPROVED,,22,7,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,vd,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,34,12,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+haiku,vd,clinical_enroll-008,clinical_enroll,APPROVED,,42,11,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,clinical_enroll-009,clinical_enroll,APPROVED,,18,6,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,vd,clinical_enroll-010,clinical_enroll,APPROVED,,32,10,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,34,11,True,1.0,DENIED,True,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,APPROVED
+haiku,vd,clinical_enroll-012,clinical_enroll,APPROVED,,28,8,,0.6666666666666666,DENIED,False,corrected QT interval,Corrected QT interval,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,vd,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,22,7,True,0.6666666666666666,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+haiku,vd,clinical_enroll-014,clinical_enroll,APPROVED,,21,7,,0.6666666666666666,DENIED,False,platelet count,Platelet count,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vd,clinical_enroll-015,clinical_enroll,APPROVED,,37,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,clinical_enroll-016,clinical_enroll,APPROVED,,23,8,,0.6666666666666666,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,vd,clinical_enroll-017,clinical_enroll,APPROVED,,24,8,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,clinical_enroll-018,clinical_enroll,APPROVED,,43,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,clinical_enroll-019,clinical_enroll,APPROVED,,31,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vd,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,22,6,True,1.0,DENIED,True,hemoglobin,Hemoglobin,True,False,hemoglobin,Hemoglobin,True,False,False,False,DENIED
+haiku,vd,clinical_enroll-021,clinical_enroll,APPROVED,,27,9,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vd,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,23,8,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,APPROVED
+haiku,vd,clinical_enroll-023,clinical_enroll,APPROVED,,18,6,,0.6666666666666666,DENIED,False,alanine aminotransferase,alanine aminotransferase,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,vd,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,38,12,True,1.0,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+haiku,vd,clinical_enroll-025,clinical_enroll,DENIED,body mass index,27,9,True,1.0,DENIED,True,UNMATCHED,BMI,False,True,body mass index,Body mass index,True,False,False,False,DENIED
+haiku,vd,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,37,10,True,0.6666666666666666,DENIED,True,fasting glucose,glucose,True,False,fasting glucose,glucose,True,False,False,False,DENIED
+haiku,vd,clinical_enroll-027,clinical_enroll,APPROVED,,20,6,,0.6666666666666666,APPROVED,True,total bilirubin,Total bilirubin,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,vd,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,28,9,True,1.0,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+haiku,vd,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,30,10,True,0.6666666666666666,DENIED,True,fasting glucose,glucose,True,False,fasting glucose,glucose,True,False,False,False,APPROVED
+haiku,vd,ci_release-000,ci_release,APPROVED,,40,13,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,ci_release-001,ci_release,APPROVED,,36,12,,1.0,APPROVED,True,NONE,NONE,True,False,,,False,False,False,False,DENIED
+haiku,vd,ci_release-002,ci_release,DENIED,line coverage,38,13,True,1.0,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,DENIED
+haiku,vd,ci_release-003,ci_release,DENIED,open severity-one defects,40,14,True,1.0,DENIED,True,open severity-one defects,severity-1 defects,True,False,open severity-one defects,severity-1 defects,True,False,False,False,APPROVED
+haiku,vd,ci_release-004,ci_release,DENIED,flaky test count,34,11,True,0.6666666666666666,DENIED,True,flaky test count,flaky tests,True,False,flaky test count,flaky tests,True,False,False,False,DENIED
+haiku,vd,ci_release-005,ci_release,DENIED,rollback drill success,42,14,True,1.0,DENIED,True,rollback drill success,rollback drill,True,False,rollback drill success,rollback drill,True,False,False,False,DENIED
+haiku,vd,ci_release-006,ci_release,DENIED,dependency audit findings,38,12,True,1.0,DENIED,True,dependency audit findings,Dependency audit findings,True,False,dependency audit findings,Dependency audit findings,True,False,False,False,DENIED
+haiku,vd,ci_release-007,ci_release,APPROVED,,26,10,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,vd,ci_release-008,ci_release,APPROVED,,53,13,,0.6666666666666666,DENIED,False,mean time to acknowledge,mean time to acknowledge,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vd,ci_release-009,ci_release,DENIED,bundle size,33,13,True,0.6666666666666666,DENIED,True,bundle size,bundle,True,False,bundle size,bundle,True,False,False,False,DENIED
+haiku,vd,ci_release-010,ci_release,APPROVED,,44,11,,0.6666666666666666,DENIED,False,build reproducibility,Build reproducibility,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vd,ci_release-011,ci_release,APPROVED,,31,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,ci_release-012,ci_release,DENIED,cold start time,35,13,True,1.0,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,APPROVED
+haiku,vd,ci_release-013,ci_release,APPROVED,,31,9,,0.3333333333333333,DENIED,False,rollback drill success,Rollback drill success,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,vd,ci_release-014,ci_release,APPROVED,,36,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,ci_release-015,ci_release,APPROVED,,45,11,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vd,ci_release-016,ci_release,DENIED,error budget remaining,47,13,True,1.0,DENIED,True,error budget remaining,error budget,True,False,error budget remaining,error budget,True,False,False,False,APPROVED
+haiku,vd,ci_release-017,ci_release,DENIED,cold start time,42,12,True,0.6666666666666666,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,DENIED
+haiku,vd,ci_release-018,ci_release,APPROVED,,36,13,,1.0,APPROVED,True,,,False,False,,,False,False,False,False,DENIED
+haiku,vd,ci_release-019,ci_release,APPROVED,,36,12,,1.0,APPROVED,True,NONE,NONE,True,False,,,False,False,False,False,DENIED
+haiku,vd,ci_release-020,ci_release,DENIED,dependency audit findings,33,12,True,1.0,DENIED,True,dependency audit findings,dependency audit,True,False,dependency audit findings,dependency audit,True,False,False,False,DENIED
+haiku,vd,ci_release-021,ci_release,APPROVED,,34,12,,0.6666666666666666,APPROVED,True,line coverage,Line coverage,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vd,ci_release-022,ci_release,APPROVED,,35,12,,0.6666666666666666,DENIED,False,mean time to acknowledge,mean time to acknowledge,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vd,ci_release-023,ci_release,APPROVED,,35,11,,0.6666666666666666,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,vd,ci_release-024,ci_release,DENIED,open severity-one defects,42,13,True,1.0,DENIED,True,open severity-one defects,open S1 defects,True,False,open severity-one defects,open S1 defects,True,False,False,False,DENIED
+haiku,vd,ci_release-025,ci_release,APPROVED,,35,13,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vd,ci_release-026,ci_release,DENIED,line coverage,30,13,True,1.0,DENIED,True,line coverage,Coverage,True,False,line coverage,Coverage,True,False,False,False,DENIED
+haiku,vd,ci_release-027,ci_release,DENIED,open severity-one defects,30,10,True,0.3333333333333333,DENIED,True,open severity-one defects,severity-one defects,True,False,open severity-one defects,severity-one defects,True,False,False,False,APPROVED
+haiku,vd,ci_release-028,ci_release,DENIED,flaky test count,38,11,True,0.3333333333333333,DENIED,True,flaky test count,Flaky tests,True,False,flaky test count,Flaky tests,True,False,False,False,APPROVED
+haiku,vd,ci_release-029,ci_release,DENIED,peak heap usage,38,13,True,1.0,DENIED,True,peak heap usage,heap,True,False,peak heap usage,heap,True,False,False,False,DENIED
+haiku,vda,ops_incident-000,ops_incident,DENIED,umbilical release delay,20,3,True,1.0,DENIED,True,umbilical release delay,Umbilical release delay,True,False,umbilical release delay,Umbilical release delay,True,False,False,False,APPROVED
+haiku,vda,ops_incident-001,ops_incident,DENIED,seal torque retention,20,4,True,1.0,DENIED,True,seal torque retention,Seal torque retention,True,False,seal torque retention,Seal torque retention,True,False,False,False,DENIED
+haiku,vda,ops_incident-002,ops_incident,DENIED,seal torque retention,15,3,True,1.0,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,APPROVED
+haiku,vda,ops_incident-003,ops_incident,APPROVED,,21,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,ops_incident-004,ops_incident,APPROVED,,19,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ops_incident-005,ops_incident,DENIED,reserve charge margin,13,3,True,1.0,DENIED,True,reserve charge margin,Reserve charge margin,True,False,reserve charge margin,Reserve charge margin,True,False,False,False,DENIED
+haiku,vda,ops_incident-006,ops_incident,APPROVED,,16,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ops_incident-007,ops_incident,APPROVED,,15,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,15,3,True,1.0,DENIED,True,coolant loop flow rate,Coolant loop flow rate,True,False,coolant loop flow rate,Coolant loop flow rate,True,False,False,False,DENIED
+haiku,vda,ops_incident-009,ops_incident,DENIED,battery bus impedance,20,4,True,1.0,DENIED,True,battery bus impedance,Battery bus impedance,True,False,battery bus impedance,Battery bus impedance,True,False,False,False,APPROVED
+haiku,vda,ops_incident-010,ops_incident,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ops_incident-011,ops_incident,APPROVED,,15,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,ops_incident-012,ops_incident,APPROVED,,16,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ops_incident-013,ops_incident,APPROVED,,17,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ops_incident-014,ops_incident,DENIED,particulate count,15,3,True,1.0,DENIED,True,particulate count,Particulate count,True,False,particulate count,Particulate count,True,False,False,False,APPROVED
+haiku,vda,ops_incident-015,ops_incident,DENIED,seal torque retention,15,3,True,1.0,DENIED,True,seal torque retention,Seal torque retention,True,False,seal torque retention,Seal torque retention,True,False,False,False,DENIED
+haiku,vda,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,19,3,True,1.0,DENIED,True,coolant loop flow rate,Coolant loop flow rate,True,False,coolant loop flow rate,Coolant loop flow rate,True,False,False,False,APPROVED
+haiku,vda,ops_incident-017,ops_incident,DENIED,star tracker residual,16,3,True,1.0,DENIED,True,star tracker residual,Star tracker residual,True,False,star tracker residual,Star tracker residual,True,False,False,False,APPROVED
+haiku,vda,ops_incident-018,ops_incident,APPROVED,,15,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,ops_incident-019,ops_incident,APPROVED,,16,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ops_incident-020,ops_incident,APPROVED,,18,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ops_incident-021,ops_incident,APPROVED,,16,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,14,3,True,1.0,DENIED,True,thermal blanket coverage,Thermal blanket coverage,True,False,thermal blanket coverage,Thermal blanket coverage,True,False,False,False,DENIED
+haiku,vda,ops_incident-023,ops_incident,APPROVED,,17,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,15,3,True,1.0,DENIED,True,telemetry downlink margin,Telemetry downlink margin,True,False,telemetry downlink margin,telemetry downlink margin,True,False,False,False,APPROVED
+haiku,vda,ops_incident-025,ops_incident,APPROVED,,17,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,ops_incident-026,ops_incident,DENIED,gyro drift rate,12,3,True,1.0,DENIED,True,gyro drift rate,gyro drift rate,True,False,gyro drift rate,gyro drift rate,True,False,False,False,DENIED
+haiku,vda,ops_incident-027,ops_incident,DENIED,battery bus impedance,17,3,True,1.0,DENIED,True,battery bus impedance,battery bus impedance,True,False,battery bus impedance,battery bus impedance,True,False,False,False,APPROVED
+haiku,vda,ops_incident-028,ops_incident,DENIED,star tracker residual,19,3,True,1.0,DENIED,True,star tracker residual,Star tracker residual,True,False,star tracker residual,Star tracker residual,True,False,False,False,APPROVED
+haiku,vda,ops_incident-029,ops_incident,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,12,3,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+haiku,vda,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,20,4,True,1.0,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+haiku,vda,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,20,4,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,DENIED
+haiku,vda,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,13,3,True,1.0,DENIED,True,creatinine clearance,Creatinine clearance,True,False,creatinine clearance,Creatinine clearance,True,False,False,False,DENIED
+haiku,vda,clinical_enroll-004,clinical_enroll,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,15,4,True,1.0,DENIED,True,UNMATCHED,LVEF,False,True,UNMATCHED,LVEF,False,False,False,False,DENIED
+haiku,vda,clinical_enroll-006,clinical_enroll,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,16,3,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,DENIED
+haiku,vda,clinical_enroll-008,clinical_enroll,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,clinical_enroll-009,clinical_enroll,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,,,False,False,False,False,DENIED
+haiku,vda,clinical_enroll-010,clinical_enroll,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,10,3,True,1.0,DENIED,True,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,APPROVED
+haiku,vda,clinical_enroll-012,clinical_enroll,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,12,3,True,1.0,DENIED,True,creatinine clearance,Creatinine clearance,True,False,creatinine clearance,Creatinine clearance,True,False,False,False,DENIED
+haiku,vda,clinical_enroll-014,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,clinical_enroll-015,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,,,False,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,clinical_enroll-016,clinical_enroll,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,clinical_enroll-017,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,clinical_enroll-018,clinical_enroll,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,clinical_enroll-019,clinical_enroll,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,18,6,True,1.0,DENIED,True,hemoglobin,hemoglobin,True,False,hemoglobin,hemoglobin,True,False,False,False,DENIED
+haiku,vda,clinical_enroll-021,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,18,4,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+haiku,vda,clinical_enroll-023,clinical_enroll,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,13,3,True,1.0,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+haiku,vda,clinical_enroll-025,clinical_enroll,DENIED,body mass index,15,3,True,1.0,DENIED,True,UNMATCHED,BMI,False,True,UNMATCHED,BMI,False,False,False,False,DENIED
+haiku,vda,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,14,3,True,1.0,DENIED,True,fasting glucose,fasting glucose,True,False,fasting glucose,fasting glucose,True,False,False,False,DENIED
+haiku,vda,clinical_enroll-027,clinical_enroll,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,,,False,False,False,False,APPROVED
+haiku,vda,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,21,6,True,1.0,DENIED,True,creatinine clearance,Creatinine clearance,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,vda,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,13,3,True,1.0,DENIED,True,fasting glucose,Fasting glucose,True,False,fasting glucose,Fasting glucose,True,False,False,False,APPROVED
+haiku,vda,ci_release-000,ci_release,APPROVED,,16,4,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-001,ci_release,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-002,ci_release,DENIED,line coverage,12,3,True,1.0,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,DENIED
+haiku,vda,ci_release-003,ci_release,DENIED,open severity-one defects,13,3,True,1.0,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+haiku,vda,ci_release-004,ci_release,DENIED,flaky test count,17,3,True,1.0,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,DENIED
+haiku,vda,ci_release-005,ci_release,DENIED,rollback drill success,13,3,True,1.0,DENIED,True,rollback drill success,rollback drill success,True,False,rollback drill success,rollback drill success,True,False,False,False,DENIED
+haiku,vda,ci_release-006,ci_release,DENIED,dependency audit findings,15,3,True,1.0,DENIED,True,dependency audit findings,Dependency audit findings,True,False,dependency audit findings,Dependency audit findings,True,False,False,False,DENIED
+haiku,vda,ci_release-007,ci_release,APPROVED,,15,3,,1.0,DENIED,False,NONE,NONE,True,False,NONE,NONE,True,False,True,True,APPROVED
+haiku,vda,ci_release-008,ci_release,APPROVED,,16,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-009,ci_release,DENIED,bundle size,24,4,True,1.0,DENIED,True,bundle size,bundle size,True,False,bundle size,bundle size,True,False,False,False,DENIED
+haiku,vda,ci_release-010,ci_release,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-011,ci_release,APPROVED,,18,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-012,ci_release,DENIED,cold start time,19,3,True,1.0,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,APPROVED
+haiku,vda,ci_release-013,ci_release,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,ci_release-014,ci_release,APPROVED,,17,3,,1.0,APPROVED,True,NONE,NONE,True,False,,,False,False,False,False,DENIED
+haiku,vda,ci_release-015,ci_release,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-016,ci_release,DENIED,error budget remaining,14,3,True,1.0,DENIED,True,error budget remaining,error budget remaining,True,False,error budget remaining,error budget remaining,True,False,False,False,APPROVED
+haiku,vda,ci_release-017,ci_release,DENIED,cold start time,22,4,True,1.0,DENIED,True,cold start time,Cold start time,True,False,cold start time,Cold start time,True,False,False,False,DENIED
+haiku,vda,ci_release-018,ci_release,APPROVED,,16,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-019,ci_release,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-020,ci_release,DENIED,dependency audit findings,12,4,True,1.0,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,DENIED
+haiku,vda,ci_release-021,ci_release,APPROVED,,15,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-022,ci_release,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-023,ci_release,APPROVED,,16,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,vda,ci_release-024,ci_release,DENIED,open severity-one defects,14,3,True,1.0,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,DENIED
+haiku,vda,ci_release-025,ci_release,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,vda,ci_release-026,ci_release,DENIED,line coverage,15,4,True,1.0,DENIED,True,line coverage,Line coverage,True,False,line coverage,Line coverage,True,False,False,False,DENIED
+haiku,vda,ci_release-027,ci_release,DENIED,open severity-one defects,15,3,True,1.0,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+haiku,vda,ci_release-028,ci_release,DENIED,flaky test count,20,4,True,1.0,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,APPROVED
+haiku,vda,ci_release-029,ci_release,DENIED,peak heap usage,23,6,True,1.0,DENIED,True,peak heap usage,Peak heap usage,True,False,peak heap usage,Peak heap usage,True,False,False,False,DENIED
+haiku,cert,ops_incident-000,ops_incident,DENIED,umbilical release delay,17,2,True,0.3333333333333333,DENIED,True,umbilical release delay,umbilical release delay,True,False,umbilical release delay,umbilical release delay,True,False,False,False,APPROVED
+haiku,cert,ops_incident-001,ops_incident,DENIED,seal torque retention,17,2,True,0.3333333333333333,DENIED,True,seal torque retention,Seal torque retention,True,False,seal torque retention,Seal torque retention,True,False,False,False,DENIED
+haiku,cert,ops_incident-002,ops_incident,DENIED,seal torque retention,17,2,True,0.3333333333333333,DENIED,True,seal torque retention,Seal torque retention,True,False,seal torque retention,Seal torque retention,True,False,False,False,APPROVED
+haiku,cert,ops_incident-003,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,,,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,cert,ops_incident-004,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ops_incident-005,ops_incident,DENIED,reserve charge margin,17,2,False,0.3333333333333333,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+haiku,cert,ops_incident-006,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,cert,ops_incident-007,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,cert,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,19,2,True,0.3333333333333333,DENIED,True,coolant loop flow rate,Coolant loop flow rate,True,False,coolant loop flow rate,Coolant loop flow rate,True,False,False,False,DENIED
+haiku,cert,ops_incident-009,ops_incident,DENIED,battery bus impedance,16,2,True,0.3333333333333333,DENIED,True,battery bus impedance,Battery bus impedance,True,False,battery bus impedance,Battery bus impedance,True,False,False,False,APPROVED
+haiku,cert,ops_incident-010,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ops_incident-011,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,cert,ops_incident-012,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ops_incident-013,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ops_incident-014,ops_incident,DENIED,particulate count,15,2,True,0.3333333333333333,DENIED,True,particulate count,particulate count,True,False,particulate count,Particulate count,True,False,False,False,APPROVED
+haiku,cert,ops_incident-015,ops_incident,DENIED,seal torque retention,17,2,True,0.3333333333333333,DENIED,True,seal torque retention,Seal torque retention,True,False,seal torque retention,Seal torque retention,True,False,False,False,DENIED
+haiku,cert,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,19,2,True,0.3333333333333333,DENIED,True,coolant loop flow rate,coolant loop flow rate,True,False,coolant loop flow rate,Coolant loop flow rate,True,False,False,False,APPROVED
+haiku,cert,ops_incident-017,ops_incident,DENIED,star tracker residual,16,2,True,0.3333333333333333,DENIED,True,star tracker residual,Star tracker residual,True,False,star tracker residual,Star tracker residual,True,False,False,False,APPROVED
+haiku,cert,ops_incident-018,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,cert,ops_incident-019,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ops_incident-020,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,cert,ops_incident-021,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,cert,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,15,2,True,0.3333333333333333,DENIED,True,thermal blanket coverage,Thermal blanket coverage,True,False,thermal blanket coverage,Thermal blanket coverage,True,False,False,False,DENIED
+haiku,cert,ops_incident-023,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,cert,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,16,2,True,0.3333333333333333,DENIED,True,telemetry downlink margin,telemetry downlink margin,True,False,telemetry downlink margin,telemetry downlink margin,True,False,False,False,APPROVED
+haiku,cert,ops_incident-025,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+haiku,cert,ops_incident-026,ops_incident,DENIED,gyro drift rate,18,2,True,0.3333333333333333,DENIED,True,gyro drift rate,Gyro drift rate,True,False,gyro drift rate,Gyro drift rate,True,False,False,False,DENIED
+haiku,cert,ops_incident-027,ops_incident,DENIED,battery bus impedance,17,2,True,0.3333333333333333,DENIED,True,battery bus impedance,Battery bus impedance,True,False,battery bus impedance,Battery bus impedance,True,False,False,False,APPROVED
+haiku,cert,ops_incident-028,ops_incident,DENIED,star tracker residual,16,2,True,0.3333333333333333,DENIED,True,star tracker residual,Star tracker residual,True,False,star tracker residual,Star tracker residual,True,False,False,False,APPROVED
+haiku,cert,ops_incident-029,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,,,False,False,False,False,DENIED
+haiku,cert,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,17,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+haiku,cert,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,14,2,True,0.3333333333333333,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,Triglycerides,True,False,False,False,APPROVED
+haiku,cert,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,17,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,Systolic blood pressure,True,False,systolic blood pressure,Systolic blood pressure,True,False,False,False,DENIED
+haiku,cert,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,16,2,True,0.3333333333333333,DENIED,True,creatinine clearance,Creatinine clearance,True,False,creatinine clearance,Creatinine clearance,True,False,False,False,DENIED
+haiku,cert,clinical_enroll-004,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,,,False,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,16,2,True,0.3333333333333333,DENIED,True,left ventricular ejection fraction,Left ventricular ejection fraction,True,False,left ventricular ejection fraction,Left ventricular ejection fraction,True,False,False,False,DENIED
+haiku,cert,clinical_enroll-006,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,,,False,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,cert,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,17,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,Systolic blood pressure,True,False,False,False,DENIED
+haiku,cert,clinical_enroll-008,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,clinical_enroll-009,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,,,False,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,clinical_enroll-010,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,18,2,True,0.3333333333333333,DENIED,True,estimated glomerular filtration rate,estimated glomerular filtration rate,True,False,estimated glomerular filtration rate,Estimated glomerular filtration rate,True,False,False,False,APPROVED
+haiku,cert,clinical_enroll-012,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,cert,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,17,2,True,0.3333333333333333,DENIED,True,creatinine clearance,Creatinine clearance,True,False,creatinine clearance,Creatinine clearance,True,False,False,False,DENIED
+haiku,cert,clinical_enroll-014,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,clinical_enroll-015,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,clinical_enroll-016,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,,,False,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,clinical_enroll-017,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,,,False,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,clinical_enroll-018,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+haiku,cert,clinical_enroll-019,clinical_enroll,APPROVED,,16,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+haiku,cert,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,16,2,True,0.3333333333333333,DENIED,True,hemoglobin,Hemoglobin,True,False,hemoglobin,Hemoglobin,True,False,False,False,DENIED
+haiku,cert,clinical_enroll-021,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,cert,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,17,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,Systolic blood pressure,True,False,systolic blood pressure,Systolic blood pressure,True,False,False,False,APPROVED
+haiku,cert,clinical_enroll-023,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,cert,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,15,2,True,0.3333333333333333,DENIED,True,triglycerides,Triglycerides,True,False,triglycerides,Triglycerides,True,False,False,False,APPROVED
+haiku,cert,clinical_enroll-025,clinical_enroll,DENIED,body mass index,16,2,True,0.3333333333333333,DENIED,True,body mass index,Body mass index,True,False,body mass index,Body mass index,True,False,False,False,DENIED
+haiku,cert,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,16,2,True,0.3333333333333333,DENIED,True,fasting glucose,Fasting glucose,True,False,fasting glucose,Fasting glucose,True,False,False,False,DENIED
+haiku,cert,clinical_enroll-027,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,cert,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,15,2,True,0.3333333333333333,DENIED,True,creatinine clearance,Creatinine clearance,True,False,creatinine clearance,Creatinine clearance,True,False,False,False,DENIED
+haiku,cert,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,16,2,True,0.3333333333333333,DENIED,True,fasting glucose,Fasting glucose,True,False,fasting glucose,Fasting glucose,True,False,False,False,APPROVED
+haiku,cert,ci_release-000,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-001,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-002,ci_release,DENIED,line coverage,16,2,True,0.3333333333333333,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,DENIED
+haiku,cert,ci_release-003,ci_release,DENIED,open severity-one defects,16,2,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+haiku,cert,ci_release-004,ci_release,DENIED,flaky test count,16,2,True,0.3333333333333333,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,Flaky test count,True,False,False,False,DENIED
+haiku,cert,ci_release-005,ci_release,DENIED,rollback drill success,17,2,True,0.3333333333333333,DENIED,True,rollback drill success,rollback drill success,True,False,rollback drill success,rollback drill success,True,False,False,False,DENIED
+haiku,cert,ci_release-006,ci_release,DENIED,dependency audit findings,16,2,True,0.3333333333333333,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,Dependency audit findings,True,False,False,False,DENIED
+haiku,cert,ci_release-007,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,cert,ci_release-008,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-009,ci_release,DENIED,bundle size,15,2,True,0.3333333333333333,DENIED,True,bundle size,bundle size,True,False,bundle size,Bundle size,True,False,False,False,DENIED
+haiku,cert,ci_release-010,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-011,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-012,ci_release,DENIED,cold start time,17,2,True,0.3333333333333333,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,APPROVED
+haiku,cert,ci_release-013,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,cert,ci_release-014,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,,,False,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-015,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-016,ci_release,DENIED,error budget remaining,29,4,True,0.3333333333333333,DENIED,True,error budget remaining,error budget remaining,True,False,error budget remaining,Error budget remaining,True,False,False,False,APPROVED
+haiku,cert,ci_release-017,ci_release,DENIED,cold start time,16,2,True,0.3333333333333333,DENIED,True,cold start time,cold start time,True,False,cold start time,Cold start time,True,False,False,False,DENIED
+haiku,cert,ci_release-018,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-019,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-020,ci_release,DENIED,dependency audit findings,16,2,True,0.3333333333333333,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,DENIED
+haiku,cert,ci_release-021,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-022,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-023,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+haiku,cert,ci_release-024,ci_release,DENIED,open severity-one defects,17,2,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,DENIED
+haiku,cert,ci_release-025,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+haiku,cert,ci_release-026,ci_release,DENIED,line coverage,16,2,True,0.3333333333333333,DENIED,True,line coverage,Line coverage,True,False,line coverage,Line coverage,True,False,False,False,DENIED
+haiku,cert,ci_release-027,ci_release,DENIED,open severity-one defects,17,2,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,Open severity-one defects,True,False,False,False,APPROVED
+haiku,cert,ci_release-028,ci_release,DENIED,flaky test count,16,2,True,0.3333333333333333,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,APPROVED
+haiku,cert,ci_release-029,ci_release,DENIED,peak heap usage,17,2,True,0.3333333333333333,DENIED,True,peak heap usage,peak heap usage,True,False,peak heap usage,peak heap usage,True,False,False,False,DENIED
+gpt,ctrl,ops_incident-000,ops_incident,DENIED,umbilical release delay,16,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ops_incident-001,ops_incident,DENIED,seal torque retention,19,4,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ops_incident-002,ops_incident,DENIED,seal torque retention,15,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ops_incident-003,ops_incident,APPROVED,,15,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ops_incident-004,ops_incident,APPROVED,,15,3,,0.0,DENIED,False,seal torque retention,seal torque retention,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+gpt,ctrl,ops_incident-005,ops_incident,DENIED,reserve charge margin,17,3,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ops_incident-006,ops_incident,APPROVED,,15,2,,0.3333333333333333,DENIED,False,propellant tank ullage pressure,propellant tank ullage pressure,False,False,propellant tank ullage pressure,propellant tank ullage pressure,False,False,False,False,DENIED
+gpt,ctrl,ops_incident-007,ops_incident,APPROVED,,40,11,,0.6666666666666666,DENIED,False,NONE,NONE,True,False,telemetry downlink margin,telemetry downlink margin,False,False,False,True,
+gpt,ctrl,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,55,12,True,1.0,DENIED,True,coolant loop flow rate,coolant loop flow rate,True,False,coolant loop flow rate,coolant loop flow rate,True,False,False,False,DENIED
+gpt,ctrl,ops_incident-009,ops_incident,DENIED,battery bus impedance,14,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ops_incident-010,ops_incident,APPROVED,,15,0,,0.0,DENIED,False,reserve charge margin,reserve charge margin,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+gpt,ctrl,ops_incident-011,ops_incident,APPROVED,,39,11,,0.6666666666666666,DENIED,False,guidance solution confidence,guidance solution confidence,False,False,NONE,NONE,True,False,True,False,DENIED
+gpt,ctrl,ops_incident-012,ops_incident,APPROVED,,14,2,,0.0,DENIED,False,umbilical release delay,umbilical release delay,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,
+gpt,ctrl,ops_incident-013,ops_incident,APPROVED,,14,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,
+gpt,ctrl,ops_incident-014,ops_incident,DENIED,particulate count,15,3,False,0.3333333333333333,DENIED,True,particulate count,particulate count,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,
+gpt,ctrl,ops_incident-015,ops_incident,DENIED,seal torque retention,13,3,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,
+gpt,ctrl,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,54,12,True,1.0,DENIED,True,coolant loop flow rate,coolant loop flow rate,True,False,coolant loop flow rate,coolant loop flow rate,True,False,False,False,DENIED
+gpt,ctrl,ops_incident-017,ops_incident,DENIED,star tracker residual,14,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ops_incident-018,ops_incident,APPROVED,,15,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+gpt,ctrl,ops_incident-019,ops_incident,APPROVED,,16,2,,0.0,DENIED,False,telemetry downlink margin,telemetry downlink margin,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+gpt,ctrl,ops_incident-020,ops_incident,APPROVED,,13,2,,0.3333333333333333,DENIED,False,star tracker residual,star tracker residual,False,False,star tracker residual,star tracker residual,False,False,False,False,APPROVED
+gpt,ctrl,ops_incident-021,ops_incident,APPROVED,,16,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,15,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+gpt,ctrl,ops_incident-023,ops_incident,APPROVED,,52,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,ctrl,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,17,4,True,0.6666666666666666,DENIED,True,telemetry downlink margin,telemetry downlink margin,True,False,telemetry downlink margin,telemetry downlink margin,True,False,False,False,APPROVED
+gpt,ctrl,ops_incident-025,ops_incident,APPROVED,,51,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,ctrl,ops_incident-026,ops_incident,DENIED,gyro drift rate,14,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ops_incident-027,ops_incident,DENIED,battery bus impedance,16,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,
+gpt,ctrl,ops_incident-028,ops_incident,DENIED,star tracker residual,55,12,True,1.0,DENIED,True,star tracker residual,star tracker residual,True,False,star tracker residual,star tracker residual,True,False,False,False,DENIED
+gpt,ctrl,ops_incident-029,ops_incident,APPROVED,,47,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,ctrl,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,13,5,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,
+gpt,ctrl,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,40,12,True,1.0,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+gpt,ctrl,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,15,2,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,20,4,False,0.3333333333333333,DENIED,True,hemoglobin,hemoglobin,False,False,hemoglobin,hemoglobin,False,False,False,False,DENIED
+gpt,ctrl,clinical_enroll-004,clinical_enroll,APPROVED,,21,4,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,platelet count,platelet count,False,False,False,False,DENIED
+gpt,ctrl,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,16,4,True,0.3333333333333333,DENIED,True,UNMATCHED,EF,False,True,UNMATCHED,EF,False,False,False,False,DENIED
+gpt,ctrl,clinical_enroll-006,clinical_enroll,APPROVED,,39,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,ctrl,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,39,12,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+gpt,ctrl,clinical_enroll-008,clinical_enroll,APPROVED,,21,4,,0.3333333333333333,DENIED,False,systolic blood pressure,systolic blood pressure,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+gpt,ctrl,clinical_enroll-009,clinical_enroll,APPROVED,,21,5,,0.3333333333333333,DENIED,False,total bilirubin,total bilirubin,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+gpt,ctrl,clinical_enroll-010,clinical_enroll,APPROVED,,26,10,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,ctrl,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,39,12,True,1.0,DENIED,True,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,DENIED
+gpt,ctrl,clinical_enroll-012,clinical_enroll,APPROVED,,37,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,ctrl,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,40,12,True,1.0,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+gpt,ctrl,clinical_enroll-014,clinical_enroll,APPROVED,,43,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,ctrl,clinical_enroll-015,clinical_enroll,APPROVED,,21,5,,0.3333333333333333,DENIED,False,serum albumin,serum albumin,False,False,NONE,NONE,True,False,True,False,DENIED
+gpt,ctrl,clinical_enroll-016,clinical_enroll,APPROVED,,22,7,,0.6666666666666666,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,
+gpt,ctrl,clinical_enroll-017,clinical_enroll,APPROVED,,13,0,,0.0,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,
+gpt,ctrl,clinical_enroll-018,clinical_enroll,APPROVED,,31,10,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,ctrl,clinical_enroll-019,clinical_enroll,APPROVED,,13,4,,0.0,DENIED,False,total bilirubin,total bilirubin,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+gpt,ctrl,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,14,4,True,0.6666666666666666,DENIED,True,hemoglobin,hemoglobin,True,False,hemoglobin,hemoglobin,True,False,False,False,DENIED
+gpt,ctrl,clinical_enroll-021,clinical_enroll,APPROVED,,29,9,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,ctrl,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,19,4,True,1.0,DENIED,True,UNMATCHED,BP,False,True,UNMATCHED,BP,False,False,False,False,APPROVED
+gpt,ctrl,clinical_enroll-023,clinical_enroll,APPROVED,,21,5,,0.3333333333333333,APPROVED,True,triglycerides,triglycerides,False,False,NONE,NONE,True,False,True,False,DENIED
+gpt,ctrl,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,35,12,True,1.0,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+gpt,ctrl,clinical_enroll-025,clinical_enroll,DENIED,body mass index,14,3,True,0.6666666666666666,DENIED,True,UNMATCHED,BMI,False,True,creatinine clearance,creatinine clearance,False,False,False,False,DENIED
+gpt,ctrl,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,15,0,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,clinical_enroll-027,clinical_enroll,APPROVED,,17,4,,0.3333333333333333,DENIED,False,creatinine clearance,creatinine clearance,False,False,creatinine clearance,creatinine clearance,False,False,False,False,DENIED
+gpt,ctrl,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,35,12,True,1.0,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,APPROVED
+gpt,ctrl,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,38,12,True,1.0,DENIED,True,fasting glucose,glucose,True,False,fasting glucose,glucose,True,False,False,False,APPROVED
+gpt,ctrl,ci_release-000,ci_release,APPROVED,,50,13,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,ctrl,ci_release-001,ci_release,APPROVED,,22,8,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,ctrl,ci_release-002,ci_release,DENIED,line coverage,15,4,True,0.3333333333333333,DENIED,True,build reproducibility,build reproducibility,False,False,build reproducibility,build reproducibility,False,False,False,False,APPROVED
+gpt,ctrl,ci_release-003,ci_release,DENIED,open severity-one defects,19,7,True,0.6666666666666666,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+gpt,ctrl,ci_release-004,ci_release,DENIED,flaky test count,16,5,True,0.6666666666666666,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,APPROVED
+gpt,ctrl,ci_release-005,ci_release,DENIED,rollback drill success,13,3,False,0.0,DENIED,True,unit test pass rate,unit test pass rate,False,False,unit test pass rate,unit test pass rate,False,False,False,False,DENIED
+gpt,ctrl,ci_release-006,ci_release,DENIED,dependency audit findings,26,9,True,0.6666666666666666,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,APPROVED
+gpt,ctrl,ci_release-007,ci_release,APPROVED,,15,5,,0.3333333333333333,DENIED,False,unit test pass rate,unit test pass rate,False,False,unit test pass rate,unit test pass rate,False,False,False,False,APPROVED
+gpt,ctrl,ci_release-008,ci_release,APPROVED,,16,5,,0.3333333333333333,DENIED,False,mean time to acknowledge,mean time to acknowledge,False,False,mean time to acknowledge,mean time to acknowledge,False,False,False,False,
+gpt,ctrl,ci_release-009,ci_release,DENIED,bundle size,16,3,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ci_release-010,ci_release,APPROVED,,14,3,,0.3333333333333333,DENIED,False,build reproducibility,build reproducibility,False,False,build reproducibility,build reproducibility,False,False,False,False,APPROVED
+gpt,ctrl,ci_release-011,ci_release,APPROVED,,15,4,,0.6666666666666666,DENIED,False,canary error rate,canary error rate,False,False,canary error rate,canary error rate,False,False,False,False,APPROVED
+gpt,ctrl,ci_release-012,ci_release,DENIED,cold start time,17,6,False,0.0,DENIED,True,canary error rate,canary error rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+gpt,ctrl,ci_release-013,ci_release,APPROVED,,19,6,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,ctrl,ci_release-014,ci_release,APPROVED,,14,6,,0.3333333333333333,DENIED,False,mean time to acknowledge,mean time to acknowledge,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+gpt,ctrl,ci_release-015,ci_release,APPROVED,,16,5,,0.3333333333333333,DENIED,False,open severity-one defects,open severity-one defects,False,False,error budget remaining,error budget remaining,False,False,False,False,APPROVED
+gpt,ctrl,ci_release-016,ci_release,DENIED,error budget remaining,15,5,False,0.0,DENIED,True,unit test pass rate,unit test pass rate,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,APPROVED
+gpt,ctrl,ci_release-017,ci_release,DENIED,cold start time,16,4,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,DENIED
+gpt,ctrl,ci_release-018,ci_release,APPROVED,,16,5,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,error budget remaining,error budget remaining,False,False,False,False,
+gpt,ctrl,ci_release-019,ci_release,APPROVED,,42,12,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,ctrl,ci_release-020,ci_release,DENIED,dependency audit findings,16,7,True,1.0,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,DENIED
+gpt,ctrl,ci_release-021,ci_release,APPROVED,,16,4,,0.6666666666666666,DENIED,False,line coverage,line coverage,False,False,line coverage,line coverage,False,False,False,False,APPROVED
+gpt,ctrl,ci_release-022,ci_release,APPROVED,,14,6,,0.0,DENIED,False,error budget remaining,error budget remaining,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,False,DENIED
+gpt,ctrl,ci_release-023,ci_release,APPROVED,,36,10,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+gpt,ctrl,ci_release-024,ci_release,DENIED,open severity-one defects,51,12,True,1.0,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+gpt,ctrl,ci_release-025,ci_release,APPROVED,,35,8,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,ctrl,ci_release-026,ci_release,DENIED,line coverage,26,8,True,0.6666666666666666,DENIED,True,line coverage,coverage,True,False,line coverage,coverage,True,False,False,False,APPROVED
+gpt,ctrl,ci_release-027,ci_release,DENIED,open severity-one defects,30,11,True,1.0,DENIED,True,open severity-one defects,severity-one defects,True,False,open severity-one defects,severity-one defects,True,False,False,False,APPROVED
+gpt,ctrl,ci_release-028,ci_release,DENIED,flaky test count,15,4,True,0.3333333333333333,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,
+gpt,ctrl,ci_release-029,ci_release,DENIED,peak heap usage,16,5,False,0.0,DENIED,True,NONE,NONE,False,False,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,False,True,False,True,APPROVED
+gpt,vd,ops_incident-000,ops_incident,DENIED,umbilical release delay,43,12,True,1.0,DENIED,True,umbilical release delay,umbilical release delay,True,False,umbilical release delay,umbilical release delay,True,False,False,False,DENIED
+gpt,vd,ops_incident-001,ops_incident,DENIED,seal torque retention,45,12,True,1.0,DENIED,True,seal torque retention,seal torque,True,False,seal torque retention,seal torque,True,False,False,False,DENIED
+gpt,vd,ops_incident-002,ops_incident,DENIED,seal torque retention,42,12,True,1.0,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,DENIED
+gpt,vd,ops_incident-003,ops_incident,APPROVED,,47,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,ops_incident-004,ops_incident,APPROVED,,41,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,ops_incident-005,ops_incident,DENIED,reserve charge margin,36,10,True,0.3333333333333333,DENIED,True,reserve charge margin,reserve margin,True,False,reserve charge margin,reserve margin,True,False,False,False,DENIED
+gpt,vd,ops_incident-006,ops_incident,APPROVED,,44,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,ops_incident-007,ops_incident,APPROVED,,42,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vd,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,45,12,True,1.0,DENIED,True,coolant loop flow rate,coolant flow,True,False,coolant loop flow rate,coolant flow,True,False,False,False,DENIED
+gpt,vd,ops_incident-009,ops_incident,DENIED,battery bus impedance,44,12,True,1.0,DENIED,True,battery bus impedance,battery bus impedance,True,False,battery bus impedance,battery bus impedance,True,False,False,False,DENIED
+gpt,vd,ops_incident-010,ops_incident,APPROVED,,44,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ops_incident-011,ops_incident,APPROVED,,47,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,ops_incident-012,ops_incident,APPROVED,,40,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vd,ops_incident-013,ops_incident,APPROVED,,44,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vd,ops_incident-014,ops_incident,DENIED,particulate count,43,12,True,1.0,DENIED,True,particulate count,particulate count,True,False,particulate count,particulate count,True,False,False,False,
+gpt,vd,ops_incident-015,ops_incident,DENIED,seal torque retention,43,12,True,1.0,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,
+gpt,vd,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,44,12,True,1.0,DENIED,True,coolant loop flow rate,coolant flow,True,False,coolant loop flow rate,coolant flow,True,False,False,False,DENIED
+gpt,vd,ops_incident-017,ops_incident,DENIED,star tracker residual,43,12,True,1.0,DENIED,True,star tracker residual,star tracker residual,True,False,star tracker residual,star tracker residual,True,False,False,False,DENIED
+gpt,vd,ops_incident-018,ops_incident,APPROVED,,43,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ops_incident-019,ops_incident,APPROVED,,44,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ops_incident-020,ops_incident,APPROVED,,48,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ops_incident-021,ops_incident,APPROVED,,44,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,44,12,True,1.0,DENIED,True,thermal blanket coverage,thermal blanket,True,False,thermal blanket coverage,thermal blanket,True,False,False,False,APPROVED
+gpt,vd,ops_incident-023,ops_incident,APPROVED,,46,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,43,12,True,1.0,DENIED,True,telemetry downlink margin,telemetry margin,True,False,telemetry downlink margin,telemetry downlink margin,True,False,False,False,APPROVED
+gpt,vd,ops_incident-025,ops_incident,APPROVED,,42,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ops_incident-026,ops_incident,DENIED,gyro drift rate,42,12,True,1.0,DENIED,True,gyro drift rate,gyro drift,True,False,gyro drift rate,gyro drift,True,False,False,False,DENIED
+gpt,vd,ops_incident-027,ops_incident,DENIED,battery bus impedance,44,12,True,1.0,DENIED,True,battery bus impedance,battery bus impedance,True,False,battery bus impedance,battery bus impedance,True,False,False,False,
+gpt,vd,ops_incident-028,ops_incident,DENIED,star tracker residual,53,12,True,1.0,DENIED,True,star tracker residual,star tracker residual,True,False,star tracker residual,star tracker residual,True,False,False,False,DENIED
+gpt,vd,ops_incident-029,ops_incident,APPROVED,,43,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,40,12,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,
+gpt,vd,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,34,12,True,1.0,DENIED,True,triglycerides,Triglycerides,True,False,triglycerides,Triglycerides,True,False,False,False,APPROVED
+gpt,vd,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,33,12,True,1.0,DENIED,True,UNMATCHED,SBP,False,True,UNMATCHED,SBP,False,False,False,False,DENIED
+gpt,vd,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,33,12,True,1.0,DENIED,True,creatinine clearance,Creatinine clearance,True,False,creatinine clearance,Creatinine clearance,True,False,False,False,DENIED
+gpt,vd,clinical_enroll-004,clinical_enroll,APPROVED,,34,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,34,12,True,1.0,DENIED,True,UNMATCHED,LVEF,False,True,UNMATCHED,LVEF,False,False,False,False,DENIED
+gpt,vd,clinical_enroll-006,clinical_enroll,APPROVED,,34,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,35,12,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+gpt,vd,clinical_enroll-008,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,clinical_enroll-009,clinical_enroll,APPROVED,,36,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,clinical_enroll-010,clinical_enroll,APPROVED,,34,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,35,12,True,1.0,DENIED,True,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,DENIED
+gpt,vd,clinical_enroll-012,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,36,12,True,1.0,DENIED,True,creatinine clearance,Creatinine clearance,True,False,creatinine clearance,Creatinine clearance,True,False,False,False,DENIED
+gpt,vd,clinical_enroll-014,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,clinical_enroll-015,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,clinical_enroll-016,clinical_enroll,APPROVED,,34,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vd,clinical_enroll-017,clinical_enroll,APPROVED,,39,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vd,clinical_enroll-018,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,clinical_enroll-019,clinical_enroll,APPROVED,,24,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,35,12,True,1.0,DENIED,True,hemoglobin,hemoglobin,True,False,hemoglobin,hemoglobin,True,False,False,False,DENIED
+gpt,vd,clinical_enroll-021,clinical_enroll,APPROVED,,34,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,34,12,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+gpt,vd,clinical_enroll-023,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,36,12,True,1.0,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+gpt,vd,clinical_enroll-025,clinical_enroll,DENIED,body mass index,37,12,True,1.0,DENIED,True,UNMATCHED,BMI,False,True,UNMATCHED,BMI,False,False,False,False,DENIED
+gpt,vd,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,34,12,True,1.0,DENIED,True,fasting glucose,Glucose,True,False,fasting glucose,Glucose,True,False,False,False,DENIED
+gpt,vd,clinical_enroll-027,clinical_enroll,APPROVED,,35,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,34,12,True,1.0,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,APPROVED
+gpt,vd,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,35,12,True,1.0,DENIED,True,fasting glucose,glucose,True,False,fasting glucose,glucose,True,False,False,False,APPROVED
+gpt,vd,ci_release-000,ci_release,APPROVED,,40,13,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ci_release-001,ci_release,APPROVED,,31,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,ci_release-002,ci_release,DENIED,line coverage,31,12,True,0.6666666666666666,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,APPROVED
+gpt,vd,ci_release-003,ci_release,DENIED,open severity-one defects,40,14,True,1.0,DENIED,True,open severity-one defects,open sev-1 defects,True,False,open severity-one defects,open sev-1 defects,True,False,False,False,APPROVED
+gpt,vd,ci_release-004,ci_release,DENIED,flaky test count,31,13,True,1.0,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,APPROVED
+gpt,vd,ci_release-005,ci_release,DENIED,rollback drill success,37,12,True,0.6666666666666666,DENIED,True,rollback drill success,rollback drill,True,False,rollback drill success,rollback drill,True,False,False,False,DENIED
+gpt,vd,ci_release-006,ci_release,DENIED,dependency audit findings,40,14,True,1.0,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,APPROVED
+gpt,vd,ci_release-007,ci_release,APPROVED,,37,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ci_release-008,ci_release,APPROVED,,29,13,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vd,ci_release-009,ci_release,DENIED,bundle size,32,13,True,1.0,DENIED,True,bundle size,bundle size,True,False,bundle size,bundle size,True,False,False,False,DENIED
+gpt,vd,ci_release-010,ci_release,APPROVED,,38,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ci_release-011,ci_release,APPROVED,,40,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ci_release-012,ci_release,DENIED,cold start time,42,14,True,1.0,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,DENIED
+gpt,vd,ci_release-013,ci_release,APPROVED,,30,10,,0.6666666666666666,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,ci_release-014,ci_release,APPROVED,,34,13,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,ci_release-015,ci_release,APPROVED,,36,12,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ci_release-016,ci_release,DENIED,error budget remaining,40,12,True,1.0,DENIED,True,error budget remaining,error budget,True,False,error budget remaining,error budget,True,False,False,False,APPROVED
+gpt,vd,ci_release-017,ci_release,DENIED,cold start time,38,13,True,1.0,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,DENIED
+gpt,vd,ci_release-018,ci_release,APPROVED,,33,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vd,ci_release-019,ci_release,APPROVED,,40,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ci_release-020,ci_release,DENIED,dependency audit findings,34,14,True,1.0,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,DENIED
+gpt,vd,ci_release-021,ci_release,APPROVED,,34,12,,0.6666666666666666,APPROVED,True,line coverage,line coverage,False,False,line coverage,line coverage,False,False,False,False,APPROVED
+gpt,vd,ci_release-022,ci_release,APPROVED,,43,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vd,ci_release-023,ci_release,APPROVED,,37,13,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ci_release-024,ci_release,DENIED,open severity-one defects,33,14,True,1.0,DENIED,True,UNMATCHED,sev1 defects,False,True,UNMATCHED,sev1 defects,False,False,False,False,APPROVED
+gpt,vd,ci_release-025,ci_release,APPROVED,,32,14,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vd,ci_release-026,ci_release,DENIED,line coverage,41,14,True,1.0,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,APPROVED
+gpt,vd,ci_release-027,ci_release,DENIED,open severity-one defects,42,14,True,1.0,DENIED,True,open severity-one defects,open sev-1 defects,True,False,open severity-one defects,open sev-1 defects,True,False,False,False,APPROVED
+gpt,vd,ci_release-028,ci_release,DENIED,flaky test count,40,14,True,1.0,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,
+gpt,vd,ci_release-029,ci_release,DENIED,peak heap usage,38,13,True,1.0,DENIED,True,peak heap usage,peak heap,True,False,peak heap usage,peak heap,True,False,False,False,APPROVED
+gpt,vda,ops_incident-000,ops_incident,DENIED,umbilical release delay,13,3,True,1.0,DENIED,True,umbilical release delay,umbilical release delay,True,False,umbilical release delay,umbilical release delay,True,False,False,False,DENIED
+gpt,vda,ops_incident-001,ops_incident,DENIED,seal torque retention,14,3,True,1.0,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,DENIED
+gpt,vda,ops_incident-002,ops_incident,DENIED,seal torque retention,12,3,True,1.0,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque,True,False,False,False,DENIED
+gpt,vda,ops_incident-003,ops_incident,APPROVED,,16,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,ops_incident-004,ops_incident,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,ops_incident-005,ops_incident,DENIED,reserve charge margin,12,3,True,1.0,DENIED,True,reserve charge margin,Reserve charge margin,True,False,reserve charge margin,reserve charge margin,True,False,False,False,DENIED
+gpt,vda,ops_incident-006,ops_incident,APPROVED,,15,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,ops_incident-007,ops_incident,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vda,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,12,3,True,1.0,DENIED,True,coolant loop flow rate,coolant flow,True,False,coolant loop flow rate,coolant flow,True,False,False,False,DENIED
+gpt,vda,ops_incident-009,ops_incident,DENIED,battery bus impedance,13,3,True,1.0,DENIED,True,battery bus impedance,battery bus impedance,True,False,battery bus impedance,battery bus impedance,True,False,False,False,DENIED
+gpt,vda,ops_incident-010,ops_incident,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ops_incident-011,ops_incident,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,ops_incident-012,ops_incident,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vda,ops_incident-013,ops_incident,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vda,ops_incident-014,ops_incident,DENIED,particulate count,12,3,True,1.0,DENIED,True,particulate count,particulate count,True,False,particulate count,particulate count,True,False,False,False,
+gpt,vda,ops_incident-015,ops_incident,DENIED,seal torque retention,13,3,True,1.0,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque,True,False,False,False,
+gpt,vda,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,12,3,True,1.0,DENIED,True,coolant loop flow rate,coolant loop flow rate,True,False,coolant loop flow rate,coolant loop flow rate,True,False,False,False,DENIED
+gpt,vda,ops_incident-017,ops_incident,DENIED,star tracker residual,13,3,True,1.0,DENIED,True,star tracker residual,star tracker residual,True,False,star tracker residual,star tracker residual,True,False,False,False,DENIED
+gpt,vda,ops_incident-018,ops_incident,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ops_incident-019,ops_incident,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ops_incident-020,ops_incident,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ops_incident-021,ops_incident,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,12,3,True,1.0,DENIED,True,thermal blanket coverage,Thermal blanket,True,False,thermal blanket coverage,thermal blanket,True,False,False,False,APPROVED
+gpt,vda,ops_incident-023,ops_incident,APPROVED,,15,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,12,3,True,1.0,DENIED,True,telemetry downlink margin,telemetry downlink margin,True,False,telemetry downlink margin,telemetry margin,True,False,False,False,APPROVED
+gpt,vda,ops_incident-025,ops_incident,APPROVED,,15,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ops_incident-026,ops_incident,DENIED,gyro drift rate,13,3,True,1.0,DENIED,True,gyro drift rate,gyro drift rate,True,False,gyro drift rate,gyro drift rate,True,False,False,False,DENIED
+gpt,vda,ops_incident-027,ops_incident,DENIED,battery bus impedance,12,3,True,1.0,DENIED,True,battery bus impedance,battery bus impedance,True,False,battery bus impedance,battery bus impedance,True,False,False,False,
+gpt,vda,ops_incident-028,ops_incident,DENIED,star tracker residual,14,3,True,1.0,DENIED,True,star tracker residual,star tracker residual,True,False,star tracker residual,star tracker residual,True,False,False,False,DENIED
+gpt,vda,ops_incident-029,ops_incident,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,12,3,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,
+gpt,vda,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,12,3,True,1.0,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+gpt,vda,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,11,3,True,1.0,DENIED,True,systolic blood pressure,Systolic blood pressure,True,False,UNMATCHED,Systolic BP,False,False,False,False,DENIED
+gpt,vda,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,11,3,True,1.0,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+gpt,vda,clinical_enroll-004,clinical_enroll,APPROVED,,10,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,9,3,True,1.0,DENIED,True,UNMATCHED,LVEF,False,True,UNMATCHED,LVEF,False,False,False,False,DENIED
+gpt,vda,clinical_enroll-006,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,12,4,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+gpt,vda,clinical_enroll-008,clinical_enroll,APPROVED,,11,4,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,clinical_enroll-009,clinical_enroll,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,clinical_enroll-010,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,10,3,True,1.0,DENIED,True,UNMATCHED,eGFR,False,True,UNMATCHED,eGFR,False,False,False,False,DENIED
+gpt,vda,clinical_enroll-012,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,11,3,True,1.0,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+gpt,vda,clinical_enroll-014,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,clinical_enroll-015,clinical_enroll,APPROVED,,12,4,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,clinical_enroll-016,clinical_enroll,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vda,clinical_enroll-017,clinical_enroll,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vda,clinical_enroll-018,clinical_enroll,APPROVED,,9,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,clinical_enroll-019,clinical_enroll,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,10,3,True,1.0,DENIED,True,hemoglobin,hemoglobin,True,False,hemoglobin,hemoglobin,True,False,False,False,DENIED
+gpt,vda,clinical_enroll-021,clinical_enroll,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,10,3,True,1.0,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+gpt,vda,clinical_enroll-023,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,11,3,True,1.0,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+gpt,vda,clinical_enroll-025,clinical_enroll,DENIED,body mass index,10,3,True,1.0,DENIED,True,UNMATCHED,BMI,False,True,UNMATCHED,BMI,False,False,False,False,DENIED
+gpt,vda,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,12,3,True,1.0,DENIED,True,fasting glucose,fasting glucose,True,False,fasting glucose,fasting glucose,True,False,False,False,DENIED
+gpt,vda,clinical_enroll-027,clinical_enroll,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,11,3,True,1.0,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,APPROVED
+gpt,vda,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,11,3,True,1.0,DENIED,True,fasting glucose,fasting glucose,True,False,fasting glucose,fasting glucose,True,False,False,False,APPROVED
+gpt,vda,ci_release-000,ci_release,APPROVED,,14,4,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ci_release-001,ci_release,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,ci_release-002,ci_release,DENIED,line coverage,10,3,True,1.0,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,APPROVED
+gpt,vda,ci_release-003,ci_release,DENIED,open severity-one defects,11,3,True,1.0,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+gpt,vda,ci_release-004,ci_release,DENIED,flaky test count,12,3,True,1.0,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,APPROVED
+gpt,vda,ci_release-005,ci_release,DENIED,rollback drill success,14,3,True,1.0,DENIED,True,rollback drill success,rollback drill success,True,False,rollback drill success,rollback drill success,True,False,False,False,DENIED
+gpt,vda,ci_release-006,ci_release,DENIED,dependency audit findings,13,3,True,1.0,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,APPROVED
+gpt,vda,ci_release-007,ci_release,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ci_release-008,ci_release,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vda,ci_release-009,ci_release,DENIED,bundle size,14,3,True,1.0,DENIED,True,bundle size,bundle size,True,False,bundle size,bundle size,True,False,False,False,DENIED
+gpt,vda,ci_release-010,ci_release,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ci_release-011,ci_release,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ci_release-012,ci_release,DENIED,cold start time,16,3,True,1.0,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,DENIED
+gpt,vda,ci_release-013,ci_release,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,ci_release-014,ci_release,APPROVED,,15,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,ci_release-015,ci_release,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ci_release-016,ci_release,DENIED,error budget remaining,14,3,True,1.0,DENIED,True,error budget remaining,error budget remaining,True,False,error budget remaining,error budget remaining,True,False,False,False,APPROVED
+gpt,vda,ci_release-017,ci_release,DENIED,cold start time,15,3,True,1.0,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,DENIED
+gpt,vda,ci_release-018,ci_release,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,vda,ci_release-019,ci_release,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ci_release-020,ci_release,DENIED,dependency audit findings,11,4,True,1.0,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,DENIED
+gpt,vda,ci_release-021,ci_release,APPROVED,,14,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ci_release-022,ci_release,APPROVED,,13,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,vda,ci_release-023,ci_release,APPROVED,,11,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ci_release-024,ci_release,DENIED,open severity-one defects,12,3,True,1.0,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+gpt,vda,ci_release-025,ci_release,APPROVED,,12,3,,1.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,vda,ci_release-026,ci_release,DENIED,line coverage,12,3,True,1.0,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,APPROVED
+gpt,vda,ci_release-027,ci_release,DENIED,open severity-one defects,12,3,True,1.0,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+gpt,vda,ci_release-028,ci_release,DENIED,flaky test count,13,3,True,1.0,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,
+gpt,vda,ci_release-029,ci_release,DENIED,peak heap usage,11,3,True,1.0,DENIED,True,peak heap usage,peak heap,True,False,peak heap usage,peak heap,True,False,False,False,APPROVED
+gpt,cert,ops_incident-000,ops_incident,DENIED,umbilical release delay,17,2,True,0.3333333333333333,DENIED,True,umbilical release delay,umbilical release delay,True,False,umbilical release delay,umbilical release delay,True,False,False,False,DENIED
+gpt,cert,ops_incident-001,ops_incident,DENIED,seal torque retention,17,2,True,0.3333333333333333,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,DENIED
+gpt,cert,ops_incident-002,ops_incident,DENIED,seal torque retention,17,2,True,0.3333333333333333,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,DENIED
+gpt,cert,ops_incident-003,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,ops_incident-004,ops_incident,APPROVED,,16,2,,0.3333333333333333,DENIED,False,NONE,NONE,True,False,NONE,NONE,True,False,True,True,DENIED
+gpt,cert,ops_incident-005,ops_incident,DENIED,reserve charge margin,16,2,True,0.3333333333333333,DENIED,True,reserve charge margin,reserve charge margin,True,False,reserve charge margin,reserve charge margin,True,False,False,False,DENIED
+gpt,cert,ops_incident-006,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,ops_incident-007,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,cert,ops_incident-008,ops_incident,DENIED,coolant loop flow rate,21,2,True,0.3333333333333333,DENIED,True,coolant loop flow rate,coolant loop flow rate,True,False,coolant loop flow rate,coolant loop flow rate,True,False,False,False,DENIED
+gpt,cert,ops_incident-009,ops_incident,DENIED,battery bus impedance,16,2,True,0.3333333333333333,DENIED,True,battery bus impedance,battery bus impedance,True,False,battery bus impedance,battery bus impedance,True,False,False,False,DENIED
+gpt,cert,ops_incident-010,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ops_incident-011,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,ops_incident-012,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,cert,ops_incident-013,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,cert,ops_incident-014,ops_incident,DENIED,particulate count,19,2,True,0.3333333333333333,DENIED,True,particulate count,particulate count,True,False,particulate count,particulate count,True,False,False,False,
+gpt,cert,ops_incident-015,ops_incident,DENIED,seal torque retention,18,2,True,0.3333333333333333,DENIED,True,seal torque retention,seal torque retention,True,False,seal torque retention,seal torque retention,True,False,False,False,
+gpt,cert,ops_incident-016,ops_incident,DENIED,coolant loop flow rate,21,2,True,0.3333333333333333,DENIED,True,coolant loop flow rate,coolant loop flow rate,True,False,coolant loop flow rate,coolant loop flow rate,True,False,False,False,DENIED
+gpt,cert,ops_incident-017,ops_incident,DENIED,star tracker residual,15,2,True,0.3333333333333333,DENIED,True,star tracker residual,star tracker residual,True,False,star tracker residual,star tracker residual,True,False,False,False,DENIED
+gpt,cert,ops_incident-018,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ops_incident-019,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ops_incident-020,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ops_incident-021,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,ops_incident-022,ops_incident,DENIED,thermal blanket coverage,15,2,True,0.3333333333333333,DENIED,True,thermal blanket coverage,thermal blanket coverage percent,True,False,thermal blanket coverage,thermal blanket coverage percent,True,False,False,False,APPROVED
+gpt,cert,ops_incident-023,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,ops_incident-024,ops_incident,DENIED,telemetry downlink margin,16,2,True,0.3333333333333333,DENIED,True,telemetry downlink margin,telemetry downlink margin,True,False,telemetry downlink margin,telemetry downlink margin,True,False,False,False,APPROVED
+gpt,cert,ops_incident-025,ops_incident,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ops_incident-026,ops_incident,DENIED,gyro drift rate,16,2,True,0.3333333333333333,DENIED,True,gyro drift rate,gyro drift rate,True,False,gyro drift rate,gyro drift rate,True,False,False,False,DENIED
+gpt,cert,ops_incident-027,ops_incident,DENIED,battery bus impedance,16,2,True,0.3333333333333333,DENIED,True,battery bus impedance,battery bus impedance,True,False,battery bus impedance,battery bus impedance,True,False,False,False,
+gpt,cert,ops_incident-028,ops_incident,DENIED,star tracker residual,16,2,True,0.3333333333333333,DENIED,True,star tracker residual,star tracker residual,True,False,star tracker residual,star tracker residual,True,False,False,False,DENIED
+gpt,cert,ops_incident-029,ops_incident,APPROVED,,16,2,,0.3333333333333333,DENIED,False,seal torque retention,seal torque retention,False,False,seal torque retention,seal torque retention,False,False,False,False,DENIED
+gpt,cert,clinical_enroll-000,clinical_enroll,DENIED,systolic blood pressure,17,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,
+gpt,cert,clinical_enroll-001,clinical_enroll,DENIED,triglycerides,14,2,True,0.3333333333333333,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+gpt,cert,clinical_enroll-002,clinical_enroll,DENIED,systolic blood pressure,16,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,DENIED
+gpt,cert,clinical_enroll-003,clinical_enroll,DENIED,creatinine clearance,15,2,True,0.3333333333333333,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+gpt,cert,clinical_enroll-004,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,clinical_enroll-005,clinical_enroll,DENIED,left ventricular ejection fraction,15,2,True,0.3333333333333333,DENIED,True,left ventricular ejection fraction,left ventricular ejection fraction,True,False,left ventricular ejection fraction,left ventricular ejection fraction,True,False,False,False,DENIED
+gpt,cert,clinical_enroll-006,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,clinical_enroll-007,clinical_enroll,DENIED,systolic blood pressure,16,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+gpt,cert,clinical_enroll-008,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,clinical_enroll-009,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,clinical_enroll-010,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,clinical_enroll-011,clinical_enroll,DENIED,estimated glomerular filtration rate,17,2,True,0.3333333333333333,DENIED,True,estimated glomerular filtration rate,estimated glomerular filtration rate,True,False,estimated glomerular filtration rate,estimated glomerular filtration rate,True,False,False,False,DENIED
+gpt,cert,clinical_enroll-012,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,clinical_enroll-013,clinical_enroll,DENIED,creatinine clearance,16,2,True,0.3333333333333333,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,DENIED
+gpt,cert,clinical_enroll-014,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,clinical_enroll-015,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,clinical_enroll-016,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,cert,clinical_enroll-017,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,cert,clinical_enroll-018,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,clinical_enroll-019,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,clinical_enroll-020,clinical_enroll,DENIED,hemoglobin,15,2,True,0.3333333333333333,DENIED,True,hemoglobin,hemoglobin,True,False,hemoglobin,hemoglobin,True,False,False,False,DENIED
+gpt,cert,clinical_enroll-021,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,clinical_enroll-022,clinical_enroll,DENIED,systolic blood pressure,16,2,True,0.3333333333333333,DENIED,True,systolic blood pressure,systolic blood pressure,True,False,systolic blood pressure,systolic blood pressure,True,False,False,False,APPROVED
+gpt,cert,clinical_enroll-023,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,clinical_enroll-024,clinical_enroll,DENIED,triglycerides,14,2,True,0.3333333333333333,DENIED,True,triglycerides,triglycerides,True,False,triglycerides,triglycerides,True,False,False,False,APPROVED
+gpt,cert,clinical_enroll-025,clinical_enroll,DENIED,body mass index,14,3,True,0.3333333333333333,DENIED,True,UNMATCHED,BMI,False,True,UNMATCHED,BMI,False,False,False,False,DENIED
+gpt,cert,clinical_enroll-026,clinical_enroll,DENIED,fasting glucose,15,2,True,0.3333333333333333,DENIED,True,fasting glucose,fasting glucose,True,False,fasting glucose,fasting glucose,True,False,False,False,DENIED
+gpt,cert,clinical_enroll-027,clinical_enroll,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,clinical_enroll-028,clinical_enroll,DENIED,creatinine clearance,15,2,True,0.3333333333333333,DENIED,True,creatinine clearance,creatinine clearance,True,False,creatinine clearance,creatinine clearance,True,False,False,False,APPROVED
+gpt,cert,clinical_enroll-029,clinical_enroll,DENIED,fasting glucose,16,2,True,0.3333333333333333,DENIED,True,fasting glucose,fasting glucose,True,False,fasting glucose,fasting glucose,True,False,False,False,APPROVED
+gpt,cert,ci_release-000,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ci_release-001,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,ci_release-002,ci_release,DENIED,line coverage,15,2,True,0.3333333333333333,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,APPROVED
+gpt,cert,ci_release-003,ci_release,DENIED,open severity-one defects,17,2,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+gpt,cert,ci_release-004,ci_release,DENIED,flaky test count,16,2,True,0.3333333333333333,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,APPROVED
+gpt,cert,ci_release-005,ci_release,DENIED,rollback drill success,15,2,True,0.3333333333333333,DENIED,True,rollback drill success,rollback drill success,True,False,rollback drill success,rollback drill success,True,False,False,False,DENIED
+gpt,cert,ci_release-006,ci_release,DENIED,dependency audit findings,16,2,True,0.3333333333333333,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,APPROVED
+gpt,cert,ci_release-007,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ci_release-008,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,cert,ci_release-009,ci_release,DENIED,bundle size,15,2,True,0.3333333333333333,DENIED,True,bundle size,bundle size,True,False,bundle size,bundle size,True,False,False,False,DENIED
+gpt,cert,ci_release-010,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ci_release-011,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ci_release-012,ci_release,DENIED,cold start time,15,2,True,0.3333333333333333,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time milliseconds,True,False,False,False,DENIED
+gpt,cert,ci_release-013,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,ci_release-014,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,ci_release-015,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ci_release-016,ci_release,DENIED,error budget remaining,15,2,True,0.3333333333333333,DENIED,True,error budget remaining,error budget remaining,True,False,error budget remaining,error budget remaining,True,False,False,False,APPROVED
+gpt,cert,ci_release-017,ci_release,DENIED,cold start time,16,2,True,0.3333333333333333,DENIED,True,cold start time,cold start time,True,False,cold start time,cold start time,True,False,False,False,DENIED
+gpt,cert,ci_release-018,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,
+gpt,cert,ci_release-019,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ci_release-020,ci_release,DENIED,dependency audit findings,14,2,True,0.3333333333333333,DENIED,True,dependency audit findings,dependency audit findings,True,False,dependency audit findings,dependency audit findings,True,False,False,False,DENIED
+gpt,cert,ci_release-021,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ci_release-022,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,DENIED
+gpt,cert,ci_release-023,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ci_release-024,ci_release,DENIED,open severity-one defects,15,2,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+gpt,cert,ci_release-025,ci_release,APPROVED,,11,0,,0.0,APPROVED,True,NONE,NONE,True,False,NONE,NONE,True,False,True,False,APPROVED
+gpt,cert,ci_release-026,ci_release,DENIED,line coverage,13,2,True,0.3333333333333333,DENIED,True,line coverage,line coverage,True,False,line coverage,line coverage,True,False,False,False,APPROVED
+gpt,cert,ci_release-027,ci_release,DENIED,open severity-one defects,14,2,True,0.3333333333333333,DENIED,True,open severity-one defects,open severity-one defects,True,False,open severity-one defects,open severity-one defects,True,False,False,False,APPROVED
+gpt,cert,ci_release-028,ci_release,DENIED,flaky test count,16,2,True,0.3333333333333333,DENIED,True,flaky test count,flaky test count,True,False,flaky test count,flaky test count,True,False,False,False,
+gpt,cert,ci_release-029,ci_release,DENIED,peak heap usage,16,2,True,0.3333333333333333,DENIED,True,peak heap usage,peak heap usage,True,False,peak heap usage,peak heap usage,True,False,False,False,APPROVED

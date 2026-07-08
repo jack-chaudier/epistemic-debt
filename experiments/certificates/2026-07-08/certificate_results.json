@@ -1,0 +1,1124 @@
+{
+ "design": {
+  "budget_words": 15,
+  "arms": [
+   "ctrl",
+   "vd",
+   "vda",
+   "cert"
+  ],
+  "n_items": 90,
+  "domains": [
+   "ci_release",
+   "clinical_enroll",
+   "ops_incident"
+  ],
+  "policy_aware": {
+   "ctrl": false,
+   "vd": false,
+   "vda": true,
+   "cert": true
+  },
+  "candidates_disclosed": true
+ },
+ "per_model": {
+  "grok": {
+   "arms": {
+    "ctrl": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 10,
+     "n_kept": 35,
+     "realized_words": 26.62,
+     "n_values": 9.16,
+     "decision_acc": 0.7333,
+     "decision_acc_D": 0.8889,
+     "which_acc_D": 0.4222,
+     "which_unmatched_D": 12,
+     "S": 0.7778,
+     "policy_survival_D": 0.7407,
+     "J": 0.4222,
+     "delta": 0.4667,
+     "incoherence_D": {
+      "k": 6,
+      "n": 45,
+      "p": 0.1333,
+      "ci": [
+       0.0626,
+       0.2618
+      ]
+     },
+     "approved_none": {
+      "k": 26,
+      "n": 45,
+      "p": 0.5778,
+      "ci": [
+       0.433,
+       0.7103
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 6,
+      "n": 45,
+      "p": 0.1333,
+      "ci": [
+       0.0626,
+       0.2618
+      ]
+     },
+     "approved_confab": {
+      "k": 13,
+      "n": 45,
+      "p": 0.2889,
+      "ci": [
+       0.1773,
+       0.4337
+      ]
+     },
+     "lost_abstain": {
+      "k": 7,
+      "n": 10,
+      "p": 0.7,
+      "ci": [
+       0.3968,
+       0.8922
+      ]
+     },
+     "lost_confab": {
+      "k": 0,
+      "n": 10,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.2775
+      ]
+     },
+     "kept_which_correct": {
+      "k": 19,
+      "n": 35,
+      "p": 0.5429,
+      "ci": [
+       0.3819,
+       0.6953
+      ]
+     },
+     "nn_deny_rate_D": 1.0
+    },
+    "vd": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 3,
+     "n_kept": 42,
+     "realized_words": 29.92,
+     "n_values": 11.17,
+     "decision_acc": 0.8778,
+     "decision_acc_D": 0.9111,
+     "which_acc_D": 0.5556,
+     "which_unmatched_D": 17,
+     "S": 0.9333,
+     "policy_survival_D": 0.8815,
+     "J": 0.5333,
+     "delta": 0.3555,
+     "incoherence_D": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_none": {
+      "k": 33,
+      "n": 45,
+      "p": 0.7333,
+      "ci": [
+       0.5896,
+       0.8404
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 5,
+      "n": 45,
+      "p": 0.1111,
+      "ci": [
+       0.0484,
+       0.235
+      ]
+     },
+     "approved_confab": {
+      "k": 6,
+      "n": 45,
+      "p": 0.1333,
+      "ci": [
+       0.0626,
+       0.2618
+      ]
+     },
+     "lost_abstain": {
+      "k": 1,
+      "n": 3,
+      "p": 0.3333,
+      "ci": [
+       0.0615,
+       0.7923
+      ]
+     },
+     "lost_confab": {
+      "k": 0,
+      "n": 3,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.5615
+      ]
+     },
+     "kept_which_correct": {
+      "k": 25,
+      "n": 42,
+      "p": 0.5952,
+      "ci": [
+       0.4449,
+       0.7296
+      ]
+     },
+     "nn_deny_rate_D": 1.0
+    },
+    "vda": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 0,
+     "n_kept": 45,
+     "realized_words": 10.08,
+     "n_values": 3.09,
+     "decision_acc": 1.0,
+     "decision_acc_D": 1.0,
+     "which_acc_D": 0.7333,
+     "which_unmatched_D": 12,
+     "S": 1.0,
+     "policy_survival_D": 1.0,
+     "J": 0.7333,
+     "delta": 0.2667,
+     "incoherence_D": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_none": {
+      "k": 45,
+      "n": 45,
+      "p": 1.0,
+      "ci": [
+       0.9213,
+       1.0
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_confab": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "lost_abstain": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "lost_confab": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "kept_which_correct": {
+      "k": 33,
+      "n": 45,
+      "p": 0.7333,
+      "ci": [
+       0.5896,
+       0.8404
+      ]
+     },
+     "nn_deny_rate_D": 1.0
+    },
+    "cert": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 2,
+     "n_kept": 43,
+     "realized_words": 15.89,
+     "n_values": 1.96,
+     "decision_acc": 0.5,
+     "decision_acc_D": 1.0,
+     "which_acc_D": 0.9556,
+     "which_unmatched_D": 0,
+     "S": 0.9556,
+     "policy_survival_D": 0.3333,
+     "J": 0.9556,
+     "delta": 0.0444,
+     "incoherence_D": {
+      "k": 1,
+      "n": 45,
+      "p": 0.0222,
+      "ci": [
+       0.0039,
+       0.1157
+      ]
+     },
+     "approved_none": {
+      "k": 10,
+      "n": 45,
+      "p": 0.2222,
+      "ci": [
+       0.1254,
+       0.3627
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 15,
+      "n": 45,
+      "p": 0.3333,
+      "ci": [
+       0.2136,
+       0.4793
+      ]
+     },
+     "approved_confab": {
+      "k": 20,
+      "n": 45,
+      "p": 0.4444,
+      "ci": [
+       0.3094,
+       0.5882
+      ]
+     },
+     "lost_abstain": {
+      "k": 1,
+      "n": 2,
+      "p": 0.5,
+      "ci": [
+       0.0945,
+       0.9055
+      ]
+     },
+     "lost_confab": {
+      "k": 0,
+      "n": 2,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.6576
+      ]
+     },
+     "kept_which_correct": {
+      "k": 43,
+      "n": 43,
+      "p": 1.0,
+      "ci": [
+       0.918,
+       1.0
+      ]
+     },
+     "nn_deny_rate_D": 1.0
+    }
+   },
+   "predictions": {
+    "P-CE-1_certificate_quotient": {
+     "J_cert": 0.9556,
+     "J_vda": 0.7333,
+     "rw_cert": 15.89,
+     "rw_vda": 10.08,
+     "passed": false
+    },
+    "P-CE-1b_vs_blind_valuedense": {
+     "J_cert": 0.9556,
+     "J_vd": 0.5333,
+     "rw_cert": 15.89,
+     "rw_vd": 29.92,
+     "passed": true
+    },
+    "P-CE-2_abstention_calibrated": {
+     "approved_none": 0.2222,
+     "approved_false_abstain": 0.3333,
+     "approved_confab": 0.4444,
+     "passed": false
+    },
+    "P-CE-3_beats_control": {
+     "J_cert": 0.9556,
+     "J_ctrl": 0.4222,
+     "ctrl_n_lost": 10,
+     "regime_min_lost": 10,
+     "applicable": true,
+     "passed": true
+    },
+    "P-CE-4_word_economy": {
+     "rw_cert": 15.89,
+     "rw_vd": 29.92,
+     "rw_vda": 10.08,
+     "passed": false
+    }
+   }
+  },
+  "haiku": {
+   "arms": {
+    "ctrl": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 23,
+     "n_kept": 22,
+     "realized_words": 27.27,
+     "n_values": 5.88,
+     "decision_acc": 0.6333,
+     "decision_acc_D": 0.8889,
+     "which_acc_D": 0.5333,
+     "which_unmatched_D": 4,
+     "S": 0.4889,
+     "policy_survival_D": 0.4444,
+     "J": 0.5111,
+     "delta": 0.3556,
+     "incoherence_D": {
+      "k": 7,
+      "n": 45,
+      "p": 0.1556,
+      "ci": [
+       0.0775,
+       0.2878
+      ]
+     },
+     "approved_none": {
+      "k": 8,
+      "n": 45,
+      "p": 0.1778,
+      "ci": [
+       0.0929,
+       0.3133
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 33,
+      "n": 45,
+      "p": 0.7333,
+      "ci": [
+       0.5896,
+       0.8404
+      ]
+     },
+     "approved_confab": {
+      "k": 1,
+      "n": 45,
+      "p": 0.0222,
+      "ci": [
+       0.0039,
+       0.1157
+      ]
+     },
+     "lost_abstain": {
+      "k": 18,
+      "n": 23,
+      "p": 0.7826,
+      "ci": [
+       0.581,
+       0.9034
+      ]
+     },
+     "lost_confab": {
+      "k": 1,
+      "n": 23,
+      "p": 0.0435,
+      "ci": [
+       0.0077,
+       0.2099
+      ]
+     },
+     "kept_which_correct": {
+      "k": 18,
+      "n": 22,
+      "p": 0.8182,
+      "ci": [
+       0.6148,
+       0.9269
+      ]
+     },
+     "nn_deny_rate_D": 0.5556
+    },
+    "vd": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 4,
+     "n_kept": 41,
+     "realized_words": 34.63,
+     "n_values": 10.26,
+     "decision_acc": 0.8222,
+     "decision_acc_D": 1.0,
+     "which_acc_D": 0.7778,
+     "which_unmatched_D": 6,
+     "S": 0.9111,
+     "policy_survival_D": 0.8296,
+     "J": 0.7778,
+     "delta": 0.2222,
+     "incoherence_D": {
+      "k": 2,
+      "n": 45,
+      "p": 0.0444,
+      "ci": [
+       0.0123,
+       0.1483
+      ]
+     },
+     "approved_none": {
+      "k": 19,
+      "n": 45,
+      "p": 0.4222,
+      "ci": [
+       0.2897,
+       0.567
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 22,
+      "n": 45,
+      "p": 0.4889,
+      "ci": [
+       0.3496,
+       0.63
+      ]
+     },
+     "approved_confab": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "lost_abstain": {
+      "k": 3,
+      "n": 4,
+      "p": 0.75,
+      "ci": [
+       0.3006,
+       0.9544
+      ]
+     },
+     "lost_confab": {
+      "k": 1,
+      "n": 4,
+      "p": 0.25,
+      "ci": [
+       0.0456,
+       0.6994
+      ]
+     },
+     "kept_which_correct": {
+      "k": 35,
+      "n": 41,
+      "p": 0.8537,
+      "ci": [
+       0.7156,
+       0.9312
+      ]
+     },
+     "nn_deny_rate_D": 0.5556
+    },
+    "vda": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 0,
+     "n_kept": 45,
+     "realized_words": 15.4,
+     "n_values": 3.23,
+     "decision_acc": 0.9889,
+     "decision_acc_D": 1.0,
+     "which_acc_D": 0.9333,
+     "which_unmatched_D": 3,
+     "S": 1.0,
+     "policy_survival_D": 1.0,
+     "J": 0.9333,
+     "delta": 0.0667,
+     "incoherence_D": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_none": {
+      "k": 42,
+      "n": 45,
+      "p": 0.9333,
+      "ci": [
+       0.8214,
+       0.9771
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_confab": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "lost_abstain": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "lost_confab": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "kept_which_correct": {
+      "k": 42,
+      "n": 45,
+      "p": 0.9333,
+      "ci": [
+       0.8214,
+       0.9771
+      ]
+     },
+     "nn_deny_rate_D": 0.5556
+    },
+    "cert": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 1,
+     "n_kept": 44,
+     "realized_words": 13.91,
+     "n_values": 1.04,
+     "decision_acc": 0.9889,
+     "decision_acc_D": 1.0,
+     "which_acc_D": 0.9778,
+     "which_unmatched_D": 0,
+     "S": 0.9778,
+     "policy_survival_D": 0.3333,
+     "J": 0.9778,
+     "delta": 0.0222,
+     "incoherence_D": {
+      "k": 1,
+      "n": 45,
+      "p": 0.0222,
+      "ci": [
+       0.0039,
+       0.1157
+      ]
+     },
+     "approved_none": {
+      "k": 34,
+      "n": 45,
+      "p": 0.7556,
+      "ci": [
+       0.6133,
+       0.8576
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 10,
+      "n": 45,
+      "p": 0.2222,
+      "ci": [
+       0.1254,
+       0.3627
+      ]
+     },
+     "approved_confab": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "lost_abstain": {
+      "k": 1,
+      "n": 1,
+      "p": 1.0,
+      "ci": [
+       0.2065,
+       1.0
+      ]
+     },
+     "lost_confab": {
+      "k": 0,
+      "n": 1,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.7935
+      ]
+     },
+     "kept_which_correct": {
+      "k": 44,
+      "n": 44,
+      "p": 1.0,
+      "ci": [
+       0.9197,
+       1.0
+      ]
+     },
+     "nn_deny_rate_D": 0.5556
+    }
+   },
+   "predictions": {
+    "P-CE-1_certificate_quotient": {
+     "J_cert": 0.9778,
+     "J_vda": 0.9333,
+     "rw_cert": 13.91,
+     "rw_vda": 15.4,
+     "passed": true
+    },
+    "P-CE-1b_vs_blind_valuedense": {
+     "J_cert": 0.9778,
+     "J_vd": 0.7778,
+     "rw_cert": 13.91,
+     "rw_vd": 34.63,
+     "passed": true
+    },
+    "P-CE-2_abstention_calibrated": {
+     "approved_none": 0.7556,
+     "approved_false_abstain": 0.2222,
+     "approved_confab": 0.0,
+     "passed": false
+    },
+    "P-CE-3_beats_control": {
+     "J_cert": 0.9778,
+     "J_ctrl": 0.5111,
+     "ctrl_n_lost": 23,
+     "regime_min_lost": 10,
+     "applicable": true,
+     "passed": true
+    },
+    "P-CE-4_word_economy": {
+     "rw_cert": 13.91,
+     "rw_vd": 34.63,
+     "rw_vda": 15.4,
+     "passed": true
+    }
+   }
+  },
+  "gpt": {
+   "arms": {
+    "ctrl": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 20,
+     "n_kept": 25,
+     "realized_words": 23.78,
+     "n_values": 5.87,
+     "decision_acc": 0.6889,
+     "decision_acc_D": 1.0,
+     "which_acc_D": 0.4667,
+     "which_unmatched_D": 4,
+     "S": 0.5556,
+     "policy_survival_D": 0.4593,
+     "J": 0.4667,
+     "delta": 0.5333,
+     "incoherence_D": {
+      "k": 15,
+      "n": 45,
+      "p": 0.3333,
+      "ci": [
+       0.2136,
+       0.4793
+      ]
+     },
+     "approved_none": {
+      "k": 17,
+      "n": 45,
+      "p": 0.3778,
+      "ci": [
+       0.2511,
+       0.5237
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 16,
+      "n": 45,
+      "p": 0.3556,
+      "ci": [
+       0.2322,
+       0.5016
+      ]
+     },
+     "approved_confab": {
+      "k": 12,
+      "n": 45,
+      "p": 0.2667,
+      "ci": [
+       0.1596,
+       0.4104
+      ]
+     },
+     "lost_abstain": {
+      "k": 18,
+      "n": 20,
+      "p": 0.9,
+      "ci": [
+       0.699,
+       0.9721
+      ]
+     },
+     "lost_confab": {
+      "k": 2,
+      "n": 20,
+      "p": 0.1,
+      "ci": [
+       0.0279,
+       0.301
+      ]
+     },
+     "kept_which_correct": {
+      "k": 20,
+      "n": 25,
+      "p": 0.8,
+      "ci": [
+       0.6087,
+       0.9114
+      ]
+     },
+     "nn_deny_rate_D": 0.5111
+    },
+    "vd": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 0,
+     "n_kept": 45,
+     "realized_words": 38.28,
+     "n_values": 12.38,
+     "decision_acc": 1.0,
+     "decision_acc_D": 1.0,
+     "which_acc_D": 0.8889,
+     "which_unmatched_D": 5,
+     "S": 1.0,
+     "policy_survival_D": 0.9704,
+     "J": 0.8889,
+     "delta": 0.1111,
+     "incoherence_D": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_none": {
+      "k": 44,
+      "n": 45,
+      "p": 0.9778,
+      "ci": [
+       0.8843,
+       0.9961
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_confab": {
+      "k": 1,
+      "n": 45,
+      "p": 0.0222,
+      "ci": [
+       0.0039,
+       0.1157
+      ]
+     },
+     "lost_abstain": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "lost_confab": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "kept_which_correct": {
+      "k": 40,
+      "n": 45,
+      "p": 0.8889,
+      "ci": [
+       0.765,
+       0.9516
+      ]
+     },
+     "nn_deny_rate_D": 0.5111
+    },
+    "vda": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 0,
+     "n_kept": 45,
+     "realized_words": 12.29,
+     "n_values": 3.06,
+     "decision_acc": 1.0,
+     "decision_acc_D": 1.0,
+     "which_acc_D": 0.9333,
+     "which_unmatched_D": 3,
+     "S": 1.0,
+     "policy_survival_D": 1.0,
+     "J": 0.9333,
+     "delta": 0.0667,
+     "incoherence_D": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_none": {
+      "k": 45,
+      "n": 45,
+      "p": 1.0,
+      "ci": [
+       0.9213,
+       1.0
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_confab": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "lost_abstain": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "lost_confab": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "kept_which_correct": {
+      "k": 42,
+      "n": 45,
+      "p": 0.9333,
+      "ci": [
+       0.8214,
+       0.9771
+      ]
+     },
+     "nn_deny_rate_D": 0.5111
+    },
+    "cert": {
+     "n": 90,
+     "n_denied": 45,
+     "n_approved": 45,
+     "n_lost": 0,
+     "n_kept": 45,
+     "realized_words": 13.56,
+     "n_values": 1.06,
+     "decision_acc": 0.9778,
+     "decision_acc_D": 1.0,
+     "which_acc_D": 0.9778,
+     "which_unmatched_D": 1,
+     "S": 1.0,
+     "policy_survival_D": 0.3333,
+     "J": 0.9778,
+     "delta": 0.0222,
+     "incoherence_D": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_none": {
+      "k": 44,
+      "n": 45,
+      "p": 0.9778,
+      "ci": [
+       0.8843,
+       0.9961
+      ]
+     },
+     "approved_false_abstain": {
+      "k": 0,
+      "n": 45,
+      "p": 0.0,
+      "ci": [
+       0.0,
+       0.0787
+      ]
+     },
+     "approved_confab": {
+      "k": 1,
+      "n": 45,
+      "p": 0.0222,
+      "ci": [
+       0.0039,
+       0.1157
+      ]
+     },
+     "lost_abstain": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "lost_confab": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "ci": [
+       null,
+       null
+      ]
+     },
+     "kept_which_correct": {
+      "k": 44,
+      "n": 45,
+      "p": 0.9778,
+      "ci": [
+       0.8843,
+       0.9961
+      ]
+     },
+     "nn_deny_rate_D": 0.5111
+    }
+   },
+   "predictions": {
+    "P-CE-1_certificate_quotient": {
+     "J_cert": 0.9778,
+     "J_vda": 0.9333,
+     "rw_cert": 13.56,
+     "rw_vda": 12.29,
+     "passed": false
+    },
+    "P-CE-1b_vs_blind_valuedense": {
+     "J_cert": 0.9778,
+     "J_vd": 0.8889,
+     "rw_cert": 13.56,
+     "rw_vd": 38.28,
+     "passed": true
+    },
+    "P-CE-2_abstention_calibrated": {
+     "approved_none": 0.9778,
+     "approved_false_abstain": 0.0,
+     "approved_confab": 0.0222,
+     "passed": true
+    },
+    "P-CE-3_beats_control": {
+     "J_cert": 0.9778,
+     "J_ctrl": 0.4667,
+     "ctrl_n_lost": 20,
+     "regime_min_lost": 10,
+     "applicable": true,
+     "passed": true
+    },
+    "P-CE-4_word_economy": {
+     "rw_cert": 13.56,
+     "rw_vd": 38.28,
+     "rw_vda": 12.29,
+     "passed": false
+    }
+   }
+  }
+ },
+ "cost_usd": {
+  "grok": 0.1512,
+  "haiku": 1.1804,
+  "gpt": 0.2453
+ },
+ "total_cost_usd": 1.5769
+}
