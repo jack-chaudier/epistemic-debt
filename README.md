@@ -1,8 +1,8 @@
-# justification-gap
+# Epistemic Debt
 
 **A resource theory of being right for reasons.** Correctness and justification are different physical resources with a computable exchange rate. Under memory/context pressure, systems keep correct answers after losing the reasons for them (the *mirage shelf*); this repo develops the exact theory, the falsifiable laws, and the LLM experiments.
 
-Successor / consolidation of the mirage program (`stark`, `dreams`, `mirage`, …). The theory core lives in [theory/justification-gap-program.md](theory/justification-gap-program.md).
+**Site:** [epistemic-debt.vercel.app](https://epistemic-debt.vercel.app) — headline findings and the Road to Infinite Context. Successor / consolidation of the mirage program (`stark`, `dreams`, `mirage`, …). The theory core lives in [theory/justification-gap-program.md](theory/justification-gap-program.md); the live queue and roadmap in [NEXT.md](NEXT.md); the evidence ledger in [results/RESULTS.md](results/RESULTS.md).
 
 ## Results so far (2026-07-08)
 
