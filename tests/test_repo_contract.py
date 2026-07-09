@@ -53,6 +53,14 @@ def test_program_totals_match_public_surfaces():
     assert f'~{all_calls_k}k</b><span>LLM calls' in site
 
 
+def test_public_metadata_matches_the_evidence_scope():
+    site_head = (REPO / "site" / "index.html").read_text().split("</head>", 1)[0]
+    assert "exact finite models" in site_head
+    assert "preregistered LLM experiments" in site_head
+    assert "exact laws" not in site_head
+    assert "falsifiable laws" not in site_head
+
+
 def test_quickstart_uses_canonical_uv_command():
     readme = (REPO / "README.md").read_text()
     assert "uv run --with pytest --no-project -- pytest tests/ -q" in readme
