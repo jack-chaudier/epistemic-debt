@@ -16,6 +16,21 @@ re-analysis surfaces something worth chasing. Conventions:
 
 ## Queue (ranked by leverage per dollar)
 
+0. **Sections campaign — the fail-direction fingerprint (from the 2026-07-09 fresh-eyes
+   audit).** Evidence absence never produces noise: each model emits a characteristic default
+   verdict on evidence-destroyed cells (gpt/haiku fail-closed 0.86–0.94 on BOTH verdict sides;
+   Student-V fail-open 0.99/0.005), and the exploratory reanalysis splits this from the known
+   bias shelf — for gpt/haiku the section ≠ the no-notes prior (a mutilation-*triggered*
+   policy), while grok/Student-V are collapsed-prior. The section is also trainable and
+   sign-flippable by trace content alone (run-1 evidence). Discovery-shaped claim: measure the
+   section once ($5/model), forecast the *direction* of future silent failures — every current
+   eval measures error rates, none predicts error sign. Design + kill tests (perturbation
+   stability; conditionality vs prior; held-out directional forecast ≥ 0.80 incl. cached
+   realdoc/Arm-3b) sketched in `experiments/sections/2026-07-09/README.md`; prereg before any
+   spend. (~$4–6 API, mostly reanalysis.) Theory slot: adaptedness/martingale frame (verdict
+   tokens measurable w.r.t. the evidence filtration; debt = predictable drift = the section) —
+   evidence-position-slide micro-design + the queued forced-CoT probe test it. Status:
+   **exploratory reanalysis committed; prereg next — ahead of the parity rerun in leverage/$**.
 1. **Semantic-judge WHICH re-score of the Tier 1+2 cached responses.** (~$0.50, no new
    compression calls.) Retires the abbreviation parser artifact that decided grok's P-D3
    (LVEF/SBP acronyms → UNMATCHED — third scoring-regex incident), applies the

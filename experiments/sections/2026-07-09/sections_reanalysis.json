@@ -1,0 +1,73 @@
+{
+ "label": "EXPLORATORY \u2014 reanalysis of cached self-compressed responses; not preregistered",
+ "domains_2026_07_06": {
+  "gpt": {
+   "denied_lost_approve": 0.0649,
+   "n_denied_lost": 154,
+   "denied_kept_approve": 0.0,
+   "approved_lost_deny": 0.8584,
+   "n_approved_lost": 233,
+   "approved_kept_deny": 0.0448,
+   "nonotes_approve_anchored": 0.1925,
+   "nonotes_anchored_n": 400,
+   "nonotes_unanchored_share": 0.3333
+  },
+  "grok": {
+   "denied_lost_approve": 0.33,
+   "n_denied_lost": 100,
+   "denied_kept_approve": 0.045,
+   "approved_lost_deny": 0.6607,
+   "n_approved_lost": 168,
+   "approved_kept_deny": 0.2803,
+   "nonotes_approve_anchored": 0.0,
+   "nonotes_anchored_n": 600,
+   "nonotes_unanchored_share": 0.0
+  },
+  "haiku": {
+   "denied_lost_approve": 0.0922,
+   "n_denied_lost": 141,
+   "denied_kept_approve": 0.0063,
+   "approved_lost_deny": 0.8589,
+   "n_approved_lost": 248,
+   "approved_kept_deny": 0.0192,
+   "nonotes_approve_anchored": 0.2167,
+   "nonotes_anchored_n": 600,
+   "nonotes_unanchored_share": 0.0
+  }
+ },
+ "distill_parity_delta": {
+  "Qwen/Qwen3-8B": {
+   "denied_lost_approve": 0.4037,
+   "n_denied_lost": 436,
+   "denied_kept_approve": 0.2317,
+   "approved_lost_deny": 0.5618,
+   "n_approved_lost": 502,
+   "approved_kept_deny": 0.3878,
+   "nonotes_approve_anchored": 0.7653,
+   "nonotes_anchored_n": 196,
+   "nonotes_unanchored_share": 0.8367
+  },
+  "sv1": {
+   "denied_lost_approve": 0.9894,
+   "n_denied_lost": 377,
+   "denied_kept_approve": 0.009,
+   "approved_lost_deny": 0.0053,
+   "n_approved_lost": 565,
+   "approved_kept_deny": 0.0,
+   "nonotes_approve_anchored": 1.0,
+   "nonotes_anchored_n": 1200,
+   "nonotes_unanchored_share": 0.0
+  },
+  "sj1": {
+   "denied_lost_approve": 0.8197,
+   "n_denied_lost": 233,
+   "denied_kept_approve": 0.1335,
+   "approved_lost_deny": 0.1613,
+   "n_approved_lost": 434,
+   "approved_kept_deny": 0.006,
+   "nonotes_approve_anchored": 0.9863,
+   "nonotes_anchored_n": 293,
+   "nonotes_unanchored_share": 0.7558
+  }
+ }
+}
