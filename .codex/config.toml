@@ -1,0 +1,14 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+
+# Research-repo defaults. Keep models, credentials, personal paths, and global
+# MCP servers in ~/.codex; this file is intentionally portable and key-free.
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+model_reasoning_effort = "xhigh"
+model_verbosity = "high"
+web_search = "live"
+
+[sandbox_workspace_write]
+# Literature checks and explicitly authorized provider runs require network;
+# experiment runners remain idempotent, capped, and user-approved before spend.
+network_access = true

@@ -1,8 +1,11 @@
-# secrets — keys live in the environment, never in the tree
+# secrets — a local repo-root .env is allowed, but never tracked or copied
 .env
 .env.*
 *.key
 secrets/
+
+# local agent state
+.claude/settings.local.json
 
 # python
 __pycache__/

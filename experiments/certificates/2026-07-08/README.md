@@ -146,7 +146,7 @@ $1.58 total (grok $0.15, haiku $1.18, gpt $0.25) over 4,590 calls. Well under th
 > 2/3 fail): grok's writer false-denies passing items, haiku's reader over-abstains; only gpt
 > certifies approval cleanly. Certificate compaction concentrates decision risk at the writer. |
 > PREREGISTERED (P-CE-1…4 frozen; 3 models × 4 arms × 90 items; $1.58) |
-> [experiments/certificates/2026-07-08](../experiments/certificates/2026-07-08/README.md) |
+> [certificate campaign](.) |
 
 ## Files
 

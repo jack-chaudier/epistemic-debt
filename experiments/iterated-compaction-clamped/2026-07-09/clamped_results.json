@@ -1,0 +1,2654 @@
+{
+ "design": {
+  "W": 40,
+  "R": 8,
+  "band": [
+   36,
+   44
+  ],
+  "max_tries": 3,
+  "b_targets": [
+   25,
+   30,
+   40
+  ],
+  "drop_round": 5,
+  "w_drop": 25,
+  "n_items": 40,
+  "domains": [
+   "ops_incident",
+   "clinical_enroll",
+   "ci_release"
+  ],
+  "predictions": {
+   "P-RC-0_clamp_guard": ">=90% of Arm-A kept round-artifacts in [36,44] words, per model",
+   "P-RC-1_pure_iteration": "Arm A net decay D=1-S8/S2: D<=0.07 structural pass; D>=0.20 structural fail (fitted-geometric band); else revise",
+   "P-RC-2_schedule_drop": "Arm C S4->S5 hazard in [0.10,0.28] (structural) vs ~0.069 (constant-rho); guard mean delta5 >= 0.15",
+   "P-RC-3_state_function": "|S_r(Arm C) - S_direct(interp at L_r)| <= 0.08 at r in {2,4}, grok",
+   "P-RC-4_absorbing": "resurrection rate < 1% of value-transitions, every iterated chain",
+   "P-RC-5_verdict_eigenvalue_1": "g8 >= g1 - 0.10, every iterated chain"
+  },
+  "frozen_predictors": {
+   "structural": {
+    "h0": 0.002,
+    "sigma_pooled": 0.48,
+    "sigma_per_model": {
+     "grok": 0.64,
+     "haiku": 0.54,
+     "gpt": 0.18
+    }
+   },
+   "fitted_geometric": {
+    "rho_bar": {
+     "grok": 0.931,
+     "haiku": 0.937,
+     "gpt": 0.985
+    }
+   }
+  }
+ },
+ "arm_A": {
+  "grok": {
+   "n_scored": 40,
+   "curve": {
+    "1": {
+     "S": 0.9833,
+     "fail": 1.0,
+     "L": 44.05,
+     "g": 0.975,
+     "gist": 0.25,
+     "contain": null,
+     "fp": null
+    },
+    "2": {
+     "S": 0.9667,
+     "fail": 1.0,
+     "L": 41.825,
+     "g": 0.975,
+     "gist": 0.225,
+     "contain": 0.9739,
+     "fp": 0.325
+    },
+    "3": {
+     "S": 0.9667,
+     "fail": 1.0,
+     "L": 41.275,
+     "g": 0.975,
+     "gist": 0.225,
+     "contain": 0.9921,
+     "fp": 0.725
+    },
+    "4": {
+     "S": 0.9667,
+     "fail": 1.0,
+     "L": 41.0,
+     "g": 0.975,
+     "gist": 0.2,
+     "contain": 0.9965,
+     "fp": 0.85
+    },
+    "5": {
+     "S": 0.9667,
+     "fail": 1.0,
+     "L": 40.825,
+     "g": 0.95,
+     "gist": 0.2,
+     "contain": 0.9978,
+     "fp": 0.9
+    },
+    "6": {
+     "S": 0.9667,
+     "fail": 1.0,
+     "L": 40.625,
+     "g": 0.95,
+     "gist": 0.2,
+     "contain": 0.9958,
+     "fp": 0.9
+    },
+    "7": {
+     "S": 0.9667,
+     "fail": 1.0,
+     "L": 40.45,
+     "g": 0.95,
+     "gist": 0.2,
+     "contain": 1.0,
+     "fp": 0.95
+    },
+    "8": {
+     "S": 0.9667,
+     "fail": 1.0,
+     "L": 40.475,
+     "g": 0.95,
+     "gist": 0.2,
+     "contain": 0.9994,
+     "fp": 0.975
+    }
+   },
+   "S_curve": [
+    0.9833,
+    0.9667,
+    0.9667,
+    0.9667,
+    0.9667,
+    0.9667,
+    0.9667,
+    0.9667
+   ],
+   "L_curve": [
+    44.05,
+    41.825,
+    41.275,
+    41.0,
+    40.825,
+    40.625,
+    40.45,
+    40.475
+   ],
+   "transitions": {
+    "deaths": 2,
+    "resurrections": 0,
+    "at_risk": 814,
+    "absent": 26,
+    "n": 840
+   },
+   "drop": {
+    "deaths": 0,
+    "at_risk": 116
+   },
+   "delta5_mean": 0.0038,
+   "item_deltas": {
+    "ops_incident-001": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-002": [
+     0.0638,
+     0.0,
+     0.0,
+     0.0435,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-004": [
+     0.0526,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-006": [
+     0.0465,
+     0.0488,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-009": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-010": [
+     0.0227,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-011": [
+     0.2157,
+     0.025,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-012": [
+     0.0227,
+     0.0233,
+     0.0238,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-013": [
+     0.0682,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-014": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-017": [
+     0.0208,
+     0.1277,
+     0.0,
+     0.0,
+     0.0488,
+     0.0,
+     0.0
+    ],
+    "ops_incident-018": [
+     0.0,
+     0.125,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-020": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-021": [
+     0.0,
+     0.0638,
+     0.0227,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-002": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-003": [
+     0.0455,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.119,
+     0.0
+    ],
+    "clinical_enroll-004": [
+     0.2083,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-005": [
+     0.0455,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-006": [
+     0.2128,
+     0.0,
+     0.0,
+     0.0,
+     0.027,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-008": [
+     0.1364,
+     0.0263,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-011": [
+     0.0,
+     0.0,
+     0.0,
+     0.06,
+     0.1277,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-015": [
+     0.0233,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-017": [
+     0.0227,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-018": [
+     0.234,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-019": [
+     0.0652,
+     0.0233,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-020": [
+     0.1522,
+     0.0,
+     0.0,
+     0.0256,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-021": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-000": [
+     0.0227,
+     0.0,
+     0.1628,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-001": [
+     0.0233,
+     0.0,
+     0.0952,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-002": [
+     0.1136,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-004": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-005": [
+     0.0238,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-009": [
+     0.0227,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-013": [
+     0.0,
+     0.0682,
+     0.0,
+     0.0238,
+     0.0,
+     0.0476,
+     0.0
+    ],
+    "ci_release-015": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-017": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-018": [
+     0.0488,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-020": [
+     0.0513,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-022": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-023": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "death_clustering": {
+    "0": 38,
+    "1": 2
+   },
+   "resurrection_rate": 0.0,
+   "anomalies": {
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0,
+    "empty_summaries": 0,
+    "partial_chains": 0
+   },
+   "in_band_frac": 0.8719,
+   "in_band_per_round": {
+    "1": 0.675,
+    "2": 0.85,
+    "3": 0.9,
+    "4": 0.875,
+    "5": 0.9,
+    "6": 0.925,
+    "7": 0.925,
+    "8": 0.925
+   },
+   "kept_artifacts_n": 320,
+   "attempts_hist": {
+    "1": 221,
+    "2": 52,
+    "3": 47
+   },
+   "mean_attempts": 1.4563,
+   "delta_bar_per_item": 0.0057,
+   "delta_per_transition": [
+    {
+     "transition": "1->2",
+     "mean": 0.0491,
+     "max": 0.234
+    },
+    {
+     "transition": "2->3",
+     "mean": 0.0133,
+     "max": 0.1277
+    },
+    {
+     "transition": "3->4",
+     "mean": 0.0076,
+     "max": 0.1628
+    },
+    {
+     "transition": "4->5",
+     "mean": 0.0038,
+     "max": 0.06
+    },
+    {
+     "transition": "5->6",
+     "mean": 0.0051,
+     "max": 0.1277
+    },
+    {
+     "transition": "6->7",
+     "mean": 0.0042,
+     "max": 0.119
+    },
+    {
+     "transition": "7->8",
+     "mean": 0.0,
+     "max": 0.0
+    }
+   ],
+   "rho_ratios": [
+    0.9831,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "S8_over_S2": 1.0,
+   "net_decay": 0.0
+  },
+  "haiku": {
+   "n_scored": 40,
+   "curve": {
+    "1": {
+     "S": 0.5667,
+     "fail": 0.5,
+     "L": 45.05,
+     "g": 0.875,
+     "gist": 0.25,
+     "contain": null,
+     "fp": null
+    },
+    "2": {
+     "S": 0.5667,
+     "fail": 0.5,
+     "L": 42.975,
+     "g": 0.925,
+     "gist": 0.25,
+     "contain": 0.9446,
+     "fp": 0.075
+    },
+    "3": {
+     "S": 0.5667,
+     "fail": 0.5,
+     "L": 42.175,
+     "g": 0.875,
+     "gist": 0.25,
+     "contain": 0.9674,
+     "fp": 0.225
+    },
+    "4": {
+     "S": 0.5667,
+     "fail": 0.5,
+     "L": 42.125,
+     "g": 0.85,
+     "gist": 0.25,
+     "contain": 0.9791,
+     "fp": 0.5
+    },
+    "5": {
+     "S": 0.5667,
+     "fail": 0.5,
+     "L": 42.0,
+     "g": 0.85,
+     "gist": 0.25,
+     "contain": 0.99,
+     "fp": 0.675
+    },
+    "6": {
+     "S": 0.5583,
+     "fail": 0.5,
+     "L": 42.075,
+     "g": 0.85,
+     "gist": 0.25,
+     "contain": 0.9925,
+     "fp": 0.775
+    },
+    "7": {
+     "S": 0.5583,
+     "fail": 0.5,
+     "L": 42.025,
+     "g": 0.875,
+     "gist": 0.25,
+     "contain": 0.9938,
+     "fp": 0.825
+    },
+    "8": {
+     "S": 0.5583,
+     "fail": 0.5,
+     "L": 41.975,
+     "g": 0.875,
+     "gist": 0.25,
+     "contain": 0.9943,
+     "fp": 0.8
+    }
+   },
+   "S_curve": [
+    0.5667,
+    0.5667,
+    0.5667,
+    0.5667,
+    0.5667,
+    0.5583,
+    0.5583,
+    0.5583
+   ],
+   "L_curve": [
+    45.05,
+    42.975,
+    42.175,
+    42.125,
+    42.0,
+    42.075,
+    42.025,
+    41.975
+   ],
+   "transitions": {
+    "deaths": 1,
+    "resurrections": 0,
+    "at_risk": 474,
+    "absent": 366,
+    "n": 840
+   },
+   "drop": {
+    "deaths": 0,
+    "at_risk": 68
+   },
+   "delta5_mean": 0.0063,
+   "item_deltas": {
+    "ops_incident-001": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-002": [
+     0.0208,
+     0.0213,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-004": [
+     0.0435,
+     0.0682,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-006": [
+     0.0638,
+     0.0227,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-009": [
+     0.0426,
+     0.0,
+     0.0435,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-010": [
+     0.0816,
+     0.0,
+     0.0,
+     0.0,
+     0.0417,
+     0.0,
+     0.0417
+    ],
+    "ops_incident-011": [
+     0.0426,
+     0.0222,
+     0.0455,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-012": [
+     0.0,
+     0.0682,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-013": [
+     0.0,
+     0.0227,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-014": [
+     0.0769,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-017": [
+     0.0377,
+     0.0392,
+     0.0204,
+     0.0833,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-018": [
+     0.0638,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-020": [
+     0.0851,
+     0.0233,
+     0.0,
+     0.0455,
+     0.0,
+     0.0455,
+     0.0
+    ],
+    "ops_incident-021": [
+     0.0444,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-002": [
+     0.0714,
+     0.0256,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-003": [
+     0.0,
+     0.0732,
+     0.0526,
+     0.0,
+     0.0,
+     0.0526,
+     0.0
+    ],
+    "clinical_enroll-004": [
+     0.0227,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-005": [
+     0.0952,
+     0.0,
+     0.0256,
+     0.0,
+     0.0256,
+     0.0,
+     0.0256
+    ],
+    "clinical_enroll-006": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-008": [
+     0.0208,
+     0.1702,
+     0.0,
+     0.0256,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-011": [
+     0.025,
+     0.0256,
+     0.0,
+     0.05,
+     0.0,
+     0.05,
+     0.0
+    ],
+    "clinical_enroll-015": [
+     0.0714,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-017": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-018": [
+     0.0227,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0455
+    ],
+    "clinical_enroll-019": [
+     0.0909,
+     0.075,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-020": [
+     0.0455,
+     0.0952,
+     0.0,
+     0.0,
+     0.0263,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-021": [
+     0.0,
+     0.0,
+     0.0435,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-000": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-001": [
+     0.0476,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-002": [
+     0.0435,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-004": [
+     0.0222,
+     0.1136,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-005": [
+     0.0,
+     0.0227,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-009": [
+     0.0227,
+     0.0233,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-013": [
+     0.1333,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-015": [
+     0.0682,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-017": [
+     0.0465,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-018": [
+     0.1667,
+     0.0,
+     0.0,
+     0.0227,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-020": [
+     0.0465,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-022": [
+     0.1,
+     0.0222,
+     0.0682,
+     0.0244,
+     0.0,
+     0.0,
+     0.0476
+    ],
+    "ci_release-023": [
+     0.125,
+     0.0238,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "death_clustering": {
+    "0": 39,
+    "1": 1
+   },
+   "resurrection_rate": 0.0,
+   "anomalies": {
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0,
+    "empty_summaries": 0,
+    "partial_chains": 0
+   },
+   "in_band_frac": 0.8469,
+   "in_band_per_round": {
+    "1": 0.55,
+    "2": 0.775,
+    "3": 0.85,
+    "4": 0.9,
+    "5": 0.925,
+    "6": 0.925,
+    "7": 0.925,
+    "8": 0.925
+   },
+   "kept_artifacts_n": 320,
+   "attempts_hist": {
+    "1": 220,
+    "2": 41,
+    "3": 59
+   },
+   "mean_attempts": 1.4969,
+   "delta_bar_per_item": 0.008,
+   "delta_per_transition": [
+    {
+     "transition": "1->2",
+     "mean": 0.0473,
+     "max": 0.1667
+    },
+    {
+     "transition": "2->3",
+     "mean": 0.024,
+     "max": 0.1702
+    },
+    {
+     "transition": "3->4",
+     "mean": 0.0075,
+     "max": 0.0682
+    },
+    {
+     "transition": "4->5",
+     "mean": 0.0063,
+     "max": 0.0833
+    },
+    {
+     "transition": "5->6",
+     "mean": 0.0023,
+     "max": 0.0417
+    },
+    {
+     "transition": "6->7",
+     "mean": 0.0037,
+     "max": 0.0526
+    },
+    {
+     "transition": "7->8",
+     "mean": 0.004,
+     "max": 0.0476
+    }
+   ],
+   "rho_ratios": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9852,
+    1.0,
+    1.0
+   ],
+   "S8_over_S2": 0.9852,
+   "net_decay": 0.0148
+  },
+  "gpt": {
+   "n_scored": 40,
+   "curve": {
+    "1": {
+     "S": 0.6583,
+     "fail": 0.6,
+     "L": 44.225,
+     "g": 0.95,
+     "gist": 0.225,
+     "contain": null,
+     "fp": null
+    },
+    "2": {
+     "S": 0.6583,
+     "fail": 0.6,
+     "L": 43.7,
+     "g": 0.925,
+     "gist": 0.225,
+     "contain": 0.9497,
+     "fp": 0.1
+    },
+    "3": {
+     "S": 0.6583,
+     "fail": 0.6,
+     "L": 43.9,
+     "g": 0.9,
+     "gist": 0.225,
+     "contain": 0.9733,
+     "fp": 0.4
+    },
+    "4": {
+     "S": 0.6583,
+     "fail": 0.6,
+     "L": 43.825,
+     "g": 0.925,
+     "gist": 0.225,
+     "contain": 0.9842,
+     "fp": 0.5
+    },
+    "5": {
+     "S": 0.6583,
+     "fail": 0.6,
+     "L": 43.55,
+     "g": 0.925,
+     "gist": 0.2,
+     "contain": 0.9876,
+     "fp": 0.5
+    },
+    "6": {
+     "S": 0.6583,
+     "fail": 0.6,
+     "L": 43.625,
+     "g": 0.95,
+     "gist": 0.175,
+     "contain": 0.9825,
+     "fp": 0.5
+    },
+    "7": {
+     "S": 0.6583,
+     "fail": 0.6,
+     "L": 43.625,
+     "g": 0.95,
+     "gist": 0.2,
+     "contain": 0.9792,
+     "fp": 0.475
+    },
+    "8": {
+     "S": 0.6583,
+     "fail": 0.6,
+     "L": 43.55,
+     "g": 0.95,
+     "gist": 0.175,
+     "contain": 0.9827,
+     "fp": 0.55
+    }
+   },
+   "S_curve": [
+    0.6583,
+    0.6583,
+    0.6583,
+    0.6583,
+    0.6583,
+    0.6583,
+    0.6583,
+    0.6583
+   ],
+   "L_curve": [
+    44.225,
+    43.7,
+    43.9,
+    43.825,
+    43.55,
+    43.625,
+    43.625,
+    43.55
+   ],
+   "transitions": {
+    "deaths": 0,
+    "resurrections": 0,
+    "at_risk": 553,
+    "absent": 287,
+    "n": 840
+   },
+   "drop": {
+    "deaths": 0,
+    "at_risk": 79
+   },
+   "delta5_mean": 0.0107,
+   "item_deltas": {
+    "ops_incident-001": [
+     0.0,
+     0.0,
+     0.0682,
+     0.0,
+     0.0,
+     0.0682,
+     0.0
+    ],
+    "ops_incident-002": [
+     0.0,
+     0.0,
+     0.0227,
+     0.0233,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-004": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0244,
+     0.0
+    ],
+    "ops_incident-006": [
+     0.2273,
+     0.0196,
+     0.0,
+     0.0192,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-009": [
+     0.02,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1731
+    ],
+    "ops_incident-010": [
+     0.0909,
+     0.0,
+     0.0476,
+     0.0,
+     0.0476,
+     0.0,
+     0.0476
+    ],
+    "ops_incident-011": [
+     0.0,
+     0.0,
+     0.0,
+     0.1364,
+     0.0,
+     0.1364,
+     0.0
+    ],
+    "ops_incident-012": [
+     0.16,
+     0.0,
+     0.0,
+     0.0233,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-013": [
+     0.0545,
+     0.0385,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-014": [
+     0.0238,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-017": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-018": [
+     0.0244,
+     0.0,
+     0.1163,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ops_incident-020": [
+     0.0488,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0256,
+     0.0
+    ],
+    "ops_incident-021": [
+     0.0,
+     0.0233,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-002": [
+     0.0,
+     0.0408,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-003": [
+     0.0,
+     0.0227,
+     0.0,
+     0.0227,
+     0.0,
+     0.0227,
+     0.0
+    ],
+    "clinical_enroll-004": [
+     0.0,
+     0.0204,
+     0.0208,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-005": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-006": [
+     0.0,
+     0.0213,
+     0.0,
+     0.0,
+     0.0217,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-008": [
+     0.0213,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-011": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-015": [
+     0.0408,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-017": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-018": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-019": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "clinical_enroll-020": [
+     0.0943,
+     0.0,
+     0.0204,
+     0.0,
+     0.0204,
+     0.0,
+     0.0204
+    ],
+    "clinical_enroll-021": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-000": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-001": [
+     0.0,
+     0.0,
+     0.0233,
+     0.0,
+     0.0455,
+     0.0,
+     0.0455
+    ],
+    "ci_release-002": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0698,
+     0.0,
+     0.0
+    ],
+    "ci_release-004": [
+     0.0,
+     0.027,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-005": [
+     0.0,
+     0.0233,
+     0.0238,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-009": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-013": [
+     0.0,
+     0.0,
+     0.0,
+     0.1591,
+     0.0,
+     0.0238,
+     0.0
+    ],
+    "ci_release-015": [
+     0.0233,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-017": [
+     0.0,
+     0.0,
+     0.0,
+     0.0455,
+     0.119,
+     0.0,
+     0.0
+    ],
+    "ci_release-018": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-020": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-022": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ci_release-023": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "death_clustering": {
+    "0": 40
+   },
+   "resurrection_rate": 0.0,
+   "anomalies": {
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0,
+    "empty_summaries": 0,
+    "partial_chains": 0
+   },
+   "in_band_frac": 0.65,
+   "in_band_per_round": {
+    "1": 0.625,
+    "2": 0.65,
+    "3": 0.65,
+    "4": 0.65,
+    "5": 0.65,
+    "6": 0.65,
+    "7": 0.65,
+    "8": 0.675
+   },
+   "kept_artifacts_n": 320,
+   "attempts_hist": {
+    "1": 140,
+    "2": 58,
+    "3": 122
+   },
+   "mean_attempts": 1.9438,
+   "delta_bar_per_item": 0.008,
+   "delta_per_transition": [
+    {
+     "transition": "1->2",
+     "mean": 0.0207,
+     "max": 0.2273
+    },
+    {
+     "transition": "2->3",
+     "mean": 0.0059,
+     "max": 0.0408
+    },
+    {
+     "transition": "3->4",
+     "mean": 0.0086,
+     "max": 0.1163
+    },
+    {
+     "transition": "4->5",
+     "mean": 0.0107,
+     "max": 0.1591
+    },
+    {
+     "transition": "5->6",
+     "mean": 0.0081,
+     "max": 0.119
+    },
+    {
+     "transition": "6->7",
+     "mean": 0.0075,
+     "max": 0.1364
+    },
+    {
+     "transition": "7->8",
+     "mean": 0.0072,
+     "max": 0.1731
+    }
+   ],
+   "rho_ratios": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "S8_over_S2": 1.0,
+   "net_decay": 0.0
+  }
+ },
+ "arm_B": {
+  "grok": {
+   "25": {
+    "n": 40,
+    "S": 0.8417,
+    "L": 32.275,
+    "g": 0.85,
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0
+   },
+   "30": {
+    "n": 40,
+    "S": 0.8583,
+    "L": 38.35,
+    "g": 0.925,
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0
+   },
+   "40": {
+    "n": 40,
+    "S": 0.925,
+    "L": 43.05,
+    "g": 0.95,
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0
+   }
+  },
+  "haiku": {
+   "25": {
+    "n": 40,
+    "S": 0.425,
+    "L": 29.175,
+    "g": 0.85,
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0
+   },
+   "30": {
+    "n": 40,
+    "S": 0.4917,
+    "L": 34.675,
+    "g": 0.9,
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0
+   },
+   "40": {
+    "n": 40,
+    "S": 0.625,
+    "L": 44.825,
+    "g": 0.9,
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0
+   }
+  },
+  "gpt": {
+   "25": {
+    "n": 40,
+    "S": 0.6083,
+    "L": 30.275,
+    "g": 0.875,
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0
+   },
+   "30": {
+    "n": 40,
+    "S": 0.675,
+    "L": 34.9,
+    "g": 0.9,
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0
+   },
+   "40": {
+    "n": 40,
+    "S": 0.925,
+    "L": 51.9,
+    "g": 0.95,
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0
+   }
+  }
+ },
+ "arm_C": {
+  "n_scored": 40,
+  "curve": {
+   "1": {
+    "S": 0.9333,
+    "fail": 0.95,
+    "L": 42.8,
+    "g": 0.925,
+    "gist": 0.15,
+    "contain": null,
+    "fp": null
+   },
+   "2": {
+    "S": 0.85,
+    "fail": 0.875,
+    "L": 31.825,
+    "g": 0.925,
+    "gist": 0.025,
+    "contain": 0.8678,
+    "fp": 0.05
+   },
+   "3": {
+    "S": 0.8,
+    "fail": 0.825,
+    "L": 29.25,
+    "g": 0.875,
+    "gist": 0.025,
+    "contain": 0.9728,
+    "fp": 0.425
+   },
+   "4": {
+    "S": 0.8,
+    "fail": 0.825,
+    "L": 29.1,
+    "g": 0.85,
+    "gist": 0.025,
+    "contain": 0.9825,
+    "fp": 0.75
+   },
+   "5": {
+    "S": 0.5583,
+    "fail": 0.6,
+    "L": 22.025,
+    "g": 0.8,
+    "gist": 0.0,
+    "contain": 0.9402,
+    "fp": 0.4
+   },
+   "6": {
+    "S": 0.5417,
+    "fail": 0.575,
+    "L": 20.575,
+    "g": 0.75,
+    "gist": 0.0,
+    "contain": 0.9606,
+    "fp": 0.675
+   },
+   "7": {
+    "S": 0.5417,
+    "fail": 0.575,
+    "L": 20.45,
+    "g": 0.85,
+    "gist": 0.0,
+    "contain": 0.9928,
+    "fp": 0.9
+   },
+   "8": {
+    "S": 0.5417,
+    "fail": 0.575,
+    "L": 20.25,
+    "g": 0.85,
+    "gist": 0.0,
+    "contain": 0.9986,
+    "fp": 0.9
+   }
+  },
+  "S_curve": [
+   0.9333,
+   0.85,
+   0.8,
+   0.8,
+   0.5583,
+   0.5417,
+   0.5417,
+   0.5417
+  ],
+  "L_curve": [
+   42.8,
+   31.825,
+   29.25,
+   29.1,
+   22.025,
+   20.575,
+   20.45,
+   20.25
+  ],
+  "transitions": {
+   "deaths": 47,
+   "resurrections": 0,
+   "at_risk": 603,
+   "absent": 237,
+   "n": 840
+  },
+  "drop": {
+   "deaths": 29,
+   "at_risk": 96
+  },
+  "delta5_mean": 0.2441,
+  "item_deltas": {
+   "ops_incident-001": [
+    0.1765,
+    0.0238,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ops_incident-002": [
+    0.6047,
+    0.6471,
+    0.0,
+    0.1667,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ops_incident-004": [
+    0.2444,
+    0.0,
+    0.0,
+    0.4118,
+    0.15,
+    0.0,
+    0.0
+   ],
+   "ops_incident-006": [
+    0.2292,
+    0.027,
+    0.0,
+    0.5556,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ops_incident-009": [
+    0.28,
+    0.0,
+    0.0,
+    0.5833,
+    0.7333,
+    0.0,
+    0.0
+   ],
+   "ops_incident-010": [
+    0.3,
+    0.5143,
+    0.0,
+    0.7778,
+    0.0,
+    0.25,
+    0.0
+   ],
+   "ops_incident-011": [
+    0.322,
+    0.625,
+    0.0,
+    0.7333,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ops_incident-012": [
+    0.2444,
+    0.0,
+    0.0,
+    0.5,
+    0.7647,
+    0.0,
+    0.0
+   ],
+   "ops_incident-013": [
+    0.3056,
+    0.04,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ops_incident-014": [
+    0.1905,
+    0.0,
+    0.0,
+    0.6176,
+    0.6923,
+    0.0,
+    0.0
+   ],
+   "ops_incident-017": [
+    0.5581,
+    0.4737,
+    0.1,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ops_incident-018": [
+    0.3125,
+    0.1818,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ops_incident-020": [
+    0.16,
+    0.0238,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ops_incident-021": [
+    0.2143,
+    0.0,
+    0.0,
+    0.0227,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "clinical_enroll-002": [
+    0.2564,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "clinical_enroll-003": [
+    0.3429,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "clinical_enroll-004": [
+    0.2558,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "clinical_enroll-005": [
+    0.3488,
+    0.2857,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.05
+   ],
+   "clinical_enroll-006": [
+    0.2708,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "clinical_enroll-008": [
+    0.5,
+    0.0526,
+    0.0,
+    0.0556,
+    0.0588,
+    0.125,
+    0.0
+   ],
+   "clinical_enroll-011": [
+    0.1489,
+    0.025,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "clinical_enroll-015": [
+    0.0294,
+    0.0,
+    0.0,
+    0.6364,
+    0.0833,
+    0.0,
+    0.0
+   ],
+   "clinical_enroll-017": [
+    0.4444,
+    0.0,
+    0.0,
+    0.4,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "clinical_enroll-018": [
+    0.32,
+    0.0,
+    0.0,
+    0.0,
+    0.4118,
+    0.05,
+    0.0
+   ],
+   "clinical_enroll-019": [
+    0.2727,
+    0.0,
+    0.0,
+    0.6875,
+    0.1,
+    0.1111,
+    0.0
+   ],
+   "clinical_enroll-020": [
+    0.2558,
+    0.0,
+    0.0312,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "clinical_enroll-021": [
+    0.1579,
+    0.0625,
+    0.0,
+    0.4,
+    0.0556,
+    0.0,
+    0.0
+   ],
+   "ci_release-000": [
+    0.3182,
+    0.0333,
+    0.0345,
+    0.5,
+    0.0714,
+    0.0,
+    0.0
+   ],
+   "ci_release-001": [
+    0.1667,
+    0.0,
+    0.0,
+    0.4667,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ci_release-002": [
+    0.2955,
+    0.129,
+    0.037,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ci_release-004": [
+    0.0,
+    0.0,
+    0.0,
+    0.3158,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ci_release-005": [
+    0.1316,
+    0.1212,
+    0.0,
+    0.3103,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ci_release-009": [
+    0.1842,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ci_release-013": [
+    0.1316,
+    0.0606,
+    0.0,
+    0.0323,
+    0.0333,
+    0.0,
+    0.0
+   ],
+   "ci_release-015": [
+    0.2444,
+    0.0,
+    0.0,
+    0.4286,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ci_release-017": [
+    0.15,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ci_release-018": [
+    0.0,
+    0.0,
+    0.0,
+    0.2647,
+    0.08,
+    0.0,
+    0.3043
+   ],
+   "ci_release-020": [
+    0.2703,
+    0.2222,
+    0.1429,
+    0.3333,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ci_release-022": [
+    0.2857,
+    0.0667,
+    0.0357,
+    0.2222,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ci_release-023": [
+    0.1951,
+    0.0303,
+    0.0,
+    0.3438,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "death_clustering": {
+   "0": 17,
+   "1": 9,
+   "2": 4,
+   "3": 10
+  },
+  "resurrection_rate": 0.0,
+  "anomalies": {
+   "unmatched_decisions": 0,
+   "multi_match_decisions": 0,
+   "first_last_disagreements": 0,
+   "empty_summaries": 0,
+   "partial_chains": 0
+  },
+  "drop_hazard": 0.3021,
+  "one_minus_S5_over_S4": 0.3021
+ },
+ "predictions_evaluated": {
+  "P-RC-0": {
+   "grok": {
+    "in_band_frac": 0.8719,
+    "passed": false
+   },
+   "haiku": {
+    "in_band_frac": 0.8469,
+    "passed": false
+   },
+   "gpt": {
+    "in_band_frac": 0.65,
+    "passed": false
+   }
+  },
+  "P-RC-1": {
+   "pass_all_applicable": false,
+   "primary_discriminators_applicable": [],
+   "primary_discriminators_pass": null,
+   "per_model": {
+    "grok": "pass",
+    "haiku": "pass",
+    "gpt": "pass"
+   },
+   "per_model_detail": {
+    "grok": {
+     "net_decay": 0.0,
+     "S8_over_S2": 1.0,
+     "band_outcome": "pass",
+     "outcome_headline": "pass",
+     "adjudication_rule": "band",
+     "delta_bar_per_item": 0.0057,
+     "structural_per_item_at_realized_delta": 0.9668,
+     "fitted_geometric": 0.6512,
+     "applicable": false,
+     "subcheck_all_rounds_ge_098": true,
+     "subcheck_S8_over_S2_ge_087": true
+    },
+    "haiku": {
+     "net_decay": 0.0148,
+     "S8_over_S2": 0.9852,
+     "band_outcome": "pass",
+     "outcome_headline": "pass",
+     "adjudication_rule": "band",
+     "delta_bar_per_item": 0.008,
+     "structural_per_item_at_realized_delta": 0.9628,
+     "fitted_geometric": 0.6768,
+     "applicable": false,
+     "subcheck_all_rounds_ge_098": true,
+     "subcheck_S8_over_S2_ge_087": true
+    },
+    "gpt": {
+     "net_decay": 0.0,
+     "S8_over_S2": 1.0,
+     "band_outcome": "pass",
+     "outcome_headline": "pass",
+     "adjudication_rule": "band",
+     "delta_bar_per_item": 0.008,
+     "structural_per_item_at_realized_delta": 0.9795,
+     "fitted_geometric": 0.9133,
+     "applicable": false,
+     "subcheck_all_rounds_ge_098": true,
+     "subcheck_S8_over_S2_ge_087": true
+    }
+   }
+  },
+  "P-RC-2": {
+   "delta5_mean": 0.2441,
+   "guard_delta5_ge_015": true,
+   "drop_hazard": 0.3021,
+   "one_minus_S5_over_S4": 0.3021,
+   "structural_interval": [
+    0.1,
+    0.28
+   ],
+   "structural_point_at_realized_delta": 0.1582,
+   "constant_rho_point": 0.069,
+   "outcome": "neither_overshoot"
+  },
+  "P-RC-3": {
+   "direct_points": [
+    [
+     32.275,
+     0.8417
+    ],
+    [
+     38.35,
+     0.8583
+    ],
+    [
+     43.05,
+     0.925
+    ]
+   ],
+   "checks": {
+    "round2": {
+     "L": 31.825,
+     "S_iterated": 0.85,
+     "S_direct_interp": 0.8417,
+     "abs_diff": 0.0083
+    },
+    "round4": {
+     "L": 29.1,
+     "S_iterated": 0.8,
+     "S_direct_interp": 0.8417,
+     "abs_diff": 0.0417
+    }
+   },
+   "passed": true
+  },
+  "P-RC-4": {
+   "per_chain": {
+    "A/grok": 0.0,
+    "A/haiku": 0.0,
+    "A/gpt": 0.0,
+    "C/grok": 0.0
+   },
+   "passed": true
+  },
+  "P-RC-5": {
+   "per_chain": {
+    "A/grok": {
+     "g1": 0.975,
+     "g8": 0.95,
+     "passed": true
+    },
+    "A/haiku": {
+     "g1": 0.875,
+     "g8": 0.875,
+     "passed": true
+    },
+    "A/gpt": {
+     "g1": 0.95,
+     "g8": 0.95,
+     "passed": true
+    },
+    "C/grok": {
+     "g1": 0.925,
+     "g8": 0.85,
+     "passed": true
+    }
+   },
+   "passed": true
+  }
+ },
+ "predictor_table": [
+  {
+   "model": "grok",
+   "arm": "A",
+   "quantity": "S8/S2",
+   "measured": 1.0,
+   "structural_clamped_point": 0.9881,
+   "structural_given_realized_L_pooled": 0.9723,
+   "structural_given_realized_L_per_model": 0.9671,
+   "structural_per_item_pooled": 0.972,
+   "structural_per_item_per_model": 0.9668,
+   "fitted_geometric": 0.6512
+  },
+  {
+   "model": "haiku",
+   "arm": "A",
+   "quantity": "S8/S2",
+   "measured": 0.9852,
+   "structural_clamped_point": 0.9881,
+   "structural_given_realized_L_pooled": 0.9761,
+   "structural_given_realized_L_per_model": 0.9747,
+   "structural_per_item_pooled": 0.9656,
+   "structural_per_item_per_model": 0.9628,
+   "fitted_geometric": 0.6768
+  },
+  {
+   "model": "gpt",
+   "arm": "A",
+   "quantity": "S8/S2",
+   "measured": 1.0,
+   "structural_clamped_point": 0.9881,
+   "structural_given_realized_L_pooled": 0.9835,
+   "structural_given_realized_L_per_model": 0.9863,
+   "structural_per_item_pooled": 0.9655,
+   "structural_per_item_per_model": 0.9795,
+   "fitted_geometric": 0.9133
+  },
+  {
+   "model": "grok",
+   "arm": "C",
+   "quantity": "drop-round hazard (S4->S5)",
+   "measured": 0.3021,
+   "structural_point_at_realized_delta": 0.1582,
+   "structural_interval": [
+    0.1,
+    0.28
+   ],
+   "fitted_geometric": 0.069
+  }
+ ],
+ "verdict": {
+  "headline_applicable": false,
+  "structural_upheld": false,
+  "fitted_geometric_upheld": false,
+  "mixed": false,
+  "applicable_models": [],
+  "note": "no primary discriminator (grok, haiku) passed P-RC-0; per-model report only (amendment A1)"
+ },
+ "exploratory": {
+  "label": "EXPLORATORY",
+  "haiku_fixed_point_early_vs_late": {
+   "fp_2_to_3": 0.225,
+   "fp_7_to_8": 0.8
+  },
+  "fixed_point_curves": {
+   "A/grok": [
+    0.325,
+    0.725,
+    0.85,
+    0.9,
+    0.9,
+    0.95,
+    0.975
+   ],
+   "A/haiku": [
+    0.075,
+    0.225,
+    0.5,
+    0.675,
+    0.775,
+    0.825,
+    0.8
+   ],
+   "A/gpt": [
+    0.1,
+    0.4,
+    0.5,
+    0.5,
+    0.5,
+    0.475,
+    0.55
+   ],
+   "C/grok": [
+    0.05,
+    0.425,
+    0.75,
+    0.4,
+    0.675,
+    0.9,
+    0.9
+   ]
+  },
+  "containment_curves": {
+   "A/grok": [
+    0.9739,
+    0.9921,
+    0.9965,
+    0.9978,
+    0.9958,
+    1.0,
+    0.9994
+   ],
+   "A/haiku": [
+    0.9446,
+    0.9674,
+    0.9791,
+    0.99,
+    0.9925,
+    0.9938,
+    0.9943
+   ],
+   "A/gpt": [
+    0.9497,
+    0.9733,
+    0.9842,
+    0.9876,
+    0.9825,
+    0.9792,
+    0.9827
+   ],
+   "C/grok": [
+    0.8678,
+    0.9728,
+    0.9825,
+    0.9402,
+    0.9606,
+    0.9928,
+    0.9986
+   ]
+  },
+  "plateaus": {
+   "armC_grok_S4_vs_0.767": {
+    "measured": 0.8,
+    "reference": 0.767
+   },
+   "armA_gpt_S8_vs_0.883": {
+    "measured": 0.6583,
+    "reference": 0.883
+   },
+   "armA_haiku_S8_vs_0.542_non_comparable_under_structural": {
+    "measured": 0.5583,
+    "reference": 0.542
+   }
+  }
+ },
+ "anomalies": {
+  "arm_a": {
+   "grok": {
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0,
+    "empty_summaries": 0,
+    "partial_chains": 0
+   },
+   "haiku": {
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0,
+    "empty_summaries": 0,
+    "partial_chains": 0
+   },
+   "gpt": {
+    "unmatched_decisions": 0,
+    "multi_match_decisions": 0,
+    "first_last_disagreements": 0,
+    "empty_summaries": 0,
+    "partial_chains": 0
+   }
+  },
+  "arm_c": {
+   "unmatched_decisions": 0,
+   "multi_match_decisions": 0,
+   "first_last_disagreements": 0,
+   "empty_summaries": 0,
+   "partial_chains": 0
+  },
+  "arm_b_unmatched": {
+   "grok": {
+    "25": 0,
+    "30": 0,
+    "40": 0
+   },
+   "haiku": {
+    "25": 0,
+    "30": 0,
+    "40": 0
+   },
+   "gpt": {
+    "25": 0,
+    "30": 0,
+    "40": 0
+   }
+  }
+ },
+ "n_calls": {
+  "grok": 1666,
+  "grok/A": 786,
+  "grok/B": 240,
+  "grok/C": 640,
+  "haiku": 1039,
+  "haiku/A": 799,
+  "haiku/B": 240,
+  "gpt": 1182,
+  "gpt/A": 942,
+  "gpt/B": 240
+ },
+ "total_calls": 3887,
+ "cost_usd": {
+  "grok": 0.1853,
+  "haiku": 0.8468,
+  "gpt": 0.2913
+ },
+ "cost_usd_by_arm": {
+  "grok/A": 0.0948,
+  "grok/B": 0.0335,
+  "grok/C": 0.0571,
+  "haiku/A": 0.6331,
+  "haiku/B": 0.2136,
+  "gpt/A": 0.2295,
+  "gpt/B": 0.0618
+ },
+ "total_cost_usd": 1.3234
+}

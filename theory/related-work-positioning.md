@@ -30,7 +30,7 @@ tied to real papers; they are excluded.
 | 3 | Debt is artifact-borne (no reader recovers a destroyed witness; reasoning can't buy it back) | **NOVEL (leaning), umbrella anticipated** | KV-eviction content-selective drop (Pitfalls 2510.00231); compression info-retention (Łajewska 2503.19114) |
 | 4 | Δ = accuracy − justified-accuracy + abstention-delta diagnostic | **PARTIALLY ANTICIPATED (metric scooped; localizer novel)** | AttributedQA/AIS 2112.12870, ALCE 2305.14627, RAGAS = "justified accuracy" already |
 | 5 | Exact/finite-model program (shelf width = fiber entropy; honesty tax/premium; certificate quotient) | **PARTIALLY ANTICIPATED (math old; interpretation novel)** | Bounded-Interaction Myhill–Nerode 2603.21399; computational mechanics; orbit-stabilizer; Wyner–Ziv/IB-side-info |
-| 6 | Epistemic interest rate (geometric witness decay, ρ̄≈0.93, flat verdict) | **PARTIALLY ANTICIPATED (dissociation old; ρ-law contested-novel)** | Broken Telephone 2502.20258 (linear); Factory.ai (episodic vs semantic); vs "Beyond Exponential Decay" 2505.24187 |
+| 6 | Iterated compaction settlement (loss tracks contraction; flat-at-held-length in tested arms) | **PARTIALLY ANTICIPATED; constant-ρ novelty REFUTED** | Broken Telephone 2502.20258; Factory.ai; "Beyond Exponential Decay" 2505.24187 |
 | 7 | Fusion contract / self-certifying prose | **SCOOPED (numeric); PARTIALLY ANTICIPATED (general)** | Proof-Carrying Numbers 2509.06902; SAFE 2505.12621; subsentence citations 2406.06125 |
 | 8 | Loss-ledger routing (deterministic dropped-names ledger + re-expansion) | **NOVEL (mechanism), high convergence risk** | Knowledge Objects 2603.17781 (same phenotype, different fix); typed-provenance memory 2605.25869 |
 | 9 | Real-document narrative-valence reflex (crash→DENY, accuracy conceals) | **NOVEL as conjunction** | "When Summaries Distort Decisions" 2606.29251 (attributes flips to decontextualization, NOT valence) |
@@ -200,7 +200,7 @@ honesty-premium accounting* with measured multipliers (18–38× retrofit vs 0.4
 no neighbor articulates. Claim the interpretation and the numbers, not the identity "shelf = fiber
 entropy," which is a definitional restatement.
 
-### Claim 6 — The epistemic interest rate (geometric witness decay, ρ̄≈0.93, flat verdict)
+### Claim 6 — Iterated compaction settlement (contraction-gated loss, flat held-length survival)
 
 **Closest works.** Zhu et al., *LLM as a Broken Telephone: Iterative Generation Distorts Information*
 (arXiv:2502.20258, 2025) — 100 iterations, FActScore drift; finds roughly *linear/steady* per-iteration
@@ -212,19 +212,17 @@ survives, facts decay across rounds. Shumailov et al., *The Curse of Recursion /
 Exponential Decay: Rethinking Error Accumulation in LLMs" (arXiv:2505.24187, reported) — *disputes* clean
 geometric decay directly.
 
-**Sharpest difference.** Already published: (i) iterated processing erodes specifics while gist/narrative
-survives (broken-telephone; Factory.ai); (ii) rare content dies first (model collapse). *Not* established:
-a **stable geometric law with a fixed per-round survival ratio ρ̄≈0.93 under fixed-budget iterated
-compaction, with the verdict provably flat.** The specific functional form (constant ρ) walks into a live
-disagreement (2505.24187) about whether decay is geometric at all — which makes it contestable and
-therefore publishable, but it must be defended head-on. The program's *own* disclosed confound
-(realized length settles below budget) is exactly the kind of thing 2505.24187 would seize.
+**Sharpest difference.** Already published: iterated processing erodes specifics while gist survives,
+and rare content dies first. The original fixed-ρ reading is now refuted by this program's own cached
+re-analysis and length-clamped successor: ρ̄≈0.93 was a length-settling transient. In the tested arms,
+survival is nearly flat when realized length is held and loss concentrates at forced contractions,
+while verdicts remain flat. This is a useful empirical decomposition, not yet a universal law.
 
-**VERDICT: PARTIALLY ANTICIPATED.** The qualitative iterated dissociation is anticipated
-(broken-telephone; Factory.ai; model collapse). Novel remainder: the *fitted constant-ρ law* + *formally
-flat verdict*, in contested territory. Do not present "iteration erodes details while gist stays" as new;
-sell only the constant-ρ law and verdict-invariance, run the length-clamped successor, and address
-2505.24187 explicitly.
+**VERDICT: PARTIALLY ANTICIPATED; CONSTANT-ρ NOVELTY RETIRED.** Keep the exact cached counts and the
+preregistered per-model clamp result. Do not sell a stable interest rate, panel-wide settlement law, or
+the qualitative “details erode while gist stays” observation as new. The remaining contribution is the
+measurement design that separates repetition from contraction and the state-function hypothesis it
+motivates.
 
 ### Claim 7 — Fusion contract / self-certifying prose (never assert without the witness in-clause)
 
@@ -343,8 +341,8 @@ derivation.
 "justification gap" has an adjacent live usage. Either disambiguate explicitly on first use ("epistemic
 debt — the machine-internal, justification-loss sense, distinct from the human-comprehension usage of
 [2602.20206]") or adopt a distinct primary handle. The program's own coinages that appear *un-collided* —
-"the mirage shelf," "shelf width," "witness quotient," "artifact-borne debt," "the epistemic interest
-rate" — are safer brand anchors than "epistemic debt."
+"the mirage shelf," "shelf width," "witness quotient," and "artifact-borne debt" — are safer brand
+anchors than "epistemic debt." The retired "interest rate" framing should not be used as a brand anchor.
 
 ---
 
@@ -370,8 +368,8 @@ and *priced***. Concretely, the parts that survived the adversarial sweep:
    one output) — narrowly novel within calibration/faithfulness.
 7. **The loss-ledger router / bounded-debt-memory construction** (claim 8) — an empty architectural slot
    (log *dropped* names as a reclaimable debt floor), distinct from provenance-of-retained-content.
-8. **The constant-ρ interest-rate law + verdict-invariance** (claim 6) — contested but genuinely a fitted
-   dynamical claim the qualitative literature does not make.
+8. **The contraction-versus-repetition decomposition** (claim 6) — a preregistered, per-model empirical
+   result and state-function hypothesis; the earlier constant-ρ novelty claim is retired.
 
 The unifying framing — "being right and knowing why are different priced resources, and compression sells
 justification first" — is a *synthesis* whose novelty is the assembly and the pricing, not any single
@@ -414,7 +412,7 @@ site directly).
 **For `README.md`** — add a one-line honesty note under the results table or in a new "Related work &
 priority" stub:
 
-> *Related work / priority (2026-07-08 audit → [theory/related-work-positioning.md](theory/related-work-positioning.md)):*
+> *Related work / priority (2026-07-08 audit → [related-work-positioning.md](related-work-positioning.md)):*
 > *The answer/justification split is anticipated in parts — compression drops load-bearing content while
 > accuracy holds (Łajewska et al., EMNLP 2025; "Pitfalls of KV Cache Compression" 2510.00231), attribution
 > drift is FACTUM's (2601.05866), "justified accuracy" ≈ attribution-QA (AttributedQA/AIS; ALCE), and the

@@ -519,38 +519,35 @@ it lives *deeper* — chained/multi-hop derivation — which is the successor de
 greppable-debt program this cuts the same way I.3 did but harder: a ledger can still prove a value
 was dropped, but "dropped" ≠ "unrecoverable" when the reader can recompute it from what survived.
 
-## Appendix N — The epistemic interest rate: compaction debt accrues geometrically (2026-07-08)
+## Appendix N — Settlement, not interest: witness loss tracks contraction (2026-07-08/09)
 
-Everything in the program to Appendix M is single-shot. This is the first *dynamical* measurement
-(`experiments/iterated-compaction/2026-07-08/`, $0.31, preregistered). Compress a document to a
-fixed 40 words, then re-compress the summary to 40 words for 4 rounds, and track witness
-string-survival S_r each round. H.3 had shown decreasing-budget rolling compaction is near-
-idempotent on one model; the new question is whether a *fixed* budget produces a stable per-round
-decay ratio.
+The original preregistered run (`experiments/iterated-compaction/2026-07-08/`, $0.31) compressed a
+document to a nominal 40 words and re-compressed the result for four rounds. Witness survival looked
+geometric on grok and haiku (ρ̄=0.931/0.937) while verdicts stayed nearly flat; gpt was the
+near-idempotent null (ρ̄=0.985). That observation remains valid. The interpretation of ρ̄ as a
+per-round “interest rate” does not.
 
-It does, on two of three models. grok and haiku lose witnesses geometrically at a strikingly close
-rate — ρ̄ = S_(r+1)/S_r ≈ **0.931** (grok) and **0.937** (haiku), ~6–7% per round, with
-successive-ratio spans ≤ 0.11 (P-IC-3) — while the decision verdict stays essentially flat (grok
-1.00→0.925, haiku 0.85→0.875 over four rounds). The gap between verdict persistence and witness
-survival *widens* with round count (+0.108, +0.142): the mirage shelf is not just a static state
-but an **accruing debt**, and ρ̄ is its interest rate. gpt is the informative null — it re-compresses
-near-losslessly (ρ̄ 0.985, net decay 0.042), extending H.3's idempotence to a fixed budget for a
-model that holds summary length steady.
+A deterministic re-analysis found zero witness resurrections in 849 at-risk transitions, only one
+death in 346 transitions where realized length held or grew, much larger hazards when length
+contracted sharply, and exact string fixed points in many chains. A simple contraction model
+retrodicts all three original ratios. This makes the constant-rate extrapolation—and its
+t½≈9.7-round forecast—unsupported by the original data.
 
-Interpretation and its load-bearing caveat. This is Law 1 / F.4 made dynamical: witness bits, being
-gradient-orphaned, decay under each lossy re-encoding while the answer token (defended by the
-decision) persists, so an iterated memory converges toward pure asserted-verdict. The caveat, stated
-plainly: on the two decaying models the realized summary length *also* settles below the 40-word
-budget across rounds (grok 44→29 words), so the measured ρ̄ mixes genuine per-round witness loss with
-the summary still contracting toward its stable length; gpt, which holds length ≈ 42, shows the
-near-zero decay this predicts. What survives the caveat is robust — decay is monotone and geometric,
-the verdict persists while witnesses fall, and the two decaying models share ρ̄ ≈ 0.93. What the
-caveat costs is the clean interpretation of ρ̄ as *pure* iteration loss; a length-clamped successor
-(force each round to spend the full budget; extend to R = 6–8) is required to partition ρ̄ into
-iteration loss vs length-settling and to test ρ stability deeper into the chain. Recorded therefore
-as: **the interest rate is PREREGISTERED-confirmed as a geometric, verdict-preserving witness decay
-with ρ̄ ≈ 0.93 on two models**, with the length-settling share an OBSERVED caveat for the successor.
+The opposed-prediction successor (`experiments/iterated-compaction-clamped/2026-07-09/`, $1.32,
+preregistered) held realized length through rounds 2–8. Per-model net decay was 0.000/0.015/0.000,
+against fitted-geometric predictions 0.349/0.323/0.087. A forced 40→25-word drop concentrated loss
+in the drop round and survival was flat afterward; matched-length iterated and single-shot survival
+differed by at most 0.042; verdicts stayed flat. These results support a state/settlement picture in
+the tested arms: contraction changes the stored artifact, while repetition near a fixed point adds
+little measurable loss.
+
+The bookkeeping matters. P-RC-0, the frozen in-band guard for the panel headline, failed 3/3 because
+all models overshot the requested length. The panel-wide headline is therefore **INAPPLICABLE as
+frozen**; P-RC-1 and the mechanism checks are per-model evidence, and P-RC-2 also failed by
+overshooting its hazard interval. “Loss is always and only in the squeeze” is not a theorem. The
+supported claim is narrower: in these three models and tested arms, observed loss concentrated at
+contraction events and survival was nearly flat at held realized length.
 
 ## 9. The one-sentence version
 
-**Justification is a conserved, priced resource: the shelf width is the entropy of the witness orbit, behavioral optimization always defaults on the debt, abstention is the only honest refinancing, and the bill arrives exactly when the world changes.**
+**Correctness and justification are separable, priced resources: compression can preserve an answer while discarding its witness, and the resulting debt becomes visible when a task needs the missing reason.**

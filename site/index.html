@@ -241,9 +241,9 @@
   <div class="abstract">
     <p class="lede">Under memory pressure, systems keep correct answers after losing the reasons
     for them. The answers survive compression; the justifications don't. The difference is
-    <em>epistemic debt</em>: it accumulates silently, pays interest, and comes due exactly when
-    conditions change. This program makes the debt exact — as laws with computable prices,
-    verified by exhaustive finite search — and tests it with preregistered experiments on
+    <em>epistemic debt</em>: a gap that can be hidden by answer accuracy and exposed when a task
+    needs the missing reason. This program gives parts of the debt exact finite models and prices,
+    then tests scoped predictions with preregistered experiments on
     frontier language models.</p>
     <p>The practical edge: every leaderboard measures whether the answer is right; none measures
     whether the reason survived. The <em>justification gap</em>, Δ&nbsp;=&nbsp;accuracy&nbsp;−&nbsp;justified
@@ -259,10 +259,10 @@
 
   <div class="strip" aria-label="Program at a glance">
     <!-- UPDATE: these four numbers track README.md's results table and spend line. -->
-    <div><b>35</b><span>recorded results</span></div>
+    <div><b>38</b><span>headline results</span></div>
     <div><b>4</b><span>model vendors</span></div>
-    <div><b>~114k</b><span>LLM calls (API + local GPU)</span></div>
-    <div><b>$30.92</b><span>total spend</span></div>
+    <div><b>~118k</b><span>LLM calls (API + local GPU)</span></div>
+    <div><b>$32.24</b><span>total spend</span></div>
   </div>
 
   <hr class="double-rule">
@@ -457,11 +457,17 @@
     </article>
 
     <article class="finding">
-      <h3>Compaction pays interest: ~7% of witnesses lost per round while verdicts hold.</h3>
-      <p>Iterating compaction at a fixed budget decays witness survival geometrically with a
-      stable per-round ratio <span class="stat">ρ̄ ≈ 0.93</span> on two of three models, while
-      decision accuracy stays flat — the gap between right and justified widens with every round.
-      The program's first dynamical constant.</p>
+      <h3>Witness loss is an event, not a rate: compaction debt is a settlement cost, not
+      compound interest.</h3>
+      <p>Iterated compaction at a fixed budget first looked like a ~7%/round tax
+      (<span class="stat">ρ̄ ≈ 0.93</span>, below). Re-analysis and a preregistered length-clamped
+      rerun re-identified it: with realized length held, witness survival over six further rounds
+      decays <span class="stat">0.000 / 0.015 / 0.000</span> (three models; geometric model
+      predicted 0.35/0.32/0.09), and a forced mid-chain budget squeeze concentrates loss in the
+      drop round with flat survival afterward. Death was absorbing (0 resurrections in 849
+      transitions), matched-length iterated and direct survival differed by at most 0.042, and
+      verdicts stayed flat. This is per-model evidence from three tested arms: the frozen
+      panel-wide headline was inapplicable because its length guard failed 3/3.</p>
 
       <figure role="img" aria-label="Line chart over four compaction rounds: verdict accuracy declines only slightly from 1.0 to about 0.93, while witness survival decays from 0.95 to 0.77. The shaded region between them widens each round.">
         <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
@@ -486,15 +492,18 @@
           <path class="s-debt" d="M80 48.8 L224 78.4 L368 106.3 L512 132.3"/>
           <circle class="dot-debt" cx="512" cy="132.3" r="4"/>
           <text class="lbl-debt" x="506" y="152" text-anchor="end">witness survival</text>
-          <text class="chart-note" x="255" y="120">−7% per round (ρ̄ ≈ 0.93)</text>
+          <text class="chart-note" x="255" y="120">the length-settling transient (unclamped)</text>
         </svg>
-        <figcaption><b>Fig. 2 — The debt compounds.</b> Iterated compaction, grok, fixed 40-word
-        budget: witness survival 0.95 → 0.77 at a stable ρ̄ = 0.931 per round while the verdict
-        holds (preregistered 2/3, README row 29; length-settling caveat disclosed, verdict points
-        interpolated between measured endpoints).</figcaption>
+        <figcaption><b>Fig. 2 — The transient that looked like interest.</b> Unclamped iterated
+        compaction, grok, 40-word budget: survival 0.95 → 0.77 while the verdict holds (row 29).
+        The clamped rerun shows the decay tracks length contraction, not round count — held at
+        length, the same chains are flat (S8/S2 = 1.000/0.985/1.000; preregistered per-model,
+        with a disclosed in-band-guard caveat) and the loss re-appears exactly at a forced
+        squeeze.</figcaption>
       </figure>
 
-      <div class="meta"><span class="label prereg">Preregistered</span><span class="label observed">2/3 · caveat disclosed</span>
+      <div class="meta"><span class="label prereg">Preregistered · per-model (guard caveat)</span>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/iterated-compaction-clamped">iterated-compaction-clamped</a>
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/iterated-compaction">iterated-compaction</a></div>
     </article>
 
@@ -623,8 +632,9 @@
     <p>The debt is real in frontier models — four vendors, N=400, six schemas, and now
     <em>real documents</em>: on NTSB accident narratives the failure sharpens into
     answers-by-vibes that accuracy metrics conceal. It is deterministically accountable
-    (ledger recall 1.00), repayable (re-expansion 30/30), its decay rate is measured
-    (ρ̄ ≈ 0.93/round), and the fusion register recovers most justification on real prose.
+    (ledger recall 1.00), repayable (re-expansion 30/30), and in the clamped campaign its loss
+    concentrates at a forced budget drop while held-length survival is flat — and the fusion
+    register recovers most justification on real prose.
     <em>Preregistered.</em></p></div>
   <div class="law"><div class="k">Promised</div>
     <p>The assembled runtime; the fixed point ρ̄ = 1.0; the agent that never silently forgets.
@@ -699,8 +709,8 @@
     split the conjecture: calibrated honesty via <em>one valid certificate</em> admits a strictly
     smaller memory state than exact-witness honesty — on <code>Q₍₅,₃₎</code>, 9 states against 13,
     saving over half the fiber bits. You don't have to remember all the reasons; you have to
-    remember enough to prove them on demand. That is the theoretical license for the entire
-    architecture.</p>
+    remember enough to prove them on demand. In these checked finite models, that is the
+    theoretical motivation for the architecture.</p>
 
     <figure role="img" aria-label="Tower diagram of memory quotients for the Q 5 3 model: answer quotient 7 states on top, certificate quotient 9 states highlighted beneath it, exact witness quotient 13 states below that, and the unbounded raw archive at the base.">
       <svg viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg">
@@ -736,13 +746,15 @@
     knowledge — compression against the reader's derivation power, which no long-context system
     currently attempts.</p>
 
-    <p><b>Immortality is a fixed point.</b> Naive iterated compaction decays witnesses
-    geometrically at ρ̄&nbsp;≈&nbsp;0.93 per round (preregistered 2/3, row 29) — but one model
-    sat at 0.985, nearly idempotent natively. The formal target: a compaction operator with
-    C(C(x))&nbsp;=&nbsp;C(x), ledger routing repaying whatever it drops — effective
-    ρ̄&nbsp;=&nbsp;1.0, epistemic state stationary under unbounded rounds.</p>
+    <p><b>Immortality is a fixed point — and the fixed point is real.</b> The apparent
+    ρ̄&nbsp;≈&nbsp;0.93/round decay (row 29) was a length-settling transient: the clamped rerun
+    holds realized length and witness survival goes flat on all three models (net decay
+    0.000–0.015 over six further rounds), with chains literally freezing into verbatim
+    fixed-point strings. In these tested arms, repetition at held length is nearly flat and the
+    <em>squeeze</em> is where observed loss concentrates. What remains for the runtime: ledger
+    routing that repays the squeeze, so effective ρ̄&nbsp;=&nbsp;1.0 survives budget drops too.</p>
 
-    <figure role="img" aria-label="Line chart over eight compaction rounds extending to infinity: the naive dashed line decays geometrically from 0.95 toward 0.57, while the runtime line holds flat at 0.95 with the annotation rho equals 1.0, the fixed point.">
+    <figure role="img" aria-label="Line chart over eight compaction rounds extending to infinity: a dashed geometric-extrapolation line decays from 0.95 toward 0.57 and is marked retired; the measured clamped line holds flat at 0.95 with the annotation held length, measured 2026-07-09.">
       <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
         <line class="chart-grid" x1="46" y1="26"  x2="544" y2="26"/>
         <line class="chart-grid" x1="46" y1="140" x2="544" y2="140"/>
@@ -756,19 +768,21 @@
         <text class="chart-tick" x="418" y="271" text-anchor="middle">7</text>
         <text class="chart-tick" x="522" y="271" text-anchor="middle">∞</text>
         <text class="chart-axis" x="295" y="292" text-anchor="middle">compaction rounds</text>
-        <!-- naive decay (dashed) -->
+        <!-- geometric extrapolation (dashed, retired) -->
         <path class="s-debt-dash" d="M70 48.8 L128 79.1 L186 107.3 L244 133.5 L302 157.9 L360 180.6 L418 201.7 L476 221.4"/>
         <circle class="dot-debt" cx="476" cy="221.4" r="4"/>
-        <text class="lbl-debt" x="470" y="241" text-anchor="end">naive · ρ̄ ≈ 0.93 — measured</text>
-        <!-- runtime flat -->
+        <text class="lbl-debt" x="470" y="241" text-anchor="end">geometric extrapolation — retired 2026-07-09</text>
+        <!-- clamped flat (measured) -->
         <path class="s-debt" d="M70 48.8 L476 48.8"/>
         <path class="s-debt-dash" d="M476 48.8 L522 48.8"/>
         <circle class="dot-debt" cx="476" cy="48.8" r="4"/>
-        <text class="lbl-debt" x="470" y="38" text-anchor="end">ledger runtime · ρ̄ = 1.0 — the fixed point</text>
+        <text class="lbl-debt" x="470" y="38" text-anchor="end">held length · flat — measured (clamped rerun)</text>
       </svg>
-      <figcaption><b>Fig. R3 — Rounds-to-half-witness: 9 vs ∞.</b> The dashed decay is measured
-      (row 29, grok); the flat line is the target, not a result. Witness survival in both
-      conditions — same channel, different operator.</figcaption>
+      <figcaption><b>Fig. R3 — The half-life that wasn't.</b> The dashed line is what ρ̄ ≈ 0.93
+      predicted forever (half the witnesses gone by round ~9); the flat line is what the
+      preregistered clamped rerun measured at held length (net decay 0.000–0.015 over rounds
+      2–8, three models; per-model result, in-band guard caveat in the ledger). The open target
+      is surviving <em>squeezes</em>, not rounds — that is what the ledger runtime is for.</figcaption>
     </figure>
   </section>
 
@@ -779,7 +793,7 @@
 
     <div class="stage"><div class="k">Stage 0</div><div>
       <p><b>Components validated.</b> Value-dense compaction, deterministic loss-ledger routing,
-      the interest-rate measurement, read-time recovery depth 1.</p>
+      the scoped settlement result (held-length flatness in three tested models), read-time recovery depth 1.</p>
       <div class="meta"><span class="label prereg">Done · in the ledger</span></div>
     </div></div>
 
@@ -800,10 +814,13 @@
     </div></div>
 
     <div class="stage"><div class="k">Stage 3</div><div>
-      <p><b>The fixed point.</b> Length-clamped interest-rate rerun, then the head-to-head:
-      naive stack decays at ρ̄ ≈ 0.93; ledger runtime holds ρ̄ = 1.0 over 10+ rounds with Δ flat.
-      Rounds-to-half-witness becomes the benchmark.</p>
-      <div class="meta"><span class="label observed">Open</span></div>
+      <p><b>The fixed point.</b> Length-clamped rerun: <em>done</em> — at held length the naive
+      stack is already flat (net decay 0.000–0.015 over rounds 2–8, three models; the ρ̄ ≈ 0.93
+      decay was the settling transient, and a forced squeeze charges its loss in one round).
+      Remaining: the head-to-head under <em>squeezes</em> — naive stack vs ledger runtime
+      (compact → ledger → route → re-expand) across forced budget drops, Δ flat.
+      Witnesses-surviving-the-squeeze becomes the benchmark.</p>
+      <div class="meta"><span class="label prereg">Rerun done · per-model (guard caveat)</span><span class="label observed">Head-to-head open</span></div>
     </div></div>
 
     <div class="stage"><div class="k">Stage 4</div><div>
@@ -826,8 +843,8 @@
 
     <p style="margin-top:2rem">The long-context arms race scales attention over raw tokens.
     Retrieval offers answers without guarantees. This is the third road: a bounded working set
-    over unbounded verified ground, with a conservation law at the interface. The entire
-    compression pipeline of modern ML — every distilled model, every compacted context — may be
+    over unbounded verified ground, with an auditable loss ledger at the interface. The broader
+    compression pipeline of modern ML — distilled models and compacted contexts — may be
     manufacturing debt that no current eval detects. That conjecture is this program's open
     kill-shot, and the instruments to test it cost dollars, not clusters. The ledger is
     open.</p>

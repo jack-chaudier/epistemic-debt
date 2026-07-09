@@ -14,42 +14,16 @@ re-analysis surfaces something worth chasing. Conventions:
   campaign shape: `gen_items.py` + `prereg_*.md` + `runner.py` (smoke/run/score) + README
   verdict + a regression test pinning the headline numbers.
 
+## Deferred
+
+- **Paper One — measurement paper.** The evidence spine is strong enough to outline, but the
+  current priority is repository consolidation and the next discriminating experiments, not
+  drafting. When resumed, use the dissociation core, transfer grid, honesty tax/premium,
+  real-document tier, scoped settlement result, section fingerprint, and register effects;
+  do not revive the constant-ρ framing. Status: **deferred by lead, 2026-07-09**.
+
 ## Queue (ranked by leverage per dollar — order set by the lead 2026-07-09)
 
--1. **PAPER ONE — the measurement paper. The critical path is now exposition, not evidence.**
-   Contents ready for weeks: the dissociation core (4 vendors, N=400, 6 schemas), the transfer
-   grid + DPI, iterated compaction + the interest rate, the honesty tax/premium, realdoc.
-   New material that sharpens it: the sections fingerprint (haiku 0.961 held-out / 1.00
-   realdoc forecast), forced-CoT register non-neutrality ("standardized CoT prompts measure
-   register match"), and the latent/miscalibrated split ("the reasoning was latent; the
-   miscalibration was not"). Paper two (distillation) seeds from the parity rerun. Experiments
-   continue in the gaps only. Status: **drafting starts this week.**
-   Then, in order: the $2 forced-CoT session (**DONE 2026-07-09** → row 35 — LATENT verdict;
-   parity must be engineered training-side, eval-time prompting moves every model
-   differently), the parity-clean rerun (upgraded: abstention as a scored channel + the
-   two-mutilation-type fingerprint on both students as preregistered secondary), and the
-   fingerprint grid AFTER the rerun (the section object re-indexed twice in 24h — let the
-   taxonomy stabilize before building the instrument).
-
-0. **Sections campaign — the fail-direction fingerprint (from the 2026-07-09 fresh-eyes
-   audit).** Evidence absence never produces noise: each model emits a characteristic default
-   verdict on evidence-destroyed cells (gpt/haiku fail-closed 0.86–0.94 on BOTH verdict sides;
-   Student-V fail-open 0.99/0.005), and the exploratory reanalysis splits this from the known
-   bias shelf — for gpt/haiku the section ≠ the no-notes prior (a mutilation-*triggered*
-   policy), while grok/Student-V are collapsed-prior. The section is also trainable and
-   sign-flippable by trace content alone (run-1 evidence). Discovery-shaped claim: measure the
-   section once ($5/model), forecast the *direction* of future silent failures — every current
-   eval measures error rates, none predicts error sign. Design + kill tests (perturbation
-   stability; conditionality vs prior; held-out directional forecast ≥ 0.80 incl. cached
-   realdoc/Arm-3b) sketched in `experiments/sections/2026-07-09/README.md`; prereg before any
-   spend. (~$4–6 API, mostly reanalysis.) Theory slot: adaptedness/martingale frame (verdict
-   tokens measurable w.r.t. the evidence filtration; debt = predictable drift = the section) —
-   evidence-position-slide micro-design + the queued forced-CoT probe test it. Status: **RUN 2026-07-09 — frozen reading NOT upheld (1/3 × 3), and the refutation is the
-   finding: the section is (model × artifact-type)-indexed (grok sign-flips between surgical
-   deletion and compression; haiku is the invariant fail-closed exemplar with sign-hit 0.961
-   held-out and transfer 0.94/1.00 to compression/realdoc). Successor: per-(model,
-   mutilation-type) fingerprint grid + a deny- AND approve-leaning comparator pair for the
-   cross-model control + abstention-offered as a first-class coordinate.**
 1. **Semantic-judge WHICH re-score of the Tier 1+2 cached responses.** (~$0.50, no new
    compression calls.) Retires the abbreviation parser artifact that decided grok's P-D3
    (LVEF/SBP acronyms → UNMATCHED — third scoring-regex incident), applies the
@@ -57,12 +31,8 @@ re-analysis surfaces something worth chasing. Conventions:
    original 19–28), and measures elimination-vs-retrieval per domain directly. Pattern exists:
    `experiments/rescore/2026-07-06/judge.py` (dual judge, adjudication file, agreement bar).
    Status: **ready to build**.
-2. **Reader inference boundary — DONE, and it REFUTED the depth-1 hypothesis.** The hypothesis
-   was "recovery = one-step elimination, nothing deeper — no arithmetic." It is **false**: all 3
-   models deploy one `base±offset` arithmetic step to recover the lost witness (recovery 0.65/
-   0.65/0.93; confirmatory c2 with the base-only leak forced to 0 upholds it, 0.65/0.73/0.98).
-   → `experiments/reader-inference-boundary/2026-07-08/` (README rows 28; RESULTS 2026-07-08).
-   **Successor (the boundary must be deeper):** the depth-1 arithmetic step is deployed, so the
+2. **Reader inference depth ladder (successor to the completed depth-1 run).** The depth-1
+   arithmetic step is deployed, so the
    real question is where computation *stops*. Design a depth ladder — 1 step (done), 2 chained
    steps (a = total − b − c, needing two prior resolutions), a multiplication/ratio step, and a
    2-hop dependency (resolve X to know which of Y/Z is the candidate). Prereg a monotone
@@ -119,22 +89,13 @@ re-analysis surfaces something worth chasing. Conventions:
    probe on Student-V (latent vs destroyed reasoning; pairs with the deferred exploratory lens
    probe — adapters retrieved locally). ~$10–15 GPU. Status: **run 1 complete (VOID +
    exploratory); redesign next**.
-7. **Real-document tier — DONE 2026-07-08, external validity UPHELD with a load-bearing
-   caveat.** On 12 real NTSB narratives with injected readings, the dissociation *sharpens*:
-   blind compaction keeps narrative valence, not content (crash→DENY reflex, APPROVED-side
-   decision accuracy 0.00 both models, Δ 0.87/0.93), and fusion recovers J to 0.67/0.77 but
-   only partially at short budgets. → `experiments/realdoc/2026-07-08/` (P-RD-1..4 4/4×2).
-   **Caveat for all external claims:** on real prose the naive-compaction failure is
-   *unreliable answers*, not just missing justification. Successors: the in-harness variant
-   (probe a real Claude Code session post-compaction) and longer-budget/selection-truncation
-   fusion for 500-word docs. Status: **passed with caveat; successors open**.
-8. **Coarseness sweep, conjunctive/disjunctive (roadmap item 2).** Shelf ∝ answer-quotient
+7. **Coarseness sweep, conjunctive/disjunctive (roadmap item 2).** Shelf ∝ answer-quotient
    coarseness — the remaining quantitative theory test; Tier 2 deliberately held logical
    structure fixed, this varies it. (~$3.)
-9. **Small cheap ones:** compaction-path ensembles (chain∪direct witness union was 14/30 vs
-   10–11 alone — is diversity a real intervention? ~$1); the U-shaped decision curve (verdict
-   accuracy worst at mid-compression — characterize the dip, possible standalone note);
-   Gemini P-G3 completion when a billed key exists.
+8. **Small cheap ones:** compaction-path ensembles (chain∪direct witness union was 14/30 vs
+   10–11 alone — is diversity a real intervention? ~$1); a fresh balanced mid-budget sweep
+   for the gpt-only accuracy trough (the apparent cross-model U was duplicated/confounded,
+   not a result); Gemini P-G3 completion when a billed key exists.
 
 ## Flagship deliverable: the witness-preserving RLM (adopted 2026-07-08)
 
@@ -184,10 +145,12 @@ page's road tab mirrors these stages — update its status chips as stages land.
   drops anything re-derivable within the reader's measured inference depth d; store a
   generating set, not the knowledge. Prereg: justified accuracy at basis-compaction ≥
   value-dense at strictly fewer realized words. Status: blocked on depth ladder.
-- **B3. The fixed point** (~$5, after the length-clamped ρ̄ rerun). Head-to-head over 10+
-  rounds: naive stack (ρ̄ ≈ 0.93) vs ledger runtime (compact → ledger → route → re-expand);
-  prereg effective ρ̄ ≥ 0.99 and flat Δ. Headline metric: rounds-to-half-witness (naive ~9 vs
-  ∞). Status: blocked on length-clamped rerun.
+- **B3. Squeeze-recovery stress test** (~$5). The clamped run retired rounds-to-half-witness:
+  held-length repetition is already flat in the tested arms. Compare a naive stack with the
+  ledger runtime (compact → ledger → route → re-expand) across a frozen schedule of forced
+  budget drops. Primary metrics: justified accuracy and witness recovery immediately after
+  each squeeze; guards: realized length, routing precision, and no paid call without a frozen
+  preregistration. Status: **ready to design; no longer blocked on the completed clamp**.
 - **B4. Calibrated-reader fine-tune — groundwork DONE 2026-07-08** →
   `experiments/ft-dataset/2026-07-08/`. Deterministic, $0-API SFT dataset distilling the
   calibrated debt-acknowledgment phenotype: 5,906 chat examples (5,021 train / 885 eval, split
@@ -285,6 +248,24 @@ page's road tab mirrors these stages — update its status chips as stages land.
   (reject-and-retry summaries shorter than ~0.9·W, or a fixed-token budget), extend to R=6–8, to
   partition ρ̄ into pure iteration loss vs length-settling and test ρ stability deep in the chain.
   If ρ is still ≈ 0.93 cross-model under the clamp, it is a genuine dynamical constant. (~$1–2.)
+  **2026-07-09 UPGRADE — the cached data already picks a side (RESULTS.md 2026-07-09 settlement
+  row; triple-verified):** death is absorbing (0/849 resurrections) and contraction-gated (1/346
+  deaths without contraction; h₀ MLE = 0 on grok/haiku), chains hit exact string fixed points
+  (26/40, 28/40), and a pooled h = h₀ + σ·contraction retrodicts all three ρ̄ including gpt's
+  null. So the clamp run is now a *discriminating* test between two frozen predictors: structural
+  model says clamped per-round survival ≥ 0.98 every round (S₈/S₂ ≥ 0.87); fitted-geometric says
+  S₈/S₂ ≈ 0.93⁶ ≈ 0.65. Full opposed-prediction prereg (P-RC-0..5, arms A clamp / B single-shot
+  state-function control / C schedule drop) drafted in the 2026-07-09 discovery-workflow report;
+  either outcome is a headline ("closing costs, not interest" vs "the constant was real").
+  **RUN 2026-07-09 → DONE** (`experiments/iterated-compaction-clamped/2026-07-09/`, RESULTS.md
+  row same date): settlement upheld in substance — clamped net decay 0.000/0.015/0.000 over
+  rounds 2–8 (fitted-geometric predicted 0.35/0.32/0.09), Arm C squeeze kills on cue, state-
+  function and absorbing checks pass, verdict flat. Frozen bookkeeping: P-RC-0 in-band guard
+  failed 3/3 (all misses over-length → headline inapplicable as frozen; per-model report),
+  P-RC-2 hazard 0.302 overshot [0.10, 0.28]. Successors: (i) re-freeze the guard as a floor
+  (L_{r+1} ≥ 0.9·L_r) and re-run the headline cheaply (mostly cache-reusable); (ii) two-regime
+  hazard with a prose-exhaustion term for deep squeezes. Public surfaces now retire t½≈9.7 and
+  scope the settlement result to the tested per-model arms.
 - 2026-07-07 — *Vorob'ev acyclicity as an empirical kill-shot.* Section 5.3's sheaf reading makes
   a zero-parameter structural prediction: the mirage (local consistency without a global section)
   can only exist when the observation-context hypergraph is cyclic; on acyclic covers the shelf
@@ -335,11 +316,70 @@ page's road tab mirrors these stages — update its status chips as stages land.
   missing-data register (J's fails to generalize across mutilation types). If abstention-uptake
   is a capability threshold, "offer the out" as a mitigation has a floor model size — one cheap
   sweep across the Qwen ladder would map it.
+- 2026-07-09 — *α is corpus-stable for gpt (EXPLORATORY, $0 cached re-analysis).* The open theory
+  question "is reader efficiency α stable per model across corpora?" now has a first answer from
+  cache: gpt α = 0.915 (incident) vs 0.917 (clinical), |Δα| = 0.002, and overlaying 6 domain
+  registers + highpower on gpt's incident line gives mean residual −0.002 (MAD 0.052) — α
+  generalizes across all 8 corpora. grok roughly stable (0.888/0.952; two outlier cells are the
+  known J.3 acronym parser artifact). haiku UNRESOLVED — its baseline α is parser-ambiguous
+  (0.732 frozen vs 1.203 corrected), so pin it in the queued semantic-judge re-score (queue 1)
+  before claiming. Scripts were session-scratch; regression is a one-file rerun over cached
+  budgetline/domains/highpower artifacts.
+- 2026-07-09 — *Budget≈25 decision-accuracy trough: one-model effect, NOT a cross-model U
+  (EXPLORATORY, corrects the queue-9 framing).* Provenance: the witness-compaction grok curve is
+  byte-identical to budgetline grok/incident — same file, so there are 3 independent incident
+  arms, not "three independent runs". Dip@25 vs {15,40} neighbors: gpt/incident 0.800 (24/30),
+  binomial p≈0.000; grok/haiku dips are 1–2 items (p 0.27/0.19 = noise); both clinical controls
+  flat. Pooled incident p = 0.003 but gpt-driven. Also confounded: DENIED-only items + deny
+  priors make low budgets artificially perfect. If chased, needs a fresh run with BOTH verdict
+  sides + denser mid-budget grid; candidate mechanism is the P-D2 false-nominal gist flipping
+  verdicts at partial compression.
 - 2026-07-09 — *Two reader philosophies, possibly lineage-mapped.* Under surgical ablation,
   grok and base-Qwen approve ~0.81 (closed-world: trust the visible), haiku/gpt deny 0.86–0.94
   (open-world: suspect the absence). Same split flips under compression for grok. If the
   philosophy is a training-lineage fingerprint, the section taxonomy becomes a provenance
   probe. Fold into the fingerprint grid, not before.
+
+- 2026-07-09 — *Discovery workflow (7 develop + 7 adversarial-verify + 3 judges): surviving
+  claims worth chasing.* (1) **Settlement-vs-interest** — see the upgraded iterated-compaction
+  successor above; judged top by 2/3 lenses; clamp run is the decisive $2. (2) **Justified-
+  retrieval lower bound for agentic context**: CCM annotated-streams Theorem 3.1 (online-MA
+  INDEX, hcost·vcost = Ω(N)) transfers to compacting agents with untrusted sub-call helpers —
+  sound justified retrieval needs h·w = Ω(n) while trusting retrieval costs O(log n); verifier
+  confirmed no published work states this for LLM/agent architectures, but the bound does NOT
+  bind live re-access RLMs (converts to call-costs), the JSPACE hierarchy itself is known
+  (Stoeckl SODA'23; Chakrabarti–Stoeckl CCC'24), and the debate/prover-verifier literature owns
+  the adjacent oversight framing — scope any writeup to the compaction-state regime.
+  (3) **Justification collapse** (generational): the term and the channel are unclaimed — all 8
+  model-collapse-literature definitions are answer/distribution-channel quantities; but
+  calibration-decay (2510.05133) owns "earliest warning," and CoT-dependent benchmarks DO see
+  the drift (row 33 GSM8K), so the claim must be scoped to complete-input answer-only evals.
+  G-loop design (~$50) drafted in the workflow report. (4) **Fabrication fingerprints**
+  (wildcard, from raw cached responses): gpt names the FIRST policy conjunct as culprit on
+  lost cells (0.90 lost vs 0.27 kept, 3 corpora, truth-uniform); frontier readers invent ZERO
+  numerals on lost cells across the whole transfer grid (confabulation is binding-level, not
+  token-level) while Student-V invents 43% with a digit-8 attractor — a zero-ground-truth debt
+  detector candidate; needs order-permutation + frozen-classifier prereg before any claim.
+  (5) **Oversight no-go**: the grand version died under verification (full-text on-distribution
+  monitors DO catch 27/30 debt items — haiku's missing-data register; the theorem reduces to
+  conditional indistinguishability once kernel equality is assumed). The 3/30 router misses
+  are only candidates for resampling; they do not establish kernel equality or no signal in
+  principle. Don't resurrect without new mathematics and paired kernel measurements.
+  Also landed: `proofs/section_obstruction.py` (RESULTS.md 2026-07-09) — the §5.3/§8
+  repositioning artifact; its V9 odd-cycle/bipartite split is the one theorem-target-quality
+  new piece.
+
+- 2026-07-09 — *Compression–reconstruction–section decomposition (CONJECTURE / synthesis).*
+  Let `q_B: x → a` be a budgeted artifact operator; `Cl_R(a)` everything reader `R` can recover
+  by direct read, candidate elimination, or bounded derivation; and `σ_(m,t,r)` the
+  answer/abstention policy indexed by model, artifact type, and register. For a query-required
+  witness `w*_q`, define reader-relative debt `D_R(a,q)=1[correct answer emitted ∧ w*_q∉Cl_R(a)]`.
+  This unifies settlement, `J≥S`, arithmetic reconstruction, model/artifact sections, register
+  non-neutrality, and RLM re-access without claiming they are the same mechanism. Predictions:
+  debt appears at contraction; stronger readers enlarge closure but cannot recreate absent
+  information; prompts/training can alter closure or section; recursive re-access expands the
+  available artifact. Status: **untested synthesis**. Next: retrospective fit, then a factorial
+  compression × derivability × register experiment.
 
 ## Done (moved from queue)
 
@@ -352,4 +392,6 @@ page's road tab mirrors these stages — update its status chips as stages land.
 - ~~Honesty premium reproduction~~ → `proofs/honesty_premium.py` (0.47×, 38.4×, dichotomy).
 - ~~Honesty Theorem exact check~~ → `proofs/honesty_theorem.py` — exact-witness honesty requires Q on all checked models; one-certificate honesty has an intermediate quotient on Q families (5/6/7, 6/7/8, 7/9/13 answer/certificate/joint states).
 - ~~Reader inference boundary (depth-1 hypothesis)~~ → `experiments/reader-inference-boundary/2026-07-08/` — REFUTED: readers deploy one arithmetic step of witness recovery (main + confirmatory c2). Successor = a deeper depth ladder (see queue item 2).
-- ~~Iterated compaction: the epistemic interest rate~~ → `experiments/iterated-compaction/2026-07-08/` — CONFIRMED 2/3 (grok/haiku ρ̄ ≈ 0.93/round, verdict persists; gpt near-idempotent null). Successor = length-clamped variant (see the dated idea above).
+- ~~Sections campaign~~ → `experiments/sections/2026-07-09/` — frozen model-only section fails; scoped model × artifact-type fingerprint recorded.
+- ~~Real-document tier~~ → `experiments/realdoc/2026-07-08/` — external validity passes with the caveat that naive-compaction answers themselves become unreliable.
+- ~~Iterated compaction + length-clamped successor~~ → `experiments/iterated-compaction/2026-07-08/` and `experiments/iterated-compaction-clamped/2026-07-09/` — constant-ρ interpretation retired; tested held-length arms are flat, panel headline inapplicable because P-RC-0 failed.
