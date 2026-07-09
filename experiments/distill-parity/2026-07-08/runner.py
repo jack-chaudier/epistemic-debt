@@ -78,9 +78,13 @@ TEACHER_J_R1 = (" For each policy parameter, quote its observed reading from the
                 "with exactly two lines:\nDECISION: APPROVED or DECISION: DENIED\n"
                 "PARAMETER: <the single failing parameter name> or PARAMETER: NONE")
 
-MAXTOK = dict(compress=256, compress_vd=256, decision=64, which=192, which_abstain=192,
-              nonotes=48, teacher_v=32, teacher_j=256, cap_answer=512,
-              guard_decision=64, cf_decision=64, cf_which=192)
+# decision/which caps raised 64/192 -> 512 after the dev battery revealed Student-J's trained
+# evidence-first register was TRUNCATED before its terminal DECISION line (responses_raw
+# preserved as responses_raw_truncated.jsonl). Instrumentation fix, not a prereg change: the
+# frozen compliance diagnostic (arm3a_compliance_diagnostic.md) requires the full response.
+MAXTOK = dict(compress=256, compress_vd=256, decision=512, which=512, which_abstain=512,
+              nonotes=256, teacher_v=32, teacher_j=256, cap_answer=512,
+              guard_decision=512, cf_decision=512, cf_which=512)
 
 
 def load_items(name):

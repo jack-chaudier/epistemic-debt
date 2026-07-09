@@ -1,0 +1,43 @@
+{
+ "dev_acc_V": {
+  "sv1": {
+   "APPROVED": 0.9933,
+   "DENIED": 0.98,
+   "overall": 0.9867
+  },
+  "sv2": {
+   "APPROVED": 1.0,
+   "DENIED": 0.98,
+   "overall": 0.99
+  },
+  "sv3": {
+   "APPROVED": 1.0,
+   "DENIED": 0.9867,
+   "overall": 0.9933
+  }
+ },
+ "dev_acc_J": {
+  "sj1": {
+   "APPROVED": 0.0533,
+   "DENIED": 0.9533,
+   "overall": 0.5033
+  },
+  "sj2": {
+   "APPROVED": 0.3067,
+   "DENIED": 0.5267,
+   "overall": 0.4167
+  },
+  "sj3": {
+   "APPROVED": 0.4267,
+   "DENIED": 0.4333,
+   "overall": 0.43
+  }
+ },
+ "eligible_V": [
+  "sv1",
+  "sv2",
+  "sv3"
+ ],
+ "eligible_J": [],
+ "selected": null
+}
