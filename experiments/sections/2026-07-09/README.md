@@ -38,8 +38,13 @@ the section is invisible until evidence is destroyed.
 3. **The section is trainable and sign-flippable by trace content alone:** verdict-only SFT
    turned a weak fail-closed teacher (0.40/0.56) into a hard fail-open student (0.99/0.005)
    with a degenerate always-approve prior — despite 50/50-balanced training data. Trace
-   content sets the section. (Student-J stays nearer the teacher and hedges without evidence —
-   its `[MISSING DATA]` register transferred to the prior channel.)
+   content sets the section. And Student-J reveals a **third route: the domain-shrunk
+   section** — anchored on lost DENIED cells J approves at 0.82, the *same sign* as V, just
+   softer, while routing ~76% of its no-evidence probability mass to the hedge channel.
+   J-training didn't flip the section's sign; it shrank the section's *domain* (rerouted mass
+   to abstention) and left the anchored default approve-leaning. Sign-flip (V) and
+   domain-shrink (J) are different levers, and only the second is what calibration training
+   should buy.
 
 ## Caveats (why this is a scent)
 
