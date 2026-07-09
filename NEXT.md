@@ -127,10 +127,14 @@ contract + the Δ meter, NOT the recursion (we extend their work, we don't race 
 
 ## Infinite-context build track (the road — see site/#road)
 
-Goal, honestly defined: **bounded-debt memory** — an agent that cannot forget *silently*
-(dropped → logged → reclaimable → else flagged; Δ = 0 by construction). Not lossless memory
-(Shelf Width Law forbids it). Stages are sequential; each gets its own prereg. The splash
-page's road tab mirrors these stages — update its status chips as stages land.
+North star: an indefinitely growing history that remains exactly recoverable, usable, and
+justifiable for every admissible future query. The immediate engineering milestone remains
+**bounded-debt memory** — an agent that cannot forget *silently* (dropped → logged →
+reclaimable → else flagged; Δ = 0 by construction). Do not equate that milestone with the
+literal objective. The Shelf Width Law prices particular checked quotients; it does not forbid
+lossless open systems with growing exact state or archive-backed certified reconstruction.
+Stages are sequential; each gets its own prereg. The splash page's road tab mirrors these
+stages, but this research continuation does not update the public site.
 
 - **B1. Certificate-compaction pilot — DONE 2026-07-08, quotient transfers PARTIALLY.**
   Certificates are the best-J arm on every model (0.956–0.978, Δ ≤ 0.04) and beat blind
@@ -213,13 +217,34 @@ page's road tab mirrors these stages — update its status chips as stages land.
   just values but *asserted normality*, and some readers weight it above their prior. The
   quotient theory has no slot for this — the summary's rhetorical stance is neither answer
   nor witness. Candidate formalization: gist = a noisy verdict token embedded in the artifact.
-- **Blind-vs-aware covering gap** (Appendix H.5): blind compactor pays Σ|candidates|, aware
-  pays fiber entropy; price of blindness → 0 when candidates fit the budget. Prove it.
-- **Certificate-honesty semantics.** The exact check found the quotient between M and Q for Q families. Formalize the general certificate quotient: what counts as a certificate object, how it composes, and when it collapses to full witness identity.
+- **Blind-vs-aware covering gap** (Appendix H.5): blind compactor pays for a candidate superset;
+  an aware compactor may pay only for contract-specific certificate state. Define the actual
+  answer-preserving map and measure before assigning an entropy price; test whether the price of
+  blindness approaches zero when candidates fit the budget.
+- **Certificate-continuation theory, after the exact boundary result.** E0 is independently
+  reproduced and the coded `Q_(k,p)` family now has an exact `k+1+p` right-state theorem, but
+  the general static-to-online conjecture is refuted by an unbounded `2 → n` family. The bare
+  finite-machine theorem and selector problem have close classical predecessors. Remaining:
+  proof-specific closed-cover semantics (a 2-state cover versus 3-state semantic-partition
+  counterexample is now pinned), sharper state/work/proof/fallback bounds, contract
+  extension/refinement, and generalization of the exact complete-frontier checkpoint law to
+  incomplete coverage and multiple accepted justifications.
+  → `theory/certificate-continuation-research-ledger.md`
 - **Fibered Shelf Width Law + repositioning** on Myhill–Nerode / ε-machines / Vorob'ev before
   any external claim (risk-register item; unchanged).
 
 ## Ideas parking lot (dated, no obligation)
+
+- 2026-07-09 — *Right-streaming width versus chunk-composable width.* In `Q_(k,p)`, exact
+  certificate streaming costs `k+1+p` states, while a fixed-priority two-sided quotient costs
+  `C(k+p+2,p+1)-1` (34/55/209 in E0). Test whether this gap predicts when recursive agents can
+  safely append raw events but cannot merge independently summarized branches.
+- 2026-07-09 — *Current-versus-temporal provenance phase boundary.* A versioned two-source,
+  two-proposition contract has polynomial complete-current frontier growth but identity-sized
+  complete all-as-of certificates. **Exact first answer:** predeclared checkpoint states factor
+  by segment; sublinear checkpoint density gives sublinear bits, linear density gives linear
+  bits, and even one adversarially selectable past boundary forces identity. Remaining: weaken
+  completeness, allow multiple certificates, and vary retraction/dependency semantics.
 
 - 2026-07-06 — *Coherent-debt-acknowledgment rate as a training metric.* Haiku natively says
   "the readings are absent" (0.79) where grok/gpt assert contradictions (0.00). If that rate
@@ -403,7 +428,12 @@ page's road tab mirrors these stages — update its status chips as stages land.
 - ~~J = S budget line~~ → REFUTED toward J ≥ S, `experiments/laws/2026-07-03/budgetline/`.
 - ~~Honesty premium reproduction~~ → `proofs/honesty_premium.py` (0.47×, 38.4×, dichotomy).
 - ~~Honesty Theorem exact check~~ → `proofs/honesty_theorem.py` — exact-witness honesty requires Q on all checked models; one-certificate honesty has an intermediate quotient on Q families (5/6/7, 6/7/8, 7/9/13 answer/certificate/joint states).
-- ~~Reader inference boundary (depth-1 hypothesis)~~ → `experiments/reader-inference-boundary/2026-07-08/` — REFUTED: readers deploy one arithmetic step of witness recovery (main + confirmatory c2). Successor = a deeper depth ladder (see queue item 2).
+- ~~Certificate-continuation E0 + first theory pass~~ → `proofs/certificate_continuation.py`,
+  independent `proofs/certificate_continuation_naive.py`, theorem/counterexample checkers, the
+  versioned dynamic contract, and `theory/certificate-continuation-research-ledger.md` — E0
+  passes; `Q_(k,p)` generalizes; universal no-extra-state and novelty claims fail; complete
+  temporal checkpoints yield an exact sparse-to-identity phase law.
+- ~~Reader inference boundary (depth-1 hypothesis)~~ → `experiments/reader-inference-boundary/2026-07-08/` — main arithmetic behavior remains OBSERVED after a disclosed surface confound; c2 confirmatory status is VOID because its frozen offset-balance guard failed and was accidentally filtered. Successor = a balanced c3 that beats every frozen surface heuristic before any deeper ladder (see queue item 2).
 - ~~Sections campaign~~ → `experiments/sections/2026-07-09/` — frozen model-only section fails; scoped model × artifact-type fingerprint recorded.
 - ~~Real-document tier~~ → `experiments/realdoc/2026-07-08/` — external validity passes with the caveat that naive-compaction answers themselves become unreliable.
 - ~~Iterated compaction + length-clamped successor~~ → `experiments/iterated-compaction/2026-07-08/` and `experiments/iterated-compaction-clamped/2026-07-09/` — constant-ρ interpretation retired; tested held-length arms are flat, panel headline inapplicable because P-RC-0 failed.

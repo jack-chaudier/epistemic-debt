@@ -7,7 +7,13 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "proofs"))
 sys.path.insert(0, str(REPO / "proofs" / "vendor"))
 
-from shelf_width_law import Q, shelf_width_predicted, MEASURED  # noqa: E402
+from shelf_width_law import (  # noqa: E402
+    MEASURED,
+    Q,
+    natural_answer_fiber_sizes,
+    natural_conditional_entropy_uniform_q,
+    shelf_width_predicted,
+)
 
 
 def test_fibration_base_is_bare_quotient():
@@ -19,6 +25,18 @@ def test_fibration_base_is_bare_quotient():
 def test_shelf_width_law_matches_closure_artifacts():
     for k, p, measured in MEASURED:
         assert abs(round(shelf_width_predicted(k, p), 3) - measured) < 1e-9
+
+
+def test_shelf_width_count_gap_is_not_automatically_fiber_entropy():
+    expected = {
+        (3, 2): ({1, 3, 5, 7, 9}, 2.253348),
+        (4, 2): ({1, 3, 5, 7, 9, 11}, 2.491998),
+        (5, 3): ({1, 7, 19, 37, 61, 91, 127}, 5.682973),
+    }
+    for (k, p), (fiber_sizes, entropy) in expected.items():
+        assert set(natural_answer_fiber_sizes(k, p)) == fiber_sizes
+        assert abs(natural_conditional_entropy_uniform_q(k, p) - entropy) < 1e-6
+        assert natural_conditional_entropy_uniform_q(k, p) != shelf_width_predicted(k, p)
 
 
 def test_honesty_tax_accounting_identity_and_known_values():

@@ -1,7 +1,8 @@
 # Reader inference boundary — how much does the read channel *compute*? (2026-07-08)
 
-Preregistered: `prereg_reader_inference_boundary.md` (main), `prereg_c2_confirmatory.md` (leak
-fix). New spend **$0.91** (main $0.72 + c2 $0.19), 1,980 calls, 3 models. Candidates DISCLOSED
+Preregistered: `prereg_reader_inference_boundary.md` (main), `prereg_c2_confirmatory.md` (attempted
+leak fix; confirmatory status VOID after audit). New spend **$0.91** (main $0.72 + c2 $0.19),
+1,980 calls, 3 models. Candidates DISCLOSED
 (deployed-J setting). Reader = the model reading constructed notes; **no compressor** — the notes
 are built deterministically so the required read-channel operation is controlled exactly.
 
@@ -57,7 +58,20 @@ recovery was equal in base-ambiguous vs base-decisive cells (grok 0.64/0.61, gpt
 leak by construction — both arithmetic baselines sit on the *pass* side, so only computing the
 offset reveals the culprit (base-only recovery forced to 0.000, verified mechanically).
 
-### c2 confirmatory — REFUTATION at preregistered strength
+### c2 behavior observed; confirmatory interpretation VOID after guard audit
+
+**Audit correction (2026-07-09).** The preregistration also required first-order surface
+features to remain within their frozen balance interval. The committed c2 corpus violates the
+offset-magnitude guard: the culprit has the larger offset on 46/60 items (0.7667), outside the
+allowed 0.35–0.65 range. `selfcheck_c2` originally removed every shared-checker issue whose first
+field started with `CORPUS`; that accidentally removed the `CORPUS-C` surface failure along with
+the inapplicable class-size messages. The checker and regression test now preserve this failure.
+
+The cached outputs below remain real observations on the generated corpus, but the confirmatory
+campaign is **VOID** under the repository's evidence rules. A no-arithmetic “choose the larger
+offset” heuristic scores 46/60 = 0.7667, above the Grok and GPT recovery rates. Haiku's 0.983 is
+suggestive, not clean confirmation. A newly generated c3 corpus with all frozen surface baselines
+balanced is required before restoring a confirmatory claim.
 
 | model | recovery(c2) | 95% CI | P-C2-1 (≥.60) | P-C2-2 (ci_lo>.50) |
 |---|---|---|---|---|
@@ -69,26 +83,24 @@ offset reveals the culprit (base-only recovery forced to 0.000, verified mechani
 - **P-C2-2** c2.ci_lower > 0.50 on ≥2/3 — **PASS (3/3)**.
 - **P-C2-3** residual base-only leak ≤ 0.34 — **PASS** (0.000 by construction).
 
-**Conclusion (PREREGISTERED, REFUTED target):** behavior-optimized readers deploy at least one
-arithmetic step of read-time justification recovery when the witness is encoded as a one-step
-computation over disclosed candidates. The strong "retrieval/elimination only, never compute"
-reading of G.2 is false. Read-time reader efficiency α therefore has a ceiling *above* pure
-candidate-elimination: it includes one-step numeric derivation.
+**Corrected conclusion:** the main run and explicit traces remain exploratory evidence that
+readers can perform one-step arithmetic recovery, and the c2 cached behavior is reusable as
+`OBSERVED`. The frozen confirmatory claim is **VOID**, so the strong cross-model arithmetic
+deployment conclusion is not established until a balanced c3 rerun beats every preregistered
+surface heuristic.
 
 ## What this changes
 
-- **G.2 is inverted a second time.** I.3 already showed readers do *more* than retrieval
-  (elimination); this shows they also do *more* than elimination (one arithmetic step). The read
-  channel is not retrieval-gated at depth 0 — it computes, at least one step deep, over the
-  disclosed candidate set.
-- **The depth boundary is not at "one arithmetic step."** The clean cross-model constant we hoped
-  for (recover at elimination, collapse at arithmetic) does not exist at this depth. If a boundary
-  exists it is deeper (multi-step / chained arithmetic) — the successor design (see NEXT).
-- **α ceiling.** J = α·S + β can exceed elimination-only recovery; a witness a reader can *recompute*
-  from surviving numbers is not lost to it. String-survival S is an even looser lower bound on
-  deployed justified accuracy than I.3 implied.
-- **Model heterogeneity.** haiku computes near-ceiling (0.93/0.98); grok/gpt sit at ~0.65–0.73 with
-  a real error rate. Depth-of-deployed-inference is model-specific — the α-heterogeneity story.
+- **The clean arithmetic claim is open.** Candidate elimination still demonstrates that the read
+  channel is not string retrieval alone, but c2 does not isolate arithmetic from frozen surface
+  heuristics.
+- **A c3 balance-first rerun comes before a deeper ladder.** Freeze direction, magnitude, base
+  ordering, lexical order, candidate position, and shallow metadata baselines; make model recovery
+  beat the strongest baseline by a preregistered paired margin.
+- **String loss remains only a lower bound on possible reconstruction.** Explicit arithmetic
+  traces show a mechanism worth testing, not a clean cross-model rate.
+- **Model heterogeneity remains descriptive.** Haiku's 0.983 on c2 is suggestive, while Grok/GPT
+  do not beat the 0.7667 larger-offset heuristic.
 
 ## Confounds handled (per CLAUDE.md checklist)
 
@@ -96,8 +108,9 @@ candidate-elimination: it includes one-step numeric derivation.
 2. Last-anchor parse: corrected last-`PARAMETER:` parser; UNMATCHED surfaced (haiku class-a = 25
    honest refusals-to-guess, correctly counted as non-recovery).
 3. Candidate disclosure: DISCLOSED, stated — this is the deployed-J quantity (I.3).
-4. Arithmetic correctness + margins ≥ 15%, single culprit, base-only leak forced to chance (c2):
-   all mechanical in `selfcheck` / `selfcheck_c2`, 0 problems before spend.
+4. Arithmetic correctness + margins ≥ 15% and single culprit were checked. The c2 base-only leak
+   was forced to chance, but the shared surface-balance failure was accidentally filtered before
+   spend; the confirmatory campaign is therefore VOID.
 
 ## Files
 

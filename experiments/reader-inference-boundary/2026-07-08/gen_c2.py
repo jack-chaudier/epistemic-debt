@@ -115,7 +115,15 @@ def gen_c2():
 def selfcheck_c2(items):
     """All class-c guards PLUS: both arith baselines on the pass side (base-only leak = chance)."""
     probs = G.selfcheck([dict(it, cls="c") for it in items])  # reuse the class-c structural guards
-    probs = [p for p in probs if not (isinstance(p[0], str) and p[0].startswith("CORPUS"))]  # sizes/surface re-done below
+    # The shared checker expects four 60-item classes, while c2 intentionally contains only
+    # class c.  Ignore only those inapplicable class-size complaints.  Do not filter
+    # ``CORPUS-C`` surface-balance failures: an earlier startswith("CORPUS") filter silently
+    # removed the offset-magnitude imbalance that voids the confirmatory interpretation.
+    probs = [
+        p
+        for p in probs
+        if not (p[0] == "CORPUS" and p[1] == "class-size")
+    ]
     base_leak = 0
     for it in items:
         cs = it["culprit_slot"]

@@ -39,7 +39,7 @@ def test_readme_result_ids_are_contiguous_and_ordered():
         int(match.group(1))
         for match in re.finditer(r"^\| (\d+) \|", (REPO / "README.md").read_text(), re.MULTILINE)
     ]
-    assert ids == list(range(1, 39))
+    assert ids and ids == list(range(1, ids[-1] + 1))
 
 
 def test_program_totals_match_public_surfaces():

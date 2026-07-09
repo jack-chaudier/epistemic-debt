@@ -329,7 +329,7 @@
   <header class="paper-header">
     <p class="eyebrow">
       <span>Ongoing research note</span>
-      <span>Evidence ledger v38</span>
+      <span>Evidence ledger v42</span>
       <span>Updated 9 July 2026</span>
     </p>
 
@@ -373,10 +373,10 @@
 
   <div class="strip" aria-label="Program at a glance">
     <!-- UPDATE: these four numbers track verified public scope. -->
-    <div><b>38</b><span>headline results</span></div>
+    <div><b>42</b><span>headline results</span></div>
     <div><b>4</b><span>model vendors</span></div>
     <div><b>6</b><span>document schemas</span></div>
-    <div><b>70</b><span>integrity tests</span></div>
+    <div><b>80</b><span>integrity tests</span></div>
   </div>
 
   <hr class="double-rule">
@@ -556,12 +556,32 @@
 
     <article class="finding">
       <h3>Readers compute more than we predicted — our own law got refuted.</h3>
-      <p>The preregistered "retrieval and elimination only" hypothesis failed: all three models
-      deploy a one-step arithmetic recovery of a destroyed witness
-      (<span class="stat">0.65–0.98</span>, with the shortcut heuristic forced to zero by
-      construction). Read-time inference depth is real, model-specific, and now measurable.</p>
-      <div class="meta"><span class="label refuted">Refuted — sharper law recorded</span>
+      <p>Candidate elimination is real, and arithmetic traces are suggestive, but the attempted
+      c2 confirmation is <b>VOID</b>: a frozen surface-balance guard failed and was accidentally
+      filtered. A larger-offset heuristic scores <span class="stat">46/60</span>, above two model
+      results. A balanced c3 rerun is required before claiming cross-model arithmetic recovery.</p>
+      <div class="meta"><span class="label refuted">c2 confirmatory status · VOID</span>
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/reader-inference-boundary">reader-inference-boundary</a></div>
+    </article>
+
+    <article class="finding">
+      <h3>Static certificate compression can fail without bound online.</h3>
+      <p>A compact representation that is valid now need not survive future updates. An exact
+      unary family has static certificate minimum <span class="stat">2</span> but continuation-safe
+      minimum <span class="stat">n</span>; allowing witness deletion can expand an add-only
+      <code>p+1</code>-state system to all <code>2<sup>p</sup></code> survivor subsets.</p>
+      <div class="meta"><span class="label exact">Theorem + exact counterexamples</span>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/certificate_congruence_counterexamples.py">continuation counterexamples</a></div>
+    </article>
+
+    <article class="finding">
+      <h3>Future proof obligations—not history length alone—set active memory.</h3>
+      <p>In an exact versioned contract, predeclared temporal checkpoints factor by interval. A
+      fixed checkpoint count needs <span class="stat">O(log n)</span> active bits; positive-density
+      checkpoints need <span class="stat">Θ(n)</span>. Allowing even one adversarially selected past
+      boundary makes every event history distinguishable.</p>
+      <div class="meta"><span class="label exact">Theorem + independent exact sweep</span>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/checkpoint_frontier_theorem.py">checkpoint theorem</a></div>
     </article>
 
     <article class="finding">
@@ -638,7 +658,7 @@
         <span class="label observed">Observed</span>
         <span class="label observed">Conjecture</span>
       </div>
-      <p style="margin-top:1rem">The public ledger currently records 38 headline results across
+      <p style="margin-top:1rem">The public ledger currently records 42 headline results across
       exact computations, confirmatory campaigns, and explicitly labeled exploratory analyses;
       the full program used approximately 118,000 API and local-GPU calls at a recorded API/GPU
       spend of $32.24. Repository tests pin selected totals, metadata, and claim-boundary
@@ -728,6 +748,10 @@
     <div class="status-row"><b>Exact · finite</b><span>Answer and witness preservation can require
     different quotient sizes. In <code>Q₍₅,₃₎</code>, answer, one-certificate, and exact-witness
     semantics require 7, 9, and 13 states respectively. This is not a universal storage theorem.</span></div>
+    <div class="status-row"><b>Exact · continuation</b><span>For one versioned checkpoint contract,
+    sparse predeclared obligations require sublinear active information, while dense or
+    retroactively selectable obligations become linear or identity-sized. Static certificate
+    compatibility can understate online state by an unbounded factor.</span></div>
     <div class="status-row"><b>Empirical</b><span>Channel separation replicates across vendors,
     high-power samples, six schemas, and a semi-synthetic real-prose tier. Value-dense and fusion
     objectives improve justified accuracy. Held-length survival is nearly flat through round 8
@@ -790,9 +814,22 @@
       Matched-access LLM certificate economy failed in two of three tested models.</figcaption>
     </figure>
 
+    <figure class="figure-card" aria-labelledby="r3-caption">
+      <div class="qbars" role="img" aria-label="Exact active-memory scaling by temporal obligation density: fixed checkpoints logarithmic, sublinear checkpoint count sublinear, positive-density checkpoints linear">
+        <div class="qbar answer">fixed checkpoint count · O(log n) bits</div>
+        <div class="qbar certificate">sublinear checkpoint count · o(n) bits</div>
+        <div class="qbar witness">positive-density checkpoints · Θ(n) bits</div>
+      </div>
+      <p class="qnote">more future temporal distinctions admitted →</p>
+      <figcaption id="r3-caption"><b>Fig. R3 — Exact temporal-obligation phase law.</b>
+      Predeclared complete-frontier checkpoints factor by interval in the checked versioned
+      contract. Permission to choose even one arbitrary past boundary after ingestion recovers
+      the identity quotient. This is a fixed-ontology theorem, not yet a general agent-memory law.</figcaption>
+    </figure>
+
     <div class="evidence-grid">
       <article><span class="label prereg">Preregistered</span><h3>Objectives can preserve more support</h3><p>Value-dense compaction improved J at matched length. A same-clause fusion rule removed unwitnessed confidence in the tested arms, while visibly overspending the requested budget by roughly 1.8×.</p></article>
-      <article><span class="label refuted">Refutation → constraint</span><h3>Readers can reconstruct some losses</h3><p>All three readers recovered a destroyed witness through one constructed arithmetic step. Any verified-basis compressor therefore needs a deterministic checker and a measured depth cap; model confidence is not a proof of reconstructibility.</p></article>
+      <article><span class="label refuted">VOID confirmation → constraint</span><h3>Some losses may be reconstructible</h3><p>Explicit arithmetic traces are suggestive, but the c2 confirmation failed a frozen surface-balance guard. Any verified-basis compressor needs a deterministic checker; model confidence and contaminated recovery rates are not proofs of reconstructibility.</p></article>
       <article><span class="label prereg">Measured rounds 2–8</span><h3>Loss tracks squeezing in the tested schedule arm</h3><p>Held-length endpoint survival was 1.000, .985, and 1.000 across the three models, against frozen geometric predictions .651, .677, and .913. The panel guard failed 3/3, so no extrapolation beyond the measured horizon is shown. A separate Grok schedule arm localized loss at the forced squeeze.</p></article>
       <article><span class="label observed">Cached prototype</span><h3>A loss manifest can route recovery</h3><p>String-checked query-policy values on one cached structured corpus produced recall 1.00, precision .917, and 30/30 end-to-end recovery. Emitting and verifying that manifest live remains open.</p></article>
     </div>
@@ -824,8 +861,9 @@
 
     <div class="stage"><div class="k">Stage 0</div><div>
       <p><b>Evidence base assembled.</b> Exact finite models, preregistered dissociations,
-      objective interventions, held-length tests, and cached ledger reanalysis exist as separate
-      artifacts. They do not yet form one runtime.</p>
+      continuation theorems, temporal state-complexity laws, objective interventions,
+      held-length tests, and cached ledger reanalysis exist as separate artifacts. They do not
+      yet form one runtime or a general evolving-contract theory.</p>
       <div class="meta"><span class="label observed">Done · mixed evidence types</span></div>
     </div></div>
 

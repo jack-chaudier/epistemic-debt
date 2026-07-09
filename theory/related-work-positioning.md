@@ -29,7 +29,7 @@ tied to real papers; they are excluded.
 | 2 | Law 1 (justification has no gradient) + 3-way unification | **NOVEL law; ingredient (b) SCOOPED** | FACTUM 2601.05866 owns attribution drift; L-CiteEval 2410.02115 owns citation fragility; Barez 2025 owns "CoT is lossy" |
 | 3 | Debt is artifact-borne (no reader recovers a destroyed witness; reasoning can't buy it back) | **NOVEL (leaning), umbrella anticipated** | KV-eviction content-selective drop (Pitfalls 2510.00231); compression info-retention (Łajewska 2503.19114) |
 | 4 | Δ = accuracy − justified-accuracy + abstention-delta diagnostic | **PARTIALLY ANTICIPATED (metric scooped; localizer novel)** | AttributedQA/AIS 2112.12870, ALCE 2305.14627, RAGAS = "justified accuracy" already |
-| 5 | Exact/finite-model program (shelf width = fiber entropy; honesty tax/premium; certificate quotient) | **PARTIALLY ANTICIPATED (math old; interpretation novel)** | Bounded-Interaction Myhill–Nerode 2603.21399; computational mechanics; orbit-stabilizer; Wyner–Ziv/IB-side-info |
+| 5 | Exact/finite-model program (state-count gaps; honesty tax/premium; certificate and continuation quotients) | **PARTIALLY ANTICIPATED; core automata mathematics old** | Bounded-Interaction Myhill–Nerode 2603.21399; incompletely specified FSMs/closed covers; computational mechanics; orbit-stabilizer; Wyner–Ziv/IB-side-info |
 | 6 | Iterated compaction settlement (loss tracks contraction; flat-at-held-length in tested arms) | **PARTIALLY ANTICIPATED; constant-ρ novelty REFUTED** | Broken Telephone 2502.20258; Factory.ai; "Beyond Exponential Decay" 2505.24187 |
 | 7 | Fusion contract / self-certifying prose | **SCOOPED (numeric); PARTIALLY ANTICIPATED (general)** | Proof-Carrying Numbers 2509.06902; SAFE 2505.12621; subsentence citations 2406.06125 |
 | 8 | Loss-ledger routing (deterministic dropped-names ledger + re-expansion) | **NOVEL (mechanism), high convergence risk** | Knowledge Objects 2603.17781 (same phenotype, different fix); typed-provenance memory 2605.25869 |
@@ -170,7 +170,7 @@ one novel, defensible seed. Drop any claim that Δ-the-metric is new; keep the e
 and on doing it *under memory compression* (the attribution line evaluates single-turn RAG with passages
 in-context — a citing failure, not an eviction failure).
 
-### Claim 5 — Exact/finite-model program (shelf width = fiber entropy; honesty tax/premium; certificate quotient)
+### Claim 5 — Exact/finite-model program (count gaps; honesty tax/premium; certificate and continuation quotients)
 
 **Closest works.** Bounded-Interaction Myhill–Nerode (arXiv:2603.21399, reported) — coarse-vs-fine
 quotient hierarchy under a bounded observer, with the gap quantified and converted to a value-transfer
@@ -434,8 +434,10 @@ Myhill–Nerode/ε-machines/Vorob'ev item; sharpen it):
 >   Calibrated debt-acknowledgment FT (B4) must benchmark against Abstain-R1 (2604.17073).
 > - *Quotient-math exposure:* Bounded-Interaction Myhill–Nerode (2603.21399) independently reformalizes the
 >   coarse/fine quotient gap in an exact setting. Sharpen the existing risk item: the moat is the
->   calibration/gauge *interpretation* + honesty-premium numbers + certificate quotient, not the identity
->   "shelf = fiber entropy" (a restatement of orbit-stabilizer / Myhill–Nerode / C_μ).
+>   calibration interpretation + honesty-premium numbers + certificate/continuation obligations.
+>   The earlier bare identity “shelf = fiber entropy” is not established: the natural
+>   answer-preserving map has nonconstant fibers, and the global count ratio is not automatically
+>   Shannon conditional entropy.
 > - *Term collision:* "epistemic debt" is taken in the human-comprehension sense (2602.20206, viXra
 >   2601.0013); "justification gap" collides with Levine and an adjacent CoT-compression usage. Disambiguate
 >   on first external use.

@@ -1,8 +1,10 @@
 """Integrity checks on committed experiment artifacts (and secret hygiene)."""
 import csv
+import importlib.util
 import json
 import re
 import subprocess
+import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -316,6 +318,24 @@ def test_reader_inference_boundary_corpus_and_confound_clean():
     c2 = [json.loads(l) for l in (READER_INF / "items_c2.jsonl").open()]
     assert len(c2) == 60
 
+    # The frozen c2 prerequisite is VOID: its original wrapper filtered every shared
+    # ``CORPUS*`` issue, including this required surface-balance guard.  Pin the discovered
+    # failure so a future cleanup cannot silently restore the confirmatory label.
+    old_path = list(sys.path)
+    old_gen_items = sys.modules.pop("gen_items", None)
+    try:
+        c2_spec = importlib.util.spec_from_file_location("rib_gen_c2", READER_INF / "gen_c2.py")
+        c2_gen = importlib.util.module_from_spec(c2_spec)
+        c2_spec.loader.exec_module(c2_gen)
+        c2_problems, base_leak = c2_gen.selfcheck_c2(c2)
+    finally:
+        sys.path[:] = old_path
+        sys.modules.pop("gen_items", None)
+        if old_gen_items is not None:
+            sys.modules["gen_items"] = old_gen_items
+    assert base_leak == 0.0
+    assert ("CORPUS-C", "surface-leak", "offset-bigger", 0.767) in c2_problems
+
 
 def test_reader_inference_boundary_headline_results():
     # pin the 2026-07-08 verdict: the "retrieval-not-inference" reading is REFUTED — arithmetic
@@ -334,7 +354,8 @@ def test_reader_inference_boundary_headline_results():
         assert res["per_model"][m]["recovery"]["c"]["p"] > 0.50, f"{m}: recovery(c) above floor"
     assert res["verdict"]["retrieval_reading_refuted_on"] == ["gpt", "grok", "haiku"]
 
-    # the c2 confirmatory (base-only leak forced to 0) upholds the refutation at prereg strength
+    # The cached c2 model behavior remains a real observation, but its confirmatory label is
+    # VOID because the frozen surface-balance prerequisite failed (pinned in the corpus test).
     c2 = json.loads((READER_INF / "reader_inference_boundary_c2_results.json").read_text())
     assert c2["base_only_leak"] == 0.0
     assert c2["P-C2-3_no_residual_base_leak"]["passed"] is True

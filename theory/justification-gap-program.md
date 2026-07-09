@@ -16,9 +16,12 @@ Everything in this document is an attempt to promote that finding from a propert
 
 ---
 
-## 1. A theorem hiding in the existing formulas (the fibration reading)
+## 1. A count gap hiding in the existing formulas (fibration remains a target)
 
-This section is new, exact, and checkable today against artifacts already in this repository.
+**Audit correction, 2026-07-09.** The original version of this section promoted a global
+state-count ratio into a fibration and Shannon-entropy theorem without specifying an
+answer-preserving map or distribution. The count identity is exact; the stronger interpretation
+is not established.
 
 Observe that the bare answer quotient is the p = 1 case of the witness quotient:
 
@@ -28,30 +31,50 @@ Observe that the bare answer quotient is the p = 1 case of the witness quotient:
 ⇒  M_k = Q_(k,1)        (confirmed: Q_(1,1)..Q_(5,1) = 5, 9, 14, 20, 27 = M_1..M_5 in the phase-sweep table)
 ```
 
-So the witness quotient is a **fibration over the answer quotient**: each answer-level state at depth d carries a fiber of (d+2)^(p−1) witness configurations. The answer quotient is the base space; witness identity lives in the fibers; compression that respects answers is free to scramble fibers.
+Projection onto one protected-witness coordinate has fibers of size `(d+2)^(p−1)`, but that
+projection is not generally answer-preserving: a different coordinate can determine the answer.
+For the natural answer map `(d,c_1,...,c_p) → (d,max_i c_i)`, the fiber above frontier `f` has size
 
-**The check.** The separator-closure experiment measured the post-closure shelf width for Q_(5,3) as **4.858 bits**. The fibration predicts the shelf width should be the log answer-weighted mean fiber size:
+```
+(f+2)^p - (f+1)^p,
+```
+
+which varies with `f`.
+
+**The exact check.** The separator-closure experiment measured the post-closure state-count gap
+for `Q_(5,3)` as **4.858 bits**:
 
 ```
 ω_closed = log2( |Q_(k,p)| / |M_k| ) = log2( Σ(d+2)^p / Σ(d+2) )
 Q_(5,3):  log2(783 / 27) = log2(29) = 4.857981  ✓  (matches the measured 4.858 exactly)
 ```
 
-The measured quantity and the structural quantity coincide. This upgrades the shelf from "an observed gap" to a **computable invariant with a closed form**: the shelf width is the entropy of the witness fiber.
+The measured quantity and global count ratio coincide. They do not automatically equal Shannon
+conditional entropy. Under a uniform distribution on `Q` and the natural max-coordinate answer
+map, `H(Q|M)` is 5.682973 bits for `Q_(5,3)`, not 4.857981. The exact checked result is therefore a
+global state-count gap matching the selected closure artifacts.
 
-**Shelf Width Law (theorem target).** *For any witness-faithful contract whose witness quotient fibers over its answer quotient, the closed (probe-complete) shelf width equals the log of the answer-state-weighted mean witness-orbit size:*
+**Shelf Width Law (repaired theorem target).** Specify an answer-preserving map, a measure on
+states, and the operational channel whose information cost is being measured. Then characterize
+when the closure gap equals a fiber statistic or conditional entropy:
 
 ```
 ω(C) = log2( E_{answer states}[ |witness orbit| ] )
 ```
 
-**The symmetry refinement.** The existing symmetry count `|Q^sym| = C(k+p+2, p+1) − 1` says: when the task is invariant under permuting witnesses, you pay only for the multiset, not the labeled tuple. This generalizes the law to:
+**The symmetry refinement (conjectural interpretation).** The existing symmetry count
+`|Q^sym| = C(k+p+2, p+1) − 1` says that a permutation-invariant encoding can pay for the multiset
+rather than the labeled tuple. A possible generalization is:
 
 > **The justification cost of a task is the entropy of its witness orbit under the answer-preserving symmetry group the task actually respects.**
 
-This is a gauge-theoretic statement. Answers are the gauge-invariant observables; witnesses are the gauge; symmetry reduction is gauge fixing; the shelf is the volume of the gauge orbit. Systems under memory pressure spontaneously "fix the gauge" — they keep invariants and discard the section — and no observable defined on invariants can detect that it happened. This is why the mirage is *silent* by construction, not by accident.
+The gauge language is currently a metaphor, not an established theorem. Answers may behave like
+invariants and witnesses like discarded coordinates, but the relevant map, group action, measure,
+and operational interpretation must be supplied before using orbit-volume or entropy language.
 
-Immediate work: (a) verify the law on Q_(3,2) — prediction ω_closed = log2(54/14) = 1.9475 bits — and across the closure sweep grid; (b) prove it for the fibered case; (c) state the general (non-fibered) version via orbit counting.
+Immediate work: (a) retain the verified global count ratios; (b) classify the natural
+answer-preserving maps and their nonconstant fibers; (c) state any entropy result with an explicit
+distribution; and (d) prove or refute a genuinely operational non-fibered version.
 
 ---
 
@@ -194,14 +217,17 @@ Each law above has a cheap empirical assassin. In order of impact-per-dollar:
 
 - **Priority exposure, empirical (2026-07-08 audit):** "When Summaries Distort Decisions" (2606.29251, Jun 2026) independently runs blind real-document compression that silently drops evidence and flips decisions. Row 31 must cite it and hold the valence-vs-decontextualization + spuriously-preserved-answer daylight, or it reads as a special case.
 - **Priority exposure, phenomenon:** attribution drift is owned by FACTUM (2601.05866); Law 1 must cite it as prior for phenomenon (b), and the "justified accuracy" metric must concede AttributedQA/AIS/ALCE. Calibrated debt-acknowledgment FT (B4) must benchmark against Abstain-R1 (2604.17073).
-- **Quotient-math exposure:** Bounded-Interaction Myhill–Nerode (2603.21399) independently reformalizes the coarse/fine quotient gap in an exact setting. The moat is the calibration interpretation + honesty-premium numbers + certificate quotient, not the identity "shelf = fiber entropy" (a restatement of orbit-stabilizer / Myhill–Nerode / C_mu).
+- **Quotient-math exposure:** Bounded-Interaction Myhill–Nerode (2603.21399) independently
+  reformalizes the coarse/fine quotient gap in an exact setting. The defensible program is the
+  calibration interpretation + honesty-premium numbers + certificate/continuation obligations;
+  the earlier bare identity “shelf = fiber entropy” is neither established nor a novelty moat.
 - **Term collision:** "epistemic debt" is taken in the human-comprehension sense (2602.20206, viXra 2601.0013); "justification gap" collides with Levine and an adjacent CoT-compression usage. Disambiguate on first external use. Full audit: theory/related-work-positioning.md.
 
 ## Appendix A — First exact checks (2026-07-03)
 
 Both checks run against artifacts already in this repository; verification scripts in the session scratchpad (`verify_conservation.py`).
 
-### A.1 Shelf Width Law: VERIFIED (3/3 closure families)
+### A.1 Shelf-width count ratio: VERIFIED (3/3 closure families); entropy law open
 
 Predicted `ω_closed = log2(|Q_(k,p)| / |M_k|)` vs measured post-closure shelf width in
 the stark separator-closure artifact (`results/quotient-thresholds/separator-closure-experiment/` in [jack-chaudier/stark](https://github.com/jack-chaudier/stark); exact check reproduced here by [proofs/shelf_width_law.py](../proofs/shelf_width_law.py)):
@@ -212,7 +238,9 @@ the stark separator-closure artifact (`results/quotient-thresholds/separator-clo
 | Q_(4,2) | 2.170 | 2.169925 | 20 = \|M_4\| |
 | Q_(5,3) | 4.858 | 4.857981 | 27 = \|M_5\| |
 
-The closure tables confirm the mechanism: the answer channel saturates at exactly the fibration base M_k while the joint channel saturates at Q_(k,p). The closed shelf is the fiber entropy, as §1 predicts.
+The closure tables confirm the reported state-count gap: the checked answer channel has `|M_k|`
+states while the joint channel has `|Q_(k,p)|`. They do not establish a uniform fibration or an
+unconditional entropy identity; §1 records the map-level correction.
 
 ### A.2 Conservation: rate-1 REFUTED; honesty tax and honesty premium discovered
 
@@ -501,23 +529,18 @@ disclosed candidate set* (α up to 1.20). Both left open whether the read channe
 compressor) encode the lost witness at four derivability depths — absent, absence-spottable,
 recoverable by one `base±offset` arithmetic step, or plainly present — with candidates disclosed.
 
-The depth-1 hypothesis ("recovery = elimination and nothing deeper, no arithmetic") is **REFUTED**:
-all three models recover the arithmetic-encoded culprit well above the guess floor (0.65/0.65/0.93
-grok/gpt/haiku) while demonstrably able to do the isolated arithmetic (≥0.88), so the recovery is a
-*deployment* fact, not capacity. A confirmatory corpus (`c2`) that forces the base-only heuristic to
-exactly chance by construction upholds it at preregistered strength (0.65/0.73/0.98, Wilson lower
-bounds above 0.50 on all three). Traces are explicit (`97 + 25 = 122 > 100 ⇒ fail`).
+The main run produced arithmetic-class recovery of 0.65/0.65/0.93 (grok/gpt/haiku), and explicit
+traces sometimes perform the intended calculation. The attempted confirmatory `c2` corpus forced
+the base-only heuristic to zero but failed a separate frozen surface-balance prerequisite: the
+culprit has the larger offset on 46/60 items (0.7667), outside the allowed 0.35–0.65 interval. A
+wrapper bug filtered the resulting `CORPUS-C` issue. The c2 confirmatory interpretation is
+therefore **VOID**; its cached behavior is exploratory/`OBSERVED`. A balanced c3 rerun must beat
+every frozen surface heuristic before arithmetic deployment is a confirmatory result.
 
-Consequences. (a) **The read channel is not retrieval-gated at depth 0** — it inverts G.2 a second
-time (I.3: more than retrieval; M: more than elimination). Read-time reader efficiency α has a
-ceiling *above* candidate-elimination: a witness a reader can *recompute* from surviving numbers is
-not lost to it, so string-survival S is an even looser lower bound on deployed justified accuracy.
-(b) **There is no cross-model depth-1 constant.** The hoped-for "recover at elimination, collapse at
-arithmetic" boundary does not exist at one step; haiku computes near-ceiling while grok/gpt carry a
-real error rate. If an inference-depth constant exists (the model-card axis of the 2026-07-07 idea)
-it lives *deeper* — chained/multi-hop derivation — which is the successor design. (c) For the
-greppable-debt program this cuts the same way I.3 did but harder: a ledger can still prove a value
-was dropped, but "dropped" ≠ "unrecoverable" when the reader can recompute it from what survived.
+Consequences. (a) Candidate elimination remains established from the earlier budget-line work.
+(b) One-step arithmetic reconstruction is plausible and directly observed in traces, but its
+cross-model causal confirmation is open. (c) “Dropped” still need not mean “unrecoverable”; any
+verified-basis compressor needs deterministic derivation checks rather than model confidence.
 
 ## Appendix N — Settlement, not interest: witness loss tracks contraction (2026-07-08/09)
 
