@@ -29,11 +29,13 @@ parity-matched, Δ-separated, shift-tested (full-doc counterfactual = the weight
 | 2026-07-08 | nmzb9ecrnq2gwb | H100 80GB SXM (AP-IN-1, secure) | 2.99 | 0.36 (21:24–21:46 UTC) | deps + vLLM + 12,000 teacher trace calls | 1.07 |
 | 2026-07-08/09 | a17mckiju6mrk6 | H100 80GB SXM (AP-IN-1, secure) | 2.99 | 2.54 (21:54–00:27 UTC) | probe (500) + regen traces (19,000) + 2× student QLoRA + all eval batteries (25,440 records) | 7.60 |
 
+| 2026-07-09 | adl55jkme0w1a1 | RTX 4090 (EU-RO-1, secure) | 0.69 | 0.30 (00:29–00:47 UTC) | base-model capability control (500 calls) | 0.21 |
+
 Note: nmzb9ecrnq2gwb could not restart after the STOP pause (host GPU taken — the stop/start
 trap); volume held nothing unique (teacher_raw committed, venv/HF-cache rebuildable), deleted
 and re-provisioned as a17mckiju6mrk6 with a scripted setup.
 
-**Cumulative GPU spend: $8.67. Campaign closed 2026-07-09 00:27 UTC; account holds zero pods.**
+**Cumulative GPU spend: $8.88. Campaign closed 2026-07-09 00:47 UTC; account holds zero pods.**
 API spend: $0.00 (all inference was pod-local). Adapters (all checkpoints, both students)
 retrieved to `adapters/` locally (not committed — 1.6GB; regeneration is deterministic from the
 committed traces + frozen config).
