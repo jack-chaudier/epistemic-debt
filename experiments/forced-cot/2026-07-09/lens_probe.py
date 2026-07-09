@@ -53,8 +53,9 @@ def gaps_for(model, it):
     ids = tok(prompt, return_tensors="pt").to(model.device)
     with torch.no_grad():
         out = model(**ids, output_hidden_states=True)
-    lm = model.get_output_embeddings().weight
-    norm = model.base_model.model.model.norm if hasattr(model, "base_model") else model.model.norm
+    core = model.get_base_model() if hasattr(model, "get_base_model") else model
+    lm = core.get_output_embeddings().weight
+    norm = core.model.norm
     g = []
     for h in out.hidden_states[1:]:
         v = norm(h[0, -1]).to(lm.dtype)

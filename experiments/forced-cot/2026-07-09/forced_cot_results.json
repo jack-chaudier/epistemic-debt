@@ -1,0 +1,114 @@
+{
+ "models": {
+  "sv": {
+   "cap_cot": {
+    "gsm8k": 0.448,
+    "mmlu": 0.44,
+    "gsm8k_median_tokens": 205
+   },
+   "gsm8k_bare_frozen": 0.152,
+   "abl_bare": {
+    "n": 360,
+    "approve": 0.9972,
+    "anchored": 360,
+    "abstain": 0.0,
+    "unanchored": 0.0
+   },
+   "abl_cot": {
+    "n": 360,
+    "approve": 0.9528,
+    "anchored": 360,
+    "abstain": 0.0,
+    "unanchored": 0.0
+   },
+   "abl_abstain": {
+    "n": 360,
+    "approve": 1.0,
+    "anchored": 360,
+    "abstain": 0.0,
+    "unanchored": 0.0
+   }
+  },
+  "sj": {
+   "cap_cot": {
+    "gsm8k": 0.204,
+    "mmlu": 0.44,
+    "gsm8k_median_tokens": 249
+   },
+   "gsm8k_bare_frozen": 0.524,
+   "abl_bare": {
+    "n": 360,
+    "approve": 0.9184,
+    "anchored": 294,
+    "abstain": 0.0,
+    "unanchored": 0.1833
+   },
+   "abl_cot": {
+    "n": 360,
+    "approve": 0.8895,
+    "anchored": 353,
+    "abstain": 0.0,
+    "unanchored": 0.0194
+   },
+   "abl_abstain": {
+    "n": 360,
+    "approve": 0.8819,
+    "anchored": 288,
+    "abstain": 0.0917,
+    "unanchored": 0.1083
+   }
+  },
+  "base": {
+   "cap_cot": {
+    "gsm8k": 0.324,
+    "mmlu": 0.348,
+    "gsm8k_median_tokens": 201
+   },
+   "gsm8k_bare_frozen": 0.516,
+   "abl_bare": {
+    "n": 360,
+    "approve": 0.8139,
+    "anchored": 360,
+    "abstain": 0.0,
+    "unanchored": 0.0
+   },
+   "abl_cot": {
+    "n": 360,
+    "approve": 0.2598,
+    "anchored": 331,
+    "abstain": 0.0,
+    "unanchored": 0.0806
+   },
+   "abl_abstain": {
+    "n": 360,
+    "approve": 0.9306,
+    "anchored": 360,
+    "abstain": 0.0,
+    "unanchored": 0.0
+   }
+  }
+ },
+ "predictions": {
+  "P-FC-0": {
+   "median_tokens": 205,
+   "passed": true
+  },
+  "P-FC-1": {
+   "sv_gsm8k_cot": 0.448,
+   "threshold_latent": 0.387,
+   "threshold_damaged": 0.25,
+   "verdict": "LATENT"
+  },
+  "P-FC-2": {
+   "sv_approve_drop": 0.0444,
+   "sj_approve_drop": 0.0289,
+   "passed": false
+  },
+  "P-FC-3": {
+   "sj_abstain": 0.0917,
+   "sv_abstain": 0.0,
+   "passed_sj": false,
+   "passed_sv": true
+  }
+ }
+}
