@@ -259,10 +259,10 @@
 
   <div class="strip" aria-label="Program at a glance">
     <!-- UPDATE: these four numbers track README.md's results table and spend line. -->
-    <div><b>33</b><span>recorded results</span></div>
+    <div><b>35</b><span>recorded results</span></div>
     <div><b>4</b><span>model vendors</span></div>
-    <div><b>~104k</b><span>LLM calls (API + local GPU)</span></div>
-    <div><b>$26.73</b><span>total spend</span></div>
+    <div><b>~114k</b><span>LLM calls (API + local GPU)</span></div>
+    <div><b>$30.92</b><span>total spend</span></div>
   </div>
 
   <hr class="double-rule">
@@ -372,6 +372,26 @@
          block. Labels: exact | prereg | refuted | observed.
          Keep newest-or-strongest first; full ledger is results/RESULTS.md.
          ============================================================ -->
+
+    <article class="finding">
+      <h3>When the evidence dies, models don't get noisy — they get predictable.</h3>
+      <p>Destroy the deciding evidence and each model falls back to a characteristic default
+      verdict — a learned <em>section</em> over the collapsed possibilities, not "unknown."
+      One model's fingerprint, measured once on synthetic items, predicted the direction of
+      <span class="stat">30/30</span> of its silent failures on real NTSB prose and
+      <span class="stat">0.94</span> of its compression failures. The frozen one-fingerprint-
+      per-model claim still failed as preregistered (1/3): another model <em>flips sign</em>
+      with how the evidence died (surgical deletion → approve 0.81; lossy compression → deny).
+      Companion probe: a student model trained on verdict-only traces recovered its "lost"
+      math reasoning the moment CoT was forced (GSM8K <span class="stat">0.152 → 0.448</span>)
+      — the reasoning was latent; its fail-open miscalibration was not (0.997 → 0.953 under
+      the same forcing, confabulating readings that don't exist). And offered an explicit
+      "insufficient evidence" out, the strongest models take it 0.88–0.91 of the time — the
+      deployable risk is systems that force the choice.</p>
+      <div class="meta"><span class="label prereg">Preregistered · split verdicts, refutations included</span>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/sections">sections</a>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/forced-cot">forced-cot</a></div>
+    </article>
 
     <article class="finding">
       <h3>Two students, one teacher, one difference: what the loss paid for.</h3>

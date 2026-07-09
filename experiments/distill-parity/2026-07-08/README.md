@@ -116,6 +116,11 @@ stop, or token-budget-matched V-traces) is a fresh design question. All numbers 
   phenotype. Compliance diagnostic (pre-committed): V bare-compliance 1.00, J 0.00 (all-
   preamble, acc 0.933) — the bare-only split has no J cells, so the weight-vs-inference
   attribution is moot as frozen.
+- **Power disclosure (post-hoc audit 2026-07-09):** the teacher's Δ-battery retained cell
+  landed at n=164, under the frozen ≥200/cell spec (students' cells all ≥223); the
+  delta_reserve corpus built for exactly this top-up was not deployed before teardown — an
+  execution miss, disclosed here. Teacher Δ (0.172) is supporting context, not a headline
+  claim; both students' cells meet spec.
 - **P-DP-2 fail** (witnessed WHICH: V 0.632 vs J 0.673 — no +0.20 gap; incoherence ~0 both).
   **P-DP-5 fail-with-confound:** V which_lost 0.313 > teacher 0.080 + CI, but the dissociation
   protocol is self-compressed — each model reads its own artifacts, so this is NOT a DPI

@@ -12,6 +12,9 @@ deleted; account at zero.**
   latent threshold 0.387). Verdict-only SFT trained *silence*, not damage — the reasoning
   machinery survives and can be re-elicited by prompt. **The silent-CoT paper is
   "audit your evals," not "the recipe destroys models."**
+- Anomaly counts (hostile re-check, surfaced per confound rule): cap_cot unmatched rates
+  sv 0.116 / sj 0.052 / base 0.056 gsm8k; truncation-at-cap ≤ 0.024 everywhere — the J crash
+  and the LATENT verdict both survive worst-case reassignment of unmatched responses.
 - **Upset #1 — forced-CoT is NOT neutral instrumentation:** under the SAME forced-CoT prompt,
   base drops 0.516 → 0.324 and Student-J **crashes 0.524 → 0.204**. Each model reasons well
   only in its trained/natural register; V under forced scaffolding *beats base* under forced

@@ -14,7 +14,22 @@ re-analysis surfaces something worth chasing. Conventions:
   campaign shape: `gen_items.py` + `prereg_*.md` + `runner.py` (smoke/run/score) + README
   verdict + a regression test pinning the headline numbers.
 
-## Queue (ranked by leverage per dollar)
+## Queue (ranked by leverage per dollar — order set by the lead 2026-07-09)
+
+-1. **PAPER ONE — the measurement paper. The critical path is now exposition, not evidence.**
+   Contents ready for weeks: the dissociation core (4 vendors, N=400, 6 schemas), the transfer
+   grid + DPI, iterated compaction + the interest rate, the honesty tax/premium, realdoc.
+   New material that sharpens it: the sections fingerprint (haiku 0.961 held-out / 1.00
+   realdoc forecast), forced-CoT register non-neutrality ("standardized CoT prompts measure
+   register match"), and the latent/miscalibrated split ("the reasoning was latent; the
+   miscalibration was not"). Paper two (distillation) seeds from the parity rerun. Experiments
+   continue in the gaps only. Status: **drafting starts this week.**
+   Then, in order: the $2 forced-CoT session (**DONE 2026-07-09** → row 35 — LATENT verdict;
+   parity must be engineered training-side, eval-time prompting moves every model
+   differently), the parity-clean rerun (upgraded: abstention as a scored channel + the
+   two-mutilation-type fingerprint on both students as preregistered secondary), and the
+   fingerprint grid AFTER the rerun (the section object re-indexed twice in 24h — let the
+   taxonomy stabilize before building the instrument).
 
 0. **Sections campaign — the fail-direction fingerprint (from the 2026-07-09 fresh-eyes
    audit).** Evidence absence never produces noise: each model emits a characteristic default
@@ -313,6 +328,18 @@ page's road tab mirrors these stages — update its status chips as stages land.
   into the RLM track. What we do NOT do: chase mechanism questions (ordering interference,
   latent-vs-destroyed reasoning) before the parity rerun — they're queued micro-experiments,
   not the spine.
+
+- 2026-07-09 — *Abstention uptake under evidence loss looks like a scale/lineage property.*
+  Offered an explicit out on ablated docs: haiku 0.88, gpt 0.91 — but base Qwen3-1.7B 0.00,
+  Student-V 0.00, Student-J 0.09. Small/open models don't take the out even when trained on a
+  missing-data register (J's fails to generalize across mutilation types). If abstention-uptake
+  is a capability threshold, "offer the out" as a mitigation has a floor model size — one cheap
+  sweep across the Qwen ladder would map it.
+- 2026-07-09 — *Two reader philosophies, possibly lineage-mapped.* Under surgical ablation,
+  grok and base-Qwen approve ~0.81 (closed-world: trust the visible), haiku/gpt deny 0.86–0.94
+  (open-world: suspect the absence). Same split flips under compression for grok. If the
+  philosophy is a training-lineage fingerprint, the section taxonomy becomes a provenance
+  probe. Fold into the fingerprint grid, not before.
 
 ## Done (moved from queue)
 
