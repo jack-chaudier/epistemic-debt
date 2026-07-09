@@ -1,0 +1,369 @@
+{
+ "models": {
+  "grok": {
+   "section": "APPROVED",
+   "strength": 0.8083,
+   "pooled": {
+    "n_total": 360,
+    "n_anchored": 360,
+    "approve": 0.8083,
+    "hedge_share": 0.0
+   },
+   "per_domain": {
+    "ci_release": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.6833,
+     "hedge_share": 0.0
+    },
+    "clinical_enroll": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.85,
+     "hedge_share": 0.0
+    },
+    "loan_underwrite": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.95,
+     "hedge_share": 0.0
+    },
+    "ops_incident": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.8833,
+     "hedge_share": 0.0
+    },
+    "sec_triage": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.95,
+     "hedge_share": 0.0
+    },
+    "vendor_sla": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.5333,
+     "hedge_share": 0.0
+    }
+   },
+   "domain_strength_range": 0.4167,
+   "prior": {
+    "n_total": 360,
+    "n_anchored": 360,
+    "approve": 0.0,
+    "abstain": 0.0,
+    "unanchored": 0.0
+   },
+   "ctrl_error": 0.0167,
+   "abstain_channel": {
+    "n_total": 360,
+    "n_anchored": 335,
+    "approve": 0.9134,
+    "abstain": 0.0694,
+    "unanchored": 0.0
+   },
+   "perturb": {
+    "base": {
+     "n_total": 120,
+     "n_anchored": 120,
+     "approve": 0.8667,
+     "abstain": 0.0,
+     "unanchored": 0.0
+    },
+    "abl_shuffle": {
+     "n_total": 120,
+     "n_anchored": 120,
+     "approve": 0.8333,
+     "abstain": 0.0,
+     "unanchored": 0.0
+    },
+    "abl_reword": {
+     "n_total": 120,
+     "n_anchored": 120,
+     "approve": 0.8583,
+     "abstain": 0.0,
+     "unanchored": 0.0
+    }
+   },
+   "forecast": {
+    "section_meas": "APPROVED",
+    "n_wrong_heldout": 84,
+    "sign_hit": 0.8333,
+    "null_coin": 0.5,
+    "null_truth_marginal": 0.8333,
+    "hit_via_sv1_section": 0.8333
+   }
+  },
+  "haiku": {
+   "section": "DENIED",
+   "strength": 0.9194,
+   "pooled": {
+    "n_total": 360,
+    "n_anchored": 360,
+    "approve": 0.0806,
+    "hedge_share": 0.0
+   },
+   "per_domain": {
+    "ci_release": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.0,
+     "hedge_share": 0.0
+    },
+    "clinical_enroll": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.1333,
+     "hedge_share": 0.0
+    },
+    "loan_underwrite": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.2333,
+     "hedge_share": 0.0
+    },
+    "ops_incident": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.0167,
+     "hedge_share": 0.0
+    },
+    "sec_triage": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.0667,
+     "hedge_share": 0.0
+    },
+    "vendor_sla": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.0333,
+     "hedge_share": 0.0
+    }
+   },
+   "domain_strength_range": 0.2333,
+   "prior": {
+    "n_total": 360,
+    "n_anchored": 354,
+    "approve": 0.2712,
+    "abstain": 0.0,
+    "unanchored": 0.0167
+   },
+   "ctrl_error": 0.0,
+   "abstain_channel": {
+    "n_total": 360,
+    "n_anchored": 42,
+    "approve": 0.7143,
+    "abstain": 0.8833,
+    "unanchored": 0.0
+   },
+   "perturb": {
+    "base": {
+     "n_total": 120,
+     "n_anchored": 120,
+     "approve": 0.075,
+     "abstain": 0.0,
+     "unanchored": 0.0
+    },
+    "abl_shuffle": {
+     "n_total": 120,
+     "n_anchored": 120,
+     "approve": 0.0583,
+     "abstain": 0.0,
+     "unanchored": 0.0
+    },
+    "abl_reword": {
+     "n_total": 120,
+     "n_anchored": 120,
+     "approve": 0.0417,
+     "abstain": 0.0,
+     "unanchored": 0.0
+    }
+   },
+   "forecast": {
+    "section_meas": "DENIED",
+    "n_wrong_heldout": 76,
+    "sign_hit": 0.9605,
+    "null_coin": 0.5,
+    "null_truth_marginal": 0.9605,
+    "hit_via_sv1_section": 0.0395
+   }
+  },
+  "gpt": {
+   "section": "DENIED",
+   "strength": 0.7944,
+   "pooled": {
+    "n_total": 360,
+    "n_anchored": 360,
+    "approve": 0.2056,
+    "hedge_share": 0.0
+   },
+   "per_domain": {
+    "ci_release": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.25,
+     "hedge_share": 0.0
+    },
+    "clinical_enroll": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.15,
+     "hedge_share": 0.0
+    },
+    "loan_underwrite": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.4,
+     "hedge_share": 0.0
+    },
+    "ops_incident": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.0833,
+     "hedge_share": 0.0
+    },
+    "sec_triage": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.1667,
+     "hedge_share": 0.0
+    },
+    "vendor_sla": {
+     "n_total": 60,
+     "n_anchored": 60,
+     "approve": 0.1833,
+     "hedge_share": 0.0
+    }
+   },
+   "domain_strength_range": 0.3167,
+   "prior": {
+    "n_total": 360,
+    "n_anchored": 188,
+    "approve": 0.1277,
+    "abstain": 0.0,
+    "unanchored": 0.4778
+   },
+   "ctrl_error": 0.0,
+   "abstain_channel": {
+    "n_total": 360,
+    "n_anchored": 31,
+    "approve": 0.6774,
+    "abstain": 0.9139,
+    "unanchored": 0.0
+   },
+   "perturb": {
+    "base": {
+     "n_total": 120,
+     "n_anchored": 120,
+     "approve": 0.1167,
+     "abstain": 0.0,
+     "unanchored": 0.0
+    },
+    "abl_shuffle": {
+     "n_total": 120,
+     "n_anchored": 120,
+     "approve": 0.1083,
+     "abstain": 0.0,
+     "unanchored": 0.0
+    },
+    "abl_reword": {
+     "n_total": 120,
+     "n_anchored": 120,
+     "approve": 0.0833,
+     "abstain": 0.0,
+     "unanchored": 0.0
+    }
+   },
+   "forecast": {
+    "section_meas": "DENIED",
+    "n_wrong_heldout": 77,
+    "sign_hit": 0.7922,
+    "null_coin": 0.5,
+    "null_truth_marginal": 0.7922,
+    "hit_via_sv1_section": 0.2078
+   }
+  }
+ },
+ "predictions": {
+  "P-SEC-1": {
+   "grok": {
+    "strength": 0.8083,
+    "range": 0.4167,
+    "shifts": [
+     0.0334,
+     0.0084
+    ],
+    "passed": false
+   },
+   "haiku": {
+    "strength": 0.9194,
+    "range": 0.2333,
+    "shifts": [
+     0.0167,
+     0.0333
+    ],
+    "passed": true
+   },
+   "gpt": {
+    "strength": 0.7944,
+    "range": 0.3167,
+    "shifts": [
+     0.0084,
+     0.0334
+    ],
+    "passed": false
+   }
+  },
+  "P-SEC-2": {
+   "grok": {
+    "gap": 0.8083,
+    "passed": true
+   },
+   "haiku": {
+    "gap": 0.1906,
+    "passed": false
+   },
+   "gpt": {
+    "gap": 0.0779,
+    "passed": false
+   }
+  },
+  "P-SEC-3a": {
+   "grok": {
+    "sign_hit": 0.8333,
+    "nulls": {
+     "coin": 0.5,
+     "truth_marginal": 0.8333
+    },
+    "cross_model_margin": 0.0,
+    "passed": false
+   },
+   "haiku": {
+    "sign_hit": 0.9605,
+    "nulls": {
+     "coin": 0.5,
+     "truth_marginal": 0.9605
+    },
+    "cross_model_margin": 0.921,
+    "passed": true
+   },
+   "gpt": {
+    "sign_hit": 0.7922,
+    "nulls": {
+     "coin": 0.5,
+     "truth_marginal": 0.7922
+    },
+    "cross_model_margin": 0.5844,
+    "passed": false
+   }
+  }
+ },
+ "campaign_reading": {
+  "p_sec_1": "1/3",
+  "p_sec_2": "1/3",
+  "p_sec_3a": "1/3",
+  "upheld": false
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "section_from_surgical_measurement": {
+  "grok": "APPROVED",
+  "haiku": "DENIED",
+  "gpt": "DENIED"
+ },
+ "p_sec_3c_compression": {
+  "grok": {
+   "n": 144,
+   "sign_hit": 0.2292,
+   "truth_marginal": 0.7708,
+   "hit_via_sv1": 0.2292
+  },
+  "haiku": {
+   "n": 226,
+   "sign_hit": 0.9425,
+   "truth_marginal": 0.9425,
+   "hit_via_sv1": 0.0575
+  },
+  "gpt": {
+   "n": 210,
+   "sign_hit": 0.9524,
+   "truth_marginal": 0.9524,
+   "hit_via_sv1": 0.0476
+  }
+ },
+ "p_sec_3b_realdoc": {
+  "haiku": {
+   "n": 30,
+   "sign_hit": 1.0,
+   "truth_marginal": 1.0,
+   "hit_via_sv1": 0.0
+  },
+  "gpt": {
+   "n": 30,
+   "sign_hit": 1.0,
+   "truth_marginal": 1.0,
+   "hit_via_sv1": 0.0
+  }
+ },
+ "p_sec_1d_sensitivity": {
+  "grok": {
+   "official": {
+    "n": 100,
+    "approve": 0.33
+   },
+   "numeric": {
+    "n": 140,
+    "approve": 0.2571
+   },
+   "sign_consistent": true
+  },
+  "haiku": {
+   "official": {
+    "n": 138,
+    "approve": 0.0942
+   },
+   "numeric": {
+    "n": 148,
+    "approve": 0.0878
+   },
+   "sign_consistent": true
+  },
+  "gpt": {
+   "official": {
+    "n": 154,
+    "approve": 0.0649
+   },
+   "numeric": {
+    "n": 160,
+    "approve": 0.0625
+   },
+   "sign_consistent": true
+  }
+ }
+}

@@ -29,8 +29,12 @@ re-analysis surfaces something worth chasing. Conventions:
    realdoc/Arm-3b) sketched in `experiments/sections/2026-07-09/README.md`; prereg before any
    spend. (~$4–6 API, mostly reanalysis.) Theory slot: adaptedness/martingale frame (verdict
    tokens measurable w.r.t. the evidence filtration; debt = predictable drift = the section) —
-   evidence-position-slide micro-design + the queued forced-CoT probe test it. Status:
-   **exploratory reanalysis committed; prereg next — ahead of the parity rerun in leverage/$**.
+   evidence-position-slide micro-design + the queued forced-CoT probe test it. Status: **RUN 2026-07-09 — frozen reading NOT upheld (1/3 × 3), and the refutation is the
+   finding: the section is (model × artifact-type)-indexed (grok sign-flips between surgical
+   deletion and compression; haiku is the invariant fail-closed exemplar with sign-hit 0.961
+   held-out and transfer 0.94/1.00 to compression/realdoc). Successor: per-(model,
+   mutilation-type) fingerprint grid + a deny- AND approve-leaning comparator pair for the
+   cross-model control + abstention-offered as a first-class coordinate.**
 1. **Semantic-judge WHICH re-score of the Tier 1+2 cached responses.** (~$0.50, no new
    compression calls.) Retires the abbreviation parser artifact that decided grok's P-D3
    (LVEF/SBP acronyms → UNMATCHED — third scoring-regex incident), applies the

@@ -1,4 +1,50 @@
-# Sections — the fail-direction fingerprint (EXPLORATORY reanalysis, 2026-07-09)
+# Sections — the fail-direction fingerprint (2026-07-09)
+
+## VERDICT (confirmatory run, frozen prereg 976526b): NOT upheld as frozen — 1/3, 1/3, 1/3 —
+## and the failure is a discovery: the section is (model × artifact-type)-indexed.
+
+Surgical-ablation run (360 items × 2 sides × 3 models, 5,040 calls, $3.65):
+
+| model | surgical section | strength | domain range | prior gap (P-SEC-2) | held-out sign-hit | sv1 margin | compression transfer (3c) | realdoc transfer (3b) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| haiku | DENIED | 0.919 | 0.233 ✓ | 0.191 ✗ | **0.961 ✓** | 0.92 ✓ | **0.943** | **1.000** (30/30) |
+| gpt | DENIED | 0.794 | 0.317 ✗ | 0.078 ✗ | 0.792 ✗ (by 0.008) | 0.58 ✓ | **0.952** | **1.000** (30/30) |
+| grok | **APPROVED** | 0.808 | 0.417 ✗ | 0.808 ✓ | 0.833 | 0.00 ✗ | **0.229** | — |
+
+- **The discovery inside the refutation: grok's default FLIPPED SIGN across artifact types.**
+  Prior always-DENY; compression-lost cells deny-leaning (cached); surgical deletion →
+  APPROVE at 0.81. Mechanism (readable off the design): surgical removal leaves a clean
+  document whose visible policy evidence all passes → closed-world reading approves;
+  compression leaves a visibly mutilated gist → suspicion denies. The section is conditioned
+  on *how the evidence died*, so "one fingerprint per model" is REFUTED; the object that
+  survives is a fingerprint per (model, mutilation-type) pair. grok's 3c transfer (0.229 —
+  its surgical section anti-predicts its compression failures) quantifies the flip.
+- **haiku is the clean D1 exemplar:** artifact-type-invariant fail-closed section
+  (surgical 0.92 / compression 0.94 transfer / realdoc 1.00), stable across domains,
+  perturbation-stable, held-out sign-hit 0.961 with the full 0.92 cross-model margin. gpt is
+  directionally identical but misses three frozen thresholds narrowly (hit 0.792 vs 0.80;
+  range 0.317 vs 0.25; conditionality gap 0.078 — its prior parses deny-ish here with 48%
+  hedges, shrinking the measured gap).
+- **P-SEC-1d sensitivity annex: PASS 3/3** — section signs agree between the official
+  `retained()` definition and the numeric-containment variant (grok 0.330/0.257, haiku
+  0.094/0.088, gpt 0.065/0.063). The fresh-eyes haiku ~0.31 is reproduced by *neither*
+  definition and stays unexplained (likely a different cell conditioning).
+- **Design lessons recorded:** (i) the truth-marginal null EQUALS the sign-hit for any
+  constant-section forecaster by construction — it is uninformative exactly where the section
+  is strong; the sv1 cross-model margin did the real discriminating work. (ii) the sv1
+  comparator cannot discriminate approve-leaning models (grok margin 0 is definitional, not
+  evidential); the successor needs a deny-leaning AND an approve-leaning reference section.
+- Abstention offered changes everything: with an explicit INSUFFICIENT_EVIDENCE option,
+  haiku abstains 0.88 and gpt 0.91 on ablated cells (grok 0.07) — the section is a
+  *forced-choice* object; the deployable failure mode is systems that don't offer the out.
+
+Run: `gen_items.py` → `runner.py run --model all` → `runner.py score` + `score_cached.py`.
+Artifacts: `items.jsonl`, `responses_raw.jsonl`, `sections_results.json`,
+`sections_cached_annex.json`. Cost: $3.65 API, $0 GPU.
+
+---
+
+## Original exploratory reanalysis (pre-freeze, 2026-07-09)
 
 **Status: EXPLORATORY — no new API calls, no prereg yet.** Reanalysis of cached responses
 (domain battery 2026-07-06; distill-parity delta battery 2026-07-08) prompted by a fresh-eyes
