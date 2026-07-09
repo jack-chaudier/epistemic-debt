@@ -381,6 +381,18 @@ page's road tab mirrors these stages — update its status chips as stages land.
   available artifact. Status: **untested synthesis**. Next: retrospective fit, then a factorial
   compression × derivability × register experiment.
 
+- 2026-07-09 — *Operational contract for durable context (CONJECTURE / architecture).* Reframe
+  “infinite context” as bounded active state over growing versioned evidence: no consequential
+  assertion exits unless its query-specific support is locally present, deterministically
+  recovered from a named source version, or exposed as a missing obligation with abstention.
+  Evaluate J jointly with answer accuracy, coverage, unsupported-assertion rate, obligation
+  recall, recovery recall, source validity, and token/latency cost across finite horizons and
+  forced squeezes; Δ=0 alone admits the abstain-everywhere failure. For RLM-style recursion,
+  treat every sub-call return as a compaction boundary with typed fields: claim; witness or
+  deterministic derivation; source pointer + version; known omissions; verification status.
+  Status: **not run**. Next evidence remains the vanilla recursive-system Δ audit, a
+  certificate-typed return set, and the emitted-ledger squeeze/recovery head-to-head.
+
 ## Done (moved from queue)
 
 - ~~High-power replication (Tier 1)~~ → `experiments/highpower/2026-07-06/` — P-H1/H2/H4 3/3,

@@ -92,3 +92,30 @@ Every experiment iteration keeps: `runner*.py` (seeded, idempotent response cach
 ## Provenance
 
 Exact-model machinery vendored from [`jack-chaudier/stark`](https://github.com/jack-chaudier/stark) (same author). The 2026-07-03 review of the wider mirage program and the derivation of the results above are recorded in the theory document's appendices.
+
+## Citation
+
+Epistemic Debt is an ongoing research-software program by **Jack Gaffney**. GitHub can
+generate APA and BibTeX citations from [`CITATION.cff`](CITATION.cff); a stable BibLaTeX
+entry is also available in [`CITATION.bib`](CITATION.bib).
+
+```bibtex
+@software{gaffney2026epistemicdebt,
+  author = {Gaffney, Jack},
+  title = {Epistemic Debt: The Answer--Justification Gap Under Context Compression},
+  year = {2026},
+  url = {https://github.com/jack-chaudier/epistemic-debt},
+  note = {Research software, exact finite models, and preregistered LLM experiment artifacts}
+}
+```
+
+No paper, DOI, ORCID, or release version is claimed yet. Those fields should be added only
+after a tagged archival release exists.
+
+## Licensing
+
+Copyright © 2026 Jack Gaffney. Original software is Apache-2.0; original research prose,
+site/figures, synthetic inputs, and curated result artifacts are CC BY 4.0. Vendored,
+public-domain, benchmark, and raw model-output material retains its own status. See
+[`LICENSING.md`](LICENSING.md) and [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the
+authoritative scope map.

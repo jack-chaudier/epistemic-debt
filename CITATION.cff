@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this research program, software, or its artifacts, please cite it using these metadata."
+title: "Epistemic Debt: The Answer–Justification Gap Under Context Compression"
+type: software
+authors:
+  - given-names: Jack
+    family-names: Gaffney
+    alias: jack-chaudier
+abstract: >-
+  A research program on the answer–justification gap under context compression,
+  combining exact finite models, preregistered LLM experiments, and reproducible artifacts.
+date-released: "2026-07-03"
+repository-code: "https://github.com/jack-chaudier/epistemic-debt"
+url: "https://epistemic-debt.vercel.app"
+license-url: "https://github.com/jack-chaudier/epistemic-debt/blob/main/LICENSING.md"
+keywords:
+  - answer-justification gap
+  - context compression
+  - epistemic debt
+  - language models
+  - reproducible research

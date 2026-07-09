@@ -16,6 +16,8 @@ CORE_MARKDOWN = (
     REPO / "results" / "RESULTS.md",
     REPO / "theory" / "justification-gap-program.md",
     REPO / "theory" / "related-work-positioning.md",
+    REPO / "LICENSING.md",
+    REPO / "THIRD_PARTY_NOTICES.md",
     REPO / "experiments" / "certificates" / "2026-07-08" / "README.md",
 )
 
@@ -48,9 +50,9 @@ def test_program_totals_match_public_surfaces():
     assert f'{totals["api_calls"]:,} calls' in readme
     assert f'${totals["api_cost_usd"]:.2f} API' in readme
     assert f'${totals["total_cost_usd"]:.2f}' in readme
-    assert f'${totals["total_cost_usd"]:.2f}</b>' in site
+    assert f'${totals["total_cost_usd"]:.2f}' in site
     all_calls_k = round((totals["api_calls"] + totals["local_calls_approx"]) / 1000)
-    assert f'~{all_calls_k}k</b><span>LLM calls' in site
+    assert f'{all_calls_k:,},000 API and local-GPU calls' in site
 
 
 def test_public_metadata_matches_the_evidence_scope():
@@ -59,6 +61,67 @@ def test_public_metadata_matches_the_evidence_scope():
     assert "preregistered LLM experiments" in site_head
     assert "exact laws" not in site_head
     assert "falsifiable laws" not in site_head
+
+
+def test_ownership_license_and_citation_surfaces_are_explicit():
+    required = (
+        "LICENSE",
+        "LICENSES/CC-BY-4.0.txt",
+        "LICENSES/MIT-GSM8K.txt",
+        "LICENSES/MIT-MMLU.txt",
+        "LICENSES/MIT-STARK.txt",
+        "LICENSING.md",
+        "NOTICE",
+        "THIRD_PARTY_NOTICES.md",
+        "CITATION.cff",
+        "CITATION.bib",
+    )
+    for path in required:
+        assert (REPO / path).is_file(), f"missing ownership surface: {path}"
+
+    for path in ("LICENSES/MIT-GSM8K.txt", "LICENSES/MIT-MMLU.txt", "LICENSES/MIT-STARK.txt"):
+        notice = (REPO / path).read_text()
+        normalized = " ".join(notice.split())
+        assert "Permission is hereby granted" in notice
+        assert "included in all copies or substantial portions" in normalized
+
+    scope = (REPO / "LICENSING.md").read_text()
+    cff = (REPO / "CITATION.cff").read_text()
+    site = (REPO / "site" / "index.html").read_text()
+    assert "Copyright © 2026 Jack Gaffney" in scope
+    assert "Apache-2.0" in scope and "CC-BY-4.0" in scope
+    assert "original HTML, CSS, and JavaScript are Apache-2.0" in scope
+    assert "family-names: Gaffney" in cff and "given-names: Jack" in cff
+    assert "license-url:" in cff
+    assert not re.search(r"^license:\s", cff, re.MULTILINE)
+    assert "© 2026 Jack Gaffney" in site
+
+
+def test_road_to_durable_context_stays_inside_the_evidence_boundary():
+    site = (REPO / "site" / "index.html").read_text()
+    forbidden = (
+        "Immortal archive",
+        "O(∞)",
+        "fixed point is real",
+        "no benchmark on earth",
+        "nobody ships",
+        "today nobody measures it",
+        "every long-running AI system",
+        "38.4× the debt it removes",
+        "N=400 with ±0.05 confidence intervals",
+    )
+    for claim in forbidden:
+        assert claim not in site
+    required = (
+        "bounded working-context system",
+        "never silently asserts",
+        "the integrated runtime is open",
+        "finite preregistered horizons",
+        "unsupported assertion rate",
+        "s8/s2 endpoints",
+    )
+    for claim in required:
+        assert claim in site.lower()
 
 
 def test_quickstart_uses_canonical_uv_command():
