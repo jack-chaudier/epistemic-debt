@@ -259,10 +259,10 @@
 
   <div class="strip" aria-label="Program at a glance">
     <!-- UPDATE: these four numbers track README.md's results table and spend line. -->
-    <div><b>32</b><span>recorded results</span></div>
+    <div><b>33</b><span>recorded results</span></div>
     <div><b>4</b><span>model vendors</span></div>
-    <div><b>44,693</b><span>API calls</span></div>
-    <div><b>$17.85</b><span>total spend</span></div>
+    <div><b>~104k</b><span>LLM calls (API + local GPU)</span></div>
+    <div><b>$26.73</b><span>total spend</span></div>
   </div>
 
   <hr class="double-rule">
@@ -372,6 +372,23 @@
          block. Labels: exact | prereg | refuted | observed.
          Keep newest-or-strongest first; full ledger is results/RESULTS.md.
          ============================================================ -->
+
+    <article class="finding">
+      <h3>Two students, one teacher, one difference: what the loss paid for.</h3>
+      <p>We distilled the same Qwen3-8B teacher into two 1.7B students — one trained on
+      verdict-only traces, one on verdict+evidence traces — and ran both through the debt
+      battery. The verdict-only student answers APPROVED on
+      <span class="stat">99%</span> of evidence-destroyed cases (Δ <span class="stat">0.98 vs
+      0.69</span>, CI-separated) while looking <em>better</em> on the standard in-domain gauge;
+      it also went silent — its GSM8K collapsed to <span class="stat">0.152</span> at 15 median
+      output tokens while the justification-trained student matched stock weights
+      (0.524 ≈ 0.516). Honest print: the preregistered parity precondition failed (gap 0.064 >
+      0.05), so the campaign verdict is VOID and every number here is exploratory — the
+      parity-clean rerun is queued. The dissociation machinery itself worked end-to-end on
+      open weights for <span class="stat">$8.88</span> of GPU.</p>
+      <div class="meta"><span class="label observed">Exploratory · parity precondition VOID (preregistered)</span>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/distill-parity">distill-parity</a></div>
+    </article>
 
     <article class="finding">
       <h3>On real documents, compressed "answers" are vibes — and accuracy hides it.</h3>
@@ -801,7 +818,7 @@
   <footer class="page">
     <span>theory · proofs · experiments: <a href="https://github.com/jack-chaudier/epistemic-debt">github.com/jack-chaudier/epistemic-debt</a></span>
     <!-- UPDATE: bump the date when findings change. -->
-    <span>last updated 2026-07-08</span>
+    <span>last updated 2026-07-09</span>
   </footer>
 
 </main>

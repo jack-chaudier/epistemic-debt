@@ -73,8 +73,18 @@ re-analysis surfaces something worth chasing. Conventions:
    the honest negative-result branch. Full design, budget (~$30–50 GPU, ~$0 API), and RunPod
    runbook → `experiments/distill-parity/2026-07-08/PLAN.md`. Design-reviewed 2026-07-08
    (weight-borne vs artifact-borne shift arms split; DPI prediction moved to WHICH-lost;
-   surface-leak audit added); prereg drafted alongside (`prereg_distill_parity.md`, freezes on
-   commit). Status: **prereg ready to freeze; build next**.
+   surface-leak audit added); prereg frozen at d24e198. **RUN 2026-07-08/09 → RESULTS row 33:
+   parity precondition VOID (gap 0.064 > 0.05; capability gap 0.144 in J's favor), so the
+   confirmatory campaign is void — but the exploratory findings are large: Δ_V 0.980 vs Δ_J
+   0.686 CI-separated (unwitnessed confidence from verdict-only SFT), no weight-borne
+   counterfactual gap, J-as-compactor retains witnesses ~2×, and the base control shows
+   verdict-only SFT trains reasoning-silence (GSM8K 0.516→0.152 at 15 median tokens; J≈base).**
+   Successor (the real kill-shot attempt #2): parity-protocol redesign — token-budget-matched
+   V-traces, parity-targeted early stop, ≥5 checkpoints/condition, possibly 4B students; plus
+   the artifact-fixed P-DP-5 variant (all models read the SAME artifacts) and a forced-CoT
+   probe on Student-V (latent vs destroyed reasoning; pairs with the deferred exploratory lens
+   probe — adapters retrieved locally). ~$10–15 GPU. Status: **run 1 complete (VOID +
+   exploratory); redesign next**.
 7. **Real-document tier — DONE 2026-07-08, external validity UPHELD with a load-bearing
    caveat.** On 12 real NTSB narratives with injected readings, the dissociation *sharpens*:
    blind compaction keeps narrative valence, not content (crash→DENY reflex, APPROVED-side
@@ -263,6 +273,27 @@ page's road tab mirrors these stages — update its status chips as stages land.
   frozen note + provenance). Micro-experiment queued: isolate emission-garbling vs decision
   interference by crossing ordering × whether the verdict token is pre-committed. Cheap (~$1,
   API or pod). Do not fold into the distill-parity campaign.
+
+- 2026-07-09 — *How the distill-parity result becomes game-changing (strategic note, written
+  the night of run 1).* The VOID run proved the machinery and surfaced four exploitable facts;
+  the path from here to a field-moving artifact is: **(1) the two-model demo, for real** — a
+  parity-clean rerun gives two benchmark-identical checkpoints on HuggingFace where only the Δ
+  meter tells them apart; ship the meter as a runnable script beside the weights ("concepts
+  with meters attached"). **(2) "Silent-CoT collapse" as its own industry-legible paper** —
+  final-answer distillation is the default cheap recipe everywhere, and run 1 shows it trains
+  emission-silence that costs 0.36 GSM8K while *improving* the in-domain gauge; the
+  base-control methodology (accuracy + token budget vs stock weights) is a 10-line audit any
+  lab can run on its own distills. **(3) the witness-preserving compressor was free** —
+  J-register training doubled witness retention as a *compactor*, which is exactly the writer
+  the B-track/RLM root needs; fold J-traces into R2/R3 instead of inventing a new format.
+  **(4) unwitnessed confidence is the deployable scare story** — a verdict-only student that
+  approves 99% of evidence-missing cases while acing the eval suite is the concrete regulated-
+  industry failure (loans, triage) that makes "epistemic debt" legible to non-researchers.
+  The sequencing that compounds: rerun-with-parity first (it upgrades 1, 2, and 4 from
+  OBSERVED to PREREGISTERED in one shot), then the HF artifact + short paper, then fold (3)
+  into the RLM track. What we do NOT do: chase mechanism questions (ordering interference,
+  latent-vs-destroyed reasoning) before the parity rerun — they're queued micro-experiments,
+  not the spine.
 
 ## Done (moved from queue)
 
