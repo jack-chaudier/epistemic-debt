@@ -222,6 +222,10 @@ BATTERIES = dict(
     realdoc=(os.path.join(REPO, "experiments", "realdoc", "2026-07-08", "items.jsonl"),
              item_delta, "responses_raw.jsonl"),
 )
+# pod deployments carry the realdoc corpus flat in /workspace (no repo tree there)
+if not os.path.exists(BATTERIES["realdoc"][0]):
+    BATTERIES["realdoc"] = (os.path.join(HERE, "realdoc_items.jsonl"),
+                            item_delta, "responses_raw.jsonl")
 
 
 def smoke():
