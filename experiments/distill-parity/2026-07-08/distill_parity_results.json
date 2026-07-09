@@ -1230,5 +1230,34 @@
     }
    }
   }
+ },
+ "base_control_exploratory": {
+  "model": "Qwen/Qwen3-1.7B (stock, no adapter)",
+  "note": "lead-directed diagnostic, prereg untouched; identical prompt/decoding/thinking-off",
+  "gsm8k": {
+   "acc": 0.516,
+   "n": 250,
+   "tok_median": 147,
+   "tok_mean": 162.8
+  },
+  "mmlu": {
+   "acc": 0.452,
+   "n": 250,
+   "tok_median": 5,
+   "tok_mean": 39.2
+  },
+  "overall": 0.484,
+  "unmatched": 35,
+  "student_tokens": {
+   "sv1": {
+    "gsm8k_median": 15,
+    "mmlu_median": 5
+   },
+   "sj1": {
+    "gsm8k_median": 145,
+    "mmlu_median": 143
+   }
+  },
+  "reading": "emission-register: J preserved base reasoning emission (0.524~0.516, same token budget); V's verdict-only SFT suppressed reasoning tokens and deployed GSM8K collapsed to 0.152; latent-capability question open"
  }
 }

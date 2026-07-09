@@ -129,9 +129,20 @@ stop, or token-budget-matched V-traces) is a fresh design question. All numbers 
   trained to emit five tokens failing GSM8K without CoT is the *null hypothesis*, not the
   finding: the gap may be inference-time CoT budget (V learned never to emit reasoning
   tokens), not gutted weights. Base Qwen3-1.7B under identical decoding/prompt is the
-  disambiguating control — run as an exploratory diagnostic, prereg untouched (results below
-  when in). Note the confound sign here is the mirror of the Arm-3a preamble warning: the same
-  emission-register mechanism would inflate this gap.
+  disambiguating control — run as an exploratory diagnostic, prereg untouched. Note the
+  confound sign here is the mirror of the Arm-3a preamble warning: the same emission-register
+  mechanism would inflate this gap.
+- **Base control result (exploratory diagnostic, 2026-07-09, `base_capability_raw.jsonl`):
+  the emission-register reading wins.** Stock Qwen3-1.7B, identical prompt/decoding/thinking-
+  off: GSM8K **0.516** at median 147 completion tokens (vs J 0.524 @ 145 — statistically
+  indistinguishable in accuracy AND token budget), MMLU 0.452 (V 0.492, J 0.408). So
+  Student-J did not gain reasoning; it **preserved the base model's natural CoT emission**.
+  Student-V's verdict-only SFT suppressed reasoning-token emission (median 15) and deployed
+  GSM8K collapsed 0.516 → 0.152. Correct claim strength: verdict-only distillation trains the
+  model into *silence*, and the silence costs 0.36 GSM8K — whether the weights retain latent
+  reasoning under forced-CoT prompting is the open follow-up (pairs with the deferred
+  exploratory lens probe). "Paying for justification buys the continued spending of inference
+  tokens" — the constructive-complement framing, now with its control.
 
 Lens probe (step 8): does NOT trigger — the prereg conditions it on P-DP-1 ∧ P-DP-3a passing
 as confirmatory; 3a failed and the campaign is VOID.
