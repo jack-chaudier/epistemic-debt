@@ -27,14 +27,16 @@ parity-matched, Δ-separated, shift-tested (full-doc counterfactual = the weight
 | date | pod id | GPU | $/hr | hours | purpose | $ |
 |---|---|---|---|---|---|---|
 | 2026-07-08 | nmzb9ecrnq2gwb | H100 80GB SXM (AP-IN-1, secure) | 2.99 | 0.36 (21:24–21:46 UTC) | deps + vLLM + 12,000 teacher trace calls | 1.07 |
-| 2026-07-08 | a17mckiju6mrk6 | H100 80GB SXM (AP-IN-1, secure) | 2.99 | session open 21:54 UTC | probe (500) + regen traces (19,000) + 2× student QLoRA + evals | TBD at stop |
+| 2026-07-08/09 | a17mckiju6mrk6 | H100 80GB SXM (AP-IN-1, secure) | 2.99 | 2.54 (21:54–00:27 UTC) | probe (500) + regen traces (19,000) + 2× student QLoRA + all eval batteries (25,440 records) | 7.60 |
 
 Note: nmzb9ecrnq2gwb could not restart after the STOP pause (host GPU taken — the stop/start
 trap); volume held nothing unique (teacher_raw committed, venv/HF-cache rebuildable), deleted
 and re-provisioned as a17mckiju6mrk6 with a scripted setup.
 
-**Cumulative GPU spend: $1.07.** API spend: $0.00 (all inference is pod-local).
-Pod stopped (not deleted) at the STOP boundary; volume + HF cache persist for restart.
+**Cumulative GPU spend: $8.67. Campaign closed 2026-07-09 00:27 UTC; account holds zero pods.**
+API spend: $0.00 (all inference was pod-local). Adapters (all checkpoints, both students)
+retrieved to `adapters/` locally (not committed — 1.6GB; regeneration is deterministic from the
+committed traces + frozen config).
 
 ## STOP 2026-07-08 21:46 UTC — G3 floor breached (1,586 < 3,000), awaiting lead decision
 
@@ -82,6 +84,54 @@ genuine decision interference) — verdict-then-justify vs justify-then-verdict 
 queued in NEXT.md; no campaign GPU spent on it. Provenance: `gate_manifest.json` (r0 run,
 git history at ea7cae7), `probe_results.json`, `revision_protocol.md`.
 
-## Verdict
+## Verdict (2026-07-09)
 
-Pending.
+**Campaign reading: VOID on the frozen parity precondition — and the exploratory results are
+the story.** VOID is the *third* branch, not the pre-committed negative branch: the negative
+result ("distillation doesn't manufacture measurable debt") would have required parity to hold
+and separation to fail; what happened is that parity itself could not be engineered under the
+frozen checkpoint rule (gap 0.064 vs the 0.05 bar; capability slice failed much harder). The
+rule fired as written — no relitigating a near-miss. Whether the exploratory findings justify
+a second campaign with a revised parity protocol (more checkpoints, parity-targeted early
+stop, or token-budget-matched V-traces) is a fresh design question. All numbers in
+`distill_parity_results.json`; scored from 25,440 raw responses.
+
+- **P-DP-0 FAIL → VOID.** Held-out parity gap 0.064 (bar 0.05; sv1 0.978 vs sj1 0.914, all
+  verdict sides ≥ 0.70) and capability gap 0.144 — **in Student-J's favor** (GSM8K: V 0.152 vs
+  J 0.524; MMLU: V 0.492 vs J 0.408). The frozen checkpoint budget was exhausted (dev-slice
+  rule, truncation artifact fixed and disclosed; selection (sv1, sj1), dev gap 0.063).
+- **Exploratory Δ separation (P-DP-1's numbers, VOID-labeled): Δ_V 0.980 vs Δ_J 0.686,
+  separation 0.294, lost-cell CIs non-overlapping.** Mechanism: on witness-lost DENIED cells
+  Student-V answers APPROVED 99% of the time (decision_lost 0.011; realdoc 0.000; teacher
+  0.596) — verdict-only distillation manufactured **unwitnessed confidence**, the inverse
+  valence of row 31's crash→DENY reflex, while *beating* J on the in-domain full-doc gauge.
+  Accuracy metrics cannot see it; Δ can. On real NTSB prose: Δ_V 0.875 vs Δ_J 0.154.
+- **The training-boundary Law-1 headline did NOT materialize (P-DP-3a fail, honest negative):**
+  full-document counterfactual re-policy errors are near-ceiling-low for both students
+  (V 0.039, J 0.067, gap −0.028). At 1.7B/synthetic-domain scale, weight-borne re-policy
+  brittleness was not detected. P-DP-3b is uninterpretable per the frozen guard: Student-V
+  fails the ≥0.70 source-side guard (DENIED-side 0.533) — itself the unwitnessed-confidence
+  phenotype. Compliance diagnostic (pre-committed): V bare-compliance 1.00, J 0.00 (all-
+  preamble, acc 0.933) — the bare-only split has no J cells, so the weight-vs-inference
+  attribution is moot as frozen.
+- **P-DP-2 fail** (witnessed WHICH: V 0.632 vs J 0.673 — no +0.20 gap; incoherence ~0 both).
+  **P-DP-5 fail-with-confound:** V which_lost 0.313 > teacher 0.080 + CI, but the dissociation
+  protocol is self-compressed — each model reads its own artifacts, so this is NOT a DPI
+  violation; the artifact-fixed variant is the successor. **P-DP-4 descriptive** Spearman
+  −0.71 over 18 cells, uninformative under Arm-3a ceiling compression.
+- **Unplanned observation (strong): justification training changes COMPRESSION behavior.**
+  As compactors, J retains the deciding witness far more than V (Δ-battery kept-cells 367 vs
+  223; Arm-3b cf-witness present rate 0.728 vs 0.333). The J-loss appears to buy a
+  witness-preserving writer, not just a calibrated reader.
+- **Capability-gap mechanism — hold the weaker claim until the base control lands.** Token
+  counts on the capability slice: Student-V emits bare answers (GSM8K median 15 completion
+  tokens, MMLU median 5), Student-J reasons before answering (medians 145/143). A model
+  trained to emit five tokens failing GSM8K without CoT is the *null hypothesis*, not the
+  finding: the gap may be inference-time CoT budget (V learned never to emit reasoning
+  tokens), not gutted weights. Base Qwen3-1.7B under identical decoding/prompt is the
+  disambiguating control — run as an exploratory diagnostic, prereg untouched (results below
+  when in). Note the confound sign here is the mirror of the Arm-3a preamble warning: the same
+  emission-register mechanism would inflate this gap.
+
+Lens probe (step 8): does NOT trigger — the prereg conditions it on P-DP-1 ∧ P-DP-3a passing
+as confirmatory; 3a failed and the campaign is VOID.
