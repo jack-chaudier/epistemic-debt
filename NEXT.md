@@ -209,6 +209,27 @@ stages, but this research continuation does not update the public site.
 
 ## Open theory questions
 
+- **Sol audit successor — contract-refinement spectrum theorem-or-kill.** The independent
+  synthesis found no foundational result yet, but isolated one verdict-changing target: in a
+  fixed stable-key, bounded-dependency external-memory model, couple semantic fiber splits,
+  layout-relative reconstruction, falsifier-hitting verification, and online proof repair while
+  charging active bits, index/archive bits, update writes, refinement transfer, query/verifier
+  probes, proof bytes, fallback, and error. Freeze the syntax before the index; require continued
+  ingestion plus source-version invalidation after `K_i ⊂ K_(i+1)`; build raw-history and
+  symbolic-state checkers through `n≤8`. Stop after a matched upper/lower theorem, a smallest
+  linear-cost counterexample, a direct primary-prior-art reduction, or an honest `UNRESOLVED`
+  oracle dependency. No paid calls are needed. Full 30-day design and GPT research prompt:
+  `theory/reach.md`; chain-of-custody and adversarial audit: `theory/sol-synthesis-audit.md`.
+  Status: **highest-leverage formal target; design frozen at the resource-coordinate level,
+  contract grammar still to specify.**
+- **Promote the audited flexible `Q_(k,p)` cover formula before citing it.** Fable's uncommitted
+  source snapshot gives a sticky-champion construction and matching incompatibility family for
+  two-sided cover size `(k+1)+p(k+1)(k+2)/2`, with exact checks at `(3,2)`, `(4,2)`, and `(5,3)`.
+  The Sol audit found no proof defect, but the source validator is not in this branch and the
+  general framework is classical incomplete-machine closed-cover theory. Rebuild the proof and a
+  structurally independent checker in-repo, distinguish full raw monoid from generated events,
+  and commission specialist prior-art review before adding a theorem row to `RESULTS.md`.
+  Status: **high-value exact result awaiting artifact promotion and novelty audit.**
 - **Formalize J = α·S + β.** Reader efficiency α is model-specific (0.89–1.20 corrected);
   α>1 = candidate-set elimination (disclosed-candidate recovery), α<1 = retrieval slippage.
   What determines α? Is it stable per model across corpora? (Tier 1+2 data can answer the
@@ -242,8 +263,10 @@ stages, but this research continuation does not update the public site.
 - 2026-07-09 — *Current-versus-temporal provenance phase boundary.* A versioned two-source,
   two-proposition contract has polynomial complete-current frontier growth but identity-sized
   complete all-as-of certificates. **Exact first answer:** predeclared checkpoint states factor
-  by segment; sublinear checkpoint density gives sublinear bits, linear density gives linear
-  bits, and even one adversarially selectable past boundary forces identity. Remaining: weaken
+  by segment; sublinear checkpoint density gives sublinear bits, and for a nontrivial event
+  alphabet (`m·v≥2`) linear density gives linear bits. The degenerate `m=v=1` alphabet carries
+  no information. Even one adversarially selectable past boundary forces identity on the
+  nondegenerate history family. Remaining: weaken
   completeness, allow multiple certificates, and vary retraction/dependency semantics.
 
 - 2026-07-06 — *Coherent-debt-acknowledgment rate as a training metric.* Haiku natively says

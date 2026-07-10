@@ -577,8 +577,9 @@
     <article class="finding">
       <h3>Future proof obligations—not history length alone—set active memory.</h3>
       <p>In an exact versioned contract, predeclared temporal checkpoints factor by interval. A
-      fixed checkpoint count needs <span class="stat">O(log n)</span> active bits; positive-density
-      checkpoints need <span class="stat">Θ(n)</span>. Allowing even one adversarially selected past
+      fixed checkpoint count needs <span class="stat">O(log n)</span> active bits; for a nontrivial
+      cell/value alphabet, positive-density checkpoints need <span class="stat">Θ(n)</span>.
+      Allowing even one adversarially selected past
       boundary makes every event history distinguishable.</p>
       <div class="meta"><span class="label exact">Theorem + independent exact sweep</span>
         <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/checkpoint_frontier_theorem.py">checkpoint theorem</a></div>
@@ -815,16 +816,18 @@
     </figure>
 
     <figure class="figure-card" aria-labelledby="r3-caption">
-      <div class="qbars" role="img" aria-label="Exact active-memory scaling by temporal obligation density: fixed checkpoints logarithmic, sublinear checkpoint count sublinear, positive-density checkpoints linear">
+      <div class="qbars" role="img" aria-label="Exact active-memory scaling by temporal obligation density for a nontrivial event alphabet: fixed checkpoints logarithmic, sublinear checkpoint count sublinear, positive-density checkpoints linear">
         <div class="qbar answer">fixed checkpoint count · O(log n) bits</div>
         <div class="qbar certificate">sublinear checkpoint count · o(n) bits</div>
-        <div class="qbar witness">positive-density checkpoints · Θ(n) bits</div>
+        <div class="qbar witness">positive-density checkpoints · Θ(n) bits when m·v ≥ 2</div>
       </div>
       <p class="qnote">more future temporal distinctions admitted →</p>
       <figcaption id="r3-caption"><b>Fig. R3 — Exact temporal-obligation phase law.</b>
       Predeclared complete-frontier checkpoints factor by interval in the checked versioned
-      contract. Permission to choose even one arbitrary past boundary after ingestion recovers
-      the identity quotient. This is a fixed-ontology theorem, not yet a general agent-memory law.</figcaption>
+      contract. The one-event alphabet is a degenerate zero-growth exception. Permission to
+      choose even one arbitrary past boundary after ingestion recovers the identity quotient
+      on the nondegenerate history family. This is a fixed-ontology theorem, not yet a general
+      agent-memory law.</figcaption>
     </figure>
 
     <div class="evidence-grid">
