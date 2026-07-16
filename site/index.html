@@ -135,6 +135,10 @@
     margin: 2rem 0; padding: 0; border: 0;
     font-size: 1.35rem; line-height: 1.45; font-style: italic; text-wrap: balance;
   }
+  blockquote.big {
+    font-size: clamp(1.45rem, 4vw, 1.85rem);
+    border-left: 3px solid var(--accent); padding-left: 1.25rem; margin: 2.5rem 0;
+  }
   blockquote footer { font-size: .8125rem; font-style: normal; font-family: var(--mono); color: var(--muted); margin-top: .6rem; }
   blockquote footer::before { content: "— "; }
 
@@ -171,10 +175,36 @@
   .lbl-debt     { font-family: var(--mono); font-size: 11px; fill: var(--accent); }
   .gap-fill     { fill: var(--accent); opacity: .07; }
 
+  /* ---- exhibit band ---- */
+  .exhibit {
+    margin: 2.25rem 0 0; border: 1px solid var(--rule); border-top: 3px solid var(--accent);
+    background: var(--card); padding: 1.6rem 1.5rem 1.35rem;
+  }
+  .exhibit-kicker { font: .68rem var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 1.1rem; }
+  .exhibit-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: center; }
+  .exhibit-cell b {
+    display: block; font-size: clamp(2.3rem, 7vw, 3.5rem); font-weight: 600;
+    letter-spacing: -.02em; line-height: 1.05; font-variant-numeric: tabular-nums;
+  }
+  .exhibit-cell span {
+    display: block; margin-top: .45rem; font-family: var(--mono); font-size: .6875rem;
+    letter-spacing: .06em; text-transform: uppercase; color: var(--muted); line-height: 1.5;
+  }
+  .exhibit-cell.debt b { color: var(--accent); }
+  .exhibit-vs {
+    font-family: var(--mono); font-size: .75rem; color: var(--muted);
+    border: 1px solid var(--rule); border-radius: 50%; width: 2.3rem; height: 2.3rem;
+    display: grid; place-items: center;
+  }
+  .exhibit-caption { margin: 1.15rem 0 0; font-size: .92rem; color: var(--muted); }
+  .exhibit-caption .label { margin-left: .25rem; vertical-align: 1px; }
+
   /* ---- findings ledger ---- */
   .finding {
     padding: 1.4rem 0 1.5rem; border-top: 1px solid var(--rule);
+    transition: border-top-color .25s ease;
   }
+  .finding:hover { border-top-color: var(--accent); }
   .finding:last-of-type { border-bottom: 1px solid var(--rule); }
   .finding h3 { font-size: 1.125rem; font-weight: 600; margin: 0 0 .5rem; letter-spacing: -.005em; text-wrap: balance; }
   .finding p { margin: 0 0 .6rem; }
@@ -241,7 +271,7 @@
   .tabs a { min-height: 2.75rem; display: inline-flex; align-items: center; }
   .abstract { border: 1px solid var(--rule); border-top: 3px solid var(--accent); padding: 1.35rem 1.5rem; margin-top: 2rem; background: var(--card); }
   .abstract::before { content: "Abstract"; display: block; margin-bottom: .7rem; color: var(--accent); font: .68rem var(--mono); letter-spacing: .14em; text-transform: uppercase; }
-  .strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-block: 1px solid var(--rule); }
+  .strip { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; border-block: 1px solid var(--rule); }
   .strip div { padding: 1rem; border-right: 1px solid var(--rule); }
   .strip div:first-child { padding-left: 0; }
   .strip div:last-child { border-right: 0; }
@@ -284,6 +314,15 @@
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
   footer.page span, footer.page a { overflow-wrap: anywhere; }
 
+  /* ---- entrance motion (progressive enhancement, reduced-motion safe) ---- */
+  @media (prefers-reduced-motion: no-preference) {
+    .js .reveal { opacity: 0; transform: translateY(12px); transition: opacity .55s ease, transform .55s ease; }
+    .js .reveal.in { opacity: 1; transform: none; }
+    .js .exhibit-cell b { animation: exhibit-rise .7s cubic-bezier(.2,.7,.2,1) both; }
+    .js .exhibit-cell.debt b { animation-delay: .12s; }
+  }
+  @keyframes exhibit-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
   @media (max-width: 42rem) {
     main { padding-inline: 1rem; }
     .paper-header .eyebrow { display: block; }
@@ -292,10 +331,11 @@
     .tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; overflow: visible; }
     .tabs a { justify-content: center; text-align: center; line-height: 1.35; padding-inline: .4rem; }
     .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .strip div { border-bottom: 1px solid var(--rule); }
-    .strip div:nth-child(2) { border-right: 0; }
-    .strip div:nth-child(3), .strip div:nth-child(4) { border-bottom: 0; }
-    .strip div:nth-child(3) { padding-left: 0; }
+    .strip div { border-bottom: 1px solid var(--rule); padding-left: 0; }
+    .strip div:nth-child(even) { border-right: 0; }
+    .strip div:last-child { border-bottom: 0; }
+    .exhibit-grid { grid-template-columns: 1fr; }
+    .exhibit-vs { justify-self: center; }
     .evidence-grid, .metric-grid { grid-template-columns: 1fr; }
     .status-row { grid-template-columns: 1fr; gap: .25rem; }
     .runtime-flow { grid-template-columns: 1fr; gap: .8rem; }
@@ -317,7 +357,7 @@
     .tabs, .paper-links, .skip-link { display: none; }
     [hidden] { display: block !important; }
     #view-road { break-before: page; }
-    .figure-card, .method, .abstract { background: #fff; break-inside: avoid; }
+    .figure-card, .method, .abstract, .exhibit { background: #fff; break-inside: avoid; }
     a { color: inherit; text-decoration: none; }
   }
 </style>
@@ -329,8 +369,8 @@
   <header class="paper-header">
     <p class="eyebrow">
       <span>Ongoing research note</span>
-      <span>Evidence ledger v42</span>
-      <span>Updated 9 July 2026</span>
+      <span>Evidence ledger v48</span>
+      <span>Updated 16 July 2026</span>
     </p>
 
     <h1>Epistemic Debt</h1>
@@ -371,12 +411,33 @@
     machine-internal justification-loss sense, distinct from the human-comprehension usage.</p>
   </div>
 
+  <section class="exhibit" aria-label="The headline result in one picture">
+    <p class="exhibit-kicker">The exhibit — one number your dashboard shows, one it doesn't</p>
+    <div class="exhibit-grid">
+      <div class="exhibit-cell">
+        <b>0.87–1.00</b>
+        <span>decision accuracy · what the eval reported</span>
+      </div>
+      <div class="exhibit-vs" aria-hidden="true">vs</div>
+      <div class="exhibit-cell debt">
+        <b>0.00–0.07</b>
+        <span>justified accuracy · what actually survived</span>
+      </div>
+    </div>
+    <p class="exhibit-caption">Blind 15-word compaction of real NTSB accident narratives with
+    injected policy readings: every deciding witness destroyed, the verdict preserved as a
+    content-free crash→deny reflex — on APPROVED documents the "accurate" answers were right
+    only by coincidence. A fusion compaction contract recovers J to 0.67–0.77.
+    <span class="label prereg">Preregistered · 4/4, both models</span></p>
+  </section>
+
   <div class="strip" aria-label="Program at a glance">
-    <!-- UPDATE: these four numbers track verified public scope. -->
-    <div><b>42</b><span>headline results</span></div>
+    <!-- UPDATE: these numbers track verified public scope. -->
+    <div><b>48</b><span>headline results</span></div>
     <div><b>4</b><span>model vendors</span></div>
     <div><b>6</b><span>document schemas</span></div>
-    <div><b>80</b><span>integrity tests</span></div>
+    <div><b>95</b><span>integrity tests</span></div>
+    <div><b>$32.24</b><span>total recorded spend</span></div>
   </div>
 
   <hr class="double-rule">
@@ -388,20 +449,20 @@
       <div class="figure-key" aria-hidden="true"><span><i class="key-dot answer"></i>decision accuracy</span><span><i class="key-dot debt"></i>justified accuracy</span><span>bars: 95% Wilson interval</span></div>
       <svg class="desktop-chart" viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig1-title fig1-desc">
         <title id="fig1-title">Decision accuracy and justified accuracy by realized summary length</title>
-        <desc id="fig1-desc">Seven observed points from a preregistered Grok run on 30 denied items per budget. Decision accuracy remains high while justified accuracy rises from 0.133 to 0.867.</desc>
+        <desc id="fig1-desc">Seven observed points from a preregistered Grok run on 30 denied items per budget. Decision accuracy remains high while justified accuracy rises from 0.133 to 0.900.</desc>
         <line class="chart-grid" x1="70" y1="36" x2="640" y2="36"/><line class="chart-grid" x1="70" y1="163" x2="640" y2="163"/><line class="chart-base" x1="70" y1="290" x2="640" y2="290"/>
         <text class="chart-tick" x="58" y="40" text-anchor="end">1.0</text><text class="chart-tick" x="58" y="167" text-anchor="end">0.5</text><text class="chart-tick" x="58" y="294" text-anchor="end">0</text>
         <text class="chart-tick" x="70" y="310" text-anchor="middle">0</text><text class="chart-tick" x="233" y="310" text-anchor="middle">20</text><text class="chart-tick" x="396" y="310" text-anchor="middle">40</text><text class="chart-tick" x="559" y="310" text-anchor="middle">60</text><text class="chart-tick" x="640" y="310" text-anchor="middle">70</text>
         <text class="chart-axis" x="355" y="338" text-anchor="middle">realized summary length (words)</text>
-        <path class="gap-fill" d="M116.7 36 L173.7 44.4 L227.1 69.8 L345.1 78.3 L461.1 61.4 L510 61.4 L587.1 53.1 L587.1 69.8 L510 69.8 L461.1 69.8 L345.1 137.6 L227.1 222.2 L173.7 256.2 L116.7 256.2 Z"/>
+        <path class="gap-fill" d="M116.7 36 L173.7 44.4 L227.1 69.8 L345.1 78.3 L461.1 61.4 L510 61.4 L587.1 53.1 L587.1 61.4 L510 69.8 L461.1 69.8 L345.1 137.6 L227.1 222.2 L173.7 247.7 L116.7 256.2 Z"/>
         <text class="chart-note" x="265" y="185">observed gap Δ</text>
         <g stroke="var(--answer)" stroke-width="1" opacity=".65"><path d="M116.7 36V65 M112.7 36H120.7 M112.7 65H120.7"/><path d="M173.7 37.5V78.4 M169.7 37.5H177.7 M169.7 78.4H177.7"/><path d="M227.1 49.5V111.4 M223.1 49.5H231.1 M223.1 111.4H231.1"/><path d="M345.1 54.5V121.3 M341.1 54.5H349.1 M341.1 121.3H349.1"/><path d="M461.1 44.9V101 M457.1 44.9H465.1 M457.1 101H465.1"/><path d="M510 44.9V101 M506 44.9H514 M506 101H514"/><path d="M587.1 40.6V90.1 M583.1 40.6H591.1 M583.1 90.1H591.1"/></g>
-        <g stroke="var(--accent)" stroke-width="1" opacity=".65"><path d="M116.7 214.6V276.5 M112.7 214.6H120.7 M112.7 276.5H120.7"/><path d="M173.7 214.6V276.5 M169.7 214.6H177.7 M169.7 276.5H177.7"/><path d="M227.1 177.2V253.9 M223.1 177.2H231.1 M223.1 253.9H231.1"/><path d="M345.1 98.5V182.6 M341.1 98.5H349.1 M341.1 182.6H349.1"/><path d="M461.1 49.5V111.4 M457.1 49.5H465.1 M457.1 111.4H465.1"/><path d="M510 49.5V111.4 M506 49.5H514 M506 111.4H514"/><path d="M587.1 49.5V111.4 M583.1 49.5H591.1 M583.1 111.4H591.1"/></g>
-        <path class="s-answer" d="M116.7 36 L173.7 44.4 L227.1 69.8 L345.1 78.3 L461.1 61.4 L510 61.4 L587.1 53.1"/><path class="s-debt" d="M116.7 256.2 L173.7 256.2 L227.1 222.2 L345.1 137.6 L461.1 69.8 L510 69.8 L587.1 69.8"/>
+        <g stroke="var(--accent)" stroke-width="1" opacity=".65"><path d="M116.7 214.6V276.5 M112.7 214.6H120.7 M112.7 276.5H120.7"/><path d="M173.7 204.7V271.4 M169.7 204.7H177.7 M169.7 271.4H177.7"/><path d="M227.1 177.2V253.9 M223.1 177.2H231.1 M223.1 253.9H231.1"/><path d="M345.1 98.5V182.6 M341.1 98.5H349.1 M341.1 182.6H349.1"/><path d="M461.1 49.5V111.4 M457.1 49.5H465.1 M457.1 111.4H465.1"/><path d="M510 49.5V111.4 M506 49.5H514 M506 111.4H514"/><path d="M587.1 44.8V101.1 M583.1 44.8H591.1 M583.1 101.1H591.1"/></g>
+        <path class="s-answer" d="M116.7 36 L173.7 44.4 L227.1 69.8 L345.1 78.3 L461.1 61.4 L510 61.4 L587.1 53.1"/><path class="s-debt" d="M116.7 256.2 L173.7 247.7 L227.1 222.2 L345.1 137.6 L461.1 69.8 L510 69.8 L587.1 61.4"/>
         <g class="dot-answer"><circle cx="116.7" cy="36" r="4"/><circle cx="173.7" cy="44.4" r="4"/><circle cx="227.1" cy="69.8" r="4"/><circle cx="345.1" cy="78.3" r="4"/><circle cx="461.1" cy="61.4" r="4"/><circle cx="510" cy="61.4" r="4"/><circle cx="587.1" cy="53.1" r="4"/></g>
-        <g class="dot-debt"><circle cx="116.7" cy="256.2" r="4"/><circle cx="173.7" cy="256.2" r="4"/><circle cx="227.1" cy="222.2" r="4"/><circle cx="345.1" cy="137.6" r="4"/><circle cx="461.1" cy="69.8" r="4"/><circle cx="510" cy="69.8" r="4"/><circle cx="587.1" cy="69.8" r="4"/></g>
+        <g class="dot-debt"><circle cx="116.7" cy="256.2" r="4"/><circle cx="173.7" cy="247.7" r="4"/><circle cx="227.1" cy="222.2" r="4"/><circle cx="345.1" cy="137.6" r="4"/><circle cx="461.1" cy="69.8" r="4"/><circle cx="510" cy="69.8" r="4"/><circle cx="587.1" cy="61.4" r="4"/></g>
       </svg>
-      <table class="mobile-data"><caption>Fig. 1 data (30 denied items per budget)</caption><thead><tr><th>Words</th><th>Decision</th><th>J</th></tr></thead><tbody><tr><td>5.7</td><td>1.000</td><td>.133</td></tr><tr><td>12.7</td><td>.967</td><td>.133</td></tr><tr><td>19.3</td><td>.867</td><td>.267</td></tr><tr><td>33.8</td><td>.833</td><td>.600</td></tr><tr><td>48.0</td><td>.900</td><td>.867</td></tr><tr><td>53.8</td><td>.900</td><td>.867</td></tr><tr><td>63.5</td><td>.933</td><td>.867</td></tr></tbody></table>
+      <table class="mobile-data"><caption>Fig. 1 data (30 denied items per budget)</caption><thead><tr><th>Words</th><th>Decision</th><th>J</th></tr></thead><tbody><tr><td>5.7</td><td>1.000</td><td>.133</td></tr><tr><td>12.7</td><td>.967</td><td>.167</td></tr><tr><td>19.3</td><td>.867</td><td>.267</td></tr><tr><td>33.8</td><td>.833</td><td>.600</td></tr><tr><td>48.0</td><td>.900</td><td>.867</td></tr><tr><td>53.8</td><td>.900</td><td>.867</td></tr><tr><td>63.5</td><td>.933</td><td>.900</td></tr></tbody></table>
       <figcaption><b>Fig. 1 — Observed answer–justification separation.</b> Preregistered Grok run, 30 DENIED items per budget. Points are observations; bars are 95% Wilson intervals. The often-cited ≈30-word logistic midpoint belongs to reason identification in a separate fit, not to this justified-accuracy series. The DENIED-only design can favor a default-deny decision policy, so this is evidence for channel separation rather than a universal accuracy curve.</figcaption>
     </figure>
 
@@ -411,7 +472,7 @@
          Keep newest-or-strongest first; full ledger is results/RESULTS.md.
          ============================================================ -->
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>When the evidence dies, models don't get noisy — they get predictable.</h3>
       <p>Destroy the deciding evidence and each model falls back to a characteristic default
       verdict — a learned <em>section</em> over the collapsed possibilities, not "unknown."
@@ -424,14 +485,15 @@
       math reasoning the moment CoT was forced (GSM8K <span class="stat">0.152 → 0.448</span>)
       — the reasoning was latent; its fail-open miscalibration was not (0.997 → 0.953 under
       the same forcing, confabulating readings that don't exist). And offered an explicit
-      "insufficient evidence" out, the two tested frontier readers take it 0.88–0.91 of the time — the
-      deployable risk is systems that force the choice.</p>
+      "insufficient evidence" out, two of three tested frontier readers take it 0.88–0.91 of
+      the time while the third declines it 0.93 of the time — the deployable risk is systems
+      that force the choice.</p>
       <div class="meta"><span class="label prereg">Preregistered · split verdicts, refutations included</span>
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/sections">sections</a>
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/forced-cot">forced-cot</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>Two students, one teacher, one difference: what the loss paid for.</h3>
       <p>We distilled the same Qwen3-8B teacher into two 1.7B students — one trained on
       verdict-only traces, one on verdict+evidence traces — and ran both through the debt
@@ -448,7 +510,7 @@
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/distill-parity">distill-parity</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>On semi-synthetic real prose, compressed "answers" can become vibes.</h3>
       <p>On 12 public-domain NTSB accident narratives with controlled policy readings injected
       into the prose, blind
@@ -464,30 +526,32 @@
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/realdoc">realdoc</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>Answers survive compression; reasons don't.</h3>
       <p>After lossy summarization, models still deliver the correct verdict while naming the
       value that justifies it collapses below guessing — <span class="stat">0.93 vs 0.07</span>
       within the same items. The dissociation appears across four vendor families overall. A
       separate N=400 replication across three models produced confidence-interval half-widths
-      of approximately 0.03–0.09, and a three-model domain battery tested six document schemas.</p>
+      of at most 0.078 on the dissociation cells, and a three-model domain battery tested six
+      document schemas.</p>
       <div class="meta"><span class="label prereg">Preregistered</span>
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/highpower">highpower</a>
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/domains">domains</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>In the transfer grid, reader changes rarely recover an explicitly lost witness.</h3>
       <p>Across nine compressor×reader pairings, direct recovery stayed low when the compacted
       artifact omitted the witness (<span class="stat">≤ 0.107 lost vs ≥ 0.909 retained</span>).
-      Later constructed probes showed that all three readers can re-derive a missing witness by
-      one arithmetic step, so the supported claim is narrower: audit both what the compactor
-      preserves and what the reader can deterministically reconstruct.</p>
+      Later constructed probes asked whether readers can re-derive a missing witness by one
+      arithmetic step; the evidence is suggestive but unconfirmed — the confirmatory c2 run is
+      VOID — so the supported claim is narrower: audit both what the compactor preserves and
+      what the reader might reconstruct.</p>
       <div class="meta"><span class="label prereg">Preregistered</span>
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/multimodel/2026-07-03/transfer">transfer grid</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>Checked finite models reveal a large design-versus-retrofit gap.</h3>
       <p>Across the checked finite settings, retrofitted abstention costs up to approximately
       <span class="stat">18×</span> the debt. The largest ratio between that retrofit tax and the
@@ -499,7 +563,7 @@
         <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/honesty_premium.py">honesty_premium.py</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>Witness loss is an event, not a rate: compaction debt is a settlement cost, not
       compound interest.</h3>
       <p>Iterated compaction at a fixed budget first looked like a ~7%/round tax
@@ -508,7 +572,7 @@
       decays <span class="stat">0.000 / 0.015 / 0.000</span> (three models; geometric model
       predicted 0.35/0.32/0.09). In a separate Grok schedule arm, a forced mid-chain budget
       squeeze concentrates loss in the drop round with flat survival afterward. Death was
-      absorbing (0 resurrections in 849
+      absorbing (0 resurrections in 231 value-absent
       transitions), matched-length iterated and direct survival differed by at most 0.042, and
       verdicts stayed flat. This is per-model evidence from three tested arms: the frozen
       panel-wide headline was inapplicable because its length guard failed 3/3.</p>
@@ -543,18 +607,21 @@
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/iterated-compaction">iterated-compaction</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>Lost justification predicts future failure.</h3>
       <p>Change the policy after compression and re-query: accuracy is near-ceiling when the
       newly-required value survived in the artifact and collapses when it didn't —
-      <span class="stat">0.978 vs 0.511</span> on the DENIED-source,
-      original-accuracy-guard-passing subset. Debt is a brittleness
+      <span class="stat">0.959 vs 0.509</span> pooled across three models. The preregistered
+      original-accuracy guard failed on all three models, so this is a localization pilot, not
+      yet the benchmark-parity brittleness result; on the guard-passing DENIED-source subset a
+      source-truth re-analysis isolates the same effect
+      (<span class="stat">0.978 vs 0.511</span>, observed). Debt is a candidate brittleness
       forecast, not a bookkeeping curiosity.</p>
-      <div class="meta"><span class="label prereg">Preregistered pilot</span>
+      <div class="meta"><span class="label prereg">Preregistered pilot · split</span>
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/transfer-law">transfer-law</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>Readers compute more than we predicted — our own law got refuted.</h3>
       <p>Candidate elimination is real, and arithmetic traces are suggestive, but the attempted
       c2 confirmation is <b>VOID</b>: a frozen surface-balance guard failed and was accidentally
@@ -564,7 +631,7 @@
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/reader-inference-boundary">reader-inference-boundary</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>Static certificate compression can fail without bound online.</h3>
       <p>A compact representation that is valid now need not survive future updates. An exact
       unary family has static certificate minimum <span class="stat">2</span> but continuation-safe
@@ -574,7 +641,7 @@
         <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/certificate_congruence_counterexamples.py">continuation counterexamples</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>Future proof obligations—not history length alone—set active memory.</h3>
       <p>In an exact versioned contract, predeclared temporal checkpoints factor by interval. A
       fixed checkpoint count needs <span class="stat">O(log n)</span> active bits; positive-density
@@ -584,7 +651,49 @@
         <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/checkpoint_frontier_theorem.py">checkpoint theorem</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
+      <h3>Memory has a phase law: checkpoints are free until you may ask about the past.</h3>
+      <p>A free checkpoint schedule signals each boundary as it arrives, and freezing the live
+      segment costs zero archive probes — sparse predeclared checkpoints retain
+      <span class="stat">o(n)</span> active bits with zero error across
+      <span class="stat">82,453 + 28,195</span> independent checks. A standalone frontier plus the
+      exact last <code>w</code> events answers any boundary inside that window; older boundaries
+      are undetermined in general. Retroactivity, not history length, is the expensive resource.</p>
+      <div class="meta"><span class="label exact">Theorem + exact sweeps</span>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/evolving_checkpoint_refinement.py">causal refinement</a>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/linear_obligation_rank.py">rank law</a></div>
+    </article>
+
+    <article class="finding reveal">
+      <h3>Proving "nothing failed" costs what the truth costs.</h3>
+      <p>Inside one visible memory state, any complete proof that a claim holds must probe every
+      same-state archive change that would falsify it: certifying an all-zero negative over
+      <code>n</code> raw bits needs <span class="stat">n</span> probes
+      (<span class="stat">525,348</span> exact checks), while a positive existential claim needs
+      one witness. Complete justification has a floor and it is priced — a static frontier bound
+      <code>N−F−E ≤ Γ_q(2^(b+t·w))</code> governs what any active state plus archive reads can
+      cover without fallback.</p>
+      <div class="meta"><span class="label exact">Theorem + exact</span>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/certificate_verifier_hitting.py">verifier hitting</a>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/certificate_cover_resource.py">resource curve</a></div>
+    </article>
+
+    <article class="finding reveal">
+      <h3>The reference runtime already works — deterministically, with zero unsupported
+      assertions.</h3>
+      <p>Eight deterministic memory strategies — five online-maintained, two batch-compiled, one
+      full replay — ran a 50-event versioned workload with 12 obligations; an independent replay
+      oracle found zero answer errors, zero justification errors, and zero unsupported
+      assertions. The demand-refined strategy holds <span class="stat">1,861</span> active bytes
+      against an <span class="stat">8,147</span>-byte exact archive (a codec artifact, not an
+      information-theoretic claim). The exact search machinery behind it also refuted a
+      universal collapse of closed covers to partitions.</p>
+      <div class="meta"><span class="label exact">Exact benchmark · fixed schema</span>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/infinite-context-reference">reference runtime</a>
+        <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/proofs/general_contract_search.py">cover search</a></div>
+    </article>
+
+    <article class="finding reveal">
       <h3>A one-sentence honesty rule drives unwitnessed confidence to zero.</h3>
       <p>Telling the compactor "never state an evaluative claim without its deciding value in
       the same clause" eliminated the mirage signature — confidently asserting a verdict while
@@ -596,7 +705,7 @@
         <a href="https://github.com/jack-chaudier/epistemic-debt/tree/main/experiments/signpost-fusion">signpost-fusion</a></div>
     </article>
 
-    <article class="finding">
+    <article class="finding reveal">
       <h3>Some measured debt is avoidable with a different compaction objective.</h3>
       <p>A one-line change to the compaction objective — spend the budget on names, numbers, and
       units — lifts justified accuracy <span class="stat">17/30 → 25/30</span> at the same length,
@@ -608,6 +717,10 @@
     </article>
 
   </section>
+
+  <blockquote class="big">Decision accuracy said the memory was fine. Justified accuracy said
+  there was no memory. Only one of those numbers is being measured.
+  <footer>the real-prose tier, two frontier models, preregistered 4/4</footer></blockquote>
 
   <hr class="double-rule">
 
@@ -658,10 +771,10 @@
         <span class="label observed">Observed</span>
         <span class="label observed">Conjecture</span>
       </div>
-      <p style="margin-top:1rem">The public ledger currently records 42 headline results across
+      <p style="margin-top:1rem">The public ledger currently records 48 headline results across
       exact computations, confirmatory campaigns, and explicitly labeled exploratory analyses;
       the full program used approximately 118,000 API and local-GPU calls at a recorded API/GPU
-      spend of $32.24. Repository tests pin selected totals, metadata, and claim-boundary
+      spend of $32.24. A 95-test suite pins selected totals, metadata, and claim-boundary
       guardrails; <code>results/RESULTS.md</code> remains the authoritative evidence ledger.</p>
     </div>
   </section>
@@ -713,6 +826,8 @@
       <li>FACTUM (2026), <a href="https://arxiv.org/abs/2601.05866">attribution drift under summarization</a>.</li>
       <li>Lee et al. (2026), <a href="https://arxiv.org/abs/2606.29251">When Summaries Distort Decisions</a>.</li>
       <li>Zhang et al. (2025), <a href="https://arxiv.org/abs/2512.24601">Recursive Language Models</a>.</li>
+      <li>Kwon (2026), <a href="https://arxiv.org/abs/2606.25449">Reclaim Evaluation</a> — concurrent: correctability is bottlenecked by answer-determining source survival, replicated on deployed memory systems.</li>
+      <li>Colaco &amp; Lahjouji (2026), <a href="https://arxiv.org/abs/2607.08032">a rate–distortion view of memory compaction</a> — concurrent: its super-linear compounding prediction is not supported by this program's length-clamped measurements.</li>
     </ol>
     <p>See the repository's <a href="https://github.com/jack-chaudier/epistemic-debt/blob/main/theory/related-work-positioning.md">full novelty and boundary audit</a>.</p>
     <div class="cite-card" id="cite">
@@ -760,9 +875,11 @@
     <div class="status-row"><b>Cached prototype</b><span>A structured-corpus loss-ledger prototype
     reached recall 1.00, precision .917, and 30/30 end-to-end re-expansion on cached data. It did
     not emit a live, versioned ledger during compaction.</span></div>
-    <div class="status-row"><b>Open integration</b><span>Automatic obligation extraction,
-    version-valid source storage, deterministic verification, runtime retrieval, and the final
-    answer-or-abstain gate have not yet been assembled or evaluated end to end.</span></div>
+    <div class="status-row"><b>Reference runtime</b><span>A deterministic benchmark now assembles
+    eight memory strategies over versioned events with zero answer, justification, and
+    unsupported-assertion errors under a fixed query schema — relative to trusted active/index
+    state, with the byte ratio an implementation artifact. LLM obligation extraction and the live
+    emitted ledger remain open.</span></div>
   </div>
 
   <hr class="double-rule">
@@ -823,8 +940,9 @@
       <p class="qnote">more future temporal distinctions admitted →</p>
       <figcaption id="r3-caption"><b>Fig. R3 — Exact temporal-obligation phase law.</b>
       Predeclared complete-frontier checkpoints factor by interval in the checked versioned
-      contract. Permission to choose even one arbitrary past boundary after ingestion recovers
-      the identity quotient. This is a fixed-ontology theorem, not yet a general agent-memory law.</figcaption>
+      contract (the density clause assumes a nontrivial event alphabet). Permission to choose
+      even one arbitrary past boundary after ingestion recovers the identity quotient. This is a
+      fixed-ontology theorem, not yet a general agent-memory law.</figcaption>
     </figure>
 
     <div class="evidence-grid">
@@ -862,17 +980,26 @@
     <div class="stage"><div class="k">Stage 0</div><div>
       <p><b>Evidence base assembled.</b> Exact finite models, preregistered dissociations,
       continuation theorems, temporal state-complexity laws, objective interventions,
-      held-length tests, and cached ledger reanalysis exist as separate artifacts. They do not
-      yet form one runtime or a general evolving-contract theory.</p>
+      held-length tests, cached ledger reanalysis, and a deterministic eight-strategy reference
+      benchmark exist as separate artifacts. They do not yet form one runtime or a general
+      evolving-contract theory.</p>
       <div class="meta"><span class="label observed">Done · mixed evidence types</span></div>
     </div></div>
 
     <div class="stage"><div class="k">Stage 1</div><div>
       <p><b>Certificate-compaction pilot.</b> Run: certificates deliver the best justified
-      accuracy on the DENIED side (<span class="stat">J=.956–.978</span>, Δ≤.044), but economy and
+      accuracy on the DENIED side (<span class="stat">J=.956–.978</span>, max Δ=.044), but economy and
       APPROVED-side calibration claims split or failed. The finite quotient transfers only
       partially to generated language.</p>
       <div class="meta"><span class="label prereg">Done · split verdict</span></div>
+    </div></div>
+
+    <div class="stage"><div class="k">Stage 1.5</div><div>
+      <p><b>Calibrated-reader fine-tune (B4).</b> A frozen 5,906-example dataset teaches the
+      coherent missing-data register that one reader emits natively and a loss-manifest
+      intervention could not prompt in. The small GPU run is designed and queued, not yet
+      executed.</p>
+      <div class="meta"><span class="label observed">Dataset ready · unrun</span></div>
     </div></div>
 
     <div class="stage"><div class="k">Stage 2</div><div>
@@ -938,6 +1065,7 @@
 </main>
 <script>
 (function () {
+  document.documentElement.classList.add('js');
   var tabs = Array.prototype.slice.call(document.querySelectorAll('.tabs a'));
   var views = {
     ledger: document.getElementById('view-ledger'),
@@ -955,6 +1083,16 @@
   }
   window.addEventListener('hashchange', function () { sync(); window.scrollTo(0, 0); });
   sync();
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
 })();
 </script>
 </body>
