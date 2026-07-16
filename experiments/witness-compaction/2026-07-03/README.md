@@ -21,7 +21,7 @@ Arms: **valuedense** (spend budget on name+number+unit readings) and **auditor**
 
 ## Phase B — [curve/](curve/): the exchange rate as a curve
 
-grok, budgets 5→80 words, 30 DENIED items. **P-B1/B2/B3 all pass**: decision ≥ 0.83 at every budget (1.000 at 5 words — pure prior); WHICH rises monotonically 0.13→0.90, logistic midpoint ≈ **30 realized words**, shelf interval spans {5,10,15}. Sharpest exploratory fact: **WHICH ≈ failing-value survival at every budget** (max gap 0.07) — the reader is a pass-through; justified accuracy *is* witness survival. The answer curve and reason curve are flat-vs-logistic: the space between them is the quantitative picture of the shelf.
+grok, budgets 5→80 words, 30 DENIED items. **P-B1/B2/B3 all pass**: decision ≥ 0.83 at every budget (1.000 at 5 words — pure prior); WHICH rises monotonically 0.13→0.90, logistic midpoint ≈ **30 realized words**, shelf interval spans {5,10,15}. Sharpest exploratory fact: **WHICH ≈ failing-value survival at every budget** (max gap 0.07 at 6/7 budgets; the 5-word point gaps 0.133 — WHICH 4/30 vs survival 0/30, an early J>S elimination signal; audit-corrected 2026-07-16) — the reader is a pass-through; justified accuracy *is* witness survival. The answer curve and reason curve are flat-vs-logistic: the space between them is the quantitative picture of the shelf.
 
 ## Phase C — [recursive/](recursive/): does debt compound? (good-news refutation)
 

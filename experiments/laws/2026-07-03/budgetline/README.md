@@ -87,5 +87,7 @@ reader's elimination power, so it is a conservative (safe) lower bound on J but 
 it. To measure pure witness survival, the probe must not disclose the candidate set; to measure
 *deployed* justified accuracy, disclosure is realistic and J ≥ S is the honest model. The revised
 claim to carry forward (OBSERVED, 4 arms, corrected parser — the 0.733 haiku slope under the
-prereg parser is a measurement artifact, not an efficiency): **J = α·S + β with α∈[0.89,1.20],
-β≥0, per-arm R²≥0.96; α=1,β=0 is a grok-specific special case, not a law.**
+prereg parser is a measurement artifact, not an efficiency): **J = α·S + β with α∈[0.92,1.20],
+β≥0, per-arm R²≥0.96; α=1,β=0 is a grok-specific special case, not a law.** (Range audit-corrected
+2026-07-16: corrected-parser arm slopes are {1.203, 0.915, 0.952, 0.917}; the earlier 0.89 lower
+bound matched no computable slope.)

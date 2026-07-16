@@ -106,7 +106,7 @@ retrofit couldn't buy is already native to one model. "Coherent debt-acknowledgm
 phenotype the original parser destroyed: 0.00 / 0.00 / 0.79 / 0.53.
 
 **3. Preregistered dissociation — UNAFFECTED.** WHICH-lost correctness stays ≈0 (0/22, 0/19,
-3/28) and WHICH-retained stays high (7/8, 11/11, 2/2) under the corrected parse. The artifact
+3/28) and WHICH-retained stays high (8/8, 11/11, 2/2) under the corrected parse. The artifact
 touched the *NONE/UNMATCHED/incoherence* bookkeeping, never manufactured a correct answer.
 P-A/B/C/D and the transfer accuracy conjuncts stand.
 
