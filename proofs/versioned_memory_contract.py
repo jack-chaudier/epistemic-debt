@@ -60,6 +60,9 @@ SUPPORT = "+"
 REFUTE = "-"
 VALUES = (SUPPORT, REFUTE, RETRACT)
 
+if not __debug__:
+    raise RuntimeError("exact theorem checks require Python assertions; do not use -O")
+
 
 @dataclass(frozen=True, order=True)
 class Event:
@@ -310,6 +313,36 @@ def frontier_segment_count(length: int, cell_count: int, value_count: int) -> in
         * math.comb(length - 1, populated_cells - 1)
         * value_count**populated_cells
         for populated_cells in range(1, min(cell_count, length) + 1)
+    )
+
+
+def uniform_current_count_through(max_horizon: int, cell_count: int) -> int:
+    """States for one no-free-clock machine over every depth ``<= n``.
+
+    ``current_frontier_count_formula(n, m)`` is an exact-layer width.  Current
+    certificates also contain their event boundary, so equality classes from
+    different depths cannot merge when the horizon is not supplied as a free
+    external clock.
+    """
+
+    return sum(
+        current_frontier_count_formula(horizon, cell_count)
+        for horizon in range(max_horizon + 1)
+    )
+
+
+def uniform_first_checkpoint_count_through(
+    max_horizon: int, cell_count: int
+) -> int:
+    """Uniform count for checkpoint 1 plus the current endpoint at every depth."""
+
+    if max_horizon < 0:
+        raise ValueError("max_horizon must be nonnegative")
+    if max_horizon == 0:
+        return 1
+    return 1 + current_frontier_count_formula(1, cell_count) + sum(
+        checkpoint_count_formula((1, horizon), cell_count)
+        for horizon in range(2, max_horizon + 1)
     )
 
 
@@ -691,6 +724,8 @@ def build_report(max_horizon: int = 3) -> dict[str, object]:
     }
     for boundaries, expected in checkpoint_anchors.items():
         assert checkpoint_count_formula(boundaries, 4) == expected
+    assert uniform_current_count_through(4, 4) == 886
+    assert uniform_first_checkpoint_count_through(4, 4) == 3_685
     if max_horizon >= 4:
         horizon_four = checkpoint_sweep[4]
         observed = {
@@ -718,6 +753,23 @@ def build_report(max_horizon: int = 3) -> dict[str, object]:
             ),
         },
         "counts": [row.as_dict() for row in counts],
+        "count_semantics": {
+            "rows": "exact-length layers with the horizon supplied externally",
+            "uniform_machine_without_free_clock": {
+                "through_horizon": max_horizon,
+                "current_certificate_states": uniform_current_count_through(
+                    max_horizon, len(sources) * len(propositions)
+                ),
+                "checkpoint_one_plus_current_states": (
+                    uniform_first_checkpoint_count_through(
+                        max_horizon, len(sources) * len(propositions)
+                    )
+                ),
+                "reason_layers_do_not_merge": (
+                    "the unique accepted certificate contains its event boundary"
+                ),
+            },
+        },
         "checkpoint_sweep": checkpoint_sweep,
         "right_congruence": {
             "current": current_right,
@@ -736,6 +788,17 @@ def build_report(max_horizon: int = 3) -> dict[str, object]:
             "A later query outside the declared contract requires exact fallback or contract refinement.",
             "Checkpoint boundaries are exogenous; retroactively requested old boundaries require fallback.",
         ],
+        "verification_cost_scope": {
+            "checker": "reference checker recomputes the claimed frontier from raw history",
+            "event_predicate_checks_per_current_query_at_boundary_n": (
+                f"{len(sources)} * n"
+            ),
+            "local_authenticated_completeness_proof_implemented": False,
+            "consequence": (
+                "the quotient theorem is conditional on authenticated complete frontiers; "
+                "this script does not establish archive-dormant negative-evidence checking"
+            ),
+        },
         "interpretation": {
             "established": (
                 "For this finite contract, current complete-coverage certificate states form a "
@@ -744,8 +807,11 @@ def build_report(max_horizon: int = 3) -> dict[str, object]:
             ),
             "elementary_counting_law": (
                 "For fixed m source-proposition cells and v=3 event values, current frontier "
-                "states at horizon n equal sum_r C(m,r) C(n-1,r-1) v^r (n>0), hence are "
-                "Theta(n^(m-1)); exact histories equal (m v)^n."
+                "states in the exact length-n layer equal sum_r C(m,r) C(n-1,r-1) "
+                "v^r (n>0), hence are Theta(n^(m-1)); exact histories equal (m v)^n. "
+                "Without a free clock, the uniform machine through n uses the sum of "
+                "these layer counts, Theta(n^m). Both require only Theta(log n) bits "
+                "for fixed m."
             ),
             "checkpoint_factorization_theorem": (
                 "For fixed 0=t_0<...<t_k=n, complete-frontier certificate states "

@@ -1,0 +1,894 @@
+{
+  "evidence_label": "EXACT",
+  "models": [
+    {
+      "events": 2,
+      "independent_crosscheck": {
+        "crosschecked_fields": [
+          "answer.closed_cover_minimum_states",
+          "proof.closed_cover_minimum_states"
+        ],
+        "not_crosschecked": [
+          "static/right/two-sided partition minima",
+          "compatible-cover minima",
+          "minimum-cover sets",
+          "transition witnesses",
+          "proof size or verifier resources"
+        ],
+        "status": "PASS"
+      },
+      "independent_machine_search": {
+        "answer": {
+          "behavior_sha256": "45f146a3ca72070f4a10009e3928dc8b39cca93ac2bd7969cda250d07db967d4",
+          "candidates_checked": 1,
+          "lexicographic_machine": {
+            "outputs": [
+              "ok"
+            ],
+            "reachable_product": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ]
+            ],
+            "transitions": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "minimum_machine_count": 1,
+          "minimum_states": 1,
+          "mode": "answer"
+        },
+        "contract": "shareable_proof_closed_cover",
+        "proof": {
+          "behavior_sha256": "d224c0f3ff2885e3cc61ab1fccbee3ca4110aee6dfe01f09d18ea60ecf43d4d6",
+          "candidates_checked": 50,
+          "lexicographic_machine": {
+            "outputs": [
+              "alpha",
+              "beta"
+            ],
+            "reachable_product": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "transitions": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "minimum_machine_count": 4,
+          "minimum_states": 2,
+          "mode": "proof"
+        },
+        "schema_version": 1
+      },
+      "input_sha256": "3029f9630a7793fc9497397904acff43779310c3ba275cc6cae2c3082f5f6c47",
+      "name": "shareable_proof_closed_cover",
+      "optimized": {
+        "answer": {
+          "closed_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "ok"
+                ]
+              ],
+              "transitions": {
+                "reset_middle": [
+                  0
+                ],
+                "swap_ends": [
+                  0
+                ]
+              }
+            }
+          ],
+          "closed_cover_minimum_states": 1,
+          "compatible_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "ok"
+                ]
+              ],
+              "transitions": {}
+            }
+          ],
+          "compatible_cover_minimum_states": 1,
+          "right_minima": [
+            [
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "right_minimum_states": 1,
+          "static_minima": [
+            [
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "static_minimum_states": 1,
+          "two_sided_minima": [],
+          "two_sided_minimum_states": null,
+          "two_sided_status": "INAPPLICABLE: no left action declared",
+          "valid_block_count": 7
+        },
+        "proof": {
+          "closed_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "alpha"
+                ],
+                [
+                  "beta"
+                ]
+              ],
+              "transitions": {
+                "reset_middle": [
+                  0,
+                  0
+                ],
+                "swap_ends": [
+                  1,
+                  0
+                ]
+              }
+            }
+          ],
+          "closed_cover_minimum_states": 2,
+          "compatible_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "alpha"
+                ],
+                [
+                  "beta"
+                ]
+              ],
+              "transitions": {}
+            },
+            {
+              "blocks": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "alpha"
+                ],
+                [
+                  "beta"
+                ]
+              ],
+              "transitions": {}
+            },
+            {
+              "blocks": [
+                [
+                  0
+                ],
+                [
+                  1,
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "alpha"
+                ],
+                [
+                  "beta"
+                ]
+              ],
+              "transitions": {}
+            }
+          ],
+          "compatible_cover_minimum_states": 2,
+          "right_minima": [
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          ],
+          "right_minimum_states": 3,
+          "static_minima": [
+            [
+              [
+                0
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          ],
+          "static_minimum_states": 2,
+          "two_sided_minima": [],
+          "two_sided_minimum_states": null,
+          "two_sided_status": "INAPPLICABLE: no left action declared",
+          "valid_block_count": 5
+        }
+      },
+      "outputs": 2,
+      "states": 3
+    },
+    {
+      "events": 2,
+      "independent_crosscheck": {
+        "crosschecked_fields": [
+          "answer.closed_cover_minimum_states",
+          "proof.closed_cover_minimum_states"
+        ],
+        "not_crosschecked": [
+          "static/right/two-sided partition minima",
+          "compatible-cover minima",
+          "minimum-cover sets",
+          "transition witnesses",
+          "proof size or verifier resources"
+        ],
+        "status": "PASS"
+      },
+      "independent_machine_search": {
+        "answer": {
+          "behavior_sha256": "45f146a3ca72070f4a10009e3928dc8b39cca93ac2bd7969cda250d07db967d4",
+          "candidates_checked": 1,
+          "lexicographic_machine": {
+            "outputs": [
+              "ok"
+            ],
+            "reachable_product": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ]
+            ],
+            "transitions": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "minimum_machine_count": 1,
+          "minimum_states": 1,
+          "mode": "answer"
+        },
+        "contract": "state_bound_proof_erases_cover_gap",
+        "proof": {
+          "behavior_sha256": "3db66a192c3d62beca7d9f5702a0b810fbda52a5d206ca1b01271e8d1a71cc44",
+          "candidates_checked": 14020,
+          "lexicographic_machine": {
+            "outputs": [
+              "alpha_at_left",
+              "beta_at_right",
+              "alpha_at_middle"
+            ],
+            "reachable_product": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "transitions": [
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                2,
+                2,
+                2
+              ]
+            ]
+          },
+          "minimum_machine_count": 2,
+          "minimum_states": 3,
+          "mode": "proof"
+        },
+        "schema_version": 1
+      },
+      "input_sha256": "299d901249667d248d293b19952aae2742eff8f220c4f02179607084c741e45e",
+      "name": "state_bound_proof_erases_cover_gap",
+      "optimized": {
+        "answer": {
+          "closed_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "ok"
+                ]
+              ],
+              "transitions": {
+                "reset_middle": [
+                  0
+                ],
+                "swap_ends": [
+                  0
+                ]
+              }
+            }
+          ],
+          "closed_cover_minimum_states": 1,
+          "compatible_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "ok"
+                ]
+              ],
+              "transitions": {}
+            }
+          ],
+          "compatible_cover_minimum_states": 1,
+          "right_minima": [
+            [
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "right_minimum_states": 1,
+          "static_minima": [
+            [
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "static_minimum_states": 1,
+          "two_sided_minima": [],
+          "two_sided_minimum_states": null,
+          "two_sided_status": "INAPPLICABLE: no left action declared",
+          "valid_block_count": 7
+        },
+        "proof": {
+          "closed_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0
+                ],
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "alpha_at_left"
+                ],
+                [
+                  "alpha_at_middle",
+                  "beta_at_middle"
+                ],
+                [
+                  "beta_at_right"
+                ]
+              ],
+              "transitions": {
+                "reset_middle": [
+                  1,
+                  1,
+                  1
+                ],
+                "swap_ends": [
+                  2,
+                  1,
+                  0
+                ]
+              }
+            }
+          ],
+          "closed_cover_minimum_states": 3,
+          "compatible_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0
+                ],
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "alpha_at_left"
+                ],
+                [
+                  "alpha_at_middle",
+                  "beta_at_middle"
+                ],
+                [
+                  "beta_at_right"
+                ]
+              ],
+              "transitions": {}
+            }
+          ],
+          "compatible_cover_minimum_states": 3,
+          "right_minima": [
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          ],
+          "right_minimum_states": 3,
+          "static_minima": [
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          ],
+          "static_minimum_states": 3,
+          "two_sided_minima": [],
+          "two_sided_minimum_states": null,
+          "two_sided_status": "INAPPLICABLE: no left action declared",
+          "valid_block_count": 3
+        }
+      },
+      "outputs": 4,
+      "states": 3
+    },
+    {
+      "events": 3,
+      "independent_crosscheck": {
+        "crosschecked_fields": [
+          "answer.closed_cover_minimum_states",
+          "proof.closed_cover_minimum_states"
+        ],
+        "not_crosschecked": [
+          "static/right/two-sided partition minima",
+          "compatible-cover minima",
+          "minimum-cover sets",
+          "transition witnesses",
+          "proof size or verifier resources"
+        ],
+        "status": "PASS"
+      },
+      "independent_machine_search": {
+        "answer": {
+          "behavior_sha256": "5fb7944133f1ddd6b834b6941609c0f78fe49cbeda4fe3f619247cd54eba0213",
+          "candidates_checked": 1,
+          "lexicographic_machine": {
+            "outputs": [
+              "ok"
+            ],
+            "reachable_product": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ]
+            ],
+            "transitions": [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "minimum_machine_count": 1,
+          "minimum_states": 1,
+          "mode": "answer"
+        },
+        "contract": "static_right_monoid_gap",
+        "proof": {
+          "behavior_sha256": "3b65ae0ce51e586ca3a654260dcfe80ddb594fc06301bb77dda2cab719af93f4",
+          "candidates_checked": 63946,
+          "lexicographic_machine": {
+            "outputs": [
+              "alpha",
+              "alpha",
+              "beta"
+            ],
+            "reachable_product": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "transitions": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                2,
+                2
+              ]
+            ]
+          },
+          "minimum_machine_count": 1,
+          "minimum_states": 3,
+          "mode": "proof"
+        },
+        "schema_version": 1
+      },
+      "input_sha256": "5b074757fcc5d42a524d71cbd93cf6d8082232d6eb01dcc56e61add6f2cf8421",
+      "name": "static_right_monoid_gap",
+      "optimized": {
+        "answer": {
+          "closed_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "ok"
+                ]
+              ],
+              "transitions": {
+                "append_absorbing": [
+                  0
+                ],
+                "append_identity": [
+                  0
+                ],
+                "append_step": [
+                  0
+                ]
+              }
+            }
+          ],
+          "closed_cover_minimum_states": 1,
+          "compatible_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "ok"
+                ]
+              ],
+              "transitions": {}
+            }
+          ],
+          "compatible_cover_minimum_states": 1,
+          "right_minima": [
+            [
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "right_minimum_states": 1,
+          "static_minima": [
+            [
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "static_minimum_states": 1,
+          "two_sided_minima": [
+            [
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "two_sided_minimum_states": 1,
+          "two_sided_status": "APPLICABLE: stable under the declared commuting left/right actions",
+          "valid_block_count": 7
+        },
+        "proof": {
+          "closed_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0
+                ],
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "alpha"
+                ],
+                [
+                  "alpha"
+                ],
+                [
+                  "beta"
+                ]
+              ],
+              "transitions": {
+                "append_absorbing": [
+                  2,
+                  2,
+                  2
+                ],
+                "append_identity": [
+                  0,
+                  1,
+                  2
+                ],
+                "append_step": [
+                  1,
+                  2,
+                  2
+                ]
+              }
+            }
+          ],
+          "closed_cover_minimum_states": 3,
+          "compatible_cover_minima": [
+            {
+              "blocks": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2
+                ]
+              ],
+              "common_labels": [
+                [
+                  "alpha"
+                ],
+                [
+                  "beta"
+                ]
+              ],
+              "transitions": {}
+            }
+          ],
+          "compatible_cover_minimum_states": 2,
+          "right_minima": [
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          ],
+          "right_minimum_states": 3,
+          "static_minima": [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          ],
+          "static_minimum_states": 2,
+          "two_sided_minima": [
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          ],
+          "two_sided_minimum_states": 3,
+          "two_sided_status": "APPLICABLE: stable under the declared commuting left/right actions",
+          "valid_block_count": 4
+        }
+      },
+      "outputs": 2,
+      "states": 3
+    }
+  ],
+  "schema_version": 1,
+  "scope": "finite explicit accepted-output relations and transition systems; output identifiers are opaque labels, and proof-size, verifier-work, authentication, and archive-access realizability are outside this solver",
+  "verdicts": {
+    "accepted_output_labelled_cover_advantage_exists": true,
+    "state_bound_output_labels_can_erase_advantage": true,
+    "static_compatibility_does_not_imply_online_stability": true
+  }
+}

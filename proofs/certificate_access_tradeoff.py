@@ -33,6 +33,10 @@ import math
 import sys
 
 
+if not __debug__:
+    raise RuntimeError("exact theorem checks require Python assertions; do not use -O")
+
+
 def ceil_log2(count: int) -> int:
     if count < 1:
         raise ValueError("count must be positive")

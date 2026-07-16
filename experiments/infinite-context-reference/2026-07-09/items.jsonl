@@ -1,0 +1,64 @@
+{"type":"event","source":"atlas","key":"launch","operation":"SET","value":"+","exact_text":"Launch window approved at dawn."}
+{"type":"event","source":"boreal","key":"launch","operation":"SET","value":"+","exact_text":"Launch is cleared for the dawn window."}
+{"type":"event","source":"cygnus","key":"launch","operation":"SET","value":"-","exact_text":"Launch clearance is withheld."}
+{"type":"event","source":"atlas","key":"bridge","operation":"SET","value":"+","exact_text":"Bridge inspection passed."}
+{"type":"event","source":"boreal","key":"bridge","operation":"SET","value":"-","exact_text":"Bridge load test remains unresolved."}
+{"type":"event","source":"atlas","key":"launch","operation":"SET","value":"-","exact_text":"Launch approval is suspended pending weather review."}
+{"type":"event","source":"cygnus","key":"launch","operation":"RETRACT","exact_text":""}
+{"type":"event","source":"boreal","key":"bridge","operation":"SET","value":"+","exact_text":"Bridge load test passed on rerun."}
+{"type":"checkpoint","boundary":8}
+{"type":"event","source":"cygnus","key":"bridge","operation":"SET","value":"+","exact_text":"Independent bridge inspection passed."}
+{"type":"event","source":"atlas","key":"codename","operation":"SET","value":"+","exact_text":"The internal codename is Lantern."}
+{"type":"event","source":"boreal","key":"codename","operation":"SET","value":"+","exact_text":"Project Lantern is the recorded codename."}
+{"type":"event","source":"cygnus","key":"codename","operation":"SET","value":"-","exact_text":"The codename is not Lantern in our registry."}
+{"type":"event","source":"atlas","key":"safety","operation":"SET","value":"+","exact_text":"Safety review A is complete."}
+{"type":"event","source":"boreal","key":"safety","operation":"SET","value":"+","exact_text":"Safety review B found no blocker."}
+{"type":"event","source":"cygnus","key":"safety","operation":"SET","value":"+","exact_text":"Safety review C concurs."}
+{"type":"event","source":"atlas","key":"bridge","operation":"RETRACT","exact_text":""}
+{"type":"event","source":"atlas","key":"launch","operation":"SET","value":"+","exact_text":"Launch approval is restored for the revised window."}
+{"type":"event","source":"boreal","key":"launch","operation":"RETRACT","exact_text":""}
+{"type":"checkpoint","boundary":18}
+{"type":"event","source":"cygnus","key":"bridge","operation":"RETRACT","exact_text":""}
+{"type":"event","source":"atlas","key":"quote","operation":"SET","value":"+","exact_text":"Keep the archive exact; let the active state earn its size."}
+{"type":"event","source":"boreal","key":"quote","operation":"SET","value":"+","exact_text":"Keep an exact archive and make active memory justify itself."}
+{"type":"event","source":"cygnus","key":"quote","operation":"RETRACT","exact_text":""}
+{"type":"event","source":"boreal","key":"codename","operation":"RETRACT","exact_text":""}
+{"type":"event","source":"boreal","key":"codename","operation":"SET","value":"+","exact_text":"The corrected registry again names Project Lantern."}
+{"type":"event","source":"atlas","key":"launch","operation":"INVALIDATE","target_version":3,"exact_text":"Atlas revoked launch publication version 3."}
+{"type":"event","source":"cygnus","key":"safety","operation":"SET","value":"-","exact_text":"A newly observed fault reopens the safety review."}
+{"type":"event","source":"atlas","key":"quote","operation":"SET","value":"+","exact_text":"Keep the archive exact; make active memory earn every bit."}
+{"type":"event","source":"boreal","key":"bridge","operation":"SET","value":"-","exact_text":"A later stress test failed."}
+{"type":"event","source":"atlas","key":"bridge","operation":"SET","value":"+","exact_text":"Repairs passed the final Atlas inspection."}
+{"type":"event","source":"cygnus","key":"launch","operation":"SET","value":"+","exact_text":"Cygnus now clears the revised launch window."}
+{"type":"event","source":"boreal","key":"safety","operation":"RETRACT","exact_text":""}
+{"type":"event","source":"atlas","key":"safety","operation":"SET","value":"+","exact_text":"Atlas confirms the mitigation is installed."}
+{"type":"event","source":"cygnus","key":"codename","operation":"RETRACT","exact_text":""}
+{"type":"event","source":"boreal","key":"quote","operation":"SET","value":"-","exact_text":"Boreal disputes the exact quotation."}
+{"type":"event","source":"atlas","key":"launch","operation":"SET","value":"+","exact_text":"Final launch authorization remains active."}
+{"type":"event","source":"boreal","key":"launch","operation":"SET","value":"-","exact_text":"Boreal reopens the launch objection."}
+{"type":"event","source":"cygnus","key":"bridge","operation":"SET","value":"+","exact_text":"Cygnus clears the repaired bridge."}
+{"type":"event","source":"atlas","key":"bridge","operation":"RETRACT","exact_text":""}
+{"type":"event","source":"atlas","key":"launch","operation":"SET","value":"-","exact_text":"Atlas pauses launch for a final telemetry check."}
+{"type":"event","source":"boreal","key":"bridge","operation":"SET","value":"+","exact_text":"Boreal accepts the latest bridge repair."}
+{"type":"event","source":"cygnus","key":"launch","operation":"SET","value":"-","exact_text":"Cygnus reports a new launch blocker."}
+{"type":"event","source":"atlas","key":"bridge","operation":"SET","value":"+","exact_text":"Atlas restores bridge clearance."}
+{"type":"event","source":"boreal","key":"launch","operation":"SET","value":"+","exact_text":"Boreal clears the launch after review."}
+{"type":"event","source":"cygnus","key":"bridge","operation":"SET","value":"-","exact_text":"Cygnus observes renewed bridge strain."}
+{"type":"event","source":"atlas","key":"launch","operation":"SET","value":"+","exact_text":"Atlas grants final launch clearance."}
+{"type":"event","source":"boreal","key":"bridge","operation":"RETRACT","exact_text":""}
+{"type":"event","source":"cygnus","key":"launch","operation":"RETRACT","exact_text":""}
+{"type":"event","source":"atlas","key":"bridge","operation":"SET","value":"+","exact_text":"Atlas confirms the bridge remains serviceable."}
+{"type":"event","source":"boreal","key":"launch","operation":"SET","value":"-","exact_text":"Boreal records a final dissent on launch."}
+{"type":"event","source":"cygnus","key":"bridge","operation":"SET","value":"+","exact_text":"Cygnus final inspection clears the bridge."}
+{"type":"query","id":"q01_current_launch","key":"launch","mode":"status"}
+{"type":"query","id":"q02_current_bridge","key":"bridge","mode":"status"}
+{"type":"query","id":"q03_launch_at_checkpoint_8","key":"launch","mode":"status","as_of":8}
+{"type":"query","id":"q04_bridge_at_checkpoint_18","key":"bridge","mode":"status","as_of":18}
+{"type":"query","id":"q05_new_codename_contract","key":"codename","mode":"status","refine_on_miss":true}
+{"type":"query","id":"q06_codename_repeat","key":"codename","mode":"status"}
+{"type":"query","id":"q07_recent_safety","key":"safety","mode":"status","as_of":48,"refine_on_miss":true}
+{"type":"query","id":"q08_retro_launch_5","key":"launch","mode":"status","as_of":5,"refine_on_miss":true}
+{"type":"query","id":"q09_retro_launch_5_repeat","key":"launch","mode":"status","as_of":5}
+{"type":"query","id":"q10_exact_quote","key":"quote","mode":"source_exact","source":"atlas"}
+{"type":"query","id":"q11_complete_negative_ghost","key":"ghost","mode":"status"}
+{"type":"query","id":"q12_new_safety_current","key":"safety","mode":"status"}

@@ -1,0 +1,70 @@
+{
+  "bounded_retroactivity_theorem": {
+    "active_bits_fixed_m_v": "O(log n + w)",
+    "outside_window": "not determined in general; AB/BA witness checked",
+    "query_replay": "at most w retained events; no refined state is persisted",
+    "state": "frontier at n-w plus exact last-w events"
+  },
+  "canonical_sha256": "246cb600132f7162b9cbf7b00a00152e8c1bf5367fde7d1f0f82774fb929e6cc",
+  "causal_checkpoint_theorem": {
+    "active_bits_fixed_m_v": "O(r log(1+n/r)); o(n) whenever r=o(n)",
+    "answer_error": 0,
+    "archive_probes_at_declaration": 0,
+    "justification_error": 0,
+    "refinement_work_per_declaration": "O(cells)",
+    "states": "product_j G(gap_j)"
+  },
+  "causal_crosscheck": {
+    "history_schedule_pairs": 82453,
+    "maximum_cells": 3,
+    "maximum_horizon": 4,
+    "maximum_values": 3
+  },
+  "evidence_label": "THEOREM plus EXACT finite crosscheck",
+  "maximality_boundary": "relative to the segment summary, universally zero-replay additions are exactly view-determined obligations; arbitrary retroactive boundaries are not",
+  "refinement_split_profiles": [
+    {
+      "cells": 2,
+      "horizon": 3,
+      "maximum_tag_bits": 2,
+      "new_internal_boundaries": [
+        1
+      ],
+      "old_states": 12,
+      "refined_states": 32,
+      "split_multiplicity_histogram": {
+        "2": 4,
+        "3": 8
+      },
+      "values": 2
+    },
+    {
+      "cells": 4,
+      "horizon": 3,
+      "maximum_tag_bits": 2,
+      "new_internal_boundaries": [
+        1
+      ],
+      "old_states": 228,
+      "refined_states": 792,
+      "split_multiplicity_histogram": {
+        "3": 120,
+        "4": 108
+      },
+      "values": 3
+    }
+  ],
+  "rolling_window_crosscheck": {
+    "answers_checked": 28195,
+    "maximum_replay_observed": 5,
+    "outside_window_counterexample_horizon": 4,
+    "outside_window_width": 2,
+    "separating_boundary": 1
+  },
+  "schema_version": 1,
+  "scope": {
+    "checkpoint_schedule": "fixed exogenous/free schedule; each signal arrives exactly at its boundary",
+    "event_system": "fixed cell/value alphabets and immutable append-only publications; targeted invalidation is excluded",
+    "trust": "frontier summaries and retained events are authenticated"
+  }
+}

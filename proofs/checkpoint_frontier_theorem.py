@@ -18,6 +18,10 @@ import sys
 from collections.abc import Sequence
 
 
+if not __debug__:
+    raise RuntimeError("exact theorem checks require Python assertions; do not use -O")
+
+
 Event = tuple[int, int]
 History = tuple[Event, ...]
 Frontier = tuple[tuple[int, int], ...]

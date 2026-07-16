@@ -1,0 +1,703 @@
+{
+  "boundary": "rank is a complete classifier only for the declared linear family; arbitrary nonlinear accepted-output relations require continuation/cover complexity",
+  "canonical_sha256": "e50d6a2a31bac75cce3796dcd9a8b2487aa32e7146d6509a4d7cda02d41baf62",
+  "evidence_label": "THEOREM plus EXACT finite crosscheck",
+  "extension_examples": [
+    {
+      "archive_dormant": true,
+      "combined_rank": 3,
+      "name": "dependent_interval",
+      "new_declared_rows": 1,
+      "new_fibers_per_old_fiber": 1,
+      "old_rank": 3,
+      "rank_increment": 0,
+      "zero_error_refinement_lower_bound_bits": 0
+    },
+    {
+      "archive_dormant": false,
+      "combined_rank": 4,
+      "name": "one_independent_point",
+      "new_declared_rows": 1,
+      "new_fibers_per_old_fiber": 2,
+      "old_rank": 3,
+      "rank_increment": 1,
+      "zero_error_refinement_lower_bound_bits": 1
+    },
+    {
+      "archive_dormant": false,
+      "combined_rank": 6,
+      "name": "three_independent_points",
+      "new_declared_rows": 3,
+      "new_fibers_per_old_fiber": 8,
+      "old_rank": 3,
+      "rank_increment": 3,
+      "zero_error_refinement_lower_bound_bits": 3
+    },
+    {
+      "archive_dormant": false,
+      "combined_rank": 8,
+      "name": "identity_completion",
+      "new_declared_rows": 8,
+      "new_fibers_per_old_fiber": 32,
+      "old_rank": 3,
+      "rank_increment": 5,
+      "zero_error_refinement_lower_bound_bits": 5
+    }
+  ],
+  "implementation_boundary": "an implementation retaining a richer state C*x uses row(B) contained in row(C); the general criterion is factorization through actual state",
+  "independent_crosscheck": {
+    "history_pair_checks": 131336,
+    "matrix_pairs": 16452,
+    "maximum_width": 3
+  },
+  "phase_sweep": [
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "all_prefixes": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 0,
+          "quotient_states": 1,
+          "rank_bits": 0
+        },
+        "identity_points": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "sublinear_square_points": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        }
+      },
+      "horizon": 1
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 3,
+          "quotient_states": 4,
+          "rank_bits": 2
+        },
+        "all_prefixes": {
+          "declared_rows": 2,
+          "quotient_states": 4,
+          "rank_bits": 2
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 0,
+          "quotient_states": 1,
+          "rank_bits": 0
+        },
+        "identity_points": {
+          "declared_rows": 2,
+          "quotient_states": 4,
+          "rank_bits": 2
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 2,
+          "quotient_states": 4,
+          "rank_bits": 2
+        },
+        "sublinear_square_points": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        }
+      },
+      "horizon": 2
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 6,
+          "quotient_states": 8,
+          "rank_bits": 3
+        },
+        "all_prefixes": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "identity_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 2,
+          "quotient_states": 4,
+          "rank_bits": 2
+        },
+        "sublinear_square_points": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        }
+      },
+      "horizon": 3
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 10,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "all_prefixes": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 2,
+          "quotient_states": 4,
+          "rank_bits": 2
+        },
+        "identity_points": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        },
+        "sublinear_square_points": {
+          "declared_rows": 2,
+          "quotient_states": 4,
+          "rank_bits": 2
+        }
+      },
+      "horizon": 4
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 15,
+          "quotient_states": 32,
+          "rank_bits": 5
+        },
+        "all_prefixes": {
+          "declared_rows": 5,
+          "quotient_states": 32,
+          "rank_bits": 5
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        },
+        "identity_points": {
+          "declared_rows": 5,
+          "quotient_states": 32,
+          "rank_bits": 5
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        },
+        "sublinear_square_points": {
+          "declared_rows": 2,
+          "quotient_states": 4,
+          "rank_bits": 2
+        }
+      },
+      "horizon": 5
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 21,
+          "quotient_states": 64,
+          "rank_bits": 6
+        },
+        "all_prefixes": {
+          "declared_rows": 6,
+          "quotient_states": 64,
+          "rank_bits": 6
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "identity_points": {
+          "declared_rows": 6,
+          "quotient_states": 64,
+          "rank_bits": 6
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        },
+        "sublinear_square_points": {
+          "declared_rows": 2,
+          "quotient_states": 4,
+          "rank_bits": 2
+        }
+      },
+      "horizon": 6
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 28,
+          "quotient_states": 128,
+          "rank_bits": 7
+        },
+        "all_prefixes": {
+          "declared_rows": 7,
+          "quotient_states": 128,
+          "rank_bits": 7
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 5,
+          "quotient_states": 32,
+          "rank_bits": 5
+        },
+        "identity_points": {
+          "declared_rows": 7,
+          "quotient_states": 128,
+          "rank_bits": 7
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        },
+        "sublinear_square_points": {
+          "declared_rows": 2,
+          "quotient_states": 4,
+          "rank_bits": 2
+        }
+      },
+      "horizon": 7
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 36,
+          "quotient_states": 256,
+          "rank_bits": 8
+        },
+        "all_prefixes": {
+          "declared_rows": 8,
+          "quotient_states": 256,
+          "rank_bits": 8
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 6,
+          "quotient_states": 64,
+          "rank_bits": 6
+        },
+        "identity_points": {
+          "declared_rows": 8,
+          "quotient_states": 256,
+          "rank_bits": 8
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "sublinear_square_points": {
+          "declared_rows": 2,
+          "quotient_states": 4,
+          "rank_bits": 2
+        }
+      },
+      "horizon": 8
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 45,
+          "quotient_states": 512,
+          "rank_bits": 9
+        },
+        "all_prefixes": {
+          "declared_rows": 9,
+          "quotient_states": 512,
+          "rank_bits": 9
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 7,
+          "quotient_states": 128,
+          "rank_bits": 7
+        },
+        "identity_points": {
+          "declared_rows": 9,
+          "quotient_states": 512,
+          "rank_bits": 9
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "sublinear_square_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        }
+      },
+      "horizon": 9
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 55,
+          "quotient_states": 1024,
+          "rank_bits": 10
+        },
+        "all_prefixes": {
+          "declared_rows": 10,
+          "quotient_states": 1024,
+          "rank_bits": 10
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 8,
+          "quotient_states": 256,
+          "rank_bits": 8
+        },
+        "identity_points": {
+          "declared_rows": 10,
+          "quotient_states": 1024,
+          "rank_bits": 10
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "sublinear_square_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        }
+      },
+      "horizon": 10
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 66,
+          "quotient_states": 2048,
+          "rank_bits": 11
+        },
+        "all_prefixes": {
+          "declared_rows": 11,
+          "quotient_states": 2048,
+          "rank_bits": 11
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 9,
+          "quotient_states": 512,
+          "rank_bits": 9
+        },
+        "identity_points": {
+          "declared_rows": 11,
+          "quotient_states": 2048,
+          "rank_bits": 11
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "sublinear_square_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        }
+      },
+      "horizon": 11
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 78,
+          "quotient_states": 4096,
+          "rank_bits": 12
+        },
+        "all_prefixes": {
+          "declared_rows": 12,
+          "quotient_states": 4096,
+          "rank_bits": 12
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 10,
+          "quotient_states": 1024,
+          "rank_bits": 10
+        },
+        "identity_points": {
+          "declared_rows": 12,
+          "quotient_states": 4096,
+          "rank_bits": 12
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "sublinear_square_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        }
+      },
+      "horizon": 12
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 91,
+          "quotient_states": 8192,
+          "rank_bits": 13
+        },
+        "all_prefixes": {
+          "declared_rows": 13,
+          "quotient_states": 8192,
+          "rank_bits": 13
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 11,
+          "quotient_states": 2048,
+          "rank_bits": 11
+        },
+        "identity_points": {
+          "declared_rows": 13,
+          "quotient_states": 8192,
+          "rank_bits": 13
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "sublinear_square_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        }
+      },
+      "horizon": 13
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 105,
+          "quotient_states": 16384,
+          "rank_bits": 14
+        },
+        "all_prefixes": {
+          "declared_rows": 14,
+          "quotient_states": 16384,
+          "rank_bits": 14
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 12,
+          "quotient_states": 4096,
+          "rank_bits": 12
+        },
+        "identity_points": {
+          "declared_rows": 14,
+          "quotient_states": 16384,
+          "rank_bits": 14
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "sublinear_square_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        }
+      },
+      "horizon": 14
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 120,
+          "quotient_states": 32768,
+          "rank_bits": 15
+        },
+        "all_prefixes": {
+          "declared_rows": 15,
+          "quotient_states": 32768,
+          "rank_bits": 15
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 13,
+          "quotient_states": 8192,
+          "rank_bits": 13
+        },
+        "identity_points": {
+          "declared_rows": 15,
+          "quotient_states": 32768,
+          "rank_bits": 15
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        },
+        "sublinear_square_points": {
+          "declared_rows": 3,
+          "quotient_states": 8,
+          "rank_bits": 3
+        }
+      },
+      "horizon": 15
+    },
+    {
+      "families": {
+        "all_intervals": {
+          "declared_rows": 136,
+          "quotient_states": 65536,
+          "rank_bits": 16
+        },
+        "all_prefixes": {
+          "declared_rows": 16,
+          "quotient_states": 65536,
+          "rank_bits": 16
+        },
+        "constant_global_parity": {
+          "declared_rows": 1,
+          "quotient_states": 2,
+          "rank_bits": 1
+        },
+        "dense_fixed_windows_3": {
+          "declared_rows": 14,
+          "quotient_states": 16384,
+          "rank_bits": 14
+        },
+        "identity_points": {
+          "declared_rows": 16,
+          "quotient_states": 65536,
+          "rank_bits": 16
+        },
+        "logarithmic_power_of_two_points": {
+          "declared_rows": 5,
+          "quotient_states": 32,
+          "rank_bits": 5
+        },
+        "sublinear_square_points": {
+          "declared_rows": 4,
+          "quotient_states": 16,
+          "rank_bits": 4
+        }
+      },
+      "horizon": 16
+    }
+  ],
+  "schema_version": 1,
+  "scope": "fixed-horizon binary linear unique-output contracts with the horizon supplied externally; an online family additionally needs compatible cross-horizon update maps",
+  "theorems": {
+    "dormancy_criterion": "starting from exactly retained state A*x and no auxiliary slack, archive can remain dormant iff row(B) is contained in row(A)",
+    "phase_law": "active information bits equal rank(A_n)",
+    "refinement_law": "new bits per old fiber equal rank([A;B])-rank(A)",
+    "resource_bound": "new_active_bits + probes * cell_bits >= rank increment"
+  }
+}

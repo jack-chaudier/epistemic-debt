@@ -1,0 +1,207 @@
+{
+  "canonical_sha256": "3df4a4720f4602216f0532bde29d75c99f9950e6a67f327687b4277458b25e7b",
+  "evidence_label": "THEOREM plus EXACT finite crosscheck",
+  "examples": [
+    {
+      "bits_for_full_nonfallback_correctness": 3,
+      "eligible_outputs": 8,
+      "eligible_proof_component_bits": null,
+      "gamma": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "histories": 8,
+      "name": "history_identifying",
+      "uniform_gamma": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 8,
+          "numerator": 1
+        },
+        {
+          "denominator": 4,
+          "numerator": 1
+        },
+        {
+          "denominator": 8,
+          "numerator": 3
+        },
+        {
+          "denominator": 2,
+          "numerator": 1
+        },
+        {
+          "denominator": 8,
+          "numerator": 5
+        },
+        {
+          "denominator": 4,
+          "numerator": 3
+        },
+        {
+          "denominator": 8,
+          "numerator": 7
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ]
+    },
+    {
+      "bits_for_full_nonfallback_correctness": 1,
+      "eligible_outputs": 2,
+      "eligible_proof_component_bits": null,
+      "gamma": [
+        0,
+        4,
+        8
+      ],
+      "histories": 8,
+      "name": "noninjective_answer",
+      "uniform_gamma": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 2,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ]
+    },
+    {
+      "bits_for_full_nonfallback_correctness": 1,
+      "eligible_outputs": 2,
+      "eligible_proof_component_bits": null,
+      "gamma": [
+        0,
+        2,
+        3
+      ],
+      "histories": 3,
+      "name": "overlapping_certificates",
+      "uniform_gamma": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 3,
+          "numerator": 2
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ]
+    },
+    {
+      "bits_for_full_nonfallback_correctness": 0,
+      "eligible_outputs": 3,
+      "eligible_proof_component_bits": null,
+      "gamma": [
+        0,
+        6,
+        6,
+        6
+      ],
+      "histories": 6,
+      "name": "proof_component_unrestricted",
+      "uniform_gamma": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ]
+    },
+    {
+      "bits_for_full_nonfallback_correctness": null,
+      "eligible_outputs": 2,
+      "eligible_proof_component_bits": 1,
+      "gamma": [
+        0,
+        3,
+        5
+      ],
+      "histories": 6,
+      "name": "proof_component_budget_one_bit",
+      "uniform_gamma": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 2,
+          "numerator": 1
+        },
+        {
+          "denominator": 6,
+          "numerator": 5
+        }
+      ]
+    }
+  ],
+  "independent_crosscheck": {
+    "acceptance_hypergraphs": 646,
+    "curve_entries": 2403,
+    "maximum_histories": 4
+  },
+  "novelty_boundary": "the proof is a transcript/cover counting argument related to certificate and nondeterministic cell-probe methods; novelty would require a new coupling to provenance proof generation or dynamic refinement cost",
+  "schema_version": 1,
+  "scope": {
+    "addresses": "probe addresses are determined by active state, query, and prior cell contents",
+    "fallback_error": "for one fixed deterministic query, F counts fallback histories and E counts the disjoint wrong-nonfallback histories; N-F-E must be positive",
+    "finite_crosscheck": "1-4 histories and 1-3 distinct nonempty acceptance fibers; annotations use uniform one-bit proof components",
+    "protocol": "deterministic adaptive probes; randomized bound holds after fixing coins",
+    "query": "fixed query per inequality; take the maximum requirement over query families"
+  },
+  "simultaneous_abstract_cover_frontier": {
+    "histories": 4,
+    "lesson": "one retained partition must refine both alternative-query geometries; this is a static necessary bound, not an online realization theorem",
+    "minimum_active_states": 4,
+    "minimum_partition_count": 1,
+    "queries": 2,
+    "query_geometry": "two crossing binary answer partitions",
+    "single_query_minimum_active_states": [
+      2,
+      2
+    ],
+    "transcripts_per_query_inside_active_state": [
+      1,
+      1
+    ]
+  },
+  "theorem": {
+    "cardinality": "N-F-E <= Gamma_q(2^(b+t*w))",
+    "distributional": "nonfallback correct mass <= Gamma_mu,q(2^(b+t*w))",
+    "dormancy": "an old state fiber B needs no archive iff Gamma_q restricted to B at C=1 equals |B|",
+    "proof_component_size_eligibility": "compute Gamma using only accepted outputs with proof_bits <= P; answer encoding length and verifier work are not bounded"
+  }
+}

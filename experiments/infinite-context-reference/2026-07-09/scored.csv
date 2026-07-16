@@ -1,0 +1,9 @@
+strategy,queries,local_hits,primary_archive_queries,fallbacks,archive_event_reads,query_archive_reads,update_archive_reads,index_entry_reads,query_index_reads,update_index_reads,verifier_archive_reads,local_state_reads,verifier_entries_checked,index_writes,auxiliary_index_bytes,update_work,refinement_work,proof_entries_emitted,proof_bytes_emitted,answer_errors,justification_errors,unsupported_assertions,blocked_local_attempts,peak_active_units,final_active_units,peak_active_bytes,final_active_bytes
+full_history_active,12,12,0,0,0,0,0,0,0,0,0,434,36,0,0,50,0,36,5757,0,0,0,0,50,50,8147,8147
+full_replay,12,0,12,0,434,434,0,0,0,0,0,0,36,0,0,0,0,36,5757,0,0,0,0,0,0,0,0
+current_answer,12,0,0,12,534,434,100,0,0,0,0,2,36,0,0,100,0,36,5757,0,0,0,2,2,2,42,42
+exact_witness,12,0,0,12,534,434,100,0,0,0,0,2,36,0,0,100,0,36,5757,0,0,0,2,2,2,145,145
+certificate_partition,12,2,0,10,359,334,25,0,0,0,0,6,36,0,0,33,0,36,5757,0,0,0,0,6,6,418,363
+proof_carrying_closed_cover,12,2,0,10,359,334,25,0,0,0,0,6,36,0,0,33,0,36,5757,0,0,0,0,6,6,418,363
+rolling_exact_window,12,8,0,4,61,36,25,0,0,0,0,70,36,0,0,94,0,36,5757,0,0,0,0,21,21,1931,1915
+counterexample_refined,12,7,0,5,28,20,8,55,43,12,0,21,36,50,197,33,24,36,5757,0,0,0,0,30,30,1861,1861

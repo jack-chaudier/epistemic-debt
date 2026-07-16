@@ -24,6 +24,10 @@ from dataclasses import dataclass
 from typing import Iterable, Iterator
 
 
+if not __debug__:
+    raise RuntimeError("exact theorem checks require Python assertions; do not use -O")
+
+
 Partition = tuple[tuple[int, ...], ...]
 
 

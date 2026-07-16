@@ -1,0 +1,76 @@
+{
+  "boundary": "randomized variants require proof-specific completeness/soundness quantifiers; binding authenticated summaries change the visible-state fiber and can remove the raw-cell alternatives; the n-probe negative example assumes every singleton flip remains in one fiber; cryptographic soundness is a different model",
+  "canonical_sha256": "829bb109a7f63e94c298b0f22ace8c681e2d761acde6306ce0b5fa2de8ec2291",
+  "evidence_label": "THEOREM plus EXACT finite crosscheck",
+  "independent_crosscheck": {
+    "maximum_width": 4,
+    "valid_history_checks": 525348,
+    "validity_relations": 65808
+  },
+  "novelty_boundary": "the mathematical object is nondeterministic decision-tree certificate complexity; the provenance interpretation is specialized rather than foundational novelty",
+  "positive_negative_separation": [
+    {
+      "all_zero_complete_negative_probes": 1,
+      "any_one_positive_witness_probes": 1,
+      "archive_cells": 1
+    },
+    {
+      "all_zero_complete_negative_probes": 2,
+      "any_one_positive_witness_probes": 1,
+      "archive_cells": 2
+    },
+    {
+      "all_zero_complete_negative_probes": 3,
+      "any_one_positive_witness_probes": 1,
+      "archive_cells": 3
+    },
+    {
+      "all_zero_complete_negative_probes": 4,
+      "any_one_positive_witness_probes": 1,
+      "archive_cells": 4
+    },
+    {
+      "all_zero_complete_negative_probes": 5,
+      "any_one_positive_witness_probes": 1,
+      "archive_cells": 5
+    },
+    {
+      "all_zero_complete_negative_probes": 6,
+      "any_one_positive_witness_probes": 1,
+      "archive_cells": 6
+    },
+    {
+      "all_zero_complete_negative_probes": 7,
+      "any_one_positive_witness_probes": 1,
+      "archive_cells": 7
+    },
+    {
+      "all_zero_complete_negative_probes": 8,
+      "any_one_positive_witness_probes": 1,
+      "archive_cells": 8
+    },
+    {
+      "all_zero_complete_negative_probes": 9,
+      "any_one_positive_witness_probes": 1,
+      "archive_cells": 9
+    },
+    {
+      "all_zero_complete_negative_probes": 10,
+      "any_one_positive_witness_probes": 1,
+      "archive_cells": 10
+    }
+  ],
+  "schema_version": 1,
+  "scope": {
+    "active_state": "fixed visible fiber; invalid alternatives share it",
+    "archive": "finite explicit raw cells restricted to one fixed visible-state fiber",
+    "completeness": "the lower bound conditions on an accepting proof; the exact minimum is over perfectly complete proof systems",
+    "contract_table": "the finite validity relation and verifier description are nonuniform and uncharged",
+    "proof": "unbounded length and unbounded verifier computation",
+    "soundness": "deterministic perfect soundness"
+  },
+  "theorem": {
+    "exact_characterization": "over perfectly complete/sound systems, minimum probes equal the minimum coordinates defining a sound archive cylinder within the fixed visible-state fiber",
+    "lower_bound": "on every accepting valid run, verifier probes hit every same-state falsifying archive difference support"
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "canonical_sha256": "500e3081efa329b5400c2ee589aaac0f94ddd398a0a2aae5174dfda63c93537f",
+  "evidence_label": "EXACT deterministic benchmark",
+  "features": [
+    "additions",
+    "revisions",
+    "retractions",
+    "contradictory sources",
+    "source-version invalidation",
+    "delayed relevance",
+    "exact wording",
+    "temporal queries",
+    "complete negative evidence",
+    "new key obligations under a fixed query language"
+  ],
+  "frozen_post_smoke_design_checks": {
+    "all_strategies_zero_answer_error": true,
+    "all_strategies_zero_complete_justification_error": true,
+    "all_strategies_zero_unsupported_assertions": true,
+    "demand_refined_active_plus_index_bytes": [
+      2058,
+      8147
+    ],
+    "demand_refined_fallbacks_at_most_6": 5,
+    "demand_refined_query_event_reads_at_most_30": 20,
+    "demand_refined_query_index_reads_at_most_60": 43,
+    "demand_refined_total_event_reads_at_most_40": 28,
+    "demand_refined_total_index_reads_at_most_80": 55,
+    "evidence_label_is_not_preregistered": true,
+    "implementation_encoding_storage_at_least_one_third_below_history": true,
+    "rolling_active_bytes_below_history": [
+      1915,
+      8147
+    ]
+  },
+  "input_bindings": {
+    "archive_sha256": "54d674560871bea24d222efcd12bc3c1ec831808abe1652fbca41722d51060e5",
+    "design_bounds_sha256": "847db610fcb6233534f940f3a7ed0048903d7d6a1665a43b4669178beb03dcf1",
+    "implementation_sha256": "12acea4eabd6ceedafe24d45e1122b561b88a21364bbdda6e2e296d8f7259795",
+    "items_sha256": "a46ba7b132b8a1efb25a6acd3c738cdb5fb6ed7f4ccfd9f340fdc2d11773a408",
+    "raw_rows_sha256": "4aae1f144b49f1e8606c9d2c40331cc7494f5b97722de70c4fb8741c4b8d2727"
+  },
+  "proof_carrying_cover_comparison": {
+    "separate_exact_fixture": "../../../proofs/general_contract_search_results.json",
+    "separate_fixture_scope": "the 3-state right-congruent partition versus 2-state shareable-proof closed-cover result is a separate finite theorem, not a workload measurement",
+    "workload_accepted_output_relation": "each exact frontier has one source/version/text-bound complete certificate",
+    "workload_verdict": "compatible proof blocks are frontier-equality blocks; the proof-carrying implementation is therefore an intentional operational alias of the certificate partition and has no overlap advantage"
+  },
+  "resource_ledger_model": {
+    "active_bytes": "canonical JSON payload bytes; auxiliary index bytes are separate and monotone, so their final value is their peak value in this workload",
+    "archive_event_reads": "materialized archive event records inspected",
+    "index_entry_reads": "posting-directory selection, binary-search probes, and every returned posting",
+    "index_writes": "one online posting insertion per ingested event",
+    "refinement_work": "frontier entries written into a newly cached snapshot",
+    "scope": "complete for the declared logical counters, not a total CPU, wall-clock, hashing, allocation, serialization, or cryptographic-work ledger",
+    "update_work": "declared logical event/frontier operations, not machine instructions"
+  },
+  "schema_version": 2,
+  "scientific_verdict": "The online-maintained strategy subset implements structured exact fast paths, charged invalidation repair, and exact fallback with a fixed canonical-encoding ledger. Two deliberately insufficient baselines are compiled by post-ingestion replay, and full replay keeps no active state. It does not establish architectural novelty, cryptographic soundness, or behavior under new-key activation followed by further ingestion, or under query-language extension.",
+  "strategies": [
+    {
+      "ledger": {
+        "answer_errors": 0,
+        "archive_event_reads": 0,
+        "auxiliary_index_bytes": 0,
+        "blocked_local_attempts": 0,
+        "fallbacks": 0,
+        "final_active_bytes": 8147,
+        "final_active_units": 50,
+        "index_entry_reads": 0,
+        "index_writes": 0,
+        "justification_errors": 0,
+        "local_hits": 12,
+        "local_state_reads": 434,
+        "peak_active_bytes": 8147,
+        "peak_active_units": 50,
+        "primary_archive_queries": 0,
+        "proof_bytes_emitted": 5757,
+        "proof_entries_emitted": 36,
+        "queries": 12,
+        "query_archive_reads": 0,
+        "query_index_reads": 0,
+        "refinement_work": 0,
+        "unsupported_assertions": 0,
+        "update_archive_reads": 0,
+        "update_index_reads": 0,
+        "update_work": 50,
+        "verifier_archive_reads": 0,
+        "verifier_entries_checked": 36
+      },
+      "notes": {
+        "proof_carrying_closed_cover": null
+      },
+      "strategy": "full_history_active"
+    },
+    {
+      "ledger": {
+        "answer_errors": 0,
+        "archive_event_reads": 434,
+        "auxiliary_index_bytes": 0,
+        "blocked_local_attempts": 0,
+        "fallbacks": 0,
+        "final_active_bytes": 0,
+        "final_active_units": 0,
+        "index_entry_reads": 0,
+        "index_writes": 0,
+        "justification_errors": 0,
+        "local_hits": 0,
+        "local_state_reads": 0,
+        "peak_active_bytes": 0,
+        "peak_active_units": 0,
+        "primary_archive_queries": 12,
+        "proof_bytes_emitted": 5757,
+        "proof_entries_emitted": 36,
+        "queries": 12,
+        "query_archive_reads": 434,
+        "query_index_reads": 0,
+        "refinement_work": 0,
+        "unsupported_assertions": 0,
+        "update_archive_reads": 0,
+        "update_index_reads": 0,
+        "update_work": 0,
+        "verifier_archive_reads": 0,
+        "verifier_entries_checked": 36
+      },
+      "notes": {
+        "proof_carrying_closed_cover": null
+      },
+      "strategy": "full_replay"
+    },
+    {
+      "ledger": {
+        "answer_errors": 0,
+        "archive_event_reads": 534,
+        "auxiliary_index_bytes": 0,
+        "blocked_local_attempts": 2,
+        "fallbacks": 12,
+        "final_active_bytes": 42,
+        "final_active_units": 2,
+        "index_entry_reads": 0,
+        "index_writes": 0,
+        "justification_errors": 0,
+        "local_hits": 0,
+        "local_state_reads": 2,
+        "peak_active_bytes": 42,
+        "peak_active_units": 2,
+        "primary_archive_queries": 0,
+        "proof_bytes_emitted": 5757,
+        "proof_entries_emitted": 36,
+        "queries": 12,
+        "query_archive_reads": 434,
+        "query_index_reads": 0,
+        "refinement_work": 0,
+        "unsupported_assertions": 0,
+        "update_archive_reads": 100,
+        "update_index_reads": 0,
+        "update_work": 100,
+        "verifier_archive_reads": 0,
+        "verifier_entries_checked": 36
+      },
+      "notes": {
+        "proof_carrying_closed_cover": null
+      },
+      "strategy": "current_answer"
+    },
+    {
+      "ledger": {
+        "answer_errors": 0,
+        "archive_event_reads": 534,
+        "auxiliary_index_bytes": 0,
+        "blocked_local_attempts": 2,
+        "fallbacks": 12,
+        "final_active_bytes": 145,
+        "final_active_units": 2,
+        "index_entry_reads": 0,
+        "index_writes": 0,
+        "justification_errors": 0,
+        "local_hits": 0,
+        "local_state_reads": 2,
+        "peak_active_bytes": 145,
+        "peak_active_units": 2,
+        "primary_archive_queries": 0,
+        "proof_bytes_emitted": 5757,
+        "proof_entries_emitted": 36,
+        "queries": 12,
+        "query_archive_reads": 434,
+        "query_index_reads": 0,
+        "refinement_work": 0,
+        "unsupported_assertions": 0,
+        "update_archive_reads": 100,
+        "update_index_reads": 0,
+        "update_work": 100,
+        "verifier_archive_reads": 0,
+        "verifier_entries_checked": 36
+      },
+      "notes": {
+        "proof_carrying_closed_cover": null
+      },
+      "strategy": "exact_witness"
+    },
+    {
+      "ledger": {
+        "answer_errors": 0,
+        "archive_event_reads": 359,
+        "auxiliary_index_bytes": 0,
+        "blocked_local_attempts": 0,
+        "fallbacks": 10,
+        "final_active_bytes": 363,
+        "final_active_units": 6,
+        "index_entry_reads": 0,
+        "index_writes": 0,
+        "justification_errors": 0,
+        "local_hits": 2,
+        "local_state_reads": 6,
+        "peak_active_bytes": 418,
+        "peak_active_units": 6,
+        "primary_archive_queries": 0,
+        "proof_bytes_emitted": 5757,
+        "proof_entries_emitted": 36,
+        "queries": 12,
+        "query_archive_reads": 334,
+        "query_index_reads": 0,
+        "refinement_work": 0,
+        "unsupported_assertions": 0,
+        "update_archive_reads": 25,
+        "update_index_reads": 0,
+        "update_work": 33,
+        "verifier_archive_reads": 0,
+        "verifier_entries_checked": 36
+      },
+      "notes": {
+        "proof_carrying_closed_cover": null
+      },
+      "strategy": "certificate_partition"
+    },
+    {
+      "ledger": {
+        "answer_errors": 0,
+        "archive_event_reads": 359,
+        "auxiliary_index_bytes": 0,
+        "blocked_local_attempts": 0,
+        "fallbacks": 10,
+        "final_active_bytes": 363,
+        "final_active_units": 6,
+        "index_entry_reads": 0,
+        "index_writes": 0,
+        "justification_errors": 0,
+        "local_hits": 2,
+        "local_state_reads": 6,
+        "peak_active_bytes": 418,
+        "peak_active_units": 6,
+        "primary_archive_queries": 0,
+        "proof_bytes_emitted": 5757,
+        "proof_entries_emitted": 36,
+        "queries": 12,
+        "query_archive_reads": 334,
+        "query_index_reads": 0,
+        "refinement_work": 0,
+        "unsupported_assertions": 0,
+        "update_archive_reads": 25,
+        "update_index_reads": 0,
+        "update_work": 33,
+        "verifier_archive_reads": 0,
+        "verifier_entries_checked": 36
+      },
+      "notes": {
+        "proof_carrying_closed_cover": "no state advantage under version-bound proofs"
+      },
+      "strategy": "proof_carrying_closed_cover"
+    },
+    {
+      "ledger": {
+        "answer_errors": 0,
+        "archive_event_reads": 61,
+        "auxiliary_index_bytes": 0,
+        "blocked_local_attempts": 0,
+        "fallbacks": 4,
+        "final_active_bytes": 1915,
+        "final_active_units": 21,
+        "index_entry_reads": 0,
+        "index_writes": 0,
+        "justification_errors": 0,
+        "local_hits": 8,
+        "local_state_reads": 70,
+        "peak_active_bytes": 1931,
+        "peak_active_units": 21,
+        "primary_archive_queries": 0,
+        "proof_bytes_emitted": 5757,
+        "proof_entries_emitted": 36,
+        "queries": 12,
+        "query_archive_reads": 36,
+        "query_index_reads": 0,
+        "refinement_work": 0,
+        "unsupported_assertions": 0,
+        "update_archive_reads": 25,
+        "update_index_reads": 0,
+        "update_work": 94,
+        "verifier_archive_reads": 0,
+        "verifier_entries_checked": 36
+      },
+      "notes": {
+        "proof_carrying_closed_cover": null
+      },
+      "strategy": "rolling_exact_window"
+    },
+    {
+      "ledger": {
+        "answer_errors": 0,
+        "archive_event_reads": 28,
+        "auxiliary_index_bytes": 197,
+        "blocked_local_attempts": 0,
+        "fallbacks": 5,
+        "final_active_bytes": 1861,
+        "final_active_units": 30,
+        "index_entry_reads": 55,
+        "index_writes": 50,
+        "justification_errors": 0,
+        "local_hits": 7,
+        "local_state_reads": 21,
+        "peak_active_bytes": 1861,
+        "peak_active_units": 30,
+        "primary_archive_queries": 0,
+        "proof_bytes_emitted": 5757,
+        "proof_entries_emitted": 36,
+        "queries": 12,
+        "query_archive_reads": 20,
+        "query_index_reads": 43,
+        "refinement_work": 24,
+        "unsupported_assertions": 0,
+        "update_archive_reads": 8,
+        "update_index_reads": 12,
+        "update_work": 33,
+        "verifier_archive_reads": 0,
+        "verifier_entries_checked": 36
+      },
+      "notes": {
+        "proof_carrying_closed_cover": null
+      },
+      "strategy": "counterexample_refined"
+    }
+  ],
+  "trust_boundary": "archive immutability/root identity, stable-key index completeness, source-universe identity, and active-state integrity are trusted exact primitives. The assertion gate binds outputs to those primitives and the benchmark independently replays semantics, but no cryptographic membership/nonmembership proof is implemented",
+  "workload": {
+    "active_byte_encoding": "UTF-8 canonical JSON of each strategy's complete logical active payload; an implementation-specific serialization proxy, not entropy or an asymptotic state-complexity measure",
+    "active_units_warning": "logical units are type-specific diagnostics and are not compared across strategies",
+    "archive_bytes": 8147,
+    "byte_comparison_status": "IMPLEMENTATION ARTIFACT: fixed canonical JSON encodings only",
+    "causal_checkpoints": [
+      8,
+      18
+    ],
+    "common_archive_event_writes": 50,
+    "events": 50,
+    "initial_compiled_keys": [
+      "bridge",
+      "launch"
+    ],
+    "keys_seen": [
+      "bridge",
+      "codename",
+      "launch",
+      "quote",
+      "safety"
+    ],
+    "queries": 12,
+    "rolling_window": 6,
+    "sources": [
+      "atlas",
+      "boreal",
+      "cygnus"
+    ],
+    "stable_key_index_bytes": 197
+  }
+}
